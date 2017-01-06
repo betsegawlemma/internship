@@ -52,7 +52,7 @@
 *** Read the following articles
 **** ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
 **** On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
-** TODO Next session with Martin SCHEDULED: <2017-01-13 ven.>
-** TODO Next session with Martin SCHEDULED: <2017-01-13 ven.>
-
- 
+** TODO Next session with Martin  
+   SCHEDULED: <2017-01-09 lun.>
+** TODO Next session with Martin
+   SCHEDULED: <2017-01-13 ven.>
