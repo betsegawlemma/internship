@@ -40,7 +40,7 @@
      17. git push origin master/branch_name
 **** I created Git repository named "internship" to store all outputs of my internship
 **** Information about using git with spacemacs is found here https://alxndr.github.io/blog/2015/06/20/getting-started-with-Spacemacs.html
-** TODO 
+** TODO What to do next 
 *** Continue exploring spacemacs https://www.youtube.com/watch?v=ZFV5EqpZ6_s&list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE
 *** Continue exploring Org-mode
      1. http://orgmode.org/worg/org-tutorials/org4beginners.html
@@ -52,7 +52,5 @@
 *** Read the following articles
 **** ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
 **** On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
-** TODO Next session with Martin  
-   SCHEDULED: <2017-01-09 lun.>
-** TODO Next session with Martin
-   SCHEDULED: <2017-01-13 ven.>
+** TODO Next session with Martin SCHEDULED: <2017-01-09 lun.>
+** TODO Next session with Martin SCHEDULED: <2017-01-13 ven.>
