@@ -3,6 +3,6 @@ This repository is created to store notes, links, articles, scripts, codes and a
 
 Internship title: Simulating energy-aware networks in large-scale distributed systems
 
-The expected outcome of the internship is to propose a flow based energy model and then implement the model on SimGrid (http://simgrid.gforge.inria.fr/index.php) simulator.
+The expected outcome of the internship is, to propose a flow based energy model and then implement the model on SimGrid (http://simgrid.gforge.inria.fr/index.php) simulator.
 
  
