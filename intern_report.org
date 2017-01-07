@@ -1,0 +1,63 @@
+* Introduction
+* Findings
+** Bibliography 
+     1. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
+     
+     3. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
+
+* Journal
+** DONE  Week 1 January <2017-01-06 ven.>
+   CLOSED: [2017-01-07 sam. 19:07]
+   - Emacs installed and tried it, but found it difficult to get myself familiarize with it
+   - Tried Spacemacs and noticed that it has VIM mode and found it quite easier to use, therefore, I have decided to use it
+   - Tried Org-mode and this file is my first document produced with it
+   - Information about integrating Emacs and Spacemacs is found [[http://jr0cket.co.uk/2015/08/spacemacs-first-impressions-from-an-emacs-driven-developer.html][here]]
+   - SimGrid installed using the following command on Ubuntu machine
+     sudo apt-get install simgrid
+   - Tried to read "SimGrid 101" and "SimGrid and MSG 101" using slides available [[http://simgrid.gforge.inria.fr/tutorials.php][here]] 
+   - Found another tutorial [[http://simgrid.gforge.inria.fr/simgrid/3.14/doc/tutorial.html][here]]  about SimGrid which is very nice because I was able to compile and run SimGrid based on the information provided there. However I met two errors while trying to build Pajeng
+     1. the first issue was that flex was missing, solved after running sudo apt-get install flex
+     2. the second issue was that bison was missing, solved after running sudo apt-get install bison
+   - Started learning it. I am excited about it and want to go deep into it using the information available on the following links
+     1. [[http://orgmode.org/worg/org-tutorials/org4beginners.html][Org mode for beginners]]
+     2. [[http://doc.norang.ca/org-mode.html][Org mode tutorial]]
+     3. [[http://sachachua.com/blog/2014/01/tips-learning-org-mode-emacs/][Tips for learning org mode]]
+     4. [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] 
+   - Refreshed my git knowledge watching [[https://www.youtube.com/watch?v=Y9XZQO1n_7c][this]] video 
+   - Important Git commands and concepts
+     1. git init
+     2. git config --global user.email "email address"
+     3. git config --global user.name "user name" 
+     4. git status 
+     5. git add
+     6. git commit -m "some message about the commit"
+     7. git commit -a -m "some message about the commit"
+     8. git log
+     9. git add .
+     10. git branch branch_name
+     11. git checkout branch_name/master
+     12. git clone URLBibliography
+     13. git remote
+     14. git remote -v
+     15. git fetch origin
+     16. git pull origin
+     17. git push origin master/branch_name
+     18. adding .gitignore file
+   - Created Git repository named "internship" to store all outputs of my internship
+   - Information about using git with spacemacs is found [[https://alxndr.github.io/blog/2015/06/20/getting-started-with-Spacemacs.html][here]]
+   - Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin]] 
+   - Read [[http://simgrid.gforge.inria.fr/tutorials/simgrid-energy-101.pdf][SimGrid Energy 101]] 
+   - Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin Docs]]
+**** Questions
+   - FLOPS/s is this notation correct in the slide shown in [[http://simgrid.gforge.inria.fr/tutorials/simgrid-energy-101.pdf][here]]? (floating point operations per second per second?) (compare slide 6/7/8)
+   - Is this value <prop id="watt_per_state" value="100.0:120.0:200.0, 93.0:110.0:170.0, 90.0:105.0:150.0" /> found in examples/platforms/energy_platform.xml correct?
+**** TODO Work Planned 
+   - Continue exploring spacemacs [[https://www.youtube.com/watch?v=ZFV5EqpZ6_s&list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE][Spacemacs ABC tutorial]]
+   - Continue exploring Org-mode
+     1. [[http://orgmode.org/worg/org-tutorials/org4beginners.html][Org Mode for Beginners]]
+     2. [[https://github.com/fniessen/refcard-org-mode/blob/master/README.org][Org mode Reference card]]
+     3. [[http://doc.norang.ca/org-mode.html][Org mode tutorial]]
+     4. [[http://sachachua.com/blog/2014/01/tips-learning-org-mode-emacs/][Tips for learning org mode]]
+   - Read the following articles
+     1. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
+     2. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
