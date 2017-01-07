@@ -1,6 +1,6 @@
 * Internship started
 ** DONE Things done on Jan 5 and 6, 2017 <2017-01-06 ven.>
-   CLOSED: [2017-01-07 sam. 16:05]
+   CLOSED: [2017-01-07 sam. 19:07]
 *** Editor
 **** Emacs installed and tried it, but found it difficult to get familiarized myself with it
 **** Tried Spacemacs and it has VIM mode and found it quite easier to use therefore, I have decided to use it
@@ -20,7 +20,6 @@
      2. [[http://doc.norang.ca/org-mode.html][Org mode tutorial]]
      3. [[http://sachachua.com/blog/2014/01/tips-learning-org-mode-emacs/][Tips for learning org mode]]
      4. [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] 
-
 *** Git 
 **** Refreshed my git knowledge watching [[https://www.youtube.com/watch?v=Y9XZQO1n_7c][this]] video 
 **** Important Git commands and concepts
@@ -57,3 +56,4 @@
 **** On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
 ** TODO Next session with Martin SCHEDULED: <2017-01-09 lun.>
 ** TODO Next session with Martin SCHEDULED: <2017-01-13 ven.>
+   
