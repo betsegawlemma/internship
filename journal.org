@@ -2,20 +2,20 @@
 ** DONE Things done on Jan 5 and 6, 2017 <2017-01-06 ven.>
    CLOSED: [2017-01-07 sam. 19:07]
 *** Editor
-**** Emacs installed and tried it, but found it difficult to get familiarized myself with it
-**** Tried Spacemacs and it has VIM mode and found it quite easier to use therefore, I have decided to use it
-**** I have tried Org-mode and this file is my first document produced with it
-**** [[http://jr0cket.co.uk/2015/08/spacemacs-first-impressions-from-an-emacs-driven-developer.html][Info about integrating Emacs and Spacemacs is found here]]
+**** Emacs installed and tried it, but found it difficult to get myself familiarize with it
+**** Tried Spacemacs and noticed that it has VIM mode and found it quite easier to use, therefore, I have decided to use it
+**** Tried Org-mode and this file is my first document produced with it
+**** Information about integrating Emacs and Spacemacs is found [[http://jr0cket.co.uk/2015/08/spacemacs-first-impressions-from-an-emacs-driven-developer.html][here]]
 *** SimGrid
 **** Installed it using the following command on Ubuntu machine
      sudo apt-get install simgrid
-**** Tried to read "SimGrid 101" and "SimGrid and MSG 101" slides available [[http://simgrid.gforge.inria.fr/tutorials.php][here]] in order to understand it
-**** Also found another tutorial [[http://simgrid.gforge.inria.fr/simgrid/3.14/doc/tutorial.html][here]] which is very nice because I was able to compile and run SimGrid based on the information provided there. However I met two errors and one while trying to build Pajeng
+**** Tried to read "SimGrid 101" and "SimGrid and MSG 101" using slides available [[http://simgrid.gforge.inria.fr/tutorials.php][here]] 
+**** Also found another tutorial [[http://simgrid.gforge.inria.fr/simgrid/3.14/doc/tutorial.html][here]] which is very nice because I was able to compile and run SimGrid based on the information provided there. However I met two errors while trying to build Pajeng
      1. the first issue was that flex was missing, solved after running sudo apt-get install flex
      2. the second issue was that bison was missing, solved after running sudo apt-get install bison
 *** Org-mode
 **** This is my first org-mode document
-**** I have started learning it. I am excited about it and want to go deep into it using the information available on the following links
+**** Started learning it. I am excited about it and want to go deep into it using the information available on the following links
      1. [[http://orgmode.org/worg/org-tutorials/org4beginners.html][Org mode for beginners]]
      2. [[http://doc.norang.ca/org-mode.html][Org mode tutorial]]
      3. [[http://sachachua.com/blog/2014/01/tips-learning-org-mode-emacs/][Tips for learning org mode]]
@@ -40,7 +40,8 @@
      15. git fetch origin
      16. git pull origin
      17. git push origin master/branch_name
-**** I created Git repository named "internship" to store all outputs of my internship
+     18. adding .gitignore file
+**** Created Git repository named "internship" to store all outputs of my internship
 **** Information about using git with spacemacs is found [[https://alxndr.github.io/blog/2015/06/20/getting-started-with-Spacemacs.html][here]]
 ** TODO What to do next 
 *** Continue exploring spacemacs [[https://www.youtube.com/watch?v=ZFV5EqpZ6_s&list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE][Spacemacs ABC tutorial]]
@@ -50,6 +51,9 @@
      3. [[http://sachachua.com/blog/2014/01/tips-learning-org-mode-emacs/][Tips for learning org mode]]
 *** Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin]]
 *** Read [[http://simgrid.gforge.inria.fr/tutorials/simgrid-energy-101.pdf][SimGrid Energy 101]]
+**** What is [[https://en.wikipedia.org/wiki/FLOPS][flops]]?
+    It is a measure of computer performance. It is an acronym for floating-point operations per second.  
+**** FLOPS/s is this notation correct? (floating point operations per second per second?) (compare slide 6/7/8)
 *** Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin Docs]]
 *** Read the following articles
 **** ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
