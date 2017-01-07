@@ -15,7 +15,7 @@
      2. the second issue was that bison was missing, solved after running sudo apt-get install bison
 *** Org-mode
 **** This is my first org-mode document
-**** I have started learning it. I am inspired to go deep into it using the information available on the following links
+**** I have started learning it. I am excited about it and want to go deep into it using the information available on the following links
      1. [[http://orgmode.org/worg/org-tutorials/org4beginners.html][Org mode for beginners]]
      2. [[http://doc.norang.ca/org-mode.html][Org mode tutorial]]
      3. [[http://sachachua.com/blog/2014/01/tips-learning-org-mode-emacs/][Tips for learning org mode]]
