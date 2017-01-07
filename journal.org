@@ -1,5 +1,6 @@
 * Internship started
 ** DONE Things done on Jan 5 and 6, 2017 <2017-01-06 ven.>
+   CLOSED: [2017-01-07 sam. 16:05]
 *** Editor
 **** Emacs installed and tried it, but found it difficult to get familiarized myself with it
 **** Tried Spacemacs and it has VIM mode and found it quite easier to use therefore, I have decided to use it
