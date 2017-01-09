@@ -9,8 +9,7 @@
      3. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
 
 * Journal
-** DONE  Week 1 January 
-   CLOSED: [2017-01-07 sam. 19:07]
+** Week 1 January 
    - Emacs installed and tried it, but found it difficult to get myself familiarize with it
    - Tried Spacemacs and noticed that it has VIM mode and found it quite easier to use, therefore, I have decided to use it
    - Tried Org-mode and this file is my first document produced with it
