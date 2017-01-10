@@ -19,9 +19,10 @@
       After proposing the model, the authors have evaluated it by implementing NS2 simulator of the model and also run different experiments such as energy cost of different network topology, the effect
       of varying traffic on energy cost, evaluation of energy saving techniques, and evaluation of energy cost for large scale networks. 
 
-      Even though this study is a foundation work for modeling energy cost of large scale models, further work is required to add to the energy cost model the energy cost incurred during boot and shutdown time. 
-      In addition, though the authors simulated the energy saving techniques such as ON/FF in their experiments, their proposed model did not include energy saving technique as one of its parameter.  
-      
+      Even though this study is a foundation work for modeling energy cost of large scale models, further work is required to include to the model the energy cost incurred during boot and shutdown time. 
+      In addition, though the authors simulated the energy saving techniques such as ON/FF technique in their experiments, their proposed model did not include energy saving technique as one of its parameter. 
+      Further more, to allow to study the impact of energy saving technique on performance, performance metrics should be incorporated into the model to make it better decision making tool to compare energy
+      saving techniques.    
      3. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
 
 * Journal
