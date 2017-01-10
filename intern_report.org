@@ -4,8 +4,8 @@
 ** Related Work
 ** Contribution
 ** Bibliography 
-
-     1. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
+     1. [[http://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][SimGrid 3]]
+     2. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
      
       Anne-Cecile et. al. proposed a novel energy cost model and simulator for large scale wired networks. This model first estimates the power consumption of each equipment involved in the network.
       A network equipment such as router and NIC consumes energy during boot, during shutdown and during the working period between these two processes, the later is referred to as E_work and this is
@@ -79,7 +79,7 @@
    - Read the following articles
      1. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
      2. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
-     3. http://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf
+     3. [[http://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][SimGrid 3]]
 * Development
 ** Data Provenance
 ** Data Analysis
