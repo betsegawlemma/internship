@@ -6,6 +6,22 @@
 ** Bibliography 
 
      1. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
+     
+      Anne-Cecile et. al. proposed a novel energy cost model and simulator for large scale wired networks. This model first estimates the power consumption of each equipment involved in the network.
+      A network equipment such as router and NIC consumes energy during boot, during shutdown and during the working period between these two processes, the later is referred to as E_work and this is
+      the energy cost the authors considered in the proposed model. They further characterized the energy consumed during the working period as fixed (E_idle) and variable (E_variable) energy cost. The fixed 
+      energy cost, which depends on the equipment type (NIC, router, switch) and the manufacturer, is the energy consumed when the device is in the working period but not actually doing any network 
+      transfer task. The variable cost, on the other hand, is the energy consumed while the equipment is in the working period and is also doing some network transfer task. This cost depends on the 
+      bandwidth of the port or the interface used in the transfer, the length of time required to do the transfer and the total number of parallel transfers occurring in the device. The energy model in 
+      the second step, estimates the total energy cost of the network by summing the E_idle cost of each equipment involved and E_variable cost occurring at each port or interface of the equipment.
+      If there are parallel transfers occurring at a given equipment the E_idle cost of the equipment is considered only once.
+    
+      After proposing the model, the authors have evaluated it by implementing NS2 simulator of the model and also run different experiments such as energy cost of different network topology, the effect
+      of varying traffic on energy cost, evaluation of energy saving techniques, and evaluation of energy cost for large scale networks. 
+
+      Even though this study is a foundation work for modeling energy cost of large scale models, further work is required to add to the energy cost incurred during boot and shutdown time. In addition,
+      though the authors simulated the energy saving techniques such as ON/FF in one of their experiments, their proposed model did not include energy saving technique as one of its parameter.  
+      
      3. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
 
 * Journal
@@ -67,4 +83,4 @@
 * Development
 ** Data Provenance
 ** Data Analysis
-* Conclusion
+* Conclusion 
