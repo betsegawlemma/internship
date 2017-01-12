@@ -1,3 +1,24 @@
+* Important dates 
+** Course Related
+  | Course         | Date                     | Description                                                                         |
+  |----------------+--------------------------+-------------------------------------------------------------------------------------|
+  | PEV            | Jan 13 (14:00-17:00)     | Project evaluation                                                                  |
+  | Pre-internship | Jan 16                   | Report submission date (I can use  paper review I am currently doing for the report |
+  | I&E Study      | Jan 20                   | Post assignment submission date                                                     |
+  | I&E Study      | Jan 30 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                               |
+  | I&E Study      | Feb 2                    | Online assignment submission date (I may need one full day to complete the report)  |
+  | I&E Study      | Feb 27 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                               |
+  | I&E Study      | March 20 (10:00 - 12:00) | Meeting for I&E study thesis progress                                               |
+** Aalto Related
+  | January to February          | Starting to write master thesis                             |
+  | By 28 February               | Official confirmation of thesis topic                       |
+  | End of May/Beginning of June | Thesis presentation and Maturity test/Press release         |
+  | June                         | Enroll for Autumn semester if I am graduating after July 31 |
+  | End of June                  | Submit the thesis                                           |
+** UR1 Related
+  | By June 26   | The thesis manuscript must be ready |
+  | By July 7    | Thesis defense                      |
+  | July 10 - 14 | Jury                                |
 * Introduction
 * Findings
 ** Introduction
@@ -20,7 +41,7 @@
       of varying traffic on energy cost, evaluation of energy saving techniques, and evaluation of energy cost for large scale networks. 
 
       Even though this study is a foundation work for modeling energy cost of large scale models, further work is required to include to the model the energy cost incurred during boot and shutdown time. 
-      In addition, though the authors simulated the energy saving techniques such as ON/FF technique in their experiments, their proposed model did not include energy saving technique as one of its parameter. 
+      In addition, though the authors simulated the energy saving techniques such as ON/OFF technique in their experiments, their proposed model did not include energy saving technique as one of its parameter. 
       Further more, to allow to study the impact of energy saving technique on performance, performance metrics should be incorporated into the model to make it better decision making tool to compare energy
       saving techniques.    
      3. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
@@ -84,4 +105,4 @@
 * Development
 ** Data Provenance
 ** Data Analysis
-* Conclusion 
+* Conclusion
