@@ -10,6 +10,7 @@
   | I&E Study      | Feb 27 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                                    |
   | I&E Study      | March 20 (10:00 - 12:00) | Meeting for I&E study thesis progress                                                    |
 ** Aalto Related
+   [[https://into.aalto.fi/display/eneitictinno/Entry+2015-2016][Internship process]]
   | January to February          | Starting to write master thesis                             |
   | By 28 February               | Official confirmation of thesis topic                       |
   | End of May/Beginning of June | Thesis presentation and Maturity test/Press release         |
