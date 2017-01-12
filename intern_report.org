@@ -11,11 +11,11 @@
   | I&E Study      | March 20 (10:00 - 12:00) | Meeting for I&E study thesis progress                                                    |
 ** Aalto Related
    [[https://into.aalto.fi/display/eneitictinno/Entry+2015-2016][Internship process]]
-  | January to February          | Starting to write master thesis                             |
-  | By 28 February               | Official confirmation of thesis topic                       |
-  | End of May/Beginning of June | Thesis presentation and Maturity test/Press release         |
-  | June                         | Enroll for Autumn semester if I am graduating after July 31 |
-  | End of June                  | Submit the thesis                                           |
+  | January to February          | Starting to write master thesis                        |
+  | By 28 February               | Official confirmation of thesis topic                  |
+  | End of May/Beginning of June | Thesis presentation and Maturity test/Press release    |
+  | June                         | Enroll for Autumn semester if graduating after July 31 |
+  | End of June                  | Submit the thesis                                      |
 ** UR1 Related
   | By June 26   | The thesis manuscript must be ready |
   | By July 7    | Thesis defense                      |
