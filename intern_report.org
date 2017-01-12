@@ -1,14 +1,14 @@
 * Important dates 
 ** Course Related
-  | Course         | Date                     | Description                                                                         |
-  |----------------+--------------------------+-------------------------------------------------------------------------------------|
-  | PEV            | Jan 13 (14:00-17:00)     | Project evaluation                                                                  |
-  | Pre-internship | Jan 16                   | Report submission date (I can use  paper review I am currently doing for the report |
-  | I&E Study      | Jan 20                   | Post assignment submission date                                                     |
-  | I&E Study      | Jan 30 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                               |
-  | I&E Study      | Feb 2                    | Online assignment submission date (I may need one full day to complete the report)  |
-  | I&E Study      | Feb 27 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                               |
-  | I&E Study      | March 20 (10:00 - 12:00) | Meeting for I&E study thesis progress                                               |
+  | Course         | Date                     | Description                                                                              |
+  |----------------+--------------------------+------------------------------------------------------------------------------------------|
+  | PEV            | Jan 13 (14:00-17:00)     | Project evaluation                                                                       |
+  | Pre-internship | Jan 16                   | Report submission date (I can use the paper reviews I am currently doing for this report |
+  | I&E Study      | Jan 20                   | Post assignment submission date                                                          |
+  | I&E Study      | Jan 30 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                                    |
+  | I&E Study      | Feb 2                    | Online assignment submission date (I may need one full day to complete the report)       |
+  | I&E Study      | Feb 27 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                                    |
+  | I&E Study      | March 20 (10:00 - 12:00) | Meeting for I&E study thesis progress                                                    |
 ** Aalto Related
   | January to February          | Starting to write master thesis                             |
   | By 28 February               | Official confirmation of thesis topic                       |
