@@ -46,6 +46,8 @@
       Further more, to allow to study the impact of energy saving technique on performance, performance metrics should be incorporated into the model to make it better decision making tool to compare energy
       saving techniques.    
      3. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
+       
+     4. [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
 
 * Journal
 ** Week 1 January 
@@ -103,6 +105,7 @@
      1. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
      2. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
      3. [[http://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][SimGrid 3]]
+     4. [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
 * Development
 ** Data Provenance
 ** Data Analysis
