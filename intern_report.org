@@ -107,13 +107,12 @@
      3. [[http://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][SimGrid 3]]
 ** Week 2 January 
 **** Questions 
-     [[file:img/scenario.png][Simple network topology]] 
+     [[file:img/scenario.png]]
      
      Taking the topology shown above (taken from ECOFEN) as an example, the objective of my internship is
      to use the ECOFEN energy model shown below in SimGrid simulator because SimGrid uses flow-based modeling
      
-    [[file:img/model.png][Energy model]]
- 
+    [[file:img/model.png]] 
     - What I need to add to the above model is, the flow parameters such as bandwidth of the links, and 
       the size of traffic, then model the effect of each flow passing through a given link on the length of time it took to transfer the given traffic
       Is this a correct paraphrase of what I am expected to do in this internship? 
