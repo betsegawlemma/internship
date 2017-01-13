@@ -115,9 +115,20 @@
     [[file:img/model.png]] 
     - What I need to add to the above model is, the flow parameters such as bandwidth of the links, and 
       the size of traffic, then model the effect of each flow passing through a given link on the length of time it took to transfer the given traffic
-      Is this a correct paraphrase of what I am expected to do in this internship? 
+      Is this a correct paraphrase of what I am expected to do in this
+      internship? 
+      - MQ: It's not really adding things to the models but more
+        adapting the model, because some of the thing above are not
+        part of the SimGrid view of the platform (eg, ports, network
+        cards).
+      - MQ: I'd advise to first try to adapt the SimGrid CPU energy
+        model to the network, and see whether an instanciation of that
+        model could get to the same result than EcoFEN.
+      - MQ: Ie, try to get the same result with a brand new (but
+        simplistic) model)
     
-    - Is there an example in SimGrid which show the flow-based model used in SimGrid in action? 
+    - Is there an example in SimGrid which show the flow-based model used in SimGrid in action?
+      - MQ: have a look at http://simgrid.gforge.inria.fr/tutorials/surf-101.pdf
    
 
 **** TODO Work Planned
