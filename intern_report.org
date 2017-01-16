@@ -2,7 +2,8 @@
 ** Course Related                                                                       
 *** DONE PEV             Jan 13 (14:00-17:00)      Project evaluation 
     CLOSED: [2017-01-15 dim. 22:34]
-*** TODO Pre-internship  Jan 16                    Report submission date (I can use the paper reviews I am currently doing for this report
+*** DONE Pre-internship  Jan 16                    Report submission date (I can use the paper reviews I am currently doing for this report
+    CLOSED: [2017-01-16 lun. 20:33]
 *** TODO I&E Study       Jan 20                    Post assignment submission date                                                          
 *** TODO I&E Study       Jan 30 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                    
 *** TODO I&E Study       Feb 2                     Online assignment submission date (I may need one full day to complete the report)       
@@ -45,15 +46,50 @@
       Further more, to allow to study the impact of energy saving technique on performance, performance metrics should be incorporated into the model to make it better decision making tool to compare energy
       saving techniques.    
 *** TODO On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
-       
+    
 *** TODO [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
-*** TODO [[https://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms]]
+    
+*** DONE [[https://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms]]
+    CLOSED: [2017-01-16 lun. 20:11]
       Casanova et. al. in this study explored the design of versatile, scalable, and accurate simulation of distributed applications and platforms in the context of SimGrid simulator. 
       They first explained three basic simulator components common in most popular simulators: simulation model, platform specification and application specification. Simulation model is the component that
       realizes the simulated real-network resources (CPU, Router, Host), the simulated applications which utilize the resources and the progress of the applications. Platform specification is the mechanism
-      by which users specify the characteristics of simulated platform. Application specification is the interface which users use to specify the steps and properties of the simulated activities.
+      by which users specify the characteristics of simulated platform. Application specification is the interface which users use to specify the steps and properties of the simulated activities. 
+
+      Through out the paper the authors in general classified simulator models into two - analytical and discrete-event based models. Analytical models are preferred in the domain of large scale parallel and 
+      distributed computing due to scalablilty requirement. However, these models tend to produce less accurate result than discrete-event based models. Discrete-event based models are close to reality in capturing
+      real-world scenario, hence give more accurate results. Due to their accuracy, discrete-event models often used to evaluate analytical models. In the network domain, the term flow-based model is used to
+      refer to analytical models likewise, the term packet-level model is used to refer to discrete-event models.
+
+      In the field of large scale parallel and distributed computing, CPU is modeled by compute delay, storage by seek time and fixed data transfer rate and network by link latency and link bandwidth. 
+      However, many of the network models available are specific to one domain of distributed and parallel applications and abstract out network concepts which are irrelevant for their particular field. Unlike
+      most simulators in this field SimGrid is designed to be versatile.
+
+      SimGrid follows a layered/hierarchical approach in its internal structure. The top layer constitutes three user APIs: MSG, SMPI, and SIMDAG. Both MSG and SMPI are used to describe the simulated application
+      as concurrent processes while SIMDAG allows users to describe their simulated application as abstract task graph. The middle layer - SIMIX, implements SMPI and MSG APIs. The bottom layer-SURF is the core 
+      component which simulate the user specified activities on the simulated resources.
+
+      The authors then explained step-by-step, the challenges and corresponding solutions of designing flow-based bandwidth sharing model for TCP, which is the model adopted in SimGrid and it is Max-Min fairness 
+      bandwidth sharing model adapted to match TCP's characteristics. They next conducted multiple invalidation experiment and compared the result with GTNetS, packet-level simulator. The result demonstrated that
+      their model works very good in most scenarios but there are some cases which the model fails for those instances the authors recommend to use packet-level simulator. 
+      
+      As a final work, in order to demonstrate the versatility, accuracy and scalablilty of SimGrid, the authors described several case studies conducted in the field of parallel and distributed applications with graphs comparing the results of 
+      the experiments with ground truth. 
  
-*** TODO [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
+*** DONE [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
+    CLOSED: [2017-01-16 lun. 22:00]
+      Energy reduction is sought for economic reasons in order to decrease electricity bills and/or to reduce the emission of CO2. Power consumption in a network can be as a result of data and control planes or as a results
+      of auxilary activities such as power supply and cooling. The data plane consumes 54%, power and heat management 35% and the control plane 11%. 
+     
+      Power consumption characteristics of high-end routers looks like the following: Internal packet processing engines consume about 60%, network interfaces during transfers 13%, switching fabrics 18.5% and buffer management 8.5%. Therefore, 
+      the authors suggest that energy efficiency strategy should focus on internal efficiency for core network and interfaces and links efficiency for access networks.
+
+      The authors in this survey classified power saving techniques into three categories: re-engineering, energy adaptation and sleeping/standby.
+  
+      Re-engineering approach concerned with designing energy efficient network equipment. Dynamic adaptation deals with adapting the capacity of packet processing engines and network interfaces to actual match 
+      traffic load. This can be achieved by dynamically adjusting the voltage and frequency of the network equipment or by switching off some internal components of the equipment at idle time. The latter is refered
+      to as idle logic. Sleep/standby mode, which requires switching unused equipment/devices to lower power mode and wake them up when network activity resumes. However, due to the network connectivity requirements 
+      of network equipment, this approach is difficult to use in real network scenario. Techniques such as proxying is proposed to aleviate this challenge. 
 
 * Journal
 ** Week 1 January 
@@ -142,13 +178,20 @@
 **** Work Planned
      - Read the following papers
 ***** TODO [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
-***** TODO Study how the flow-model is implemented in SimGrid
-***** TODO [[https://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms]]
-***** TODO [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
+***** DONE Study how the flow-model is implemented in SimGrid
+      CLOSED: [2017-01-16 lun. 22:02]
+***** DONE [[https://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms]]
+      CLOSED: [2017-01-16 lun. 22:01]
+***** DONE [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
+      CLOSED: [2017-01-16 lun. 22:02]
 ** Week 3 January
 **** Questions
+     Methodological question: When reviewing papers, is there any reason to summarize the whole paper unless I am working to improve the work of the authors? Or is it not enough to just extract
+     the information that I need for my work?
 **** Work Planned
+***** Study SimGrid's energy model for CPU 
 * Development
 ** Data Provenance
 ** Data Analysis
 * Conclusion
+ 
