@@ -115,7 +115,7 @@
 ** Week 2 January 
     - Bibliography reviewed
 **** Questions 
-     [[file:img/scenario.png]]spacemacs convert tables into list
+     [[file:img/scenario.png]]
      
      Taking the topology shown above (taken from ECOFEN) as an example, the objective of my internship is
      to use the ECOFEN energy model shown below in SimGrid simulator because SimGrid uses flow-based modeling
