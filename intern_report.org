@@ -81,15 +81,15 @@
       Energy reduction is sought for economic reasons in order to decrease electricity bills and/or to reduce the emission of CO2. Power consumption in a network can be as a result of data and control planes or as a results
       of auxilary activities such as power supply and cooling. The data plane consumes 54%, power and heat management 35% and the control plane 11%. 
      
-      Power consumption characteristics of high-end routers looks like the following: Internal packet processing engines consume about 60%, network interfaces during transfers 13%, switching fabrics 18.5% and buffer management 8.5%. Therefore, 
-      the authors suggest that energy efficiency strategy should focus on internal efficiency for core network and interfaces and links efficiency for access networks.
+      Power consumption characteristics of high-end routers looks like the following: Internal packet processing engines consume about 60%, network interfaces during transfers 13%, switching fabrics 18.5% and buffer management 8.5%.
+      Accordingly, the authors suggest that energy efficiency strategy should focus on internal efficiency for core network and interfaces and links efficiency for access networks.
 
       The authors in this survey classified power saving techniques into three categories: re-engineering, energy adaptation and sleeping/standby.
   
-      Re-engineering approach concerned with designing energy efficient network equipment. Dynamic adaptation deals with adapting the capacity of packet processing engines and network interfaces to actual match 
-      traffic load. This can be achieved by dynamically adjusting the voltage and frequency of the network equipment or by switching off some internal components of the equipment at idle time. The latter is refered
+      Re-engineering approach concerned with designing energy efficient network equipment. Dynamic adaptation deals with adapting the capacity of packet processing engines and network interfaces to match 
+      the actual traffic load. This can be achieved by dynamically adjusting the voltage and frequency of the network equipment or by switching off some internal components of the equipment at idle time. The latter is referred
       to as idle logic. Sleep/standby mode, which requires switching unused equipment/devices to lower power mode and wake them up when network activity resumes. However, due to the network connectivity requirements 
-      of network equipment, this approach is difficult to use in real network scenario. Techniques such as proxying is proposed to aleviate this challenge. 
+      of network equipment, this approach is difficult to use in real network scenario. Techniques such as proxying is proposed to alleviate this challenge. 
 
 * Journal
 ** Week 1 January 
