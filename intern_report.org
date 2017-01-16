@@ -1,33 +1,32 @@
 * Important dates 
-** Course Related
-  | Course         | Date                     | Description                                                                              |
-  |----------------+--------------------------+------------------------------------------------------------------------------------------|
-  | PEV            | Jan 13 (14:00-17:00)     | Project evaluation                                                                       |
-  | Pre-internship | Jan 16                   | Report submission date (I can use the paper reviews I am currently doing for this report |
-  | I&E Study      | Jan 20                   | Post assignment submission date                                                          |
-  | I&E Study      | Jan 30 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                                    |
-  | I&E Study      | Feb 2                    | Online assignment submission date (I may need one full day to complete the report)       |
-  | I&E Study      | Feb 27 (10:00 - 12:00)   | Meeting for I&E study thesis progress                                                    |
-  | I&E Study      | March 20 (10:00 - 12:00) | Meeting for I&E study thesis progress                                                    |
+** Course Related                                                                       
+*** DONE PEV             Jan 13 (14:00-17:00)      Project evaluation 
+    CLOSED: [2017-01-15 dim. 22:34]
+*** TODO Pre-internship  Jan 16                    Report submission date (I can use the paper reviews I am currently doing for this report
+*** TODO I&E Study       Jan 20                    Post assignment submission date                                                          
+*** TODO I&E Study       Jan 30 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                    
+*** TODO I&E Study       Feb 2                     Online assignment submission date (I may need one full day to complete the report)       
+*** TODO I&E Study       Feb 27 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                                                                        
+*** TODO I&E Study       March 20 (10:00 - 12:00)  Meeting for I&E study thesis progress
 ** Aalto Related
    [[https://into.aalto.fi/display/eneitictinno/Entry+2015-2016][Internship process]]
-  | January to February          | Starting to write master thesis                        |
-  | By 28 February               | Official confirmation of thesis topic                  |
-  | End of May/Beginning of June | Thesis presentation and Maturity test/Press release    |
-  | June                         | Enroll for Autumn semester if graduating after July 31 |
-  | End of June                  | Submit the thesis                                      |
-** UR1 Related
-  | By June 26   | The thesis manuscript must be ready |
-  | By July 7    | Thesis defense                      |
-  | July 10 - 14 | Jury                                |
+*** TODO January to February           Starting to write master thesis                                          
+*** TODO By 28 February                Official confirmation of thesis topic
+*** TODO End of May/Beginning of June  Thesis presentation and Maturity test/Press release    
+*** TODO June                          Enroll for Autumn semester if graduating after July 31 
+*** TODO End of June                   Submit the thesis                                      
+** UR1 Related 
+*** By June 26    The thesis manuscript must be ready
+*** By July 7     Thesis defense                      
+*** July 10 - 14  Jury                               
 * Introduction
 * Findings
 ** Introduction
 ** Related Work
 ** Contribution
 ** Bibliography 
-     1. [[http://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][SimGrid 3]]
-     2. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
+*** DONE ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
+    CLOSED: [2017-01-15 dim. 22:48]
      
       Anne-Cecile et. al. proposed a novel energy cost model and simulator for large scale wired networks. This model first estimates the power consumption of each equipment involved in the network.
       A network equipment such as router and NIC consumes energy during boot, during shutdown and during the working period between these two processes, the later is referred to as E_work and this is
@@ -45,9 +44,16 @@
       In addition, though the authors simulated the energy saving techniques such as ON/OFF technique in their experiments, their proposed model did not include energy saving technique as one of its parameter. 
       Further more, to allow to study the impact of energy saving technique on performance, performance metrics should be incorporated into the model to make it better decision making tool to compare energy
       saving techniques.    
-     3. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
+*** TODO On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
        
-     4. [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
+*** TODO [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
+*** TODO [[https://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms]]
+      Casanova et. al. in this study explored the design of versatile, scalable, and accurate simulation of distributed applications and platforms in the context of SimGrid simulator. 
+      They first explained three basic simulator components common in most popular simulators: simulation model, platform specification and application specification. Simulation model is the component that
+      realizes the simulated real-network resources (CPU, Router, Host), the simulated applications which utilize the resources and the progress of the applications. Platform specification is the mechanism
+      by which users specify the characteristics of simulated platform. Application specification is the interface which users use to specify the steps and properties of the simulated activities.
+ 
+*** TODO [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
 
 * Journal
 ** Week 1 January 
@@ -95,19 +101,21 @@
    - FLOPS/s is this notation correct in the slide shown in [[http://simgrid.gforge.inria.fr/tutorials/simgrid-energy-101.pdf][here]]? (floating point operations per second per second?) (compare slide 6/7/8)
    - Is this value <prop id="watt_per_state" value="100.0:120.0:200.0, 93.0:110.0:170.0, 90.0:105.0:150.0" /> found in examples/platforms/energy_platform.xml correct?
 **** TODO Work Planned 
-   - Continue exploring spacemacs [[https://www.youtube.com/watch?v=ZFV5EqpZ6_s&list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE][Spacemacs ABC tutorial]]
-   - Continue exploring Org-mode
+***** TODO Continue exploring spacemacs [[https://www.youtube.com/watch?v=ZFV5EqpZ6_s&list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE][Spacemacs ABC tutorial]]
+***** TODO Continue exploring Org-mode
      1. [[http://orgmode.org/worg/org-tutorials/org4beginners.html][Org Mode for Beginners]]
      2. [[https://github.com/fniessen/refcard-org-mode/blob/master/README.org][Org mode Reference card]]
-     3. [[http://doc.norang.ca/org-mode.html][Org mode tutorial]]
+     3. [[http://doc.norang.ca/org-mode.html][Org mode tutorial]] 
      4. [[http://sachachua.com/blog/2014/01/tips-learning-org-mode-emacs/][Tips for learning org mode]]
-   - Read the following articles
-     1. ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
-     2. On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
-     3. [[http://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][SimGrid 3]]
+***** Read the following articles
+****** DONE ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
+       CLOSED: [2017-01-15 dim. 22:39]
+****** TODO On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
+****** TODO [[http://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][SimGrid 3]]
 ** Week 2 January 
+    - Bibliography reviewed
 **** Questions 
-     [[file:img/scenario.png]]
+     [[file:img/scenario.png]]spacemacs convert tables into list
      
      Taking the topology shown above (taken from ECOFEN) as an example, the objective of my internship is
      to use the ECOFEN energy model shown below in SimGrid simulator because SimGrid uses flow-based modeling
@@ -131,10 +139,15 @@
       - MQ: have a look at http://simgrid.gforge.inria.fr/tutorials/surf-101.pdf
    
 
-**** TODO Work Planned
+**** Work Planned
      - Read the following papers
-       1. [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
-       2. Study how the flow-model is implemented in SimGrid
+***** TODO [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
+***** TODO Study how the flow-model is implemented in SimGrid
+***** TODO [[https://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms]]
+***** TODO [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
+** Week 3 January
+**** Questions
+**** Work Planned
 * Development
 ** Data Provenance
 ** Data Analysis
