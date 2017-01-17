@@ -1,25 +1,3 @@
-* Important dates 
-** Course Related                                                                       
-*** DONE PEV             Jan 13 (14:00-17:00)      Project evaluation 
-    CLOSED: [2017-01-15 dim. 22:34]
-*** DONE Pre-internship  Jan 16                    Report submission date (I can use the paper reviews I am currently doing for this report
-    CLOSED: [2017-01-16 lun. 20:33]
-*** TODO I&E Study       Jan 20                    Post assignment submission date                                                          
-*** TODO I&E Study       Jan 30 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                    
-*** TODO I&E Study       Feb 2                     Online assignment submission date (I may need one full day to complete the report)       
-*** TODO I&E Study       Feb 27 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                                                                        
-*** TODO I&E Study       March 20 (10:00 - 12:00)  Meeting for I&E study thesis progress
-** Aalto Related
-   [[https://into.aalto.fi/display/eneitictinno/Entry+2015-2016][Internship process]]
-*** TODO January to February           Starting to write master thesis                                          
-*** TODO By 28 February                Official confirmation of thesis topic
-*** TODO End of May/Beginning of June  Thesis presentation and Maturity test/Press release    
-*** TODO June                          Enroll for Autumn semester if graduating after July 31 
-*** TODO End of June                   Submit the thesis                                      
-** UR1 Related 
-*** By June 26    The thesis manuscript must be ready
-*** By July 7     Thesis defense                      
-*** July 10 - 14  Jury                               
 * Introduction
 * Findings
 ** Introduction
@@ -46,7 +24,13 @@
       Further more, to allow to study the impact of energy saving technique on performance, performance metrics should be incorporated into the model to make it better decision making tool to compare energy
       saving techniques.    
 *** TODO On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
-    
+    Energy saving techniques can generally be put into two categories, rate adaptation and sleeping. Rate adaptation is a technique used to adapt the network rate to the actual traffic rate. 
+    Adaptive Link Rate (ALR) is a typical implementation of this technique. Sleeping technique on the other hand, allows a network device to send data as fast as possible and then enter 
+    low power mode between transfers. A typical implementation of this technique is Low Power Idle (LPI). The sleep duration can further be improved by packet coalescing in order to save more 
+    energy. 
+
+    ALR uses a buffer occupancy thresh hold between rates and this might lead to a problem known as oscillation condition as switching between rates costs time and energy. Similarly, in the LPI case,
+    entering and leaving low power mode also costs time and energy.   
 *** TODO [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
     
 *** DONE [[https://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms]]
@@ -73,8 +57,8 @@
       bandwidth sharing model adapted to match TCP's characteristics. They next conducted multiple invalidation experiment and compared the result with GTNetS, packet-level simulator. The result demonstrated that
       their model works very good in most scenarios but there are some cases which the model fails for those instances the authors recommend to use packet-level simulator. 
       
-      As a final work, in order to demonstrate the versatility, accuracy and scalablilty of SimGrid, the authors described several case studies conducted in the field of parallel and distributed applications with graphs comparing the results of 
-      the experiments with ground truth. 
+      As a final work, in order to demonstrate the versatility, accuracy and scalablilty of SimGrid, the authors described several case studies conducted in the field of parallel and distributed applications with 
+      graphs comparing the results of the experiments with ground truth and other simulators. 
  
 *** DONE [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
     CLOSED: [2017-01-16 lun. 22:00]
@@ -92,6 +76,28 @@
       of network equipment, this approach is difficult to use in real network scenario. Techniques such as proxying is proposed to alleviate this challenge. 
 
 * Journal
+** Important dates 
+*** Course Related                                                                       
+**** DONE PEV             Jan 13 (14:00-17:00)      Project evaluation 
+    CLOSED: [2017-01-15 dim. 22:34]
+**** DONE Pre-internship  Jan 16                    Report submission date (I can use the paper reviews I am currently doing for this report
+    CLOSED: [2017-01-16 lun. 20:33]
+**** TODO I&E Study       Jan 20                    Post assignment submission date                                                          
+**** TODO I&E Study       Jan 30 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                    
+**** TODO I&E Study       Feb 2                     Online assignment submission date (I may need one full day to complete the report)       
+**** TODO I&E Study       Feb 27 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                                                                        
+**** TODO I&E Study       March 20 (10:00 - 12:00)  Meeting for I&E study thesis progress
+*** Aalto Related
+    [[https://into.aalto.fi/display/eneitictinno/Entry+2015-2016][Internship process]]
+**** TODO January to February           Starting to write master thesis                                          
+**** TODO By 28 February                Official confirmation of thesis topic
+**** TODO End of May/Beginning of June  Thesis presentation and Maturity test/Press release    
+**** TODO June                          Enroll for Autumn semester if graduating after July 31 
+**** TODO End of June                   Submit the jthesis                                      
+*** UR1 Related 
+**** By June 26    The thesis manuscript must be ready
+**** By July 7     Thesis defense                      
+**** July 10 - 14  Jury                
 ** Week 1 January 
    - Emacs installed and tried it, but found it difficult to get myself familiarize with it
    - Tried Spacemacs and noticed that it has VIM mode and found it quite easier to use, therefore, I have decided to use it
@@ -194,4 +200,3 @@
 ** Data Provenance
 ** Data Analysis
 * Conclusion
- 
