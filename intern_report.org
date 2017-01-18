@@ -233,7 +233,7 @@
 
     - Is there recommended level of detail that we should consider while modeling large scale networks (packet processing engines, ports, connections, chassis, line cards, switches, routers)
     - If low level details such as ports are not considered, how do we study energy saving techniques using SimGrid, such as rate adaptation and switching off unused ports for energy saving
-    - If a switch has 24 ports with 1Gbs maximum capacity each, is it reasonable to model the 24 ports as the bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and 
+    - If a switch has 24 ports with 1Gbps maximum capacity each, is it reasonable to model the 24 ports as the bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and 
       if half of the ports are turned off then the capacity of the switch is now 12Gbps?
 **** Work Planned
 ***** DONE Study SimGrid's energy model for CPU 
