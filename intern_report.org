@@ -75,15 +75,22 @@
       to as idle logic. Sleep/standby mode, which requires switching unused equipment/devices to lower power mode and wake them up when network activity resumes. However, due to the network connectivity requirements 
       of network equipment, this approach is difficult to use in real network scenario. Techniques such as proxying is proposed to alleviate this challenge. 
 
-*** TODO A Power Benchmarking Framework for Network Devices 
+*** DONE A Power Benchmarking Framework for Network Devices 
+    CLOSED: [2017-01-18 mer. 20:06]
     The purpose of this paper is to design power consumption model for a network by using a standard power consumption benchmark. The authors first
     developed the benchmark, which allows to compare power consumption of different network equipment. They devised a metric called Energy Proportionality Index (EPI). 
     EPI tells how a network equipment energy consumption pattern is different from the ideal proportional pattern. The ideal proportional energy consumption pattern
-    specifies that the energy consumption of an equipment should directly correspond to the equipment load.
+    specifies that the energy consumption of an equipment should directly correspond to the equipment traffic load.
     The amount of energy consumed by a network switch increases linearly as the number of line-cards and active ports increases. 
     Packet size does not have much influence on the energy consumption of a switch for a fixed traffic throughput.
     The maximum power rated by the manufacturer can deviate upto 70% from the actual power consumption
     The actual power consumed by a device depend largely on the device configuration (number and status of ports) and traffic load
+
+    For the benchmarking process the authors used equipment from three different vendors and first measured the idle power consumption of the equipment by switching off all the ports,
+    second they measured the maximum power consumption of the device by applying the maximum traffic load that the device is designed to handle (port bandwidth * (# of ports)).  
+    
+    The authors concluded that linear model can capture the total power consumption of switches/routers
+*** TODO Energy Proportionality of an Enterprise Network
    
 * Journal
 ** Important dates 
@@ -126,6 +133,7 @@
      4. [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] 
    - Refreshed my git knowledge watching [[https://www.youtube.com/watch?v=Y9XZQO1n_7c][this]] video 
    - Important Git commands and concepts
+   #+Begin_src sh
      1. git init
      2. git config --global user.email "email address"
      3. git config --global user.name "user name" 
@@ -144,6 +152,7 @@
      16. git pull origin
      17. git push origin master/branch_name
      18. adding .gitignore file
+   #+end_src
    - Created Git repository named "internship" to store all outputs of my internship
    - Information about using git with spacemacs is found [[https://alxndr.github.io/blog/2015/06/20/getting-started-with-Spacemacs.html][here]]
    - Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin]] 
@@ -214,15 +223,34 @@
 
     - where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured power consumption line to the slope of the ideal proportional line as it is shown [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
     - idle_equipment is the power consumed while the equipment is idle
-    - P_equipment_atLoad(t) is the instantaneous power consumed by the equipment at a given traffic load found from the ideal proportional line
+    - P_equipment_atLoad(t) is the ideal instantaneous power consumed by the equipment at a given traffic load
     - The EPI value for network equipment is available from the benchmark study referenced. For example edge LAN switch has ~0.25, core switch 0.15, and core router 0.20
     - The load of a particular equipment at t for a given network can be found from the flow-based bandwidth sharing model used in SimGrid
-    - The total energy consumption can be computed by integrating the power consumed by individual device during the transmission time
-    - The limitation of this model is that the EPI values might change as technologies change.
+    - The total energy consumption can be computed by integrating the power consumed by individual device during traffic transmission time
     - The required parameters for this model are: equipment type(core/edge switch or router), total bandwidth of the equipment, bandwidth and latency of the links (for bandwidth sharing model)
+    - The limitation of this model is that the EPI values might change as technologies change.
+    - Is there recommended level of detail for large scale network simulation (ports, connections, chassis, line cards, switches, routers)
+    - If low level details such as ports are not considered, how do we study energy saving techniques using SimGrid, such as rate adaptation and switching off unused ports for energy saving
+    - If a switch has 24 ports with 1Gbs maximum capacity each, is it reasonable to model the 24 ports as the bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and 
+      if half of the ports are turned off then the capacity of the switch is now 12Gbps?
 **** Work Planned
-***** Study SimGrid's energy model for CPU 
+***** DONE Study SimGrid's energy model for CPU 
+      CLOSED: [2017-01-18 mer. 17:42]
 * Development
+   - SimGrid HostEnergy plugin
+     - SURF: 
+       - Uses two files energy.hpp and energy.cpp
+       - energy.hpp specifies/declares methods and variables and energy.cpp implements them
+       - initWattsRangeList() is one of the methods specified in energy.cpp/hpp and extracts watts_per_state values listed in energy_platform.xml file and puts them in array
+       - getCurrentWattsValue(double cpuLoad) estimmate the current power consumption of CPU by applying the CPU power consumption model using cpuLoad as a parameter
+       - update() method computes the power consumed for a duration of time, that is the energy used
+    - MSG:
+       - There are several methods related to host such as turning host on/off, getting the pstate, speed, number of cores ... and also to know the host status whether it is on or off
+    - Users can write their simulation using the MSG API and the platform file
+
+ 
+   - 
 ** Data Provenance
+
 ** Data Analysis
 * Conclusion
