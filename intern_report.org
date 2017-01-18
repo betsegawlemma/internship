@@ -76,6 +76,10 @@
       of network equipment, this approach is difficult to use in real network scenario. Techniques such as proxying is proposed to alleviate this challenge. 
 
 *** TODO A Power Benchmarking Framework for Network Devices 
+    The purpose of this paper is to design power consumption model for a network by using a standard power consumption benchmark. The authors first
+    developed the benchmark, which allows to compare power consumption of different network equipment. They devised a metric called Energy Proportionality Index (EPI). 
+    EPI tells how a network equipment energy consumption pattern is different from the ideal proportional pattern. The ideal proportional energy consumption pattern
+    specifies that the energy consumption of an equipment should directly correspond to the equipment load.
     The amount of energy consumed by a network switch increases linearly as the number of line-cards and active ports increases. 
     Packet size does not have much influence on the energy consumption of a switch for a fixed traffic throughput.
     The maximum power rated by the manufacturer can deviate upto 70% from the actual power consumption
