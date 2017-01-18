@@ -204,11 +204,16 @@
     - Proposed Model:
     #+begin_src latex
      
-       $P_equipment$(t) = $idle_equipment$ + $EPI_equipment$ * $load_equipment$(t)
+       P_equipment(t) = idle_equipment + EPI_equipment * load_equipment(t)
        
-       where, $EPI_equipment$ is energy proportionality index. Which is computed by dividing the slope of the ideal proportional line to the measured line as shown in [[benchmark]]
-    
     #+end_src
+
+       where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured line to the slope of the ideal proportional line to as shown in [[benchmark]]
+    - The EPI value for network equipment is available from the benchmark study referenced. For example edge LAN switch has ~25, core switch 15.4, and core router 19.8
+    - The load of a particular equipment at t for a given network can be found from the flow-based bandwidth sharing model used in SimGrid
+    - The total energy consumption can be computed by integrating the power consumed by individual device during the transmission time
+    - The limitation of this model is that the EPI values might change as technologies change.
+    - The required parameters for this model are: equipment type(core/edge switch or router), total bandwidth of the equipment, bandwidth and latency of the links (for bandwidth sharing model)
 **** Work Planned
 ***** Study SimGrid's energy model for CPU 
 * Development
