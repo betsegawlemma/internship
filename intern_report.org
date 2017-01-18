@@ -238,19 +238,17 @@
       CLOSED: [2017-01-18 mer. 17:42]
 * Development
    - SimGrid HostEnergy plugin
-     - SURF: 
-       - Uses two files energy.hpp and energy.cpp
-       - energy.hpp specifies/declares methods and variables and energy.cpp implements them
-       - initWattsRangeList() is one of the methods specified in energy.cpp/hpp and extracts watts_per_state values listed in energy_platform.xml file and puts them in array
-       - getCurrentWattsValue(double cpuLoad) estimmate the current power consumption of CPU by applying the CPU power consumption model using cpuLoad as a parameter
-       - update() method computes the power consumed for a duration of time, that is the energy used
-    - MSG:
-       - There are several methods related to host such as turning host on/off, getting the pstate, speed, number of cores ... and also to know the host status whether it is on or off
-    - Users can write their simulation using the MSG API and the platform file
-
- 
-   - 
+   - SURF: 
+     - Uses two files energy.hpp and energy.cpp
+     - energy.hpp specifies/declares methods and variables and energy.cpp implements them
+     - initWattsRangeList() is one of the methods specified in energy.cpp/hpp and extracts watts_per_state values listed in energy_platform.xml file and puts them in array
+     - getCurrentWattsValue(double cpuLoad) estimmate the current power consumption of CPU by applying the CPU power consumption model using cpuLoad as a parameter
+     - update() method computes the power consumed for a duration of time, that is the energy used
+   - MSG:
+     - Users can use methods available in msg_task.cpp and msg_host.cpp 
+     - msg_host.cpp contains methods related to host such as turning host on/off, getting the pstate, speed, number of cores ... and also to know the host status whether it is on or off
+     - msg_task.cpp contains methods related to taks such as create/destroying tasks and determining the amount work done
+     - Users can write their simulation using the MSG APSs in these files and and supply the platform file to run the simulation
 ** Data Provenance
-
 ** Data Analysis
 * Conclusion
