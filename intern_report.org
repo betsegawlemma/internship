@@ -81,7 +81,6 @@
     The maximum power rated by the manufacturer can deviate upto 70% from the actual power consumption
     The actual power consumed by a device depend largely on the device configuration (number and status of ports) and traffic load
    
-    
 * Journal
 ** Important dates 
 *** Course Related                                                                       
@@ -199,11 +198,13 @@
       CLOSED: [2017-01-16 lun. 22:02]
 ** Week 3 January
 **** Questions
-     Methodological question: When reviewing papers, is there any reason to summarize the whole paper unless I am working to extend/improve the work of the authors? Or is it not enough to just extract
+    - Methodological question: When reviewing papers, is there any reason to summarize the whole paper unless I am working to extend/improve the work of the authors? Or is it not enough to just extract
      the information that I need for my work?
-     SimGrid: Are there router/switch concepts in SimGrid?
-     Proposed Model:
+    - SimGrid: Are there router/switch concepts in SimGrid?
+    - Proposed Model:
+     #+BEGIN_LaTeX
      \[P_equipment(t) = idle_equipment + EPI_equipment * load_equipment(t)\]
+     #+END_LaTeX
 **** Work Planned
 ***** Study SimGrid's energy model for CPU 
 * Development
