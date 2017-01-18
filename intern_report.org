@@ -202,9 +202,11 @@
      the information that I need for my work?
     - SimGrid: Are there router/switch concepts in SimGrid?
     - Proposed Model:
+    #+begin_src latex
      \[
         P_equipment(t) = idle_equipment + EPI_equipment * load_equipment(t)
      \]
+    #+end_src
 **** Work Planned
 ***** Study SimGrid's energy model for CPU 
 * Development
