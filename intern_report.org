@@ -204,11 +204,13 @@
     - Proposed Model:
     #+begin_src latex
      
-       P_equipment(t) = idle_equipment + EPI_equipment * load_equipment(t)
+       P_equipment(t) = idle_equipment + EPI_equipment * P_equipment_atLoad(t)
        
     #+end_src
 
-    where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured line to the slope of the ideal proportional line to as shown in [[http://sysnet.ucsd.edu/~pmahadevan/publications/FinalVersion_Networking2009.pdf][EPI]]  
+    - where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured power consumption line to the slope of the ideal proportional line as it is shown [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
+    - idle_equipment is the power consumed while the equipment is idle
+    - P_equipment_atLoad(t) is the instantaneous power consumed by the equipment at a given traffic load found from the ideal proportional line
     - The EPI value for network equipment is available from the benchmark study referenced. For example edge LAN switch has ~0.25, core switch 0.15, and core router 0.20
     - The load of a particular equipment at t for a given network can be found from the flow-based bandwidth sharing model used in SimGrid
     - The total energy consumption can be computed by integrating the power consumed by individual device during the transmission time
