@@ -75,7 +75,7 @@
       to as idle logic. Sleep/standby mode, which requires switching unused equipment/devices to lower power mode and wake them up when network activity resumes. However, due to the network connectivity requirements 
       of network equipment, this approach is difficult to use in real network scenario. Techniques such as proxying is proposed to alleviate this challenge. 
 
-*** TODO A Power Benchmarking Framework for Network Devices
+*** TODO A Power Benchmarking Framework for Network Devices <<benchmark>>
     The amount of energy consumed by a network switch increases linearly as the number of line-cards and active ports increases. 
     Packet size does not have much influence on the energy consumption of a switch for a fixed traffic throughput.
     The maximum power rated by the manufacturer can deviate upto 70% from the actual power consumption
@@ -203,9 +203,11 @@
     - SimGrid: Are there router/switch concepts in SimGrid?
     - Proposed Model:
     #+begin_src latex
-     \[
-        P_equipment(t) = idle_equipment + EPI_equipment * load_equipment(t)
-     \]
+     
+       $P_equipment$(t) = $idle_equipment$ + $EPI_equipment$ * $load_equipment$(t)
+       
+       where, $EPI_equipment$ is energy proportionality index. Which is computed by dividing the slope of the ideal proportional line to the measured line as shown in [[benchmark]]
+    
     #+end_src
 **** Work Planned
 ***** Study SimGrid's energy model for CPU 
