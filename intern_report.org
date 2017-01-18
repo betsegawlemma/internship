@@ -214,6 +214,7 @@
     - Methodological question: When reviewing papers, is there any reason to summarize the whole paper unless I am working to extend/improve the work of the authors? Or is it not enough to just extract
      the information that I need for my work?
     - SimGrid: Are there router/switch concepts in SimGrid?
+   
     - Proposed Model:
     #+begin_src latex
      
@@ -229,7 +230,8 @@
     - The total energy consumption can be computed by integrating the power consumed by individual device during traffic transmission time
     - The required parameters for this model are: equipment type(core/edge switch or router), total bandwidth of the equipment, bandwidth and latency of the links (for bandwidth sharing model)
     - The limitation of this model is that the EPI values might change as technologies change.
-    - Is there recommended level of detail for large scale network simulation (ports, connections, chassis, line cards, switches, routers)
+
+    - Is there recommended level of detail that we should consider while modeling large scale networks (packet processing engines, ports, connections, chassis, line cards, switches, routers)
     - If low level details such as ports are not considered, how do we study energy saving techniques using SimGrid, such as rate adaptation and switching off unused ports for energy saving
     - If a switch has 24 ports with 1Gbs maximum capacity each, is it reasonable to model the 24 ports as the bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and 
       if half of the ports are turned off then the capacity of the switch is now 12Gbps?
