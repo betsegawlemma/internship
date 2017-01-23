@@ -263,6 +263,7 @@
      - To estimate the power consumption of a give cluster, we multiply it by the size of the cluster
      - To estimate the power consumption of the whole network in a given large-scale network, we add to this sum the total idle power consumption of involved switches
      - This model is coarse-grain model, it does not consider ports
+     - This model does not include power conditioning and cooling components
      - Questions
        - what do you think about this model?
        - Do we need to modify the meta-tags of SimGrid in order to able to specify idle/busy watt values and the corresponding workloads?
