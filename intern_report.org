@@ -94,11 +94,12 @@
 *** TODO Understanding and Abstracting Total Data Center Power
 *** TODO [[http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7279063][Data Center Energy Consumption Modeling: A Survey]] 
     - This paper gives survey of more than 200 energy consumption models. The survey covers component based models (for CPU, memory, storage), server level models and data center level models. 
-*** TODO http://vyatkin.org/publ/2015/Xiaojing-ETFA-2015-V3.pdf
 *** TODO A Taxonomy and Survey of Energy-Efficient Data Centers and Cloud Computing Systems
 *** TODO Towards Joint Optimization Over ICT and Cooling Systems in Data Centre: A Survey
 *** TODO Power Consumption Estimation Models for Processors, Virtual Machines, and Servers
 *** TODO Data Center energy consumption simulator from the servers to their cooling system
+*** TODO [[http://ieeexplore.ieee.org/document/5683561/#full-text-section][GreenCloud: A Packet-Level Simulator of Energy-Aware Cloud Computing Data Centers]]
+*** TODO [[https://research.google.com/pubs/pub32980.html][Power Provisioning for a Warehouse-sized Computer]]
 * Journal
 ** Important dates 
 *** Course Related                                                                       
