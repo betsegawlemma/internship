@@ -224,11 +224,11 @@
     - SimGrid: Are there router/switch concepts in SimGrid?
    
     - Proposed Model:
-    #+BEGIN_LaTex
+    #+BEGIN_SRC LaTex
      
        P_equipment(t) = idle_equipment + EPI_equipment * P_equipment_atLoad(t)
        
-    #+END_LaTex
+    #+END_SRC
 
     - where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured power consumption line to the slope of the ideal proportional line as it is shown [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
     - idle_equipment is the power consumed while the equipment is idle
@@ -256,9 +256,9 @@
          switches can be incorporated in SimGrid using the <link> tags which represent switches
      - Having the above conditions, a linear models seems to fit into SimGrid's abstraction. Accordingly, I propose the following linear model for SimGrid, which is first proposed by [[https://research.google.com/pubs/pub32980.html][Fan et al's]] but the original
        model does not account for network energy consumption
-         #+BEGIN_LaTex
-               P_srv = P_idle + (P_busy - P_idle) * U
-         #+END_LaTex
+         #+BEGIN_src LaTex
+             P_srv = P_idle + (P_busy - P_idle) * U
+         #+END_src
      - This linear model is what is proposed by Fan et al
      - To estimate the power consumption of a give cluster, we multiply it by the size of the cluster
      - To estimate the power consumption of the whole network in a given large-scale network, we add to this sum the total idle power consumption of involved switches
