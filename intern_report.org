@@ -252,8 +252,8 @@
        - Power consumption of a group of servers can be modeled reasonably well with [[http://www.sciencedirect.com/science/article/pii/S1383762113000313#b0170][linear relationship]] between CPU utilization and power consumption
        - SimGrid uses meta-tags such as <cluster>, <cabinet> and <peer> to instantiate a data center components
        - SimGrid uses links to represent switches 
-       - In a data center the power consumption of network equipment is about [[https://research.google.com/pubs/pub32980.html][2%]] to [[http://ieeexplore.ieee.org/document/5072138/][15%]], therefore it can be safely ignored. However, I think at least the idle power consumption of 
-         switches can be incorporated in SimGrid using the <link> tags which represent switches
+       - In a given data center, the power consumption of network equipment is about [[https://research.google.com/pubs/pub32980.html][2%]] to [[http://ieeexplore.ieee.org/document/5072138/][15%]], 
+         therefore it can be safely ignored. However, I think at least the idle power consumption of switches can be incorporated in SimGrid using the <link> tags that represent switches
      - Having the above conditions, a linear models seems to fit into SimGrid's abstraction. Accordingly, I propose the following linear model for SimGrid, which is first proposed by [[https://research.google.com/pubs/pub32980.html][Fan et al's]] but the original
        model does not account for network energy consumption
          #+BEGIN_src LaTex
@@ -269,7 +269,7 @@
        - Do we also need to modify the <link> tag in order to able to specify the idle power consumption of switches?
 **** Work Planned
 ***** Propose power consumption model for large-scale networks in the context of SimGrid
-***** Start implementing the model on SimGrid, if the proposed model is acknowledged 
+***** If the proposed model is acknowledged, start implementing the model for SimGrid 
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
