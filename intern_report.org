@@ -91,7 +91,14 @@
     
     The authors concluded that linear model can capture the total power consumption of switches/routers
 *** TODO Energy Proportionality of an Enterprise Network
-   
+*** TODO Understanding and Abstracting Total Data Center Power
+*** TODO [[http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7279063][Data Center Energy Consumption Modeling: A Survey]] 
+    - This paper gives survey of more than 200 energy consumption models. The survey covers component based models (for CPU, memory, storage), server level models and data center level models. 
+*** TODO http://vyatkin.org/publ/2015/Xiaojing-ETFA-2015-V3.pdf
+*** TODO A Taxonomy and Survey of Energy-Efficient Data Centers and Cloud Computing Systems
+*** TODO Towards Joint Optimization Over ICT and Cooling Systems in Data Centre: A Survey
+*** TODO Power Consumption Estimation Models for Processors, Virtual Machines, and Servers
+*** TODO Data Center energy consumption simulator from the servers to their cooling system
 * Journal
 ** Important dates 
 *** Course Related                                                                       
@@ -99,7 +106,8 @@
     CLOSED: [2017-01-15 dim. 22:34]
 **** DONE Pre-internship  Jan 16                    Report submission date (I can use the paper reviews I am currently doing for this report
     CLOSED: [2017-01-16 lun. 20:33]
-**** TODO I&E Study       Jan 20                    Post assignment submission date                                                          
+**** DONE I&E Study       Jan 20                    Post assignment submission date                                                          
+     CLOSED: [2017-01-23 lun. 10:07]
 **** TODO I&E Study       Jan 30 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                    
 **** TODO I&E Study       Feb 2                     Online assignment submission date (I may need one full day to complete the report)       
 **** TODO I&E Study       Feb 27 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                                                                        
@@ -216,11 +224,11 @@
     - SimGrid: Are there router/switch concepts in SimGrid?
    
     - Proposed Model:
-    #+begin_src latex
+    #+BEGIN_LaTex
      
        P_equipment(t) = idle_equipment + EPI_equipment * P_equipment_atLoad(t)
        
-    #+end_src
+    #+END_LaTex
 
     - where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured power consumption line to the slope of the ideal proportional line as it is shown [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
     - idle_equipment is the power consumed while the equipment is idle
@@ -238,18 +246,42 @@
 **** Work Planned
 ***** DONE Study SimGrid's energy model for CPU 
       CLOSED: [2017-01-18 mer. 17:42]
+** Week 4 January
+**** Questions
+     - Conditions for proposing power consumption modeling
+       - Power consumption of a group of servers can be modeled reasonably well with [[http://www.sciencedirect.com/science/article/pii/S1383762113000313#b0170][linear relationship]] between CPU utilization and power consumption
+       - SimGrid uses meta-tags such as <cluster>, <cabinet> and <peer> to instantiate a data center components
+       - SimGrid uses links to represent switches 
+       - In a data center the power consumption of network equipment is about [[https://research.google.com/pubs/pub32980.html][2%]] to [[http://ieeexplore.ieee.org/document/5072138/][15%]], therefore it can be safely ignored. However, I think at least the idle power consumption of 
+         switches can be incorporated in SimGrid using the <link> tags which represent switches
+     - Having the above conditions, a linear models seems to fit into SimGrid's abstraction. Accordingly, I propose the following linear model for SimGrid, which is first proposed by [[https://research.google.com/pubs/pub32980.html][Fan et al's]] but the original
+       model does not account for network energy consumption
+         #+BEGIN_LaTex
+               P_srv = P_idle + (P_busy - P_idle) * U
+         #+END_LaTex
+     - This linear model is what is proposed by Fan et al
+     - To estimate the power consumption of a give cluster, we multiply it by the size of the cluster
+     - To estimate the power consumption of the whole network in a given large-scale network, we add to this sum the total idle power consumption of involved switches
+     - This model is coarse-grain model, it does not consider ports
+     - Questions
+       - what do you think about this model?
+       - Do we need to modify the meta-tags of SimGrid in order to able to specify idle/busy watt values and the corresponding workloads?
+       - Do we also need to modify the <link> tag in order to able to specify the idle power consumption of switches?
+**** Work Planned
+***** Propose power consumption model for large-scale networks in the context of SimGrid
+***** Start implementing the model on SimGrid, if the proposed model is acknowledged 
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
      - Uses two files energy.hpp and energy.cpp
      - energy.hpp specifies/declares methods and variables and energy.cpp implements them
      - initWattsRangeList() is one of the methods specified in energy.cpp/hpp and extracts watts_per_state values listed in energy_platform.xml file and puts them in array
-     - getCurrentWattsValue(double cpuLoad) estimmate the current power consumption of CPU by applying the CPU power consumption model using cpuLoad as a parameter
+     - getCurrentWattsValue(double cpuLoad) estimates the current power consumption of CPU by applying the CPU power consumption model using cpuLoad as a parameter
      - update() method computes the power consumed for a duration of time, that is the energy used
    - MSG:
      - Users can use methods available in msg_task.cpp and msg_host.cpp 
      - msg_host.cpp contains methods related to host such as turning host on/off, getting the pstate, speed, number of cores ... and also to know the host status whether it is on or off
-     - msg_task.cpp contains methods related to taks such as create/destroying tasks and determining the amount work done
+     - msg_task.cpp contains methods related to tasks such as create/destroying tasks and determining the amount work done ...
      - Users can write their simulation using the MSG APSs in these files and and supply the platform file to run the simulation
 ** Data Provenance
 ** Data Analysis
