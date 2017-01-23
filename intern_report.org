@@ -225,11 +225,8 @@
    
     - Proposed Model:
     #+BEGIN_SRC LaTex
-     
        P_equipment(t) = idle_equipment + EPI_equipment * P_equipment_atLoad(t)
-       
     #+END_SRC
-
     - where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured power consumption line to the slope of the ideal proportional line as it is shown [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
     - idle_equipment is the power consumed while the equipment is idle
     - P_equipment_atLoad(t) is the ideal instantaneous power consumed by the equipment at a given traffic load
@@ -238,7 +235,6 @@
     - The total energy consumption can be computed by integrating the power consumed by individual device during traffic transmission time
     - The required parameters for this model are: equipment type(core/edge switch or router), total bandwidth of the equipment, bandwidth and latency of the links (for bandwidth sharing model)
     - The limitation of this model is that the EPI values might change as technologies change.
-
     - Is there recommended level of detail that we should consider while modeling large scale networks (packet processing engines, ports, connections, chassis, line cards, switches, routers)
     - If low level details such as ports are not considered, how do we study energy saving techniques using SimGrid, such as rate adaptation and switching off unused ports for energy saving
     - If a switch has 24 ports with 1Gbps maximum capacity each, is it reasonable to model the 24 ports as the bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and 
