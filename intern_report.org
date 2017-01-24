@@ -142,7 +142,7 @@
      4. [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]] 
    - Refreshed my git knowledge watching [[https://www.youtube.com/watch?v=Y9XZQO1n_7c][this]] video 
    - Important Git commands and concepts
-   #+Begin_src sh
+   #+Begin_example
      1. git init
      2. git config --global user.email "email address"
      3. git config --global user.name "user name" 
@@ -161,7 +161,7 @@
      16. git pull origin
      17. git push origin master/branch_name
      18. adding .gitignore file
-   #+end_src
+   #+end_example
    - Created Git repository named "internship" to store all outputs of my internship
    - Information about using git with spacemacs is found [[https://alxndr.github.io/blog/2015/06/20/getting-started-with-Spacemacs.html][here]]
    - Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin]] 
