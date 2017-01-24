@@ -264,6 +264,9 @@
        - what do you think about this model?
        - Do we need to modify the meta-tags of SimGrid in order to able to specify idle/busy watt values and the corresponding workloads?
        - Do we also need to modify the <link> tag in order to able to specify the idle power consumption of switches?
+       - Can we call this flow-based model, because traffic flow is never considered, only CPU utilization
+       - Can implementing CPU utilization-based power consumption model in SimGrid be considered as scientific contribution? is not this typical software development task?
+       - Do I really need to come up with a brand new model if this model gives reasonably accurate result?
 **** Work Planned
 ***** Propose power consumption model for large-scale networks in the context of SimGrid
 ***** If the proposed model is acknowledged, start implementing the model for SimGrid 
