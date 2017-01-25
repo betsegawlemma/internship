@@ -207,8 +207,6 @@
     
     - Is there an example in SimGrid which show the flow-based model used in SimGrid in action?
       - MQ: have a look at http://simgrid.gforge.inria.fr/tutorials/surf-101.pdf
-   
-
 **** Work Planned
      - Read the following papers
 ***** TODO [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
@@ -255,7 +253,7 @@
        #+BEGIN_SRC LaTex
           P_srv = P_idle + (P_busy - P_idle) * U
        #+END_SRC
-     - This linear model is what is proposed by Fan et al
+     - This linear model is what is proposed by Fan et al.
      - To estimate the power consumption of a give cluster, we multiply it by the size of the cluster
      - To estimate the power consumption of the whole network in a given large-scale network, we add to this sum the total idle power consumption of involved switches
      - This model is coarse-grain model, it does not consider ports
@@ -266,10 +264,11 @@
        - Do we also need to modify the <link> tag in order to able to specify the idle power consumption of switches?
        - Can we call this flow-based model, because traffic flow is never considered, only CPU utilization
        - Can implementing CPU utilization-based power consumption model in SimGrid be considered as scientific contribution? is not this typical software development task?
-       - Do I really need to come up with a brand new model if this model gives reasonably accurate result?
+       - Do I really need to come up with a brand new model if this model gives reasonably accurate result? I noticed that the researchers propose a model after measuring power consumption of servers and 
+         network equipment and statistical analysis.  
 **** Work Planned
 ***** Propose power consumption model for large-scale networks in the context of SimGrid
-***** If the proposed model is acknowledged, start implementing the model for SimGrid 
+***** If the proposed model is acceptable, start implementing the model for SimGrid 
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
