@@ -265,7 +265,7 @@
        - Can we call this flow-based model, because traffic flow is never considered, only CPU utilization
        - Can implementing CPU utilization-based power consumption model in SimGrid be considered as scientific contribution? is not this typical software development task?
        - Do I really need to come up with a brand new model if this model gives reasonably accurate result? I noticed that the researchers propose a model after measuring power consumption of servers and 
-         network equipment and statistical analysis.  
+         network equipment and after statistical analysis of the collected data.  
 **** Work Planned
 ***** Propose power consumption model for large-scale networks in the context of SimGrid
 ***** If the proposed model is acceptable, start implementing the model for SimGrid 
