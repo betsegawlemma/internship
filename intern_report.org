@@ -218,57 +218,118 @@
       CLOSED: [2017-01-16 lun. 22:02]
 ** Week 3 January
 **** Questions
-    - Methodological question: When reviewing papers, is there any reason to summarize the whole paper unless I am working to extend/improve the work of the authors? Or is it not enough to just extract
-     the information that I need for my work?
+    - Methodological question: When reviewing papers, is there any
+      reason to summarize the whole paper unless I am working to
+      extend/improve the work of the authors? Or is it not enough to
+      just extract the information that I need for my work?
+      - MQ: only take what you need.
     - SimGrid: Are there router/switch concepts in SimGrid?
+      - MQ: nope, links is all what you need in SimGrid :)
     - Proposed Model:
     #+BEGIN_SRC LaTex
        P_equipment(t) = idle_equipment + EPI_equipment * P_equipment_atLoad(t)
     #+END_SRC
-    - where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured power consumption line to the slope of the ideal proportional line as it is shown [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
+    - where, EPI_equipment is energy proportionality index. Which is
+      computed by dividing the slope of the measured power consumption
+      line to the slope of the ideal proportional line as it is shown
+      [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
     - idle_equipment is the power consumed while the equipment is idle
     - P_equipment_atLoad(t) is the ideal instantaneous power consumed by the equipment at a given traffic load
-    - The EPI value for network equipment is available from the benchmark study referenced. For example edge LAN switch has ~0.25, core switch 0.15, and core router 0.20
-    - The load of a particular equipment at t for a given network can be found from the flow-based bandwidth sharing model used in SimGrid
-    - The total energy consumption can be computed by integrating the power consumed by individual device during traffic transmission time
-    - The required parameters for this model are: equipment type(core/edge switch or router), total bandwidth of the equipment, bandwidth and latency of the links (for bandwidth sharing model)
+    - The EPI value for network equipment is available from the benchmark study referenced. For example edge LAN switch
+      has ~0.25, core switch 0.15, and core router 0.20
+    - The load of a particular equipment at t for a given network can be found from the flow-based bandwidth sharing
+      model used in SimGrid
+    - The total energy consumption can be computed by integrating the power consumed by individual device during traffic
+      transmission time
+    - The required parameters for this model are: equipment type(core/edge switch or router), total bandwidth of the
+      equipment, bandwidth and latency of the links (for bandwidth sharing model)
     - The limitation of this model is that the EPI values might change as technologies change.
-    - Is there recommended level of detail that we should consider while modeling large scale networks (packet processing engines, ports, connections, chassis, line cards, switches, routers)
-    - If low level details such as ports are not considered, how do we study energy saving techniques using SimGrid, such as rate adaptation and switching off unused ports for energy saving
-    - If a switch has 24 ports with 1Gbps maximum capacity each, is it reasonable to model the 24 ports as the bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and 
-      if half of the ports are turned off then the capacity of the switch is now 12Gbps?
+    - Is there recommended level of detail that we should consider while modeling large scale networks (packet
+      processing engines, ports, connections, chassis, line cards, switches, routers)
+    - If low level details such as ports are not considered, how do we study energy saving techniques using SimGrid,
+      such as rate adaptation and switching off unused ports for energy saving
+    - If a switch has 24 ports with 1Gbps maximum capacity each, is it reasonable to model the 24 ports as the
+      bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and if half of the ports are
+      turned off then the capacity of the switch is now 12Gbps?
 **** Work Planned
 ***** DONE Study SimGrid's energy model for CPU 
       CLOSED: [2017-01-18 mer. 17:42]
 ** Week 4 January
-**** Questions
+**** Thoughts
      - Conditions for proposing power consumption modeling
-       - Power consumption of a group of servers can be modeled reasonably well with [[http://www.sciencedirect.com/science/article/pii/S1383762113000313#b0170][linear relationship]] between CPU utilization and power consumption
+       - Power consumption of a group of servers can be modeled reasonably well with [[http://www.sciencedirect.com/science/article/pii/S1383762113000313#b0170][linear relationship]] between CPU
+         utilization and power consumption
        - SimGrid uses meta-tags such as <cluster>, <cabinet> and <peer> to instantiate a data center components
        - SimGrid uses links to represent switches 
-       - In a given data center, the power consumption of network equipment is about [[https://research.google.com/pubs/pub32980.html][2%]] to [[http://ieeexplore.ieee.org/document/5072138/][15%]], 
-         therefore it can be safely ignored. However, I think at least the idle power consumption of switches can be incorporated in SimGrid using the <link> tags that represent switches
-       - Having the above conditions, a linear models seems to fit into SimGrid's abstraction. Accordingly, I propose the following linear model for SimGrid, which is first proposed by [[https://research.google.com/pubs/pub32980.html][Fan et al's]] but the original
-         model does not account for network energy consumption
+       - In a given data center, the power consumption of network equipment is about [[https://research.google.com/pubs/pub32980.html][0%]] to [[http://ieeexplore.ieee.org/document/5072138/][0%]], therefore it can be
+         safely ignored. However, I think at least the idle power consumption of switches can be incorporated in SimGrid
+         using the <link> tags that represent switches
+       - Having the above conditions, a linear models seems to fit into SimGrid's abstraction. Accordingly, I propose
+         the following linear model for SimGrid, which is first proposed by [[https://research.google.com/pubs/pub32980.html][Fan et al's]] but the original model does not
+         account for network energy consumption
        #+BEGIN_SRC LaTex
-          P_srv = P_idle + (P_busy - P_idle) * U
+       P_srv = P_idle + (P_busy - P_idle) * U
        #+END_SRC
      - This linear model is what is proposed by Fan et al.
      - To estimate the power consumption of a give cluster, we multiply it by the size of the cluster
-     - To estimate the power consumption of the whole network in a given large-scale network, we add to this sum the total idle power consumption of involved switches
+     - To estimate the power consumption of the whole network in a given large-scale network, we add to this sum the
+       total idle power consumption of involved switches
      - This model is coarse-grain model, it does not consider ports
      - This model does not include power conditioning and cooling components
-     - Questions
-       - what do you think about this model?
-       - Do we need to modify the meta-tags of SimGrid in order to able to specify idle/busy watt values and the corresponding workloads?
-       - Do we also need to modify the <link> tag in order to able to specify the idle power consumption of switches?
-       - Can we call this flow-based model, because traffic flow is never considered, only CPU utilization
-       - Can implementing CPU utilization-based power consumption model in SimGrid be considered as scientific contribution? is not this typical software development task?
-       - Do I really need to come up with a brand new model if this model gives reasonably accurate result? I noticed that the researchers propose a model after measuring power consumption of servers and 
-         network equipment and after statistical analysis of the collected data.  
+**** Questions
+     - [MQ] Note that I changed the sectionning of your file. Is it OK with you?
+     - what do you think about this model?
+       - [MQ] That's very simple, but it is definitely worth trying it. Experimentations will say whether we can find a
+         set of parameters leading to realistic simulations. Did you find any other possible such model? It'd be
+         interesting to compare them all in our context.
+       - [MQ] I was thinking that P_idle and P_busy of a network equipment were very close, and that P_off is the
+         interesting measurement
+       - [MQ] That being said, I had a quick glance at the paper you point and it does not seem to speak of
+         networks. I'm puzzled.
+     - Do we need to modify the meta-tags of SimGrid in order to able to specify idle/busy watt values and the
+       corresponding workloads?
+       - [MQ] I'd prefer not. Use the <prop> tag to pass arbitrary key/value sets (just like it's done for the CPU energy)
+     - Do we also need to modify the <link> tag in order to able to specify the idle power consumption of switches?
+       - [MQ] same answer as before. Any XML modification is really a pain in the ... foot of all our users.
+     - Can we call this flow-based model, because traffic flow is never considered, only CPU utilization
+       - [MQ] if traffic flow is not considered, what's the U in your formula? I'd have said "usage".
+     - Can implementing CPU utilization-based power consumption model in SimGrid be considered as scientific
+       contribution? is not this typical software development task?
+       - [MQ] answer A: science is the ideas that last more than a decade. Your software wont, but the ideas that you
+         will demonstrate with it may. So consider your software as a proof of a theorem sounding like "it is possible
+         to model the energy consumption as a function of ....". The proof is not as appreciated as the corresponding
+         theorem, but a mathematical allegation is not a theorem without a proof. Same for us.
+       - MQ: answer B: in today's science, the models are expressed as programs, not as text in papers. We are trying
+         to foster the computationnal science of computer systems, so the following quote from
+         https://khinsen.wordpress.com applies to us: «For today’s complex simulations [arising in Computational
+         Sciences], the computer program *is* the model. Questions such as “Does program X correctly implement model
+         A?”, a question that made perfect sense in the 1960s, have become meaningless».
+       - MQ: answer C: "rocket science" *is* engineering. I do consider high-level engineering as as valuable as science.
+     - Do I really need to come up with a brand new model if this model gives reasonably accurate result? I noticed
+       that the researchers propose a model after measuring power consumption of servers and network equipment and
+       after statistical analysis of the collected data.
+       - MQ: nope. If you find a working model, we are good. We'd have more time to scientifically assess this model,
+         comparing its output to other simulated results and maybe to the reality. In computational science, assessing
+         the models of others is a contribution necessary to the community (peer assesment), even if sometimes less
+         appreciated by readers.  Also, if time permits, we'd like to use this model in several studies.
+       - MQ: That being said, the difficulty may be to adapt this model to our flow-based settings, because we do not
+	 have routers and links at hand. Just a rather specific abstraction that we misleadingly call <link>.
 **** Work Planned
 ***** Propose power consumption model for large-scale networks in the context of SimGrid
 ***** If the proposed model is acceptable, start implementing the model for SimGrid 
+- MQ: we have some plumbering to do in SimGrid so that a signal is raised when the network condition changes on a link
+  (just like for the CPU thing). Maybe it's done or almost, maybe it will be rather hairly (I cant remember the current
+  status). Too bad you're on it the week where I'm out of town (I may even be off the grid the whole week until
+  friday). You may want to postpone this part if it gets hairly.
+- MQ: another light plumbering is needed to allow the creation of a plugin that connects to the signals and selects the
+  right formula (if we propose several models)
+- MQ: think of how you will find the right parameter of your model (data fitting, but against which data?)
+- MQ: think of how you will evaluate the proposed model(s). Which experiment, which settings, etc.
+- MQ: discuss with Anne Cécile of how we could dream of validation against real settings. We did not add it to the
+  initial plan because IIRC, we don't exactly have the right measurement material at hand, and because that's extremely
+  complex for a 6 months short internship. But if you are too fast, we may change our mind.
+- MQ: have a look at S4U. This is where new development should take place when possible. MSG should rest in peace now. I
+  started reimplementing MSG as a upper layer to S4U that will contain the real meat, but that's underway.
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
