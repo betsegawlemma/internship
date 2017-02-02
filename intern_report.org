@@ -109,8 +109,10 @@
     CLOSED: [2017-01-16 lun. 20:33]
 **** DONE I&E Study       Jan 20                    Post assignment submission date                                                          
      CLOSED: [2017-01-23 lun. 10:07]
-**** TODO I&E Study       Jan 30 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                    
-**** TODO I&E Study       Feb 2                     Online assignment submission date (I may need one full day to complete the report)       
+**** DONE I&E Study       Jan 30 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                    
+     CLOSED: [2017-01-30 lun. 13:01]
+**** DONE I&E Study       Feb 2                     Online assignment submission date (I may need one full day to complete the report)       
+CLOSED: [2017-02-02 jeu. 10:24]
 **** TODO I&E Study       Feb 27 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                                                                        
 **** TODO I&E Study       March 20 (10:00 - 12:00)  Meeting for I&E study thesis progress
 *** Aalto Related
@@ -167,10 +169,10 @@
    - Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin]] 
    - Read [[http://simgrid.gforge.inria.fr/tutorials/simgrid-energy-101.pdf][SimGrid Energy 101]] 
    - Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin Docs]]
-**** Questions
+*** Questions
    - FLOPS/s is this notation correct in the slide shown in [[http://simgrid.gforge.inria.fr/tutorials/simgrid-energy-101.pdf][here]]? (floating point operations per second per second?) (compare slide 6/7/8)
    - Is this value <prop id="watt_per_state" value="100.0:120.0:200.0, 93.0:110.0:170.0, 90.0:105.0:150.0" /> found in examples/platforms/energy_platform.xml correct?
-**** TODO Work Planned 
+*** TODO Work Planned 
 ***** TODO Continue exploring spacemacs [[https://www.youtube.com/watch?v=ZFV5EqpZ6_s&list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE][Spacemacs ABC tutorial]]
 ***** TODO Continue exploring Org-mode
      1. [[http://orgmode.org/worg/org-tutorials/org4beginners.html][Org Mode for Beginners]]
@@ -217,7 +219,7 @@
 ***** DONE [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
       CLOSED: [2017-01-16 lun. 22:02]
 ** Week 3 January
-**** Questions
+*** Questions
     - Methodological question: When reviewing papers, is there any
       reason to summarize the whole paper unless I am working to
       extend/improve the work of the authors? Or is it not enough to
@@ -251,11 +253,13 @@
     - If a switch has 24 ports with 1Gbps maximum capacity each, is it reasonable to model the 24 ports as the
       bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and if half of the ports are
       turned off then the capacity of the switch is now 12Gbps?
-**** Work Planned
-***** DONE Study SimGrid's energy model for CPU 
+*** Work Planned
+**** DONE Study SimGrid's energy model for CPU 
       CLOSED: [2017-01-18 mer. 17:42]
 ** Week 4 January
-**** Thoughts
+   - Studied R
+   - Read about reproducible research
+*** Thoughts
      - Conditions for proposing power consumption modeling
        - Power consumption of a group of servers can be modeled reasonably well with [[http://www.sciencedirect.com/science/article/pii/S1383762113000313#b0170][linear relationship]] between CPU
          utilization and power consumption
@@ -276,7 +280,7 @@
        total idle power consumption of involved switches
      - This model is coarse-grain model, it does not consider ports
      - This model does not include power conditioning and cooling components
-**** Questions
+*** Questions
      - [MQ] Note that I changed the sectionning of your file. Is it OK with you?
      - what do you think about this model?
        - [MQ] That's very simple, but it is definitely worth trying it. Experimentations will say whether we can find a
@@ -314,9 +318,9 @@
          appreciated by readers.  Also, if time permits, we'd like to use this model in several studies.
        - MQ: That being said, the difficulty may be to adapt this model to our flow-based settings, because we do not
 	 have routers and links at hand. Just a rather specific abstraction that we misleadingly call <link>.
-**** Work Planned
-***** Propose power consumption model for large-scale networks in the context of SimGrid
-***** If the proposed model is acceptable, start implementing the model for SimGrid 
+*** Work Planned
+**** Propose power consumption model for large-scale networks in the context of SimGrid
+**** If the proposed model is acceptable, start implementing the model for SimGrid 
 - MQ: we have some plumbering to do in SimGrid so that a signal is raised when the network condition changes on a link
   (just like for the CPU thing). Maybe it's done or almost, maybe it will be rather hairly (I cant remember the current
   status). Too bad you're on it the week where I'm out of town (I may even be off the grid the whole week until
@@ -330,6 +334,11 @@
   complex for a 6 months short internship. But if you are too fast, we may change our mind.
 - MQ: have a look at S4U. This is where new development should take place when possible. MSG should rest in peace now. I
   started reimplementing MSG as a upper layer to S4U that will contain the real meat, but that's underway.
+** Week 1 February 
+*** Thoughts 
+*** Questions
+*** Work Planned
+**** Propose power consumption model
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
