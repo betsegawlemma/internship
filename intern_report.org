@@ -336,7 +336,26 @@ CLOSED: [2017-02-02 jeu. 10:24]
   started reimplementing MSG as a upper layer to S4U that will contain the real meat, but that's underway.
 ** Week 1 February 
 *** Thoughts 
+- Energy consumption of a network equipment
+#+BEGIN_SRC LaTex
+       P_equipment(t) = P_idle + (P_peak - P_idle) * U(t)
+#+END_SRC
+  - The parameter U here refers to traffic load 
+- Energy consumption of a cluster
+#+BEGIN_SRC LaTex
+       P_cluster(t) = n(P_idle_srv + (P_peak_srv - P_idle_srv) * U(t))
+#+END_SRC
+  - The parameter U here refers to server work load
+- Total Power consumption
+#+BEGIN_SRC LaTex
+       P_total(t) = Sum(P_cluster_i(t)) + Sum(P_equipment_j(t))
+#+END_SRC 
+- The total power consumption of a given network at a given moment is computed by adding the power consumption of each cluster
+and the power consumption of each network equipment involved in the network
+- These power consumption models do not account for energy consumed by power distribution and conditioning and also the power 
+consumed by cooling systems
 *** Questions
+- What do I need to know to integrate flow-based bandwidth allocation model implemented in SimGrid with the above model?
 *** Work Planned
 **** Propose power consumption model
 * Development
