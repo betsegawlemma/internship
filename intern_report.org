@@ -335,6 +335,7 @@ CLOSED: [2017-02-02 jeu. 10:24]
 - MQ: have a look at S4U. This is where new development should take place when possible. MSG should rest in peace now. I
   started reimplementing MSG as a upper layer to S4U that will contain the real meat, but that's underway.
 ** Week 1 February 
+- held a meeting with my supervisor from Aalto
 *** Thoughts 
 - Energy consumption of a network equipment
 #+BEGIN_SRC LaTex
