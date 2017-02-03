@@ -257,8 +257,8 @@ CLOSED: [2017-02-02 jeu. 10:24]
 **** DONE Study SimGrid's energy model for CPU 
       CLOSED: [2017-01-18 mer. 17:42]
 ** Week 4 January
-   - Studied R
-   - Read about reproducible research
+   - Started studying R
+   - Started studying about reproducible research
 *** Thoughts
      - Conditions for proposing power consumption modeling
        - Power consumption of a group of servers can be modeled reasonably well with [[http://www.sciencedirect.com/science/article/pii/S1383762113000313#b0170][linear relationship]] between CPU
@@ -333,7 +333,7 @@ CLOSED: [2017-02-02 jeu. 10:24]
   initial plan because IIRC, we don't exactly have the right measurement material at hand, and because that's extremely
   complex for a 6 months short internship. But if you are too fast, we may change our mind.
 - MQ: have a look at S4U. This is where new development should take place when possible. MSG should rest in peace now. I
-  started reimplementing MSG as a upper layer to S4U that will contain the real meat, but that's underway.
+  started re-implementing MSG as a upper layer to S4U that will contain the real meat, but that's underway.
 ** Week 1 February 
 - held a meeting with my supervisor from Aalto
 *** Thoughts 
