@@ -359,6 +359,14 @@ consumed by cooling systems
 - What do I need to know to integrate flow-based bandwidth allocation model implemented in SimGrid with the above model?
 *** Work Planned
 **** Propose power consumption model
+** Week 2 February
+- Studied SimGrid architecture 
+- Studied Git more
+- Wrote some code in link_energy.hpp and link_energy.cpp inside src/surf/plugin directory
+** Week 3 February 
+*** Questions
+*** Work Planned
+  - Implement models in SimGrid
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
