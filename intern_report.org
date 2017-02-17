@@ -373,7 +373,7 @@ consumed by cooling systems
 - Notes from the discussion is shown below
 [[file:img/ns3_experiment.jpg]]
 - git command to fetch updates from simgrid original branch
-  git pull upstream master master
+  - git pull upstream master master
 *** Questions
 *** Work Planned
   - Implement models in SimGrid
