@@ -187,12 +187,10 @@ CLOSED: [2017-02-02 jeu. 10:24]
 ** Week 2 January 
     - Bibliography reviewed
 **** Questions 
-     [[file:img/scenario.png]]
-     
+    [[ifile:img/scenario.png][Scenario]]     
      Taking the topology shown above (taken from ECOFEN) as an example, the objective of my internship is
      to use the ECOFEN energy model shown below in SimGrid simulator because SimGrid uses flow-based modeling
-     
-    [[file:img/model.png]] 
+    [[file:img/model.png][Model]]
     - What I need to add to the above model is, the flow parameters such as bandwidth of the links, and 
       the size of traffic, then model the effect of each flow passing through a given link on the length of time it took to transfer the given traffic
       Is this a correct paraphrase of what I am expected to do in this
@@ -371,7 +369,7 @@ consumed by cooling systems
 - Associating the power consumption when the link is OFF, BUSY and IDLE with that of UP/DOWN link should be studied by running
   ns3 experiments because measuring the energy consumption values for UP/DOWN on real network is impossible?
 - Notes from the discussion is shown below
-[[file:img/ns3_experiment.jpg]]
+[[file:img/ns3_experiment.jpg][NS3 Experiment Note]]
 - git command to fetch updates from simgrid original branch
   - git pull upstream master master
 *** Questions
