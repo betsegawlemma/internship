@@ -333,7 +333,7 @@ CLOSED: [2017-02-02 jeu. 10:24]
   initial plan because IIRC, we don't exactly have the right measurement material at hand, and because that's extremely
   complex for a 6 months short internship. But if you are too fast, we may change our mind.
 - MQ: have a look at S4U. This is where new development should take place when possible. MSG should rest in peace now. I
-  started re-implementing MSG as a upper layer to S4U that will contain the real meat, but that's underway.
+  started re-implementing MSG as a upper layer to S4U that will contain the real meat, but that's underway. 
 ** Week 1 February 
 - held a meeting with my supervisor from Aalto
 *** Thoughts 
@@ -364,6 +364,16 @@ consumed by cooling systems
 - Studied Git more
 - Wrote some code in link_energy.hpp and link_energy.cpp inside src/surf/plugin directory
 ** Week 3 February 
+- Discussed about [[https://github.com/betsegawlemma/simgrid/blob/master/src/surf/plugins/link_energy.cpp][link_energy.cpp]] implementation
+- Discussed about possible ways to use UP/DOWN link 
+  - DOWN link represent the idle power consumption and the dynamic power consumption due to traffic
+  - UP link represent the dynamic power consumption due to traffic only
+- Associating the power consumption when the link is OFF, BUSY and IDLE with that of UP/DOWN link should be studied by running
+  ns3 experiments because measuring the energy consumption values for UP/DOWN on real network is impossible?
+- Notes from the discussion is shown below
+[[file:img/ns3_experiment.jpg]]
+- git command to fetch updates from simgrid original branch
+  git pull upstream master master
 *** Questions
 *** Work Planned
   - Implement models in SimGrid
@@ -376,7 +386,7 @@ consumed by cooling systems
      - getCurrentWattsValue(double cpuLoad) estimates the current power consumption of CPU by applying the CPU power consumption model using cpuLoad as a parameter
      - update() method computes the power consumed for a duration of time, that is the energy used
    - MSG:
-     - Users can use methods available in msg_task.cpp and msg_host.cpp 
+     - Users can use methods available in msg_task.cpp and msg_host.cpp
      - msg_host.cpp contains methods related to host such as turning host on/off, getting the pstate, speed, number of cores ... and also to know the host status whether it is on or off
      - msg_task.cpp contains methods related to tasks such as create/destroying tasks and determining the amount work done ...
      - Users can write their simulation using the MSG APSs in these files and and supply the platform file to run the simulation
