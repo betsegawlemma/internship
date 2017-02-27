@@ -380,7 +380,7 @@ consumed by cooling systems
 - The output is saved [[file:data/oneflow2.txt]]
 - The Bytes transmitted and the corresponding energy consumption values were extracted and put in [[file:data/oneflow2node1.csv]] file
 - The following R code plots shows the linear relationship that corresponds to the amount of Bytes transferred and energy consumption
-#+BEGIN_SRC R :results output graphics :file energy.png :exports both  
+#+BEGIN_SRC R :results output graphics :file figures/energy.png :exports both  
 ENERGY = read.csv("data/oneflow2node1.csv", header=T,na.strings="?")
 attach(ENERGY)
 lm.fit = lm(EnergyConsumed~Bytes)
@@ -389,7 +389,7 @@ abline(lm.fit,col="blue",lwd=3)
 #+END_SRC
 
 #+RESULTS:
-[[file:energy.png]]
+[[file:figures/energy.png]]
 
 * Development
    - SimGrid HostEnergy plugin
