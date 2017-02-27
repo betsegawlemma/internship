@@ -343,7 +343,7 @@ CLOSED: [2017-02-02 jeu. 10:24]
        P_cluster(t) = n(P_idle_srv + (P_peak_srv - P_idle_srv) * U(t))
 #+END_SRC
   - The parameter U here refers to server work load
-- Total Power consumption
+- Total Power consumption         
 #+BEGIN_SRC LaTex
        P_total(t) = Sum(P_cluster_i(t)) + Sum(P_equipment_j(t))
 #+END_SRC 
@@ -372,6 +372,25 @@ consumed by cooling systems
 *** Questions
 *** Work Planned
   - Implement models in SimGrid
+** Week 4 February
+*** NS3 Experiment
+- Installed and configured [[https://www.nsnam.org][NS3]]
+- Installed ECOFEN module on NS3 as specified [[http://people.irisa.fr/Anne-Cecile.Orgerie/ECOFEN/ECOFEN-user-manual.pdf][here]]
+- Run Energy Consumption experiment as specified in [[file:ns3/link_energy2.cc]]
+- The output is saved [[file:data/oneflow2.txt]]
+- The Bytes transmitted and the corresponding energy consumption values were extracted and put in [[file:data/oneflow2node1.csv]] file
+- The following R code plots shows the linear relationship that corresponds to the amount of Bytes transferred and energy consumption
+#+BEGIN_SRC R :results output graphics :file energy.png :exports both  
+ENERGY = read.csv("data/oneflow2node1.csv", header=T,na.strings="?")
+attach(ENERGY)
+lm.fit = lm(EnergyConsumed~Bytes)
+plot(Bytes,EnergyConsumed,col="red")
+abline(lm.fit,col="blue",lwd=3)
+#+END_SRC
+
+#+RESULTS:
+[[file:energy.png]]
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
