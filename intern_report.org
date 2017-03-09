@@ -391,6 +391,133 @@ abline(lm.fit,col="blue",lwd=3)
 #+RESULTS:
 [[file:figures/energy.png]]
 
+** Week 1 March
+*** Read the following papers 
+- [[http://dl.acm.org/citation.cfm?id=2151096][An Energy Framework for the Network Simulator 3 (ns-3)]]
+- [[http://dl.acm.org/citation.cfm?id=2675685][Energy harvesting framework for network simulator 3 (ns-3)]]
+- [[https://hal.inria.fr/hal-01472358][Leveraging Renewable Energy in Edge Clouds for Data Stream Analysis in IoT]]
+- [[http://ieeexplore.ieee.org/document/7439752/][Fog Computing May Help to Save Energy in Cloud Computing]]
+*** Experiment-0: Setup the required network using NS3 simulator
+- The purpose of the experiment is to study the energy consumption characteristics of 
+nodes in edge and client nodes
+- Two scenarios are considered
+  - Energy consumption of streaming application (e.g. video streaming)
+  - Energy consumption of non-streaming applications (e.g. sensor data with small burst of data)
+// Wifi Sta 10.1.3.0
+//                 AP
+//  *    *    *    *                
+//  |    |    |    |    10.1.1.0
+// n3   n4   n5   n0 -------------- n1   n2   
+//                   point-to-point  |    |     
+//                                   *    *
+//                                   AP
+//                                  Wifi Edge 10.1.2.0
+- NS3 [[file:ns3/wifi-nodes-energy-consumption.cc][script]] was written to setup such network
+- This script displays the energy consumption of a single edge node 
+- The left part nodes represent client nodes, each runs UdpEchoClient application
+- The right part nodes represent edge nodes, each running UdpEchoServer application
+*** Designed Experiment-1: Study power consumption of constant packet stream
+- Power consumed as packet size increase
+- Power consumed as the inter-packet interval time increase
+- Power consumed as client number increase
+- In all cases the packet size kept at 1472 Bytes
+*** Designed Experiment-2: Study power consumption of non stream packet flow
+- Power consumed as packet size increase
+- Power consumed as the inter-packet interval time increase
+- Power consumed as client number increase
+- In all cases the packet size is kept at 100 Bytes
+*** Challenges 
+- Instantaneous vs total power consumption
+- Extracting the required data from the log
+- Understanding and writing NS3 Tracing
+- Instantaneous power consumption by using "newValue-oldValue" in NS3 Tracing
+- Unable to explain some of the outputs of the model
+** Week 2 March
+*** Parameters and Values for the experiments 
+- This table shows the parameters and values used in the experiments 
+| Parameters                            | Values              |
+|---------------------------------------+---------------------|
+| Client Nodes                          | 1, 10, 50, 100, 250 |
+| Edge Nodes                            | 1                   |
+| Packet Size (in bytes)                | 100, 1472           |
+| Number of Packets                     | 1, 10, 100, 1000    |
+| Time interval between packets (in ms) | 0.01, 1, 10, 1000   |
+| Simulation Time                       | 21 seconds          |
+*** Experiment-1:
+- Energy consumption in relation to the number of packets and number of client nodes
+- This energy consumption is measured at one of the edge node when 1, 10, 50, 100 or 250 clients
+   send 10, 100, or 1000 packets of packet size 1472
+- The energy consumption is captured just after the last packet is received by the edge node in each case, which
+means the energy consumption shown is the total energy consumed by the node until the last packet is received. 
+- The following plot shows the result using the data shown [[file:data/energy_packets_clients2.csv][here]]
+#+BEGIN_SRC R  :results output graphics :file figures/epc.png :exports both  
+EPC = read.csv("data/energy_packets_clients2.csv",header=T)
+EPC_data = as.matrix(EPC)
+barplot(EPC_data,beside=TRUE,legend.text=TRUE,ylim=c(0,5),
+main="Power Consumption",xlab="Number of Client Nodes",ylab="Power Consumed")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/epc.png]]
+
+*** Experiment-2:
+- Energy consumption in relation to the number of client nodes and packet size
+- In this experiment each client sends 10 packets with 1ms inter-packet interval time
+#+BEGIN_SRC R  :results output graphics :file figures/epc_size.png :exports both  
+EPCS = read.csv("data/energy_packetssize_clients.csv",header=T)
+EPCS_data = as.matrix(EPCS)
+barplot(EPCS_data,beside=TRUE,legend.text=TRUE,ylim=c(0,4),
+main="Power Consumption",xlab="Number of Client Nodes",ylab="Power Consumed")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/epc_size.png]]
+
+*** Experiment-3:
+- Energy consumption in relation to interval between sent packets
+- In this experiment 1, 10, 100, or 1000 packets are send to the edge node by one client node with
+0.01, 1, 10, or 1000 ms inter-packet interval time and the energy consumption is captured just after the last
+packet is received
+#+BEGIN_SRC R  :results output graphics :file figures/ep_interval.png :exports both  
+EPI = read.csv("data/energy_packets_intervals.csv",header=T)
+EPI_data = as.matrix(EPI)
+barplot(EPI_data,beside=TRUE,legend.text=TRUE,ylim=c(0,22),
+main="Power Consumption",xlab="Interval between packets (ms)",ylab="Power Consumed")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ep_interval.png]]
+
+*** Experiment-4:
+- Comparing Energy consumed by a client node and an edge node for sending/receiving 1, 10, 100, or 1000 packets at  1 ms inter-packet interval time
+and 100 Bytes of packet size
+- As it is evident from the diagram below, both the client and the edge node consume equal amount of energy for sending and receiving packets. In this
+experiment both the client and edge nodes are wireless stations with similar configuration  
+#+BEGIN_SRC R  :results output graphics :file figures/ece.png :exports both  
+ECE = read.csv("data/energy_client_edge.csv",header=T)
+ECE_data = as.matrix(ECE)
+barplot(ECE_data,beside=TRUE,legend.text=TRUE,ylim=c(0,2),
+main="Power Consumption of client and edge node",xlab="Number of packets send/recieve",ylab="Power Consumed")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ece.png]]
+
+*** Experiment-5:
+- Energy consumption of an idle edge node over time
+- The oscillation shown below is due to the arrival of Beacon frames from the AP node at regular
+interval as shown in the diagram
+#+BEGIN_SRC R :results output graphics :file figures/idle_edge.png :exports both  
+EIE = read.csv("data/energy_idle.csv", header=T,na.strings="?")
+attach(EIE)
+plot(Time,EnergyConsumed,ylim=c(0,0.1),
+main="Power Consumption of Idle Edge node",xlab="Time",ylab="Power Consumed")
+lines(EIE,lw="2")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/idle_edge.png]]
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
