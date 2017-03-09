@@ -403,16 +403,8 @@ nodes in edge and client nodes
 - Two scenarios are considered
   - Energy consumption of streaming application (e.g. video streaming)
   - Energy consumption of non-streaming applications (e.g. sensor data with small burst of data)
-// Wifi Sta 10.1.3.0
-//                 AP
-//  *    *    *    *                
-//  |    |    |    |    10.1.1.0
-// n3   n4   n5   n0 -------------- n1   n2   
-//                   point-to-point  |    |     
-//                                   *    *
-//                                   AP
-//                                  Wifi Edge 10.1.2.0
-- NS3 [[file:ns3/wifi-nodes-energy-consumption.cc][script]] was written to setup such network
+- NS3 [[file:ns3/wifi-nodes-energy-consumption.cc][script]] was written to setup a network with 2 AP. One AP used for the client nodes and another one
+for the edge nodes. The two APs connected by Point-to-Point link.
 - This script displays the energy consumption of a single edge node 
 - The left part nodes represent client nodes, each runs UdpEchoClient application
 - The right part nodes represent edge nodes, each running UdpEchoServer application
