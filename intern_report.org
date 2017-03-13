@@ -406,8 +406,8 @@ nodes in edge and client nodes
 - NS3 [[file:ns3/wifi-nodes-energy-consumption.cc][script]] was written to setup a network with 2 AP. One AP used for the client nodes and another one
 for the edge nodes. The two APs connected by Point-to-Point link.
 - This script displays the energy consumption of a single edge node 
-- The left part nodes represent client nodes, each runs UdpEchoClient application
-- The right part nodes represent edge nodes, each running UdpEchoServer application
+- The client nodes each runs UdpEchoClient application
+- The edge nodes each running UdpEchoServer application
 *** Designed Experiment-1: Study power consumption of constant packet stream
 - Power consumed as packet size increase
 - Power consumed as the inter-packet interval time increase
