@@ -1,0 +1,80 @@
+\begin{thebibliography}{10}
+
+\bibitem{ThesisGrading}
+{\sc {Aalto University, Helsinki University of Technology, Committee on
+  Academic Affairs}}.
+\newblock Guidelines for master's thesis evaluation, December 4 2008.
+\newblock
+  \url{http://www.tkk.fi/fi/opinnot/opintohallinto/paatokset/guidelinemastersthesisevaluation.pdf}
+  (in English),
+  \url{http://www.tkk.fi/fi/opinnot/opintohallinto/paatokset/diplomityoarviointiohje.pdf}
+  (in Finnish).
+
+\bibitem{howfindinfo}
+{\sc {Aalto University Library}}.
+\newblock webpage, March 2 2011.
+\newblock How to find - brief guide to finding publications and information.
+  Accessed 4.3.2011.
+
+\bibitem{bibinstructions}
+{\sc {Aalto University Library}}.
+\newblock Making a bibliography.
+\newblock webpage, March 2 2011.
+\newblock
+  \url{http://otalib.aalto.fi/en/instructions/guides/citations/bibliography/}.
+  Accessed 4.2.2011.
+
+\bibitem{ThesisInstructions}
+{\sc {Aalto-yliopisto, Degree programme of Computer Science and Engineering}}.
+\newblock Instruction pages: Diplomityö, 2010.
+\newblock \url{http://information.tkk.fi/fi/opinnot/tietotekniikka/diplomityo/}
+  (in Finnish), \url{http://information.tkk.fi/en/studies/cse/thesis/} (in
+  English). Accessed 9.2.2011.
+
+\bibitem{becker:1996:mvbt}
+{\sc Becker, B., Gschwind, S., Ohler, T., Seeger, B., and Widmayer, P.}
+\newblock {An asymptotically optimal multiversion B-tree}.
+\newblock {\em The VLDB Journal 5}, 4 (1996), 264--275.
+
+\bibitem{MiKTeX}
+{\sc {Christian Schenk}}.
+\newblock {MiKTeX}, 2010.
+\newblock \url{http://miktex.org/}. Accessed 25.2.2011.
+
+\bibitem{FerryProblem}
+{\sc Göös, M., Haapasalo, T., and Moisio, L.}
+\newblock Finding hard instances of the ferry problem.
+\newblock Course report for the course {T-79.5203/S-72.2420} {G}raph theory,
+  Aalto {SCI}, 2010.
+
+\bibitem{HaapasaloThesis}
+{\sc Haapasalo, T.}
+\newblock {\em Accessing Multiversion Data in Database Transactions}.
+\newblock PhD thesis, Department of Computer Science and Engineering, Aalto
+  University School of Science and Technology, Espoo, Finland, 2010.
+\newblock \url{http://lib.tkk.fi/Diss/2010/isbn9789526033600/}.
+
+\bibitem{haapasalo:2009:tmvbt}
+{\sc Haapasalo, T., Jaluta, I., Seeger, B., Sippu, S., and Soisalon-Soininen,
+  E.}
+\newblock Transactions on the multiversion {B$^+$}-tree.
+\newblock In {\em Proceedings of the 12th Conference in Extending Database
+  Technology\/} (2009), pp.~1064--1075.
+
+\bibitem{TeXlipse}
+{\sc Hupponen, T., Karlsson, K., Laitinen, J., Ojala, O., Pirinen, A.,
+  Seuranen, E., Takkinen, L., von Loesch, B., and Vestbø, T.~A.}
+\newblock {TeXlipse plugin for {E}clipse}, 2010.
+\newblock \url{http://texlipse.sourceforge.net/}. Accessed 25.2.2011.
+
+\bibitem{TeXLive}
+{\sc {TeX Users Group}}.
+\newblock {TeX Live}, 2010.
+\newblock \url{http://www.tug.org/texlive/}. Accessed 25.2.2011.
+
+\bibitem{Eclipse}
+{\sc {The Eclipse Foundation}}.
+\newblock {Eclipse}, 2011.
+\newblock \url{http://eclipse.org/}. Accessed 25.2.2011.
+
+\end{thebibliography}

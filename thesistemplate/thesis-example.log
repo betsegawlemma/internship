@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  26 FEB 2017 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  15 MAR 2017 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -41,36 +41,6 @@ LaTeX Font Info:    Redeclaring font encoding OT1 on input line 48.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/02/24 3.9q The Babel package
-
-
-! Package babel Error: Unknown option `finnish'. Either you misspelled it
-(babel)                or the language definition file finnish.ldf was not foun
-d.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.310 \ProcessOptions*
-                      
-Valid options are: shorthands=, KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, hyphenmap=, or a language name.
-
-
-! Package babel Error: Unknown option `swedish'. Either you misspelled it
-(babel)                or the language definition file swedish.ldf was not foun
-d.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.310 \ProcessOptions*
-                      
-Valid options are: shorthands=, KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, hyphenmap=, or a language name.
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
@@ -882,78 +852,33 @@ LaTeX Info: Redefining \nameref on input line 391.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images/aalto-logo-en.pdf, id=110, 302.3837pt x 132.96776pt>
+<images/aalto-logo-en.pdf, id=107, 302.3837pt x 132.96776pt>
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-en.pdf>
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 437.
 (pdftex.def)             Requested size: 174.709pt x 76.82234pt.
- [2 <./images/aalto-logo-en.pdf>]
-
-! Package babel Error: You haven't defined the language finnish yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.459 ... mutta kestävämpää kuin esimerkiksi puu.}
-                                                  
-Your command will be ignored, type <return> to proceed
-
-<images/aalto-logo-fi.pdf, id=125, 284.79599pt x 133.24078pt>
-File: images/aalto-logo-fi.pdf Graphic file (type pdf)
-
-<use images/aalto-logo-fi.pdf>
-Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 459.
-(pdftex.def)             Requested size: 164.20834pt x 76.82234pt.
- [3 <./images/aalto-logo-fi.pdf>]
-
-! Package babel Error: You haven't defined the language swedish yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.482 ögonbryn bland läsarna.}
-                              
-Your command will be ignored, type <return> to proceed
-
-<images/aalto-logo-se.pdf, id=136, 315.62114pt x 132.96677pt>
-File: images/aalto-logo-se.pdf Graphic file (type pdf)
-
-<use images/aalto-logo-se.pdf>
-Package pdftex.def Info: images/aalto-logo-se.pdf used on input line 482.
-(pdftex.def)             Requested size: 182.35724pt x 76.82234pt.
- [4 <./images/aalto-logo-se.pdf>] [5
+ [2 <./images/aalto-logo-en.pdf>] [3
 
 ]
-(./acronyms.tex) [6
+(./acronyms.tex) [4
 
 
 ] (./thesis-example.toc)
 \tf@toc=\write5
 \openout5 = `thesis-example.toc'.
 
- [7
+ [5
 
 
 ] (./1introduction.tex
 Chapter 1.
-[8
+[6
 
 
-]
-
-Package natbib Warning: Citation `ThesisInstructions' on page 9 undefined on in
-put line 48.
-
-
-Package natbib Warning: Citation `ThesisGrading' on page 9 undefined on input l
-ine 50.
-
-) (./2background.tex [9]
+]) (./2background.tex [7]
 Chapter 2.
-[10
+[8
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
@@ -962,82 +887,24 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
- [11]
-
-Package natbib Warning: Citation `howfindinfo' on page 12 undefined on input li
-ne 94.
-
-
-Package natbib Warning: Citation `bibinstructions' on page 12 undefined on inpu
-t line 121.
-
-[12]
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 13 undefined on inpu
-t line 140.
-
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 13 undefined on inpu
-t line 150.
-
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 13 undefined on inpu
-t line 157.
-
-
-Package natbib Warning: Citation `becker:1996:mvbt' on page 13 undefined on inp
-ut line 173.
-
-
-Package natbib Warning: Citation `haapasalo:2009:tmvbt' on page 13 undefined on
- input line 173.
-
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 13 undefined on inpu
-t line 173.
-
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 13 undefined on inpu
-t line 183.
-
-[13]
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 14 undefined on inpu
-t line 197.
-
-) (./3environment.tex [14]
+ [9] [10] [11])
+(./3environment.tex [12]
 Chapter 3.
+[13
 
-Package natbib Warning: Citation `TeXLive' on page 15 undefined on input line 2
-2.
-
-
-Package natbib Warning: Citation `MiKTeX' on page 15 undefined on input line 28
-.
-
-
-Package natbib Warning: Citation `TeXlipse' on page 15 undefined on input line 
-38.
-
-
-Package natbib Warning: Citation `Eclipse' on page 15 undefined on input line 3
-8.
-
-[15
-
-] <images/indica_model.pdf, id=247, 261.97874pt x 88.33pt>
+] <images/indica_model.pdf, id=238, 261.97874pt x 88.33pt>
 File: images/indica_model.pdf Graphic file (type pdf)
 
 <use images/indica_model.pdf>
 Package pdftex.def Info: images/indica_model.pdf used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 131.49863pt.
- <images/ihaa.jpg, id=249, 401.5pt x 293.4965pt>
+ <images/ihaa.jpg, id=240, 401.5pt x 293.4965pt>
 File: images/ihaa.jpg Graphic file (type jpg)
 
 <use images/ihaa.jpg>
 Package pdftex.def Info: images/ihaa.jpg used on input line 77.
 (pdftex.def)             Requested size: 256.0748pt x 187.20119pt.
- [16 <./images/indica_model.pdf>] (./images/page-merge.tex
+ [14 <./images/indica_model.pdf>] (./images/page-merge.tex
 \spexx=\skip63
 \spexy=\skip64
 Missing character: There is no ; in font nullfont!
@@ -1101,157 +968,94 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 17 undefined on inpu
-t line 122.
-
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 17 undefined on inpu
-t line 122.
-
 \graphdotsize=\skip65
 \graphgridsize=\skip66
-(./images/obstruction-grouped.tex
+ (./images/obstruction-grouped.tex
 \oggs=\skip67
-) (./images/general-star-graphs.tex)
-
-Package natbib Warning: Citation `FerryProblem' on page 17 undefined on input l
-ine 148.
-
-
-Package natbib Warning: Citation `FerryProblem' on page 17 undefined on input l
-ine 148.
-
-) (./4methods.tex [17 <./images/ihaa.jpg>] [18]
+) (./images/general-star-graphs.tex))
+(./4methods.tex [15 <./images/ihaa.jpg>] [16]
 Chapter 4.
-) (./5implementation.tex [19
+) (./5implementation.tex [17
 
-] [20]
+] [18]
 Chapter 5.
-) (./6evaluation.tex [21
+) (./6evaluation.tex [19
 
 ]
 Chapter 6.
-) (./7discussion.tex [22
+) (./7discussion.tex [20
 
 ]
 Chapter 7.
-) (./8conclusions.tex [23
+) (./8conclusions.tex [21
 
 ]
 Chapter 8.
-)
-No file thesis-example.bbl.
-(./appendices.tex [24
+) (./thesis-example.bbl [22
 
-]
+] [23
+
+]) (./appendices.tex [24]
 Appendix A.
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 <use images/aalto-logo-en.pdf>
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 11.
 (pdftex.def)             Requested size: 312.00119pt x 137.19974pt.
+
+<images/aalto-logo-fi.pdf, id=333, 284.79599pt x 133.24078pt>
 File: images/aalto-logo-fi.pdf Graphic file (type pdf)
- <use images/aalto-logo-fi.pdf>
+
+<use images/aalto-logo-fi.pdf>
 Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 12.
 (pdftex.def)             Requested size: 312.00119pt x 145.97571pt.
+
+<images/aalto-logo-se.pdf, id=334, 315.62114pt x 132.96677pt>
 File: images/aalto-logo-se.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-se.pdf>
 Package pdftex.def Info: images/aalto-logo-se.pdf used on input line 13.
 (pdftex.def)             Requested size: 312.00119pt x 131.45084pt.
-)
-
-Package natbib Warning: There were undefined citations.
-
-
+) 
 AED: lastpage setting LastPage
 [25
 
-] [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 594.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 594.
- (./thesis-example.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 594.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 594.
+] [26 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
 
-
-Package rerunfilecheck Warning: File `thesis-example.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis-example.out':
-(rerunfilecheck)             Before: 47BC4267771C2FE738D5ABC5903090C6;1421
-(rerunfilecheck)             After:  8CB186D913509EAFAC0E865D0A6140E9;1385.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(./thesis-example.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
+Package rerunfilecheck Info: File `thesis-example.out' has not changed.
+(rerunfilecheck)             Checksum: 8CB186D913509EAFAC0E865D0A6140E9;1385.
  ) 
 Here is how much of TeX's memory you used:
- 21479 strings out of 494929
- 425215 string characters out of 6180142
- 569932 words of memory out of 5000000
- 24234 multiletter control sequences out of 15000+600000
+ 21495 strings out of 494929
+ 425785 string characters out of 6180142
+ 570181 words of memory out of 5000000
+ 24250 multiletter control sequences out of 15000+600000
  16932 words of font info for 60 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
  55i,12n,73p,780b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{table.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.4} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.1} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.9} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis-example.pdf (26 pages, 325289 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on thesis-example.pdf (26 pages, 337217 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 342 compressed objects within 4 object streams
+ 425 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
  82 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
