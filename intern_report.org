@@ -522,6 +522,8 @@ lines(EIE,lw="2")
 second, I did not see validation experiment against another simulator or real measurement.
 - Is there large-scale distributed system or network which is not categorized under data-center. When I start to 
 write about the internship I found it easy to use the term data-center than large-scale distributed networks
+- Compared to other components such as cooling, power provisioning and servers, network equipment consume relatively
+small amount of energy. How do you answer if someone asks why do you focus on the less significant component? 
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
