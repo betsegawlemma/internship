@@ -515,6 +515,13 @@ lines(EIE,lw="2")
 *** Notes about the scenarios
 - I have assumed roughly 1 packet of size (100 or 1472) to represent data from sensor and 100 or 100 packets
  of size 1472 to represent packet streaming. Therefore, the graph shown in experiment-1 shows both scenarios.  
+*** Useful link about org-mode and literate programming
+- http://ehneilsen.net/notebook/orgExamples/org-examples.html
+*** Questions
+- Do we need to run validation experiment for ECOFEN because, first the ECOFEN paper is about NS2 model note NS3,
+second, I did not see validation experiment against another simulator or real measurement.
+- Is there large-scale distributed system or network which is not categorized under data-center. When I start to 
+write about the internship I found it easy to use the term data-center than large-scale distributed networks
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
