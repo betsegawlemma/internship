@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,20 +914,13 @@ Package pdftex.def Info: images/energyproportionality.png used on input line 38
 (pdftex.def)             Requested size: 247.92564pt x 207.77573pt.
  [11 <./images/serverenergy.png>]
 [12 <./images/energyproportionality.png>] [13]
-Overfull \hbox (75.07669pt too wide) detected at line 71
-[]\OML/cmm/m/it/12 P[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 P[] \OT1/cmr/m/n/12 +
- \OML/cmm/m/it/12 numlinecards \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 P[] \OT1/c
-mr/m/n/12 + [] \OML/cmm/m/it/12 numports[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/1
-2 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 utilizationFactor
- []
-
 <images/SimGrid.png, id=276, 800.9925pt x 511.9125pt>
 File: images/SimGrid.png Graphic file (type png)
  <use images/SimGrid.png>
-Package pdftex.def Info: images/SimGrid.png used on input line 77.
+Package pdftex.def Info: images/SimGrid.png used on input line 80.
 (pdftex.def)             Requested size: 398.33858pt x 254.58086pt.
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 77--78
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 80--81
  [] 
  []
 
@@ -1111,11 +1104,11 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  21546 strings out of 494929
  427716 string characters out of 6180142
- 570925 words of memory out of 5000000
+ 572127 words of memory out of 5000000
  24284 multiletter control sequences out of 15000+600000
  16932 words of font info for 60 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
- 55i,12n,73p,1624b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,73p,1624b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1133,7 +1126,7 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (29 pages, 499286 bytes).
+Output written on thesis.pdf (29 pages, 499327 bytes).
 PDF statistics:
  475 PDF objects out of 1000 (max. 8388607)
  408 compressed objects within 5 object streams
