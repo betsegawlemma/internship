@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 18:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -921,7 +921,7 @@ mr/m/n/12 + [] \OML/cmm/m/it/12 numports[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/1
 2 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 utilizationFactor
  []
 
-<images/SimGrid.png, id=275, 800.9925pt x 511.9125pt>
+<images/SimGrid.png, id=276, 800.9925pt x 511.9125pt>
 File: images/SimGrid.png Graphic file (type png)
  <use images/SimGrid.png>
 Package pdftex.def Info: images/SimGrid.png used on input line 77.
@@ -951,13 +951,13 @@ Package natbib Warning: Citation `Eclipse' on page 16 undefined on input line 3
 
 [16
 
-] <images/indica_model.pdf, id=296, 261.97874pt x 88.33pt>
+] <images/indica_model.pdf, id=298, 261.97874pt x 88.33pt>
 File: images/indica_model.pdf Graphic file (type pdf)
 
 <use images/indica_model.pdf>
 Package pdftex.def Info: images/indica_model.pdf used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 131.49863pt.
- <images/ihaa.jpg, id=298, 401.5pt x 293.4965pt>
+ <images/ihaa.jpg, id=300, 401.5pt x 293.4965pt>
 File: images/ihaa.jpg Graphic file (type jpg)
 
 <use images/ihaa.jpg>
@@ -1077,14 +1077,14 @@ File: images/aalto-logo-en.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 11.
 (pdftex.def)             Requested size: 312.00119pt x 137.19974pt.
 
-<images/aalto-logo-fi.pdf, id=372, 284.79599pt x 133.24078pt>
+<images/aalto-logo-fi.pdf, id=374, 284.79599pt x 133.24078pt>
 File: images/aalto-logo-fi.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-fi.pdf>
 Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 12.
 (pdftex.def)             Requested size: 312.00119pt x 145.97571pt.
 
-<images/aalto-logo-se.pdf, id=373, 315.62114pt x 132.96677pt>
+<images/aalto-logo-se.pdf, id=375, 315.62114pt x 132.96677pt>
 File: images/aalto-logo-se.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-se.pdf>
@@ -1133,10 +1133,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (29 pages, 499170 bytes).
+Output written on thesis.pdf (29 pages, 499286 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
+ 475 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
  98 named destinations out of 1000 (max. 500000)
  274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
