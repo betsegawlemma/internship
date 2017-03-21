@@ -526,6 +526,9 @@ write about the internship I found it easy to use the term data-center than larg
 small amount of energy. How do you answer if someone asks why do you focus on the less significant component? 
 - Concerning the NS3 experiment, I do not think one of the experiment is possible to conduct, energy consumption
 measurement for uplink/downlink flow separately. Is there other alternative?
+** Week 3 March
+- Wrote first draft of the background part
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 

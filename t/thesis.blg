@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: acm.bst
+Database file #1: sources.bib
+Repeated entry---line 857 of file sources.bib
+ : @inproceedings{DBLP:conf/isca/FanWB07
+ :                                      ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "ns3" isn't style-file defined
+--line 1057 of file sources.bib
+A bad cross reference---entry "DBLP:conf/eenergy/GyarmatiT10"
+refers to entry "DBLP:conf/eenergy/2010", which doesn't exist
+A bad cross reference---entry "DBLP:conf/isca/FanWB07"
+refers to entry "DBLP:conf/isca/2007", which doesn't exist
+A bad cross reference---entry "DBLP:conf/IEEEcloud/FiandrinoKBZ15"
+refers to entry "DBLP:conf/IEEEcloud/2015", which doesn't exist
+A bad cross reference---entry "DBLP:conf/networking/MahadevanSBR09"
+refers to entry "DBLP:conf/networking/2009", which doesn't exist
+A bad cross reference---entry "DBLP:conf/valuetools/CarneiroFR09"
+refers to entry "DBLP:conf/valuetools/2009", which doesn't exist
+Warning--I didn't find a database entry for "ThesisInstructions"
+Warning--I didn't find a database entry for "ThesisGrading"
+Warning--I didn't find a database entry for "TeXLive"
+Warning--I didn't find a database entry for "MiKTeX"
+Warning--I didn't find a database entry for "TeXlipse"
+Warning--I didn't find a database entry for "Eclipse"
+Warning--I didn't find a database entry for "HaapasaloThesis"
+Warning--I didn't find a database entry for "FerryProblem"
+Warning--I didn't find a database entry for "DBLP:conf/networking/2009"
+Warning--I didn't find a database entry for "DBLP:conf/isca/2007"
+Warning--I didn't find a database entry for "DBLP:conf/eenergy/2010"
+Warning--I didn't find a database entry for "DBLP:conf/valuetools/2009"
+Warning--I didn't find a database entry for "DBLP:conf/IEEEcloud/2015"
+You've used 14 entries,
+            2253 wiz_defined-function locations,
+            652 strings with 7944 characters,
+and the built_in function-call counts, 5523 in all, are:
+= -- 532
+> -- 268
+< -- 0
++ -- 114
+- -- 96
+* -- 432
+:= -- 863
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 89
+chr.to.int$ -- 0
+cite$ -- 14
+duplicate$ -- 206
+empty$ -- 442
+format.name$ -- 96
+if$ -- 1165
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 14
+newline$ -- 72
+num.names$ -- 28
+pop$ -- 109
+preamble$ -- 1
+purify$ -- 76
+quote$ -- 0
+skip$ -- 139
+stack$ -- 0
+substring$ -- 365
+swap$ -- 64
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 54
+warning$ -- 0
+while$ -- 56
+width$ -- 16
+write$ -- 142
+(There were 6 error messages)
