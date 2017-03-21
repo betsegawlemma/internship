@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  20 MAR 2017 19:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,7 +852,7 @@ LaTeX Info: Redefining \nameref on input line 391.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <images/aalto-logo-en.pdf,
- id=115, 302.3837pt x 132.96776pt>
+ id=123, 302.3837pt x 132.96776pt>
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-en.pdf>
@@ -864,28 +864,24 @@ Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 437.
 (./acronyms.tex) [4
 
 
-] (./thesis.toc)
+] (./thesis.toc [5
+
+
+])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [5
-
-
-] (./1introduction.tex
+ [6] (./1introduction.tex
 Chapter 1.
-[6
+
+Overfull \hbox (4.06784pt too wide) in paragraph at lines 10--10
+|\OT1/cmr/bx/n/17.28 Problem state-ment or Mo-ti-va-tion for the Study| 
+ []
+
+[7
 
 
-]
-
-Package natbib Warning: Citation `ThesisInstructions' on page 7 undefined on in
-put line 48.
-
-
-Package natbib Warning: Citation `ThesisGrading' on page 7 undefined on input l
-ine 50.
-
-) (./2background.tex [7]
+]) (./2background.tex [8]
 Chapter 2.
 
 Overfull \hbox (9.69168pt too wide) in paragraph at lines 6--7
@@ -893,63 +889,81 @@ Overfull \hbox (9.69168pt too wide) in paragraph at lines 6--7
 ters and switches)
  []
 
-[8
+[9
 
-] <images/datacenterenergy.png, id=193, 257.96375pt x 225.84375pt>
+] <images/datacenterenergy.png, id=207, 257.96375pt x 225.84375pt>
 File: images/datacenterenergy.png Graphic file (type png)
 
 <use images/datacenterenergy.png>
 Package pdftex.def Info: images/datacenterenergy.png used on input line 18.
 (pdftex.def)             Requested size: 170.71652pt x 149.46396pt.
 
-<images/serverenergy.png, id=196, 552.0625pt x 257.96375pt>
+<images/serverenergy.png, id=210, 552.0625pt x 257.96375pt>
 File: images/serverenergy.png Graphic file (type png)
 
 <use images/serverenergy.png>
 Package pdftex.def Info: images/serverenergy.png used on input line 28.
 (pdftex.def)             Requested size: 227.62204pt x 106.36412pt.
- [9 <./images/datacenterenergy.png>]
-<images/energyproportionality.png, id=212, 247.92625pt x 207.77625pt>
+ [10 <./images/datacenterenergy.png>]
+<images/energyproportionality.png, id=226, 247.92625pt x 207.77625pt>
 File: images/energyproportionality.png Graphic file (type png)
 
 <use images/energyproportionality.png>
-Package pdftex.def Info: images/energyproportionality.png used on input line 37
+Package pdftex.def Info: images/energyproportionality.png used on input line 38
 .
 (pdftex.def)             Requested size: 247.92564pt x 207.77573pt.
- [10 <./images/serverenergy.png>]
-[11 <./images/energyproportionality.png>]) (./3environment.tex [12]
+ [11 <./images/serverenergy.png>]
+[12 <./images/energyproportionality.png>] [13]
+Overfull \hbox (75.07669pt too wide) detected at line 71
+[]\OML/cmm/m/it/12 P[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 P[] \OT1/cmr/m/n/12 +
+ \OML/cmm/m/it/12 numlinecards \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 P[] \OT1/c
+mr/m/n/12 + [] \OML/cmm/m/it/12 numports[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/1
+2 P[] \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 utilizationFactor
+ []
+
+<images/SimGrid.png, id=275, 800.9925pt x 511.9125pt>
+File: images/SimGrid.png Graphic file (type png)
+ <use images/SimGrid.png>
+Package pdftex.def Info: images/SimGrid.png used on input line 77.
+(pdftex.def)             Requested size: 398.33858pt x 254.58086pt.
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 77--78
+ [] 
+ []
+
+[14]) (./3environment.tex [15 <./images/SimGrid.png>]
 Chapter 3.
 
-Package natbib Warning: Citation `TeXLive' on page 13 undefined on input line 2
+Package natbib Warning: Citation `TeXLive' on page 16 undefined on input line 2
 2.
 
 
-Package natbib Warning: Citation `MiKTeX' on page 13 undefined on input line 28
+Package natbib Warning: Citation `MiKTeX' on page 16 undefined on input line 28
 .
 
 
-Package natbib Warning: Citation `TeXlipse' on page 13 undefined on input line 
+Package natbib Warning: Citation `TeXlipse' on page 16 undefined on input line 
 38.
 
 
-Package natbib Warning: Citation `Eclipse' on page 13 undefined on input line 3
+Package natbib Warning: Citation `Eclipse' on page 16 undefined on input line 3
 8.
 
-[13
+[16
 
-] <images/indica_model.pdf, id=253, 261.97874pt x 88.33pt>
+] <images/indica_model.pdf, id=296, 261.97874pt x 88.33pt>
 File: images/indica_model.pdf Graphic file (type pdf)
 
 <use images/indica_model.pdf>
 Package pdftex.def Info: images/indica_model.pdf used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 131.49863pt.
- <images/ihaa.jpg, id=255, 401.5pt x 293.4965pt>
+ <images/ihaa.jpg, id=298, 401.5pt x 293.4965pt>
 File: images/ihaa.jpg Graphic file (type jpg)
 
 <use images/ihaa.jpg>
 Package pdftex.def Info: images/ihaa.jpg used on input line 77.
 (pdftex.def)             Requested size: 256.0748pt x 187.20119pt.
- [14 <./images/indica_model.pdf>] (./images/page-merge.tex
+ [17 <./images/indica_model.pdf>] (./images/page-merge.tex
 \spexx=\skip63
 \spexy=\skip64
 Missing character: There is no ; in font nullfont!
@@ -1014,11 +1028,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-Package natbib Warning: Citation `HaapasaloThesis' on page 15 undefined on inpu
+Package natbib Warning: Citation `HaapasaloThesis' on page 18 undefined on inpu
 t line 122.
 
 
-Package natbib Warning: Citation `HaapasaloThesis' on page 15 undefined on inpu
+Package natbib Warning: Citation `HaapasaloThesis' on page 18 undefined on inpu
 t line 122.
 
 \graphdotsize=\skip65
@@ -1027,50 +1041,50 @@ t line 122.
 \oggs=\skip67
 ) (./images/general-star-graphs.tex)
 
-Package natbib Warning: Citation `FerryProblem' on page 15 undefined on input l
+Package natbib Warning: Citation `FerryProblem' on page 18 undefined on input l
 ine 148.
 
 
-Package natbib Warning: Citation `FerryProblem' on page 15 undefined on input l
+Package natbib Warning: Citation `FerryProblem' on page 18 undefined on input l
 ine 148.
 
-) (./4methods.tex [15 <./images/ihaa.jpg>] [16]
+) (./4methods.tex [18 <./images/ihaa.jpg>] [19]
 Chapter 4.
-) (./5implementation.tex [17
+) (./5implementation.tex [20
 
-] [18]
+] [21]
 Chapter 5.
-) (./6evaluation.tex [19
+) (./6evaluation.tex [22
 
 ]
 Chapter 6.
-) (./7discussion.tex [20
+) (./7discussion.tex [23
 
 ]
 Chapter 7.
-) (./8conclusions.tex [21
+) (./8conclusions.tex [24
 
 ]
 Chapter 8.
-) (./thesis.bbl [22
+) (./thesis.bbl [25
 
-] [23
+] [26
 
-]) (./appendices.tex [24]
+]) (./appendices.tex [27]
 Appendix A.
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 <use images/aalto-logo-en.pdf>
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 11.
 (pdftex.def)             Requested size: 312.00119pt x 137.19974pt.
 
-<images/aalto-logo-fi.pdf, id=330, 284.79599pt x 133.24078pt>
+<images/aalto-logo-fi.pdf, id=372, 284.79599pt x 133.24078pt>
 File: images/aalto-logo-fi.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-fi.pdf>
 Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 12.
 (pdftex.def)             Requested size: 312.00119pt x 145.97571pt.
 
-<images/aalto-logo-se.pdf, id=331, 315.62114pt x 132.96677pt>
+<images/aalto-logo-se.pdf, id=373, 315.62114pt x 132.96677pt>
 File: images/aalto-logo-se.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-se.pdf>
@@ -1082,9 +1096,9 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[25
+[28
 
-] [26 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
+] [29 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
 
@@ -1092,35 +1106,37 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: EFDD089DD3B7456AD7C888FB49026656;1585.
+(rerunfilecheck)             Checksum: 785A0C25DD3458D9B30F343F1586CFF2;1773.
  ) 
 Here is how much of TeX's memory you used:
- 21519 strings out of 494929
- 427146 string characters out of 6180142
- 571508 words of memory out of 5000000
- 24269 multiletter control sequences out of 15000+600000
+ 21546 strings out of 494929
+ 427716 string characters out of 6180142
+ 570925 words of memory out of 5000000
+ 24284 multiletter control sequences out of 15000+600000
  16932 words of font info for 60 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
  55i,12n,73p,1624b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (26 pages, 382183 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on thesis.pdf (29 pages, 499170 bytes).
 PDF statistics:
- 423 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 406 compressed objects within 5 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 

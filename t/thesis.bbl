@@ -77,6 +77,12 @@
 \newblock Trends in worldwide {ICT} electricity consumption from 2007 to 2012.
 \newblock {\em Computer Communications 50\/} (2014), 64--76.
 
+\bibitem{DBLP:journals/tjs/KliazovichBK12}
+{\sc Kliazovich, D., Bouvry, P., and Khan, S.~U.}
+\newblock Greencloud: a packet-level simulator of energy-aware cloud computing
+  data centers.
+\newblock {\em The Journal of Supercomputing 62}, 3 (2012), 1263--1283.
+
 \bibitem{ns3}
 {\sc LLC, M.}
 \newblock {NS-3} simulator, 2017.
@@ -87,5 +93,14 @@
 \newblock In {\em {NETWORKING} 2009, 8th International {IFIP-TC} 6 Networking
   Conference, Aachen, Germany, May 11-15, 2009. Proceedings\/} (2009),
   pp.~795--808.
+
+\bibitem{DBLP:conf/wowmom/OrgerieLLL11}
+{\sc Orgerie, A., Lef{\`{e}}vre, L., Lassous, I.~G., and L{\'{o}}pez{-}Pacheco,
+  D.~M.}
+\newblock {ECOFEN:} an end-to-end energy cost model and simulator for
+  evaluating power consumption in large-scale networks.
+\newblock In {\em 12th {IEEE} International Symposium on a World of Wireless,
+  Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca, Italy, 20-24 June,
+  2011\/} (2011), pp.~1--6.
 
 \end{thebibliography}
