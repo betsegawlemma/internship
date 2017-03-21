@@ -41,11 +41,11 @@ The only reason the study of energy consumption management of network equipment 
 	\end{center}
 \end{figure}
 Three approaches are in common use to deal with this situation. The first one is re-engineering network devices so as to make them more energy proportional, device vendors are the prime role player in this aspect. The second approach is related to the operating rate of a network equipment port. A typical switch can operate on different transmission rate (100Mbps, 1 Gbps or 10 Gbps). An active port transmitting at 10 Gbps can consume more energy than if it transmit at 100 Mbps. Rate adaptation is the approach devised to take advantage of this situation. Instead of transmitting at the maximum rate all time,  the network port can be made to adapt to the actual traffic load. This energy saving approach is known as Adaptive Link Rate (ALR). The third approach, which is known as Low Power Idle (LPI), allows a network device to send data as fast as possible and then enter low power mode between transfers. The low power mode can further be extended by a technique called packet coalescing, which allows more energy saving \cite{DBLP:journals/comsur/BollaBDC11}. 
-\subsection{Packet-level and flow-level Simulators}
+\section{Packet-level and flow-level Simulators}
 \label{section:packetflow} 
 Packet-level simulators strives to model a given network phenomenon at the granularity level of packets, thus in general they are accepted by the research community to be more accurate compared to flow-level simulators \cite{DBLP:journals/jpdc/CasanovaGLQS14}. One of the most popular packet-level simulator is NS-3, which is categorized under discrete-event simulator with events corresponding to sending and receiving packets \cite{ns3}. Though packet-level simulators tend to be more accurate, they fail to scale well in the area of large-scale networks. 
 
-In the area of large-scale networks, flow-level simulators are the preferred alternative. Rather than modeling a given network phenomenon at a packet level, flow-level simulators treat a set of packets as a single unit. The most commonly used definition for flow in the context of computer networking is coined by Claffy et al. in \cite{claffy1998nature}: 
+In the area of large-scale networks, flow-level simulators are the preferred alternative. Rather than modeling a given network phenomenon at a packet level, flow-level simulators treat a set of packets as a single unit \cite{DBLP:journals/jpdc/CasanovaGLQS14}. The most commonly used definition for flow in the context of computer networking is coined by Claffy et al. in \cite{claffy1998nature}: 
 
 ``\ldots a flow \ldots a unidirectional traffic stream with a unique [source-IP-address, source-port, destination-IP-address, destination-port, IP-protocol] tuple \ldots''
 
@@ -84,5 +84,6 @@ Figure~\ref{fig:SimGrid} shows the structure of SimGrid and how its core works. 
 \end{figure}
 In SimGrid for each simulated activity, such as computation or data transfer, there is a corresponding condition variable, in Figure~\ref{fig:SimGrid} it is shown in SIMIX box. This condition variable synchronizes the concurrent processes of the simulated applications. The computing (\($$P_{x}$$\)) and the communication (\($$L_{x}$$\)) resources are shown on the bottom-right side of the figure. Computing resources are defined in terms of computing power, whereas, communication resources are defined in terms of bandwidth and latency. As shown in the SURF box, multiple activities can share the same resource (e.g. (\($$x_{1}$$\), \($$x_{n}$$\)), (\($$x_{1}$$\), \($$x_{3}$$\)) or (\($$x_{3}$$\), \($$x_{n}$$\))) or one activity can use multiple resources (e.g. \($$x_{1}$$\) or \($$x_{3}$$\) or  \($$x_{n}$$\)). Activities that share the same resource are limited by the capacity of that resource. Each activity is defined by the total and remaining work to be executed. When the work associated with the activity completes, the corresponding upper layer components receive a notification signal \cite{DBLP:journals/jpdc/CasanovaGLQS14}.
 
+As we have already discussed in Section~\ref{section:packetflow}, the advantages of flow-level simulation is scalability in terms of speed and memory usage. This is a good opportunity .
 
-
+\section{Related Simulators}

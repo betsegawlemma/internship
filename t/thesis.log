@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,7 +852,7 @@ LaTeX Info: Redefining \nameref on input line 391.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <images/aalto-logo-en.pdf,
- id=123, 302.3837pt x 132.96776pt>
+ id=127, 302.3837pt x 132.96776pt>
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-en.pdf>
@@ -891,21 +891,21 @@ ters and switches)
 
 [9
 
-] <images/datacenterenergy.png, id=207, 257.96375pt x 225.84375pt>
+] <images/datacenterenergy.png, id=212, 257.96375pt x 225.84375pt>
 File: images/datacenterenergy.png Graphic file (type png)
 
 <use images/datacenterenergy.png>
 Package pdftex.def Info: images/datacenterenergy.png used on input line 18.
 (pdftex.def)             Requested size: 170.71652pt x 149.46396pt.
 
-<images/serverenergy.png, id=210, 552.0625pt x 257.96375pt>
+<images/serverenergy.png, id=215, 552.0625pt x 257.96375pt>
 File: images/serverenergy.png Graphic file (type png)
 
 <use images/serverenergy.png>
 Package pdftex.def Info: images/serverenergy.png used on input line 28.
 (pdftex.def)             Requested size: 227.62204pt x 106.36412pt.
  [10 <./images/datacenterenergy.png>]
-<images/energyproportionality.png, id=226, 247.92625pt x 207.77625pt>
+<images/energyproportionality.png, id=231, 247.92625pt x 207.77625pt>
 File: images/energyproportionality.png Graphic file (type png)
 
 <use images/energyproportionality.png>
@@ -914,7 +914,7 @@ Package pdftex.def Info: images/energyproportionality.png used on input line 38
 (pdftex.def)             Requested size: 247.92564pt x 207.77573pt.
  [11 <./images/serverenergy.png>]
 [12 <./images/energyproportionality.png>] [13]
-<images/SimGrid.png, id=276, 800.9925pt x 511.9125pt>
+<images/SimGrid.png, id=282, 800.9925pt x 511.9125pt>
 File: images/SimGrid.png Graphic file (type png)
  <use images/SimGrid.png>
 Package pdftex.def Info: images/SimGrid.png used on input line 80.
@@ -944,13 +944,13 @@ Package natbib Warning: Citation `Eclipse' on page 16 undefined on input line 3
 
 [16
 
-] <images/indica_model.pdf, id=298, 261.97874pt x 88.33pt>
+] <images/indica_model.pdf, id=306, 261.97874pt x 88.33pt>
 File: images/indica_model.pdf Graphic file (type pdf)
 
 <use images/indica_model.pdf>
 Package pdftex.def Info: images/indica_model.pdf used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 131.49863pt.
- <images/ihaa.jpg, id=300, 401.5pt x 293.4965pt>
+ <images/ihaa.jpg, id=308, 401.5pt x 293.4965pt>
 File: images/ihaa.jpg Graphic file (type jpg)
 
 <use images/ihaa.jpg>
@@ -1070,14 +1070,14 @@ File: images/aalto-logo-en.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 11.
 (pdftex.def)             Requested size: 312.00119pt x 137.19974pt.
 
-<images/aalto-logo-fi.pdf, id=374, 284.79599pt x 133.24078pt>
+<images/aalto-logo-fi.pdf, id=381, 284.79599pt x 133.24078pt>
 File: images/aalto-logo-fi.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-fi.pdf>
 Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 12.
 (pdftex.def)             Requested size: 312.00119pt x 145.97571pt.
 
-<images/aalto-logo-se.pdf, id=375, 315.62114pt x 132.96677pt>
+<images/aalto-logo-se.pdf, id=382, 315.62114pt x 132.96677pt>
 File: images/aalto-logo-se.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-se.pdf>
@@ -1099,13 +1099,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 785A0C25DD3458D9B30F343F1586CFF2;1773.
+(rerunfilecheck)             Checksum: 4531531344BCBB9DFE04D316E3E21FAB;1833.
  ) 
 Here is how much of TeX's memory you used:
- 21546 strings out of 494929
- 427716 string characters out of 6180142
- 572127 words of memory out of 5000000
- 24284 multiletter control sequences out of 15000+600000
+ 21548 strings out of 494929
+ 427730 string characters out of 6180142
+ 571117 words of memory out of 5000000
+ 24285 multiletter control sequences out of 15000+600000
  16932 words of font info for 60 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
  55i,15n,73p,1624b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1126,10 +1126,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (29 pages, 499327 bytes).
+Output written on thesis.pdf (29 pages, 499621 bytes).
 PDF statistics:
- 475 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
- 98 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 482 PDF objects out of 1000 (max. 8388607)
+ 415 compressed objects within 5 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 282 words of extra memory for PDF output out of 10000 (max. 10000000)
 
