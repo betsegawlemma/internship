@@ -445,7 +445,7 @@ for the edge nodes. The two APs connected by Point-to-Point link.
 - The energy consumption is captured just after the last packet is received by the edge node in each case, which
 means the energy consumption shown is the total energy consumed by the node until the last packet is received. 
 - The following plot shows the result using the data shown [[file:data/energy_packets_clients2.csv][here]]
-#+BEGIN_SRC R  :results output :file figures/epc.png :exports both  
+#+BEGIN_SRC R :exports both  :results output graphics :file figures/epc.png  
 EPC = read.csv("data/energy_packets_clients2.csv",header=T)
 EPC_data = as.matrix(EPC)
 barplot(EPC_data,beside=TRUE,legend.text=TRUE,ylim=c(0,5),
@@ -458,7 +458,7 @@ main="Power Consumption",xlab="Number of Client Nodes",ylab="Power Consumed")
 *** Experiment-2:
 - Energy consumption in relation to the number of client nodes and packet size
 - In this experiment each client sends 10 packets with 1ms inter-packet interval time
-#+BEGIN_SRC R  :results file :file figures/epc_size.png :exports both  
+#+BEGIN_SRC R  :results output graphics :file figures/epc_size.png :exports both  
 EPCS = read.csv("data/energy_packetssize_clients.csv",header=T)
 EPCS_data = as.matrix(EPCS)
 barplot(EPCS_data,beside=TRUE,legend.text=TRUE,ylim=c(0,4),
@@ -466,13 +466,14 @@ main="Power Consumption",xlab="Number of Client Nodes",ylab="Power Consumed")
 #+END_SRC
 
 #+RESULTS:
+[[file:figures/epc_size.png]]
 
 *** Experiment-3:
 - Energy consumption in relation to interval between sent packets
 - In this experiment 1, 10, 100, or 1000 packets are send to the edge node by one client node with
 0.01, 1, 10, or 1000 ms inter-packet interval time and the energy consumption is captured just after the last
 packet is received
-#+BEGIN_SRC R  :results output graphics :file figures/ep_interval.png :exports both  
+#+BEGIN_SRC R :file figures/ep_interval.png :results value graphics 
 EPI = read.csv("data/energy_packets_intervals.csv",header=T)
 EPI_data = as.matrix(EPI)
 barplot(EPI_data,beside=TRUE,legend.text=TRUE,ylim=c(0,22),
