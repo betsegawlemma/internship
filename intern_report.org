@@ -383,7 +383,7 @@ consumed by cooling systems
 - The output is saved [[file:data/oneflow2.txt]]
 - The Bytes transmitted and the corresponding energy consumption values were extracted and put in [[file:data/oneflow2node1.csv]] file
 - The following R code plots shows the linear relationship that corresponds to the amount of Bytes transferred and energy consumption
-#+BEGIN_SRC R :results output graphics :file figures/energy.png :exports both  
+#+BEGIN_SRC R :results output :file figures/energy.png :exports both  
 ENERGY = read.csv("data/oneflow2node1.csv", header=T,na.strings="?")
 attach(ENERGY)
 lm.fit = lm(EnergyConsumed~Bytes)
@@ -445,7 +445,7 @@ for the edge nodes. The two APs connected by Point-to-Point link.
 - The energy consumption is captured just after the last packet is received by the edge node in each case, which
 means the energy consumption shown is the total energy consumed by the node until the last packet is received. 
 - The following plot shows the result using the data shown [[file:data/energy_packets_clients2.csv][here]]
-#+BEGIN_SRC R  :results output graphics :file figures/epc.png :exports both  
+#+BEGIN_SRC R  :results output :file figures/epc.png :exports both  
 EPC = read.csv("data/energy_packets_clients2.csv",header=T)
 EPC_data = as.matrix(EPC)
 barplot(EPC_data,beside=TRUE,legend.text=TRUE,ylim=c(0,5),
@@ -458,7 +458,7 @@ main="Power Consumption",xlab="Number of Client Nodes",ylab="Power Consumed")
 *** Experiment-2:
 - Energy consumption in relation to the number of client nodes and packet size
 - In this experiment each client sends 10 packets with 1ms inter-packet interval time
-#+BEGIN_SRC R  :results output graphics :file figures/epc_size.png :exports both  
+#+BEGIN_SRC R  :results file :file figures/epc_size.png :exports both  
 EPCS = read.csv("data/energy_packetssize_clients.csv",header=T)
 EPCS_data = as.matrix(EPCS)
 barplot(EPCS_data,beside=TRUE,legend.text=TRUE,ylim=c(0,4),
@@ -466,7 +466,6 @@ main="Power Consumption",xlab="Number of Client Nodes",ylab="Power Consumed")
 #+END_SRC
 
 #+RESULTS:
-[[file:figures/epc_size.png]]
 
 *** Experiment-3:
 - Energy consumption in relation to interval between sent packets
@@ -488,7 +487,7 @@ main="Power Consumption",xlab="Interval between packets (ms)",ylab="Power Consum
 and 100 Bytes of packet size
 - As it is evident from the diagram below, both the client and the edge node consume equal amount of energy for sending and receiving packets. In this
 experiment both the client and edge nodes are wireless stations with similar configuration  
-#+BEGIN_SRC R  :results output graphics :file figures/ece.png :exports both  
+#+BEGIN_SRC R  :results output :file figures/ece.png :exports both  
 ECE = read.csv("data/energy_client_edge.csv",header=T)
 ECE_data = as.matrix(ECE)
 barplot(ECE_data,beside=TRUE,legend.text=TRUE,ylim=c(0,2),
@@ -582,13 +581,13 @@ attach(validation)
 shapiro.test(Difference)
 #+END_SRC
 
-#+RESULTS:
-: 
-: 	Shapiro-Wilk normality test
-: 
-: data:  Difference
-: W = 0.9055, p-value = 0.09847
-: 
+RESULTS:
+
+ 	Shapiro-Wilk normality test
+ 
+ data:  Difference
+ W = 0.9055, p-value = 0.09847
+
 - The result p > 0.05 tells us that we can carry on with our assumption that the sample came from normal distribution
 - Now, to answer if the two power consumption estimates are significantly different, we run paired t-test 
 #+BEGIN_SRC R :results output :var validation=validation 
@@ -597,7 +596,7 @@ t.test(SimulatedPower,ExpectedPower,paired=TRUE,conf.level=0.95)
 mean(ExpectedPower)
 #+END_SRC
 
-#+RESULTS:
+RESULTS:
 #+begin_example
 
 	Paired t-test
@@ -623,8 +622,8 @@ attach(validation)
 mean(Difference)/mean(ExpectedPower)*100
 #+END_SRC
 
-#+RESULTS:
-: [1] 1.136636
+RESULTS:
+ 1.136636
 
 * Development
    - SimGrid HostEnergy plugin
