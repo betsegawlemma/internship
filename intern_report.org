@@ -488,7 +488,7 @@ main="Power Consumption",xlab="Interval between packets (ms)",ylab="Power Consum
 and 100 Bytes of packet size
 - As it is evident from the diagram below, both the client and the edge node consume equal amount of energy for sending and receiving packets. In this
 experiment both the client and edge nodes are wireless stations with similar configuration  
-#+BEGIN_SRC R  :results output :file figures/ece.png :exports both  
+#+BEGIN_SRC R  :results output graphics :file figures/ece.png   
 ECE = read.csv("data/energy_client_edge.csv",header=T)
 ECE_data = as.matrix(ECE)
 barplot(ECE_data,beside=TRUE,legend.text=TRUE,ylim=c(0,2),
@@ -497,6 +497,7 @@ main="Power Consumption of client and edge node",xlab="Number of packets send/re
 
 #+RESULTS:
 [[file:figures/ece.png]]
+
 
 *** Experiment-5:
 - Energy consumption of an idle edge node over time
