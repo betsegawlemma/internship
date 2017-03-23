@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -784,20 +784,20 @@ Package hyperref Info: Option `bookmarksopen' set `true' on input line 238.
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 391.
-LaTeX Font Info:    ... okay on input line 391.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 391.
-LaTeX Font Info:    ... okay on input line 391.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 391.
-LaTeX Font Info:    ... okay on input line 391.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 391.
-LaTeX Font Info:    ... okay on input line 391.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 391.
-LaTeX Font Info:    ... okay on input line 391.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 391.
-LaTeX Font Info:    ... okay on input line 391.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 391.
-LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
  ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -829,9 +829,9 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 391.
+(lastpage)             ! on input line 392.
 \AtBeginShipoutBox=\box69
-Package hyperref Info: Link coloring OFF on input line 391.
+Package hyperref Info: Link coloring OFF on input line 392.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -841,9 +841,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count150
 )
-LaTeX Info: Redefining \ref on input line 391.
-LaTeX Info: Redefining \pageref on input line 391.
-LaTeX Info: Redefining \nameref on input line 391.
+LaTeX Info: Redefining \ref on input line 392.
+LaTeX Info: Redefining \pageref on input line 392.
+LaTeX Info: Redefining \nameref on input line 392.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
@@ -856,7 +856,7 @@ LaTeX Info: Redefining \nameref on input line 391.
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-en.pdf>
-Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 437.
+Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 438.
 (pdftex.def)             Requested size: 174.709pt x 76.82234pt.
  [2 <./images/aalto-logo-en.pdf>] [3
 
@@ -1092,20 +1092,20 @@ AED: lastpage setting LastPage
 [28
 
 ] [29 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 550.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
 
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 550.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 550.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 4531531344BCBB9DFE04D316E3E21FAB;1833.
  ) 
 Here is how much of TeX's memory you used:
- 21548 strings out of 494929
- 427730 string characters out of 6180142
- 571117 words of memory out of 5000000
- 24285 multiletter control sequences out of 15000+600000
+ 21549 strings out of 494929
+ 427738 string characters out of 6180142
+ 572035 words of memory out of 5000000
+ 24286 multiletter control sequences out of 15000+600000
  16932 words of font info for 60 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
  55i,15n,73p,1624b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1126,7 +1126,7 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (29 pages, 499621 bytes).
+Output written on thesis.pdf (29 pages, 499849 bytes).
 PDF statistics:
  482 PDF objects out of 1000 (max. 8388607)
  415 compressed objects within 5 object streams

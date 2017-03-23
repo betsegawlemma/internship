@@ -113,15 +113,18 @@
      CLOSED: [2017-01-30 lun. 13:01]
 **** DONE I&E Study       Feb 2                     Online assignment submission date (I may need one full day to complete the report)       
 CLOSED: [2017-02-02 jeu. 10:24]
-**** TODO I&E Study       Feb 27 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                                                                        
-**** TODO I&E Study       March 20 (10:00 - 12:00)  Meeting for I&E study thesis progress
+**** DONE I&E Study       Feb 27 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                                                                        
+CLOSED: [2017-03-22 mer. 08:24]
+**** TODO I&E Study       March 30 (10:00 - 12:00)  Meeting for I&E study thesis progress
 *** Aalto Related
     [[https://into.aalto.fi/display/eneitictinno/Entry+2015-2016][Internship process]]
-**** TODO January to February           Starting to write master thesis                                          
-**** TODO By 28 February                Official confirmation of thesis topic
+**** DONE January to February           Starting to write master thesis                                          
+CLOSED: [2017-03-22 mer. 08:25]
+**** DONE By 28 February                Official confirmation of thesis topic
+CLOSED: [2017-03-22 mer. 08:25]
 **** TODO End of May/Beginning of June  Thesis presentation and Maturity test/Press release    
 **** TODO June                          Enroll for Autumn semester if graduating after July 31 
-**** TODO End of June                   Submit the jthesis                                      
+**** TODO End of June                   Submit the thesis                                      
 *** UR1 Related 
 **** By June 26    The thesis manuscript must be ready
 **** By July 7     Thesis defense                      
@@ -528,6 +531,100 @@ small amount of energy. How do you answer if someone asks why do you focus on th
 measurement for uplink/downlink flow separately. Is there other alternative?
 ** Week 3 March
 - Wrote first draft of the background part
+*** Validating the linear model of ECOFEN
+- For validating ECOFEN, the experiment found in section E (Per-Byte Total Energy) in this paper
+ [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption in the NetFPGA Gigabit router]] is used
+- In this paper, depicted on Figure 6 there are four linear energy models that are obtained from actual measurements. 
+- Here is the procedure followed to (in)validate the linear model implemented in ECOFEN using these four models
+  - Setup an experiment under the same condition as specified in the paper, the following table shows the parameters used
+  
+    | Parameters                          |               Values |
+    |-------------------------------------+----------------------|
+    | Packets per second (in thousands)   |       20, 60, 40, 80 |
+    | Packet size (header + payload)      | 100, 576, 1300, 1500 |
+    | Simulation time (in seconds)        |                    1 |
+    | Idle power consumption  (watts)     |               10.242 |
+    | Per-Byte power consumption (nJoule) |                3.212 |
+   
+    Note: the NetFPGA router with three ports turned on, the idle power consumption is ~10.242 this value is used in the linear
+           model of ECOFEN as the chassis consumption of a node. No idle power consumption is used for the Net devices or the 
+           ports, since they are already accounted for in the chassis consumption. 
+  - Write a script which output the average power consumption value for the ECOFEN's linear model
+  - In the same script compute and display the expected power consumption value   
+  - Compute the difference and compare the result
+- This script  [[file:ns3/link_energy3.cc]] is used for the experiment. The extracted output of the experiment is shown in the 
+  table below
+ #+tblname: validation 
+  | NumberOfPackets | PacketSize | SimulatedPower | ExpectedPower | Difference |
+  |-----------------+------------+----------------+---------------+------------|
+  |           20000 |        100 |        10.2551 |       10.2578 |    -2.7e-3 |
+  |           20000 |        576 |        10.3163 |       10.2916 |     0.0247 |
+  |           20000 |       1300 |        10.4093 |        10.343 |     0.0663 |
+  |           20000 |       1500 |         10.435 |       10.3572 |     0.0778 |
+  |           40000 |        100 |        10.2682 |       10.2681 |       1e-4 |
+  |           40000 |        576 |        10.3905 |       10.3335 |      0.057 |
+  |           40000 |       1300 |        10.5766 |       10.4331 |     0.1435 |
+  |           40000 |       1500 |        10.6279 |       10.4606 |     0.1673 |
+  |           60000 |        100 |        10.2813 |       10.2882 |    -6.9e-3 |
+  |           60000 |        576 |        10.4648 |       10.3796 |     0.0852 |
+  |           60000 |       1300 |        10.7438 |       10.5186 |     0.2252 |
+  |           60000 |       1500 |        10.8209 |        10.557 |     0.2639 |
+  |           80000 |        100 |        10.2944 |       10.2764 |      0.018 |
+  |           80000 |        576 |         10.539 |       10.4098 |     0.1292 |
+  |           80000 |       1300 |        10.9111 |       10.6128 |     0.2983 |
+  |           80000 |       1500 |        11.0139 |       10.6688 |     0.3451 |
+#+TBLFM: $5=$3-$4
+- In the script the inter-packet interval is computed by dividing 1 second by the number of packets
+**** Validation Result
+- first check if we can assume normal distribution for the population from which the sample came from 
+#+BEGIN_SRC R :results output :var validation=validation 
+attach(validation)
+shapiro.test(Difference)
+#+END_SRC
+
+#+RESULTS:
+: 
+: 	Shapiro-Wilk normality test
+: 
+: data:  Difference
+: W = 0.9055, p-value = 0.09847
+: 
+- The result p > 0.05 tells us that we can carry on with our assumption that the sample came from normal distribution
+- Now, to answer if the two power consumption estimates are significantly different, we run paired t-test 
+#+BEGIN_SRC R :results output :var validation=validation 
+attach(validation)
+t.test(SimulatedPower,ExpectedPower,paired=TRUE,conf.level=0.95)
+mean(ExpectedPower)
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+
+	Paired t-test
+
+data:  SimulatedPower and ExpectedPower
+t = 4.1816, df = 15, p-value = 0.0008022
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.05797514 0.17852486
+sample estimates:
+mean of the differences 
+                0.11825 
+
+[1] 10.40351
+#+end_example
+*** Conclusion about the validation
+- With 95% confidence, we can say that the average difference between the two power consumption estimation
+lies between 0.05797514  and 0.17852486
+- Since we have subtracted the expected measured power consumption value from the simulated value, the positive CI means that, the simulator model slightly over estimates the energy consumption
+- the average estimation error is ~1.14 % of the expected estimation as shown below
+#+BEGIN_SRC R :results output :var validation=validation 
+attach(validation)
+mean(Difference)/mean(ExpectedPower)*100
+#+END_SRC
+
+#+RESULTS:
+: [1] 1.136636
 
 * Development
    - SimGrid HostEnergy plugin
