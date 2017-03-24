@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  24 MAR 2017 10:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  24 MAR 2017 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,7 +852,7 @@ LaTeX Info: Redefining \nameref on input line 392.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <images/aalto-logo-en.pdf,
- id=127, 302.3837pt x 132.96776pt>
+ id=111, 302.3837pt x 132.96776pt>
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-en.pdf>
@@ -864,24 +864,24 @@ Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 438.
 (./acronyms.tex) [4
 
 
-] (./thesis.toc [5
-
-
-])
+] (./thesis.toc)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [6] (./1introduction.tex
+ [5
+
+
+] (./1introduction.tex
 Chapter 1.
 
 Overfull \hbox (4.06784pt too wide) in paragraph at lines 10--10
 |\OT1/cmr/bx/n/17.28 Problem state-ment or Mo-ti-va-tion for the Study| 
  []
 
-[7
+[6
 
 
-]) (./2background.tex [8]
+]) (./2background.tex [7]
 Chapter 2.
 
 Overfull \hbox (9.69168pt too wide) in paragraph at lines 6--7
@@ -889,209 +889,114 @@ Overfull \hbox (9.69168pt too wide) in paragraph at lines 6--7
 ters and switches)
  []
 
-[9
+[8
 
-] <images/datacenterenergy.png, id=212, 257.96375pt x 225.84375pt>
-File: images/datacenterenergy.png Graphic file (type png)
+] <images/datacenterenergy.pdf, id=188, 573.11258pt x 520.91757pt>
+File: images/datacenterenergy.pdf Graphic file (type pdf)
 
-<use images/datacenterenergy.png>
-Package pdftex.def Info: images/datacenterenergy.png used on input line 18.
-(pdftex.def)             Requested size: 170.71652pt x 149.46396pt.
+<use images/datacenterenergy.pdf>
+Package pdftex.def Info: images/datacenterenergy.pdf used on input line 17.
+(pdftex.def)             Requested size: 199.16928pt x 181.02826pt.
 
-<images/serverenergy.png, id=215, 552.0625pt x 257.96375pt>
-File: images/serverenergy.png Graphic file (type png)
+<images/serverenergy.pdf, id=191, 658.46pt x 307.549pt>
+File: images/serverenergy.pdf Graphic file (type pdf)
 
-<use images/serverenergy.png>
-Package pdftex.def Info: images/serverenergy.png used on input line 28.
-(pdftex.def)             Requested size: 227.62204pt x 106.36412pt.
- [10 <./images/datacenterenergy.png>]
-<images/energyproportionality.png, id=231, 247.92625pt x 207.77625pt>
-File: images/energyproportionality.png Graphic file (type png)
+<use images/serverenergy.pdf>
+Package pdftex.def Info: images/serverenergy.pdf used on input line 27.
+(pdftex.def)             Requested size: 312.9803pt x 146.18584pt.
+ [9 <./images/datacenterenergy.pdf>]
+<images/energyproportionality.pdf, id=210, 228.95135pt x 171.71352pt>
+File: images/energyproportionality.pdf Graphic file (type pdf)
 
-<use images/energyproportionality.png>
-Package pdftex.def Info: images/energyproportionality.png used on input line 38
+<use images/energyproportionality.pdf>
+Package pdftex.def Info: images/energyproportionality.pdf used on input line 37
 .
-(pdftex.def)             Requested size: 247.92564pt x 207.77573pt.
- [11 <./images/serverenergy.png>]
-[12 <./images/energyproportionality.png>] [13]
-<images/SimGrid.png, id=282, 800.9925pt x 511.9125pt>
-File: images/SimGrid.png Graphic file (type png)
- <use images/SimGrid.png>
-Package pdftex.def Info: images/SimGrid.png used on input line 80.
-(pdftex.def)             Requested size: 398.33858pt x 254.58086pt.
+(pdftex.def)             Requested size: 312.9803pt x 234.74826pt.
+ [10 <./images/serverenergy.pdf>]
+[11 <./images/energyproportionality.pdf>] [12]
+<images/SimGrid.pdf, id=293, 333.2624pt x 208.84416pt>
+File: images/SimGrid.pdf Graphic file (type pdf)
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 80--81
- [] 
+<use images/SimGrid.pdf>
+Package pdftex.def Info: images/SimGrid.pdf used on input line 78.
+(pdftex.def)             Requested size: 333.26158pt x 208.84364pt.
+ [13] [14 <./images/SimGrid.pdf>]) (./3environment.tex
+[15]
+Chapter 3.
+) (./4methods.tex [16
+
+]
+Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
  []
 
-[14] [15 <./images/SimGrid.png>]) (./3environment.tex [16]
-Chapter 3.
 
-Package natbib Warning: Citation `TeXLive' on page 17 undefined on input line 2
-2.
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
-
-Package natbib Warning: Citation `MiKTeX' on page 17 undefined on input line 28
-.
+ []
 
 
-Package natbib Warning: Citation `TeXlipse' on page 17 undefined on input line 
-38.
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
+ []
 
-Package natbib Warning: Citation `Eclipse' on page 17 undefined on input line 3
-8.
+) (./5implementation.tex [17
 
-[17
-
-] <images/indica_model.pdf, id=316, 261.97874pt x 88.33pt>
-File: images/indica_model.pdf Graphic file (type pdf)
-
-<use images/indica_model.pdf>
-Package pdftex.def Info: images/indica_model.pdf used on input line 67.
-(pdftex.def)             Requested size: 390.0pt x 131.49863pt.
- <images/ihaa.jpg, id=318, 401.5pt x 293.4965pt>
-File: images/ihaa.jpg Graphic file (type jpg)
-
-<use images/ihaa.jpg>
-Package pdftex.def Info: images/ihaa.jpg used on input line 77.
-(pdftex.def)             Requested size: 256.0748pt x 187.20119pt.
- [18 <./images/indica_model.pdf>] (./images/page-merge.tex
-\spexx=\skip63
-\spexy=\skip64
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 19 undefined on inpu
-t line 122.
-
-
-Package natbib Warning: Citation `HaapasaloThesis' on page 19 undefined on inpu
-t line 122.
-
-\graphdotsize=\skip65
-\graphgridsize=\skip66
-(./images/obstruction-grouped.tex
-\oggs=\skip67
-) (./images/general-star-graphs.tex)
-
-Package natbib Warning: Citation `FerryProblem' on page 19 undefined on input l
-ine 148.
-
-
-Package natbib Warning: Citation `FerryProblem' on page 19 undefined on input l
-ine 148.
-
-) (./4methods.tex [19 <./images/ihaa.jpg>] [20]
-Chapter 4.
-) (./5implementation.tex [21
-
-] [22]
+]
 Chapter 5.
-) (./6evaluation.tex [23
+)
+Underfull \hbox (badness 10000) in paragraph at lines 4--522
+
+ []
+
+(./6evaluation.tex [18
 
 ]
 Chapter 6.
-) (./7discussion.tex [24
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+) (./7discussion.tex [19
 
 ]
 Chapter 7.
-) (./8conclusions.tex [25
+) (./8conclusions.tex [20
 
 ]
 Chapter 8.
-) (./thesis.bbl [26
+) (./thesis.bbl [21
 
-] [27
+] [22
 
-]) (./appendices.tex [28]
+]) (./appendices.tex [23]
 Appendix A.
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 <use images/aalto-logo-en.pdf>
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 11.
 (pdftex.def)             Requested size: 312.00119pt x 137.19974pt.
 
-<images/aalto-logo-fi.pdf, id=390, 284.79599pt x 133.24078pt>
+<images/aalto-logo-fi.pdf, id=527, 284.79599pt x 133.24078pt>
 File: images/aalto-logo-fi.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-fi.pdf>
 Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 12.
 (pdftex.def)             Requested size: 312.00119pt x 145.97571pt.
 
-<images/aalto-logo-se.pdf, id=391, 315.62114pt x 132.96677pt>
+<images/aalto-logo-se.pdf, id=528, 315.62114pt x 132.96677pt>
 File: images/aalto-logo-se.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-se.pdf>
 Package pdftex.def Info: images/aalto-logo-se.pdf used on input line 13.
 (pdftex.def)             Requested size: 312.00119pt x 131.45084pt.
-)
-
-Package natbib Warning: There were undefined citations.
-
-
+) 
 AED: lastpage setting LastPage
-[29
+[24
 
-] [30 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
+] [25 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 550.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
 
@@ -1099,37 +1004,33 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 550.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 550.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4531531344BCBB9DFE04D316E3E21FAB;1833.
+(rerunfilecheck)             Checksum: 0237A957903F3882A5A31F595529932E;1560.
  ) 
 Here is how much of TeX's memory you used:
- 21551 strings out of 494929
- 427756 string characters out of 6180142
- 572068 words of memory out of 5000000
- 24286 multiletter control sequences out of 15000+600000
- 16932 words of font info for 60 fonts, out of 8000000 for 9000
+ 20917 strings out of 494929
+ 415480 string characters out of 6180142
+ 514737 words of memory out of 5000000
+ 23687 multiletter control sequences out of 15000+600000
+ 12248 words of font info for 44 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
- 55i,15n,73p,1624b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,67p,1624b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (30 pages, 502002 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on thesis.pdf (25 pages, 512361 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 423 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
- 282 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 613 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
