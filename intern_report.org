@@ -614,11 +614,11 @@ mean of the differences
 
 [1] 10.40351
 #+end_example
-*** Conclusion about the validation
+**** Conclusion about the validation
 - With 95% confidence, we can say that the average difference between the two power consumption estimation
 lies between 0.05797514  and 0.17852486
 - Since we have subtracted the expected measured power consumption value from the simulated value, the positive CI means that, the simulator model slightly over estimates the energy consumption
-- the average estimation error is ~1.14 % of the expected estimation as shown below
+- the average estimation error is ~1.14 % of the average expected power value computed as shown below
 #+BEGIN_SRC R :results output :var validation=validation 
 attach(validation)
 mean(Difference)/mean(ExpectedPower)*100
@@ -626,6 +626,27 @@ mean(Difference)/mean(ExpectedPower)*100
 
 RESULTS:
  1.136636
+*** Experiment for proposing flow-level model for SimGrid
+- The objective of this experiment is to study the relationship between data transfer rate or bandwidth and energy consumption and 
+based on the result, to propose flow-level analytical model which estimate energy consumption of large-scale networks
+- We use the ECOFEN NS3 module that we have validated in the previous experiment to study the relationship
+- Possible parameters and corresponding values to be used in the experiment are shown below
+
+| Parameters          | Values                          |
+|---------------------+---------------------------------|
+| Traffic Rate (Mbps) | 10, 100, 200, 500, 1000         |
+| Packet Size         | 44, 576, 1300, 1500             |
+| Flow direction      | Uni-directional, bi-directional |
+| Traffic Type        | UDP, TCP                        |
+| Traffic proportion  | UDP(5%), TCP(95%)               |
+
+- The parameters and the values shown in the table are collected based on our discussion two weeks back ([[file:img/ns3_experiment.jpg][note]]) and also based on the following
+  links 
+  - [[http://ieeexplore.ieee.org/document/1212669/]]
+  - [[https://www.isoc.org/inet98/proceedings/6g/6g_3.htm]]
+*** Questions 
+- While writing the background section, I claimed that the reason we want to manage energy consumption is because currently IT equipment are not energy proportional. Would 
+we be interested to know about it if the equipment were energy proportional?
 
 * Development
    - SimGrid HostEnergy plugin

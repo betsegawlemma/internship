@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  21 MAR 2017 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  24 MAR 2017 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,39 +924,39 @@ Overfull \hbox (8.33858pt too wide) in paragraph at lines 80--81
  [] 
  []
 
-[14]) (./3environment.tex [15 <./images/SimGrid.png>]
+[14] [15 <./images/SimGrid.png>]) (./3environment.tex [16]
 Chapter 3.
 
-Package natbib Warning: Citation `TeXLive' on page 16 undefined on input line 2
+Package natbib Warning: Citation `TeXLive' on page 17 undefined on input line 2
 2.
 
 
-Package natbib Warning: Citation `MiKTeX' on page 16 undefined on input line 28
+Package natbib Warning: Citation `MiKTeX' on page 17 undefined on input line 28
 .
 
 
-Package natbib Warning: Citation `TeXlipse' on page 16 undefined on input line 
+Package natbib Warning: Citation `TeXlipse' on page 17 undefined on input line 
 38.
 
 
-Package natbib Warning: Citation `Eclipse' on page 16 undefined on input line 3
+Package natbib Warning: Citation `Eclipse' on page 17 undefined on input line 3
 8.
 
-[16
+[17
 
-] <images/indica_model.pdf, id=306, 261.97874pt x 88.33pt>
+] <images/indica_model.pdf, id=316, 261.97874pt x 88.33pt>
 File: images/indica_model.pdf Graphic file (type pdf)
 
 <use images/indica_model.pdf>
 Package pdftex.def Info: images/indica_model.pdf used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 131.49863pt.
- <images/ihaa.jpg, id=308, 401.5pt x 293.4965pt>
+ <images/ihaa.jpg, id=318, 401.5pt x 293.4965pt>
 File: images/ihaa.jpg Graphic file (type jpg)
 
 <use images/ihaa.jpg>
 Package pdftex.def Info: images/ihaa.jpg used on input line 77.
 (pdftex.def)             Requested size: 256.0748pt x 187.20119pt.
- [17 <./images/indica_model.pdf>] (./images/page-merge.tex
+ [18 <./images/indica_model.pdf>] (./images/page-merge.tex
 \spexx=\skip63
 \spexy=\skip64
 Missing character: There is no ; in font nullfont!
@@ -1021,11 +1021,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-Package natbib Warning: Citation `HaapasaloThesis' on page 18 undefined on inpu
+Package natbib Warning: Citation `HaapasaloThesis' on page 19 undefined on inpu
 t line 122.
 
 
-Package natbib Warning: Citation `HaapasaloThesis' on page 18 undefined on inpu
+Package natbib Warning: Citation `HaapasaloThesis' on page 19 undefined on inpu
 t line 122.
 
 \graphdotsize=\skip65
@@ -1034,50 +1034,50 @@ t line 122.
 \oggs=\skip67
 ) (./images/general-star-graphs.tex)
 
-Package natbib Warning: Citation `FerryProblem' on page 18 undefined on input l
+Package natbib Warning: Citation `FerryProblem' on page 19 undefined on input l
 ine 148.
 
 
-Package natbib Warning: Citation `FerryProblem' on page 18 undefined on input l
+Package natbib Warning: Citation `FerryProblem' on page 19 undefined on input l
 ine 148.
 
-) (./4methods.tex [18 <./images/ihaa.jpg>] [19]
+) (./4methods.tex [19 <./images/ihaa.jpg>] [20]
 Chapter 4.
-) (./5implementation.tex [20
+) (./5implementation.tex [21
 
-] [21]
+] [22]
 Chapter 5.
-) (./6evaluation.tex [22
+) (./6evaluation.tex [23
 
 ]
 Chapter 6.
-) (./7discussion.tex [23
+) (./7discussion.tex [24
 
 ]
 Chapter 7.
-) (./8conclusions.tex [24
+) (./8conclusions.tex [25
 
 ]
 Chapter 8.
-) (./thesis.bbl [25
+) (./thesis.bbl [26
 
-] [26
+] [27
 
-]) (./appendices.tex [27]
+]) (./appendices.tex [28]
 Appendix A.
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 <use images/aalto-logo-en.pdf>
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 11.
 (pdftex.def)             Requested size: 312.00119pt x 137.19974pt.
 
-<images/aalto-logo-fi.pdf, id=381, 284.79599pt x 133.24078pt>
+<images/aalto-logo-fi.pdf, id=390, 284.79599pt x 133.24078pt>
 File: images/aalto-logo-fi.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-fi.pdf>
 Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 12.
 (pdftex.def)             Requested size: 312.00119pt x 145.97571pt.
 
-<images/aalto-logo-se.pdf, id=382, 315.62114pt x 132.96677pt>
+<images/aalto-logo-se.pdf, id=391, 315.62114pt x 132.96677pt>
 File: images/aalto-logo-se.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-se.pdf>
@@ -1089,9 +1089,9 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[28
+[29
 
-] [29 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
+] [30 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 550.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
 
@@ -1102,9 +1102,9 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 4531531344BCBB9DFE04D316E3E21FAB;1833.
  ) 
 Here is how much of TeX's memory you used:
- 21549 strings out of 494929
- 427738 string characters out of 6180142
- 572035 words of memory out of 5000000
+ 21551 strings out of 494929
+ 427756 string characters out of 6180142
+ 572068 words of memory out of 5000000
  24286 multiletter control sequences out of 15000+600000
  16932 words of font info for 60 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
@@ -1126,10 +1126,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (29 pages, 499849 bytes).
+Output written on thesis.pdf (30 pages, 502002 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
- 415 compressed objects within 5 object streams
- 99 named destinations out of 1000 (max. 500000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 423 compressed objects within 5 object streams
+ 101 named destinations out of 1000 (max. 500000)
  282 words of extra memory for PDF output out of 10000 (max. 10000000)
 
