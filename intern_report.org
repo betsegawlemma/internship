@@ -660,7 +660,7 @@ RESULTS:
 *** Questions 
 - While writing the background section, I claimed that the reason we want to manage energy consumption is because currently IT equipment are not energy proportional. Would 
 we be interested to know about it if the equipment were energy proportional?
-*** Week 4 March
+** Week 4 March
 **** Experiment - Power consumption vs 1-flow UDP traffic, Packet_Size = 1472, ([[file:ns3/1flow_energy.cc]])
 #+tblname: tblUDPTraffic1
 | Traffic (Mbps) | Power_consumption (watt)  |
