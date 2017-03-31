@@ -2,7 +2,7 @@
 
 \bibitem{DBLP:journals/tsp/BarakatTIDO03}
 {\sc Barakat, C., Thiran, P., Iannaccone, G., Diot, C., and Owezarski, P.}
-\newblock Modeling internet backbone traffic at the flow level.
+\newblock {M}odeling {I}nternet backbone traffic at the flow level.
 \newblock {\em {IEEE} Trans. Signal Processing 51}, 8 (2003), 2111--2124.
 
 \bibitem{DBLP:series/synthesis/2013Barroso}
@@ -26,8 +26,8 @@
 
 \bibitem{DBLP:conf/valuetools/CarneiroFR09}
 {\sc Carneiro, G., Fortuna, P., and Ricardo, M.}
-\newblock Flowmonitor: a network monitoring framework for the network simulator
-  3 {(NS-3)}.
+\newblock Flowmonitor: {A} network monitoring framework for the network
+  simulator 3 {(NS-3)}.
 \newblock In {\em 4th International Conference on Performance Evaluation
   Methodologies and Tools, {VALUETOOLS} '09, Pisa, Italy, October 20-22,
   2009\/} (2009), p.~1.
@@ -40,8 +40,8 @@
 
 \bibitem{claffy1998nature}
 {\sc Claffy, K., Miller, G., and Thompson, K.}
-\newblock The nature of the beast: Recent traffic measurements from an internet
-  backbone.
+\newblock The nature of the beast: {R}ecent traffic measurements from an
+  {I}nternet backbone.
 \newblock In {\em Proceedings of INET\/} (1998), vol.~98, pp.~21--24.
 
 \bibitem{DBLP:journals/comsur/DayarathnaWF16}
@@ -79,8 +79,8 @@
 
 \bibitem{DBLP:journals/tjs/KliazovichBK12}
 {\sc Kliazovich, D., Bouvry, P., and Khan, S.~U.}
-\newblock Greencloud: a packet-level simulator of energy-aware cloud computing
-  data centers.
+\newblock Greencloud: {A} packet-level simulator of energy-aware cloud
+  computing data centers.
 \newblock {\em The Journal of Supercomputing 62}, 3 (2012), 1263--1283.
 
 \bibitem{ns3}
@@ -97,7 +97,7 @@
 \bibitem{DBLP:conf/wowmom/OrgerieLLL11}
 {\sc Orgerie, A., Lef{\`{e}}vre, L., Lassous, I.~G., and L{\'{o}}pez{-}Pacheco,
   D.~M.}
-\newblock {ECOFEN:} an end-to-end energy cost model and simulator for
+\newblock {ECOFEN:} {A}n end-to-end energy cost model and simulator for
   evaluating power consumption in large-scale networks.
 \newblock In {\em 12th {IEEE} International Symposium on a World of Wireless,
   Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca, Italy, 20-24 June,

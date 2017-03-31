@@ -21,12 +21,6 @@ A bad cross reference---entry "DBLP:conf/valuetools/CarneiroFR09"
 refers to entry "DBLP:conf/valuetools/2009", which doesn't exist
 A bad cross reference---entry "DBLP:conf/wowmom/OrgerieLLL11"
 refers to entry "DBLP:conf/wowmom/2011", which doesn't exist
-Warning--I didn't find a database entry for "TeXLive"
-Warning--I didn't find a database entry for "MiKTeX"
-Warning--I didn't find a database entry for "TeXlipse"
-Warning--I didn't find a database entry for "Eclipse"
-Warning--I didn't find a database entry for "HaapasaloThesis"
-Warning--I didn't find a database entry for "FerryProblem"
 Warning--I didn't find a database entry for "DBLP:conf/wowmom/2011"
 Warning--I didn't find a database entry for "DBLP:conf/networking/2009"
 Warning--I didn't find a database entry for "DBLP:conf/isca/2007"
@@ -35,7 +29,7 @@ Warning--I didn't find a database entry for "DBLP:conf/valuetools/2009"
 Warning--I didn't find a database entry for "DBLP:conf/IEEEcloud/2015"
 You've used 16 entries,
             2253 wiz_defined-function locations,
-            664 strings with 8607 characters,
+            652 strings with 8511 characters,
 and the built_in function-call counts, 6327 in all, are:
 = -- 610
 > -- 307

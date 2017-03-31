@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  24 MAR 2017 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.20)  29 MAR 2017 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -112,7 +112,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@bottom=\skip54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box31
 \beforetitleunit=\skip55
 \aftertitleunit=\skip56
@@ -852,7 +852,7 @@ LaTeX Info: Redefining \nameref on input line 392.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <images/aalto-logo-en.pdf,
- id=111, 302.3837pt x 132.96776pt>
+ id=115, 302.3837pt x 132.96776pt>
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-en.pdf>
@@ -864,66 +864,70 @@ Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 438.
 (./acronyms.tex) [4
 
 
-] (./thesis.toc)
+] (./thesis.toc [5
+
+
+])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [5
-
-
-] (./1introduction.tex
+ [6] (./1introduction.tex
 Chapter 1.
+[7
 
-Overfull \hbox (4.06784pt too wide) in paragraph at lines 10--10
-|\OT1/cmr/bx/n/17.28 Problem state-ment or Mo-ti-va-tion for the Study| 
+
+]) (./2background.tex [8]
+Chapter 2.
+
+Overfull \hbox (14.7036pt too wide) in paragraph at lines 4--4
+|[]\OT1/cmr/bx/n/17.28 Electricity con-sump-tion of ICT equip-ments| 
  []
 
-[6
-
-
-]) (./2background.tex [7]
-Chapter 2.
 
 Overfull \hbox (9.69168pt too wide) in paragraph at lines 6--7
 \OT1/cmr/m/n/12 and modems), net-work equip-ments used in of-fices (such as rou
 ters and switches)
  []
 
-[8
+[9
 
-] <images/datacenterenergy.pdf, id=188, 573.11258pt x 520.91757pt>
+] <images/datacenterenergy.pdf, id=197, 573.11258pt x 520.91757pt>
 File: images/datacenterenergy.pdf Graphic file (type pdf)
 
 <use images/datacenterenergy.pdf>
 Package pdftex.def Info: images/datacenterenergy.pdf used on input line 17.
 (pdftex.def)             Requested size: 199.16928pt x 181.02826pt.
 
-<images/serverenergy.pdf, id=191, 658.46pt x 307.549pt>
+<images/serverenergy.pdf, id=201, 658.46pt x 307.549pt>
 File: images/serverenergy.pdf Graphic file (type pdf)
 
 <use images/serverenergy.pdf>
 Package pdftex.def Info: images/serverenergy.pdf used on input line 27.
 (pdftex.def)             Requested size: 312.9803pt x 146.18584pt.
- [9 <./images/datacenterenergy.pdf>]
-<images/energyproportionality.pdf, id=210, 228.95135pt x 171.71352pt>
+ [10 <./images/datacenterenergy.pdf>]
+<images/energyproportionality.pdf, id=222, 228.95135pt x 171.71352pt>
 File: images/energyproportionality.pdf Graphic file (type pdf)
 
 <use images/energyproportionality.pdf>
 Package pdftex.def Info: images/energyproportionality.pdf used on input line 37
 .
 (pdftex.def)             Requested size: 312.9803pt x 234.74826pt.
- [10 <./images/serverenergy.pdf>]
-[11 <./images/energyproportionality.pdf>] [12]
-<images/SimGrid.pdf, id=293, 333.2624pt x 208.84416pt>
+ [11 <./images/serverenergy.pdf>]
+[12 <./images/energyproportionality.pdf>]
+Overfull \hbox (8.6177pt too wide) in paragraph at lines 52--52
+|[]\OT1/cmr/bx/n/17.28 Simulating and mod-el-ing en-ergy con-sump-
+ []
+
+[13] <images/SimGrid.pdf, id=311, 333.2624pt x 208.84416pt>
 File: images/SimGrid.pdf Graphic file (type pdf)
 
 <use images/SimGrid.pdf>
 Package pdftex.def Info: images/SimGrid.pdf used on input line 78.
 (pdftex.def)             Requested size: 333.26158pt x 208.84364pt.
- [13] [14 <./images/SimGrid.pdf>]) (./3environment.tex
-[15]
+ [14] [15 <./images/SimGrid.pdf>]) (./3environment.tex
+[16]
 Chapter 3.
-) (./4methods.tex [16
+) (./4methods.tex [17
 
 ]
 Chapter 4.
@@ -942,7 +946,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-) (./5implementation.tex [17
+) (./5implementation.tex [18
 
 ]
 Chapter 5.
@@ -951,7 +955,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--522
 
  []
 
-(./6evaluation.tex [18
+(./6evaluation.tex [19
 
 ]
 Chapter 6.
@@ -960,33 +964,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) (./7discussion.tex [19
+) (./7discussion.tex [20
 
 ]
 Chapter 7.
-) (./8conclusions.tex [20
+) (./8conclusions.tex [21
 
 ]
 Chapter 8.
-) (./thesis.bbl [21
+) (./thesis.bbl [22
 
-] [22
+] [23
 
-]) (./appendices.tex [23]
+]) (./appendices.tex [24]
 Appendix A.
 File: images/aalto-logo-en.pdf Graphic file (type pdf)
 <use images/aalto-logo-en.pdf>
 Package pdftex.def Info: images/aalto-logo-en.pdf used on input line 11.
 (pdftex.def)             Requested size: 312.00119pt x 137.19974pt.
 
-<images/aalto-logo-fi.pdf, id=527, 284.79599pt x 133.24078pt>
+<images/aalto-logo-fi.pdf, id=545, 284.79599pt x 133.24078pt>
 File: images/aalto-logo-fi.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-fi.pdf>
 Package pdftex.def Info: images/aalto-logo-fi.pdf used on input line 12.
 (pdftex.def)             Requested size: 312.00119pt x 145.97571pt.
 
-<images/aalto-logo-se.pdf, id=528, 315.62114pt x 132.96677pt>
+<images/aalto-logo-se.pdf, id=546, 315.62114pt x 132.96677pt>
 File: images/aalto-logo-se.pdf Graphic file (type pdf)
 
 <use images/aalto-logo-se.pdf>
@@ -994,9 +998,9 @@ Package pdftex.def Info: images/aalto-logo-se.pdf used on input line 13.
 (pdftex.def)             Requested size: 312.00119pt x 131.45084pt.
 ) 
 AED: lastpage setting LastPage
-[24
+[25
 
-] [25 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
+] [26 <./images/aalto-logo-fi.pdf> <./images/aalto-logo-se.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 550.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
 
@@ -1004,16 +1008,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 550.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 550.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0237A957903F3882A5A31F595529932E;1560.
+(rerunfilecheck)             Checksum: 7C6FBF38C995E1D33E51094D4F2C375F;1636.
  ) 
 Here is how much of TeX's memory you used:
- 20917 strings out of 494929
- 415480 string characters out of 6180142
- 514737 words of memory out of 5000000
- 23687 multiletter control sequences out of 15000+600000
+ 20923 strings out of 494929
+ 415535 string characters out of 6180142
+ 515184 words of memory out of 5000000
+ 23691 multiletter control sequences out of 15000+600000
  12248 words of font info for 44 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
- 55i,15n,67p,1624b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,67p,1627b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1027,10 +1031,10 @@ ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (25 pages, 512361 bytes).
+Output written on thesis.pdf (26 pages, 514288 bytes).
 PDF statistics:
- 613 PDF objects out of 1000 (max. 8388607)
- 491 compressed objects within 5 object streams
- 82 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 506 compressed objects within 6 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 

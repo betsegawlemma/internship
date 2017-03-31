@@ -614,6 +614,16 @@ mean of the differences
 
 [1] 10.40351
 #+end_example
+
+**** Root Mean Squared Error
+#+BEGIN_SRC R :results output :var validation=validation 
+attach(validation)
+sqrt(mean((SimulatedPower-ExpectedPower)^2,na.rm=TRUE))
+#+END_SRC
+
+#+RESULTS:
+: [1] 0.1611783
+
 **** Conclusion about the validation
 - With 95% confidence, we can say that the average difference between the two power consumption estimation
 lies between 0.05797514  and 0.17852486
@@ -627,18 +637,21 @@ mean(Difference)/mean(ExpectedPower)*100
 RESULTS:
  1.136636
 *** Experiment for proposing flow-level model for SimGrid
-- The objective of this experiment is to study the relationship between data transfer rate or bandwidth and energy consumption and 
-based on the result, to propose flow-level analytical model which estimate energy consumption of large-scale networks
+- The objective of this experiment is to study the relationship between data transfer rate or bandwidth and energy consumption and based on the result, to propose flow-level analytical model which estimate energy consumption of large-scale networks
 - We use the ECOFEN NS3 module that we have validated in the previous experiment to study the relationship
 - Possible parameters and corresponding values to be used in the experiment are shown below
 
-| Parameters          | Values                          |
-|---------------------+---------------------------------|
-| Traffic Rate (Mbps) | 10, 100, 200, 500, 1000         |
-| Packet Size         | 44, 576, 1300, 1500             |
-| Flow direction      | Uni-directional, bi-directional |
-| Traffic Type        | UDP, TCP                        |
-| Traffic proportion  | UDP(5%), TCP(95%)               |
+| Parameters                     | Values                          |
+|--------------------------------+---------------------------------|
+| Traffic Rate (Mbps)            | 10, 100, 200, 500, 1000         |
+| Packet Size                    | 44, 576, 1300, 1500             |
+| Flow direction                 | Uni-directional, bi-directional |
+| Traffic Type                   | UDP, TCP                        |
+| Traffic proportion             | UDP(5%), TCP(95%)               |
+| Idle Chassis/node power (watt) | 6.936                           |
+| Idle Net Device (watt)         | 1.102                           |
+| Energy per-byte (nJoule)       | 3.212                           |
+| ECOFEN Model used              | Linear                          |
 
 - The parameters and the values shown in the table are collected based on our discussion two weeks back ([[file:img/ns3_experiment.jpg][note]]) and also based on the following
   links 
@@ -647,6 +660,147 @@ based on the result, to propose flow-level analytical model which estimate energ
 *** Questions 
 - While writing the background section, I claimed that the reason we want to manage energy consumption is because currently IT equipment are not energy proportional. Would 
 we be interested to know about it if the equipment were energy proportional?
+*** Week 4 March
+**** Experiment - Power consumption vs 1-flow UDP traffic, Packet_Size = 1472, ([[file:ns3/1flow_energy.cc]])
+#+tblname: tblUDPTraffic1
+| Traffic (Mbps) | Power_consumption (watt)  |
+|----------------+--------------------------|
+|              0 |                    8.038 |
+|        10.2022 |                   8.0421 |
+|        50.4537 |                  8.05828 |
+|        100.386 |                  8.07836 |
+|        150.318 |                  8.09843 |
+|        200.252 |                  8.11851 |
+|        250.184 |                  8.13858 |
+|        300.117 |                  8.15865 |
+|         350.05 |                  8.17873 |
+
+**** Experiment - Power consumption vs 1-flow TCP traffic, packet_size=1472, ([[file:ns3/tcp_flow_energy.cc]])
+#+tblname: tblTCPTraffic1
+| Traffic (Mbps | Power_consumption (watt) |
+|---------------+--------------------------|
+|             0 |                    8.038 |
+|     11.590364 |                  8.04268 |
+|      57.93887 |                  8.06138 |
+|     115.88787 |                  8.08477 |
+|     173.83738 |                  8.10816 |
+|      231.7869 |                  8.13155 |
+|      289.7364 |                  8.15494 |
+|      347.6859 |                  8.17833 |
+|      405.6354 |                  8.20172 |
+
+NOTE: When we run the TCP script provided above we get the following output. The output in the above portion are coming from ECOFEN model, and the flow outputs are coming from flow-monitor modules of NS-3. 
+#+Begin_example
+
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.04268
+Time 1 Node 1 Conso 9.14935
+Time 1 Node 2 Conso 8.04268
+
+FlowID: 1 (10.1.1.1 / 49153 --> 10.1.2.2 / 8080)
+  Tx Packets:   2551
+  Tx Bytes:   1382384
+  Offered Load: 11.0591 Mbps
+  Rx Packets:   2551
+  Rx Bytes:   1382384
+  Throughput: 11.0591 Mbps
+  Lost Packets: 0
+  Time last packet Transmited: 1
+  Time last packet Received: 1
+
+FlowID: 2 (10.1.2.2 / 8080 --> 10.1.1.1 / 49153)
+  Tx Packets:   1277
+  Tx Bytes:   66408
+  Offered Load: 0.531264 Mbps
+  Rx Packets:   1277
+  Rx Bytes:   66408
+  Throughput: 0.531264 Mbps
+  Lost Packets: 0
+  Time last packet Transmited: 1
+  Time last packet Received: 1
+
+#+End_example
+- When we send one flow between node 0 and node 2, in case of TCP, there will be two actual flows as shown by flow-monitor. The reason is due to TCP handshake and acknowledgment of received packets
+- Therefore, to compute the contributing traffic volume for the computed energy consumption shown at node 2 at time 1, we add the throughput of both flows. In this case 11.0591 Mbps for flow-1 and 0.531264 Mbps for flow-2 and the combined power consumption of the two flows is 8.04268 watt. 
+**** Checking if there is difference between the TCP and UDP models 
+- To check the difference we plot the data in the above two tables together as shown below
+#+BEGIN_SRC R :results output graphics :exports both :var tblUDPTraffic=tblUDPTraffic1 :var tblTCPTraffic=tblTCPTraffic1 :file figures/udptcp.png  
+fit.udp=lm(tblUDPTraffic$Power_consumption~tblUDPTraffic$Traffic)
+fit.tcp=lm(tblTCPTraffic$Power_consumption~tblTCPTraffic$Traffic)
+plot(tblUDPTraffic$Power_consumption~tblUDPTraffic$Traffic,col="red",xlab="Traffic (Mbps)",ylab="Power Consumption (Watt)")
+abline(fit.udp)
+points(tblTCPTraffic$Power_consumption~tblTCPTraffic$Traffic,col="blue")
+abline(fit.tcp)
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/udptcp.png]]
+- The Red dots are for UDP, and the blue ones are for TCP.
+- From the graph shown, we can see that linear relationship between traffic volume and power consumption is same whether the traffic UDP or TCP
+**** Experiment - Power consumption of 2-flow UDP traffic: packet size = 1472, flow direction = same ([[file:ns3/2flow_energy_same.cc]])
+#+tblname: tblUDPTraffic2
+| Traffic (Mbps, flow1&2) | Power_consumption (watt) |
+|-------------------------+--------------------------|
+|                       0 |                    8.038 |
+|                 10.2143 |                  8.04209 |
+|                 20.4044 |                  8.04619 |
+|                101.9262 |                  8.07896 |
+|                 203.828 |                  8.11993 |
+|                 305.734 |                   8.1609 |
+|                  407.64 |                  8.20187 |
+|                 509.534 |                  8.24284 |
+|                 611.442 |                   8.2838 |
+|                 713.354 |                  8.32477 |
+|                  815.27 |                  8.36574 |
+|                 917.174 |                  8.40671 |
+**** Checking if parallel flow in same direction make a difference in power consumption
+- Again to compare the difference, we plot two UDP traffic model with one UDP traffic model as follows and the plot tells us there is no difference
+#+BEGIN_SRC R :results output  graphics :exports both :var tblUDPTraffic1=tblUDPTraffic1 :var tblUDPTraffic2=tblUDPTraffic2 :file figures/udpt.png 
+fit.udp1=lm(tblUDPTraffic1$Power_consumption~tblUDPTraffic1$Traffic)
+fit.udp2=lm(tblUDPTraffic2$Power_consumption~tblUDPTraffic2$Traffic)
+plot(tblUDPTraffic1$Power_consumption~tblUDPTraffic1$Traffic,col="red",xlab="Traffic (Mbps)",ylab="Power Consumption (Watt)")
+abline(fit.udp1)
+points(tblUDPTraffic2$Power_consumption~tblUDPTraffic2$Traffic,col="blue")
+abline(fit.udp2)
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/udpt.png]]
+
+**** Checking if parallel flow in opposite direction make a difference in power consumption ([[file:ns3/2flow_energy_opposit.cc]])
+#+tblname: tblUDPTraffic2O
+| Traffic (Mbps, flow1&2) | Power_consumption (watt) |
+|-------------------------+--------------------------|
+|                       0 |                    8.038 |
+|                 10.2143 |                  8.04209 |
+|                 20.4044 |                  8.04619 |
+|                101.9262 |                  8.07896 |
+|                         |                          |
+- By comparing the first four entries of this table with the previous one, we can see that the power consumption does not differ whether the flow is in parallel or in opposite. This is what we expect since the ECOFEN Linear model computes energy based on bytes processed without considering the flow direction (Reciving/Sending).
+**** UP-Link or Down-Link power consumption
+- if we assume, in case of 2 flows, one flow as up-link flow and the other as down-link flow, we get the following result
+| Flow | Traffic (Mbps) | Power_consumption (watt) | Power_Consumption - Idle |
+|------+----------------+--------------------------+--------------------------|
+|    0 |              0 |                    8.038 |                        0 |
+|    2 |        5.10715 |                  8.04209 |                  4.09e-3 |
+|    1 |        5.10715 |                  8.04005 |                  2.05e-3 |
+|    1 |        10.2022 |                   8.0421 |                   4.1e-3 |
+
+**** Questions
+- What has been suggested before looks like this
+|           |                           |
+|-----------+---------------------------|
+| UP_LINK   | (P_MAX - P_MIN)/2 + P_MIN |
+| DOWN_LINK | (P_MAX - P_MIN)/2 + 0     |
+- According to the linear model the relationship looks like the following
+#+Begin_equation
+ P = P_MIN + (P_MAX - P_MIN) * L  
+#+End_equation
+- where L is traffic load in percentage
+- My question is 
+  - Why are we dividing by 2? Is it not the case that the UP_LINK or DOWN_LINK power consumption dependent on the traffic load?
 
 * Development
    - SimGrid HostEnergy plugin
