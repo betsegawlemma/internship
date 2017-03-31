@@ -795,9 +795,9 @@ abline(fit.udp2)
 | UP_LINK   | (P_MAX - P_MIN)/2 + P_MIN |
 | DOWN_LINK | (P_MAX - P_MIN)/2 + 0     |
 - According to the linear model the relationship looks like the following
-#+Begin_equation
+#+Begin_SRC LaTEx
  P = P_MIN + (P_MAX - P_MIN) * L  
-#+End_equation
+#+End_SRC
 - where L is traffic load in percentage
 - My question is 
   - Why are we dividing by 2? Is it not the case that the UP_LINK or DOWN_LINK power consumption dependent on the traffic load?
