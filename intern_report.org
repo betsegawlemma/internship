@@ -876,8 +876,9 @@ with open(inpt) as fe:
 
 #+END_SRC
 - The following block of code plots the processed data of the three nodes consumption separately
-#+BEGIN_SRC R :results value graphics :file figures/flow_energy.png  :var input="/home/betsegaw/internship/data/flow_energy.csv" :exports results
-FE = read.csv(input, header=T)
+
+#+BEGIN_SRC R :results output graphics dir:~/internship :file figures/flow_energy.png  :exports both
+FE = read.csv("data/flow_energy.csv", header=T)
 attach(FE)
 fit.node0=lm(Cons_Node0~Throughput)
 fit.node1=lm(Cons_Node1~Throughput)
