@@ -805,6 +805,8 @@ abline(fit.udp2)
   - Why are we dividing by 2? Is it not the case that the UP_LINK or DOWN_LINK power consumption dependent on the traffic load?
 *** Week 1 April
 **** Automating Data Collection and formatting
+Note: in all experiments I noticed that NS-3 adds 28 byte to the packet size provided. Therefore in actual input when I specify
+packet size I subtract 28 from intended packet size. For example, in the following table the intended packet size is 1500. 
 - Power consumption vs Traffic
 | parameter       | value |
 |-----------------+-------|
@@ -982,16 +984,97 @@ with open(inpt) as fe:
            sys.exit()
 
 #+END_SRC
+
 **** Plot of the validation result
-#+BEGIN_SRC R :results value graphics :file figures/ecof_val_100.png :exports results
+- Comparison of simulated and measured/expected consumption for packet size = 100 bytes
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_100.csv" :file figures/ecof_val_100.png :exports results
 library(ggplot2)
-val_100 = read.csv("data/eco_val_100.csv", header=T)
+val_100 = read.csv(input, header=T)
 attach(val_100)
 ggplot(val_100,aes(Throughput))+
-   geom_line(aes(y = Cons_Node0, colour = "Node-0 Consumption"))+
-   geom_line(aes(y = Cons_Node2, colour = "Node-2 Consumption"))+
-   geom_line(aes(y = Cons_Expected, colour = "Expected Consumption"))
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
+   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
+   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
+   ylab(label="Power Consumption in Watt")+
+   xlab(label="Traffic in Mbps")+
+   theme(legend.position="top")
 #+END_SRC
+
+#+RESULTS:
+[[file:figures/ecof_val_100.png]]
+- Comparison of simulated and measured/expected consumption for packet size = 576 bytes
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_576.csv" :file figures/ecof_val_576.png :exports results
+library(ggplot2)
+val_576 = read.csv(input, header=T)
+attach(val_576)
+ggplot(val_576,aes(Throughput))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
+   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
+   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
+   ylab(label="Power Consumption in Watt")+
+   xlab(label="Traffic in Mbps")+
+   theme(legend.position="top")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ecof_val_576.png]]
+- Comparison of simulated and measured/expected consumption for packet size = 1000 bytes
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1000.csv" :file figures/ecof_val_1000.png :exports results
+library(ggplot2)
+val_1000 = read.csv(input, header=T)
+attach(val_1000)
+ggplot(val_1000,aes(Throughput))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
+   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
+   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
+   ylab(label="Power Consumption in Watt")+
+   xlab(label="Traffic in Mbps")+
+   theme(legend.position="top")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ecof_val_1000.png]]
+- Comparison of simulated and measured/expected consumption for packet size = 1500 bytes
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1500.csv" :file figures/ecof_val_1500.png :exports results
+library(ggplot2)
+val_1500 = read.csv(input, header=T)
+attach(val_1500)
+ggplot(val_1500,aes(Throughput))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
+   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
+   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
+   ylab(label="Power Consumption in Watt")+
+   xlab(label="Traffic in Mbps")+
+   theme(legend.position="top")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ecof_val_1500.png]]
+**** Issues
+- The Simulated model starts to divert from the measured models when the traffic volume is greater than,
+  - 50 Mbps when the packet size is 100 bytes
+  - 100 Mbps when the packet size is 576 bytes
+  - 125 Mbps when the packet size is 1000 or 1500 bytes
+- The simulator terminates with the following error as shown at the bottom of [[file:data/eco_val_100.dat]]
+and [[file:data/eco_val_576.dat]] when the traffic volume goes above 384.801 Mbps and 804.193 Mbps respectively. For the other two cases there is no termination
+#+BEGIN_EXAMPLE
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+#+END_EXAMPLE
+**** Simulated Total network consumption when the packet size is 1500 bytes
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1500.csv" :file figures/ecof_val_total.png :exports results
+library(ggplot2)
+val_1500 = read.csv(input, header=T)
+attach(val_1500)
+ggplot(val_1500,aes(Throughput))+
+   geom_point(aes(y = Cons_Total, colour = "Total"))+
+   ylab(label="Power Consumption in Watt")+
+   xlab(label="Traffic in Mbps")+
+   theme(legend.position="top")
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ecof_val_total.png]]
 
 * Development
    - SimGrid HostEnergy plugin
