@@ -906,7 +906,7 @@ the validation experiment conducted before using the other equations shown in [[
 | Packet Size       | 100,576,1000,1500 |
 | Traffic (Mbps)    | [1,1000]          |
 | Traffic Increment | 2                 |
-#+BEGIN_SRC bash :results output
+#+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
 cd ~/ns3workspace/source/ns-3.26
 array=(72 548 972 1472)
@@ -988,7 +988,7 @@ with open(inpt) as fe:
 
 **** Plot of the validation result
 - Comparison of simulated and measured/expected consumption for packet size = 100 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_100.csv" :file figures/ecof_val_100.png :exports results
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_100.csv" :file figures/ecof_val_100.png :exports both
 library(ggplot2)
 val_100 = read.csv(input, header=T)
 attach(val_100)
@@ -1004,7 +1004,7 @@ ggplot(val_100,aes(Throughput))+
 #+RESULTS:
 [[file:figures/ecof_val_100.png]]
 - Comparison of simulated and measured/expected consumption for packet size = 576 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_576.csv" :file figures/ecof_val_576.png :exports results
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_576.csv" :file figures/ecof_val_576.png :exports both
 library(ggplot2)
 val_576 = read.csv(input, header=T)
 attach(val_576)
@@ -1020,7 +1020,7 @@ ggplot(val_576,aes(Throughput))+
 #+RESULTS:
 [[file:figures/ecof_val_576.png]]
 - Comparison of simulated and measured/expected consumption for packet size = 1000 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1000.csv" :file figures/ecof_val_1000.png :exports results
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1000.csv" :file figures/ecof_val_1000.png :exports both
 library(ggplot2)
 val_1000 = read.csv(input, header=T)
 attach(val_1000)
@@ -1036,7 +1036,7 @@ ggplot(val_1000,aes(Throughput))+
 #+RESULTS:
 [[file:figures/ecof_val_1000.png]]
 - Comparison of simulated and measured/expected consumption for packet size = 1500 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1500.csv" :file figures/ecof_val_1500.png :exports results
+#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1500.csv" :file figures/ecof_val_1500.png :exports both
 library(ggplot2)
 val_1500 = read.csv(input, header=T)
 attach(val_1500)
