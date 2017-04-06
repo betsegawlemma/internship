@@ -1,0 +1,3508 @@
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.693s)
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.03841
+Time 1 Node 1 Conso 9.14082
+Time 1 Node 2 Conso 8.03841
+Time 0.989208 Throughput 1.03115
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.03964
+Time 1 Node 1 Conso 9.14328
+Time 1 Node 2 Conso 8.03964
+Time 0.997059 Throughput 3.0691
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.04169
+Time 1 Node 1 Conso 9.14738
+Time 1 Node 2 Conso 8.04169
+Time 0.998629 Throughput 5.10713
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.04456
+Time 1 Node 1 Conso 9.15312
+Time 1 Node 2 Conso 8.04456
+Time 0.999301 Throughput 7.14516
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.04825
+Time 1 Node 1 Conso 9.1605
+Time 1 Node 2 Conso 8.04825
+Time 0.999675 Throughput 9.1832
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.05276
+Time 1 Node 1 Conso 9.16953
+Time 1 Node 2 Conso 8.05276
+Time 0.999913 Throughput 11.2212
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.05809
+Time 1 Node 1 Conso 9.18018
+Time 1 Node 2 Conso 8.05809
+Time 0.999172 Throughput 13.2593
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.06424
+Time 1 Node 1 Conso 9.19247
+Time 1 Node 2 Conso 8.06424
+Time 0.999413 Throughput 15.2973
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.0712
+Time 1 Node 1 Conso 9.2064
+Time 1 Node 2 Conso 8.0712
+Time 0.999597 Throughput 17.3354
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.07899
+Time 1 Node 1 Conso 9.22198
+Time 1 Node 2 Conso 8.07899
+Time 0.999744 Throughput 19.3734
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.0876
+Time 1 Node 1 Conso 9.23919
+Time 1 Node 2 Conso 8.0876
+Time 0.999861 Throughput 21.4115
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.09702
+Time 1 Node 1 Conso 9.25804
+Time 1 Node 2 Conso 8.09702
+Time 0.999958 Throughput 23.4495
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.10726
+Time 1 Node 1 Conso 9.27853
+Time 1 Node 2 Conso 8.10726
+Time 0.999569 Throughput 25.4876
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.11833
+Time 1 Node 1 Conso 9.30065
+Time 1 Node 2 Conso 8.11833
+Time 0.999675 Throughput 27.5256
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.13021
+Time 1 Node 1 Conso 9.32442
+Time 1 Node 2 Conso 8.13021
+Time 0.999763 Throughput 29.5637
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.14291
+Time 1 Node 1 Conso 9.34982
+Time 1 Node 2 Conso 8.14291
+Time 0.999842 Throughput 31.6018
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.15643
+Time 1 Node 1 Conso 9.37687
+Time 1 Node 2 Conso 8.15643
+Time 0.999912 Throughput 33.6398
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.17078
+Time 1 Node 1 Conso 9.40556
+Time 1 Node 2 Conso 8.17078
+Time 0.999974 Throughput 35.6778
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.18594
+Time 1 Node 1 Conso 9.43587
+Time 1 Node 2 Conso 8.18594
+Time 0.99971 Throughput 37.7158
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.20191
+Time 1 Node 1 Conso 9.46783
+Time 1 Node 2 Conso 8.20191
+Time 0.999774 Throughput 39.7539
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.21871
+Time 1 Node 1 Conso 9.50143
+Time 1 Node 2 Conso 8.21871
+Time 0.999833 Throughput 41.792
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.23633
+Time 1 Node 1 Conso 9.53666
+Time 1 Node 2 Conso 8.23633
+Time 0.999887 Throughput 43.83
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.25477
+Time 1 Node 1 Conso 9.57354
+Time 1 Node 2 Conso 8.25477
+Time 0.999934 Throughput 45.8681
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.27403
+Time 1 Node 1 Conso 9.61206
+Time 1 Node 2 Conso 8.27403
+Time 0.999981 Throughput 47.9061
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.2941
+Time 1 Node 1 Conso 9.65221
+Time 1 Node 2 Conso 8.2941
+Time 1.00002 Throughput 49.9442
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.315
+Time 1 Node 1 Conso 9.69401
+Time 1 Node 2 Conso 8.315
+Time 0.999825 Throughput 51.9823
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.33672
+Time 1 Node 1 Conso 9.73744
+Time 1 Node 2 Conso 8.33672
+Time 0.99987 Throughput 54.0203
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.35925
+Time 1 Node 1 Conso 9.78251
+Time 1 Node 2 Conso 8.35925
+Time 0.999913 Throughput 56.0582
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.38261
+Time 1 Node 1 Conso 9.82922
+Time 1 Node 2 Conso 8.38261
+Time 0.999949 Throughput 58.0964
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.40678
+Time 1 Node 1 Conso 9.87757
+Time 1 Node 2 Conso 8.40678
+Time 0.999985 Throughput 60.1343
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.43177
+Time 1 Node 1 Conso 9.92755
+Time 1 Node 2 Conso 8.43177
+Time 1.00002 Throughput 62.1724
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.45759
+Time 1 Node 1 Conso 9.97918
+Time 1 Node 2 Conso 8.45759
+Time 0.999859 Throughput 64.2106
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.48422
+Time 1 Node 1 Conso 10.0324
+Time 1 Node 2 Conso 8.48422
+Time 0.999896 Throughput 66.2485
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.51167
+Time 1 Node 1 Conso 10.0873
+Time 1 Node 2 Conso 8.51167
+Time 0.999928 Throughput 68.2865
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.53994
+Time 1 Node 1 Conso 10.1439
+Time 1 Node 2 Conso 8.53994
+Time 0.999956 Throughput 70.3248
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.56903
+Time 1 Node 1 Conso 10.2021
+Time 1 Node 2 Conso 8.56903
+Time 0.999988 Throughput 72.3626
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.59894
+Time 1 Node 1 Conso 10.2619
+Time 1 Node 2 Conso 8.59894
+Time 1.00002 Throughput 74.4006
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.62967
+Time 1 Node 1 Conso 10.3233
+Time 1 Node 2 Conso 8.62967
+Time 0.999883 Throughput 76.4388
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.66122
+Time 1 Node 1 Conso 10.3864
+Time 1 Node 2 Conso 8.66122
+Time 0.999913 Throughput 78.4767
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.69359
+Time 1 Node 1 Conso 10.4512
+Time 1 Node 2 Conso 8.69359
+Time 0.999939 Throughput 80.5149
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.72677
+Time 1 Node 1 Conso 10.5175
+Time 1 Node 2 Conso 8.72677
+Time 0.999961 Throughput 82.5532
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.76078
+Time 1 Node 1 Conso 10.5856
+Time 1 Node 2 Conso 8.76078
+Time 0.999987 Throughput 84.5911
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.7956
+Time 1 Node 1 Conso 10.6552
+Time 1 Node 2 Conso 8.7956
+Time 1.00001 Throughput 86.629
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.83125
+Time 1 Node 1 Conso 10.7265
+Time 1 Node 2 Conso 8.83125
+Time 0.999899 Throughput 88.6671
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.86771
+Time 1 Node 1 Conso 10.7994
+Time 1 Node 2 Conso 8.86771
+Time 0.999921 Throughput 90.7054
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.905
+Time 1 Node 1 Conso 10.874
+Time 1 Node 2 Conso 8.905
+Time 0.999944 Throughput 92.7434
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.9431
+Time 1 Node 1 Conso 10.9502
+Time 1 Node 2 Conso 8.9431
+Time 0.999966 Throughput 94.7815
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 8.98202
+Time 1 Node 1 Conso 11.028
+Time 1 Node 2 Conso 8.98202
+Time 0.999985 Throughput 96.8198
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.02176
+Time 1 Node 1 Conso 11.1075
+Time 1 Node 2 Conso 9.02176
+Time 1.00001 Throughput 98.8572
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.06233
+Time 1 Node 1 Conso 11.1887
+Time 1 Node 2 Conso 9.06233
+Time 0.999909 Throughput 100.896
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.10371
+Time 1 Node 1 Conso 11.2714
+Time 1 Node 2 Conso 9.10371
+Time 0.999934 Throughput 102.933
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.14591
+Time 1 Node 1 Conso 11.3558
+Time 1 Node 2 Conso 9.14591
+Time 0.999954 Throughput 104.971
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.18893
+Time 1 Node 1 Conso 11.4419
+Time 1 Node 2 Conso 9.18893
+Time 0.999971 Throughput 107.01
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.23276
+Time 1 Node 1 Conso 11.5295
+Time 1 Node 2 Conso 9.23276
+Time 0.999993 Throughput 109.047
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.27742
+Time 1 Node 1 Conso 11.6188
+Time 1 Node 2 Conso 9.27742
+Time 1.00001 Throughput 111.086
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.3229
+Time 1 Node 1 Conso 11.7098
+Time 1 Node 2 Conso 9.3229
+Time 0.999922 Throughput 113.124
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.36919
+Time 1 Node 1 Conso 11.8024
+Time 1 Node 2 Conso 9.36919
+Time 0.999938 Throughput 115.162
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.41631
+Time 1 Node 1 Conso 11.8966
+Time 1 Node 2 Conso 9.41631
+Time 0.99995 Throughput 117.201
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.46425
+Time 1 Node 1 Conso 11.9925
+Time 1 Node 2 Conso 9.46425
+Time 0.999972 Throughput 119.238
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.513
+Time 1 Node 1 Conso 12.09
+Time 1 Node 2 Conso 9.513
+Time 0.999985 Throughput 121.277
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.56258
+Time 1 Node 1 Conso 12.1891
+Time 1 Node 2 Conso 9.56257
+Time 1.00001 Throughput 123.314
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.61297
+Time 1 Node 1 Conso 12.2899
+Time 1 Node 2 Conso 9.61297
+Time 1.00002 Throughput 125.353
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.66418
+Time 1 Node 1 Conso 12.3924
+Time 1 Node 2 Conso 9.66418
+Time 0.999948 Throughput 127.39
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.71622
+Time 1 Node 1 Conso 12.4964
+Time 1 Node 2 Conso 9.71622
+Time 0.99996 Throughput 129.428
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.76907
+Time 1 Node 1 Conso 12.6021
+Time 1 Node 2 Conso 9.76907
+Time 0.999971 Throughput 131.467
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.82274
+Time 1 Node 1 Conso 12.7095
+Time 1 Node 2 Conso 9.82274
+Time 0.999994 Throughput 133.504
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.87723
+Time 1 Node 1 Conso 12.8185
+Time 1 Node 2 Conso 9.87723
+Time 1.00001 Throughput 135.542
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.93254
+Time 1 Node 1 Conso 12.9291
+Time 1 Node 2 Conso 9.93254
+Time 1.00002 Throughput 137.581
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 9.98867
+Time 1 Node 1 Conso 13.0413
+Time 1 Node 2 Conso 9.98867
+Time 0.99995 Throughput 139.618
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.0456
+Time 1 Node 1 Conso 13.1552
+Time 1 Node 2 Conso 10.0456
+Time 0.999962 Throughput 141.657
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.1034
+Time 1 Node 1 Conso 13.2708
+Time 1 Node 2 Conso 10.1034
+Time 0.999973 Throughput 143.695
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.162
+Time 1 Node 1 Conso 13.3879
+Time 1 Node 2 Conso 10.162
+Time 0.999988 Throughput 145.733
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.2214
+Time 1 Node 1 Conso 13.5068
+Time 1 Node 2 Conso 10.2214
+Time 1 Throughput 147.772
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.2816
+Time 1 Node 1 Conso 13.6272
+Time 1 Node 2 Conso 10.2816
+Time 1.00001 Throughput 149.81
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.3427
+Time 1 Node 1 Conso 13.7493
+Time 1 Node 2 Conso 10.3427
+Time 0.99995 Throughput 151.847
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.4045
+Time 1 Node 1 Conso 13.873
+Time 1 Node 2 Conso 10.4045
+Time 0.999961 Throughput 153.886
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.4672
+Time 1 Node 1 Conso 13.9984
+Time 1 Node 2 Conso 10.4672
+Time 0.999979 Throughput 155.923
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.5307
+Time 1 Node 1 Conso 14.1254
+Time 1 Node 2 Conso 10.5307
+Time 0.999994 Throughput 157.961
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.595
+Time 1 Node 1 Conso 14.2541
+Time 1 Node 2 Conso 10.595
+Time 1 Throughput 159.999
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.6602
+Time 1 Node 1 Conso 14.3843
+Time 1 Node 2 Conso 10.6602
+Time 1.00001 Throughput 162.038
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.7261
+Time 1 Node 1 Conso 14.5163
+Time 1 Node 2 Conso 10.7261
+Time 1.00002 Throughput 164.076
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.7929
+Time 1 Node 1 Conso 14.6498
+Time 1 Node 2 Conso 10.7929
+Time 0.999967 Throughput 166.113
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.8605
+Time 1 Node 1 Conso 14.785
+Time 1 Node 2 Conso 10.8605
+Time 0.999975 Throughput 168.152
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.9289
+Time 1 Node 1 Conso 14.9219
+Time 1 Node 2 Conso 10.9289
+Time 0.999983 Throughput 170.191
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 10.9982
+Time 1 Node 1 Conso 15.0604
+Time 1 Node 2 Conso 10.9982
+Time 1 Throughput 172.228
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.0682
+Time 1 Node 1 Conso 15.2005
+Time 1 Node 2 Conso 11.0682
+Time 1.00001 Throughput 174.266
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.1391
+Time 1 Node 1 Conso 15.3422
+Time 1 Node 2 Conso 11.1391
+Time 0.999958 Throughput 176.304
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.2108
+Time 1 Node 1 Conso 15.4856
+Time 1 Node 2 Conso 11.2108
+Time 0.999968 Throughput 178.342
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.2833
+Time 1 Node 1 Conso 15.6307
+Time 1 Node 2 Conso 11.2833
+Time 0.999985 Throughput 180.379
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.3567
+Time 1 Node 1 Conso 15.7773
+Time 1 Node 2 Conso 11.3567
+Time 0.999986 Throughput 182.419
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.4308
+Time 1 Node 1 Conso 15.9256
+Time 1 Node 2 Conso 11.4308
+Time 0.999996 Throughput 184.457
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.5058
+Time 1 Node 1 Conso 16.0756
+Time 1 Node 2 Conso 11.5058
+Time 1.00001 Throughput 186.495
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.5816
+Time 1 Node 1 Conso 16.2272
+Time 1 Node 2 Conso 11.5816
+Time 0.999965 Throughput 188.531
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.6582
+Time 1 Node 1 Conso 16.3804
+Time 1 Node 2 Conso 11.6582
+Time 0.999972 Throughput 190.57
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.7356
+Time 1 Node 1 Conso 16.5353
+Time 1 Node 2 Conso 11.7356
+Time 0.999973 Throughput 192.61
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.8139
+Time 1 Node 1 Conso 16.6918
+Time 1 Node 2 Conso 11.8139
+Time 0.99999 Throughput 194.647
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.893
+Time 1 Node 1 Conso 16.8499
+Time 1 Node 2 Conso 11.893
+Time 0.999999 Throughput 196.685
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 11.9728
+Time 1 Node 1 Conso 17.0097
+Time 1 Node 2 Conso 11.9728
+Time 1.00001 Throughput 198.724
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.0536
+Time 1 Node 1 Conso 17.1711
+Time 1 Node 2 Conso 12.0536
+Time 1.00002 Throughput 200.761
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.1351
+Time 1 Node 1 Conso 17.3342
+Time 1 Node 2 Conso 12.1351
+Time 1.00002 Throughput 202.8
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.2174
+Time 1 Node 1 Conso 17.4989
+Time 1 Node 2 Conso 12.2174
+Time 0.999987 Throughput 204.836
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.3006
+Time 1 Node 1 Conso 17.6652
+Time 1 Node 2 Conso 12.3006
+Time 0.999983 Throughput 206.876
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.3846
+Time 1 Node 1 Conso 17.8332
+Time 1 Node 2 Conso 12.3846
+Time 0.999992 Throughput 208.915
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.4694
+Time 1 Node 1 Conso 18.0028
+Time 1 Node 2 Conso 12.4694
+Time 1 Throughput 210.953
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.555
+Time 1 Node 1 Conso 18.1741
+Time 1 Node 2 Conso 12.555
+Time 1.00002 Throughput 212.989
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.6415
+Time 1 Node 1 Conso 18.347
+Time 1 Node 2 Conso 12.6415
+Time 0.999972 Throughput 215.027
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.7287
+Time 1 Node 1 Conso 18.5215
+Time 1 Node 2 Conso 12.7287
+Time 0.999982 Throughput 217.065
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.8168
+Time 1 Node 1 Conso 18.6977
+Time 1 Node 2 Conso 12.8168
+Time 0.999996 Throughput 219.102
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.9057
+Time 1 Node 1 Conso 18.8755
+Time 1 Node 2 Conso 12.9057
+Time 1 Throughput 221.141
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 12.9955
+Time 1 Node 1 Conso 19.0549
+Time 1 Node 2 Conso 12.9955
+Time 1 Throughput 223.181
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.086
+Time 1 Node 1 Conso 19.236
+Time 1 Node 2 Conso 13.086
+Time 1.00002 Throughput 225.216
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.1774
+Time 1 Node 1 Conso 19.4187
+Time 1 Node 2 Conso 13.1774
+Time 0.999977 Throughput 227.255
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.2695
+Time 1 Node 1 Conso 19.6031
+Time 1 Node 2 Conso 13.2695
+Time 0.999975 Throughput 229.295
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.3625
+Time 1 Node 1 Conso 19.7891
+Time 1 Node 2 Conso 13.3625
+Time 0.999986 Throughput 231.333
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.4564
+Time 1 Node 1 Conso 19.9767
+Time 1 Node 2 Conso 13.4564
+Time 0.999996 Throughput 233.371
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.551
+Time 1 Node 1 Conso 20.166
+Time 1 Node 2 Conso 13.551
+Time 1.00001 Throughput 235.408
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.6465
+Time 1 Node 1 Conso 20.3569
+Time 1 Node 2 Conso 13.6465
+Time 1.00001 Throughput 237.448
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.7427
+Time 1 Node 1 Conso 20.5495
+Time 1 Node 2 Conso 13.7427
+Time 1.00002 Throughput 239.485
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.8398
+Time 1 Node 1 Conso 20.7437
+Time 1 Node 2 Conso 13.8398
+Time 0.999975 Throughput 241.524
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 13.9378
+Time 1 Node 1 Conso 20.9395
+Time 1 Node 2 Conso 13.9378
+Time 0.999979 Throughput 243.563
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.0365
+Time 1 Node 1 Conso 21.137
+Time 1 Node 2 Conso 14.0365
+Time 1.00001 Throughput 245.597
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.1361
+Time 1 Node 1 Conso 21.3361
+Time 1 Node 2 Conso 14.1361
+Time 0.999996 Throughput 247.639
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.2364
+Time 1 Node 1 Conso 21.5369
+Time 1 Node 2 Conso 14.2364
+Time 1.00002 Throughput 249.674
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.3376
+Time 1 Node 1 Conso 21.7392
+Time 1 Node 2 Conso 14.3376
+Time 0.99998 Throughput 251.711
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.4396
+Time 1 Node 1 Conso 21.9433
+Time 1 Node 2 Conso 14.4396
+Time 0.999987 Throughput 253.749
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.5425
+Time 1 Node 1 Conso 22.1489
+Time 1 Node 2 Conso 14.5425
+Time 0.999992 Throughput 255.788
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.6461
+Time 1 Node 1 Conso 22.3562
+Time 1 Node 2 Conso 14.6461
+Time 0.999997 Throughput 257.827
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.7506
+Time 1 Node 1 Conso 22.5652
+Time 1 Node 2 Conso 14.7506
+Time 1.00001 Throughput 259.865
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.8559
+Time 1 Node 1 Conso 22.7758
+Time 1 Node 2 Conso 14.8559
+Time 1.00002 Throughput 261.901
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 14.962
+Time 1 Node 1 Conso 22.988
+Time 1 Node 2 Conso 14.962
+Time 0.99998 Throughput 263.94
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.0689
+Time 1 Node 1 Conso 23.2018
+Time 1 Node 2 Conso 15.0689
+Time 1.00002 Throughput 265.981
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.1767
+Time 1 Node 1 Conso 23.4174
+Time 1 Node 2 Conso 15.1767
+Time 0.999984 Throughput 268.019
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.2852
+Time 1 Node 1 Conso 23.6345
+Time 1 Node 2 Conso 15.2852
+Time 0.99999 Throughput 270.057
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.3946
+Time 1 Node 1 Conso 23.8533
+Time 1 Node 2 Conso 15.3946
+Time 0.999994 Throughput 272.096
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.5048
+Time 1 Node 1 Conso 24.0737
+Time 1 Node 2 Conso 15.5048
+Time 0.999999 Throughput 274.135
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.6159
+Time 1 Node 1 Conso 24.2957
+Time 1 Node 2 Conso 15.6159
+Time 1.00001 Throughput 276.172
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.7277
+Time 1 Node 1 Conso 24.5194
+Time 1 Node 2 Conso 15.7277
+Time 1.00002 Throughput 278.208
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.8404
+Time 1 Node 1 Conso 24.7448
+Time 1 Node 2 Conso 15.8404
+Time 1.00002 Throughput 280.248
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 15.9539
+Time 1 Node 1 Conso 24.9718
+Time 1 Node 2 Conso 15.9539
+Time 0.999991 Throughput 282.285
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 16.0682
+Time 1 Node 1 Conso 25.2004
+Time 1 Node 2 Conso 16.0682
+Time 0.999992 Throughput 284.325
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 16.1833
+Time 1 Node 1 Conso 25.4306
+Time 1 Node 2 Conso 16.1833
+Time 1.00001 Throughput 286.36
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 16.2992
+Time 1 Node 1 Conso 25.6625
+Time 1 Node 2 Conso 16.2992
+Time 1.00002 Throughput 288.397
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 16.416
+Time 1 Node 1 Conso 25.896
+Time 1 Node 2 Conso 16.416
+Time 0.999985 Throughput 290.435
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 16.5336
+Time 1 Node 1 Conso 26.1312
+Time 1 Node 2 Conso 16.5336
+Time 0.999991 Throughput 292.474
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 16.652
+Time 1 Node 1 Conso 26.368
+Time 1 Node 2 Conso 16.652
+Time 0.999996 Throughput 294.512
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 16.7712
+Time 1 Node 1 Conso 26.6064
+Time 1 Node 2 Conso 16.7712
+Time 1 Throughput 296.55
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 16.8913
+Time 1 Node 1 Conso 26.8465
+Time 1 Node 2 Conso 16.8913
+Time 1.00002 Throughput 298.586
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 17.0121
+Time 1 Node 1 Conso 27.0882
+Time 1 Node 2 Conso 17.0121
+Time 1.00001 Throughput 300.628
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 17.1338
+Time 1 Node 1 Conso 27.3316
+Time 1 Node 2 Conso 17.1338
+Time 1.00001 Throughput 302.668
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 17.2563
+Time 1 Node 1 Conso 27.5766
+Time 1 Node 2 Conso 17.2563
+Time 1.00002 Throughput 304.704
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 17.3796
+Time 1 Node 1 Conso 27.8232
+Time 1 Node 2 Conso 17.3796
+Time 1.00002 Throughput 306.745
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 17.5038
+Time 1 Node 1 Conso 28.0715
+Time 1 Node 2 Conso 17.5038
+Time 0.999995 Throughput 308.781
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 17.6287
+Time 1 Node 1 Conso 28.3214
+Time 1 Node 2 Conso 17.6287
+Time 0.999997 Throughput 310.82
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 17.7545
+Time 1 Node 1 Conso 28.573
+Time 1 Node 2 Conso 17.7545
+Time 1.00002 Throughput 312.854
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 17.8811
+Time 1 Node 1 Conso 28.8262
+Time 1 Node 2 Conso 17.8811
+Time 0.999992 Throughput 314.89
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 18.0085
+Time 1 Node 1 Conso 29.081
+Time 1 Node 2 Conso 18.0085
+Time 1.00001 Throughput 316.936
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 18.1367
+Time 1 Node 1 Conso 29.3375
+Time 1 Node 2 Conso 18.1367
+Time 1.00001 Throughput 318.966
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 18.2658
+Time 1 Node 1 Conso 29.5956
+Time 1 Node 2 Conso 18.2658
+Time 1.00001 Throughput 321.005
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 18.3957
+Time 1 Node 1 Conso 29.8553
+Time 1 Node 2 Conso 18.3957
+Time 1.00001 Throughput 323.044
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 18.5264
+Time 1 Node 1 Conso 30.1167
+Time 1 Node 2 Conso 18.5264
+Time 1.00001 Throughput 325.083
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 18.6579
+Time 1 Node 1 Conso 30.3797
+Time 1 Node 2 Conso 18.6579
+Time 1.00002 Throughput 327.121
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 18.7902
+Time 1 Node 1 Conso 30.6444
+Time 1 Node 2 Conso 18.7902
+Time 0.999994 Throughput 329.158
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 18.9234
+Time 1 Node 1 Conso 30.9107
+Time 1 Node 2 Conso 18.9234
+Time 1.00002 Throughput 331.202
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 19.0573
+Time 1 Node 1 Conso 31.1787
+Time 1 Node 2 Conso 19.0573
+Time 1.00001 Throughput 333.234
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 19.1921
+Time 1 Node 1 Conso 31.4482
+Time 1 Node 2 Conso 19.1921
+Time 1.00001 Throughput 335.273
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 19.3277
+Time 1 Node 1 Conso 31.7195
+Time 1 Node 2 Conso 19.3277
+Time 1.00002 Throughput 337.309
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 19.4642
+Time 1 Node 1 Conso 31.9923
+Time 1 Node 2 Conso 19.4642
+Time 1.00002 Throughput 339.35
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 19.6014
+Time 1 Node 1 Conso 32.2668
+Time 1 Node 2 Conso 19.6014
+Time 0.999993 Throughput 341.387
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 19.7395
+Time 1 Node 1 Conso 32.5429
+Time 1 Node 2 Conso 19.7395
+Time 1.00002 Throughput 343.428
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 19.8784
+Time 1 Node 1 Conso 32.8207
+Time 1 Node 2 Conso 19.8784
+Time 0.999998 Throughput 345.465
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 20.0181
+Time 1 Node 1 Conso 33.1001
+Time 1 Node 2 Conso 20.0181
+Time 0.999996 Throughput 347.506
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 20.1586
+Time 1 Node 1 Conso 33.3812
+Time 1 Node 2 Conso 20.1586
+Time 1.00001 Throughput 349.54
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 20.2999
+Time 1 Node 1 Conso 33.6639
+Time 1 Node 2 Conso 20.2999
+Time 1.00002 Throughput 351.578
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 20.4421
+Time 1 Node 1 Conso 33.9482
+Time 1 Node 2 Conso 20.4421
+Time 1.00002 Throughput 353.619
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 20.5851
+Time 1 Node 1 Conso 34.2342
+Time 1 Node 2 Conso 20.5851
+Time 1 Throughput 355.652
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 20.7289
+Time 1 Node 1 Conso 34.5218
+Time 1 Node 2 Conso 20.7289
+Time 1.00002 Throughput 357.698
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 20.8735
+Time 1 Node 1 Conso 34.811
+Time 1 Node 2 Conso 20.8735
+Time 0.999993 Throughput 359.735
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 21.019
+Time 1 Node 1 Conso 35.1019
+Time 1 Node 2 Conso 21.019
+Time 0.999997 Throughput 361.774
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 21.1652
+Time 1 Node 1 Conso 35.3944
+Time 1 Node 2 Conso 21.1652
+Time 0.999997 Throughput 363.814
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 21.3123
+Time 1 Node 1 Conso 35.6886
+Time 1 Node 2 Conso 21.3123
+Time 0.999993 Throughput 365.843
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 21.4602
+Time 1 Node 1 Conso 35.9844
+Time 1 Node 2 Conso 21.4602
+Time 1.00002 Throughput 367.884
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 21.6089
+Time 1 Node 1 Conso 36.2818
+Time 1 Node 2 Conso 21.6089
+Time 1.00002 Throughput 369.926
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 21.7585
+Time 1 Node 1 Conso 36.5809
+Time 1 Node 2 Conso 21.7585
+Time 1.00002 Throughput 371.955
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 21.9088
+Time 1 Node 1 Conso 36.8816
+Time 1 Node 2 Conso 21.9088
+Time 1.00002 Throughput 373.995
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 22.06
+Time 1 Node 1 Conso 37.184
+Time 1 Node 2 Conso 22.06
+Time 1.00002 Throughput 376.034
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 22.212
+Time 1 Node 1 Conso 37.488
+Time 1 Node 2 Conso 22.212
+Time 0.999992 Throughput 378.072
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 22.3648
+Time 1 Node 1 Conso 37.7936
+Time 1 Node 2 Conso 22.3648
+Time 1 Throughput 380.108
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 22.5184
+Time 1 Node 1 Conso 38.1009
+Time 1 Node 2 Conso 22.5184
+Time 1.00002 Throughput 382.153
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 22.6729
+Time 1 Node 1 Conso 38.4098
+Time 1 Node 2 Conso 22.6729
+Time 1.00001 Throughput 384.184
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 22.8282
+Time 1 Node 1 Conso 38.7203
+Time 1 Node 2 Conso 22.8282
+Time 1.00001 Throughput 386.224
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 22.9843
+Time 1 Node 1 Conso 39.0325
+Time 1 Node 2 Conso 22.9843
+Time 1.00002 Throughput 388.261
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 23.1412
+Time 1 Node 1 Conso 39.3464
+Time 1 Node 2 Conso 23.1412
+Time 1.00001 Throughput 390.307
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 23.2989
+Time 1 Node 1 Conso 39.6618
+Time 1 Node 2 Conso 23.2989
+Time 1 Throughput 392.336
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 23.4575
+Time 1 Node 1 Conso 39.9789
+Time 1 Node 2 Conso 23.4575
+Time 1.00001 Throughput 394.386
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 23.6168
+Time 1 Node 1 Conso 40.2977
+Time 1 Node 2 Conso 23.6168
+Time 0.999999 Throughput 396.418
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 23.777
+Time 1 Node 1 Conso 40.6181
+Time 1 Node 2 Conso 23.777
+Time 0.999999 Throughput 398.458
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 23.938
+Time 1 Node 1 Conso 40.9401
+Time 1 Node 2 Conso 23.938
+Time 1.00001 Throughput 400.493
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 24.0999
+Time 1 Node 1 Conso 41.2637
+Time 1 Node 2 Conso 24.0999
+Time 1.00001 Throughput 402.534
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 24.2625
+Time 1 Node 1 Conso 41.589
+Time 1 Node 2 Conso 24.2625
+Time 1.00002 Throughput 404.57
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 24.426
+Time 1 Node 1 Conso 41.916
+Time 1 Node 2 Conso 24.426
+Time 1.00001 Throughput 406.612
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 24.5903
+Time 1 Node 1 Conso 42.2446
+Time 1 Node 2 Conso 24.5903
+Time 0.999995 Throughput 408.648
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 24.7554
+Time 1 Node 1 Conso 42.5748
+Time 1 Node 2 Conso 24.7554
+Time 1.00002 Throughput 410.69
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 24.9213
+Time 1 Node 1 Conso 42.9066
+Time 1 Node 2 Conso 24.9213
+Time 1.00001 Throughput 412.724
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 25.0881
+Time 1 Node 1 Conso 43.2401
+Time 1 Node 2 Conso 25.0881
+Time 1.00001 Throughput 414.763
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 25.2556
+Time 1 Node 1 Conso 43.5752
+Time 1 Node 2 Conso 25.2556
+Time 0.999999 Throughput 416.794
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 25.424
+Time 1 Node 1 Conso 43.912
+Time 1 Node 2 Conso 25.424
+Time 1.00001 Throughput 418.831
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 25.5932
+Time 1 Node 1 Conso 44.2504
+Time 1 Node 2 Conso 25.5932
+Time 1 Throughput 420.873
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 25.7632
+Time 1 Node 1 Conso 44.5905
+Time 1 Node 2 Conso 25.7632
+Time 1.00002 Throughput 422.919
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 25.9341
+Time 1 Node 1 Conso 44.9322
+Time 1 Node 2 Conso 25.9341
+Time 1.00002 Throughput 424.956
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 26.1057
+Time 1 Node 1 Conso 45.2755
+Time 1 Node 2 Conso 26.1057
+Time 1 Throughput 426.982
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 26.2782
+Time 1 Node 1 Conso 45.6204
+Time 1 Node 2 Conso 26.2782
+Time 1.00002 Throughput 429.028
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 26.4515
+Time 1 Node 1 Conso 45.967
+Time 1 Node 2 Conso 26.4515
+Time 1 Throughput 431.062
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 26.6256
+Time 1 Node 1 Conso 46.3153
+Time 1 Node 2 Conso 26.6256
+Time 1.00001 Throughput 433.1
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 26.8006
+Time 1 Node 1 Conso 46.6652
+Time 1 Node 2 Conso 26.8006
+Time 1 Throughput 435.141
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 26.9763
+Time 1 Node 1 Conso 47.0167
+Time 1 Node 2 Conso 26.9763
+Time 1.00002 Throughput 437.186
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 27.1529
+Time 1 Node 1 Conso 47.3698
+Time 1 Node 2 Conso 27.1529
+Time 1.00001 Throughput 439.219
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 27.3303
+Time 1 Node 1 Conso 47.7246
+Time 1 Node 2 Conso 27.3303
+Time 1.00002 Throughput 441.253
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 27.5085
+Time 1 Node 1 Conso 48.0811
+Time 1 Node 2 Conso 27.5085
+Time 1 Throughput 443.291
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 27.6876
+Time 1 Node 1 Conso 48.4391
+Time 1 Node 2 Conso 27.6876
+Time 1 Throughput 445.331
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 27.8674
+Time 1 Node 1 Conso 48.7988
+Time 1 Node 2 Conso 27.8674
+Time 1.00002 Throughput 447.373
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 28.0481
+Time 1 Node 1 Conso 49.1602
+Time 1 Node 2 Conso 28.0481
+Time 1.00001 Throughput 449.417
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 28.2296
+Time 1 Node 1 Conso 49.5232
+Time 1 Node 2 Conso 28.2296
+Time 1.00001 Throughput 451.445
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 28.4119
+Time 1 Node 1 Conso 49.8878
+Time 1 Node 2 Conso 28.4119
+Time 1.00002 Throughput 453.492
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 28.5951
+Time 1 Node 1 Conso 50.2541
+Time 1 Node 2 Conso 28.5951
+Time 1.00002 Throughput 455.524
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 28.779
+Time 1 Node 1 Conso 50.622
+Time 1 Node 2 Conso 28.779
+Time 1.00001 Throughput 457.556
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 28.9638
+Time 1 Node 1 Conso 50.9916
+Time 1 Node 2 Conso 28.9638
+Time 1.00001 Throughput 459.606
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 29.1494
+Time 1 Node 1 Conso 51.3628
+Time 1 Node 2 Conso 29.1494
+Time 1 Throughput 461.639
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 29.3358
+Time 1 Node 1 Conso 51.7356
+Time 1 Node 2 Conso 29.3358
+Time 1.00001 Throughput 463.673
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 29.523
+Time 1 Node 1 Conso 52.11
+Time 1 Node 2 Conso 29.523
+Time 1 Throughput 465.706
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 29.7111
+Time 1 Node 1 Conso 52.4861
+Time 1 Node 2 Conso 29.7111
+Time 1 Throughput 467.757
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 29.8999
+Time 1 Node 1 Conso 52.8639
+Time 1 Node 2 Conso 29.8999
+Time 1.00002 Throughput 469.79
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 30.0896
+Time 1 Node 1 Conso 53.2432
+Time 1 Node 2 Conso 30.0896
+Time 1.00001 Throughput 471.821
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 30.2801
+Time 1 Node 1 Conso 53.6243
+Time 1 Node 2 Conso 30.2801
+Time 1.00002 Throughput 473.871
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 30.4715
+Time 1 Node 1 Conso 54.0069
+Time 1 Node 2 Conso 30.4715
+Time 1.00001 Throughput 475.9
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 30.6636
+Time 1 Node 1 Conso 54.3912
+Time 1 Node 2 Conso 30.6636
+Time 1 Throughput 477.947
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 30.8566
+Time 1 Node 1 Conso 54.7771
+Time 1 Node 2 Conso 30.8566
+Time 1 Throughput 479.974
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 31.0504
+Time 1 Node 1 Conso 55.1647
+Time 1 Node 2 Conso 31.0504
+Time 1.00002 Throughput 482.017
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 31.245
+Time 1 Node 1 Conso 55.5539
+Time 1 Node 2 Conso 31.245
+Time 1.00002 Throughput 484.059
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 31.4404
+Time 1 Node 1 Conso 55.9448
+Time 1 Node 2 Conso 31.4404
+Time 1.00002 Throughput 486.098
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 31.6366
+Time 1 Node 1 Conso 56.3373
+Time 1 Node 2 Conso 31.6366
+Time 1 Throughput 488.134
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 31.8337
+Time 1 Node 1 Conso 56.7314
+Time 1 Node 2 Conso 31.8337
+Time 1.00002 Throughput 490.168
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 32.0316
+Time 1 Node 1 Conso 57.1272
+Time 1 Node 2 Conso 32.0316
+Time 1.00002 Throughput 492.219
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 32.2303
+Time 1 Node 1 Conso 57.5246
+Time 1 Node 2 Conso 32.2303
+Time 1.00002 Throughput 494.246
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 32.4298
+Time 1 Node 1 Conso 57.9236
+Time 1 Node 2 Conso 32.4298
+Time 1.00001 Throughput 496.29
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 32.6302
+Time 1 Node 1 Conso 58.3243
+Time 1 Node 2 Conso 32.6302
+Time 1.00001 Throughput 498.33
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 32.8313
+Time 1 Node 1 Conso 58.7266
+Time 1 Node 2 Conso 32.8313
+Time 1.00002 Throughput 500.366
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 33.0333
+Time 1 Node 1 Conso 59.1306
+Time 1 Node 2 Conso 33.0333
+Time 1.00001 Throughput 502.398
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 33.2361
+Time 1 Node 1 Conso 59.5362
+Time 1 Node 2 Conso 33.2361
+Time 1.00002 Throughput 504.447
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 33.4397
+Time 1 Node 1 Conso 59.9434
+Time 1 Node 2 Conso 33.4397
+Time 1.00001 Throughput 506.469
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 33.6442
+Time 1 Node 1 Conso 60.3523
+Time 1 Node 2 Conso 33.6442
+Time 1.00001 Throughput 508.508
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 33.8494
+Time 1 Node 1 Conso 60.7628
+Time 1 Node 2 Conso 33.8494
+Time 1 Throughput 510.563
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 34.0555
+Time 1 Node 1 Conso 61.175
+Time 1 Node 2 Conso 34.0555
+Time 1 Throughput 512.592
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 34.2624
+Time 1 Node 1 Conso 61.5888
+Time 1 Node 2 Conso 34.2624
+Time 1.00002 Throughput 514.636
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 34.4701
+Time 1 Node 1 Conso 62.0042
+Time 1 Node 2 Conso 34.4701
+Time 1.00002 Throughput 516.674
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 34.6787
+Time 1 Node 1 Conso 62.4213
+Time 1 Node 2 Conso 34.6786
+Time 1.00001 Throughput 518.707
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 34.888
+Time 1 Node 1 Conso 62.84
+Time 1 Node 2 Conso 34.888
+Time 1.00002 Throughput 520.732
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 35.0982
+Time 1 Node 1 Conso 63.2603
+Time 1 Node 2 Conso 35.0982
+Time 1.00001 Throughput 522.774
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 35.3092
+Time 1 Node 1 Conso 63.6823
+Time 1 Node 2 Conso 35.3092
+Time 1.00002 Throughput 524.809
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 35.521
+Time 1 Node 1 Conso 64.106
+Time 1 Node 2 Conso 35.521
+Time 1 Throughput 526.859
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 35.7336
+Time 1 Node 1 Conso 64.5312
+Time 1 Node 2 Conso 35.7336
+Time 1.00002 Throughput 528.903
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 35.9471
+Time 1 Node 1 Conso 64.9581
+Time 1 Node 2 Conso 35.9471
+Time 1 Throughput 530.938
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 36.1613
+Time 1 Node 1 Conso 65.3867
+Time 1 Node 2 Conso 36.1613
+Time 1 Throughput 532.966
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 36.3764
+Time 1 Node 1 Conso 65.8168
+Time 1 Node 2 Conso 36.3764
+Time 1.00002 Throughput 535.01
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 36.5923
+Time 1 Node 1 Conso 66.2487
+Time 1 Node 2 Conso 36.5923
+Time 1.00001 Throughput 537.045
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 36.8091
+Time 1 Node 1 Conso 66.6821
+Time 1 Node 2 Conso 36.8091
+Time 1.00001 Throughput 539.096
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 37.0266
+Time 1 Node 1 Conso 67.1172
+Time 1 Node 2 Conso 37.0266
+Time 1.00001 Throughput 541.113
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 37.245
+Time 1 Node 1 Conso 67.554
+Time 1 Node 2 Conso 37.245
+Time 1.00002 Throughput 543.17
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 37.4642
+Time 1 Node 1 Conso 67.9923
+Time 1 Node 2 Conso 37.4642
+Time 1.00001 Throughput 545.194
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 37.6842
+Time 1 Node 1 Conso 68.4323
+Time 1 Node 2 Conso 37.6842
+Time 1.00001 Throughput 547.233
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 37.905
+Time 1 Node 1 Conso 68.874
+Time 1 Node 2 Conso 37.905
+Time 1 Throughput 549.287
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 38.1266
+Time 1 Node 1 Conso 69.3173
+Time 1 Node 2 Conso 38.1266
+Time 1.00002 Throughput 551.305
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 38.3491
+Time 1 Node 1 Conso 69.7622
+Time 1 Node 2 Conso 38.3491
+Time 1.00001 Throughput 553.364
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 38.5724
+Time 1 Node 1 Conso 70.2088
+Time 1 Node 2 Conso 38.5724
+Time 1.00002 Throughput 555.388
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 38.7965
+Time 1 Node 1 Conso 70.657
+Time 1 Node 2 Conso 38.7965
+Time 1.00002 Throughput 557.426
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 39.0214
+Time 1 Node 1 Conso 71.1068
+Time 1 Node 2 Conso 39.0214
+Time 1.00002 Throughput 559.479
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 39.2472
+Time 1 Node 1 Conso 71.5583
+Time 1 Node 2 Conso 39.2472
+Time 1.00002 Throughput 561.494
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 39.4737
+Time 1 Node 1 Conso 72.0115
+Time 1 Node 2 Conso 39.4737
+Time 1.00001 Throughput 563.551
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 39.7011
+Time 1 Node 1 Conso 72.4662
+Time 1 Node 2 Conso 39.7011
+Time 1.00001 Throughput 565.57
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 39.9293
+Time 1 Node 1 Conso 72.9226
+Time 1 Node 2 Conso 39.9293
+Time 1.00001 Throughput 567.629
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 40.1583
+Time 1 Node 1 Conso 73.3807
+Time 1 Node 2 Conso 40.1583
+Time 1.00001 Throughput 569.65
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 40.3882
+Time 1 Node 1 Conso 73.8403
+Time 1 Node 2 Conso 40.3882
+Time 1.00001 Throughput 571.686
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 40.6188
+Time 1 Node 1 Conso 74.3016
+Time 1 Node 2 Conso 40.6188
+Time 1.00002 Throughput 573.735
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 40.8503
+Time 1 Node 1 Conso 74.7646
+Time 1 Node 2 Conso 40.8503
+Time 1.00002 Throughput 575.772
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 41.0826
+Time 1 Node 1 Conso 75.2292
+Time 1 Node 2 Conso 41.0826
+Time 1.00002 Throughput 577.824
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 41.3157
+Time 1 Node 1 Conso 75.6955
+Time 1 Node 2 Conso 41.3157
+Time 1.00001 Throughput 579.862
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 41.5497
+Time 1 Node 1 Conso 76.1633
+Time 1 Node 2 Conso 41.5497
+Time 1.00001 Throughput 581.887
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 41.7844
+Time 1 Node 1 Conso 76.6328
+Time 1 Node 2 Conso 41.7844
+Time 1.00002 Throughput 583.925
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 42.02
+Time 1 Node 1 Conso 77.104
+Time 1 Node 2 Conso 42.02
+Time 1.00002 Throughput 585.95
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 42.2564
+Time 1 Node 1 Conso 77.5768
+Time 1 Node 2 Conso 42.2564
+Time 1 Throughput 587.988
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 42.4936
+Time 1 Node 1 Conso 78.0512
+Time 1 Node 2 Conso 42.4936
+Time 1.00002 Throughput 590.041
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 42.7316
+Time 1 Node 1 Conso 78.5273
+Time 1 Node 2 Conso 42.7316
+Time 1.00001 Throughput 592.078
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 42.9705
+Time 1 Node 1 Conso 79.005
+Time 1 Node 2 Conso 42.9705
+Time 1.00001 Throughput 594.13
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 43.2102
+Time 1 Node 1 Conso 79.4843
+Time 1 Node 2 Conso 43.2102
+Time 1.00001 Throughput 596.167
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 43.4507
+Time 1 Node 1 Conso 79.9653
+Time 1 Node 2 Conso 43.4507
+Time 1 Throughput 598.188
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 43.692
+Time 1 Node 1 Conso 80.4479
+Time 1 Node 2 Conso 43.692
+Time 1.00001 Throughput 600.222
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 43.9341
+Time 1 Node 1 Conso 80.9322
+Time 1 Node 2 Conso 43.9341
+Time 1.00002 Throughput 602.27
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 44.177
+Time 1 Node 1 Conso 81.4181
+Time 1 Node 2 Conso 44.177
+Time 1.00001 Throughput 604.302
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 44.4208
+Time 1 Node 1 Conso 81.9056
+Time 1 Node 2 Conso 44.4208
+Time 1.00002 Throughput 606.348
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 44.6654
+Time 1 Node 1 Conso 82.3948
+Time 1 Node 2 Conso 44.6654
+Time 1.00002 Throughput 608.377
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 44.9108
+Time 1 Node 1 Conso 82.8856
+Time 1 Node 2 Conso 44.9108
+Time 1.00002 Throughput 610.419
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 45.157
+Time 1 Node 1 Conso 83.3781
+Time 1 Node 2 Conso 45.157
+Time 1.00002 Throughput 612.444
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 45.4041
+Time 1 Node 1 Conso 83.8722
+Time 1 Node 2 Conso 45.4041
+Time 1.00001 Throughput 614.483
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 45.652
+Time 1 Node 1 Conso 84.3679
+Time 1 Node 2 Conso 45.6519
+Time 1.00001 Throughput 616.535
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 45.9006
+Time 1 Node 1 Conso 84.8653
+Time 1 Node 2 Conso 45.9006
+Time 1.00002 Throughput 618.569
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 46.1501
+Time 1 Node 1 Conso 85.3643
+Time 1 Node 2 Conso 46.1501
+Time 1.00002 Throughput 620.616
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 46.4005
+Time 1 Node 1 Conso 85.8649
+Time 1 Node 2 Conso 46.4005
+Time 1.00002 Throughput 622.645
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 46.6516
+Time 1 Node 1 Conso 86.3672
+Time 1 Node 2 Conso 46.6516
+Time 1.00002 Throughput 624.687
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 46.9036
+Time 1 Node 1 Conso 86.8712
+Time 1 Node 2 Conso 46.9036
+Time 1.00001 Throughput 626.742
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 47.1564
+Time 1 Node 1 Conso 87.3767
+Time 1 Node 2 Conso 47.1564
+Time 1.00002 Throughput 628.778
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 47.41
+Time 1 Node 1 Conso 87.8839
+Time 1 Node 2 Conso 47.41
+Time 1.00002 Throughput 630.794
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 47.6644
+Time 1 Node 1 Conso 88.3928
+Time 1 Node 2 Conso 47.6644
+Time 1.00002 Throughput 632.857
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 47.9196
+Time 1 Node 1 Conso 88.9033
+Time 1 Node 2 Conso 47.9196
+Time 1.00002 Throughput 634.865
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 48.1757
+Time 1 Node 1 Conso 89.4154
+Time 1 Node 2 Conso 48.1757
+Time 1.00001 Throughput 636.921
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 48.4326
+Time 1 Node 1 Conso 89.9292
+Time 1 Node 2 Conso 48.4326
+Time 1.00002 Throughput 638.956
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 48.6903
+Time 1 Node 1 Conso 90.4446
+Time 1 Node 2 Conso 48.6903
+Time 1.00001 Throughput 641.003
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 48.9488
+Time 1 Node 1 Conso 90.9616
+Time 1 Node 2 Conso 48.9488
+Time 1.00001 Throughput 643.03
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 49.2081
+Time 1 Node 1 Conso 91.4803
+Time 1 Node 2 Conso 49.2081
+Time 1.00001 Throughput 645.069
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 49.4683
+Time 1 Node 1 Conso 92.0006
+Time 1 Node 2 Conso 49.4683
+Time 1.00001 Throughput 647.122
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 49.7293
+Time 1 Node 1 Conso 92.5226
+Time 1 Node 2 Conso 49.7293
+Time 1.00001 Throughput 649.152
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 49.9911
+Time 1 Node 1 Conso 93.0462
+Time 1 Node 2 Conso 49.9911
+Time 1.00002 Throughput 651.195
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 50.2537
+Time 1 Node 1 Conso 93.5714
+Time 1 Node 2 Conso 50.2537
+Time 1.00001 Throughput 653.215
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 50.5171
+Time 1 Node 1 Conso 94.0982
+Time 1 Node 2 Conso 50.5171
+Time 1.00002 Throughput 655.248
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 50.7814
+Time 1 Node 1 Conso 94.6268
+Time 1 Node 2 Conso 50.7814
+Time 1.00001 Throughput 657.294
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 51.0465
+Time 1 Node 1 Conso 95.1569
+Time 1 Node 2 Conso 51.0465
+Time 1.00002 Throughput 659.353
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 51.3124
+Time 1 Node 1 Conso 95.6887
+Time 1 Node 2 Conso 51.3124
+Time 1.00001 Throughput 661.388
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 51.5791
+Time 1 Node 1 Conso 96.2221
+Time 1 Node 2 Conso 51.5791
+Time 1.00002 Throughput 663.399
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 51.8466
+Time 1 Node 1 Conso 96.7572
+Time 1 Node 2 Conso 51.8466
+Time 1.00001 Throughput 665.459
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 52.115
+Time 1 Node 1 Conso 97.2939
+Time 1 Node 2 Conso 52.115
+Time 1.00001 Throughput 667.494
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 52.3841
+Time 1 Node 1 Conso 97.8323
+Time 1 Node 2 Conso 52.3841
+Time 1.00002 Throughput 669.543
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 52.6541
+Time 1 Node 1 Conso 98.3723
+Time 1 Node 2 Conso 52.6541
+Time 1.00001 Throughput 671.566
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 52.9249
+Time 1 Node 1 Conso 98.9139
+Time 1 Node 2 Conso 52.9249
+Time 1.00002 Throughput 673.602
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 53.1966
+Time 1 Node 1 Conso 99.4571
+Time 1 Node 2 Conso 53.1966
+Time 1.00002 Throughput 675.65
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 53.469
+Time 1 Node 1 Conso 100.002
+Time 1 Node 2 Conso 53.469
+Time 1.00001 Throughput 677.672
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 53.7423
+Time 1 Node 1 Conso 100.549
+Time 1 Node 2 Conso 53.7423
+Time 1.00002 Throughput 679.706
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 54.0164
+Time 1 Node 1 Conso 101.097
+Time 1 Node 2 Conso 54.0164
+Time 1.00001 Throughput 681.753
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 54.2913
+Time 1 Node 1 Conso 101.647
+Time 1 Node 2 Conso 54.2913
+Time 1.00002 Throughput 683.812
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 54.567
+Time 1 Node 1 Conso 102.198
+Time 1 Node 2 Conso 54.567
+Time 1.00001 Throughput 685.844
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 54.8436
+Time 1 Node 1 Conso 102.751
+Time 1 Node 2 Conso 54.8436
+Time 1.00002 Throughput 687.888
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 55.1209
+Time 1 Node 1 Conso 103.306
+Time 1 Node 2 Conso 55.1209
+Time 1.00002 Throughput 689.905
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 55.3991
+Time 1 Node 1 Conso 103.862
+Time 1 Node 2 Conso 55.3991
+Time 1.00002 Throughput 691.934
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 55.6781
+Time 1 Node 1 Conso 104.42
+Time 1 Node 2 Conso 55.6781
+Time 1.00002 Throughput 693.975
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 55.9579
+Time 1 Node 1 Conso 104.98
+Time 1 Node 2 Conso 55.9579
+Time 1.00002 Throughput 696.027
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 56.2386
+Time 1 Node 1 Conso 105.541
+Time 1 Node 2 Conso 56.2386
+Time 1.00001 Throughput 698.052
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 56.52
+Time 1 Node 1 Conso 106.104
+Time 1 Node 2 Conso 56.52
+Time 1.00001 Throughput 700.088
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 56.8023
+Time 1 Node 1 Conso 106.669
+Time 1 Node 2 Conso 56.8023
+Time 1.00002 Throughput 702.136
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 57.0854
+Time 1 Node 1 Conso 107.235
+Time 1 Node 2 Conso 57.0854
+Time 1.00002 Throughput 704.196
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 57.3694
+Time 1 Node 1 Conso 107.803
+Time 1 Node 2 Conso 57.3694
+Time 1.00002 Throughput 706.227
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 57.6541
+Time 1 Node 1 Conso 108.372
+Time 1 Node 2 Conso 57.6541
+Time 1.00002 Throughput 708.269
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 57.9397
+Time 1 Node 1 Conso 108.943
+Time 1 Node 2 Conso 57.9397
+Time 1.00002 Throughput 710.281
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 58.2261
+Time 1 Node 1 Conso 109.516
+Time 1 Node 2 Conso 58.226
+Time 1.00002 Throughput 712.347
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 58.5133
+Time 1 Node 1 Conso 110.091
+Time 1 Node 2 Conso 58.5133
+Time 1.00001 Throughput 714.383
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 58.8013
+Time 1 Node 1 Conso 110.667
+Time 1 Node 2 Conso 58.8013
+Time 1.00001 Throughput 716.387
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 59.0901
+Time 1 Node 1 Conso 111.244
+Time 1 Node 2 Conso 59.0901
+Time 1.00002 Throughput 718.446
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 59.3798
+Time 1 Node 1 Conso 111.824
+Time 1 Node 2 Conso 59.3798
+Time 1.00002 Throughput 720.473
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 59.6702
+Time 1 Node 1 Conso 112.404
+Time 1 Node 2 Conso 59.6702
+Time 1.00002 Throughput 722.512
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 59.9615
+Time 1 Node 1 Conso 112.987
+Time 1 Node 2 Conso 59.9615
+Time 1.00002 Throughput 724.562
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 60.2536
+Time 1 Node 1 Conso 113.571
+Time 1 Node 2 Conso 60.2536
+Time 1.00002 Throughput 726.58
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 60.5466
+Time 1 Node 1 Conso 114.157
+Time 1 Node 2 Conso 60.5466
+Time 1.00002 Throughput 728.654
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 60.8403
+Time 1 Node 1 Conso 114.745
+Time 1 Node 2 Conso 60.8403
+Time 1.00002 Throughput 730.695
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 61.1349
+Time 1 Node 1 Conso 115.334
+Time 1 Node 2 Conso 61.1349
+Time 1.00002 Throughput 732.702
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 61.4303
+Time 1 Node 1 Conso 115.925
+Time 1 Node 2 Conso 61.4303
+Time 1.00002 Throughput 734.766
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 61.7265
+Time 1 Node 1 Conso 116.517
+Time 1 Node 2 Conso 61.7265
+Time 1.00001 Throughput 736.796
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 62.0236
+Time 1 Node 1 Conso 117.111
+Time 1 Node 2 Conso 62.0236
+Time 1.00001 Throughput 738.837
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 62.3214
+Time 1 Node 1 Conso 117.707
+Time 1 Node 2 Conso 62.3214
+Time 1.00002 Throughput 740.844
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 62.6201
+Time 1 Node 1 Conso 118.304
+Time 1 Node 2 Conso 62.6201
+Time 1.00002 Throughput 742.908
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 62.9196
+Time 1 Node 1 Conso 118.903
+Time 1 Node 2 Conso 62.9196
+Time 1.00002 Throughput 744.937
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 63.2199
+Time 1 Node 1 Conso 119.504
+Time 1 Node 2 Conso 63.2199
+Time 1.00002 Throughput 746.977
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 63.521
+Time 1 Node 1 Conso 120.106
+Time 1 Node 2 Conso 63.521
+Time 1.00002 Throughput 749.029
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 63.823
+Time 1 Node 1 Conso 120.71
+Time 1 Node 2 Conso 63.823
+Time 1.00002 Throughput 751.045
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 64.1257
+Time 1 Node 1 Conso 121.315
+Time 1 Node 2 Conso 64.1257
+Time 1.00001 Throughput 753.071
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 64.4293
+Time 1 Node 1 Conso 121.923
+Time 1 Node 2 Conso 64.4293
+Time 1.00001 Throughput 755.109
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 64.7337
+Time 1 Node 1 Conso 122.531
+Time 1 Node 2 Conso 64.7337
+Time 1.00002 Throughput 757.158
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 65.0389
+Time 1 Node 1 Conso 123.142
+Time 1 Node 2 Conso 65.0389
+Time 1.00002 Throughput 759.217
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 65.345
+Time 1 Node 1 Conso 123.754
+Time 1 Node 2 Conso 65.345
+Time 1.00001 Throughput 761.24
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 65.6518
+Time 1 Node 1 Conso 124.368
+Time 1 Node 2 Conso 65.6518
+Time 1.00002 Throughput 763.274
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 65.9595
+Time 1 Node 1 Conso 124.983
+Time 1 Node 2 Conso 65.9595
+Time 1.00002 Throughput 765.318
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 66.268
+Time 1 Node 1 Conso 125.6
+Time 1 Node 2 Conso 66.268
+Time 1.00001 Throughput 767.374
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 66.5774
+Time 1 Node 1 Conso 126.219
+Time 1 Node 2 Conso 66.5774
+Time 1.00001 Throughput 769.391
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 66.8875
+Time 1 Node 1 Conso 126.839
+Time 1 Node 2 Conso 66.8875
+Time 1.00001 Throughput 771.419
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 67.1984
+Time 1 Node 1 Conso 127.461
+Time 1 Node 2 Conso 67.1984
+Time 1.00001 Throughput 773.457
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 67.5102
+Time 1 Node 1 Conso 128.084
+Time 1 Node 2 Conso 67.5102
+Time 1.00002 Throughput 775.506
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 67.8228
+Time 1 Node 1 Conso 128.71
+Time 1 Node 2 Conso 67.8228
+Time 1.00002 Throughput 777.567
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 68.1362
+Time 1 Node 1 Conso 129.336
+Time 1 Node 2 Conso 68.1362
+Time 1.00001 Throughput 779.587
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 68.4505
+Time 1 Node 1 Conso 129.965
+Time 1 Node 2 Conso 68.4505
+Time 1.00001 Throughput 781.618
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 68.7655
+Time 1 Node 1 Conso 130.595
+Time 1 Node 2 Conso 68.7655
+Time 1.00001 Throughput 783.66
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 69.0814
+Time 1 Node 1 Conso 131.227
+Time 1 Node 2 Conso 69.0814
+Time 1.00002 Throughput 785.712
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 69.3981
+Time 1 Node 1 Conso 131.86
+Time 1 Node 2 Conso 69.3981
+Time 1.00001 Throughput 787.724
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 69.7156
+Time 1 Node 1 Conso 132.495
+Time 1 Node 2 Conso 69.7156
+Time 1.00002 Throughput 789.797
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 70.034
+Time 1 Node 1 Conso 133.132
+Time 1 Node 2 Conso 70.034
+Time 1.00001 Throughput 791.83
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 70.3531
+Time 1 Node 1 Conso 133.77
+Time 1 Node 2 Conso 70.3531
+Time 1.00002 Throughput 793.873
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 70.6731
+Time 1 Node 1 Conso 134.41
+Time 1 Node 2 Conso 70.6731
+Time 1.00001 Throughput 795.874
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 70.9939
+Time 1 Node 1 Conso 135.052
+Time 1 Node 2 Conso 70.9939
+Time 1.00001 Throughput 797.937
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 71.3155
+Time 1 Node 1 Conso 135.695
+Time 1 Node 2 Conso 71.3155
+Time 1.00002 Throughput 799.959
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 71.6379
+Time 1 Node 1 Conso 136.34
+Time 1 Node 2 Conso 71.6379
+Time 1.00002 Throughput 801.99
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 71.9612
+Time 1 Node 1 Conso 136.986
+Time 1 Node 2 Conso 71.9612
+Time 1.00001 Throughput 804.032
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 72.2853
+Time 1 Node 1 Conso 137.635
+Time 1 Node 2 Conso 72.2853
+Time 1.00001 Throughput 806.084
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 72.6102
+Time 1 Node 1 Conso 138.284
+Time 1 Node 2 Conso 72.6102
+Time 1.00002 Throughput 808.147
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 72.9359
+Time 1 Node 1 Conso 138.936
+Time 1 Node 2 Conso 72.9359
+Time 1.00001 Throughput 810.166
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 73.2624
+Time 1 Node 1 Conso 139.589
+Time 1 Node 2 Conso 73.2624
+Time 1.00001 Throughput 812.195
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 73.5897
+Time 1 Node 1 Conso 140.243
+Time 1 Node 2 Conso 73.5897
+Time 1.00001 Throughput 814.234
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 73.9179
+Time 1 Node 1 Conso 140.9
+Time 1 Node 2 Conso 73.9179
+Time 1.00002 Throughput 816.283
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 74.2469
+Time 1 Node 1 Conso 141.558
+Time 1 Node 2 Conso 74.2469
+Time 1.00002 Throughput 818.287
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 74.5767
+Time 1 Node 1 Conso 142.217
+Time 1 Node 2 Conso 74.5767
+Time 1.00002 Throughput 820.357
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 74.9073
+Time 1 Node 1 Conso 142.879
+Time 1 Node 2 Conso 74.9073
+Time 1.00001 Throughput 822.38
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 75.2388
+Time 1 Node 1 Conso 143.542
+Time 1 Node 2 Conso 75.2388
+Time 1.00002 Throughput 824.414
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 75.571
+Time 1 Node 1 Conso 144.206
+Time 1 Node 2 Conso 75.571
+Time 1.00002 Throughput 826.458
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 75.9041
+Time 1 Node 1 Conso 144.872
+Time 1 Node 2 Conso 75.9041
+Time 1.00001 Throughput 828.512
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 76.238
+Time 1 Node 1 Conso 145.54
+Time 1 Node 2 Conso 76.238
+Time 1.00001 Throughput 830.519
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 76.5727
+Time 1 Node 1 Conso 146.209
+Time 1 Node 2 Conso 76.5727
+Time 1.00001 Throughput 832.594
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 76.9083
+Time 1 Node 1 Conso 146.881
+Time 1 Node 2 Conso 76.9083
+Time 1.00001 Throughput 834.62
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 77.2447
+Time 1 Node 1 Conso 147.553
+Time 1 Node 2 Conso 77.2446
+Time 1.00002 Throughput 836.657
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 77.5818
+Time 1 Node 1 Conso 148.228
+Time 1 Node 2 Conso 77.5818
+Time 1.00001 Throughput 838.704
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 77.9199
+Time 1 Node 1 Conso 148.904
+Time 1 Node 2 Conso 77.9198
+Time 1.00002 Throughput 840.76
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 78.2587
+Time 1 Node 1 Conso 149.581
+Time 1 Node 2 Conso 78.2587
+Time 1.00001 Throughput 842.768
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 78.5983
+Time 1 Node 1 Conso 150.261
+Time 1 Node 2 Conso 78.5983
+Time 1.00001 Throughput 844.785
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 78.9388
+Time 1 Node 1 Conso 150.942
+Time 1 Node 2 Conso 78.9388
+Time 1.00002 Throughput 846.872
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 79.2801
+Time 1 Node 1 Conso 151.624
+Time 1 Node 2 Conso 79.2801
+Time 1.00002 Throughput 848.908
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 79.6222
+Time 1 Node 1 Conso 152.308
+Time 1 Node 2 Conso 79.6222
+Time 1.00001 Throughput 850.955
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 79.9651
+Time 1 Node 1 Conso 152.994
+Time 1 Node 2 Conso 79.9651
+Time 1.00002 Throughput 852.951
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 80.3088
+Time 1 Node 1 Conso 153.682
+Time 1 Node 2 Conso 80.3088
+Time 1.00002 Throughput 855.017
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 80.6534
+Time 1 Node 1 Conso 154.371
+Time 1 Node 2 Conso 80.6534
+Time 1.00002 Throughput 857.032
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 80.9988
+Time 1 Node 1 Conso 155.062
+Time 1 Node 2 Conso 80.9988
+Time 1.00002 Throughput 859.057
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 81.3449
+Time 1 Node 1 Conso 155.754
+Time 1 Node 2 Conso 81.3449
+Time 1.00002 Throughput 861.091
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 81.692
+Time 1 Node 1 Conso 156.448
+Time 1 Node 2 Conso 81.692
+Time 1.00001 Throughput 863.135
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 82.0398
+Time 1 Node 1 Conso 157.144
+Time 1 Node 2 Conso 82.0398
+Time 1.00002 Throughput 865.189
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 82.3885
+Time 1 Node 1 Conso 157.841
+Time 1 Node 2 Conso 82.3884
+Time 1.00002 Throughput 867.252
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 82.7379
+Time 1 Node 1 Conso 158.54
+Time 1 Node 2 Conso 82.7379
+Time 1.00002 Throughput 869.262
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 83.0882
+Time 1 Node 1 Conso 159.24
+Time 1 Node 2 Conso 83.0882
+Time 1.00001 Throughput 871.282
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 83.4393
+Time 1 Node 1 Conso 159.943
+Time 1 Node 2 Conso 83.4393
+Time 1.00002 Throughput 873.374
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 83.7913
+Time 1 Node 1 Conso 160.647
+Time 1 Node 2 Conso 83.7913
+Time 1.00002 Throughput 875.413
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 84.144
+Time 1 Node 1 Conso 161.352
+Time 1 Node 2 Conso 84.144
+Time 1.00002 Throughput 877.397
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 84.4976
+Time 1 Node 1 Conso 162.059
+Time 1 Node 2 Conso 84.4976
+Time 1.00001 Throughput 879.455
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 84.852
+Time 1 Node 1 Conso 162.768
+Time 1 Node 2 Conso 84.852
+Time 1.00002 Throughput 881.522
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 85.2072
+Time 1 Node 1 Conso 163.478
+Time 1 Node 2 Conso 85.2072
+Time 1.00001 Throughput 883.534
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 85.5632
+Time 1 Node 1 Conso 164.19
+Time 1 Node 2 Conso 85.5632
+Time 1.00002 Throughput 885.556
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 85.9201
+Time 1 Node 1 Conso 164.904
+Time 1 Node 2 Conso 85.9201
+Time 1.00002 Throughput 887.586
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 86.2777
+Time 1 Node 1 Conso 165.619
+Time 1 Node 2 Conso 86.2777
+Time 1.00002 Throughput 889.626
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 86.6362
+Time 1 Node 1 Conso 166.336
+Time 1 Node 2 Conso 86.6362
+Time 1.00002 Throughput 891.675
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 86.9955
+Time 1 Node 1 Conso 167.055
+Time 1 Node 2 Conso 86.9955
+Time 1.00001 Throughput 893.734
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 87.3556
+Time 1 Node 1 Conso 167.775
+Time 1 Node 2 Conso 87.3556
+Time 1.00002 Throughput 895.735
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 87.7166
+Time 1 Node 1 Conso 168.497
+Time 1 Node 2 Conso 87.7166
+Time 1.00001 Throughput 897.812
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 88.0783
+Time 1 Node 1 Conso 169.221
+Time 1 Node 2 Conso 88.0783
+Time 1.00002 Throughput 899.832
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 88.4409
+Time 1 Node 1 Conso 169.946
+Time 1 Node 2 Conso 88.4409
+Time 1.00002 Throughput 901.861
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 88.8043
+Time 1 Node 1 Conso 170.673
+Time 1 Node 2 Conso 88.8043
+Time 1.00001 Throughput 903.899
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 89.1685
+Time 1 Node 1 Conso 171.401
+Time 1 Node 2 Conso 89.1685
+Time 1.00002 Throughput 905.946
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 89.5336
+Time 1 Node 1 Conso 172.131
+Time 1 Node 2 Conso 89.5336
+Time 1.00001 Throughput 908.002
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 89.8994
+Time 1 Node 1 Conso 172.863
+Time 1 Node 2 Conso 89.8994
+Time 1.00002 Throughput 909.999
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 90.2661
+Time 1 Node 1 Conso 173.596
+Time 1 Node 2 Conso 90.2661
+Time 1.00002 Throughput 912.074
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 90.6336
+Time 1 Node 1 Conso 174.331
+Time 1 Node 2 Conso 90.6336
+Time 1.00002 Throughput 914.089
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 91.002
+Time 1 Node 1 Conso 175.068
+Time 1 Node 2 Conso 91.002
+Time 1.00002 Throughput 916.182
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 91.3711
+Time 1 Node 1 Conso 175.806
+Time 1 Node 2 Conso 91.3711
+Time 1.00001 Throughput 918.215
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 91.7411
+Time 1 Node 1 Conso 176.546
+Time 1 Node 2 Conso 91.7411
+Time 1.00002 Throughput 920.257
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 92.1119
+Time 1 Node 1 Conso 177.288
+Time 1 Node 2 Conso 92.1118
+Time 1.00002 Throughput 922.238
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 92.4835
+Time 1 Node 1 Conso 178.031
+Time 1 Node 2 Conso 92.4834
+Time 1.00001 Throughput 924.298
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 92.8559
+Time 1 Node 1 Conso 178.776
+Time 1 Node 2 Conso 92.8559
+Time 1.00002 Throughput 926.367
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 93.2291
+Time 1 Node 1 Conso 179.522
+Time 1 Node 2 Conso 93.2291
+Time 1.00002 Throughput 928.373
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 93.6032
+Time 1 Node 1 Conso 180.27
+Time 1 Node 2 Conso 93.6032
+Time 1.00002 Throughput 930.389
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 93.9781
+Time 1 Node 1 Conso 181.02
+Time 1 Node 2 Conso 93.9781
+Time 1.00002 Throughput 932.485
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 94.3538
+Time 1 Node 1 Conso 181.772
+Time 1 Node 2 Conso 94.3538
+Time 1.00002 Throughput 934.519
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 94.7303
+Time 1 Node 1 Conso 182.525
+Time 1 Node 2 Conso 94.7303
+Time 1.00001 Throughput 936.561
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 95.1076
+Time 1 Node 1 Conso 183.279
+Time 1 Node 2 Conso 95.1076
+Time 1.00002 Throughput 938.539
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 95.4858
+Time 1 Node 1 Conso 184.036
+Time 1 Node 2 Conso 95.4858
+Time 1.00002 Throughput 940.598
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 95.8648
+Time 1 Node 1 Conso 184.793
+Time 1 Node 2 Conso 95.8647
+Time 1.00002 Throughput 942.667
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 96.2445
+Time 1 Node 1 Conso 185.553
+Time 1 Node 2 Conso 96.2445
+Time 1.00002 Throughput 944.671
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 96.6252
+Time 1 Node 1 Conso 186.314
+Time 1 Node 2 Conso 96.6252
+Time 1.00002 Throughput 946.758
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 97.0066
+Time 1 Node 1 Conso 187.077
+Time 1 Node 2 Conso 97.0066
+Time 1.00001 Throughput 948.779
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 97.3889
+Time 1 Node 1 Conso 187.842
+Time 1 Node 2 Conso 97.3889
+Time 1.00002 Throughput 950.808
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 97.7719
+Time 1 Node 1 Conso 188.608
+Time 1 Node 2 Conso 97.7719
+Time 1.00001 Throughput 952.847
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 98.1558
+Time 1 Node 1 Conso 189.376
+Time 1 Node 2 Conso 98.1558
+Time 1.00002 Throughput 954.894
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 98.5405
+Time 1 Node 1 Conso 190.145
+Time 1 Node 2 Conso 98.5405
+Time 1.00002 Throughput 956.873
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 98.9261
+Time 1 Node 1 Conso 190.916
+Time 1 Node 2 Conso 98.9261
+Time 1.00002 Throughput 958.938
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 99.3124
+Time 1 Node 1 Conso 191.689
+Time 1 Node 2 Conso 99.3124
+Time 1.00002 Throughput 961.011
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 99.6996
+Time 1 Node 1 Conso 192.463
+Time 1 Node 2 Conso 99.6996
+Time 1.00002 Throughput 963.017
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 100.088
+Time 1 Node 1 Conso 193.239
+Time 1 Node 2 Conso 100.088
+Time 1.00002 Throughput 965.03
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 100.476
+Time 1 Node 1 Conso 194.017
+Time 1 Node 2 Conso 100.476
+Time 1.00002 Throughput 967.13
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 100.866
+Time 1 Node 1 Conso 194.796
+Time 1 Node 2 Conso 100.866
+Time 1.00002 Throughput 969.161
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 101.256
+Time 1 Node 1 Conso 195.577
+Time 1 Node 2 Conso 101.256
+Time 1.00002 Throughput 971.2
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 101.648
+Time 1 Node 1 Conso 196.359
+Time 1 Node 2 Conso 101.648
+Time 1.00002 Throughput 973.248
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 102.04
+Time 1 Node 1 Conso 197.144
+Time 1 Node 2 Conso 102.04
+Time 1.00001 Throughput 975.225
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 102.433
+Time 1 Node 1 Conso 197.929
+Time 1 Node 2 Conso 102.433
+Time 1.00001 Throughput 977.29
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 102.826
+Time 1 Node 1 Conso 198.717
+Time 1 Node 2 Conso 102.826
+Time 1.00002 Throughput 979.364
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 103.221
+Time 1 Node 1 Conso 199.506
+Time 1 Node 2 Conso 103.221
+Time 1.00002 Throughput 981.366
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 103.616
+Time 1 Node 1 Conso 200.297
+Time 1 Node 2 Conso 103.616
+Time 1.00002 Throughput 983.377
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 104.013
+Time 1 Node 1 Conso 201.089
+Time 1 Node 2 Conso 104.013
+Time 1.00002 Throughput 985.476
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 104.41
+Time 1 Node 1 Conso 201.883
+Time 1 Node 2 Conso 104.41
+Time 1.00001 Throughput 987.504
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 104.807
+Time 1 Node 1 Conso 202.679
+Time 1 Node 2 Conso 104.807
+Time 1.00002 Throughput 989.54
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 105.206
+Time 1 Node 1 Conso 203.476
+Time 1 Node 2 Conso 105.206
+Time 1.00001 Throughput 991.584
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 105.606
+Time 1 Node 1 Conso 204.275
+Time 1 Node 2 Conso 105.606
+Time 1.00002 Throughput 993.636
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 106.006
+Time 1 Node 1 Conso 205.076
+Time 1 Node 2 Conso 106.006
+Time 1.00001 Throughput 995.615
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 106.407
+Time 1 Node 1 Conso 205.878
+Time 1 Node 2 Conso 106.407
+Time 1.00002 Throughput 997.684
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 106.808
+Time 1 Node 1 Conso 206.681
+Time 1 Node 2 Conso 106.808
+Time 1.00102 Throughput 998.68
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 107.21
+Time 1 Node 1 Conso 207.485
+Time 1 Node 2 Conso 107.21
+Time 1.00311 Throughput 998.68
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 107.613
+Time 1 Node 1 Conso 208.29
+Time 1 Node 2 Conso 107.613
+Time 1.00513 Throughput 998.68
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 108.017
+Time 1 Node 1 Conso 209.097
+Time 1 Node 2 Conso 108.017
+Time 1.00715 Throughput 998.68
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 108.421
+Time 1 Node 1 Conso 209.906
+Time 1 Node 2 Conso 108.421
+Time 1.00926 Throughput 998.68
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 108.827
+Time 1 Node 1 Conso 210.717
+Time 1 Node 2 Conso 108.827
+Time 1.01129 Throughput 998.68
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 109.233
+Time 1 Node 1 Conso 211.53
+Time 1 Node 2 Conso 109.233
+Time 1.01323 Throughput 998.68
+Lost Packets:3
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 109.64
+Time 1 Node 1 Conso 212.344
+Time 1 Node 2 Conso 109.64
+Time 1.01323 Throughput 998.68
+Lost Packets:174
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 110.047
+Time 1 Node 1 Conso 213.158
+Time 1 Node 2 Conso 110.047
+Time 1.01321 Throughput 998.68
+Lost Packets:346
+Time 0 Node 0 Conso 8.038
+Time 0 Node 1 Conso 9.14
+Time 0 Node 2 Conso 8.038
+Time 1 Node 0 Conso 110.454
+Time 1 Node 1 Conso 213.972
+Time 1 Node 2 Conso 110.454
+Time 1.01323 Throughput 998.68
+Lost Packets:518

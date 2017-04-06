@@ -661,33 +661,35 @@ RESULTS:
 - While writing the background section, I claimed that the reason we want to manage energy consumption is because currently IT equipment are not energy proportional. Would 
 we be interested to know about it if the equipment were energy proportional?
 ** Week 4 March
-**** Experiment - Power consumption vs 1-flow UDP traffic, Packet_Size = 1472, ([[file:ns3/1flow_energy.cc]])
+**** Experiment - Power consumption vs 1-flow UDP traffic, Packet_Size = 1472, 1 Node, ([[file:ns3/1flow_energy.cc]])
 #+tblname: tblUDPTraffic1
-| Traffic (Mbps) | Power_consumption (watt)  |
-|----------------+--------------------------|
-|              0 |                    8.038 |
-|        10.2022 |                   8.0421 |
-|        50.4537 |                  8.05828 |
-|        100.386 |                  8.07836 |
-|        150.318 |                  8.09843 |
-|        200.252 |                  8.11851 |
-|        250.184 |                  8.13858 |
-|        300.117 |                  8.15865 |
-|         350.05 |                  8.17873 |
+| Traffic (Mbps) | Power_consumption (watt) | Network_Power_Cons |
+|----------------+--------------------------+--------------------|
+|              0 |                    8.038 |             25.216 |
+|        10.2022 |                   8.0421 |                    |
+|        50.4537 |                  8.05828 |                    |
+|        100.386 |                  8.07836 |                    |
+|        150.318 |                  8.09843 |                    |
+|        200.252 |                  8.11851 |                    |
+|        250.184 |                  8.13858 |                    |
+|        300.117 |                  8.15865 |                    |
+|         350.05 |                  8.17873 |                    |
+#+TBLFM: @2$3=9.14+2*8.038
 
-**** Experiment - Power consumption vs 1-flow TCP traffic, packet_size=1472, ([[file:ns3/tcp_flow_energy.cc]])
+**** Experiment - Power consumption vs 1-flow TCP traffic, packet_size=1472, 1 Node, ([[file:ns3/tcp_flow_energy.cc]])
 #+tblname: tblTCPTraffic1
-| Traffic (Mbps | Power_consumption (watt) |
-|---------------+--------------------------|
-|             0 |                    8.038 |
-|     11.590364 |                  8.04268 |
-|      57.93887 |                  8.06138 |
-|     115.88787 |                  8.08477 |
-|     173.83738 |                  8.10816 |
-|      231.7869 |                  8.13155 |
-|      289.7364 |                  8.15494 |
-|      347.6859 |                  8.17833 |
-|      405.6354 |                  8.20172 |
+| Traffic (Mbps | Power_consumption (watt) | Network_Power_Cons |
+|---------------+--------------------------+--------------------|
+|             0 |                    8.038 |             25.216 |
+|     11.590364 |                  8.04268 |                    |
+|      57.93887 |                  8.06138 |                    |
+|     115.88787 |                  8.08477 |                    |
+|     173.83738 |                  8.10816 |                    |
+|      231.7869 |                  8.13155 |                    |
+|      289.7364 |                  8.15494 |                    |
+|      347.6859 |                  8.17833 |                    |
+|      405.6354 |                  8.20172 |                    |
+#+TBLFM: @2=8.038*2+9.14::@3$3=25.216+(8.04268-8.038)::@4$3=8.04268*2+9.14935
 
 NOTE: When we run the TCP script provided above we get the following output. The output in the above portion are coming from ECOFEN model, and the flow outputs are coming from flow-monitor modules of NS-3. 
 #+Begin_example
@@ -739,7 +741,7 @@ abline(fit.tcp)
 [[file:figures/udptcp.png]]
 - The Red dots are for UDP, and the blue ones are for TCP.
 - From the graph shown, we can see that linear relationship between traffic volume and power consumption is same whether the traffic UDP or TCP
-**** Experiment - Power consumption of 2-flow UDP traffic: packet size = 1472, flow direction = same ([[file:ns3/2flow_energy_same.cc]])
+**** Experiment - Power consumption of 2-flow UDP traffic: packet size = 1472, flow direction = same, 1 Node ([[file:ns3/2flow_energy_same.cc]])
 #+tblname: tblUDPTraffic2
 | Traffic (Mbps, flow1&2) | Power_consumption (watt) |
 |-------------------------+--------------------------|
@@ -778,22 +780,22 @@ abline(fit.udp2)
 |                 20.4044 |                  8.04619 |
 |                101.9262 |                  8.07896 |
 |                         |                          |
-- By comparing the first four entries of this table with the previous one, we can see that the power consumption does not differ whether the flow is in parallel or in opposite. This is what we expect since the ECOFEN Linear model computes energy based on bytes processed without considering the flow direction (Reciving/Sending).
+- By comparing the first four entries of this table with the previous one, we can see that the power consumption does not differ whether the parallel flow is in same direction or in opposite direction. This is what we expect since the ECOFEN Linear model computes energy based on bytes processed without considering the flow direction (Reciving/Sending).
 **** UP-Link or Down-Link power consumption
 - if we assume, in case of 2 flows, one flow as up-link flow and the other as down-link flow, we get the following result
-| Flow | Traffic (Mbps) | Power_consumption (watt) | Power_Consumption - Idle |
-|------+----------------+--------------------------+--------------------------|
-|    0 |              0 |                    8.038 |                        0 |
-|    2 |        5.10715 |                  8.04209 |                  4.09e-3 |
-|    1 |        5.10715 |                  8.04005 |                  2.05e-3 |
-|    1 |        10.2022 |                   8.0421 |                   4.1e-3 |
+| # of flows | Traffic (Mbps) | Power_consumption (watt) | Power_Consumption - Idle |
+|------------+----------------+--------------------------+--------------------------|
+|          0 |              0 |                    8.038 |                        0 |
+|          2 |        5.10715 |                  8.04209 |                  4.09e-3 |
+|          1 |        5.10715 |                  8.04005 |                  2.05e-3 |
+|          1 |        10.2022 |                   8.0421 |                   4.1e-3 |
 
 **** Questions
 - What has been suggested before looks like this
-|           |                           |
 |-----------+---------------------------|
 | UP_LINK   | (P_MAX - P_MIN)/2 + P_MIN |
 | DOWN_LINK | (P_MAX - P_MIN)/2 + 0     |
+
 - According to the linear model the relationship looks like the following
 #+Begin_SRC LaTEx
  P = P_MIN + (P_MAX - P_MIN) * L  
@@ -801,6 +803,195 @@ abline(fit.udp2)
 - where L is traffic load in percentage
 - My question is 
   - Why are we dividing by 2? Is it not the case that the UP_LINK or DOWN_LINK power consumption dependent on the traffic load?
+*** Week 1 April
+**** Automating Data Collection and formatting
+- Power consumption vs Traffic
+| parameter       | value |
+|-----------------+-------|
+| Packet Size     | 1472  |
+| Protocol        | UDP   |
+| Flow-direction  | UNI   |
+| Simulation-time | 1     |
+- The following blocks of code runs [[file:ns3/flow_energy.cc][NS-3 script]] with two parameters - packet size and traffic increment values
+#+BEGIN_SRC sh :results output
+cd ~/ns3workspace/source/ns-3.26
+ ./waf --run "scratch/flow_energy --packetSize=1472 --trafficIncrement=2" > /home/betsegaw/internship/data/flow_energy_raw.dat 2>&1
+#+END_SRC
+#+RESULTS:
+
+- The following python script processes the output data in the file [[file:data/flow_energy_raw.dat]] and puts the processed data in [[file:data/flow_energy.csv]] 
+in the following format
+
+| Throughput | Node-0 consumption | Node-1 consumption | Node-2 consumption | Total consumption |
+|------------+--------------------+--------------------+--------------------+-------------------|
+
+#+BEGIN_SRC python :results silent :var inpt="/home/betsegaw/internship/data/flow_energy_raw.dat" :var outpt="/home/betsegaw/internship/data/flow_energy.csv"
+
+import sys
+
+idle = True
+header = True
+
+# data variable holds one line of data formated as 'Throughput', 'Node-0 consumption', 
+# 'Node-1 Consumption', 'Node-2 Consumption', 'Total Consumption'
+data = []
+
+total_energy = 0.0 # total energy consumped as a sum of node-0, node-1 and node-2 consumption
+
+with open(inpt) as fe:
+    for line in fe:
+       if line.startswith("Time"): # ignores unnecessary lines in the input file
+          list = line.split()
+          if idle: # extract the power consumption data at time 0 when the nodes are idle
+              if list[1]=="0" and list[3]!="2":
+                 data.append(list[5])
+                 total_energy += float(list[5])
+              elif list[1]=="0" and list[3]=="2":
+                 idle=False
+                 data.insert(0, "0.0")
+                 data.append(list[5])
+                 total_energy += float(list[5])
+                 data.append(str(total_energy))
+          else: # extract the rest of power consumption and throughput data
+              if list[1]!="0" and list[2]!="Throughput":
+                 data.append(list[5])
+                 total_energy += float(list[5])
+              elif list[2]=="Throughput":
+                 data.insert(0,list[3])
+                 data.append(str(total_energy))
+          with open(outpt,"a") as of:
+              if len(data) == 5:
+                  if header: # writes the header and the idle consumption
+                      of.write("%s\n" % "Throughput,Cons_Node0,Cons_Node1,Cons_Node2,Cons_Total")
+                      of.write("%s\n" % ",".join(data))
+                      header = False
+                      del data[:]
+                  else: # writes the rest of the consumption
+                      of.write("%s\n" % ",".join(data))
+                      del data[:]
+       elif line.startswith("Lost"): # if there are packet losses, stop processing the file
+           sys.exit()
+
+#+END_SRC
+- The following block of code plots the processed data of the three nodes consumption separately
+#+BEGIN_SRC R :results value graphics :file figures/flow_energy.png  :var input="/home/betsegaw/internship/data/flow_energy.csv" :exports results
+FE = read.csv(input, header=T)
+attach(FE)
+fit.node0=lm(Cons_Node0~Throughput)
+fit.node1=lm(Cons_Node1~Throughput)
+fit.node2=lm(Cons_Node2~Throughput)
+fit.total=lm(Cons_Total~Throughput)
+#plot(Cons_Total~Throughput,col="darkred",xlab="Traffic (Mbps)",ylab="Power Consumption (Watt)",pch=16,cex=.2,bg="red",lwd=2)
+#abline(fit.total)
+plot(Cons_Node0~Throughput,col="darkgreen",xlab="Traffic (Mbps)",ylab="Power Consumption (Watt)",pch=3,lwd=1)
+#abline(fit.node0)
+points(Cons_Node1~Throughput,col="darkblue",pch=15,lwd=1)
+#abline(fit.node1)
+points(Cons_Node2~Throughput,col="darkred",pch=4,lwd=0.5)
+#abline(fit.node2)
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/flow_energy.png]]
+
+- The shape of the plots shown above is not what I have expected, therefore I have decided to re-run with large data set
+the validation experiment conducted before using the other equations shown in [[file:figures/powervsdatarate.pdf][Figure 4]] of
+ [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption in the NetFPGA Gigabit router]]
+**** Validating ECOFEN's model using power consumption vs data rate against equations derived from actual measurements shown in  [[file:figures/powervsdatarate.pdf][Figure 4]]
+| Parameters        | Values            |
+|-------------------+-------------------|
+| Packet Size       | 100,576,1000,1500 |
+| Traffic (Mbps)    | [1,1000]          |
+| Traffic Increment | 2                 |
+#+BEGIN_SRC bash :results output
+#! /bin/bash
+cd ~/ns3workspace/source/ns-3.26
+array=(72 548 972 1472)
+header=28
+for i in ${array[@]}; do
+j=$((header + i))
+ ./waf --run "scratch/validate_ecofen --packetSize=${i} --trafficIncrement=2" > /home/betsegaw/internship/data/eco_val_$j.dat 2>&1
+ done
+#+END_SRC
+
+- Running the [[file:ns3/validate_ecofen.cc]] script in the above code block produces four files:
+ [[file:data/eco_val_100.dat]], [[file:data/eco_val_576.dat]], [[file:data/eco_val_1000.dat]] and [[file:data/eco_val_1500.dat]]
+- These files contain power consumption of three nodes for traffic rate of [1, 1000]Mbps in increment of ~2Mbps, and the corresponding
+expected power consumption computed for each of the linear models shown in [[file:figures/powervsdatarate.pdf][Figure 4]]
+- The following python script processes the output data in the output files listed above and puts the processed data in
+[[file:data/eco_val_100.csv]], [[file:data/eco_val_576.csv]], [[file:data/eco_val_1000.csv]] and [[file:data/eco_val_1500.csv]]
+in the following format
+
+| Throughput | Node-0 consumption | Node-1 consumption | Node-2 consumption | Total consumption | Expected Consumption |
+|------------+--------------------+--------------------+--------------------+-------------------+----------------------|
+
+Note: Make sure to change the inpt and outpt variables in the following script to match the correct file and to use the 
+      correct initial value just before the comment line # initial value
+
+#+BEGIN_SRC python :results silent dir:~/internship :var inpt="data/eco_val_1500.dat" :var outpt="data/eco_val_1500.csv"
+
+import sys
+
+idle = True
+header = True
+initial = { 100:10.35521132,
+            576:10.30132998,
+            1000:10.23447916,
+            1500:10.35805453 } # these are constant values of the linear model when the throughput is 0
+            
+# data variable holds one line of data formated as 'Throughput', 'Node-0 consumption', 
+# 'Node-1 Consumption', 'Node-2 Consumption', 'Total Consumption'
+data = []
+
+total_energy = 0.0 # total energy consumped as a sum of node-0, node-1 and node-2 consumption
+
+with open(inpt) as fe:
+    for line in fe:
+       if line.startswith("Time"): # ignores unnecessary lines in the input file
+          list = line.split()
+          if idle: # extract the power consumption data at time 0 when the nodes are idle
+              if list[1]=="0" and list[3]!="2":
+                 data.append(list[5])
+                 total_energy += float(list[5])
+              elif list[1]=="0" and list[3]=="2":
+                 idle=False
+                 data.insert(0, "0.0")
+                 data.append(list[5])
+                 total_energy += float(list[5])
+                 data.append(str(total_energy))
+                 data.append(str(initial[1500])) # initial value
+          else: # extract the rest of power consumption and throughput data
+              if list[1]!="0" and list[2]!="Throughput":
+                 data.append(list[5])
+                 total_energy += float(list[5])
+              elif list[2]=="Throughput":
+                 data.insert(0,list[3])
+                 data.append(str(total_energy))
+                 data.append(list[7])
+          with open(outpt,"a") as of:
+              if len(data) == 6:
+                  if header: # writes the header and the idle consumption
+                      of.write("%s\n" % "Throughput,Cons_Node0,Cons_Node1,Cons_Node2,Cons_Total,Cons_Expected")
+                      of.write("%s\n" % ",".join(data))
+                      header = False
+                      del data[:]
+                  else: # writes the rest of the consumption
+                      of.write("%s\n" % ",".join(data))
+                      del data[:]
+       elif line.startswith("Lost"): # if there are packet losses, stop processing the file
+           sys.exit()
+
+#+END_SRC
+**** Plot of the validation result
+#+BEGIN_SRC R :results value graphics :file figures/ecof_val_100.png :exports results
+library(ggplot2)
+val_100 = read.csv("data/eco_val_100.csv", header=T)
+attach(val_100)
+ggplot(val_100,aes(Throughput))+
+   geom_line(aes(y = Cons_Node0, colour = "Node-0 Consumption"))+
+   geom_line(aes(y = Cons_Node2, colour = "Node-2 Consumption"))+
+   geom_line(aes(y = Cons_Expected, colour = "Expected Consumption"))
+#+END_SRC
 
 * Development
    - SimGrid HostEnergy plugin

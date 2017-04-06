@@ -1,0 +1,2691 @@
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.400s)
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2424
+Time 1 Node 1 Conso 10.2429
+Time 1 Node 2 Conso 10.2424
+Time 0.999561 Throughput 1.05571 PacketSize 548 Expected 10.3018
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2437
+Time 1 Node 1 Conso 10.2454
+Time 1 Node 2 Conso 10.2437
+Time 0.999561 Throughput 3.1579 PacketSize 548 Expected 10.3028
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2458
+Time 1 Node 1 Conso 10.2496
+Time 1 Node 2 Conso 10.2458
+Time 0.99956 Throughput 5.26009 PacketSize 548 Expected 10.3038
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2488
+Time 1 Node 1 Conso 10.2556
+Time 1 Node 2 Conso 10.2488
+Time 0.99956 Throughput 7.36228 PacketSize 548 Expected 10.3047
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2526
+Time 1 Node 1 Conso 10.2632
+Time 1 Node 2 Conso 10.2526
+Time 0.999561 Throughput 9.46447 PacketSize 548 Expected 10.3057
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2573
+Time 1 Node 1 Conso 10.2725
+Time 1 Node 2 Conso 10.2573
+Time 0.999959 Throughput 11.5667 PacketSize 548 Expected 10.3067
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2628
+Time 1 Node 1 Conso 10.2835
+Time 1 Node 2 Conso 10.2628
+Time 0.999896 Throughput 13.6689 PacketSize 548 Expected 10.3076
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2691
+Time 1 Node 1 Conso 10.2962
+Time 1 Node 2 Conso 10.2691
+Time 0.999851 Throughput 15.7711 PacketSize 548 Expected 10.3086
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2763
+Time 1 Node 1 Conso 10.3106
+Time 1 Node 2 Conso 10.2763
+Time 0.999818 Throughput 17.8732 PacketSize 548 Expected 10.3096
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2844
+Time 1 Node 1 Conso 10.3267
+Time 1 Node 2 Conso 10.2844
+Time 0.999788 Throughput 19.9755 PacketSize 548 Expected 10.3106
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.2933
+Time 1 Node 1 Conso 10.3445
+Time 1 Node 2 Conso 10.2933
+Time 0.999974 Throughput 22.0777 PacketSize 548 Expected 10.3115
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.303
+Time 1 Node 1 Conso 10.364
+Time 1 Node 2 Conso 10.303
+Time 0.999939 Throughput 24.1799 PacketSize 548 Expected 10.3125
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.3136
+Time 1 Node 1 Conso 10.3852
+Time 1 Node 2 Conso 10.3136
+Time 0.999912 Throughput 26.282 PacketSize 548 Expected 10.3135
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.325
+Time 1 Node 1 Conso 10.408
+Time 1 Node 2 Conso 10.325
+Time 0.999884 Throughput 28.3842 PacketSize 548 Expected 10.3144
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.3373
+Time 1 Node 1 Conso 10.4326
+Time 1 Node 2 Conso 10.3373
+Time 0.999861 Throughput 30.4864 PacketSize 548 Expected 10.3154
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.3504
+Time 1 Node 1 Conso 10.4589
+Time 1 Node 2 Conso 10.3504
+Time 0.999983 Throughput 32.5886 PacketSize 548 Expected 10.3164
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.3644
+Time 1 Node 1 Conso 10.4868
+Time 1 Node 2 Conso 10.3644
+Time 0.999956 Throughput 34.6909 PacketSize 548 Expected 10.3173
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.3792
+Time 1 Node 1 Conso 10.5164
+Time 1 Node 2 Conso 10.3792
+Time 0.999936 Throughput 36.793 PacketSize 548 Expected 10.3183
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.3949
+Time 1 Node 1 Conso 10.5478
+Time 1 Node 2 Conso 10.3949
+Time 0.999913 Throughput 38.8953 PacketSize 548 Expected 10.3193
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.4114
+Time 1 Node 1 Conso 10.5808
+Time 1 Node 2 Conso 10.4114
+Time 1.00001 Throughput 40.9974 PacketSize 548 Expected 10.3203
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.4288
+Time 1 Node 1 Conso 10.6156
+Time 1 Node 2 Conso 10.4288
+Time 0.999981 Throughput 43.0998 PacketSize 548 Expected 10.3212
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.447
+Time 1 Node 1 Conso 10.652
+Time 1 Node 2 Conso 10.447
+Time 0.999964 Throughput 45.2019 PacketSize 548 Expected 10.3222
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.466
+Time 1 Node 1 Conso 10.6901
+Time 1 Node 2 Conso 10.466
+Time 0.999949 Throughput 47.304 PacketSize 548 Expected 10.3232
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.4859
+Time 1 Node 1 Conso 10.7299
+Time 1 Node 2 Conso 10.4859
+Time 0.999928 Throughput 49.4064 PacketSize 548 Expected 10.3241
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.5067
+Time 1 Node 1 Conso 10.7714
+Time 1 Node 2 Conso 10.5067
+Time 1 Throughput 51.5085 PacketSize 548 Expected 10.3251
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.5283
+Time 1 Node 1 Conso 10.8146
+Time 1 Node 2 Conso 10.5283
+Time 0.999982 Throughput 53.6109 PacketSize 548 Expected 10.3261
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.5507
+Time 1 Node 1 Conso 10.8595
+Time 1 Node 2 Conso 10.5507
+Time 0.999963 Throughput 55.7133 PacketSize 548 Expected 10.327
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.574
+Time 1 Node 1 Conso 10.9061
+Time 1 Node 2 Conso 10.574
+Time 0.999959 Throughput 57.8149 PacketSize 548 Expected 10.328
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.5982
+Time 1 Node 1 Conso 10.9543
+Time 1 Node 2 Conso 10.5982
+Time 0.999942 Throughput 59.9172 PacketSize 548 Expected 10.329
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.6232
+Time 1 Node 1 Conso 11.0043
+Time 1 Node 2 Conso 10.6232
+Time 1.00001 Throughput 62.0193 PacketSize 548 Expected 10.33
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.649
+Time 1 Node 1 Conso 11.056
+Time 1 Node 2 Conso 10.649
+Time 0.999981 Throughput 64.1222 PacketSize 548 Expected 10.3309
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.6757
+Time 1 Node 1 Conso 11.1094
+Time 1 Node 2 Conso 10.6757
+Time 0.999974 Throughput 66.2239 PacketSize 548 Expected 10.3319
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.7032
+Time 1 Node 1 Conso 11.1644
+Time 1 Node 2 Conso 10.7032
+Time 0.999964 Throughput 68.3259 PacketSize 548 Expected 10.3329
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.7316
+Time 1 Node 1 Conso 11.2212
+Time 1 Node 2 Conso 10.7316
+Time 1.00001 Throughput 70.4289 PacketSize 548 Expected 10.3338
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.7608
+Time 1 Node 1 Conso 11.2796
+Time 1 Node 2 Conso 10.7608
+Time 1 Throughput 72.5304 PacketSize 548 Expected 10.3348
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.7909
+Time 1 Node 1 Conso 11.3397
+Time 1 Node 2 Conso 10.7909
+Time 0.999986 Throughput 74.6329 PacketSize 548 Expected 10.3358
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.8218
+Time 1 Node 1 Conso 11.4016
+Time 1 Node 2 Conso 10.8218
+Time 0.999968 Throughput 76.7356 PacketSize 548 Expected 10.3368
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.8535
+Time 1 Node 1 Conso 11.4651
+Time 1 Node 2 Conso 10.8535
+Time 0.999965 Throughput 78.8372 PacketSize 548 Expected 10.3377
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.8862
+Time 1 Node 1 Conso 11.5303
+Time 1 Node 2 Conso 10.8862
+Time 0.999959 Throughput 80.939 PacketSize 548 Expected 10.3387
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.9196
+Time 1 Node 1 Conso 11.5972
+Time 1 Node 2 Conso 10.9196
+Time 0.999993 Throughput 83.0421 PacketSize 548 Expected 10.3397
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.9539
+Time 1 Node 1 Conso 11.6658
+Time 1 Node 2 Conso 10.9539
+Time 0.999986 Throughput 85.144 PacketSize 548 Expected 10.3406
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 10.9891
+Time 1 Node 1 Conso 11.7361
+Time 1 Node 2 Conso 10.9891
+Time 0.999979 Throughput 87.2459 PacketSize 548 Expected 10.3416
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.0251
+Time 1 Node 1 Conso 11.8081
+Time 1 Node 2 Conso 11.0251
+Time 0.999965 Throughput 89.3485 PacketSize 548 Expected 10.3426
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.0619
+Time 1 Node 1 Conso 11.8818
+Time 1 Node 2 Conso 11.0619
+Time 0.999999 Throughput 91.4513 PacketSize 548 Expected 10.3435
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.0996
+Time 1 Node 1 Conso 11.9572
+Time 1 Node 2 Conso 11.0996
+Time 0.999996 Throughput 93.5529 PacketSize 548 Expected 10.3445
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.1381
+Time 1 Node 1 Conso 12.0343
+Time 1 Node 2 Conso 11.1381
+Time 0.999978 Throughput 95.6559 PacketSize 548 Expected 10.3455
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.1775
+Time 1 Node 1 Conso 12.113
+Time 1 Node 2 Conso 11.1775
+Time 0.999969 Throughput 97.7581 PacketSize 548 Expected 10.3465
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.2177
+Time 1 Node 1 Conso 12.1935
+Time 1 Node 2 Conso 11.2177
+Time 0.999969 Throughput 99.8594 PacketSize 548 Expected 10.3474
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.2588
+Time 1 Node 1 Conso 12.2757
+Time 1 Node 2 Conso 11.2588
+Time 0.999994 Throughput 101.963 PacketSize 548 Expected 10.3484
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.3008
+Time 1 Node 1 Conso 12.3595
+Time 1 Node 2 Conso 11.3008
+Time 0.999985 Throughput 104.065 PacketSize 548 Expected 10.3494
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.3435
+Time 1 Node 1 Conso 12.4451
+Time 1 Node 2 Conso 11.3435
+Time 0.999974 Throughput 106.167 PacketSize 548 Expected 10.3503
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.3871
+Time 1 Node 1 Conso 12.5323
+Time 1 Node 2 Conso 11.3871
+Time 0.999984 Throughput 108.268 PacketSize 548 Expected 10.3513
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.4316
+Time 1 Node 1 Conso 12.6212
+Time 1 Node 2 Conso 11.4316
+Time 0.99997 Throughput 110.371 PacketSize 548 Expected 10.3523
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.4769
+Time 1 Node 1 Conso 12.7119
+Time 1 Node 2 Conso 11.4769
+Time 0.999988 Throughput 112.474 PacketSize 548 Expected 10.3533
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.5231
+Time 1 Node 1 Conso 12.8042
+Time 1 Node 2 Conso 11.5231
+Time 0.999999 Throughput 114.574 PacketSize 548 Expected 10.3542
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.5701
+Time 1 Node 1 Conso 12.8982
+Time 1 Node 2 Conso 11.5701
+Time 0.999983 Throughput 116.678 PacketSize 548 Expected 10.3552
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.618
+Time 1 Node 1 Conso 12.9939
+Time 1 Node 2 Conso 11.618
+Time 0.999976 Throughput 118.78 PacketSize 548 Expected 10.3562
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.6667
+Time 1 Node 1 Conso 13.0913
+Time 1 Node 2 Conso 11.6667
+Time 0.999999 Throughput 120.883 PacketSize 548 Expected 10.3571
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.7162
+Time 1 Node 1 Conso 13.1904
+Time 1 Node 2 Conso 11.7162
+Time 1.00001 Throughput 122.983 PacketSize 548 Expected 10.3581
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.7666
+Time 1 Node 1 Conso 13.2912
+Time 1 Node 2 Conso 11.7666
+Time 0.999994 Throughput 125.086 PacketSize 548 Expected 10.3591
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.8178
+Time 1 Node 1 Conso 13.3937
+Time 1 Node 2 Conso 11.8178
+Time 0.999985 Throughput 127.189 PacketSize 548 Expected 10.36
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.8699
+Time 1 Node 1 Conso 13.4979
+Time 1 Node 2 Conso 11.8699
+Time 0.999981 Throughput 129.29 PacketSize 548 Expected 10.361
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.9229
+Time 1 Node 1 Conso 13.6037
+Time 1 Node 2 Conso 11.9229
+Time 0.999989 Throughput 131.395 PacketSize 548 Expected 10.362
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 11.9766
+Time 1 Node 1 Conso 13.7113
+Time 1 Node 2 Conso 11.9766
+Time 0.99999 Throughput 133.496 PacketSize 548 Expected 10.363
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.0313
+Time 1 Node 1 Conso 13.8206
+Time 1 Node 2 Conso 12.0313
+Time 0.999988 Throughput 135.598 PacketSize 548 Expected 10.3639
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.0868
+Time 1 Node 1 Conso 13.9315
+Time 1 Node 2 Conso 12.0868
+Time 0.999977 Throughput 137.701 PacketSize 548 Expected 10.3649
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.1431
+Time 1 Node 1 Conso 14.0442
+Time 1 Node 2 Conso 12.1431
+Time 0.999977 Throughput 139.802 PacketSize 548 Expected 10.3659
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.2003
+Time 1 Node 1 Conso 14.1585
+Time 1 Node 2 Conso 12.2003
+Time 0.999981 Throughput 141.903 PacketSize 548 Expected 10.3668
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.2583
+Time 1 Node 1 Conso 14.2745
+Time 1 Node 2 Conso 12.2583
+Time 0.999977 Throughput 144.005 PacketSize 548 Expected 10.3678
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.3171
+Time 1 Node 1 Conso 14.3923
+Time 1 Node 2 Conso 12.3171
+Time 0.999985 Throughput 146.109 PacketSize 548 Expected 10.3688
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.3768
+Time 1 Node 1 Conso 14.5117
+Time 1 Node 2 Conso 12.3768
+Time 0.99999 Throughput 148.21 PacketSize 548 Expected 10.3697
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.4374
+Time 1 Node 1 Conso 14.6328
+Time 1 Node 2 Conso 12.4374
+Time 0.999979 Throughput 150.313 PacketSize 548 Expected 10.3707
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.4988
+Time 1 Node 1 Conso 14.7556
+Time 1 Node 2 Conso 12.4988
+Time 0.999999 Throughput 152.416 PacketSize 548 Expected 10.3717
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.5611
+Time 1 Node 1 Conso 14.8801
+Time 1 Node 2 Conso 12.5611
+Time 1 Throughput 154.516 PacketSize 548 Expected 10.3727
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.6242
+Time 1 Node 1 Conso 15.0063
+Time 1 Node 2 Conso 12.6242
+Time 1 Throughput 156.622 PacketSize 548 Expected 10.3736
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.6881
+Time 1 Node 1 Conso 15.1342
+Time 1 Node 2 Conso 12.6881
+Time 0.999993 Throughput 158.721 PacketSize 548 Expected 10.3746
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.7529
+Time 1 Node 1 Conso 15.2638
+Time 1 Node 2 Conso 12.7529
+Time 0.999999 Throughput 160.825 PacketSize 548 Expected 10.3756
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.8185
+Time 1 Node 1 Conso 15.3951
+Time 1 Node 2 Conso 12.8185
+Time 0.999983 Throughput 162.929 PacketSize 548 Expected 10.3765
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.885
+Time 1 Node 1 Conso 15.5281
+Time 1 Node 2 Conso 12.885
+Time 0.999988 Throughput 165.03 PacketSize 548 Expected 10.3775
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 12.9524
+Time 1 Node 1 Conso 15.6627
+Time 1 Node 2 Conso 12.9524
+Time 0.999991 Throughput 167.131 PacketSize 548 Expected 10.3785
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.0206
+Time 1 Node 1 Conso 15.7991
+Time 1 Node 2 Conso 13.0206
+Time 0.999994 Throughput 169.236 PacketSize 548 Expected 10.3795
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.0896
+Time 1 Node 1 Conso 15.9372
+Time 1 Node 2 Conso 13.0896
+Time 0.999992 Throughput 171.338 PacketSize 548 Expected 10.3804
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.1595
+Time 1 Node 1 Conso 16.0769
+Time 1 Node 2 Conso 13.1595
+Time 0.999987 Throughput 173.44 PacketSize 548 Expected 10.3814
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.2302
+Time 1 Node 1 Conso 16.2184
+Time 1 Node 2 Conso 13.2302
+Time 0.999989 Throughput 175.541 PacketSize 548 Expected 10.3824
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.3018
+Time 1 Node 1 Conso 16.3615
+Time 1 Node 2 Conso 13.3018
+Time 0.999996 Throughput 177.645 PacketSize 548 Expected 10.3833
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.3742
+Time 1 Node 1 Conso 16.5063
+Time 1 Node 2 Conso 13.3742
+Time 1.00001 Throughput 179.745 PacketSize 548 Expected 10.3843
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.4474
+Time 1 Node 1 Conso 16.6529
+Time 1 Node 2 Conso 13.4474
+Time 0.99999 Throughput 181.844 PacketSize 548 Expected 10.3853
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.5215
+Time 1 Node 1 Conso 16.8011
+Time 1 Node 2 Conso 13.5215
+Time 0.999995 Throughput 183.949 PacketSize 548 Expected 10.3862
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.5965
+Time 1 Node 1 Conso 16.951
+Time 1 Node 2 Conso 13.5965
+Time 0.999992 Throughput 186.051 PacketSize 548 Expected 10.3872
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.6723
+Time 1 Node 1 Conso 17.1026
+Time 1 Node 2 Conso 13.6723
+Time 1 Throughput 188.155 PacketSize 548 Expected 10.3882
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.749
+Time 1 Node 1 Conso 17.2559
+Time 1 Node 2 Conso 13.749
+Time 1 Throughput 190.261 PacketSize 548 Expected 10.3892
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.8265
+Time 1 Node 1 Conso 17.4109
+Time 1 Node 2 Conso 13.8265
+Time 1 Throughput 192.357 PacketSize 548 Expected 10.3901
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.9048
+Time 1 Node 1 Conso 17.5676
+Time 1 Node 2 Conso 13.9048
+Time 0.999999 Throughput 194.46 PacketSize 548 Expected 10.3911
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 13.984
+Time 1 Node 1 Conso 17.726
+Time 1 Node 2 Conso 13.984
+Time 0.999994 Throughput 196.566 PacketSize 548 Expected 10.3921
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.064
+Time 1 Node 1 Conso 17.8861
+Time 1 Node 2 Conso 14.064
+Time 0.999992 Throughput 198.668 PacketSize 548 Expected 10.393
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.1449
+Time 1 Node 1 Conso 18.0479
+Time 1 Node 2 Conso 14.1449
+Time 1 Throughput 200.771 PacketSize 548 Expected 10.394
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.2267
+Time 1 Node 1 Conso 18.2113
+Time 1 Node 2 Conso 14.2267
+Time 0.999992 Throughput 202.866 PacketSize 548 Expected 10.395
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.3092
+Time 1 Node 1 Conso 18.3765
+Time 1 Node 2 Conso 14.3092
+Time 1.00001 Throughput 204.969 PacketSize 548 Expected 10.3959
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.3927
+Time 1 Node 1 Conso 18.5434
+Time 1 Node 2 Conso 14.3927
+Time 0.999992 Throughput 207.078 PacketSize 548 Expected 10.3969
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.477
+Time 1 Node 1 Conso 18.7119
+Time 1 Node 2 Conso 14.477
+Time 0.999995 Throughput 209.174 PacketSize 548 Expected 10.3979
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.5621
+Time 1 Node 1 Conso 18.8821
+Time 1 Node 2 Conso 14.5621
+Time 0.999998 Throughput 211.284 PacketSize 548 Expected 10.3989
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.648
+Time 1 Node 1 Conso 19.0541
+Time 1 Node 2 Conso 14.648
+Time 0.99999 Throughput 213.377 PacketSize 548 Expected 10.3998
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.7349
+Time 1 Node 1 Conso 19.2277
+Time 1 Node 2 Conso 14.7349
+Time 0.999993 Throughput 215.483 PacketSize 548 Expected 10.4008
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.8225
+Time 1 Node 1 Conso 19.403
+Time 1 Node 2 Conso 14.8225
+Time 0.999992 Throughput 217.589 PacketSize 548 Expected 10.4018
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 14.911
+Time 1 Node 1 Conso 19.5801
+Time 1 Node 2 Conso 14.911
+Time 0.999998 Throughput 219.684 PacketSize 548 Expected 10.4027
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.0004
+Time 1 Node 1 Conso 19.7588
+Time 1 Node 2 Conso 15.0004
+Time 1.00001 Throughput 221.788 PacketSize 548 Expected 10.4037
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.0906
+Time 1 Node 1 Conso 19.9392
+Time 1 Node 2 Conso 15.0906
+Time 1.00001 Throughput 223.89 PacketSize 548 Expected 10.4047
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.1816
+Time 1 Node 1 Conso 20.1213
+Time 1 Node 2 Conso 15.1816
+Time 0.999996 Throughput 225.998 PacketSize 548 Expected 10.4057
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.2735
+Time 1 Node 1 Conso 20.3051
+Time 1 Node 2 Conso 15.2735
+Time 1.00001 Throughput 228.101 PacketSize 548 Expected 10.4066
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.3663
+Time 1 Node 1 Conso 20.4906
+Time 1 Node 2 Conso 15.3663
+Time 1.00001 Throughput 230.197 PacketSize 548 Expected 10.4076
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.4599
+Time 1 Node 1 Conso 20.6778
+Time 1 Node 2 Conso 15.4599
+Time 0.999992 Throughput 232.298 PacketSize 548 Expected 10.4086
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.5543
+Time 1 Node 1 Conso 20.8666
+Time 1 Node 2 Conso 15.5543
+Time 1 Throughput 234.401 PacketSize 548 Expected 10.4095
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.6496
+Time 1 Node 1 Conso 21.0572
+Time 1 Node 2 Conso 15.6496
+Time 1.00001 Throughput 236.506 PacketSize 548 Expected 10.4105
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.7457
+Time 1 Node 1 Conso 21.2495
+Time 1 Node 2 Conso 15.7457
+Time 1 Throughput 238.613 PacketSize 548 Expected 10.4115
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.8427
+Time 1 Node 1 Conso 21.4434
+Time 1 Node 2 Conso 15.8427
+Time 0.999996 Throughput 240.707 PacketSize 548 Expected 10.4124
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 15.9405
+Time 1 Node 1 Conso 21.6391
+Time 1 Node 2 Conso 15.9405
+Time 0.999998 Throughput 242.812 PacketSize 548 Expected 10.4134
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.0392
+Time 1 Node 1 Conso 21.8364
+Time 1 Node 2 Conso 16.0392
+Time 1.00001 Throughput 244.916 PacketSize 548 Expected 10.4144
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.1387
+Time 1 Node 1 Conso 22.0355
+Time 1 Node 2 Conso 16.1387
+Time 0.999992 Throughput 247.016 PacketSize 548 Expected 10.4154
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.2391
+Time 1 Node 1 Conso 22.2362
+Time 1 Node 2 Conso 16.2391
+Time 0.999994 Throughput 249.126 PacketSize 548 Expected 10.4163
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.3403
+Time 1 Node 1 Conso 22.4386
+Time 1 Node 2 Conso 16.3403
+Time 0.999996 Throughput 251.218 PacketSize 548 Expected 10.4173
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.4424
+Time 1 Node 1 Conso 22.6428
+Time 1 Node 2 Conso 16.4424
+Time 1 Throughput 253.331 PacketSize 548 Expected 10.4183
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.5453
+Time 1 Node 1 Conso 22.8486
+Time 1 Node 2 Conso 16.5453
+Time 1 Throughput 255.423 PacketSize 548 Expected 10.4192
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.6491
+Time 1 Node 1 Conso 23.0561
+Time 1 Node 2 Conso 16.6491
+Time 0.999995 Throughput 257.535 PacketSize 548 Expected 10.4202
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.7537
+Time 1 Node 1 Conso 23.2653
+Time 1 Node 2 Conso 16.7537
+Time 1 Throughput 259.639 PacketSize 548 Expected 10.4212
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.8591
+Time 1 Node 1 Conso 23.4762
+Time 1 Node 2 Conso 16.8591
+Time 0.999995 Throughput 261.734 PacketSize 548 Expected 10.4222
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 16.9654
+Time 1 Node 1 Conso 23.6888
+Time 1 Node 2 Conso 16.9654
+Time 1.00001 Throughput 263.831 PacketSize 548 Expected 10.4231
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.0725
+Time 1 Node 1 Conso 23.9031
+Time 1 Node 2 Conso 17.0725
+Time 1.00001 Throughput 265.933 PacketSize 548 Expected 10.4241
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.1805
+Time 1 Node 1 Conso 24.1191
+Time 1 Node 2 Conso 17.1805
+Time 0.999999 Throughput 268.036 PacketSize 548 Expected 10.4251
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.2894
+Time 1 Node 1 Conso 24.3367
+Time 1 Node 2 Conso 17.2894
+Time 1 Throughput 270.142 PacketSize 548 Expected 10.426
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.3991
+Time 1 Node 1 Conso 24.5561
+Time 1 Node 2 Conso 17.3991
+Time 0.999997 Throughput 272.248 PacketSize 548 Expected 10.427
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.5096
+Time 1 Node 1 Conso 24.7772
+Time 1 Node 2 Conso 17.5096
+Time 0.999993 Throughput 274.356 PacketSize 548 Expected 10.428
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.621
+Time 1 Node 1 Conso 24.9999
+Time 1 Node 2 Conso 17.621
+Time 0.999999 Throughput 276.446 PacketSize 548 Expected 10.4289
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.7332
+Time 1 Node 1 Conso 25.2244
+Time 1 Node 2 Conso 17.7332
+Time 1 Throughput 278.551 PacketSize 548 Expected 10.4299
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.8463
+Time 1 Node 1 Conso 25.4505
+Time 1 Node 2 Conso 17.8463
+Time 1.00001 Throughput 280.655 PacketSize 548 Expected 10.4309
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 17.9602
+Time 1 Node 1 Conso 25.6784
+Time 1 Node 2 Conso 17.9602
+Time 0.999993 Throughput 282.756 PacketSize 548 Expected 10.4319
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 18.075
+Time 1 Node 1 Conso 25.9079
+Time 1 Node 2 Conso 18.075
+Time 1.00001 Throughput 284.853 PacketSize 548 Expected 10.4328
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 18.1906
+Time 1 Node 1 Conso 26.1391
+Time 1 Node 2 Conso 18.1906
+Time 1.00001 Throughput 286.964 PacketSize 548 Expected 10.4338
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 18.307
+Time 1 Node 1 Conso 26.3721
+Time 1 Node 2 Conso 18.307
+Time 1 Throughput 289.071 PacketSize 548 Expected 10.4348
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 18.4243
+Time 1 Node 1 Conso 26.6067
+Time 1 Node 2 Conso 18.4243
+Time 1.00001 Throughput 291.171 PacketSize 548 Expected 10.4357
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 18.5425
+Time 1 Node 1 Conso 26.843
+Time 1 Node 2 Conso 18.5425
+Time 1 Throughput 293.265 PacketSize 548 Expected 10.4367
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 18.6615
+Time 1 Node 1 Conso 27.081
+Time 1 Node 2 Conso 18.6615
+Time 1 Throughput 295.37 PacketSize 548 Expected 10.4377
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 18.7814
+Time 1 Node 1 Conso 27.3207
+Time 1 Node 2 Conso 18.7814
+Time 1 Throughput 297.468 PacketSize 548 Expected 10.4386
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 18.902
+Time 1 Node 1 Conso 27.5621
+Time 1 Node 2 Conso 18.902
+Time 1.00001 Throughput 299.576 PacketSize 548 Expected 10.4396
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 19.0236
+Time 1 Node 1 Conso 27.8052
+Time 1 Node 2 Conso 19.0236
+Time 1 Throughput 301.674 PacketSize 548 Expected 10.4406
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 19.146
+Time 1 Node 1 Conso 28.05
+Time 1 Node 2 Conso 19.146
+Time 0.999995 Throughput 303.782 PacketSize 548 Expected 10.4416
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 19.2692
+Time 1 Node 1 Conso 28.2964
+Time 1 Node 2 Conso 19.2692
+Time 1.00001 Throughput 305.879 PacketSize 548 Expected 10.4425
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 19.3933
+Time 1 Node 1 Conso 28.5446
+Time 1 Node 2 Conso 19.3933
+Time 0.999995 Throughput 307.985 PacketSize 548 Expected 10.4435
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 19.5182
+Time 1 Node 1 Conso 28.7945
+Time 1 Node 2 Conso 19.5182
+Time 1.00001 Throughput 310.078 PacketSize 548 Expected 10.4445
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 19.644
+Time 1 Node 1 Conso 29.046
+Time 1 Node 2 Conso 19.644
+Time 0.999999 Throughput 312.2 PacketSize 548 Expected 10.4454
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 19.7706
+Time 1 Node 1 Conso 29.2993
+Time 1 Node 2 Conso 19.7706
+Time 1 Throughput 314.286 PacketSize 548 Expected 10.4464
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 19.8981
+Time 1 Node 1 Conso 29.5542
+Time 1 Node 2 Conso 19.8981
+Time 1 Throughput 316.401 PacketSize 548 Expected 10.4474
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 20.0264
+Time 1 Node 1 Conso 29.8109
+Time 1 Node 2 Conso 20.0264
+Time 1.00001 Throughput 318.501 PacketSize 548 Expected 10.4484
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 20.1556
+Time 1 Node 1 Conso 30.0692
+Time 1 Node 2 Conso 20.1556
+Time 0.999996 Throughput 320.606 PacketSize 548 Expected 10.4493
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 20.2856
+Time 1 Node 1 Conso 30.3292
+Time 1 Node 2 Conso 20.2856
+Time 1.00001 Throughput 322.694 PacketSize 548 Expected 10.4503
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 20.4165
+Time 1 Node 1 Conso 30.5909
+Time 1 Node 2 Conso 20.4165
+Time 1.00001 Throughput 324.809 PacketSize 548 Expected 10.4513
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 20.5482
+Time 1 Node 1 Conso 30.8544
+Time 1 Node 2 Conso 20.5482
+Time 1.00001 Throughput 326.906 PacketSize 548 Expected 10.4522
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 20.6807
+Time 1 Node 1 Conso 31.1195
+Time 1 Node 2 Conso 20.6807
+Time 0.999996 Throughput 329.006 PacketSize 548 Expected 10.4532
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 20.8141
+Time 1 Node 1 Conso 31.3863
+Time 1 Node 2 Conso 20.8141
+Time 1 Throughput 331.11 PacketSize 548 Expected 10.4542
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 20.9484
+Time 1 Node 1 Conso 31.6548
+Time 1 Node 2 Conso 20.9484
+Time 0.999998 Throughput 333.217 PacketSize 548 Expected 10.4551
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 21.0835
+Time 1 Node 1 Conso 31.925
+Time 1 Node 2 Conso 21.0835
+Time 1 Throughput 335.327 PacketSize 548 Expected 10.4561
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 21.2194
+Time 1 Node 1 Conso 32.1969
+Time 1 Node 2 Conso 21.2194
+Time 1 Throughput 337.414 PacketSize 548 Expected 10.4571
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 21.3562
+Time 1 Node 1 Conso 32.4704
+Time 1 Node 2 Conso 21.3562
+Time 1.00001 Throughput 339.527 PacketSize 548 Expected 10.4581
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 21.4939
+Time 1 Node 1 Conso 32.7457
+Time 1 Node 2 Conso 21.4939
+Time 1 Throughput 341.616 PacketSize 548 Expected 10.459
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 21.6323
+Time 1 Node 1 Conso 33.0227
+Time 1 Node 2 Conso 21.6323
+Time 1 Throughput 343.731 PacketSize 548 Expected 10.46
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 21.7717
+Time 1 Node 1 Conso 33.3013
+Time 1 Node 2 Conso 21.7717
+Time 0.999997 Throughput 345.821 PacketSize 548 Expected 10.461
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 21.9119
+Time 1 Node 1 Conso 33.5817
+Time 1 Node 2 Conso 21.9119
+Time 0.999997 Throughput 347.936 PacketSize 548 Expected 10.4619
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 22.0529
+Time 1 Node 1 Conso 33.8637
+Time 1 Node 2 Conso 22.0529
+Time 0.999996 Throughput 350.024 PacketSize 548 Expected 10.4629
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 22.1947
+Time 1 Node 1 Conso 34.1475
+Time 1 Node 2 Conso 22.1947
+Time 1 Throughput 352.137 PacketSize 548 Expected 10.4639
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 22.3375
+Time 1 Node 1 Conso 34.4329
+Time 1 Node 2 Conso 22.3375
+Time 0.999999 Throughput 354.248 PacketSize 548 Expected 10.4649
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 22.481
+Time 1 Node 1 Conso 34.7201
+Time 1 Node 2 Conso 22.481
+Time 1 Throughput 356.33 PacketSize 548 Expected 10.4658
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 22.6254
+Time 1 Node 1 Conso 35.0089
+Time 1 Node 2 Conso 22.6254
+Time 1 Throughput 358.436 PacketSize 548 Expected 10.4668
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 22.7707
+Time 1 Node 1 Conso 35.2994
+Time 1 Node 2 Conso 22.7707
+Time 1.00001 Throughput 360.54 PacketSize 548 Expected 10.4678
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 22.9168
+Time 1 Node 1 Conso 35.5916
+Time 1 Node 2 Conso 22.9168
+Time 0.999999 Throughput 362.639 PacketSize 548 Expected 10.4687
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 23.0638
+Time 1 Node 1 Conso 35.8855
+Time 1 Node 2 Conso 23.0638
+Time 1 Throughput 364.735 PacketSize 548 Expected 10.4697
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 23.2116
+Time 1 Node 1 Conso 36.1811
+Time 1 Node 2 Conso 23.2116
+Time 1 Throughput 366.854 PacketSize 548 Expected 10.4707
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 23.3602
+Time 1 Node 1 Conso 36.4784
+Time 1 Node 2 Conso 23.3602
+Time 1.00001 Throughput 368.94 PacketSize 548 Expected 10.4716
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 23.5097
+Time 1 Node 1 Conso 36.7774
+Time 1 Node 2 Conso 23.5097
+Time 1 Throughput 371.049 PacketSize 548 Expected 10.4726
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 23.66
+Time 1 Node 1 Conso 37.0781
+Time 1 Node 2 Conso 23.66
+Time 1.00001 Throughput 373.152 PacketSize 548 Expected 10.4736
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 23.8112
+Time 1 Node 1 Conso 37.3804
+Time 1 Node 2 Conso 23.8112
+Time 1.00001 Throughput 375.249 PacketSize 548 Expected 10.4746
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 23.9633
+Time 1 Node 1 Conso 37.6845
+Time 1 Node 2 Conso 23.9633
+Time 1 Throughput 377.369 PacketSize 548 Expected 10.4755
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 24.1161
+Time 1 Node 1 Conso 37.9903
+Time 1 Node 2 Conso 24.1161
+Time 1.00001 Throughput 379.451 PacketSize 548 Expected 10.4765
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 24.2699
+Time 1 Node 1 Conso 38.2977
+Time 1 Node 2 Conso 24.2699
+Time 1.00001 Throughput 381.556 PacketSize 548 Expected 10.4775
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 24.4244
+Time 1 Node 1 Conso 38.6069
+Time 1 Node 2 Conso 24.4244
+Time 0.999998 Throughput 383.685 PacketSize 548 Expected 10.4784
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 24.5799
+Time 1 Node 1 Conso 38.9177
+Time 1 Node 2 Conso 24.5799
+Time 1.00001 Throughput 385.773 PacketSize 548 Expected 10.4794
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 24.7361
+Time 1 Node 1 Conso 39.2303
+Time 1 Node 2 Conso 24.7361
+Time 1.00001 Throughput 387.883 PacketSize 548 Expected 10.4804
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 24.8933
+Time 1 Node 1 Conso 39.5445
+Time 1 Node 2 Conso 24.8933
+Time 1.00001 Throughput 389.984 PacketSize 548 Expected 10.4814
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 25.0512
+Time 1 Node 1 Conso 39.8605
+Time 1 Node 2 Conso 25.0512
+Time 1 Throughput 392.075 PacketSize 548 Expected 10.4823
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 25.21
+Time 1 Node 1 Conso 40.1781
+Time 1 Node 2 Conso 25.21
+Time 1.00001 Throughput 394.188 PacketSize 548 Expected 10.4833
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 25.3697
+Time 1 Node 1 Conso 40.4974
+Time 1 Node 2 Conso 25.3697
+Time 1.00001 Throughput 396.289 PacketSize 548 Expected 10.4843
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 25.5302
+Time 1 Node 1 Conso 40.8184
+Time 1 Node 2 Conso 25.5302
+Time 1 Throughput 398.379 PacketSize 548 Expected 10.4852
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 25.6916
+Time 1 Node 1 Conso 41.1411
+Time 1 Node 2 Conso 25.6916
+Time 1.00001 Throughput 400.491 PacketSize 548 Expected 10.4862
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 25.8538
+Time 1 Node 1 Conso 41.4655
+Time 1 Node 2 Conso 25.8538
+Time 1 Throughput 402.591 PacketSize 548 Expected 10.4872
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 26.0168
+Time 1 Node 1 Conso 41.7916
+Time 1 Node 2 Conso 26.0168
+Time 1 Throughput 404.677 PacketSize 548 Expected 10.4881
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 26.1807
+Time 1 Node 1 Conso 42.1194
+Time 1 Node 2 Conso 26.1807
+Time 1 Throughput 406.784 PacketSize 548 Expected 10.4891
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 26.3454
+Time 1 Node 1 Conso 42.4489
+Time 1 Node 2 Conso 26.3454
+Time 1.00001 Throughput 408.914 PacketSize 548 Expected 10.4901
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 26.511
+Time 1 Node 1 Conso 42.7801
+Time 1 Node 2 Conso 26.511
+Time 1.00001 Throughput 410.993 PacketSize 548 Expected 10.4911
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 26.6775
+Time 1 Node 1 Conso 43.1129
+Time 1 Node 2 Conso 26.6775
+Time 0.999999 Throughput 413.093 PacketSize 548 Expected 10.492
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 26.8448
+Time 1 Node 1 Conso 43.4475
+Time 1 Node 2 Conso 26.8448
+Time 1.00001 Throughput 415.215 PacketSize 548 Expected 10.493
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 27.0129
+Time 1 Node 1 Conso 43.7838
+Time 1 Node 2 Conso 27.0129
+Time 1.00001 Throughput 417.32 PacketSize 548 Expected 10.494
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 27.1819
+Time 1 Node 1 Conso 44.1217
+Time 1 Node 2 Conso 27.1819
+Time 1 Throughput 419.409 PacketSize 548 Expected 10.4949
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 27.3517
+Time 1 Node 1 Conso 44.4614
+Time 1 Node 2 Conso 27.3517
+Time 1 Throughput 421.519 PacketSize 548 Expected 10.4959
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 27.5224
+Time 1 Node 1 Conso 44.8027
+Time 1 Node 2 Conso 27.5224
+Time 1 Throughput 423.612 PacketSize 548 Expected 10.4969
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 27.6939
+Time 1 Node 1 Conso 45.1458
+Time 1 Node 2 Conso 27.6939
+Time 1.00001 Throughput 425.725 PacketSize 548 Expected 10.4979
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 27.8662
+Time 1 Node 1 Conso 45.4905
+Time 1 Node 2 Conso 27.8662
+Time 1 Throughput 427.82 PacketSize 548 Expected 10.4988
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 28.0395
+Time 1 Node 1 Conso 45.8369
+Time 1 Node 2 Conso 28.0395
+Time 0.999999 Throughput 429.936 PacketSize 548 Expected 10.4998
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 28.2135
+Time 1 Node 1 Conso 46.1851
+Time 1 Node 2 Conso 28.2135
+Time 1 Throughput 432.032 PacketSize 548 Expected 10.5008
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 28.3884
+Time 1 Node 1 Conso 46.5348
+Time 1 Node 2 Conso 28.3884
+Time 1.00001 Throughput 434.107 PacketSize 548 Expected 10.5017
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 28.5642
+Time 1 Node 1 Conso 46.8864
+Time 1 Node 2 Conso 28.5642
+Time 1.00001 Throughput 436.244 PacketSize 548 Expected 10.5027
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 28.7408
+Time 1 Node 1 Conso 47.2396
+Time 1 Node 2 Conso 28.7408
+Time 1.00001 Throughput 438.319 PacketSize 548 Expected 10.5037
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 28.9182
+Time 1 Node 1 Conso 47.5944
+Time 1 Node 2 Conso 28.9182
+Time 1 Throughput 440.414 PacketSize 548 Expected 10.5046
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 29.0965
+Time 1 Node 1 Conso 47.951
+Time 1 Node 2 Conso 29.0965
+Time 1 Throughput 442.528 PacketSize 548 Expected 10.5056
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 29.2756
+Time 1 Node 1 Conso 48.3093
+Time 1 Node 2 Conso 29.2756
+Time 1 Throughput 444.621 PacketSize 548 Expected 10.5066
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 29.4556
+Time 1 Node 1 Conso 48.6693
+Time 1 Node 2 Conso 29.4556
+Time 1.00001 Throughput 446.733 PacketSize 548 Expected 10.5076
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 29.6365
+Time 1 Node 1 Conso 49.0309
+Time 1 Node 2 Conso 29.6365
+Time 1 Throughput 448.865 PacketSize 548 Expected 10.5085
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 29.8181
+Time 1 Node 1 Conso 49.3943
+Time 1 Node 2 Conso 29.8181
+Time 1 Throughput 450.929 PacketSize 548 Expected 10.5095
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 30.0007
+Time 1 Node 1 Conso 49.7594
+Time 1 Node 2 Conso 30.0007
+Time 1 Throughput 453.057 PacketSize 548 Expected 10.5105
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 30.1841
+Time 1 Node 1 Conso 50.1261
+Time 1 Node 2 Conso 30.1841
+Time 1.00001 Throughput 455.161 PacketSize 548 Expected 10.5114
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 30.3683
+Time 1 Node 1 Conso 50.4946
+Time 1 Node 2 Conso 30.3683
+Time 1.00001 Throughput 457.238 PacketSize 548 Expected 10.5124
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 30.5533
+Time 1 Node 1 Conso 50.8647
+Time 1 Node 2 Conso 30.5533
+Time 1.00001 Throughput 459.335 PacketSize 548 Expected 10.5134
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 30.7393
+Time 1 Node 1 Conso 51.2365
+Time 1 Node 2 Conso 30.7393
+Time 1.00001 Throughput 461.451 PacketSize 548 Expected 10.5143
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 30.926
+Time 1 Node 1 Conso 51.61
+Time 1 Node 2 Conso 30.926
+Time 1 Throughput 463.539 PacketSize 548 Expected 10.5153
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 31.1136
+Time 1 Node 1 Conso 51.9852
+Time 1 Node 2 Conso 31.1136
+Time 1 Throughput 465.647 PacketSize 548 Expected 10.5163
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 31.3021
+Time 1 Node 1 Conso 52.3622
+Time 1 Node 2 Conso 31.3021
+Time 1 Throughput 467.774 PacketSize 548 Expected 10.5173
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 31.4914
+Time 1 Node 1 Conso 52.7408
+Time 1 Node 2 Conso 31.4914
+Time 1 Throughput 469.873 PacketSize 548 Expected 10.5182
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 31.6816
+Time 1 Node 1 Conso 53.1211
+Time 1 Node 2 Conso 31.6816
+Time 1 Throughput 471.991 PacketSize 548 Expected 10.5192
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 31.8726
+Time 1 Node 1 Conso 53.5031
+Time 1 Node 2 Conso 31.8726
+Time 1 Throughput 474.079 PacketSize 548 Expected 10.5202
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 32.0644
+Time 1 Node 1 Conso 53.8868
+Time 1 Node 2 Conso 32.0644
+Time 1 Throughput 476.185 PacketSize 548 Expected 10.5211
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 32.2571
+Time 1 Node 1 Conso 54.2722
+Time 1 Node 2 Conso 32.2571
+Time 1.00001 Throughput 478.261 PacketSize 548 Expected 10.5221
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 32.4506
+Time 1 Node 1 Conso 54.6593
+Time 1 Node 2 Conso 32.4506
+Time 1 Throughput 480.405 PacketSize 548 Expected 10.5231
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 32.645
+Time 1 Node 1 Conso 55.0481
+Time 1 Node 2 Conso 32.645
+Time 1.00001 Throughput 482.467 PacketSize 548 Expected 10.524
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 32.8403
+Time 1 Node 1 Conso 55.4385
+Time 1 Node 2 Conso 32.8403
+Time 1 Throughput 484.598 PacketSize 548 Expected 10.525
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 33.0364
+Time 1 Node 1 Conso 55.8307
+Time 1 Node 2 Conso 33.0364
+Time 1 Throughput 486.697 PacketSize 548 Expected 10.526
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 33.2333
+Time 1 Node 1 Conso 56.2246
+Time 1 Node 2 Conso 33.2333
+Time 1.00001 Throughput 488.813 PacketSize 548 Expected 10.527
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 33.4311
+Time 1 Node 1 Conso 56.6201
+Time 1 Node 2 Conso 33.4311
+Time 1.00001 Throughput 490.896 PacketSize 548 Expected 10.5279
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 33.6297
+Time 1 Node 1 Conso 57.0174
+Time 1 Node 2 Conso 33.6297
+Time 1.00001 Throughput 492.997 PacketSize 548 Expected 10.5289
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 33.8292
+Time 1 Node 1 Conso 57.4164
+Time 1 Node 2 Conso 33.8292
+Time 1.00001 Throughput 495.116 PacketSize 548 Expected 10.5299
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 34.0295
+Time 1 Node 1 Conso 57.817
+Time 1 Node 2 Conso 34.0295
+Time 1.00001 Throughput 497.199 PacketSize 548 Expected 10.5308
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 34.2307
+Time 1 Node 1 Conso 58.2193
+Time 1 Node 2 Conso 34.2307
+Time 1.00001 Throughput 499.3 PacketSize 548 Expected 10.5318
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 34.4327
+Time 1 Node 1 Conso 58.6234
+Time 1 Node 2 Conso 34.4327
+Time 1 Throughput 501.419 PacketSize 548 Expected 10.5328
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 34.6355
+Time 1 Node 1 Conso 59.0291
+Time 1 Node 2 Conso 34.6355
+Time 1 Throughput 503.501 PacketSize 548 Expected 10.5338
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 34.8392
+Time 1 Node 1 Conso 59.4365
+Time 1 Node 2 Conso 34.8392
+Time 1.00001 Throughput 505.6 PacketSize 548 Expected 10.5347
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 35.0438
+Time 1 Node 1 Conso 59.8456
+Time 1 Node 2 Conso 35.0438
+Time 1 Throughput 507.717 PacketSize 548 Expected 10.5357
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 35.2492
+Time 1 Node 1 Conso 60.2564
+Time 1 Node 2 Conso 35.2492
+Time 1 Throughput 509.796 PacketSize 548 Expected 10.5367
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 35.4554
+Time 1 Node 1 Conso 60.6688
+Time 1 Node 2 Conso 35.4554
+Time 1.00001 Throughput 511.891 PacketSize 548 Expected 10.5376
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 35.6625
+Time 1 Node 1 Conso 61.083
+Time 1 Node 2 Conso 35.6625
+Time 1 Throughput 514.003 PacketSize 548 Expected 10.5386
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 35.8705
+Time 1 Node 1 Conso 61.4989
+Time 1 Node 2 Conso 35.8705
+Time 1.00001 Throughput 516.134 PacketSize 548 Expected 10.5396
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 36.0792
+Time 1 Node 1 Conso 61.9165
+Time 1 Node 2 Conso 36.0792
+Time 1 Throughput 518.223 PacketSize 548 Expected 10.5406
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 36.2889
+Time 1 Node 1 Conso 62.3358
+Time 1 Node 2 Conso 36.2889
+Time 1 Throughput 520.33 PacketSize 548 Expected 10.5415
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 36.4994
+Time 1 Node 1 Conso 62.7568
+Time 1 Node 2 Conso 36.4994
+Time 1 Throughput 522.454 PacketSize 548 Expected 10.5425
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 36.7107
+Time 1 Node 1 Conso 63.1794
+Time 1 Node 2 Conso 36.7107
+Time 1.00001 Throughput 524.535 PacketSize 548 Expected 10.5435
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 36.9229
+Time 1 Node 1 Conso 63.6038
+Time 1 Node 2 Conso 36.9229
+Time 1 Throughput 526.633 PacketSize 548 Expected 10.5444
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 37.1359
+Time 1 Node 1 Conso 64.0298
+Time 1 Node 2 Conso 37.1359
+Time 1 Throughput 528.748 PacketSize 548 Expected 10.5454
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 37.3498
+Time 1 Node 1 Conso 64.4576
+Time 1 Node 2 Conso 37.3498
+Time 1.00001 Throughput 530.819 PacketSize 548 Expected 10.5464
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 37.5645
+Time 1 Node 1 Conso 64.887
+Time 1 Node 2 Conso 37.5645
+Time 1.00001 Throughput 532.968 PacketSize 548 Expected 10.5474
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 37.7801
+Time 1 Node 1 Conso 65.3182
+Time 1 Node 2 Conso 37.7801
+Time 1.00001 Throughput 535.072 PacketSize 548 Expected 10.5483
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 37.9965
+Time 1 Node 1 Conso 65.751
+Time 1 Node 2 Conso 37.9965
+Time 1 Throughput 537.13 PacketSize 548 Expected 10.5493
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 38.2138
+Time 1 Node 1 Conso 66.1855
+Time 1 Node 2 Conso 38.2138
+Time 1 Throughput 539.267 PacketSize 548 Expected 10.5503
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 38.4319
+Time 1 Node 1 Conso 66.6217
+Time 1 Node 2 Conso 38.4319
+Time 1.00001 Throughput 541.358 PacketSize 548 Expected 10.5512
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 38.6508
+Time 1 Node 1 Conso 67.0596
+Time 1 Node 2 Conso 38.6508
+Time 1.00001 Throughput 543.465 PacketSize 548 Expected 10.5522
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 38.8706
+Time 1 Node 1 Conso 67.4992
+Time 1 Node 2 Conso 38.8706
+Time 1.00001 Throughput 545.524 PacketSize 548 Expected 10.5532
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 39.0913
+Time 1 Node 1 Conso 67.9405
+Time 1 Node 2 Conso 39.0913
+Time 1 Throughput 547.663 PacketSize 548 Expected 10.5541
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 39.3128
+Time 1 Node 1 Conso 68.3835
+Time 1 Node 2 Conso 39.3128
+Time 1.00001 Throughput 549.754 PacketSize 548 Expected 10.5551
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 39.5351
+Time 1 Node 1 Conso 68.8282
+Time 1 Node 2 Conso 39.5351
+Time 1.00001 Throughput 551.861 PacketSize 548 Expected 10.5561
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 39.7583
+Time 1 Node 1 Conso 69.2746
+Time 1 Node 2 Conso 39.7583
+Time 1.00001 Throughput 553.984 PacketSize 548 Expected 10.5571
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 39.9823
+Time 1 Node 1 Conso 69.7226
+Time 1 Node 2 Conso 39.9823
+Time 1 Throughput 556.056 PacketSize 548 Expected 10.558
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 40.2072
+Time 1 Node 1 Conso 70.1724
+Time 1 Node 2 Conso 40.2072
+Time 1.00001 Throughput 558.144 PacketSize 548 Expected 10.559
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 40.4329
+Time 1 Node 1 Conso 70.6238
+Time 1 Node 2 Conso 40.4329
+Time 1 Throughput 560.248 PacketSize 548 Expected 10.56
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 40.6595
+Time 1 Node 1 Conso 71.077
+Time 1 Node 2 Conso 40.6595
+Time 1.00001 Throughput 562.367 PacketSize 548 Expected 10.5609
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 40.8869
+Time 1 Node 1 Conso 71.5318
+Time 1 Node 2 Conso 40.8869
+Time 1 Throughput 564.503 PacketSize 548 Expected 10.5619
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 41.1152
+Time 1 Node 1 Conso 71.9884
+Time 1 Node 2 Conso 41.1152
+Time 1 Throughput 566.585 PacketSize 548 Expected 10.5629
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 41.3443
+Time 1 Node 1 Conso 72.4466
+Time 1 Node 2 Conso 41.3443
+Time 1.00001 Throughput 568.683 PacketSize 548 Expected 10.5638
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 41.5743
+Time 1 Node 1 Conso 72.9066
+Time 1 Node 2 Conso 41.5743
+Time 1 Throughput 570.796 PacketSize 548 Expected 10.5648
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 41.8051
+Time 1 Node 1 Conso 73.3682
+Time 1 Node 2 Conso 41.8051
+Time 1.00001 Throughput 572.854 PacketSize 548 Expected 10.5658
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 42.0367
+Time 1 Node 1 Conso 73.8315
+Time 1 Node 2 Conso 42.0367
+Time 1 Throughput 574.998 PacketSize 548 Expected 10.5668
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 42.2692
+Time 1 Node 1 Conso 74.2965
+Time 1 Node 2 Conso 42.2692
+Time 1 Throughput 577.087 PacketSize 548 Expected 10.5677
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 42.5026
+Time 1 Node 1 Conso 74.7632
+Time 1 Node 2 Conso 42.5026
+Time 1.00001 Throughput 579.19 PacketSize 548 Expected 10.5687
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 42.7368
+Time 1 Node 1 Conso 75.2316
+Time 1 Node 2 Conso 42.7368
+Time 1.00001 Throughput 581.309 PacketSize 548 Expected 10.5697
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 42.9718
+Time 1 Node 1 Conso 75.7017
+Time 1 Node 2 Conso 42.9718
+Time 1.00001 Throughput 583.37 PacketSize 548 Expected 10.5706
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 43.2077
+Time 1 Node 1 Conso 76.1735
+Time 1 Node 2 Conso 43.2077
+Time 1 Throughput 585.519 PacketSize 548 Expected 10.5716
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 43.4445
+Time 1 Node 1 Conso 76.647
+Time 1 Node 2 Conso 43.4445
+Time 1.00001 Throughput 587.61 PacketSize 548 Expected 10.5726
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 43.6821
+Time 1 Node 1 Conso 77.1222
+Time 1 Node 2 Conso 43.6821
+Time 1.00001 Throughput 589.715 PacketSize 548 Expected 10.5736
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 43.9205
+Time 1 Node 1 Conso 77.599
+Time 1 Node 2 Conso 43.9205
+Time 1 Throughput 591.836 PacketSize 548 Expected 10.5745
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 44.1598
+Time 1 Node 1 Conso 78.0776
+Time 1 Node 2 Conso 44.1598
+Time 1 Throughput 593.896 PacketSize 548 Expected 10.5755
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 44.3999
+Time 1 Node 1 Conso 78.5579
+Time 1 Node 2 Conso 44.3999
+Time 1.00001 Throughput 596.047 PacketSize 548 Expected 10.5765
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 44.6409
+Time 1 Node 1 Conso 79.0399
+Time 1 Node 2 Conso 44.6409
+Time 1 Throughput 598.135 PacketSize 548 Expected 10.5774
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 44.8828
+Time 1 Node 1 Conso 79.5235
+Time 1 Node 2 Conso 44.8828
+Time 1.00001 Throughput 600.239 PacketSize 548 Expected 10.5784
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 45.1254
+Time 1 Node 1 Conso 80.0089
+Time 1 Node 2 Conso 45.1254
+Time 1 Throughput 602.358 PacketSize 548 Expected 10.5794
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 45.369
+Time 1 Node 1 Conso 80.4959
+Time 1 Node 2 Conso 45.369
+Time 1 Throughput 604.412 PacketSize 548 Expected 10.5803
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 45.6133
+Time 1 Node 1 Conso 80.9847
+Time 1 Node 2 Conso 45.6133
+Time 1 Throughput 606.56 PacketSize 548 Expected 10.5813
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 45.8586
+Time 1 Node 1 Conso 81.4751
+Time 1 Node 2 Conso 45.8586
+Time 1 Throughput 608.643 PacketSize 548 Expected 10.5823
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 46.1046
+Time 1 Node 1 Conso 81.9672
+Time 1 Node 2 Conso 46.1046
+Time 1.00001 Throughput 610.74 PacketSize 548 Expected 10.5833
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 46.3515
+Time 1 Node 1 Conso 82.4611
+Time 1 Node 2 Conso 46.3515
+Time 1.00001 Throughput 612.852 PacketSize 548 Expected 10.5842
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 46.5993
+Time 1 Node 1 Conso 82.9565
+Time 1 Node 2 Conso 46.5993
+Time 1.00001 Throughput 614.897 PacketSize 548 Expected 10.5852
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 46.8479
+Time 1 Node 1 Conso 83.4537
+Time 1 Node 2 Conso 46.8479
+Time 1 Throughput 617.037 PacketSize 548 Expected 10.5862
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 47.0973
+Time 1 Node 1 Conso 83.9526
+Time 1 Node 2 Conso 47.0973
+Time 1.00001 Throughput 619.11 PacketSize 548 Expected 10.5871
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 47.3476
+Time 1 Node 1 Conso 84.4532
+Time 1 Node 2 Conso 47.3476
+Time 1.00001 Throughput 621.28 PacketSize 548 Expected 10.5881
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 47.5988
+Time 1 Node 1 Conso 84.9555
+Time 1 Node 2 Conso 47.5988
+Time 1.00001 Throughput 623.381 PacketSize 548 Expected 10.5891
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 47.8507
+Time 1 Node 1 Conso 85.4595
+Time 1 Node 2 Conso 47.8507
+Time 1.00001 Throughput 625.412 PacketSize 548 Expected 10.59
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 48.1036
+Time 1 Node 1 Conso 85.9651
+Time 1 Node 2 Conso 48.1036
+Time 1.00001 Throughput 627.541 PacketSize 548 Expected 10.591
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 48.3573
+Time 1 Node 1 Conso 86.4725
+Time 1 Node 2 Conso 48.3573
+Time 1.00001 Throughput 629.685 PacketSize 548 Expected 10.592
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 48.6118
+Time 1 Node 1 Conso 86.9816
+Time 1 Node 2 Conso 48.6118
+Time 1 Throughput 631.757 PacketSize 548 Expected 10.593
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 48.8672
+Time 1 Node 1 Conso 87.4923
+Time 1 Node 2 Conso 48.8672
+Time 1.00001 Throughput 633.842 PacketSize 548 Expected 10.5939
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 49.1234
+Time 1 Node 1 Conso 88.0048
+Time 1 Node 2 Conso 49.1234
+Time 1.00001 Throughput 635.942 PacketSize 548 Expected 10.5949
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 49.3805
+Time 1 Node 1 Conso 88.5189
+Time 1 Node 2 Conso 49.3805
+Time 1 Throughput 638.055 PacketSize 548 Expected 10.5959
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 49.6384
+Time 1 Node 1 Conso 89.0348
+Time 1 Node 2 Conso 49.6384
+Time 1.00001 Throughput 640.182 PacketSize 548 Expected 10.5969
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 49.8971
+Time 1 Node 1 Conso 89.5523
+Time 1 Node 2 Conso 49.8971
+Time 1 Throughput 642.235 PacketSize 548 Expected 10.5978
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 50.1568
+Time 1 Node 1 Conso 90.0715
+Time 1 Node 2 Conso 50.1568
+Time 1.00001 Throughput 644.39 PacketSize 548 Expected 10.5988
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 50.4172
+Time 1 Node 1 Conso 90.5924
+Time 1 Node 2 Conso 50.4172
+Time 1 Throughput 646.469 PacketSize 548 Expected 10.5998
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 50.6785
+Time 1 Node 1 Conso 91.115
+Time 1 Node 2 Conso 50.6785
+Time 1 Throughput 648.562 PacketSize 548 Expected 10.6007
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 50.9407
+Time 1 Node 1 Conso 91.6393
+Time 1 Node 2 Conso 50.9407
+Time 1.00001 Throughput 650.668 PacketSize 548 Expected 10.6017
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 51.2037
+Time 1 Node 1 Conso 92.1653
+Time 1 Node 2 Conso 51.2037
+Time 1.00001 Throughput 652.788 PacketSize 548 Expected 10.6027
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 51.4675
+Time 1 Node 1 Conso 92.6931
+Time 1 Node 2 Conso 51.4675
+Time 1.00001 Throughput 654.922 PacketSize 548 Expected 10.6037
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 51.7322
+Time 1 Node 1 Conso 93.2224
+Time 1 Node 2 Conso 51.7322
+Time 1 Throughput 656.976 PacketSize 548 Expected 10.6046
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 51.9977
+Time 1 Node 1 Conso 93.7535
+Time 1 Node 2 Conso 51.9977
+Time 1.00001 Throughput 659.044 PacketSize 548 Expected 10.6056
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 52.2641
+Time 1 Node 1 Conso 94.2863
+Time 1 Node 2 Conso 52.2641
+Time 1 Throughput 661.219 PacketSize 548 Expected 10.6066
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 52.5314
+Time 1 Node 1 Conso 94.8208
+Time 1 Node 2 Conso 52.5314
+Time 1.00001 Throughput 663.313 PacketSize 548 Expected 10.6075
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 52.7995
+Time 1 Node 1 Conso 95.357
+Time 1 Node 2 Conso 52.7995
+Time 1.00001 Throughput 665.42 PacketSize 548 Expected 10.6085
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 53.0684
+Time 1 Node 1 Conso 95.8949
+Time 1 Node 2 Conso 53.0684
+Time 1.00001 Throughput 667.54 PacketSize 548 Expected 10.6095
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 53.3382
+Time 1 Node 1 Conso 96.4344
+Time 1 Node 2 Conso 53.3382
+Time 1.00001 Throughput 669.577 PacketSize 548 Expected 10.6104
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 53.6088
+Time 1 Node 1 Conso 96.9757
+Time 1 Node 2 Conso 53.6088
+Time 1.00001 Throughput 671.725 PacketSize 548 Expected 10.6114
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 53.8803
+Time 1 Node 1 Conso 97.5186
+Time 1 Node 2 Conso 53.8803
+Time 1.00001 Throughput 673.787 PacketSize 548 Expected 10.6124
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 54.1526
+Time 1 Node 1 Conso 98.0632
+Time 1 Node 2 Conso 54.1526
+Time 1.00001 Throughput 675.863 PacketSize 548 Expected 10.6133
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 54.4258
+Time 1 Node 1 Conso 98.6096
+Time 1 Node 2 Conso 54.4258
+Time 1.00001 Throughput 678.051 PacketSize 548 Expected 10.6143
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 54.6998
+Time 1 Node 1 Conso 99.1576
+Time 1 Node 2 Conso 54.6998
+Time 1.00001 Throughput 680.152 PacketSize 548 Expected 10.6153
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 54.9746
+Time 1 Node 1 Conso 99.7073
+Time 1 Node 2 Conso 54.9746
+Time 1.00001 Throughput 682.166 PacketSize 548 Expected 10.6162
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 55.2503
+Time 1 Node 1 Conso 100.259
+Time 1 Node 2 Conso 55.2503
+Time 1.00001 Throughput 684.293 PacketSize 548 Expected 10.6172
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 55.5269
+Time 1 Node 1 Conso 100.812
+Time 1 Node 2 Conso 55.5269
+Time 1 Throughput 686.434 PacketSize 548 Expected 10.6182
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 55.8043
+Time 1 Node 1 Conso 101.367
+Time 1 Node 2 Conso 55.8043
+Time 1 Throughput 688.485 PacketSize 548 Expected 10.6191
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 56.0825
+Time 1 Node 1 Conso 101.923
+Time 1 Node 2 Conso 56.0825
+Time 1.00001 Throughput 690.652 PacketSize 548 Expected 10.6201
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 56.3616
+Time 1 Node 1 Conso 102.481
+Time 1 Node 2 Conso 56.3616
+Time 1 Throughput 692.729 PacketSize 548 Expected 10.6211
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 56.6416
+Time 1 Node 1 Conso 103.041
+Time 1 Node 2 Conso 56.6416
+Time 1.00001 Throughput 694.818 PacketSize 548 Expected 10.6221
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 56.9224
+Time 1 Node 1 Conso 103.603
+Time 1 Node 2 Conso 56.9224
+Time 1.00001 Throughput 696.919 PacketSize 548 Expected 10.623
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 57.204
+Time 1 Node 1 Conso 104.166
+Time 1 Node 2 Conso 57.204
+Time 1.00001 Throughput 699.034 PacketSize 548 Expected 10.624
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 57.4865
+Time 1 Node 1 Conso 104.731
+Time 1 Node 2 Conso 57.4865
+Time 1 Throughput 701.161 PacketSize 548 Expected 10.625
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 57.7698
+Time 1 Node 1 Conso 105.298
+Time 1 Node 2 Conso 57.7698
+Time 1 Throughput 703.194 PacketSize 548 Expected 10.6259
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 58.054
+Time 1 Node 1 Conso 105.866
+Time 1 Node 2 Conso 58.054
+Time 1.00001 Throughput 705.347 PacketSize 548 Expected 10.6269
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 58.339
+Time 1 Node 1 Conso 106.436
+Time 1 Node 2 Conso 58.339
+Time 1.00001 Throughput 707.404 PacketSize 548 Expected 10.6279
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 58.6249
+Time 1 Node 1 Conso 107.008
+Time 1 Node 2 Conso 58.6249
+Time 1.00001 Throughput 709.583 PacketSize 548 Expected 10.6289
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 58.9116
+Time 1 Node 1 Conso 107.581
+Time 1 Node 2 Conso 58.9116
+Time 1.00001 Throughput 711.665 PacketSize 548 Expected 10.6298
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 59.1992
+Time 1 Node 1 Conso 108.156
+Time 1 Node 2 Conso 59.1992
+Time 1 Throughput 713.759 PacketSize 548 Expected 10.6308
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 59.4876
+Time 1 Node 1 Conso 108.733
+Time 1 Node 2 Conso 59.4876
+Time 1 Throughput 715.866 PacketSize 548 Expected 10.6318
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 59.7769
+Time 1 Node 1 Conso 109.312
+Time 1 Node 2 Conso 59.7769
+Time 1 Throughput 717.985 PacketSize 548 Expected 10.6328
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 60.067
+Time 1 Node 1 Conso 109.892
+Time 1 Node 2 Conso 60.067
+Time 1.00001 Throughput 720.117 PacketSize 548 Expected 10.6338
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 60.3579
+Time 1 Node 1 Conso 110.474
+Time 1 Node 2 Conso 60.3579
+Time 1.00001 Throughput 722.148 PacketSize 548 Expected 10.6347
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 60.6498
+Time 1 Node 1 Conso 111.058
+Time 1 Node 2 Conso 60.6498
+Time 1.00001 Throughput 724.305 PacketSize 548 Expected 10.6357
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 60.9424
+Time 1 Node 1 Conso 111.643
+Time 1 Node 2 Conso 60.9424
+Time 1.00001 Throughput 726.36 PacketSize 548 Expected 10.6366
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 61.2359
+Time 1 Node 1 Conso 112.23
+Time 1 Node 2 Conso 61.2359
+Time 1 Throughput 728.427 PacketSize 548 Expected 10.6376
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 61.5302
+Time 1 Node 1 Conso 112.818
+Time 1 Node 2 Conso 61.5302
+Time 1 Throughput 730.621 PacketSize 548 Expected 10.6386
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 61.8255
+Time 1 Node 1 Conso 113.409
+Time 1 Node 2 Conso 61.8254
+Time 1 Throughput 732.713 PacketSize 548 Expected 10.6396
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 62.1215
+Time 1 Node 1 Conso 114.001
+Time 1 Node 2 Conso 62.1215
+Time 1.00001 Throughput 734.816 PacketSize 548 Expected 10.6405
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 62.4184
+Time 1 Node 1 Conso 114.595
+Time 1 Node 2 Conso 62.4184
+Time 1.00001 Throughput 736.931 PacketSize 548 Expected 10.6415
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 62.7161
+Time 1 Node 1 Conso 115.19
+Time 1 Node 2 Conso 62.7161
+Time 1.00001 Throughput 738.94 PacketSize 548 Expected 10.6424
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 63.0147
+Time 1 Node 1 Conso 115.787
+Time 1 Node 2 Conso 63.0147
+Time 1.00001 Throughput 741.079 PacketSize 548 Expected 10.6434
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 63.3141
+Time 1 Node 1 Conso 116.386
+Time 1 Node 2 Conso 63.3141
+Time 1.00001 Throughput 743.23 PacketSize 548 Expected 10.6444
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 63.6144
+Time 1 Node 1 Conso 116.987
+Time 1 Node 2 Conso 63.6144
+Time 1 Throughput 745.274 PacketSize 548 Expected 10.6454
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 63.9155
+Time 1 Node 1 Conso 117.589
+Time 1 Node 2 Conso 63.9155
+Time 1.00001 Throughput 747.45 PacketSize 548 Expected 10.6464
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 64.2175
+Time 1 Node 1 Conso 118.193
+Time 1 Node 2 Conso 64.2175
+Time 1.00001 Throughput 749.517 PacketSize 548 Expected 10.6473
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 64.5203
+Time 1 Node 1 Conso 118.799
+Time 1 Node 2 Conso 64.5203
+Time 1.00001 Throughput 751.595 PacketSize 548 Expected 10.6483
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 64.824
+Time 1 Node 1 Conso 119.406
+Time 1 Node 2 Conso 64.824
+Time 1.00001 Throughput 753.685 PacketSize 548 Expected 10.6492
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 65.1285
+Time 1 Node 1 Conso 120.015
+Time 1 Node 2 Conso 65.1285
+Time 1.00001 Throughput 755.786 PacketSize 548 Expected 10.6502
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 65.4338
+Time 1 Node 1 Conso 120.626
+Time 1 Node 2 Conso 65.4338
+Time 1.00001 Throughput 757.899 PacketSize 548 Expected 10.6512
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 65.7401
+Time 1 Node 1 Conso 121.238
+Time 1 Node 2 Conso 65.7401
+Time 1 Throughput 760.024 PacketSize 548 Expected 10.6522
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 66.0471
+Time 1 Node 1 Conso 121.852
+Time 1 Node 2 Conso 66.0471
+Time 1.00001 Throughput 762.161 PacketSize 548 Expected 10.6532
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 66.355
+Time 1 Node 1 Conso 122.468
+Time 1 Node 2 Conso 66.355
+Time 1.00001 Throughput 764.184 PacketSize 548 Expected 10.6541
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 66.6638
+Time 1 Node 1 Conso 123.086
+Time 1 Node 2 Conso 66.6638
+Time 1.00001 Throughput 766.344 PacketSize 548 Expected 10.6551
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 66.9733
+Time 1 Node 1 Conso 123.705
+Time 1 Node 2 Conso 66.9733
+Time 1.00001 Throughput 768.389 PacketSize 548 Expected 10.656
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 67.2838
+Time 1 Node 1 Conso 124.326
+Time 1 Node 2 Conso 67.2838
+Time 1.00001 Throughput 770.573 PacketSize 548 Expected 10.657
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 67.5951
+Time 1 Node 1 Conso 124.948
+Time 1 Node 2 Conso 67.5951
+Time 1.00001 Throughput 772.64 PacketSize 548 Expected 10.658
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 67.9072
+Time 1 Node 1 Conso 125.572
+Time 1 Node 2 Conso 67.9072
+Time 1 Throughput 774.719 PacketSize 548 Expected 10.659
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 68.2202
+Time 1 Node 1 Conso 126.198
+Time 1 Node 2 Conso 68.2202
+Time 1.00001 Throughput 776.808 PacketSize 548 Expected 10.6599
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 68.534
+Time 1 Node 1 Conso 126.826
+Time 1 Node 2 Conso 68.534
+Time 1.00001 Throughput 778.909 PacketSize 548 Expected 10.6609
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 68.8487
+Time 1 Node 1 Conso 127.455
+Time 1 Node 2 Conso 68.8487
+Time 1.00001 Throughput 781.022 PacketSize 548 Expected 10.6619
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 69.1642
+Time 1 Node 1 Conso 128.086
+Time 1 Node 2 Conso 69.1642
+Time 1.00001 Throughput 783.145 PacketSize 548 Expected 10.6628
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 69.4806
+Time 1 Node 1 Conso 128.719
+Time 1 Node 2 Conso 69.4806
+Time 1 Throughput 785.281 PacketSize 548 Expected 10.6638
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 69.7978
+Time 1 Node 1 Conso 129.354
+Time 1 Node 2 Conso 69.7978
+Time 1.00001 Throughput 787.293 PacketSize 548 Expected 10.6648
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 70.1158
+Time 1 Node 1 Conso 129.99
+Time 1 Node 2 Conso 70.1158
+Time 1 Throughput 789.451 PacketSize 548 Expected 10.6658
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 70.4347
+Time 1 Node 1 Conso 130.627
+Time 1 Node 2 Conso 70.4347
+Time 1.00001 Throughput 791.485 PacketSize 548 Expected 10.6667
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 70.7545
+Time 1 Node 1 Conso 131.267
+Time 1 Node 2 Conso 70.7545
+Time 1.00001 Throughput 793.666 PacketSize 548 Expected 10.6677
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 71.0751
+Time 1 Node 1 Conso 131.908
+Time 1 Node 2 Conso 71.0751
+Time 1 Throughput 795.722 PacketSize 548 Expected 10.6687
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 71.3965
+Time 1 Node 1 Conso 132.551
+Time 1 Node 2 Conso 71.3965
+Time 1.00001 Throughput 797.789 PacketSize 548 Expected 10.6696
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 71.7188
+Time 1 Node 1 Conso 133.196
+Time 1 Node 2 Conso 71.7188
+Time 1.00001 Throughput 800.005 PacketSize 548 Expected 10.6706
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 72.042
+Time 1 Node 1 Conso 133.842
+Time 1 Node 2 Conso 72.042
+Time 1.00001 Throughput 802.093 PacketSize 548 Expected 10.6716
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+Time 1 Node 0 Conso 72.366
+Time 1 Node 1 Conso 134.49
+Time 1 Node 2 Conso 72.366
+Time 1.00001 Throughput 804.193 PacketSize 548 Expected 10.6726
+Time 0 Node 0 Conso 10.242
+Time 0 Node 1 Conso 10.242
+Time 0 Node 2 Conso 10.242
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Command ['/home/betsegaw/ns3workspace/source/ns-3.26/build/scratch/validate_ecofen', '--packetSize=548', '--trafficIncrement=2'] terminated with signal SIGIOT. Run it under a debugger to get more information (./waf --run <program> --command-template="gdb --args %s <args>").
