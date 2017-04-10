@@ -7,93 +7,114 @@
 *** DONE ECOFEN: an End-to-end energy Cost mOdel and simulator For Evaluating power consumption in large-scale Networks
     CLOSED: [2017-01-15 dim. 22:48]
      
-      Anne-Cecile et. al. proposed a novel energy cost model and simulator for large scale wired networks. This model first estimates the power consumption of each equipment involved in the network.
-      A network equipment such as router and NIC consumes energy during boot, during shutdown and during the working period between these two processes, the later is referred to as E_work and this is
-      the energy cost the authors considered in the proposed model. They further characterized the energy consumed during the working period as fixed (E_idle) and variable (E_variable) energy cost. The fixed 
-      energy cost, which depends on the equipment type (NIC, router, switch) and the manufacturer, is the energy consumed when the device is in the working period but not actually doing any network 
-      transfer task. The variable cost, on the other hand, is the energy consumed while the equipment is in the working period and is also doing some network transfer task. This cost depends on the 
-      bandwidth of the port or the interface used in the transfer, the length of time required to do the transfer and the total number of parallel transfers occurring in the device. The energy model in 
-      the second step, estimates the total energy cost of the network by summing the E_idle cost of each equipment involved and E_variable cost occurring at each port or interface of the equipment.
-      If there are parallel transfers occurring at a given equipment the E_idle cost of the equipment is considered only once.
+      Anne-Cecile et. al. proposed a novel energy cost model and simulator for large scale wired networks. This model first estimates the power
+      consumption of each equipment involved in the network. A network equipment such as router and NIC consumes energy during boot, during shutdown
+      and during the working period between these two processes, the later is referred to as E_work and this is the energy cost the authors considered
+      in the proposed model. They further characterized the energy consumed during the working period as fixed (E_idle) and variable (E_variable)
+      energy cost. The fixed energy cost, which depends on the equipment type (NIC, router, switch) and the manufacturer, is the energy consumed when
+      the device is in the working period but not actually doing any network transfer task. The variable cost, on the other hand, is the energy
+      consumed while the equipment is in the working period and is also doing some network transfer task. This cost depends on the bandwidth of the
+      port or the interface used in the transfer, the length of time required to do the transfer and the total number of parallel transfers occurring
+      in the device. The energy model in the second step, estimates the total energy cost of the network by summing the E_idle cost of each equipment
+      involved and E_variable cost occurring at each port or interface of the equipment. If there are parallel transfers occurring at a given
+      equipment the E_idle cost of the equipment is considered only once.
     
-      After proposing the model, the authors have evaluated it by implementing NS2 simulator of the model and also run different experiments such as energy cost of different network topology, the effect
-      of varying traffic on energy cost, evaluation of energy saving techniques, and evaluation of energy cost for large scale networks. 
+      After proposing the model, the authors have evaluated it by implementing NS2 simulator of the model and also run different experiments such as
+      energy cost of different network topology, the effect of varying traffic on energy cost, evaluation of energy saving techniques, and evaluation
+      of energy cost for large scale networks. 
 
-      Even though this study is a foundation work for modeling energy cost of large scale models, further work is required to include to the model the energy cost incurred during boot and shutdown time. 
-      In addition, though the authors simulated the energy saving techniques such as ON/OFF technique in their experiments, their proposed model did not include energy saving technique as one of its parameter. 
-      Further more, to allow to study the impact of energy saving technique on performance, performance metrics should be incorporated into the model to make it better decision making tool to compare energy
-      saving techniques.    
+      Even though this study is a foundation work for modeling energy cost of large scale models, further work is required to include to the model the
+      energy cost incurred during boot and shutdown time. In addition, though the authors simulated the energy saving techniques such as ON/OFF
+      technique in their experiments, their proposed model did not include energy saving technique as one of its parameter. Further more, to allow to
+      study the impact of energy saving technique on performance, performance metrics should be incorporated into the model to make it better decision
+      making tool to compare energy saving techniques.    
 *** TODO On the Energy Efficiency of Sleeping and Rate Adaptation for Network Devices
-    Energy saving techniques can generally be put into two categories, rate adaptation and sleeping. Rate adaptation is a technique used to adapt the network rate to the actual traffic rate. 
-    Adaptive Link Rate (ALR) is a typical implementation of this technique. Sleeping technique on the other hand, allows a network device to send data as fast as possible and then enter 
-    low power mode between transfers. A typical implementation of this technique is Low Power Idle (LPI). The sleep duration can further be improved by packet coalescing in order to save more 
-    energy. 
+    Energy saving techniques can generally be put into two categories, rate adaptation and sleeping. Rate adaptation is a technique used to adapt the
+    network rate to the actual traffic rate. Adaptive Link Rate (ALR) is a typical implementation of this technique. Sleeping technique on the other
+    hand, allows a network device to send data as fast as possible and then enter low power mode between transfers. A typical implementation of this
+    technique is Low Power Idle (LPI). The sleep duration can further be improved by packet coalescing in order to save more energy. 
 
-    ALR uses a buffer occupancy thresh hold between rates and this might lead to a problem known as oscillation condition as switching between rates costs time and energy. Similarly, in the LPI case,
-    entering and leaving low power mode also costs time and energy.   
+    ALR uses a buffer occupancy thresh hold between rates and this might lead to a problem known as oscillation condition as switching between rates
+    costs time and energy. Similarly, in the LPI case, entering and leaving low power mode also costs time and energy.   
 *** TODO [[http://hal.inria.fr/hal-00872476/PDF/tomacs.pdf][On the Validity of Flow-level TCP Network Models for Grid and Cloud Simulations]]
     
 *** DONE [[https://hal.inria.fr/hal-01017319/PDF/simgrid3-journal.pdf][Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms]]
     CLOSED: [2017-01-16 lun. 20:11]
-      Casanova et. al. in this study explored the design of versatile, scalable, and accurate simulation of distributed applications and platforms in the context of SimGrid simulator. 
-      They first explained three basic simulator components common in most popular simulators: simulation model, platform specification and application specification. Simulation model is the component that
-      realizes the simulated real-network resources (CPU, Router, Host), the simulated applications which utilize the resources and the progress of the applications. Platform specification is the mechanism
-      by which users specify the characteristics of simulated platform. Application specification is the interface which users use to specify the steps and properties of the simulated activities. 
+      Casanova et. al. in this study explored the design of versatile, scalable, and accurate simulation of distributed applications and platforms in
+      the context of SimGrid simulator. They first explained three basic simulator components common in most popular simulators: simulation model,
+      platform specification and application specification. Simulation model is the component that realizes the simulated real-network resources (CPU,
+      Router, Host), the simulated applications which utilize the resources and the progress of the applications. Platform specification is the
+      mechanism by which users specify the characteristics of simulated platform. Application specification is the interface which users use to
+      specify the steps and properties of the simulated activities. 
 
-      Through out the paper the authors in general classified simulator models into two - analytical and discrete-event based models. Analytical models are preferred in the domain of large scale parallel and 
-      distributed computing due to scalablilty requirement. However, these models tend to produce less accurate result than discrete-event based models. Discrete-event based models are close to reality in capturing
-      real-world scenario, hence give more accurate results. Due to their accuracy, discrete-event models often used to evaluate analytical models. In the network domain, the term flow-based model is used to
-      refer to analytical models likewise, the term packet-level model is used to refer to discrete-event models.
+      Through out the paper the authors in general classified simulator models into two - analytical and discrete-event based models. Analytical
+      models are preferred in the domain of large scale parallel and distributed computing due to scalablilty requirement. However, these models tend
+      to produce less accurate result than discrete-event based models. Discrete-event based models are close to reality in capturing real-world
+      scenario, hence give more accurate results. Due to their accuracy, discrete-event models often used to evaluate analytical models. In the
+      network domain, the term flow-based model is used to refer to analytical models likewise, the term packet-level model is used to refer to
+      discrete-event models.
 
-      In the field of large scale parallel and distributed computing, CPU is modeled by compute delay, storage by seek time and fixed data transfer rate and network by link latency and link bandwidth. 
-      However, many of the network models available are specific to one domain of distributed and parallel applications and abstract out network concepts which are irrelevant for their particular field. Unlike
-      most simulators in this field SimGrid is designed to be versatile.
+      In the field of large scale parallel and distributed computing, CPU is modeled by compute delay, storage by seek time and fixed data transfer
+      rate and network by link latency and link bandwidth. However, many of the network models available are specific to one domain of distributed and
+      parallel applications and abstract out network concepts which are irrelevant for their particular field. Unlike most simulators in this field
+      SimGrid is designed to be versatile.
 
-      SimGrid follows a layered/hierarchical approach in its internal structure. The top layer constitutes three user APIs: MSG, SMPI, and SIMDAG. Both MSG and SMPI are used to describe the simulated application
-      as concurrent processes while SIMDAG allows users to describe their simulated application as abstract task graph. The middle layer - SIMIX, implements SMPI and MSG APIs. The bottom layer-SURF is the core 
-      component which simulate the user specified activities on the simulated resources.
+      SimGrid follows a layered/hierarchical approach in its internal structure. The top layer constitutes three user APIs: MSG, SMPI, and SIMDAG.
+      Both MSG and SMPI are used to describe the simulated application as concurrent processes while SIMDAG allows users to describe their simulated
+      application as abstract task graph. The middle layer - SIMIX, implements SMPI and MSG APIs. The bottom layer-SURF is the core component which
+      simulate the user specified activities on the simulated resources.
 
-      The authors then explained step-by-step, the challenges and corresponding solutions of designing flow-based bandwidth sharing model for TCP, which is the model adopted in SimGrid and it is Max-Min fairness 
-      bandwidth sharing model adapted to match TCP's characteristics. They next conducted multiple invalidation experiment and compared the result with GTNetS, packet-level simulator. The result demonstrated that
-      their model works very good in most scenarios but there are some cases which the model fails for those instances the authors recommend to use packet-level simulator. 
+      The authors then explained step-by-step, the challenges and corresponding solutions of designing flow-based bandwidth sharing model for TCP,
+      which is the model adopted in SimGrid and it is Max-Min fairness bandwidth sharing model adapted to match TCP's characteristics. They next
+      conducted multiple invalidation experiment and compared the result with GTNetS, packet-level simulator. The result demonstrated that their model
+      works very good in most scenarios but there are some cases which the model fails for those instances the authors recommend to use packet-level
+      simulator. 
       
-      As a final work, in order to demonstrate the versatility, accuracy and scalablilty of SimGrid, the authors described several case studies conducted in the field of parallel and distributed applications with 
-      graphs comparing the results of the experiments with ground truth and other simulators. 
+      As a final work, in order to demonstrate the versatility, accuracy and scalablilty of SimGrid, the authors described several case studies
+      conducted in the field of parallel and distributed applications with graphs comparing the results of the experiments with ground truth and other
+      simulators. 
  
 *** DONE [[http://ieeexplore.ieee.org/document/5522467/][Energy efficiency in the future internet: a survey of existing approaches and trends in energy-aware fixed network infrastructures]]
     CLOSED: [2017-01-16 lun. 22:00]
-      Energy reduction is sought for economic reasons in order to decrease electricity bills and/or to reduce the emission of CO2. Power consumption in a network can be as a result of data and control planes or as a results
-      of auxilary activities such as power supply and cooling. The data plane consumes 54%, power and heat management 35% and the control plane 11%. 
+      Energy reduction is sought for economic reasons in order to decrease electricity bills and/or to reduce the emission of CO2. Power consumption
+      in a network can be as a result of data and control planes or as a results of auxilary activities such as power supply and cooling. The data
+      plane consumes 54%, power and heat management 35% and the control plane 11%. 
      
-      Power consumption characteristics of high-end routers looks like the following: Internal packet processing engines consume about 60%, network interfaces during transfers 13%, switching fabrics 18.5% and buffer management 8.5%.
-      Accordingly, the authors suggest that energy efficiency strategy should focus on internal efficiency for core network and interfaces and links efficiency for access networks.
+      Power consumption characteristics of high-end routers looks like the following: Internal packet processing engines consume about 60%, network
+      interfaces during transfers 13%, switching fabrics 18.5% and buffer management 8.5%. Accordingly, the authors suggest that energy efficiency
+      strategy should focus on internal efficiency for core network and interfaces and links efficiency for access networks.
 
       The authors in this survey classified power saving techniques into three categories: re-engineering, energy adaptation and sleeping/standby.
-  
-      Re-engineering approach concerned with designing energy efficient network equipment. Dynamic adaptation deals with adapting the capacity of packet processing engines and network interfaces to match 
-      the actual traffic load. This can be achieved by dynamically adjusting the voltage and frequency of the network equipment or by switching off some internal components of the equipment at idle time. The latter is referred
-      to as idle logic. Sleep/standby mode, which requires switching unused equipment/devices to lower power mode and wake them up when network activity resumes. However, due to the network connectivity requirements 
-      of network equipment, this approach is difficult to use in real network scenario. Techniques such as proxying is proposed to alleviate this challenge. 
+      Re-engineering approach concerned with designing energy efficient network equipment. Dynamic adaptation deals with adapting the capacity of
+      packet processing engines and network interfaces to match the actual traffic load. This can be achieved by dynamically adjusting the voltage and
+      frequency of the network equipment or by switching off some internal components of the equipment at idle time. The latter is referred to as idle
+      logic. Sleep/standby mode, which requires switching unused equipment/devices to lower power mode and wake them up when network activity resumes.
+      However, due to the network connectivity requirements of network equipment, this approach is difficult to use in real network scenario.
+      Techniques such as proxying is proposed to alleviate this challenge. 
 
 *** DONE A Power Benchmarking Framework for Network Devices 
     CLOSED: [2017-01-18 mer. 20:06]
     The purpose of this paper is to design power consumption model for a network by using a standard power consumption benchmark. The authors first
-    developed the benchmark, which allows to compare power consumption of different network equipment. They devised a metric called Energy Proportionality Index (EPI). 
-    EPI tells how a network equipment energy consumption pattern is different from the ideal proportional pattern. The ideal proportional energy consumption pattern
-    specifies that the energy consumption of an equipment should directly correspond to the equipment traffic load.
-    The amount of energy consumed by a network switch increases linearly as the number of line-cards and active ports increases. 
-    Packet size does not have much influence on the energy consumption of a switch for a fixed traffic throughput.
-    The maximum power rated by the manufacturer can deviate upto 70% from the actual power consumption
-    The actual power consumed by a device depend largely on the device configuration (number and status of ports) and traffic load
+    developed the benchmark, which allows to compare power consumption of different network equipment. They devised a metric called Energy
+    Proportionality Index (EPI). EPI tells how a network equipment energy consumption pattern is different from the ideal proportional pattern. The
+    ideal proportional energy consumption pattern specifies that the energy consumption of an equipment should directly correspond to the equipment
+    traffic load.
 
-    For the benchmarking process the authors used equipment from three different vendors and first measured the idle power consumption of the equipment by switching off all the ports,
-    second they measured the maximum power consumption of the device by applying the maximum traffic load that the device is designed to handle (port bandwidth * (# of ports)).  
+    The amount of energy consumed by a network switch increases linearly as the number of line-cards and active ports increases. Packet size does not
+    have much influence on the energy consumption of a switch for a fixed traffic throughput. The maximum power rated by the manufacturer can deviate
+    upto 70% from the actual power consumption. The actual power consumed by a device depend largely on the device configuration (number and status of
+    ports) and traffic load
+
+    For the benchmarking process the authors used equipment from three different vendors and first measured the idle power consumption of the
+    equipment by switching off all the ports, second they measured the maximum power consumption of the device by applying the maximum traffic load
+    that the device is designed to handle (port bandwidth * (# of ports)).  
     
     The authors concluded that linear model can capture the total power consumption of switches/routers
 *** TODO Energy Proportionality of an Enterprise Network
 *** TODO Understanding and Abstracting Total Data Center Power
 *** TODO [[http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7279063][Data Center Energy Consumption Modeling: A Survey]] 
-    - This paper gives survey of more than 200 energy consumption models. The survey covers component based models (for CPU, memory, storage), server level models and data center level models. 
+    - This paper gives survey of more than 200 energy consumption models. The survey covers component based models (for CPU, memory, storage), server
+      level models and data center level models. 
 *** TODO A Taxonomy and Survey of Energy-Efficient Data Centers and Cloud Computing Systems
 *** TODO Towards Joint Optimization Over ICT and Cooling Systems in Data Centre: A Survey
 *** TODO Power Consumption Estimation Models for Processors, Virtual Machines, and Servers
@@ -115,7 +136,8 @@
 CLOSED: [2017-02-02 jeu. 10:24]
 **** DONE I&E Study       Feb 27 (10:00 - 12:00)    Meeting for I&E study thesis progress                                                                                                        
 CLOSED: [2017-03-22 mer. 08:24]
-**** TODO I&E Study       March 30 (10:00 - 12:00)  Meeting for I&E study thesis progress
+**** DONE I&E Study       March 30 (10:00 - 12:00)  Meeting for I&E study thesis progress
+     CLOSED: [2017-04-08 sam. 14:53]
 *** Aalto Related
     [[https://into.aalto.fi/display/eneitictinno/Entry+2015-2016][Internship process]]
 **** DONE January to February           Starting to write master thesis                                          
@@ -135,9 +157,12 @@ CLOSED: [2017-03-22 mer. 08:25]
    - Tried Org-mode and this file is my first document produced with it
    - Information about integrating Emacs and Spacemacs is found [[http://jr0cket.co.uk/2015/08/spacemacs-first-impressions-from-an-emacs-driven-developer.html][here]]
    - SimGrid installed using the following command on Ubuntu machine
+   #+BEGIN_EXAMPLE
      sudo apt-get install simgrid
-   - Tried to read "SimGrid 101" and "SimGrid and MSG 101" using slides available [[http://simgrid.gforge.inria.fr/tutorials.php][here]] 
-   - Found another tutorial [[http://simgrid.gforge.inria.fr/simgrid/3.14/doc/tutorial.html][here]]  about SimGrid which is very nice because I was able to compile and run SimGrid based on the information provided there. However I met two errors while trying to build Pajeng
+   #+END_EXAMPLE
+   - Read "SimGrid 101" and "SimGrid and MSG 101" using slides available [[http://simgrid.gforge.inria.fr/tutorials.php][here]] 
+   - Found another tutorial [[http://simgrid.gforge.inria.fr/simgrid/3.14/doc/tutorial.html][here]]  about SimGrid which is very nice because I was able to compile and run SimGrid based on the information provided
+     there. However I met two errors while trying to build Pajeng
      1. the first issue was that flex was missing, solved after running sudo apt-get install flex
      2. the second issue was that bison was missing, solved after running sudo apt-get install bison
    - Started learning Org-mode. I am excited about it and want to go deep into it using the information available on the following links
@@ -172,9 +197,6 @@ CLOSED: [2017-03-22 mer. 08:25]
    - Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin]] 
    - Read [[http://simgrid.gforge.inria.fr/tutorials/simgrid-energy-101.pdf][SimGrid Energy 101]] 
    - Read [[http://simgrid.gforge.inria.fr/simgrid/3.15/doc/group__SURF__plugin__energy.html][SimGrid Energy Plugin Docs]]
-*** Questions
-   - FLOPS/s is this notation correct in the slide shown in [[http://simgrid.gforge.inria.fr/tutorials/simgrid-energy-101.pdf][here]]? (floating point operations per second per second?) (compare slide 6/7/8)
-   - Is this value <prop id="watt_per_state" value="100.0:120.0:200.0, 93.0:110.0:170.0, 90.0:105.0:150.0" /> found in examples/platforms/energy_platform.xml correct?
 *** TODO Work Planned 
 ***** TODO Continue exploring spacemacs [[https://www.youtube.com/watch?v=ZFV5EqpZ6_s&list=PLrJ2YN5y27KLhd3yNs2dR8_inqtEiEweE][Spacemacs ABC tutorial]]
 ***** TODO Continue exploring Org-mode
@@ -190,12 +212,11 @@ CLOSED: [2017-03-22 mer. 08:25]
 ** Week 2 January 
     - Bibliography reviewed
 **** Questions 
-    - Taking the topology shown [[ifile:img/scenario.png][here]] (taken from ECOFEN) as an example, the objective of my internship is
-     to use the ECOFEN energy model shown [[file:img/model.png][here]] in SimGrid simulator because SimGrid uses flow-based modeling
-    - What I need to add to the above model is, the flow parameters such as bandwidth of the links, and 
-      the size of traffic, then model the effect of each flow passing through a given link on the length of time it took to transfer the given traffic
-      Is this a correct paraphrase of what I am expected to do in this
-      internship? 
+    - Taking the topology shown [[ifile:img/scenario.png][here]] (taken from ECOFEN) as an example, the objective of my internship is to use the ECOFEN energy model shown [[file:img/model.png][here]] in
+      SimGrid simulator because SimGrid uses flow-based modeling
+    - What I need to add to the above model is, the flow parameters such as bandwidth of the links, and the size of traffic, then model the effect of
+      each flow passing through a given link on the length of time it took to transfer the given traffic. Is this a correct paraphrase of what I am
+      expected to do in this internship? 
       - MQ: It's not really adding things to the models but more
         adapting the model, because some of the thing above are not
         part of the SimGrid view of the platform (eg, ports, network
@@ -205,7 +226,6 @@ CLOSED: [2017-03-22 mer. 08:25]
         model could get to the same result than EcoFEN.
       - MQ: Ie, try to get the same result with a brand new (but
         simplistic) model)
-    
     - Is there an example in SimGrid which show the flow-based model used in SimGrid in action?
       - MQ: have a look at http://simgrid.gforge.inria.fr/tutorials/surf-101.pdf
 **** Work Planned
@@ -219,10 +239,8 @@ CLOSED: [2017-03-22 mer. 08:25]
       CLOSED: [2017-01-16 lun. 22:02]
 ** Week 3 January
 *** Questions
-    - Methodological question: When reviewing papers, is there any
-      reason to summarize the whole paper unless I am working to
-      extend/improve the work of the authors? Or is it not enough to
-      just extract the information that I need for my work?
+    - Methodological question: When reviewing papers, is there any reason to summarize the whole paper unless I am working to  extend/improve the work
+      of the authors? Or is it not enough to just extract the information that I need for my work?
       - MQ: only take what you need.
     - SimGrid: Are there router/switch concepts in SimGrid?
       - MQ: nope, links is all what you need in SimGrid :)
@@ -230,28 +248,23 @@ CLOSED: [2017-03-22 mer. 08:25]
     #+BEGIN_SRC LaTex
        P_equipment(t) = idle_equipment + EPI_equipment * P_equipment_atLoad(t)
     #+END_SRC
-    - where, EPI_equipment is energy proportionality index. Which is
-      computed by dividing the slope of the measured power consumption
-      line to the slope of the ideal proportional line as it is shown
-      [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
+    - where, EPI_equipment is energy proportionality index. Which is computed by dividing the slope of the measured power consumption line to the
+      slope of the ideal proportional line as it is shown [[http://link.springer.com/chapter/10.1007/978-3-642-01399-7_62][here]]
     - idle_equipment is the power consumed while the equipment is idle
     - P_equipment_atLoad(t) is the ideal instantaneous power consumed by the equipment at a given traffic load
-    - The EPI value for network equipment is available from the benchmark study referenced. For example edge LAN switch
-      has ~0.25, core switch 0.15, and core router 0.20
-    - The load of a particular equipment at t for a given network can be found from the flow-based bandwidth sharing
-      model used in SimGrid
-    - The total energy consumption can be computed by integrating the power consumed by individual device during traffic
-      transmission time
-    - The required parameters for this model are: equipment type(core/edge switch or router), total bandwidth of the
-      equipment, bandwidth and latency of the links (for bandwidth sharing model)
+    - The EPI value for network equipment is available from the benchmark study referenced. For example edge LAN switch has ~0.25, core switch 0.15,
+      and core router 0.20
+    - The load of a particular equipment at t for a given network can be found from the flow-based bandwidth sharing model used in SimGrid
+    - The total energy consumption can be computed by integrating the power consumed by individual device during traffic transmission time
+    - The required parameters for this model are: equipment type(core/edge switch or router), total bandwidth of the equipment, bandwidth and latency
+      of the links (for bandwidth sharing model)
     - The limitation of this model is that the EPI values might change as technologies change.
-    - Is there recommended level of detail that we should consider while modeling large scale networks (packet
-      processing engines, ports, connections, chassis, line cards, switches, routers)
-    - If low level details such as ports are not considered, how do we study energy saving techniques using SimGrid,
-      such as rate adaptation and switching off unused ports for energy saving
-    - If a switch has 24 ports with 1Gbps maximum capacity each, is it reasonable to model the 24 ports as the
-      bandwidth/capacity of the switch by just considering the switch capacity as 24 Gbps and if half of the ports are
-      turned off then the capacity of the switch is now 12Gbps?
+    - Is there recommended level of detail that we should consider while modeling large scale networks (packet processing engines, ports, connections,
+      chassis, line cards, switches, routers)
+    - If low level details such as ports are not considered, how do we study energy saving techniques using SimGrid, such as rate adaptation and
+      switching off unused ports for energy saving
+    - If a switch has 24 ports with 1Gbps maximum capacity each, is it reasonable to model the 24 ports as the bandwidth/capacity of the switch by
+      just considering the switch capacity as 24 Gbps and if half of the ports are turned off then the capacity of the switch is now 12Gbps?
 *** Work Planned
 **** DONE Study SimGrid's energy model for CPU 
       CLOSED: [2017-01-18 mer. 17:42]
@@ -260,79 +273,68 @@ CLOSED: [2017-03-22 mer. 08:25]
    - Started studying about reproducible research
 *** Thoughts
      - Conditions for proposing power consumption modeling
-       - Power consumption of a group of servers can be modeled reasonably well with [[http://www.sciencedirect.com/science/article/pii/S1383762113000313#b0170][linear relationship]] between CPU
-         utilization and power consumption
+       - Power consumption of a group of servers can be modeled reasonably well with [[http://www.sciencedirect.com/science/article/pii/S1383762113000313#b0170][linear relationship]] between CPU utilization and power consumption
        - SimGrid uses meta-tags such as <cluster>, <cabinet> and <peer> to instantiate a data center components
        - SimGrid uses links to represent switches 
-       - In a given data center, the power consumption of network equipment is about [[https://research.google.com/pubs/pub32980.html][0%]] to [[http://ieeexplore.ieee.org/document/5072138/][0%]], therefore it can be
-         safely ignored. However, I think at least the idle power consumption of switches can be incorporated in SimGrid
-         using the <link> tags that represent switches
-       - Having the above conditions, a linear models seems to fit into SimGrid's abstraction. Accordingly, I propose
-         the following linear model for SimGrid, which is first proposed by [[https://research.google.com/pubs/pub32980.html][Fan et al's]] but the original model does not
-         account for network energy consumption
-       #+BEGIN_SRC LaTex
-       P_srv = P_idle + (P_busy - P_idle) * U
+       - In a given data center, the power consumption of network equipment is about [[https://research.google.com/pubs/pub32980.html][0%]] to [[http://ieeexplore.ieee.org/document/5072138/][0%]], therefore it can be safely ignored. However, I think at
+         least the idle power consumption of switches can be incorporated in SimGrid using the <link> tags that represent switches
+       - Having the above conditions, a linear models seems to fit into SimGrid's abstraction. Accordingly, I propose the following linear model for
+         SimGrid, which is first proposed by [[https://research.google.com/pubs/pub32980.html][Fan et al's]] but the original model does not account for network energy consumption
+       #+BEGIN_ LaTex
+       P_{srv} = P_{idle} + (P_{busy} - P_{idle}) * U
        #+END_SRC
      - This linear model is what is proposed by Fan et al.
      - To estimate the power consumption of a give cluster, we multiply it by the size of the cluster
-     - To estimate the power consumption of the whole network in a given large-scale network, we add to this sum the
-       total idle power consumption of involved switches
+     - To estimate the power consumption of the whole network in a given large-scale network, we add to this sum the total idle power consumption of
+       involved switches
      - This model is coarse-grain model, it does not consider ports
      - This model does not include power conditioning and cooling components
 *** Questions
      - [MQ] Note that I changed the sectionning of your file. Is it OK with you?
      - what do you think about this model?
-       - [MQ] That's very simple, but it is definitely worth trying it. Experimentations will say whether we can find a
-         set of parameters leading to realistic simulations. Did you find any other possible such model? It'd be
-         interesting to compare them all in our context.
-       - [MQ] I was thinking that P_idle and P_busy of a network equipment were very close, and that P_off is the
-         interesting measurement
-       - [MQ] That being said, I had a quick glance at the paper you point and it does not seem to speak of
-         networks. I'm puzzled.
-     - Do we need to modify the meta-tags of SimGrid in order to able to specify idle/busy watt values and the
-       corresponding workloads?
+       - [MQ] That's very simple, but it is definitely worth trying it. Experimentations will say whether we can find a set of parameters leading to
+         realistic simulations. Did you find any other possible such model? It'd be interesting to compare them all in our context.
+       - [MQ] I was thinking that P_idle and P_busy of a network equipment were very close, and that P_off is the interesting measurement
+       - [MQ] That being said, I had a quick glance at the paper you point and it does not seem to speak of networks. I'm puzzled.
+     - Do we need to modify the meta-tags of SimGrid in order to able to specify idle/busy watt values and the corresponding workloads?
        - [MQ] I'd prefer not. Use the <prop> tag to pass arbitrary key/value sets (just like it's done for the CPU energy)
      - Do we also need to modify the <link> tag in order to able to specify the idle power consumption of switches?
        - [MQ] same answer as before. Any XML modification is really a pain in the ... foot of all our users.
      - Can we call this flow-based model, because traffic flow is never considered, only CPU utilization
        - [MQ] if traffic flow is not considered, what's the U in your formula? I'd have said "usage".
-     - Can implementing CPU utilization-based power consumption model in SimGrid be considered as scientific
-       contribution? is not this typical software development task?
-       - [MQ] answer A: science is the ideas that last more than a decade. Your software wont, but the ideas that you
-         will demonstrate with it may. So consider your software as a proof of a theorem sounding like "it is possible
-         to model the energy consumption as a function of ....". The proof is not as appreciated as the corresponding
-         theorem, but a mathematical allegation is not a theorem without a proof. Same for us.
-       - MQ: answer B: in today's science, the models are expressed as programs, not as text in papers. We are trying
-         to foster the computationnal science of computer systems, so the following quote from
-         https://khinsen.wordpress.com applies to us: «For today’s complex simulations [arising in Computational
-         Sciences], the computer program *is* the model. Questions such as “Does program X correctly implement model
-         A?”, a question that made perfect sense in the 1960s, have become meaningless».
+     - Can implementing CPU utilization-based power consumption model in SimGrid be considered as scientific contribution? is not this typical
+       software development task?
+       - [MQ] answer A: science is the ideas that last more than a decade. Your software wont, but the ideas that you will demonstrate with it may. So
+         consider your software as a proof of a theorem sounding like "it is possible to model the energy consumption as a function of ....". The
+         proof is not as appreciated as the corresponding theorem, but a mathematical allegation is not a theorem without a proof. Same for us.
+       - MQ: answer B: in today's science, the models are expressed as programs, not as text in papers. We are trying to foster the computational
+         science of computer systems, so the following quote from https://khinsen.wordpress.com applies to us: «For today’s complex simulations
+         [arising in Computational Sciences], the computer program *is* the model. Questions such as “Does program X correctly implement model A?”, a
+         question that made perfect sense in the 1960s, have become meaningless».
        - MQ: answer C: "rocket science" *is* engineering. I do consider high-level engineering as as valuable as science.
-     - Do I really need to come up with a brand new model if this model gives reasonably accurate result? I noticed
-       that the researchers propose a model after measuring power consumption of servers and network equipment and
-       after statistical analysis of the collected data.
-       - MQ: nope. If you find a working model, we are good. We'd have more time to scientifically assess this model,
-         comparing its output to other simulated results and maybe to the reality. In computational science, assessing
-         the models of others is a contribution necessary to the community (peer assesment), even if sometimes less
-         appreciated by readers.  Also, if time permits, we'd like to use this model in several studies.
-       - MQ: That being said, the difficulty may be to adapt this model to our flow-based settings, because we do not
-	 have routers and links at hand. Just a rather specific abstraction that we misleadingly call <link>.
+     - Do I really need to come up with a brand new model if this model gives reasonably accurate result? I noticed that the researchers propose a
+       model after measuring power consumption of servers and network equipment and after statistical analysis of the collected data.
+       - MQ: nope. If you find a working model, we are good. We'd have more time to scientifically assess this model, comparing its output to other
+         simulated results and maybe to the reality. In computational science, assessing the models of others is a contribution necessary to the
+         community (peer assesment), even if sometimes less appreciated by readers.  Also, if time permits, we'd like to use this model in several
+         studies.
+       - MQ: That being said, the difficulty may be to adapt this model to our flow-based settings, because we do not have routers and links at hand.
+         Just a rather specific abstraction that we misleadingly call <link>.
 *** Work Planned
 **** Propose power consumption model for large-scale networks in the context of SimGrid
 **** If the proposed model is acceptable, start implementing the model for SimGrid 
-- MQ: we have some plumbering to do in SimGrid so that a signal is raised when the network condition changes on a link
-  (just like for the CPU thing). Maybe it's done or almost, maybe it will be rather hairly (I cant remember the current
-  status). Too bad you're on it the week where I'm out of town (I may even be off the grid the whole week until
-  friday). You may want to postpone this part if it gets hairly.
-- MQ: another light plumbering is needed to allow the creation of a plugin that connects to the signals and selects the
-  right formula (if we propose several models)
+- MQ: we have some plumbering to do in SimGrid so that a signal is raised when the network condition changes on a link (just like for the CPU thing).
+  Maybe it's done or almost, maybe it will be rather hairly (I cant remember the current status). Too bad you're on it the week where I'm out of town
+  (I may even be off the grid the whole week until friday). You may want to postpone this part if it gets hairly.
+- MQ: another light plumbering is needed to allow the creation of a plugin that connects to the signals and selects the right formula (if we propose
+  several models)
 - MQ: think of how you will find the right parameter of your model (data fitting, but against which data?)
 - MQ: think of how you will evaluate the proposed model(s). Which experiment, which settings, etc.
-- MQ: discuss with Anne Cécile of how we could dream of validation against real settings. We did not add it to the
-  initial plan because IIRC, we don't exactly have the right measurement material at hand, and because that's extremely
-  complex for a 6 months short internship. But if you are too fast, we may change our mind.
-- MQ: have a look at S4U. This is where new development should take place when possible. MSG should rest in peace now. I
-  started re-implementing MSG as a upper layer to S4U that will contain the real meat, but that's underway. 
+- MQ: discuss with Anne Cécile of how we could dream of validation against real settings. We did not add it to the initial plan because IIRC, we don't
+  exactly have the right measurement material at hand, and because that's extremely complex for a 6 months short internship. But if you are too fast,
+  we may change our mind.
+- MQ: have a look at S4U. This is where new development should take place when possible. MSG should rest in peace now. I started re-implementing MSG
+  as a upper layer to S4U that will contain the real meat, but that's underway. 
 ** Week 1 February 
 - held a meeting with my supervisor from Aalto
 *** Thoughts 
@@ -350,10 +352,10 @@ CLOSED: [2017-03-22 mer. 08:25]
 #+BEGIN_SRC LaTex
        P_total(t) = Sum(P_cluster_i(t)) + Sum(P_equipment_j(t))
 #+END_SRC 
-- The total power consumption of a given network at a given moment is computed by adding the power consumption of each cluster
-and the power consumption of each network equipment involved in the network
-- These power consumption models do not account for energy consumed by power distribution and conditioning and also the power 
-consumed by cooling systems
+- The total power consumption of a given network at a given moment is computed by adding the power consumption of each cluster and the power
+  consumption of each network equipment involved in the network
+- These power consumption models do not account for energy consumed by power distribution and conditioning and also the power consumed by cooling
+  systems.
 *** Questions
 - What do I need to know to integrate flow-based bandwidth allocation model implemented in SimGrid with the above model?
 *** Work Planned
@@ -367,8 +369,8 @@ consumed by cooling systems
 - Discussed about possible ways to use UP/DOWN link 
   - DOWN link represent the idle power consumption and the dynamic power consumption due to traffic
   - UP link represent the dynamic power consumption due to traffic only
-- Associating the power consumption when the link is OFF, BUSY and IDLE with that of UP/DOWN link should be studied by running
-  ns3 experiments because measuring the energy consumption values for UP/DOWN on real network is impossible?
+- Associating the power consumption when the link is OFF, BUSY and IDLE with that of UP/DOWN link should be studied by running ns3 experiments because
+  measuring the energy consumption values for UP/DOWN on real network is impossible?
 - Notes from the discussion are shown [[file:img/ns3_experiment.jpg][here]]
 - git command to fetch updates from simgrid original branch
   - git pull upstream master master
@@ -401,13 +403,12 @@ abline(lm.fit,col="blue",lwd=3)
 - [[https://hal.inria.fr/hal-01472358][Leveraging Renewable Energy in Edge Clouds for Data Stream Analysis in IoT]]
 - [[http://ieeexplore.ieee.org/document/7439752/][Fog Computing May Help to Save Energy in Cloud Computing]]
 *** Experiment-0: Setup the required network using NS3 simulator
-- The purpose of the experiment is to study the energy consumption characteristics of 
-nodes in edge and client nodes
+- The purpose of the experiment is to study the energy consumption characteristics of  nodes in edge and client nodes
 - Two scenarios are considered
   - Energy consumption of streaming application (e.g. video streaming)
   - Energy consumption of non-streaming applications (e.g. sensor data with small burst of data)
-- NS3 [[file:ns3/wifi-nodes-energy-consumption.cc][script]] was written to setup a network with 2 AP. One AP used for the client nodes and another one
-for the edge nodes. The two APs connected by Point-to-Point link.
+- NS3 [[file:ns3/wifi-nodes-energy-consumption.cc][script]] was written to setup a network with 2 AP. One AP used for the client nodes and another one for the edge nodes. The two APs connected by
+  Point-to-Point link.
 - This script displays the energy consumption of a single edge node 
 - The client nodes each runs UdpEchoClient application
 - The edge nodes each running UdpEchoServer application
@@ -440,10 +441,9 @@ for the edge nodes. The two APs connected by Point-to-Point link.
 | Simulation Time                       | 21 seconds          |
 *** Experiment-1:
 - Energy consumption in relation to the number of packets and number of client nodes
-- This energy consumption is measured at one of the edge node when 1, 10, 50, 100 or 250 clients
-   send 10, 100, or 1000 packets of packet size 1472
-- The energy consumption is captured just after the last packet is received by the edge node in each case, which
-means the energy consumption shown is the total energy consumed by the node until the last packet is received. 
+- This energy consumption is measured at one of the edge node when 1, 10, 50, 100 or 250 clients send 10, 100, or 1000 packets of packet size 1472
+- The energy consumption is captured just after the last packet is received by the edge node in each case, which means the energy consumption shown is
+  the total energy consumed by the node until the last packet is received. 
 - The following plot shows the result using the data shown [[file:data/energy_packets_clients2.csv][here]]
 #+BEGIN_SRC R :exports both  :results output graphics :file figures/epc.png  
 EPC = read.csv("data/energy_packets_clients2.csv",header=T)
@@ -470,9 +470,8 @@ main="Power Consumption",xlab="Number of Client Nodes",ylab="Power Consumed")
 
 *** Experiment-3:
 - Energy consumption in relation to interval between sent packets
-- In this experiment 1, 10, 100, or 1000 packets are send to the edge node by one client node with
-0.01, 1, 10, or 1000 ms inter-packet interval time and the energy consumption is captured just after the last
-packet is received
+- In this experiment 1, 10, 100, or 1000 packets are send to the edge node by one client node with 0.01, 1, 10, or 1000 ms inter-packet interval time
+  and the energy consumption is captured just after the last packet is received
 #+BEGIN_SRC R :file figures/ep_interval.png :results value graphics 
 EPI = read.csv("data/energy_packets_intervals.csv",header=T)
 EPI_data = as.matrix(EPI)
@@ -485,9 +484,9 @@ main="Power Consumption",xlab="Interval between packets (ms)",ylab="Power Consum
 
 *** Experiment-4:
 - Comparing Energy consumed by a client node and an edge node for sending/receiving 1, 10, 100, or 1000 packets at  1 ms inter-packet interval time
-and 100 Bytes of packet size
+  and 100 Bytes of packet size
 - As it is evident from the diagram below, both the client and the edge node consume equal amount of energy for sending and receiving packets. In this
-experiment both the client and edge nodes are wireless stations with similar configuration  
+  experiment both the client and edge nodes are wireless stations with similar configuration  
 #+BEGIN_SRC R  :results output graphics :file figures/ece.png   
 ECE = read.csv("data/energy_client_edge.csv",header=T)
 ECE_data = as.matrix(ECE)
@@ -498,13 +497,10 @@ main="Power Consumption of client and edge node",xlab="Number of packets send/re
 #+RESULTS:
 [[file:figures/ece.png]]
 
-
 *** Experiment-5:
 - Energy consumption of an idle edge node over time
-- The oscillation shown below is due to the arrival of Beacon frames from the AP node at regular
-interval as shown in the diagram
-- In this graph the lines are added to show the oscillation visually, the measured power consumption
-values jumps between the two values. 
+- The oscillation shown below is due to the arrival of Beacon frames from the AP node at regular interval as shown in the diagram
+- In this graph the lines are added to show the oscillation visually, the measured power consumption values jumps between the two values. 
 #+BEGIN_SRC R :results output graphics :file figures/idle_edge.png :exports both  
 EIE = read.csv("data/energy_idle.csv", header=T,na.strings="?")
 attach(EIE)
@@ -517,24 +513,24 @@ lines(EIE,lw="2")
 [[file:figures/idle_edge.png]]
 
 *** Notes about the scenarios
-- I have assumed roughly 1 packet of size (100 or 1472) to represent data from sensor and 100 or 100 packets
- of size 1472 to represent packet streaming. Therefore, the graph shown in experiment-1 shows both scenarios.  
+- I have assumed roughly 1 packet of size (100 or 1472) to represent data from sensor and 100 or 100 packets of size 1472 to represent packet
+  streaming. Therefore, the graph shown in experiment-1 shows both scenarios.  
 *** Useful link about org-mode and literate programming
 - http://ehneilsen.net/notebook/orgExamples/org-examples.html
 *** Questions
-- Do we need to run validation experiment for ECOFEN because, first the ECOFEN paper is about NS2 model note NS3,
-second, I did not see validation experiment against another simulator or real measurement.
-- Is there large-scale distributed system or network which is not categorized under data-center. When I start to 
-write about the internship I found it easy to use the term data-center than large-scale distributed networks
-- Compared to other components such as cooling, power provisioning and servers, network equipment consume relatively
-small amount of energy. How do you answer if someone asks why do you focus on the less significant component? 
-- Concerning the NS3 experiment, I do not think one of the experiment is possible to conduct, energy consumption
-measurement for uplink/downlink flow separately. Is there other alternative?
+- Do we need to run validation experiment for ECOFEN because, first the ECOFEN paper is about NS2 model note NS3, second, I did not see validation
+  experiment against another simulator or real measurement.
+- Is there large-scale distributed system or network which is not categorized under data-center. When I start to write about the internship I found it
+  easy to use the term data-center than large-scale distributed networks
+- Compared to other components such as cooling, power provisioning and servers, network equipment consume relatively small amount of energy. How do
+  you answer if someone asks why do you focus on the less significant component? 
+- Concerning the NS3 experiment, I do not think one of the experiment is possible to conduct, energy consumption measurement for Up-Link/Down-Link
+  flow separately. Is there other alternative?
 ** Week 3 March
 - Wrote first draft of the background part
 *** Validating the linear model of ECOFEN
-- For validating ECOFEN, the experiment found in section E (Per-Byte Total Energy) in this paper
- [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption in the NetFPGA Gigabit router]] is used
+- For validating ECOFEN, the experiment found in section E (Per-Byte Total Energy) in this paper [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption
+  in the NetFPGA Gigabit router]] is used
 - In this paper, depicted on Figure 6 there are four linear energy models that are obtained from actual measurements. 
 - Here is the procedure followed to (in)validate the linear model implemented in ECOFEN using these four models
   - Setup an experiment under the same condition as specified in the paper, the following table shows the parameters used
@@ -547,14 +543,13 @@ measurement for uplink/downlink flow separately. Is there other alternative?
     | Idle power consumption  (watts)     |               10.242 |
     | Per-Byte power consumption (nJoule) |                3.212 |
    
-    Note: the NetFPGA router with three ports turned on, the idle power consumption is ~10.242 this value is used in the linear
-           model of ECOFEN as the chassis consumption of a node. No idle power consumption is used for the Net devices or the 
-           ports, since they are already accounted for in the chassis consumption. 
+    *Note:* For the NetFPGA router with three ports turned on, the idle power consumption is ~10.242. This value is used in the linear model of ECOFEN
+    as the chassis consumption of a node. No idle power consumption is used for the Net devices or the ports, since they are already accounted for in
+    the chassis consumption. 
   - Write a script which output the average power consumption value for the ECOFEN's linear model
   - In the same script compute and display the expected power consumption value   
   - Compute the difference and compare the result
-- This script  [[file:ns3/link_energy3.cc]] is used for the experiment. The extracted output of the experiment is shown in the 
-  table below
+  - This script  [[file:ns3/link_energy3.cc]] is used for the experiment. The extracted output of the experiment is shown in the table below
  #+tblname: validation 
   | NumberOfPackets | PacketSize | SimulatedPower | ExpectedPower | Difference |
   |-----------------+------------+----------------+---------------+------------|
@@ -625,9 +620,9 @@ sqrt(mean((SimulatedPower-ExpectedPower)^2,na.rm=TRUE))
 : [1] 0.1611783
 
 **** Conclusion about the validation
-- With 95% confidence, we can say that the average difference between the two power consumption estimation
-lies between 0.05797514  and 0.17852486
-- Since we have subtracted the expected measured power consumption value from the simulated value, the positive CI means that, the simulator model slightly over estimates the energy consumption
+- With 95% confidence, we can say that the average difference between the two power consumption estimation lies between 0.05797514  and 0.17852486
+- Since we have subtracted the expected measured power consumption value from the simulated value, the positive CI means that, the simulator model
+  slightly over estimates the energy consumption
 - the average estimation error is ~1.14 % of the average expected power value computed as shown below
 #+BEGIN_SRC R :results output :var validation=validation 
 attach(validation)
@@ -637,7 +632,8 @@ mean(Difference)/mean(ExpectedPower)*100
 RESULTS:
  1.136636
 *** Experiment for proposing flow-level model for SimGrid
-- The objective of this experiment is to study the relationship between data transfer rate or bandwidth and energy consumption and based on the result, to propose flow-level analytical model which estimate energy consumption of large-scale networks
+- The objective of this experiment is to study the relationship between data transfer rate or bandwidth and energy consumption and based on the
+  result, to propose flow-level analytical model which estimate energy consumption of large-scale networks
 - We use the ECOFEN NS3 module that we have validated in the previous experiment to study the relationship
 - Possible parameters and corresponding values to be used in the experiment are shown below
 
@@ -653,45 +649,42 @@ RESULTS:
 | Energy per-byte (nJoule)       | 3.212                           |
 | ECOFEN Model used              | Linear                          |
 
-- The parameters and the values shown in the table are collected based on our discussion two weeks back ([[file:img/ns3_experiment.jpg][note]]) and also based on the following
-  links 
+- The parameters and the values shown in the table are collected based on our discussion two weeks back ([[file:img/ns3_experiment.jpg][note]]) and also based on the following links 
   - [[http://ieeexplore.ieee.org/document/1212669/]]
   - [[https://www.isoc.org/inet98/proceedings/6g/6g_3.htm]]
 *** Questions 
-- While writing the background section, I claimed that the reason we want to manage energy consumption is because currently IT equipment are not energy proportional. Would 
-we be interested to know about it if the equipment were energy proportional?
+- While writing the background section, I claimed that the reason we want to manage energy consumption is because currently IT equipment are not
+  energy proportional. Would we be interested to know about it if the equipment were energy proportional?
 ** Week 4 March
 **** Experiment - Power consumption vs 1-flow UDP traffic, Packet_Size = 1472, 1 Node, ([[file:ns3/1flow_energy.cc]])
 #+tblname: tblUDPTraffic1
-| Traffic (Mbps) | Power_consumption (watt) | Network_Power_Cons |
-|----------------+--------------------------+--------------------|
-|              0 |                    8.038 |             25.216 |
-|        10.2022 |                   8.0421 |                    |
-|        50.4537 |                  8.05828 |                    |
-|        100.386 |                  8.07836 |                    |
-|        150.318 |                  8.09843 |                    |
-|        200.252 |                  8.11851 |                    |
-|        250.184 |                  8.13858 |                    |
-|        300.117 |                  8.15865 |                    |
-|         350.05 |                  8.17873 |                    |
-#+TBLFM: @2$3=9.14+2*8.038
-
+| Traffic (Mbps) | Power_consumption (watt) | 
+|----------------+--------------------------|
+|              0 |                    8.038 |
+|        10.2022 |                   8.0421 |
+|        50.4537 |                  8.05828 |
+|        100.386 |                  8.07836 |
+|        150.318 |                  8.09843 |
+|        200.252 |                  8.11851 |
+|        250.184 |                  8.13858 |
+|        300.117 |                  8.15865 |
+|         350.05 |                  8.17873 |
 **** Experiment - Power consumption vs 1-flow TCP traffic, packet_size=1472, 1 Node, ([[file:ns3/tcp_flow_energy.cc]])
 #+tblname: tblTCPTraffic1
-| Traffic (Mbps | Power_consumption (watt) | Network_Power_Cons |
-|---------------+--------------------------+--------------------|
-|             0 |                    8.038 |             25.216 |
-|     11.590364 |                  8.04268 |                    |
-|      57.93887 |                  8.06138 |                    |
-|     115.88787 |                  8.08477 |                    |
-|     173.83738 |                  8.10816 |                    |
-|      231.7869 |                  8.13155 |                    |
-|      289.7364 |                  8.15494 |                    |
-|      347.6859 |                  8.17833 |                    |
-|      405.6354 |                  8.20172 |                    |
-#+TBLFM: @2=8.038*2+9.14::@3$3=25.216+(8.04268-8.038)::@4$3=8.04268*2+9.14935
+| Traffic (Mbps | Power_consumption (watt) |
+|---------------+--------------------------|
+|             0 |                    8.038 |
+|     11.590364 |                  8.04268 |
+|      57.93887 |                  8.06138 |
+|     115.88787 |                  8.08477 |
+|     173.83738 |                  8.10816 |
+|      231.7869 |                  8.13155 |
+|      289.7364 |                  8.15494 |
+|      347.6859 |                  8.17833 |
+|      405.6354 |                  8.20172 |
 
-NOTE: When we run the TCP script provided above we get the following output. The output in the above portion are coming from ECOFEN model, and the flow outputs are coming from flow-monitor modules of NS-3. 
+*NOTE:* When we run the TCP script provided above, we get the following output. The output in the above portion are coming from *ECOFEN* model, and the
+ flow outputs are coming from *flow-monitor* modules of NS-3. 
 #+Begin_example
 
 Time 0 Node 0 Conso 8.038
@@ -724,8 +717,10 @@ FlowID: 2 (10.1.2.2 / 8080 --> 10.1.1.1 / 49153)
   Time last packet Received: 1
 
 #+End_example
-- When we send one flow between node 0 and node 2, in case of TCP, there will be two actual flows as shown by flow-monitor. The reason is due to TCP handshake and acknowledgment of received packets
-- Therefore, to compute the contributing traffic volume for the computed energy consumption shown at node 2 at time 1, we add the throughput of both flows. In this case 11.0591 Mbps for flow-1 and 0.531264 Mbps for flow-2 and the combined power consumption of the two flows is 8.04268 watt. 
+- When we send one flow between node 0 and node 2, in case of TCP, there will be two actual flows as shown by the flow-monitor output. The reason
+  probably is due to TCP handshake and acknowledgment of received packets
+- Therefore, to compute the contributing traffic volume for the computed energy consumption shown at node 2 at time 1, we add the throughput of both
+  flows. In this case 11.0591 Mbps for flow-1 and 0.531264 Mbps for flow-2 and the combined power consumption of the two flows is 8.04268 watt. 
 **** Checking if there is difference between the TCP and UDP models 
 - To check the difference we plot the data in the above two tables together as shown below
 #+BEGIN_SRC R :results output graphics :exports both :var tblUDPTraffic=tblUDPTraffic1 :var tblTCPTraffic=tblTCPTraffic1 :file figures/udptcp.png  
@@ -770,7 +765,6 @@ abline(fit.udp2)
 
 #+RESULTS:
 [[file:figures/udpt.png]]
-
 **** Checking if parallel flow in opposite direction make a difference in power consumption ([[file:ns3/2flow_energy_opposit.cc]])
 #+tblname: tblUDPTraffic2O
 | Traffic (Mbps, flow1&2) | Power_consumption (watt) |
@@ -780,7 +774,9 @@ abline(fit.udp2)
 |                 20.4044 |                  8.04619 |
 |                101.9262 |                  8.07896 |
 |                         |                          |
-- By comparing the first four entries of this table with the previous one, we can see that the power consumption does not differ whether the parallel flow is in same direction or in opposite direction. This is what we expect since the ECOFEN Linear model computes energy based on bytes processed without considering the flow direction (Reciving/Sending).
+- By comparing the first four entries of this table with the previous one, we can see that the power consumption does not differ whether the parallel
+  flow is in same direction or in opposite direction. This is what we expect since the ECOFEN Linear model computes energy based on bytes processed
+  without considering the flow direction (Reciving/Sending).
 **** UP-Link or Down-Link power consumption
 - if we assume, in case of 2 flows, one flow as up-link flow and the other as down-link flow, we get the following result
 | # of flows | Traffic (Mbps) | Power_consumption (watt) | Power_Consumption - Idle |
@@ -789,13 +785,11 @@ abline(fit.udp2)
 |          2 |        5.10715 |                  8.04209 |                  4.09e-3 |
 |          1 |        5.10715 |                  8.04005 |                  2.05e-3 |
 |          1 |        10.2022 |                   8.0421 |                   4.1e-3 |
-
 **** Questions
 - What has been suggested before looks like this
 |-----------+---------------------------|
 | UP_LINK   | (P_MAX - P_MIN)/2 + P_MIN |
 | DOWN_LINK | (P_MAX - P_MIN)/2 + 0     |
-
 - According to the linear model the relationship looks like the following
 #+Begin_SRC LaTEx
  P = P_MIN + (P_MAX - P_MIN) * L  
@@ -803,10 +797,10 @@ abline(fit.udp2)
 - where L is traffic load in percentage
 - My question is 
   - Why are we dividing by 2? Is it not the case that the UP_LINK or DOWN_LINK power consumption dependent on the traffic load?
-*** Week 1 April
-**** Automating Data Collection and formatting
-Note: in all experiments I noticed that NS-3 adds 28 byte to the packet size provided. Therefore in actual input when I specify
-packet size I subtract 28 from intended packet size. For example, in the following table the intended packet size is 1500. 
+** Week 1 April
+*** Automating Data Collection and formatting
+*Note:* Noticing that NS-3 adds 28 byte to any packet size provided to it, In all of the experiments 28 bytes is subtracted from the intended packet
+size. For example, in the following table the intended packet size is 1500. 
 - Power consumption vs Traffic
 | parameter       | value |
 |-----------------+-------|
@@ -821,8 +815,8 @@ cd ~/ns3workspace/source/ns-3.26
 #+END_SRC
 #+RESULTS:
 
-- The following python script processes the output data in the file [[file:data/flow_energy_raw.dat]] and puts the processed data in [[file:data/flow_energy.csv]] 
-in the following format
+- The following python script processes the output data in the file [[file:data/flow_energy_raw.dat]] and puts the processed data in
+  [[file:data/flow_energy.csv]] in the following format
 
 | Throughput | Node-0 consumption | Node-1 consumption | Node-2 consumption | Total consumption |
 |------------+--------------------+--------------------+--------------------+-------------------|
@@ -838,7 +832,7 @@ header = True
 # 'Node-1 Consumption', 'Node-2 Consumption', 'Total Consumption'
 data = []
 
-total_energy = 0.0 # total energy consumped as a sum of node-0, node-1 and node-2 consumption
+total_power = 0.0 # total power consumped as a sum of node-0, node-1 and node-2 consumption
 
 with open(inpt) as fe:
     for line in fe:
@@ -847,20 +841,20 @@ with open(inpt) as fe:
           if idle: # extract the power consumption data at time 0 when the nodes are idle
               if list[1]=="0" and list[3]!="2":
                  data.append(list[5])
-                 total_energy += float(list[5])
+                 total_power += float(list[5])
               elif list[1]=="0" and list[3]=="2":
                  idle=False
                  data.insert(0, "0.0")
                  data.append(list[5])
-                 total_energy += float(list[5])
-                 data.append(str(total_energy))
+                 total_power += float(list[5])
+                 data.append(str(total_power))
           else: # extract the rest of power consumption and throughput data
               if list[1]!="0" and list[2]!="Throughput":
                  data.append(list[5])
-                 total_energy += float(list[5])
+                 total_power += float(list[5])
               elif list[2]=="Throughput":
                  data.insert(0,list[3])
-                 data.append(str(total_energy))
+                 data.append(str(total_power))
           with open(outpt,"a") as of:
               if len(data) == 5:
                   if header: # writes the header and the idle consumption
@@ -897,10 +891,10 @@ points(Cons_Node2~Throughput,col="darkred",pch=4,lwd=0.5)
 #+RESULTS:
 [[file:figures/flow_energy.png]]
 
-- The shape of the plots shown above is not what I have expected, therefore I have decided to re-run with large data set
-the validation experiment conducted before using the other equations shown in [[file:figures/powervsdatarate.pdf][Figure 4]] of
- [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption in the NetFPGA Gigabit router]]
-**** Validating ECOFEN's model using power consumption vs data rate against equations derived from actual measurements shown in  [[file:figures/powervsdatarate.pdf][Figure 4]]
+- The shape of the plots shown above is not what I was expecting to see from a linear model, therefore I have decided to re-run another validation
+  experiment this time with large data and using the other equations shown in [[file:figures/powervsdatarate.pdf][Figure 4]] in the paper - [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy
+  consumption in the NetFPGA Gigabit router.]]
+*** Validating ECOFEN's model using power consumption vs data rate against equations derived from actual measurements shown in  [[file:figures/powervsdatarate.pdf][Figure 4]]
 | Parameters        | Values            |
 |-------------------+-------------------|
 | Packet Size       | 100,576,1000,1500 |
@@ -917,21 +911,20 @@ j=$((header + i))
  done
 #+END_SRC
 
-- Running the [[file:ns3/validate_ecofen.cc]] script in the above code block produces four files:
- [[file:data/eco_val_100.dat]], [[file:data/eco_val_576.dat]], [[file:data/eco_val_1000.dat]] and [[file:data/eco_val_1500.dat]]
-- These files contain power consumption of three nodes for traffic rate of [1, 1000]Mbps in increment of ~2Mbps, and the corresponding
-expected power consumption computed for each of the linear models shown in [[file:figures/powervsdatarate.pdf][Figure 4]]
-- The following python script processes the output data in the output files listed above and puts the processed data in
-[[file:data/eco_val_100.csv]], [[file:data/eco_val_576.csv]], [[file:data/eco_val_1000.csv]] and [[file:data/eco_val_1500.csv]]
-in the following format
+- Running the [[file:ns3/validate_ecofen.cc]] script in the above code block produces four files: [[file:data/eco_val_100.dat]], [[file:data/eco_val_576.dat]],
+  [[file:data/eco_val_1000.dat]] and [[file:data/eco_val_1500.dat]]
+- These files contain power consumption of three nodes for traffic rate of [1, 1000]Mbps in increment of ~2Mbps, and the corresponding expected power
+  consumption computed for each of the linear models shown in [[file:figures/powervsdatarate.pdf][Figure 4]]
+- The following python script processes the output data in the output files listed above and puts the processed data in [[file:data/eco_val_100.csv]],
+  [[file:data/eco_val_576.csv]], [[file:data/eco_val_1000.csv]] and [[file:data/eco_val_1500.csv]] in the following format
 
 | Throughput | Node-0 consumption | Node-1 consumption | Node-2 consumption | Total consumption | Expected Consumption |
 |------------+--------------------+--------------------+--------------------+-------------------+----------------------|
 
-Note: Make sure to change the inpt and outpt variables in the following script to match the correct file and to use the 
-      correct initial value just before the comment line # initial value
-
-#+BEGIN_SRC python :results silent dir:~/internship :var inpt="data/eco_val_1500.dat" :var outpt="data/eco_val_1500.csv"
+*Note:* Make sure to change the input_file and output_file variables in the following script to match the correct files and also to use the correct
+initial value by setting the size parameter
+#+NAME: extract_data
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/eco_val_576.dat" :var output_file="data/eco_val_576.csv" :var size=576
 
 import sys
 
@@ -946,148 +939,149 @@ initial = { 100:10.35521132,
 # 'Node-1 Consumption', 'Node-2 Consumption', 'Total Consumption'
 data = []
 
-total_energy = 0.0 # total energy consumped as a sum of node-0, node-1 and node-2 consumption
+total_power = 0.0 # total power consumped as a sum of node-0, node-1 and node-2 consumption
 
-with open(inpt) as fe:
+with open(input_file) as fe:
     for line in fe:
        if line.startswith("Time"): # ignores unnecessary lines in the input file
           list = line.split()
           if idle: # extract the power consumption data at time 0 when the nodes are idle
               if list[1]=="0" and list[3]!="2":
                  data.append(list[5])
-                 total_energy += float(list[5])
+                 total_power += float(list[5])
               elif list[1]=="0" and list[3]=="2":
                  idle=False
                  data.insert(0, "0.0")
                  data.append(list[5])
-                 total_energy += float(list[5])
-                 data.append(str(total_energy))
-                 data.append(str(initial[1500])) # initial value
+                 total_power += float(list[5])
+                 data.append(str(total_power))
+                 data.append(str(initial[size])) # initial value
+                 data.append(str(size))
           else: # extract the rest of power consumption and throughput data
               if list[1]!="0" and list[2]!="Throughput":
                  data.append(list[5])
-                 total_energy += float(list[5])
+                 total_power += float(list[5])
               elif list[2]=="Throughput":
                  data.insert(0,list[3])
-                 data.append(str(total_energy))
+                 data.append(str(total_power))
                  data.append(list[7])
-          with open(outpt,"a") as of:
-              if len(data) == 6:
+                 data.append(str(int(list[5])+28))
+          with open(output_file,"a") as of:
+              if len(data) == 7:
                   if header: # writes the header and the idle consumption
-                      of.write("%s\n" % "Throughput,Cons_Node0,Cons_Node1,Cons_Node2,Cons_Total,Cons_Expected")
+                      of.write("%s\n" % "Throughput,Cons_Node0,Cons_Node1,Cons_Node2,Cons_Total,Cons_Expected,Packet_Size")
                       of.write("%s\n" % ",".join(data))
                       header = False
                       del data[:]
                   else: # writes the rest of the consumption
                       of.write("%s\n" % ",".join(data))
                       del data[:]
-       elif line.startswith("Lost"): # if there are packet losses, stop processing the file
-           sys.exit()
-
 #+END_SRC
 
-**** Plot of the validation result
-- Comparison of simulated and measured/expected consumption for packet size = 100 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_100.csv" :file figures/ecof_val_100.png :exports both
+*** Plot of the validation result
+- Comparison of simulated and measured/expected consumption for packet sizes 100, 576, 1000, and 1500 bytes
+#+BEGIN_SRC R :results output graphics :file figures/ecof_val_all.png :exports both 
 library(ggplot2)
-val_100 = read.csv(input, header=T)
-attach(val_100)
-ggplot(val_100,aes(Throughput))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
-   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
+val_100 = read.csv("data/eco_val_100.csv", header=T)
+val_576 = read.csv("data/eco_val_576.csv", header=T)
+val_1000 = read.csv("data/eco_val_1000.csv", header=T)
+val_1500 = read.csv("data/eco_val_1500.csv", header=T)
+all_data = rbind(val_100,val_576,val_1000,val_1500)
+attach(all_data)
+ggplot(all_data,aes(x=Throughput))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-(0 or 1)"))+
    geom_point(aes(y = Cons_Expected, colour = "Expected"))+
+   facet_grid(.~Packet_Size)+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
-   theme(legend.position="top")
+   theme(legend.position="top",
+         panel.margin = unit(1.2,"lines"))   
 #+END_SRC
 
 #+RESULTS:
-[[file:figures/ecof_val_100.png]]
-- Comparison of simulated and measured/expected consumption for packet size = 576 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_576.csv" :file figures/ecof_val_576.png :exports both
-library(ggplot2)
-val_576 = read.csv(input, header=T)
-attach(val_576)
-ggplot(val_576,aes(Throughput))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
-   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
-   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
-   ylab(label="Power Consumption in Watt")+
-   xlab(label="Traffic in Mbps")+
-   theme(legend.position="top")
-#+END_SRC
+[[file:figures/ecof_val_all.png]]
 
-#+RESULTS:
-[[file:figures/ecof_val_576.png]]
-- Comparison of simulated and measured/expected consumption for packet size = 1000 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1000.csv" :file figures/ecof_val_1000.png :exports both
-library(ggplot2)
-val_1000 = read.csv(input, header=T)
-attach(val_1000)
-ggplot(val_1000,aes(Throughput))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
-   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
-   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
-   ylab(label="Power Consumption in Watt")+
-   xlab(label="Traffic in Mbps")+
-   theme(legend.position="top")
-#+END_SRC
-
-#+RESULTS:
-[[file:figures/ecof_val_1000.png]]
-- Comparison of simulated and measured/expected consumption for packet size = 1500 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1500.csv" :file figures/ecof_val_1500.png :exports both
-library(ggplot2)
-val_1500 = read.csv(input, header=T)
-attach(val_1500)
-ggplot(val_1500,aes(Throughput))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
-   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
-   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
-   ylab(label="Power Consumption in Watt")+
-   xlab(label="Traffic in Mbps")+
-   theme(legend.position="top")
-#+END_SRC
-
-#+RESULTS:
-[[file:figures/ecof_val_1500.png]]
-**** Issues
+*** Issues
 - The Simulated model starts to divert from the measured models when the traffic volume is greater than,
   - 50 Mbps when the packet size is 100 bytes
   - 100 Mbps when the packet size is 576 bytes
   - 125 Mbps when the packet size is 1000 or 1500 bytes
-- The simulator terminates with the following error as shown at the bottom of [[file:data/eco_val_100.dat]]
-and [[file:data/eco_val_576.dat]] when the traffic volume goes above 384.801 Mbps and 804.193 Mbps respectively. For the other two cases there is no termination
+- The simulator terminates with the following error as shown at the bottom of [[file:data/eco_val_100.dat]] and [[file:data/eco_val_576.dat]] when the traffic
+  volume goes above 384.801 Mbps and 804.193 Mbps respectively. For the other two cases, the execution terminates successfully without error
+  termination.
 #+BEGIN_EXAMPLE
 terminate called after throwing an instance of 'std::bad_alloc'
   what():  std::bad_alloc
 #+END_EXAMPLE
-**** Simulated Total network consumption when the packet size is 1500 bytes
-#+BEGIN_SRC R :results output graphics dir:~/internship :var input="data/eco_val_1500.csv" :file figures/ecof_val_total.png :exports results
+** Week 2 April
+*** Corrected validation experiment for the Linear Model of ECOFEN 
+- After a diagnostic run of the previous experiment, Martin explained that the problem seems that when the simulation loops in the same Unix process,
+  the consumption of the previous run was carried on to the next run even if *Simulation::Destroy()* was called before the loop ends. 
+- The solution to the issue is to run the loop outside the NS-3 script, in the shell script.
+- Accordingly the original NS-3 script is [[file:ns3/validate_ecofen_modified.cc][modified]] to remove the loop 
+- The NS-3 script is also modified to use random traffic volume generated from uniform random value generator
+- The following code block runs the modified script to produce the updated raw data files: [[file:data/eco_val_modified_100.dat]],
+  [[file:data/eco_val_modified_576.dat]], [[file:data/eco_val_modified_1000.dat]], and [[file:data/eco_val_modified_1500.dat]]
+#+BEGIN_SRC bash :results output :exports both
+#! /bin/bash
+cd ~/ns3workspace/source/ns-3.26
+array=(72 548 972 1472)
+header=28
+for i in ${array[@]}; do
+j=$((header + i))
+  for ((k=1; k<=30; k++)); do
+ ./waf --run "scratch/validate_ecofen_modified --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_modified_${j}.dat 2>&1
+   done
+ done
+#+END_SRC
+- Extract data from [[file:data/eco_val_modified_100.dat]]
+#+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100)
+- Extract data from file:data/eco_val_modified_576.dat
+#+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576)
+- Extract data from [[file:data/eco_val_modified_1000.dat]]
+#+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000)
+- Extract data from [[file:data/eco_val_modified_1500.dat]]
+#+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500)
+- Running the above calls produces [[file:data/eco_val_modified_100.csv]], [[file:data/eco_val_modified_576.csv]], [[file:data/eco_val_modified_1000.csv]], and
+  [[file:data/eco_val_modified_1500.csv]].
+- When we plot the above data we get the graph shown below
+#+BEGIN_SRC R :results output graphics :file figures/ecof_val_modified_all.png :exports both 
 library(ggplot2)
-val_1500 = read.csv(input, header=T)
-attach(val_1500)
-ggplot(val_1500,aes(Throughput))+
-   geom_point(aes(y = Cons_Total, colour = "Total"))+
+val_100 = read.csv("data/eco_val_modified_100.csv", header=T)
+val_576 = read.csv("data/eco_val_modified_576.csv", header=T)
+val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
+val_1500 = read.csv("data/eco_val_modified_1500.csv", header=T)
+all_data = rbind(val_100,val_576,val_1000,val_1500)
+attach(all_data)
+ggplot(all_data,aes(x=Throughput))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-(0 or 1)"))+
+   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
+   facet_grid(.~Packet_Size)+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
-   theme(legend.position="top")
+   theme(legend.position="top",
+         panel.margin = unit(1.2,"lines"))   
 #+END_SRC
 
 #+RESULTS:
-[[file:figures/ecof_val_total.png]]
+[[file:figures/ecof_val_modified_all.png]]
 
+*** Validating the Complete Model of ECOFEN
+*** Validating the Basic Model of ECOFEN
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
      - Uses two files energy.hpp and energy.cpp
      - energy.hpp specifies/declares methods and variables and energy.cpp implements them
-     - initWattsRangeList() is one of the methods specified in energy.cpp/hpp and extracts watts_per_state values listed in energy_platform.xml file and puts them in array
-     - getCurrentWattsValue(double cpuLoad) estimates the current power consumption of CPU by applying the CPU power consumption model using cpuLoad as a parameter
+     - initWattsRangeList() is one of the methods specified in energy.cpp/hpp and extracts watts_per_state values listed in energy_platform.xml file
+       and puts them in array
+     - getCurrentWattsValue(double cpuLoad) estimates the current power consumption of CPU by applying the CPU power consumption model using cpuLoad
+       as a parameter
      - update() method computes the power consumed for a duration of time, that is the energy used
    - MSG:
      - Users can use methods available in msg_task.cpp and msg_host.cpp
-     - msg_host.cpp contains methods related to host such as turning host on/off, getting the pstate, speed, number of cores ... and also to know the host status whether it is on or off
+     - msg_host.cpp contains methods related to host such as turning host on/off, getting the pstate, speed, number of cores ... and also to know the
+       host status whether it is on or off
      - msg_task.cpp contains methods related to tasks such as create/destroying tasks and determining the amount work done ...
      - Users can write their simulation using the MSG APSs in these files and and supply the platform file to run the simulation
 ** Data Provenance
