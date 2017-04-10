@@ -1034,17 +1034,14 @@ j=$((header + i))
    done
  done
 #+END_SRC
-- Extract data from [[file:data/eco_val_modified_100.dat]]
+- After processing the files produced by the above code block using the python script used in the previous validation experiment, we get the following
+  .csv files: [[file:data/eco_val_modified_100.csv]], [[file:data/eco_val_modified_576.csv]], [[file:data/eco_val_modified_1000.csv]], and
+  [[file:data/eco_val_modified_1500.csv]]
 #+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100) :exports code
-- Extract data from file:data/eco_val_modified_576.dat
 #+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576) : exports code
-- Extract data from [[file:data/eco_val_modified_1000.dat]]
 #+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000) :exports code
-- Extract data from [[file:data/eco_val_modified_1500.dat]]
 #+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500) :exports code
-- Running the above calls produces [[file:data/eco_val_modified_100.csv]], [[file:data/eco_val_modified_576.csv]], [[file:data/eco_val_modified_1000.csv]], and
-  [[file:data/eco_val_modified_1500.csv]].
-- When we plot the above data we get the graph shown below
+- The graph shown below plots the power consumption for a given traffic volume for each of the four packet sizes -  100, 576, 1000 and 1500 bytes
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_modified_all.png :exports both 
 library(ggplot2)
 val_100 = read.csv("data/eco_val_modified_100.csv", header=T)
