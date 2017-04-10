@@ -989,7 +989,7 @@ val_1500 = read.csv("data/eco_val_1500.csv", header=T)
 all_data = rbind(val_100,val_576,val_1000,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Throughput))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-(0 or 1)"))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-(0 or 2)"))+
    geom_point(aes(y = Cons_Expected, colour = "Expected"))+
    facet_grid(.~Packet_Size)+
    ylab(label="Power Consumption in Watt")+
@@ -1051,7 +1051,7 @@ val_1500 = read.csv("data/eco_val_modified_1500.csv", header=T)
 all_data = rbind(val_100,val_576,val_1000,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Throughput))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-(0 or 1)"))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-(0 or 2)"))+
    geom_point(aes(y = Cons_Expected, colour = "Expected"))+
    facet_grid(.~Packet_Size)+
    ylab(label="Power Consumption in Watt")+
