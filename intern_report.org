@@ -1035,13 +1035,13 @@ j=$((header + i))
  done
 #+END_SRC
 - Extract data from [[file:data/eco_val_modified_100.dat]]
-#+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100) :exports both
+#+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100) :exports code
 - Extract data from file:data/eco_val_modified_576.dat
-#+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576) : exports both
+#+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576) : exports code
 - Extract data from [[file:data/eco_val_modified_1000.dat]]
-#+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000) :exports both
+#+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000) :exports code
 - Extract data from [[file:data/eco_val_modified_1500.dat]]
-#+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500) :exports both
+#+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500) :exports code
 - Running the above calls produces [[file:data/eco_val_modified_100.csv]], [[file:data/eco_val_modified_576.csv]], [[file:data/eco_val_modified_1000.csv]], and
   [[file:data/eco_val_modified_1500.csv]].
 - When we plot the above data we get the graph shown below
