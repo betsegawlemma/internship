@@ -1207,6 +1207,10 @@ ggplot(all_data,aes(x=Mbps))+
    theme(legend.position="top",
          panel.margin = unit(1.2,"lines"))   
 #+END_SRC
+
+#+RESULTS:
+[[file:figures/ecof_val_recieve.png]]
+
 **** Validating the send/transmitting end 
 - For the transmitting end there is only one model in the paper mentioned above and the packet size used for that model is 1000. We only used the data
   for packet size 1000 in this case
