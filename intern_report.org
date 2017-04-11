@@ -212,8 +212,8 @@ CLOSED: [2017-03-22 mer. 08:25]
 ** Week 2 January 
     - Bibliography reviewed
 **** Questions 
-    - Taking the topology shown [[ifile:img/scenario.png][here]] (taken from ECOFEN) as an example, the objective of my internship is to use the ECOFEN energy model shown [[file:img/model.png][here]] in
-      SimGrid simulator because SimGrid uses flow-based modeling
+    - Taking the topology shown [[ifile:img/scenario.png][here]] (taken from ECOFEN) as an example, is the objective of my internship is to use the ECOFEN energy model shown [[file:img/model.png][here]]
+      in SimGrid simulator because SimGrid uses flow-based modeling?
     - What I need to add to the above model is, the flow parameters such as bandwidth of the links, and the size of traffic, then model the effect of
       each flow passing through a given link on the length of time it took to transfer the given traffic. Is this a correct paraphrase of what I am
       expected to do in this internship? 
@@ -529,8 +529,10 @@ lines(EIE,lw="2")
 ** Week 3 March
 - Wrote first draft of the background part
 *** Validating the linear model of ECOFEN
-- For validating ECOFEN, the experiment found in section E (Per-Byte Total Energy) in this paper [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption
-  in the NetFPGA Gigabit router]] is used
+- For validating [[http://people.irisa.fr/Anne-Cecile.Orgerie/ECOFEN/ECOFEN-user-manual.pdf][ECOFEN]], the experiment found in section E (Per-Byte Total Energy) in this paper [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption
+  in the NetFPGA Gigabit router]] is used. 
+- The models used in ECOFEN are from this paper. Therefore, the objective of this experiment is to compare the implemented model with the models
+  available in the paper
 - In this paper, depicted on Figure 6 there are four linear energy models that are obtained from actual measurements. 
 - Here is the procedure followed to (in)validate the linear model implemented in ECOFEN using these four models
   - Setup an experiment under the same condition as specified in the paper, the following table shows the parameters used
@@ -891,8 +893,8 @@ points(Cons_Node2~Throughput,col="darkred",pch=4,lwd=0.5)
 #+RESULTS:
 [[file:figures/flow_energy.png]]
 
-- The shape of the plots shown above is not what I was expecting to see from a linear model, therefore I have decided to re-run another validation
-  experiment this time with large data and using the other equations shown in [[file:figures/powervsdatarate.pdf][Figure 4]] in the paper - [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy
+- The shape of the plots shown above is not what I was expecting to see from a linear model, therefore I have decided to run another validation
+  experiment this time with large data set and using the other equations shown in [[file:figures/powervsdatarate.pdf][Figure 4]] in the paper - [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy
   consumption in the NetFPGA Gigabit router.]]
 *** Validating ECOFEN's model using power consumption vs data rate against equations derived from actual measurements shown in  [[file:figures/powervsdatarate.pdf][Figure 4]]
 | Parameters        | Values            |
@@ -1037,10 +1039,10 @@ j=$((header + i))
 - After processing the files produced by the above code block using the python script used in the previous validation experiment, we get the following
   .csv files: [[file:data/eco_val_modified_100.csv]], [[file:data/eco_val_modified_576.csv]], [[file:data/eco_val_modified_1000.csv]], and
   [[file:data/eco_val_modified_1500.csv]]
-#+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100) :exports code
-#+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576) : exports code
-#+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000) :exports code
-#+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500) :exports code
+#+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100) 
+#+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576) 
+#+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000) 
+#+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500) 
 - The graph shown below plots the power consumption for a given traffic volume for each of the four packet sizes -  100, 576, 1000 and 1500 bytes
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_modified_all.png :exports both 
 library(ggplot2)
@@ -1063,8 +1065,184 @@ ggplot(all_data,aes(x=Throughput))+
 #+RESULTS:
 [[file:figures/ecof_val_modified_all.png]]
 
+**** Analysis
+     - From the plot it seems that the model implemented in ECOFEN is the one for packet size 1000 bytes. For packet size 1000 bytes the the simulated
+       and expected consumption agrees very well. The 95% CI of the mean difference lies between 0.009692744  and 0.019067202. The mean of the
+       difference is 0.0144 as shown below.  
+     #+BEGIN_SRC R :results output :var validation=validation :exports both 
+       val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
+       attach(val_1000)
+       t.test(Cons_Expected,Cons_Node2,paired=TRUE,conf.level=0.95)
+     #+END_SRC
+
+     #+RESULTS:
+     #+begin_example
+
+       Paired t-test
+
+     data:  Cons_Expected and Cons_Node2
+     t = 6.2655, df = 30, p-value = 6.654e-07
+     alternative hypothesis: true difference in means is not equal to 0
+     95 percent confidence interval:
+      0.009692744 0.019067202
+     sample estimates:
+     mean of the differences 
+                  0.01437997 
+
+#+end_example
+
 *** Validating the Complete Model of ECOFEN
+- Validating the Complete Model can be done in two steps: validating the model used in the packet receiving side and validating the model used in the
+  packet sending side
+- The previous NS-3 script is modified to use ECOFEN's complete model and to compute the expected results from the models shown in
+  [[file:figures/energy_for_recieving.pdf][Figure 7]] and [[file:figures/energy_for_transmitting.pdf][Figure 8]] of [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption in the NetFPGA Gigabit router]]
+- The objective of this experiment is to compare the implemented models with the ones available in the paper mentioned.
+- The following table shows the parameters and the corresponding values used in this experiment
+
+| Parameters                      | Values                         |
+|---------------------------------+--------------------------------|
+| Traffic Volume (Mbps)           | Random value in range [1,1800] |
+| Packet size (header + payload)  | 576, 1000, 1500                |
+| Simulation time (in seconds)    | 1                              |
+| Idle power consumption  (watts) | 10.242                         |
+| RecvByteEnergy                  | sum_of(0.8,0.5)                |
+| SentByteEnergy                  | sum_of(1.6,0.5)                |
+| RecvPktEnergy                   | 197.2                          |
+| SentPktEnergy                   | 197.2                          |
+
+- In this experiment, similar to the previous validation experiments, there are three nodes- Node-0, Node-1, and Node-2. Node-0 sends packets at a
+  random rate within a range of 1 Mbps and 1800 Mbps. We are interested in the power consumption at Node-0 as a sending end and power consumption at
+  Node-2 as a receiving end. 
+- Therefore our plan is to compare the power consumption of *Node-0* with the computed consumption from the model shown in [[file:figures/energy_for_transmitting.pdf][Figure 8]] and to compare the
+  power consumption of *Node-1* with the computed consumption from the models shown in  [[file:figures/energy_for_recieving.pdf][Figure 7]] 
+- Since the traffic unit used in Figure 8's model is packets per second (PPS), the NS-3 script used in this experiment outputs the traffic volume at
+  the sending end in terms of PPS for receiving end it outputs in terms of Mbps, that is the unit used in Figure 7.   
+- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell block below, produces [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
+  [[file:data/eco_val_complete_1500.dat]] files.
+
+#+BEGIN_SRC bash :results output :exports both
+#! /bin/bash
+cd ~/ns3workspace/source/ns-3.26
+array=(548 972 1472)
+header=28
+for i in ${array[@]}; do
+j=$((header + i))
+  for ((k=1; k<=50; k++)); do
+ ./waf --run "scratch/validate_ecofen_complete --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_complete_${j}.dat 2>&1
+   done
+ done
+#+END_SRC
+
+- Since the  output data format is different from what we have used in the earlier experiment, the python script for formatting the output is modified
+  to accommodate this change as shown below.
+#+NAME: extract_complete_data
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/eco_val_complete_576.dat" :var output_file="data/eco_val_complete_576.csv" :var size=576
+
+import sys
+
+idle = True
+header = True
+initial = {   0:10.47614679, # constant value for the sending model
+            576:10.57174099,
+            1000:10.59425234,
+            1500:10.55614183} # the last three are constant values for the linear models of the recieving models when the throughput is 0
+            
+# data variable holds one line of data formated as 'Throughput', 'Node-0 consumption', 
+# 'Node-1 Consumption', 'Node-2 Consumption', 'Total Consumption'
+data = []
+
+total_power = 0.0 # total power consumped as a sum of node-0, node-1 and node-2 consumption
+
+with open(input_file) as fe:
+    for line in fe:
+       if line.startswith("Time"): # ignores unnecessary lines in the input file
+          list = line.split()
+          if idle: # extract the power consumption data at time 0 when the nodes are idle
+              if list[1]=="0" and list[3]!="2":
+                 data.append(list[5])
+                 total_power += float(list[5])
+              elif list[1]=="0" and list[3]=="2":
+                 idle=False
+                 data.insert(0, "0.0")
+                 data.insert(1, "0.0")
+                 data.append(list[5])
+                 total_power += float(list[5])
+                 data.append(str(total_power))
+                 data.append(str(initial[size])) # constant value for recieving end model
+                 data.append(str(initial[0])) # constant value for sending end model
+                 data.append(str(size)) # packet size for grouping data
+          else: # extract the rest of power consumption and throughput data
+              if list[1]!="0" and list[2]!="Mbps":
+                 data.append(list[5])
+                 total_power += float(list[5])
+              elif list[2]=="Mbps":
+                 data.insert(0,list[3])
+                 data.insert(1,list[5])
+                 data.append(str(total_power))
+                 data.append(list[9])
+                 data.append(list[11])
+                 data.append(str(int(list[7])+28))
+          with open(output_file,"a") as of:
+              if len(data) == 9:
+                  if header: # writes the header and the idle consumption
+                      of.write("%s\n" % "Mbps,PacketPerSec,Cons_Node0,Cons_Node1,Cons_Node2,Cons_Total,Cons_ExpecMbps,Cons_ExpecPps,Packet_Size")
+                      of.write("%s\n" % ",".join(data))
+                      header = False
+                      del data[:]
+                  else: # writes the rest of the consumption
+                      of.write("%s\n" % ",".join(data))
+                      del data[:]
+#+END_SRC
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_576.dat", output_file="data/eco_val_complete_576.csv",size=576) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_1000.dat", output_file="data/eco_val_complete_1000.csv",size=1000) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_1500.dat", output_file="data/eco_val_complete_1500.csv",size=1500) 
+- Running the above python script using the raw data [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
+  [[file:data/eco_val_complete_1500.dat]] gives us the corresponding formatted files: [[file:data/eco_val_complete_576.csv]],
+  [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
+- The .csv files have the following format
+| Received Traffic (in Mbps) | Transmitted Traffic (in PPS) | Node-0 Consumption | Node-1 Consumption | Node-2 Consumption | Total Consumption | Expected Consumption for Receive | Expected Consumption for Transmit | Packet Size |
+|----------------------------+------------------------------+--------------------+--------------------+--------------------+-------------------+----------------------------------+-----------------------------------+-------------|
+**** Validating the receive end 
+#+BEGIN_SRC R :results output graphics :file figures/ecof_val_recieve.png :exports both 
+library(ggplot2)
+val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
+val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
+val_1500 = read.csv("data/eco_val_complete_1500.csv", header=T)
+all_data = rbind(val_576,val_1000,val_1500)
+attach(all_data)
+ggplot(all_data,aes(x=Mbps))+
+   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2)"))+
+   geom_point(aes(y = Cons_ExpecMbps, colour = "Expected"))+
+   facet_grid(.~Packet_Size)+
+   ylab(label="Power Consumption in Watt")+
+   xlab(label="Traffic in Mbps")+
+   theme(legend.position="top",
+         panel.margin = unit(1.2,"lines"))   
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ecof_val_recieve.png]]
+**** Validating the send/transmitting end 
+- For the transmitting end there is only one model in the paper mentioned above and the packet size used for that model is 1000. We only used the data
+  for packet size 1000 in this case
+#+BEGIN_SRC R :results output graphics :file figures/ecof_val_send.png :exports both 
+library(ggplot2)
+val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
+attach(val_1000)
+ggplot(val_1000,aes(x=Mbps))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-2)"))+
+   geom_point(aes(y = Cons_ExpecPps, colour = "Expected"))+
+   ylab(label="Power Consumption in Watt")+
+   xlab(label="Traffic in PPS")+
+   theme(legend.position="top")   
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ecof_val_send.png]]
+**** Analysis
+     - In both validation cases there is a constant gap between the simulated and the expected consumption.
 *** Validating the Basic Model of ECOFEN
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
