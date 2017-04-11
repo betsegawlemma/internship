@@ -1,0 +1,28 @@
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{Abbreviations and Acronyms}{4}{chapter*.1}
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Problem statement}{7}{section.1.1}
+\contentsline {section}{\numberline {1.2}Helpful hints}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Structure of the Thesis}{7}{section.1.3}
+\contentsline {chapter}{\numberline {2}Background}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Energy consumption of IT devices}{8}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Energy consumption of network devices}{8}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Simulating energy consumption}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Simulating energy consumption of network devices}{8}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Packet-level and flow-level models}{8}{subsubsection.2.2.1.1}
+\contentsline {subsection}{\numberline {2.2.2}SimGrid}{8}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Environment}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}LaTeX working environments}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Environment}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Editor}{9}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Graphics}{10}{section.3.2}
+\contentsline {chapter}{\numberline {4}Methods}{13}{chapter.4}
+\contentsline {chapter}{\numberline {5}Implementation}{15}{chapter.5}
+\contentsline {chapter}{\numberline {6}Evaluation}{16}{chapter.6}
+\contentsline {chapter}{\numberline {7}Discussion}{17}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusions}{18}{chapter.8}
+\contentsline {chapter}{\numberline {A}First appendix}{20}{appendix.A}
