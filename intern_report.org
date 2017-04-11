@@ -617,13 +617,14 @@ mean of the differences
 - Since we have subtracted the expected measured power consumption value from the simulated value, the positive CI means that, the simulator model
   slightly over estimates the energy consumption
 - the average estimation error is ~1.14 % of the average expected power value computed as shown below
-#+BEGIN_SRC R :results output :var validation=validation 
+#+BEGIN_SRC R :results output :var validation=validation :exports both 
 attach(validation)
 mean(Difference)/mean(ExpectedPower)*100
 #+END_SRC
+- The mean is:
+#+RESULTS:
+: [1] 1.136636
 
-RESULTS:
- 1.136636
 *** Experiment for proposing flow-level model for SimGrid
 - The objective of this experiment is to study the relationship between data transfer rate or bandwidth and energy consumption and based on the
   result, to propose flow-level analytical model which estimate energy consumption of large-scale networks
