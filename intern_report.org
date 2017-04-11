@@ -575,27 +575,27 @@ lines(EIE,lw="2")
 - In the script the inter-packet interval is computed by dividing 1 second by the number of packets
 **** Validation Result
 - first check if we can assume normal distribution for the population from which the sample came from 
-#+BEGIN_SRC R :results output :var validation=validation 
+#+BEGIN_SRC R :results output :var validation=validation :exports both 
 attach(validation)
 shapiro.test(Difference)
 #+END_SRC
 
-RESULTS:
-
- 	Shapiro-Wilk normality test
- 
- data:  Difference
- W = 0.9055, p-value = 0.09847
-
-- The result p > 0.05 tells us that we can carry on with our assumption that the sample came from normal distribution
+#+RESULTS:
+: 
+: 	Shapiro-Wilk normality test
+: 
+: data:  Difference
+: W = 0.9055, p-value = 0.09847
+: 
+ The result p > 0.05 tells us that we can carry on with our assumption that the sample came from normal distribution
 - Now, to answer if the two power consumption estimates are significantly different, we run paired t-test 
-#+BEGIN_SRC R :results output :var validation=validation 
+#+BEGIN_SRC R :results output :var validation=validation :exports both 
 attach(validation)
 t.test(SimulatedPower,ExpectedPower,paired=TRUE,conf.level=0.95)
 mean(ExpectedPower)
 #+END_SRC
 
-RESULTS:
+#+RESULTS:
 #+begin_example
 
 	Paired t-test
@@ -611,15 +611,6 @@ mean of the differences
 
 [1] 10.40351
 #+end_example
-
-**** Root Mean Squared Error
-#+BEGIN_SRC R :results output :var validation=validation 
-attach(validation)
-sqrt(mean((SimulatedPower-ExpectedPower)^2,na.rm=TRUE))
-#+END_SRC
-
-#+RESULTS:
-: [1] 0.1611783
 
 **** Conclusion about the validation
 - With 95% confidence, we can say that the average difference between the two power consumption estimation lies between 0.05797514  and 0.17852486
@@ -979,7 +970,6 @@ with open(input_file) as fe:
                       of.write("%s\n" % ",".join(data))
                       del data[:]
 #+END_SRC
-
 *** Plot of the validation result
 - Comparison of simulated and measured/expected consumption for packet sizes 100, 576, 1000, and 1500 bytes
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_all.png :exports both 
@@ -1066,7 +1056,7 @@ ggplot(all_data,aes(x=Throughput))+
 [[file:figures/ecof_val_modified_all.png]]
 
 **** Analysis
-     - From the plot it seems that the model implemented in ECOFEN is the one for packet size 1000 bytes. For packet size 1000 bytes the the simulated
+     - From the plot it seems that the model implemented in ECOFEN is the one for packet size 1000 bytes. For packet size 1000 bytes the simulated
        and expected consumption agrees very well. The 95% CI of the mean difference lies between 0.009692744  and 0.019067202. The mean of the
        difference is 0.0144 as shown below.  
      #+BEGIN_SRC R :results output :var validation=validation :exports both 
@@ -1116,8 +1106,8 @@ ggplot(all_data,aes(x=Throughput))+
 - Therefore our plan is to compare the power consumption of *Node-0* with the computed consumption from the model shown in [[file:figures/energy_for_transmitting.pdf][Figure 8]] and to compare the
   power consumption of *Node-1* with the computed consumption from the models shown in  [[file:figures/energy_for_recieving.pdf][Figure 7]] 
 - Since the traffic unit used in Figure 8's model is packets per second (PPS), the NS-3 script used in this experiment outputs the traffic volume at
-  the sending end in terms of PPS for receiving end it outputs in terms of Mbps, that is the unit used in Figure 7.   
-- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell block below, produces [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
+  the sending end in terms of PPS. For the receiving end, it outputs in terms of Mbps, that is the unit used in Figure 7.   
+- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below, produces [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
   [[file:data/eco_val_complete_1500.dat]] files.
 
 #+BEGIN_SRC bash :results output :exports both
@@ -1199,9 +1189,6 @@ with open(input_file) as fe:
 - Running the above python script using the raw data [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
   [[file:data/eco_val_complete_1500.dat]] gives us the corresponding formatted files: [[file:data/eco_val_complete_576.csv]],
   [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
-- The .csv files have the following format
-| Received Traffic (in Mbps) | Transmitted Traffic (in PPS) | Node-0 Consumption | Node-1 Consumption | Node-2 Consumption | Total Consumption | Expected Consumption for Receive | Expected Consumption for Transmit | Packet Size |
-|----------------------------+------------------------------+--------------------+--------------------+--------------------+-------------------+----------------------------------+-----------------------------------+-------------|
 **** Validating the receive end 
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_recieve.png :exports both 
 library(ggplot2)
