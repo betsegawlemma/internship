@@ -621,7 +621,7 @@ mean of the differences
 attach(validation)
 mean(Difference)/mean(ExpectedPower)*100
 #+END_SRC
-- The mean is:
+
 #+RESULTS:
 : [1] 1.136636
 
@@ -1207,9 +1207,6 @@ ggplot(all_data,aes(x=Mbps))+
    theme(legend.position="top",
          panel.margin = unit(1.2,"lines"))   
 #+END_SRC
-
-#+RESULTS:
-[[file:figures/ecof_val_recieve.png]]
 **** Validating the send/transmitting end 
 - For the transmitting end there is only one model in the paper mentioned above and the packet size used for that model is 1000. We only used the data
   for packet size 1000 in this case
@@ -1228,7 +1225,7 @@ ggplot(val_1000,aes(x=Mbps))+
 #+RESULTS:
 [[file:figures/ecof_val_send.png]]
 **** Analysis
-     - In both validation cases there is a constant gap between the simulated and the expected consumption.
+     - In both receive and send validation cases there is a constant gap between the simulated and the expected consumption.
 *** Validating the Basic Model of ECOFEN
 
 * Development
