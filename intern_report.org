@@ -1009,9 +1009,9 @@ terminate called after throwing an instance of 'std::bad_alloc'
 ** Week 2 April
 *** Corrected validation experiment for the Linear Model of ECOFEN 
 - After a diagnostic run of the previous experiment, Martin explained that the problem seems that when the simulation loops in the same Unix process,
-  the consumption of the previous run was carried on to the next run even if *Simulation::Destroy()* was called before the loop ends. 
+  the consumption of the previous run was carried on to the next run even if *Simulation::Destroy()* was called before the entering the next loop. 
 - The solution to the issue is to run the loop outside the NS-3 script, in the shell script.
-- Accordingly the original NS-3 script is [[file:ns3/validate_ecofen_modified.cc][modified]] to remove the loop 
+- Accordingly, the original NS-3 script is [[file:ns3/validate_ecofen_modified.cc][modified]] to remove the loop 
 - The NS-3 script is also modified to use random traffic volume generated from uniform random value generator
 - The following code block runs the modified script to produce the updated raw data files: [[file:data/eco_val_modified_100.dat]],
   [[file:data/eco_val_modified_576.dat]], [[file:data/eco_val_modified_1000.dat]], and [[file:data/eco_val_modified_1500.dat]]
@@ -1058,7 +1058,7 @@ ggplot(all_data,aes(x=Throughput))+
 
 **** Analysis
      - From the plot it seems that the model implemented in ECOFEN is the one for packet size 1000 bytes. For packet size 1000 bytes the simulated
-       and expected consumption agrees very well as it is shown in the Unpaired t-test below.
+       and expected consumption agrees very well as it is shown in the unpaired t-test below.
      #+BEGIN_SRC R :results output :var validation=validation :exports both 
        val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
        attach(val_1000)
@@ -1085,11 +1085,11 @@ ggplot(all_data,aes(x=Throughput))+
   or it is as a result of false-positive. 
 
 *** Validating the Complete Model of ECOFEN
-- Validating the Complete Model can be done in two steps: validating the model used in the packet receiving side and validating the model used in the
-  packet sending side
+- Validating the Complete Model can be done in two steps: *validating the model used in the packet receiving side* and *validating the model used in
+  the packet sending side*
 - The previous NS-3 script is modified to use ECOFEN's complete model and to compute the expected results from the models shown in
   [[file:figures/energy_for_recieving.pdf][Figure 7]] and [[file:figures/energy_for_transmitting.pdf][Figure 8]] of [[http://ieeexplore.ieee.org/document/5928833/][Profiling per-packet and per-byte energy consumption in the NetFPGA Gigabit router]]
-- The objective of this experiment is to compare the implemented models with the ones available in the paper mentioned.
+- The objective of this experiment is to compare the implemented models with the ones available in the paper.
 - The following table shows the parameters and the corresponding values used in this experiment
 
 | Parameters                      | Values                         |
@@ -1103,15 +1103,15 @@ ggplot(all_data,aes(x=Throughput))+
 | RecvPktEnergy                   | 197.2                          |
 | SentPktEnergy                   | 197.2                          |
 
-- In this experiment, similar to the previous validation experiments, there are three nodes- Node-0, Node-1, and Node-2. Node-0 sends packets at a
-  random rate within a range of 1 Mbps and 1800 Mbps. We are interested in the power consumption at Node-0 as a sending end and power consumption at
-  Node-2 as a receiving end. 
+- In this experiment, similar to the previous validation experiments, there are three simulated nodes: *Node-0*, *Node-1*, and *Node-2*. Node-0 sends
+  packets to Node-2 at a random rate within a range of 1 Mbps and 1800 Mbps. We are interested in the power consumption at Node-0 as a sending end and
+  at Node-2 as a receiving end. 
 - Therefore our plan is to compare the power consumption of *Node-0* with the computed consumption from the model shown in [[file:figures/energy_for_transmitting.pdf][Figure 8]] and to compare the
-  power consumption of *Node-1* with the computed consumption from the models shown in  [[file:figures/energy_for_recieving.pdf][Figure 7]] 
+  power consumption of *Node-2* with the computed consumption from the models shown in  [[file:figures/energy_for_recieving.pdf][Figure 7]] 
 - Since the traffic unit used in Figure 8's model is packets per second (PPS), the NS-3 script used in this experiment outputs the traffic volume at
   the sending end in terms of PPS. For the receiving end, it outputs in terms of Mbps, that is the unit used in Figure 7.   
-- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below, produces [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
-  [[file:data/eco_val_complete_1500.dat]] files.
+- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below produces files: [[file:data/eco_val_complete_576.dat]],
+  [[file:data/eco_val_complete_1000.dat]], and [[file:data/eco_val_complete_1500.dat]].
 
 #+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
@@ -1126,8 +1126,8 @@ j=$((header + i))
  done
 #+END_SRC
 
-- Since the  output data format is different from what we have used in the earlier experiment, the python script for formatting the output is modified
-  to accommodate this change as shown below.
+- Since the  output data format is different from what we have used in the earlier validation experiment, the python script for formatting the output
+  is modified to accommodate this change as shown below.
 #+NAME: extract_complete_data
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/eco_val_complete_576.dat" :var output_file="data/eco_val_complete_576.csv" :var size=576
 
@@ -1192,7 +1192,7 @@ with open(input_file) as fe:
 - Running the above python script using the raw data [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
   [[file:data/eco_val_complete_1500.dat]] gives us the corresponding formatted files: [[file:data/eco_val_complete_576.csv]],
   [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
-**** Validating the receive end 
+**** Validating the receiving end 
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_recieve.png :exports both 
 library(ggplot2)
 val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
@@ -1212,7 +1212,7 @@ ggplot(all_data,aes(x=Mbps))+
 
 #+RESULTS:
 [[file:figures/ecof_val_recieve.png]]
-  - If we compare the simulated and the expected consumption using unpaired t-test for the middle plot, we get the following  
+  - If we compare the simulated and the expected consumption using unpaired t-test for the middle plot, we get the following result. 
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
        val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
        attach(val_1000)
@@ -1235,9 +1235,9 @@ mean of x mean of y
 #+end_example
 - the p-value in the above test, which is less than 0.05 for the 95% confidence level, tells us that the null hypothesis that the difference in mean
   is 0 is rejected, which means the difference is true positive or it is not by chance.  
-**** Validating the send/transmitting end 
+**** Validating the sending/transmitting end 
 - For the transmitting end there is only one model in the paper mentioned above and the packet size used for that model is 1000. We only used the data
-  for packet size 1000 in this case
+  for packet size 1000 in this plot. 
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_send.png :exports both 
 library(ggplot2)
 val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
@@ -1253,7 +1253,7 @@ ggplot(val_1000,aes(x=Mbps))+
 #+RESULTS:
 [[file:figures/ecof_val_send.png]]
 
-  - If we compare the simulated and the expected consumption using unpaired t-test, we get the following
+  - If we compare the simulated and the expected consumption using unpaired t-test, we get the following result
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
        val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
        attach(val_1000)
