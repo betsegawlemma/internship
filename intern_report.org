@@ -591,32 +591,31 @@ shapiro.test(Difference)
 - Now, to answer if the two power consumption estimates are significantly different, we run paired t-test 
 #+BEGIN_SRC R :results output :var validation=validation :exports both 
 attach(validation)
-t.test(SimulatedPower,ExpectedPower,paired=TRUE,conf.level=0.95)
+t.test(SimulatedPower,ExpectedPower,paired=FALSE,conf.level=0.95)
 mean(ExpectedPower)
 #+END_SRC
 
 #+RESULTS:
 #+begin_example
 
-	Paired t-test
+	Welch Two Sample t-test
 
 data:  SimulatedPower and ExpectedPower
-t = 4.1816, df = 15, p-value = 0.0008022
+t = 1.7288, df = 22.871, p-value = 0.09733
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- 0.05797514 0.17852486
+ -0.02329356  0.25979356
 sample estimates:
-mean of the differences 
-                0.11825 
+mean of x mean of y 
+ 10.52176  10.40351 
 
 [1] 10.40351
 #+end_example
 
 **** Conclusion about the validation
-- With 95% confidence, we can say that the average difference between the two power consumption estimation lies between 0.05797514  and 0.17852486
-- Since we have subtracted the expected measured power consumption value from the simulated value, the positive CI means that, the simulator model
-  slightly over estimates the energy consumption
-- the average estimation error is ~1.14 % of the average expected power value computed as shown below
+- With 95% confidence, we can say that the average difference between the two power consumption estimation lies between -0.02329356 and 0.25979356.
+- The p-value tells us that the null hypothesis that the difference in mean is 0 is not rejected. Further more, from the 95% confidence interval we
+  can see that 0 is in the interval which means the difference is by chance or it is false-positive.    
 #+BEGIN_SRC R :results output :var validation=validation :exports both 
 attach(validation)
 mean(Difference)/mean(ExpectedPower)*100
@@ -1058,29 +1057,30 @@ ggplot(all_data,aes(x=Throughput))+
 
 **** Analysis
      - From the plot it seems that the model implemented in ECOFEN is the one for packet size 1000 bytes. For packet size 1000 bytes the simulated
-       and expected consumption agrees very well. The 95% CI of the mean difference lies between 0.009692744  and 0.019067202. The mean of the
-       difference is 0.0144 as shown below.  
+       and expected consumption agrees very well as it is shown in the Unpaired t-test below.
      #+BEGIN_SRC R :results output :var validation=validation :exports both 
        val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
        attach(val_1000)
-       t.test(Cons_Expected,Cons_Node2,paired=TRUE,conf.level=0.95)
+       t.test(Cons_Expected,Cons_Node2,paired=FALSE,conf.level=0.95)
      #+END_SRC
 
      #+RESULTS:
      #+begin_example
 
-       Paired t-test
+       Welch Two Sample t-test
 
      data:  Cons_Expected and Cons_Node2
-     t = 6.2655, df = 30, p-value = 6.654e-07
+     t = 0.48502, df = 59.292, p-value = 0.6294
      alternative hypothesis: true difference in means is not equal to 0
      95 percent confidence interval:
-      0.009692744 0.019067202
+      -0.04493954  0.07369949
      sample estimates:
-     mean of the differences 
-                  0.01437997 
-
+     mean of x mean of y 
+      10.44507  10.43069 
 #+end_example
+
+- The p-value tells us that the null hypothesis that the difference in mean is 0 is not rejected. Further more, from the 95% confidence interval we
+  can also see that 0 is in the interval which means the difference is by chance or it is as a result of false-positive. 
 
 *** Validating the Complete Model of ECOFEN
 - Validating the Complete Model can be done in two steps: validating the model used in the packet receiving side and validating the model used in the
@@ -1210,7 +1210,29 @@ ggplot(all_data,aes(x=Mbps))+
 
 #+RESULTS:
 [[file:figures/ecof_val_recieve.png]]
+  - If we compare the simulated and the expected consumption using paired t-test for the middle plot, we get the following  
+ #+BEGIN_SRC R :results output :var validation=validation :exports both 
+       val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
+       attach(val_1000)
+       t.test(Cons_ExpecMbps,Cons_Node2,paired=FALSE,conf.level=0.95)
+#+END_SRC
 
+#+RESULTS:
+#+begin_example
+
+	Welch Two Sample t-test
+
+data:  Cons_ExpecMbps and Cons_Node2
+t = 17.229, df = 99.318, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.2996378 0.3776349
+sample estimates:
+mean of x mean of y 
+ 10.75146  10.41283 
+#+end_example
+- the p-value in the above test, which is less than 0.05 for the 95% confidence level, tells us that the null hypothesis that the difference in mean
+  is 0 is rejected, which means the difference is true positive or it is not by chance.  
 **** Validating the send/transmitting end 
 - For the transmitting end there is only one model in the paper mentioned above and the packet size used for that model is 1000. We only used the data
   for packet size 1000 in this case
@@ -1228,10 +1250,33 @@ ggplot(val_1000,aes(x=Mbps))+
 
 #+RESULTS:
 [[file:figures/ecof_val_send.png]]
-**** Analysis
-     - In both receive and send validation cases there is a constant gap between the simulated and the expected consumption.
-*** Validating the Basic Model of ECOFEN
 
+  - If we compare the simulated and the expected consumption using paired t-test, we get the following
+ 
+ #+BEGIN_SRC R :results output :var validation=validation :exports both 
+       val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
+       attach(val_1000)
+       t.test(Cons_ExpecPps,Cons_Node0,paired=FALSE,conf.level=0.95)
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+
+	Welch Two Sample t-test
+
+data:  Cons_ExpecPps and Cons_Node0
+t = 7.0977, df = 99.407, p-value = 1.91e-10
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1546320 0.2746287
+sample estimates:
+mean of x mean of y 
+ 10.71876  10.50413 
+
+#+end_example
+- the p-value shown above, which is less than 0.05 for the 95% confidence level, tells us that the null hypothesis that the difference in mean is 0 is
+  rejected, which means the difference is true positive or it is not by chance.
+*** Validating the Basic Model of ECOFEN
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
