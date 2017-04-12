@@ -1210,7 +1210,7 @@ ggplot(all_data,aes(x=Mbps))+
 
 #+RESULTS:
 [[file:figures/ecof_val_recieve.png]]
-  - If we compare the simulated and the expected consumption using paired t-test for the middle plot, we get the following  
+  - If we compare the simulated and the expected consumption using unpaired t-test for the middle plot, we get the following  
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
        val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
        attach(val_1000)
@@ -1251,8 +1251,7 @@ ggplot(val_1000,aes(x=Mbps))+
 #+RESULTS:
 [[file:figures/ecof_val_send.png]]
 
-  - If we compare the simulated and the expected consumption using paired t-test, we get the following
- 
+  - If we compare the simulated and the expected consumption using unpaired t-test, we get the following
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
        val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
        attach(val_1000)
