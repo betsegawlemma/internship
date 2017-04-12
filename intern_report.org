@@ -615,7 +615,8 @@ mean of x mean of y
 **** Conclusion about the validation
 - With 95% confidence, we can say that the average difference between the two power consumption estimation lies between -0.02329356 and 0.25979356.
 - The p-value tells us that the null hypothesis that the difference in mean is 0 is not rejected. Further more, from the 95% confidence interval we
-  can see that 0 is in the interval which means the difference is by chance or it is false-positive.    
+  can also see that 0 is in the interval. From which we can say there is no difference between the two consumption, the difference we see is by chance
+  or it is as a result of false-positive. 
 #+BEGIN_SRC R :results output :var validation=validation :exports both 
 attach(validation)
 mean(Difference)/mean(ExpectedPower)*100
@@ -1080,7 +1081,8 @@ ggplot(all_data,aes(x=Throughput))+
 #+end_example
 
 - The p-value tells us that the null hypothesis that the difference in mean is 0 is not rejected. Further more, from the 95% confidence interval we
-  can also see that 0 is in the interval which means the difference is by chance or it is as a result of false-positive. 
+  can also see that 0 is in the interval. From which we can say there is no difference between the two consumption, the difference we see is by chance
+  or it is as a result of false-positive. 
 
 *** Validating the Complete Model of ECOFEN
 - Validating the Complete Model can be done in two steps: validating the model used in the packet receiving side and validating the model used in the
