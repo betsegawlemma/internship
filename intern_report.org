@@ -615,7 +615,7 @@ mean of x mean of y
 **** Conclusion about the validation
 - With 95% confidence, we can say that the average difference between the two power consumption estimation lies between -0.02329356 and 0.25979356.
 - The p-value tells us that the null hypothesis that the difference in mean is 0 is not rejected. Further more, from the 95% confidence interval we
-  can also see that 0 is in the interval. From which we can say there is no difference between the two consumption, the difference we see is by chance
+  can also see that 0 is in the interval. From this we can say there is no difference between the two consumption, the difference we see is by chance
   or it is as a result of false-positive. 
 #+BEGIN_SRC R :results output :var validation=validation :exports both 
 attach(validation)
@@ -1081,7 +1081,7 @@ ggplot(all_data,aes(x=Throughput))+
 #+end_example
 
 - The p-value tells us that the null hypothesis that the difference in mean is 0 is not rejected. Further more, from the 95% confidence interval we
-  can also see that 0 is in the interval. From which we can say there is no difference between the two consumption, the difference we see is by chance
+  can also see that 0 is in the interval. From this we can say there is no difference between the two consumption, the difference we see is by chance
   or it is as a result of false-positive. 
 
 *** Validating the Complete Model of ECOFEN
@@ -1126,8 +1126,8 @@ j=$((header + i))
  done
 #+END_SRC
 
-- Since the  output data format is different from what we have used in the earlier validation experiment, the python script for formatting the output
-  is modified to accommodate this change as shown below.
+- Since the  output data format is different from what we have used in the earlier validation experiment, the python script used for formatting the
+  output is modified as shown below to accommodate this change.
 #+NAME: extract_complete_data
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/eco_val_complete_576.dat" :var output_file="data/eco_val_complete_576.csv" :var size=576
 
@@ -1277,6 +1277,9 @@ mean of x mean of y
 #+end_example
 - the p-value shown above, which is less than 0.05 for the 95% confidence level, tells us that the null hypothesis that the difference in mean is 0 is
   rejected, which means the difference is true positive or it is not by chance.
+- for both the sending and the receiving end, even though the statistical tests say the difference is significant, the 95% confidence intervals tells
+  us that the absolute difference between the two consumption is not very far from zero. The 95% CI for the receiving end for the packet size 1000 is
+  [0.2996378,0.3776349], and for the sending end is [0.1546320, 0.2746287]. 
 *** Validating the Basic Model of ECOFEN
 * Development
    - SimGrid HostEnergy plugin
