@@ -1091,16 +1091,16 @@ ggplot(all_data,aes(x=Throughput))+
 - The objective of this experiment is to compare the implemented models with the ones available in the paper.
 - The following table shows the parameters and the corresponding values used in this experiment
 
-| Parameters                      | Values                         |
-|---------------------------------+--------------------------------|
-| Traffic Volume (Mbps)           | Random value in range [1,1800] |
-| Packet size (header + payload)  | 576, 1000, 1500                |
-| Simulation time (in seconds)    | 1                              |
-| Idle power consumption  (watts) | 10.242                         |
-| RecvByteEnergy                  | sum_of(0.8,0.5)                |
-| SentByteEnergy                  | sum_of(1.6,0.5)                |
-| RecvPktEnergy                   | 197.2                          |
-| SentPktEnergy                   | 197.2                          |
+| Parameters                      | Values                                  |
+|---------------------------------+-----------------------------------------|
+| Traffic Volume (Mbps)           | Random value in range [1,1800]          |
+| Packet size (header + payload)  | 576, 1000, 1500                         |
+| Simulation time (in seconds)    | 1                                       |
+| Idle power consumption  (watts) | the constant value in the linear models |
+| RecvByteEnergy                  | sum_of(0.8,0.5)                         |
+| SentByteEnergy                  | sum_of(1.6,0.5)                         |
+| RecvPktEnergy                   | 197.2                                   |
+| SentPktEnergy                   | 197.2                                   |
 
 - In this experiment, similar to the previous validation experiments, there are three simulated nodes: *Node-0*, *Node-1*, and *Node-2*. Node-0 sends
   packets to Node-2 at a random rate within a range of 1 Mbps and 1800 Mbps. We are interested in the power consumption at Node-0 as a sending end and
@@ -1257,8 +1257,10 @@ ggplot(val_1000,aes(x=Mbps))+
 |        1500 | Receiving | [-0.01301081,0.08233968] |         10.75565 |          10.72098 |  0.1517 |
 |        1000 | Sending   | [-0.08695043,0.04715759] |         10.72351 |          10.74340 |  0.5565 |
 
-- From all of the p-values shown above, which are less than 0.05 for the 95% confidence level, tells us that the null hypothesis that the difference
-  in mean is 0 is rejected in all of the three cases, which means the difference is true positive or it is not by chance.
+- The p-values tells us that the null hypothesis that the difference in mean is 0 is not rejected in all cases. Further more, from the 95% confidence
+  interval we can also see that 0 is in the interval. From this we can say there is no difference between the two consumption, the difference we see
+  is by chance or it is as a result of false-positive.
+
 *** Validating the Basic Model of ECOFEN
 ** Week 3 April
 * Development
