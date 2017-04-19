@@ -1030,17 +1030,17 @@ j=$((header + i))
 - After processing the files produced by the above code block using the python script used in the previous validation experiment, we get the following
   .csv files: [[file:data/eco_val_modified_100.csv]], [[file:data/eco_val_modified_576.csv]], [[file:data/eco_val_modified_1000.csv]], and
   [[file:data/eco_val_modified_1500.csv]]
-#+CALL: extract_data(input_file="data/eco_val_modified1_100.dat", output_file="data/eco_val_modified1_100.csv",size=100) 
-#+CALL: extract_data(input_file="data/eco_val_modified1_576.dat", output_file="data/eco_val_modified1_576.csv",size=576) 
-#+CALL: extract_data(input_file="data/eco_val_modified1_1000.dat", output_file="data/eco_val_modified1_1000.csv",size=1000) 
-#+CALL: extract_data(input_file="data/eco_val_modified1_1500.dat", output_file="data/eco_val_modified1_1500.csv",size=1500) 
+#+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100) 
+#+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576) 
+#+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000) 
+#+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500) 
 - The graph shown below plots the power consumption for a given traffic volume for each of the four packet sizes -  100, 576, 1000 and 1500 bytes
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_modified_all.png :exports both 
 library(ggplot2)
-val_100 = read.csv("data/eco_val_modified1_100.csv", header=T)
-val_576 = read.csv("data/eco_val_modified1_576.csv", header=T)
-val_1000 = read.csv("data/eco_val_modified1_1000.csv", header=T)
-val_1500 = read.csv("data/eco_val_modified1_1500.csv", header=T)
+val_100 = read.csv("data/eco_val_modified_100.csv", header=T)
+val_576 = read.csv("data/eco_val_modified_576.csv", header=T)
+val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
+val_1500 = read.csv("data/eco_val_modified_1500.csv", header=T)
 all_data = rbind(val_100,val_576,val_1000,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Throughput))+
@@ -1060,13 +1060,13 @@ ggplot(all_data,aes(x=Throughput))+
      - From the plot we can see that the expected and the simulated consumption agrees very well. The result of the unpaired t-test further confirms
        this observation as shown in the below in table   
      #+BEGIN_SRC R :results output :var validation=validation :exports both 
-       val_100 = read.csv("data/eco_val_modified1_100.csv", header=T)
+       val_100 = read.csv("data/eco_val_modified_100.csv", header=T)
        t.test(val_100$Cons_Expected,val_100$Cons_Node2,paired=FALSE,conf.level=0.95)
-       val_576 = read.csv("data/eco_val_modified1_576.csv", header=T)
+       val_576 = read.csv("data/eco_val_modified_576.csv", header=T)
        t.test(val_576$Cons_Expected,val_576$Cons_Node2,paired=FALSE,conf.level=0.95)
-       val_1000 = read.csv("data/eco_val_modified1_1000.csv", header=T)
+       val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
        t.test(val_1000$Cons_Expected,val_1000$Cons_Node2,paired=FALSE,conf.level=0.95)
-       val_1500 = read.csv("data/eco_val_modified1_1500.csv", header=T)
+       val_1500 = read.csv("data/eco_val_modified_1500.csv", header=T)
        t.test(val_1500$Cons_Expected,val_1500$Cons_Node2,paired=FALSE,conf.level=0.95)
      #+END_SRC
 
@@ -1109,8 +1109,8 @@ ggplot(all_data,aes(x=Throughput))+
   power consumption of *Node-2* with the computed consumption from the models shown in  [[file:figures/energy_for_recieving.pdf][Figure 7]] 
 - Since the traffic unit used in Figure 8's model is packets per second (PPS), the NS-3 script used in this experiment outputs the traffic volume at
   the sending end in terms of PPS. For the receiving end, it outputs in terms of Mbps, that is the unit used in Figure 7.   
-- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below produces files: [[file:data/eco_val1_complete_576.dat]] and
-  [[file:data/eco_val_complete1_1500.dat]] both of theses file are for the receiving end, and [[file:data/eco_val_complete1_1000.dat]] is used for the sending
+- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below produces files: [[file:data/eco_val_complete_576.dat]] and
+  [[file:data/eco_val_complete_1500.dat]] both of theses file are for the receiving end, and [[file:data/eco_val_complete_1000.dat]] is used for the sending
   end. 
 #+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
@@ -1129,6 +1129,7 @@ j=$((header + i))
 
 - Since the  output data format is different from what we have used in the earlier validation experiment, the python script used for formatting the
   output is modified as shown below to accommodate this change.
+
 #+NAME: extract_complete_data
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/eco_val_complete_576.dat" :var output_file="data/eco_val_complete_576.csv" :var size=576
 
@@ -1187,9 +1188,9 @@ with open(input_file) as fe:
                       of.write("%s\n" % ",".join(data))
                       del data[:]
 #+END_SRC
-#+CALL: extract_complete_data(input_file="data/eco_val_complete1_576.dat", output_file="data/eco_val_complete1_576.csv",size=576) 
-#+CALL: extract_complete_data(input_file="data/eco_val_complete1_1000.dat", output_file="data/eco_val_complete1_1000.csv",size=1000) 
-#+CALL: extract_complete_data(input_file="data/eco_val_complete1_1500.dat", output_file="data/eco_val_complete1_1500.csv",size=1500) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_576.dat", output_file="data/eco_val_complete_576.csv",size=576) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_1000.dat", output_file="data/eco_val_complete_1000.csv",size=1000) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_1500.dat", output_file="data/eco_val_complete_1500.csv",size=1500) 
 - Running the above python script using the raw data [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
   [[file:data/eco_val_complete_1500.dat]] gives us the corresponding formatted files: [[file:data/eco_val_complete_576.csv]],
   [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
@@ -1241,7 +1242,8 @@ ggplot(val_1000,aes(x=Mbps))+
 #+RESULTS:
 [[file:figures/ecof_val_send.png]]
 
-  - We compare the simulated and the expected consumption using unpaired t-test. The result is summarized in the table below 
+  - We compare the simulated and the expected consumption using unpaired t-test. The result is summarized in the table below
+  
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
        val_1000 = read.csv("data/eco_val_complete1_1000.csv", header=T)
        t.test(val_1000$Cons_ExpecPps,val_1000$Cons_Node0,paired=FALSE,conf.level=0.95)
