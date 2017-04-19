@@ -646,9 +646,6 @@ mean(Difference)/mean(ExpectedPower)*100
 - The parameters and the values shown in the table are collected based on our discussion two weeks back ([[file:img/ns3_experiment.jpg][note]]) and also based on the following links 
   - [[http://ieeexplore.ieee.org/document/1212669/]]
   - [[https://www.isoc.org/inet98/proceedings/6g/6g_3.htm]]
-*** Questions 
-- While writing the background section, I claimed that the reason we want to manage energy consumption is because currently IT equipment are not
-  energy proportional. Would we be interested to know about it if the equipment were energy proportional?
 ** Week 4 March
 **** Experiment - Power consumption vs 1-flow UDP traffic, Packet_Size = 1472, 1 Node, ([[file:ns3/1flow_energy.cc]])
 #+tblname: tblUDPTraffic1
@@ -1018,29 +1015,32 @@ terminate called after throwing an instance of 'std::bad_alloc'
 #+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
 cd ~/ns3workspace/source/ns-3.26
-array=(72 548 972 1472)
+array=(548 972 1472)
 header=28
 for i in ${array[@]}; do
 j=$((header + i))
-  for ((k=1; k<=30; k++)); do
- ./waf --run "scratch/validate_ecofen_modified --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_modified_${j}.dat 2>&1
+  for ((k=20; k<=60; k++)); do
+ ./waf --run "scratch/validate_ecofen_modified --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_modified1_${j}.dat 2>&1
    done
  done
 #+END_SRC
+
+#+RESULTS:
+
 - After processing the files produced by the above code block using the python script used in the previous validation experiment, we get the following
   .csv files: [[file:data/eco_val_modified_100.csv]], [[file:data/eco_val_modified_576.csv]], [[file:data/eco_val_modified_1000.csv]], and
   [[file:data/eco_val_modified_1500.csv]]
-#+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100) 
-#+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576) 
-#+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000) 
-#+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500) 
+#+CALL: extract_data(input_file="data/eco_val_modified1_100.dat", output_file="data/eco_val_modified1_100.csv",size=100) 
+#+CALL: extract_data(input_file="data/eco_val_modified1_576.dat", output_file="data/eco_val_modified1_576.csv",size=576) 
+#+CALL: extract_data(input_file="data/eco_val_modified1_1000.dat", output_file="data/eco_val_modified1_1000.csv",size=1000) 
+#+CALL: extract_data(input_file="data/eco_val_modified1_1500.dat", output_file="data/eco_val_modified1_1500.csv",size=1500) 
 - The graph shown below plots the power consumption for a given traffic volume for each of the four packet sizes -  100, 576, 1000 and 1500 bytes
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_modified_all.png :exports both 
 library(ggplot2)
-val_100 = read.csv("data/eco_val_modified_100.csv", header=T)
-val_576 = read.csv("data/eco_val_modified_576.csv", header=T)
-val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
-val_1500 = read.csv("data/eco_val_modified_1500.csv", header=T)
+val_100 = read.csv("data/eco_val_modified1_100.csv", header=T)
+val_576 = read.csv("data/eco_val_modified1_576.csv", header=T)
+val_1000 = read.csv("data/eco_val_modified1_1000.csv", header=T)
+val_1500 = read.csv("data/eco_val_modified1_1500.csv", header=T)
 all_data = rbind(val_100,val_576,val_1000,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Throughput))+
@@ -1057,32 +1057,31 @@ ggplot(all_data,aes(x=Throughput))+
 [[file:figures/ecof_val_modified_all.png]]
 
 **** Analysis
-     - From the plot it seems that the model implemented in ECOFEN is the one for packet size 1000 bytes. For packet size 1000 bytes the simulated
-       and expected consumption agrees very well as it is shown in the unpaired t-test below.
+     - From the plot we can see that the expected and the simulated consumption agrees very well. The result of the unpaired t-test further confirms
+       this observation as shown in the below in table   
      #+BEGIN_SRC R :results output :var validation=validation :exports both 
-       val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
-       attach(val_1000)
-       t.test(Cons_Expected,Cons_Node2,paired=FALSE,conf.level=0.95)
+       val_100 = read.csv("data/eco_val_modified1_100.csv", header=T)
+       t.test(val_100$Cons_Expected,val_100$Cons_Node2,paired=FALSE,conf.level=0.95)
+       val_576 = read.csv("data/eco_val_modified1_576.csv", header=T)
+       t.test(val_576$Cons_Expected,val_576$Cons_Node2,paired=FALSE,conf.level=0.95)
+       val_1000 = read.csv("data/eco_val_modified1_1000.csv", header=T)
+       t.test(val_1000$Cons_Expected,val_1000$Cons_Node2,paired=FALSE,conf.level=0.95)
+       val_1500 = read.csv("data/eco_val_modified1_1500.csv", header=T)
+       t.test(val_1500$Cons_Expected,val_1500$Cons_Node2,paired=FALSE,conf.level=0.95)
      #+END_SRC
 
      #+RESULTS:
-     #+begin_example
+     
+| Packet size | CI of difference in mean | Mean of Expected | Mean of Simulated | P-value |
+|-------------+--------------------------+------------------+-------------------+---------|
+|         100 | [-0.02840366,0.09094080] |         10.59961 |          10.56835 |  0.3001 |
+|         576 | [-0.04086185,0.07012994] |         10.51069 |          10.49605 |  0.6013 |
+|        1000 | [-0.04450076,0.06247119] |         10.43378 |          10.42480 |  0.7391 |
+|        1500 | [-0.06028594,0.04043616] |         10.53650 |          10.54643 |   0.696 |
 
-       Welch Two Sample t-test
-
-     data:  Cons_Expected and Cons_Node2
-     t = 0.48502, df = 59.292, p-value = 0.6294
-     alternative hypothesis: true difference in means is not equal to 0
-     95 percent confidence interval:
-      -0.04493954  0.07369949
-     sample estimates:
-     mean of x mean of y 
-      10.44507  10.43069 
-#+end_example
-
-- The p-value tells us that the null hypothesis that the difference in mean is 0 is not rejected. Further more, from the 95% confidence interval we
-  can also see that 0 is in the interval. From this we can say there is no difference between the two consumption, the difference we see is by chance
-  or it is as a result of false-positive. 
+- The p-values tells us that the null hypothesis that the difference in mean is 0 is not rejected in all cases. Further more, from the 95% confidence
+  interval we can also see that 0 is in the interval. From this we can say there is no difference between the two consumption, the difference we see
+  is by chance or it is as a result of false-positive. 
 
 *** Validating the Complete Model of ECOFEN
 - Validating the Complete Model can be done in two steps: *validating the model used in the packet receiving side* and *validating the model used in
@@ -1110,9 +1109,9 @@ ggplot(all_data,aes(x=Throughput))+
   power consumption of *Node-2* with the computed consumption from the models shown in  [[file:figures/energy_for_recieving.pdf][Figure 7]] 
 - Since the traffic unit used in Figure 8's model is packets per second (PPS), the NS-3 script used in this experiment outputs the traffic volume at
   the sending end in terms of PPS. For the receiving end, it outputs in terms of Mbps, that is the unit used in Figure 7.   
-- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below produces files: [[file:data/eco_val_complete_576.dat]],
-  [[file:data/eco_val_complete_1000.dat]], and [[file:data/eco_val_complete_1500.dat]].
-
+- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below produces files: [[file:data/eco_val1_complete_576.dat]] and
+  [[file:data/eco_val_complete1_1500.dat]] both of theses file are for the receiving end, and [[file:data/eco_val_complete1_1000.dat]] is used for the sending
+  end. 
 #+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
 cd ~/ns3workspace/source/ns-3.26
@@ -1120,11 +1119,13 @@ array=(548 972 1472)
 header=28
 for i in ${array[@]}; do
 j=$((header + i))
-  for ((k=1; k<=50; k++)); do
- ./waf --run "scratch/validate_ecofen_complete --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_complete_${j}.dat 2>&1
+  for ((k=1; k<=40; k++)); do
+ ./waf --run "scratch/validate_ecofen_complete --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_complete1_${j}.dat 2>&1
    done
  done
 #+END_SRC
+
+#+RESULTS:
 
 - Since the  output data format is different from what we have used in the earlier validation experiment, the python script used for formatting the
   output is modified as shown below to accommodate this change.
@@ -1137,7 +1138,7 @@ idle = True
 header = True
 initial = {   0:10.47614679, # constant value for the sending model
             576:10.57174099,
-            1000:10.59425234,
+            1000:10.47614679, # constant value for the sending model
             1500:10.55614183} # the last three are constant values for the linear models of the recieving models when the throughput is 0
             
 # data variable holds one line of data formated as 'Throughput', 'Node-0 consumption', 
@@ -1186,19 +1187,19 @@ with open(input_file) as fe:
                       of.write("%s\n" % ",".join(data))
                       del data[:]
 #+END_SRC
-#+CALL: extract_complete_data(input_file="data/eco_val_complete_576.dat", output_file="data/eco_val_complete_576.csv",size=576) 
-#+CALL: extract_complete_data(input_file="data/eco_val_complete_1000.dat", output_file="data/eco_val_complete_1000.csv",size=1000) 
-#+CALL: extract_complete_data(input_file="data/eco_val_complete_1500.dat", output_file="data/eco_val_complete_1500.csv",size=1500) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete1_576.dat", output_file="data/eco_val_complete1_576.csv",size=576) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete1_1000.dat", output_file="data/eco_val_complete1_1000.csv",size=1000) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete1_1500.dat", output_file="data/eco_val_complete1_1500.csv",size=1500) 
 - Running the above python script using the raw data [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
   [[file:data/eco_val_complete_1500.dat]] gives us the corresponding formatted files: [[file:data/eco_val_complete_576.csv]],
   [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
 **** Validating the receiving end 
+- We use two of the models shown in the paper
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_recieve.png :exports both 
 library(ggplot2)
-val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
-val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
-val_1500 = read.csv("data/eco_val_complete_1500.csv", header=T)
-all_data = rbind(val_576,val_1000,val_1500)
+val_576 = read.csv("data/eco_val_complete1_576.csv", header=T)
+val_1500 = read.csv("data/eco_val_complete1_1500.csv", header=T)
+all_data = rbind(val_576,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Mbps))+
    geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2)"))+
@@ -1212,35 +1213,22 @@ ggplot(all_data,aes(x=Mbps))+
 
 #+RESULTS:
 [[file:figures/ecof_val_recieve.png]]
-  - If we compare the simulated and the expected consumption using unpaired t-test for the middle plot, we get the following result. 
+  - We compare the simulated and the expected consumption using unpaired t-test for the above plots. The result is shown in table below together with
+    the sending end t-test result. 
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
-       val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
-       attach(val_1000)
-       t.test(Cons_ExpecMbps,Cons_Node2,paired=FALSE,conf.level=0.95)
+       val_576 = read.csv("data/eco_val_complete1_576.csv", header=T)
+       t.test(val_576$Cons_ExpecMbps,val_576$Cons_Node2,paired=FALSE,conf.level=0.95)
+       val_1500 = read.csv("data/eco_val_complete1_1500.csv", header=T)
+       t.test(val_1500$Cons_ExpecMbps,val_1500$Cons_Node2,paired=FALSE,conf.level=0.95)
 #+END_SRC
 
 #+RESULTS:
-#+begin_example
-
-	Welch Two Sample t-test
-
-data:  Cons_ExpecMbps and Cons_Node2
-t = 17.229, df = 99.318, p-value < 2.2e-16
-alternative hypothesis: true difference in means is not equal to 0
-95 percent confidence interval:
- 0.2996378 0.3776349
-sample estimates:
-mean of x mean of y 
- 10.75146  10.41283 
-#+end_example
-- the p-value in the above test, which is less than 0.05 for the 95% confidence level, tells us that the null hypothesis that the difference in mean
-  is 0 is rejected, which means the difference is true positive or it is not by chance.  
 **** Validating the sending/transmitting end 
 - For the transmitting end there is only one model in the paper mentioned above and the packet size used for that model is 1000. We only used the data
   for packet size 1000 in this plot. 
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_send.png :exports both 
 library(ggplot2)
-val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
+val_1000 = read.csv("data/eco_val_complete1_1000.csv", header=T)
 attach(val_1000)
 ggplot(val_1000,aes(x=Mbps))+
    geom_point(aes(y = Cons_Node0, colour = "Simulated Node-2)"))+
@@ -1253,34 +1241,24 @@ ggplot(val_1000,aes(x=Mbps))+
 #+RESULTS:
 [[file:figures/ecof_val_send.png]]
 
-  - If we compare the simulated and the expected consumption using unpaired t-test, we get the following result
+  - We compare the simulated and the expected consumption using unpaired t-test. The result is summarized in the table below 
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
-       val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
-       attach(val_1000)
-       t.test(Cons_ExpecPps,Cons_Node0,paired=FALSE,conf.level=0.95)
+       val_1000 = read.csv("data/eco_val_complete1_1000.csv", header=T)
+       t.test(val_1000$Cons_ExpecPps,val_1000$Cons_Node0,paired=FALSE,conf.level=0.95)
 #+END_SRC
 
 #+RESULTS:
-#+begin_example
 
-	Welch Two Sample t-test
+| Packet size | End       | CI of difference in mean | Mean of Expected | Mean of Simulated | P-value |
+|-------------+-----------+--------------------------+------------------+-------------------+---------|
+|         576 | Receiving | [-0.06544964,0.03207116] |         10.75045 |          10.76714 |  0.4977 |
+|        1500 | Receiving | [-0.01301081,0.08233968] |         10.75565 |          10.72098 |  0.1517 |
+|        1000 | Sending   | [-0.08695043,0.04715759] |         10.72351 |          10.74340 |  0.5565 |
 
-data:  Cons_ExpecPps and Cons_Node0
-t = 7.0977, df = 99.407, p-value = 1.91e-10
-alternative hypothesis: true difference in means is not equal to 0
-95 percent confidence interval:
- 0.1546320 0.2746287
-sample estimates:
-mean of x mean of y 
- 10.71876  10.50413 
-
-#+end_example
-- the p-value shown above, which is less than 0.05 for the 95% confidence level, tells us that the null hypothesis that the difference in mean is 0 is
-  rejected, which means the difference is true positive or it is not by chance.
-- for both the sending and the receiving end, even though the statistical tests say the difference is significant, the 95% confidence intervals tells
-  us that the absolute difference between the two consumption is not very far from zero. The 95% CI for the receiving end for the packet size 1000 is
-  [0.2996378,0.3776349], and for the sending end is [0.1546320, 0.2746287]. 
+- From all of the p-values shown above, which are less than 0.05 for the 95% confidence level, tells us that the null hypothesis that the difference
+  in mean is 0 is rejected in all of the three cases, which means the difference is true positive or it is not by chance.
 *** Validating the Basic Model of ECOFEN
+** Week 3 April
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
