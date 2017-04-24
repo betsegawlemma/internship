@@ -23,7 +23,7 @@
        1Gbps, 1ns    1Gbps, 1ns
   
   to run the scritp use the following example
- ./waf validate_ecofen_modified --run " --packetSize=1472"
+ ./waf validate_ecofen_modified --run " --packetSize=1472 --rngRun=2"
 
 */
 
@@ -177,11 +177,12 @@ main (int argc, char *argv[])
   uint32_t packetSize = 1472; // number of bytes in each packet
   uint32_t numPackets = 1; // numPackets send in each iteration
   double dataRate = 1; // data rate for each iteration
-  double min = 1; // minimum value for generated random value
-  double max = 900; // maximum value for generated random value
+  double min = 1; // minimum value for generated uniform random data rate value
+  double max = 900; // maximum value for generated uniform random data rate value
   std::string maxBandwidth = "1Gbps"; // the capacity of P2P link
   std::string delay = "1ns"; // P2P link delay
   uint32_t rngRun = 1; // set run number
+  double idle=10.242;
 
   CommandLine cmd;
 
@@ -190,6 +191,15 @@ main (int argc, char *argv[])
 
   cmd.Parse(argc,argv);
   
+  if(packetSize == 72){
+    idle = 10.35521132;
+  }else if(packetSize == 548){
+    idle =  10.30132998;
+  }else if(packetSize == 972){
+    idle = 10.23447916;
+  }else if(packetSize == 1472){
+    idle =  10.35805453;
+  }
   // Configure random variable generation for traffic rate
 
   RngSeedManager::SetSeed(rngRun);
@@ -215,7 +225,7 @@ main (int argc, char *argv[])
 
   // Add Energy Parameters to the nodes
   BasicNodeEnergyHelper basicNodeEnergy;
-  basicNodeEnergy.Set ("OnConso", DoubleValue (10.242));
+  basicNodeEnergy.Set ("OnConso", DoubleValue (idle));
   basicNodeEnergy.Set ("OffConso", DoubleValue (0.0));
   basicNodeEnergy.Install (nodes);
 
@@ -236,7 +246,7 @@ main (int argc, char *argv[])
   LinearNetdeviceEnergyHelper linearNetdeviceEnergy;
   linearNetdeviceEnergy.Set ("IdleConso", DoubleValue (0.0));
   linearNetdeviceEnergy.Set ("OffConso", DoubleValue (0.0));
-  linearNetdeviceEnergy.Set ("ByteEnergy", DoubleValue (3.212));
+  linearNetdeviceEnergy.Set ("ByteEnergy", DoubleValue (3.423));
   linearNetdeviceEnergy.Install (nodes);
 
   ConsumptionLogger conso;

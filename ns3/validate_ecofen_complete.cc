@@ -183,6 +183,7 @@ main (int argc, char *argv[])
   std::string maxBandwidth = "2Gbps"; // the capacity of P2P link
   std::string delay = "1ns"; // P2P link delay
   uint32_t rngRun = 1; // set run number
+  double idle = 0;
 
   CommandLine cmd;
 
@@ -191,6 +192,14 @@ main (int argc, char *argv[])
 
   cmd.Parse(argc,argv);
   
+  if(packetSize == 548){
+    idle =  10.57174099;
+  }else if(packetSize == 972){
+    idle =  10.47614679;
+  }else if(packetSize == 1472){
+    idle = 10.55614183;
+  }
+
   // Configure random variable generation for traffic rate
 
   RngSeedManager::SetSeed(rngRun);
@@ -216,7 +225,7 @@ main (int argc, char *argv[])
 
   // Add Energy Parameters to the nodes
   BasicNodeEnergyHelper basicNodeEnergy;
-  basicNodeEnergy.Set ("OnConso", DoubleValue (10.242));
+  basicNodeEnergy.Set ("OnConso", DoubleValue (idle));
   basicNodeEnergy.Set ("OffConso", DoubleValue (0.0));
   basicNodeEnergy.Install (nodes);
 

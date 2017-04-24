@@ -21,51 +21,54 @@ A bad cross reference---entry "DBLP:conf/valuetools/CarneiroFR09"
 refers to entry "DBLP:conf/valuetools/2009", which doesn't exist
 A bad cross reference---entry "DBLP:conf/wowmom/OrgerieLLL11"
 refers to entry "DBLP:conf/wowmom/2011", which doesn't exist
+A bad cross reference---entry "DBLP:conf/cloudnet/CorneaOL14"
+refers to entry "DBLP:conf/cloudnet/2014", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/wowmom/2011"
 Warning--I didn't find a database entry for "DBLP:conf/networking/2009"
 Warning--I didn't find a database entry for "DBLP:conf/isca/2007"
 Warning--I didn't find a database entry for "DBLP:conf/eenergy/2010"
 Warning--I didn't find a database entry for "DBLP:conf/valuetools/2009"
 Warning--I didn't find a database entry for "DBLP:conf/IEEEcloud/2015"
-You've used 16 entries,
+Warning--I didn't find a database entry for "DBLP:conf/cloudnet/2014"
+You've used 17 entries,
             2253 wiz_defined-function locations,
-            652 strings with 8511 characters,
-and the built_in function-call counts, 6327 in all, are:
-= -- 610
-> -- 307
+            660 strings with 8895 characters,
+and the built_in function-call counts, 6803 in all, are:
+= -- 658
+> -- 324
 < -- 0
-+ -- 130
-- -- 110
-* -- 498
-:= -- 988
-add.period$ -- 48
-call.type$ -- 16
-change.case$ -- 102
++ -- 137
+- -- 116
+* -- 529
+:= -- 1053
+add.period$ -- 51
+call.type$ -- 17
+change.case$ -- 108
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 235
-empty$ -- 507
-format.name$ -- 110
-if$ -- 1334
+cite$ -- 17
+duplicate$ -- 259
+empty$ -- 549
+format.name$ -- 116
+if$ -- 1443
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 16
-newline$ -- 82
-num.names$ -- 32
-pop$ -- 124
+int.to.str$ -- 17
+missing$ -- 17
+newline$ -- 87
+num.names$ -- 34
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 87
+purify$ -- 92
 quote$ -- 0
-skip$ -- 157
+skip$ -- 176
 stack$ -- 0
-substring$ -- 422
-swap$ -- 72
+substring$ -- 459
+swap$ -- 82
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 62
+type$ -- 66
 warning$ -- 0
-while$ -- 65
-width$ -- 18
-write$ -- 162
-(There were 7 error messages)
+while$ -- 70
+width$ -- 19
+write$ -- 172
+(There were 8 error messages)

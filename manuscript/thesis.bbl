@@ -44,6 +44,14 @@
   {I}nternet backbone.
 \newblock In {\em Proceedings of INET\/} (1998), vol.~98, pp.~21--24.
 
+\bibitem{DBLP:conf/cloudnet/CorneaOL14}
+{\sc Cornea, B.~F., Orgerie, A., and Lef{\`{e}}vre, L.}
+\newblock Studying the energy consumption of data transfers in clouds: the
+  ecofen approach.
+\newblock In {\em 3rd {IEEE} International Conference on Cloud Networking,
+  CloudNet 2014, Luxembourg, Luxembourg, October 8-10, 2014\/} (2014),
+  pp.~143--148.
+
 \bibitem{DBLP:journals/comsur/DayarathnaWF16}
 {\sc Dayarathna, M., Wen, Y., and Fan, R.}
 \newblock Data center energy consumption modeling: {A} survey.
