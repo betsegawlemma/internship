@@ -1263,6 +1263,11 @@ ggplot(val_1000,aes(x=Mbps))+
 
 *** Validating the Basic Model of ECOFEN
 ** Week 3 April
+   - Corrected validation experiment
+   - Updated SimGrid implementation
+   - Added Problem Statement, Objective, Scope and Related Simulator section on the thesis document
+** Week 4 April
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
