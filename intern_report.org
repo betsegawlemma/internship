@@ -984,6 +984,7 @@ ggplot(all_data,aes(x=Throughput))+
    facet_grid(.~Packet_Size)+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
+   theme_minimal()+
    theme(legend.position="top",
          panel.margin = unit(1.2,"lines"))   
 #+END_SRC
@@ -1049,8 +1050,9 @@ ggplot(all_data,aes(x=Throughput))+
    facet_grid(.~Packet_Size)+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
+   theme_minimal()+
    theme(legend.position="top",
-         panel.margin = unit(1.2,"lines"))   
+         panel.margin = unit(1.1,"lines"))   
 #+END_SRC
 
 #+RESULTS:
@@ -1198,8 +1200,8 @@ with open(input_file) as fe:
 - We use two of the models shown in the paper
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_recieve.png :exports both 
 library(ggplot2)
-val_576 = read.csv("data/eco_val_complete1_576.csv", header=T)
-val_1500 = read.csv("data/eco_val_complete1_1500.csv", header=T)
+val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
+val_1500 = read.csv("data/eco_val_complete_1500.csv", header=T)
 all_data = rbind(val_576,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Mbps))+
@@ -1208,6 +1210,7 @@ ggplot(all_data,aes(x=Mbps))+
    facet_grid(.~Packet_Size)+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
+   theme_minimal()+
    theme(legend.position="top",
          panel.margin = unit(1.2,"lines"))   
 #+END_SRC
@@ -1229,14 +1232,15 @@ ggplot(all_data,aes(x=Mbps))+
   for packet size 1000 in this plot. 
 #+BEGIN_SRC R :results output graphics :file figures/ecof_val_send.png :exports both 
 library(ggplot2)
-val_1000 = read.csv("data/eco_val_complete1_1000.csv", header=T)
+val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
 attach(val_1000)
 ggplot(val_1000,aes(x=Mbps))+
    geom_point(aes(y = Cons_Node0, colour = "Simulated Node-2)"))+
    geom_point(aes(y = Cons_ExpecPps, colour = "Expected"))+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in PPS")+
-   theme(legend.position="top")   
+   theme_minimal()+   
+   theme(legend.position="top")
 #+END_SRC
 
 #+RESULTS:

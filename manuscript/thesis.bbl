@@ -85,6 +85,12 @@
 \newblock Trends in worldwide {ICT} electricity consumption from 2007 to 2012.
 \newblock {\em Computer Communications 50\/} (2014), 64--76.
 
+\bibitem{DBLP:books/daglib/0076234}
+{\sc Jain, R.}
+\newblock {\em The art of computer systems performance analysis - techniques
+  for experimental design, measurement, simulation, and modeling}.
+\newblock Wiley professional computing. Wiley, 1991.
+
 \bibitem{DBLP:journals/tjs/KliazovichBK12}
 {\sc Kliazovich, D., Bouvry, P., and Khan, S.~U.}
 \newblock Greencloud: {A} packet-level simulator of energy-aware cloud
@@ -110,5 +116,39 @@
 \newblock In {\em 12th {IEEE} International Symposium on a World of Wireless,
   Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca, Italy, 20-24 June,
   2011\/} (2011), pp.~1--6.
+
+\bibitem{DBLP:journals/comcom/SivaramanRZSVMR14}
+{\sc Sivaraman, V., Reviriego, P., Zhao, Z., S{\'{a}}nchez{-}Maci{\'{a}}n, A.,
+  Vishwanath, A., Maestro, J.~A., and Russell, C.}
+\newblock An experimental power profile of energy efficient ethernet switches.
+\newblock {\em Computer Communications 50\/} (2014), 110--118.
+
+\bibitem{Sivaraman}
+{\sc Sivaraman, V., Vishwanath, A., Zhao, Z., and Russell, C.}
+\newblock Profiling per-packet and per-byte energy consumption in the netfpga
+  gigabit router.
+\newblock In {\em 2011 IEEE Conference on Computer Communications Workshops
+  (INFOCOM WKSHPS)\/} (April 2011), pp.~331--336.
+
+\bibitem{DBLP:conf/aina/SwainHC10}
+{\sc Swain, A.~R., Hansdah, R.~C., and Chouhan, V.~K.}
+\newblock An energy aware routing protocol with sleep scheduling for wireless
+  sensor networks.
+\newblock In {\em 24th {IEEE} International Conference on Advanced Information
+  Networking and Applications, {AINA} 2010, Perth, Australia, 20-13 April
+  2010\/} (2010), pp.~933--940.
+
+\bibitem{DBLP:journals/tomacs/VelhoSCL13}
+{\sc Velho, P., Schnorr, L.~M., Casanova, H., and Legrand, A.}
+\newblock On the validity of flow-level tcp network models for grid and cloud
+  simulations.
+\newblock {\em {ACM} Trans. Model. Comput. Simul. 23}, 4 (2013), 23:1--23:26.
+
+\bibitem{DBLP:conf/icc/WeingartnerLW09}
+{\sc Weing{\"{a}}rtner, E., vom Lehn, H., and Wehrle, K.}
+\newblock A performance comparison of recent network simulators.
+\newblock In {\em Proceedings of {IEEE} International Conference on
+  Communications, {ICC} 2009, Dresden, Germany, 14-18 June 2009\/} (2009),
+  pp.~1--5.
 
 \end{thebibliography}
