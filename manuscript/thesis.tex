@@ -201,7 +201,8 @@
 \usetikzlibrary{decorations.pathmorphing,decorations.markings}
 \usetikzlibrary{shapes}
 \usetikzlibrary{patterns}
-
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
 % The aalto-thesis package provides typesetting instructions for the
 % standard master's thesis parts (abstracts, front page, and so on)

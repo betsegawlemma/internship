@@ -17,6 +17,11 @@
 \newblock The case for energy-proportional computing.
 \newblock {\em {IEEE} Computer 40}, 12 (2007), 33--37.
 
+\bibitem{DBLP:journals/comcom/BeisterDAK14}
+{\sc Beister, F., Dr{\"{a}}xler, M., Aelken, J., and Karl, H.}
+\newblock Power model design for {ICT} systems - {A} generic approach.
+\newblock {\em Computer Communications 50\/} (2014), 77--85.
+
 \bibitem{DBLP:journals/comsur/BollaBDC11}
 {\sc Bolla, R., Bruschi, R., Davoli, F., and Cucchietti, F.}
 \newblock Energy efficiency in the future internet: {A} survey of existing
@@ -100,6 +105,12 @@
 \bibitem{ns3}
 {\sc LLC, M.}
 \newblock {NS-3} simulator, 2017.
+
+\bibitem{DBLP:conf/sigcomm/MahadevanBS10}
+{\sc Mahadevan, P., Banerjee, S., and Sharma, P.}
+\newblock Energy proportionality of an enterprise network.
+\newblock In {\em Proceedings of the 1st {ACM} {SIGCOMM} Workshop on Green
+  Networking 2010, New Delhi, India, August 30, 2010\/} (2010), pp.~53--60.
 
 \bibitem{DBLP:conf/networking/MahadevanSBR09}
 {\sc Mahadevan, P., Sharma, P., Banerjee, S., and Ranganathan, P.}

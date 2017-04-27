@@ -3,12 +3,12 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: acm.bst
 Database file #1: sources.bib
-Repeated entry---line 815 of file sources.bib
+Repeated entry---line 783 of file sources.bib
  : @inproceedings{DBLP:conf/isca/FanWB07
  :                                      ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "ns3" isn't style-file defined
---line 1015 of file sources.bib
+--line 983 of file sources.bib
 A bad cross reference---entry "DBLP:conf/eenergy/GyarmatiT10"
 refers to entry "DBLP:conf/eenergy/2010", which doesn't exist
 A bad cross reference---entry "DBLP:conf/isca/FanWB07"
@@ -27,8 +27,11 @@ A bad cross reference---entry "DBLP:conf/icc/WeingartnerLW09"
 refers to entry "DBLP:conf/icc/2009", which doesn't exist
 A bad cross reference---entry "DBLP:conf/aina/SwainHC10"
 refers to entry "DBLP:conf/aina/2010", which doesn't exist
+A bad cross reference---entry "DBLP:conf/sigcomm/MahadevanBS10"
+refers to entry "DBLP:conf/sigcomm/2010greennet", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/wowmom/2011"
 Warning--I didn't find a database entry for "DBLP:conf/networking/2009"
+Warning--I didn't find a database entry for "DBLP:conf/sigcomm/2010greennet"
 Warning--I didn't find a database entry for "DBLP:conf/isca/2007"
 Warning--I didn't find a database entry for "DBLP:conf/eenergy/2010"
 Warning--I didn't find a database entry for "DBLP:conf/valuetools/2009"
@@ -36,45 +39,45 @@ Warning--I didn't find a database entry for "DBLP:conf/IEEEcloud/2015"
 Warning--I didn't find a database entry for "DBLP:conf/cloudnet/2014"
 Warning--I didn't find a database entry for "DBLP:conf/icc/2009"
 Warning--I didn't find a database entry for "DBLP:conf/aina/2010"
-You've used 23 entries,
+You've used 25 entries,
             2253 wiz_defined-function locations,
-            702 strings with 10619 characters,
-and the built_in function-call counts, 9309 in all, are:
-= -- 899
-> -- 446
+            715 strings with 11164 characters,
+and the built_in function-call counts, 10113 in all, are:
+= -- 978
+> -- 485
 < -- 0
-+ -- 191
-- -- 160
-* -- 721
-:= -- 1437
-add.period$ -- 70
-call.type$ -- 23
-change.case$ -- 147
++ -- 207
+- -- 174
+* -- 783
+:= -- 1561
+add.period$ -- 76
+call.type$ -- 25
+change.case$ -- 160
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 358
-empty$ -- 749
-format.name$ -- 160
-if$ -- 1979
+cite$ -- 25
+duplicate$ -- 389
+empty$ -- 813
+format.name$ -- 174
+if$ -- 2150
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 24
-newline$ -- 117
-num.names$ -- 46
-pop$ -- 184
+int.to.str$ -- 25
+missing$ -- 26
+newline$ -- 127
+num.names$ -- 50
+pop$ -- 199
 preamble$ -- 1
-purify$ -- 126
+purify$ -- 137
 quote$ -- 0
-skip$ -- 243
+skip$ -- 264
 stack$ -- 0
-substring$ -- 628
-swap$ -- 114
+substring$ -- 681
+swap$ -- 124
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 96
 warning$ -- 0
-while$ -- 94
-width$ -- 25
-write$ -- 233
-(There were 10 error messages)
+while$ -- 103
+width$ -- 27
+write$ -- 253
+(There were 11 error messages)
