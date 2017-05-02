@@ -1271,7 +1271,13 @@ ggplot(val_1000,aes(x=Mbps))+
    - Updated SimGrid implementation
    - Added Problem Statement, Objective, Scope and Related Simulator section on the thesis document
 ** Week 4 April
-
+   - Updated Method chapter
+   - Updated SimGrid implementation
+*** Work Planed
+    - Write energy consumption simulation script in SimGrid
+    - Implement and validate energy consumption model on SimGrid
+    - Justify the method used in the thesis document
+** Week 1 May
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
