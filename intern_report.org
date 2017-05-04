@@ -967,6 +967,7 @@ with open(input_file) as fe:
                   else: # writes the rest of the consumption
                       of.write("%s\n" % ",".join(data))
                       del data[:]
+                      total_power = 0.0
 #+END_SRC
 *** Plot of the validation result
 - Comparison of simulated and measured/expected consumption for packet sizes 100, 576, 1000, and 1500 bytes
@@ -985,7 +986,7 @@ ggplot(all_data,aes(x=Throughput))+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
    theme_minimal()+
-   theme(legend.position="top",
+   theme(legend.position="top",legend.title=element_blank(),
          panel.margin = unit(1.2,"lines"))   
 #+END_SRC
 
@@ -1051,7 +1052,7 @@ ggplot(all_data,aes(x=Throughput))+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
    theme_minimal()+
-   theme(legend.position="top",
+   theme(legend.position="top",legend.title=element_blank(),
          panel.margin = unit(1.1,"lines"))   
 #+END_SRC
 
@@ -1189,6 +1190,7 @@ with open(input_file) as fe:
                   else: # writes the rest of the consumption
                       of.write("%s\n" % ",".join(data))
                       del data[:]
+                      total_power = 0.0
 #+END_SRC
 #+CALL: extract_complete_data(input_file="data/eco_val_complete_576.dat", output_file="data/eco_val_complete_576.csv",size=576) 
 #+CALL: extract_complete_data(input_file="data/eco_val_complete_1000.dat", output_file="data/eco_val_complete_1000.csv",size=1000) 
@@ -1205,13 +1207,13 @@ val_1500 = read.csv("data/eco_val_complete_1500.csv", header=T)
 all_data = rbind(val_576,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Mbps))+
-   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2)"))+
+   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
    geom_point(aes(y = Cons_ExpecMbps, colour = "Expected"))+
    facet_grid(.~Packet_Size)+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
    theme_minimal()+
-   theme(legend.position="top",
+   theme(legend.position="top",legend.title=element_blank(),
          panel.margin = unit(1.2,"lines"))   
 #+END_SRC
 
@@ -1235,12 +1237,12 @@ library(ggplot2)
 val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
 attach(val_1000)
 ggplot(val_1000,aes(x=Mbps))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-2)"))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-2"))+
    geom_point(aes(y = Cons_ExpecPps, colour = "Expected"))+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in PPS")+
    theme_minimal()+   
-   theme(legend.position="top")
+   theme(legend.title=element_blank(),legend.position="top")
 #+END_SRC
 
 #+RESULTS:
@@ -1278,6 +1280,64 @@ ggplot(val_1000,aes(x=Mbps))+
     - Implement and validate energy consumption model on SimGrid
     - Justify the method used in the thesis document
 ** Week 1 May
+*** Thoughts
+   - *THE PROBLEM:* existing packet-level simulators are not scalable for estimating energy consumption of large-scale networks
+   - *HYPOTHESIS:* flow-level simulators are scalable for estimating energy consumption of large-scale networks
+   - *HOWEVER:* flow-level models might fail to produce acceptable level of accuracy
+   - *AIM of THIS STUDY:* to propose and implement flow-level model for SimGrid and to validate accuracy and scalablity of the implemented model
+   - *SCOPE:* SimGrid already have flow-level energy consumption model for server (CPU), what is currently needed is to propose a model for network
+     equipment such as switch
+   - *HOW?*
+**** METHOD Version-1 
+   - (1) study literature to know the state-of-the-art and to find the relationship between power consumption and traffic for network equipment. We
+     now know the relationship is linear ([[file:manuscript/images/energyproportionality.pdf][Figure-1]] and [[file:figures/powervsdatarate.pdf][Figure-2]])  
+   - (2) propose and implement the model found in step-1 
+   - (3) validate the accuracy and scalability of the implemented flow-level model against packet-level simulator (ECOFEN NS-3's Simulator) by
+     simulating large-scale networks. (Iterate to modify the implemented model until acceptable accuracy is achieved)
+   - *Why Simulator-to-Simulator validation?* because experimental test-beds such as Grid5000 do not contain nodes with tools such as power meter and
+     traffic generator therefore we can not make direct power measurement on real network
+   - [[file:manuscript/images/approach.pdf][Figure 4.1]] in the thesis document is based on this version
+**** METHOD Version-2
+   - (1) study literature to know the state-of-the-art (to know if there is already flow-level model for large-scale networks). So far, I have not
+     found any flow-level energy consumption model for large-scale networks
+   - (2) simulate energy consumption of small-scale network and assume the resulting model for large-scale networks or simulate energy consumption of
+     large-scale network and come up with a model that describe the power consumption and traffic relationship
+   - (3) implement the model found in step-2 for SimGrid
+   - (4) validate the accuracy and scalability of the implemented flow-level model against packet-level simulator
+   - *Why do we use simulator for studying flow-level power consumption of large-scale networks?* same answer as METHOD Version-1
+   - *Why Simulator-to-Simulator validation?* same answer as METHOD Version-1
+*** Challenge
+   - I am trying to justify the method used in this study but I am not sure which of the above two models are appropriate/reasonable for this study. I
+     am thinking METHOD Version-1 is more appropriate because [[file:manuscript/images/energyproportionality.pdf][Figure-1]] and [[file:figures/powervsdatarate.pdf][Figure-2]] show the relationship between power-consumption and traffic at a
+     flow-level for a network equipment such as a switch (a link in SimGrid context). If so, implementing the model shown in the figures and
+     validating for accuracy and scalabiltiy will be the next task 
+   - If I want to follow *METHOD Version-2* which means, either (1) I have to simulate a small-scale network (such as 3 nodes) and assume the
+     resulting flow-level model (such as the one shown below) holds true for large-scale networks. In this case the model shown below is similar to
+     Figure-1 and Figure-2
+#+BEGIN_SRC R :results output graphics :file figures/energy_cons_total.png :exports both 
+library(ggplot2)
+val_100 = read.csv("data/eco_val_modified_100.csv", header=T)
+val_576 = read.csv("data/eco_val_modified_576.csv", header=T)
+val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
+val_1500 = read.csv("data/eco_val_modified_1500.csv", header=T)
+all_data = rbind(val_100,val_576,val_1000,val_1500)
+attach(all_data)
+ggplot(all_data,aes(x=Throughput))+
+   geom_point(aes(y = Cons_Total))+
+   facet_grid(.~Packet_Size)+
+   ylab(label="Power Consumption in Watt")+
+   xlab(label="Traffic in Mbps")+
+   theme_minimal()+
+   theme(panel.margin = unit(1.2,"lines"))   
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/energy_cons_total.png]]
+
+   Or (2) I have to simulate large-scale network and study the relationship between power consumption and traffic at flow-level, which I have not done
+   yet.    
+*** Question 
+   - Which Method is reasonable? Method Version-1 or Method Version-2 or some other method
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 

@@ -29,6 +29,15 @@
 \newblock {\em {IEEE} Communications Surveys and Tutorials 13}, 2 (2011),
   223--244.
 
+\bibitem{DBLP:journals/ijhpca/BolzeCCDDJJLLMMNPQRTT06}
+{\sc Bolze, R., Cappello, F., Caron, E., Dayd{\'{e}}, M.~J., Desprez, F.,
+  Jeannot, E., J{\'{e}}gou, Y., Lanteri, S., Leduc, J., Melab, N., Mornet, G.,
+  Namyst, R., Primet, P., Qu{\'{e}}tier, B., Richard, O., Talbi, E., and
+  Touche, I.}
+\newblock Grid'5000: {A} large scale and highly reconfigurable experimental
+  grid testbed.
+\newblock {\em {IJHPCA} 20}, 4 (2006), 481--494.
+
 \bibitem{DBLP:conf/valuetools/CarneiroFR09}
 {\sc Carneiro, G., Fortuna, P., and Ricardo, M.}
 \newblock Flowmonitor: {A} network monitoring framework for the network

@@ -39,45 +39,45 @@ Warning--I didn't find a database entry for "DBLP:conf/IEEEcloud/2015"
 Warning--I didn't find a database entry for "DBLP:conf/cloudnet/2014"
 Warning--I didn't find a database entry for "DBLP:conf/icc/2009"
 Warning--I didn't find a database entry for "DBLP:conf/aina/2010"
-You've used 25 entries,
+You've used 26 entries,
             2253 wiz_defined-function locations,
-            715 strings with 11164 characters,
-and the built_in function-call counts, 10113 in all, are:
-= -- 978
-> -- 485
+            723 strings with 11716 characters,
+and the built_in function-call counts, 10902 in all, are:
+= -- 1042
+> -- 572
 < -- 0
-+ -- 207
-- -- 174
-* -- 783
-:= -- 1561
-add.period$ -- 76
-call.type$ -- 25
-change.case$ -- 160
++ -- 242
+- -- 208
+* -- 872
+:= -- 1703
+add.period$ -- 79
+call.type$ -- 26
+change.case$ -- 180
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 389
-empty$ -- 813
-format.name$ -- 174
-if$ -- 2150
+cite$ -- 26
+duplicate$ -- 398
+empty$ -- 840
+format.name$ -- 208
+if$ -- 2291
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 26
-newline$ -- 127
-num.names$ -- 50
-pop$ -- 199
+int.to.str$ -- 26
+missing$ -- 27
+newline$ -- 132
+num.names$ -- 52
+pop$ -- 217
 preamble$ -- 1
-purify$ -- 137
+purify$ -- 156
 quote$ -- 0
-skip$ -- 264
+skip$ -- 269
 stack$ -- 0
-substring$ -- 681
-swap$ -- 124
+substring$ -- 711
+swap$ -- 126
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 96
+type$ -- 100
 warning$ -- 0
-while$ -- 103
-width$ -- 27
-write$ -- 253
+while$ -- 107
+width$ -- 28
+write$ -- 263
 (There were 11 error messages)
