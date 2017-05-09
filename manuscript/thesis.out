@@ -21,8 +21,10 @@
 \BOOKMARK [0][]{chapter.4}{4 Methods}{}% 21
 \BOOKMARK [1][-]{section.4.1}{4.1 Our Approach}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.2}{4.2 Validating ECOFEN}{chapter.4}% 23
-\BOOKMARK [0][]{chapter.5}{5 Implementation}{}% 24
-\BOOKMARK [0][]{chapter.6}{6 Evaluation}{}% 25
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 26
-\BOOKMARK [0][]{chapter.8}{8 Conclusions}{}% 27
-\BOOKMARK [0][]{appendix.A}{A First appendix}{}% 28
+\BOOKMARK [2][-]{subsubsection.4.2.0.1}{4.2.0.1 Validating the Linear Model}{section.4.2}% 24
+\BOOKMARK [3][-]{subsubsection.4.2.0.2}{4.2.0.2 Validating the Complete Model}{subsubsection.4.2.0.1}% 25
+\BOOKMARK [0][]{chapter.5}{5 Implementation}{}% 26
+\BOOKMARK [0][]{chapter.6}{6 Evaluation}{}% 27
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 28
+\BOOKMARK [0][]{chapter.8}{8 Conclusions}{}% 29
+\BOOKMARK [0][]{appendix.A}{A First appendix}{}% 30

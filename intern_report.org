@@ -1237,7 +1237,7 @@ library(ggplot2)
 val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
 attach(val_1000)
 ggplot(val_1000,aes(x=Mbps))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-2"))+
+   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
    geom_point(aes(y = Cons_ExpecPps, colour = "Expected"))+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in PPS")+
@@ -1307,7 +1307,7 @@ ggplot(val_1000,aes(x=Mbps))+
    - *Why do we use simulator for studying flow-level power consumption of large-scale networks?* same answer as METHOD Version-1
    - *Why Simulator-to-Simulator validation?* same answer as METHOD Version-1
 *** Challenge
-   - I am trying to justify the method used in this study but I am not sure which of the above two methods are appropriate/reasonable for this study. I
+   - I am trying to justify the method used in this study but I am not sure which of the above two methods is appropriate/reasonable for this study. I
      am thinking *METHOD Version-1* is more appropriate because [[file:manuscript/images/energyproportionality.pdf][Figure-1]] and [[file:figures/powervsdatarate.pdf][Figure-2]] show the relationship between power-consumption and traffic at a
      flow-level for a network equipment such as a switch (a link in SimGrid context). If so, implementing the model shown in the figures and
      validating for accuracy and scalabiltiy will be the next task 

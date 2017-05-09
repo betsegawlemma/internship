@@ -27,4 +27,97 @@ In the accuracy-validation and scalability-comparison experiments mentioned in o
 	\end{center}
 \end{figure}
 \section{Validating ECOFEN}
- ECOFEN has three models with names \emph{basic}, \emph{linear} and \emph{complete} that we have discussed in Section~\ref{section:relatedsimulator} of Chapter~\ref{chapter:background}. The \emph{linear} and \emph{complete} models
+ECOFEN has three models with names \emph{basic}, \emph{linear} and \emph{complete} that we have discussed in Section~\ref{section:relatedsimulator} of Chapter~\ref{chapter:background}. Both the \emph{linear} and \emph{complete} models can produce values of power consumption as a function of traffic. The  \emph{basic} model, on the other hand, produces power consumption values based on the ON or OFF state of a node, it does not consider network traffic. Therefore we describe the validation experiments for both the \emph{linear} and the \emph{complete} models in this section. 
+ 
+The basic procedure for the validation experiment is first to simulate, using ECOFEN, power consumption in response to traffic sent or received and then to compare the result against data obtained from actual measurements.
+\subsubsection{Validating the Linear Model}
+In the work of Sivaraman et al.{\ }\cite{Sivaraman} we can find the result of a power consumption experiment that is shown in Figure~\ref{fig:powervsdatarate1}. The figure displays the linear relationship that exist between traffic volume (in Mbps) and power consumption (in watts) for a fixed packet sizes of 100, 576, 1000, and 1500 bytes. Furthermore, in the figure, the linear fit equations (models) for each of the packet sizes is also displayed. 
+
+The authors intention in this experiment is to determine the per-byte and the per-packet processing energy consumption values but our intention in this section, on the other hand, is to use the per-byte value that they have experimentally determined and get power consumption values for a given traffic volume input values. Then compare the results we obtained with the actual power measurement values shown in Figure~\ref{fig:powervsdatarate1}.
+
+In their experiment, the authors used three kinds of hardware devices: (1) NetFPGA router card that has four 1 Gbps Ethernet ports, (2) IXIA hardware traffic-generator for generating packets with the desired packet-size and data-rate, and (3) high-fidelity oscilloscope for measuring the power consumed by the NetFPGA card as a consequence of the packets send or received. 
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics{images/powervsdatarate1.pdf}
+		\caption{Power consumption vs data-rate for fixed packet size \cite{Sivaraman}}
+		\label{fig:powervsdatarate1}
+	\end{center}
+\end{figure}
+
+The linear model of ECOFEN module accepts energy consumption values for the idle state of a simulated network interface card(NIC) and for each of processed bytes by it. The underlying NS-3 platform, in addition, provides us more parameters such as packet-size and data-rate, which among other parameters, enable us to have full control over the generated traffic.
+
+In this validation experiment we wish to simulate the experiment conducted by Sivaraman et al.{\ } as closely as possible. With this in mind, we setup, in our NS-3 simulation script, a three node simple network with first and third nodes being connected to the second node. All the three nodes are connected to each other by links that have maximum bandwidth capacity of 1Gbps and delay of 1ns. 
+
+We got the idle consumption values for each of the packet-size models shown in Figure~\ref{fig:powervsdatarate1} by setting the x component (the data rate value) to zero and for a per-byte processing energy consumption value, we used 3.4nJ. This is the value that the researchers experimentally determined. 
+
+For the generated traffic volume in the simulation, we used uniform random number generator provided by NS-3, to get integer values between 1 and 1000. Our NS-3 script, in addition to packet-size and data-rate values, also requires number of packets to be send and also inter-packet interval time values. These values are derived from packet-size and data-rate parameters. 
+
+Since there might be network problems such as packet-drops or other issues, we have employed NS-3's flow-monitor module to monitor the actual traffic transfer while the simulation is running. Indeed, we have observed some disparity between the input data rate and the actual data rate. 
+
+Finally, we set the remaining simulation environment configuration settings such as starting and stopping time and then run the experiment 40 times, each time with different run value for the random number generator. The result obtained for packet-size 1500 is plotted, as an example, in Figure~\ref{fig:linear}. The graph for the other packet-sizes looks quite similar. We chose not to show them here for the sake of non-redundancy. 
+
+Visually, the simulated and the expected values seems to agree very well, even though the simulated values start to grow slightly faster for larger data-rates. In order to be more sure we run statistical test called unpaired t-test. The result of the test for all packet-sizes is shown in Table~\ref{table:linearttest}. 
+
+The 95\% confidence interval values shown in Table~\ref{table:linearttest} of difference in mean between the measured and simulated values are very close to zero. The P-values are also confirming the same thing, the null hypothesis that the difference in mean is zero is not rejected. 
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=14cm]{images/simulatedvsexpectedlinear.pdf}
+		\caption{Power consumption vs data-rate comparison between expected (or measured) values (in red color) and simulated values (in light blue color) for a fixed packet size of 1500 Bytes}
+		\label{fig:linear}
+	\end{center}
+\end{figure}
+
+\begin{table}
+	\begin{tabular}{|p{1.3cm}|p{4.6cm}|p{2.1cm}|p{2.1cm}|p{1.3cm}|} 
+	    \hline 
+		\textbf{Packet Size} & \textbf{Confidence Interval of difference in mean} & \textbf{Mean of Simulated} & \textbf{Mean of Expected}& \textbf{P-Value}\\ 
+		\hline 
+		 100 &	[-0.02840366, 0.09094080]&	10.59961&	10.56835&	0.3001\\
+		\hline
+		 576 &	[-0.04086185, 0.07012994]&	10.51069&	10.49605&	0.6013\\ 
+		\hline
+		 1000&	[-0.04450076, 0.06247119]&	10.43378&	10.42480&	0.7391\\ 
+	    \hline	 
+	     1500&	[-0.06028594, 0.04043616]&	10.53650&	10.54643&	0.696\\ 
+	    \hline
+	\end{tabular} 
+	\caption{Unpaired t-test results for simulated and measured power consumption values for ECOFEN's linear}
+	\label{table:linearttest}
+\end{table}
+
+The conclusion of this validation test is that the linear model of ECOFEN is accurate in predicting the power consumption value for a given traffic volume. 
+\subsubsection{Validating the Complete Model}
+Roughly in this validation experiment we have used the same experimental configuration and procedure as that of the linear validation experiment that we have described in the previous section. Therefore, in this section our focus will be more on the result than on the configuration.
+
+One of the main difference between the complete and the linear model of ECOFEN is that the complete model distinguishes between the received and sent bytes. Which means that different energy consumption values can be assigned to bytes based on their direction. The linear model, on the other hand, treats both as bytes processed. The other main difference is that the complete model considers the packet processing energy consumption cost both for the packets send and received separately. 
+
+Sivaraman et al.{\ }\cite{Sivaraman} also conducted experiments to determine energy consumption values for per-byte receive or transmit and per-packet processing. The experimentally determined values for per-byte receive 1.3nJ, per-byte transmit is 2.1nJ for per-byte and for per-packet processing is 197.2nJ. 
+
+We have slightly modified the NS-3 script that we have used in the previous section to accommodate this experiment.Now we have configured our script for the ECOFEN's complete model to use energy consumption values for per-byte receive or send and per-packet processing. Further more, we have upgraded the link capacity between the nodes from 1Gbps to 2Gbps. Finally, we set the traffic rate  in terms of packets per second in the sending end and in terms of Mbps in the receiving end in order to comply with the experiments done by mentioned authors. 
+
+Table~\ref{table:complettest} shows the unpaired t-test result for one packet-sizes in the transmitting side (Tx) and for two packet-sizes in the receiving side. 
+
+\begin{table}
+	\begin{tabular}{|p{1.3cm}|p{0.7cm}|p{4.6cm}|p{2.1cm}|p{2.1cm}|p{1.2cm}|} 
+		\hline 
+		\textbf{Packet Size} & End &\textbf{Confidence Interval of difference in mean} & \textbf{Mean of Simulated} & \textbf{Mean of Expected}& \textbf{P-Value}\\ 
+		\hline 
+		576 &	Rx&	[-0.06544964, 0.03207116]&	10.75045&	10.76714&	0.4977\\
+		\hline
+		1500&	Rx&	[-0.01301081, 0.08233968]&	10.75565&	10.72098&	0.1517\\ 
+		\hline
+		1000&	Tx&	[-0.08695043, 0.04715759]&	10.72351&	10.74340&	0.5565\\ 
+		\hline	 
+	\end{tabular} 
+	\caption{Unpaired t-test results for simulated and measured power consumption values for ECOFEN's complete model}
+	\label{table:complettest}
+\end{table}
+
+Again in this case the 95\% confidence interval values shown in Table~\ref{table:complettest} of difference in mean between the measured and simulated values are very close to zero, though not as close as in the linear case. The P-values are also confirming the same thing, the null hypothesis that the difference in mean is zero is not rejected. 
+
+The conclusion of this validation is also the same as the previous one, the complete model accurately predicts power consumption for a given send or received traffic volume.  
+
+ 
+

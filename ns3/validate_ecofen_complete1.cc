@@ -20,10 +20,10 @@
 /*
 
     N0---------------N1---------------N2
-       1Gbps, 1ns         1Gbps, 1ns
+         2Gbps, 1ns        2Gbps, 1ns
   
   to run the scritp use the following example
- ./waf validate_ecofen_modified --run " --packetSize=1472 --rngRun=2"
+ ./waf validate_ecofen_modified_c --run " --packetSize=1472 --rngRun=2"
 
 */
 
@@ -44,7 +44,8 @@ using namespace ns3;
 
 NS_LOG_COMPONENT_DEFINE ("EnergyPerFlowExample");
 
-double throughput = 0;
+double throughput_send = 0;
+double throughput_recieve = 0;
 
 class MyApp : public Application
 {
@@ -178,11 +179,11 @@ main (int argc, char *argv[])
   uint32_t numPackets = 1; // numPackets send in each iteration
   double dataRate = 1; // data rate for each iteration
   double min = 1; // minimum value for generated uniform random data rate value
-  double max = 900; // maximum value for generated uniform random data rate value
-  std::string maxBandwidth = "1Gbps"; // the capacity of P2P link
+  double max = 1800; // maximum value for generated uniform random data rate value
+  std::string maxBandwidth = "2Gbps"; // the capacity of P2P link
   std::string delay = "1ns"; // P2P link delay
   uint32_t rngRun = 1; // set run number
-  double idle=10.242;
+  double idle = 0;
 
   CommandLine cmd;
 
@@ -190,7 +191,7 @@ main (int argc, char *argv[])
   cmd.AddValue ("rngRun", "Set run number for uniform random variable generation", rngRun);
 
   cmd.Parse(argc,argv);
-  
+
   if(packetSize == 72){
     idle = 10.35521132;
   }else if(packetSize == 548){
@@ -200,6 +201,7 @@ main (int argc, char *argv[])
   }else if(packetSize == 1472){
     idle =  10.35805453;
   }
+  
   // Configure random variable generation for traffic rate
 
   RngSeedManager::SetSeed(rngRun);
@@ -242,12 +244,22 @@ main (int argc, char *argv[])
   NetDeviceContainer d0d1 = pointtopoint.Install (n0n1);
   NetDeviceContainer d1d2 = pointtopoint.Install (n1n2);
   
-
+/*
   LinearNetdeviceEnergyHelper linearNetdeviceEnergy;
   linearNetdeviceEnergy.Set ("IdleConso", DoubleValue (0.0));
   linearNetdeviceEnergy.Set ("OffConso", DoubleValue (0.0));
-  linearNetdeviceEnergy.Set ("ByteEnergy", DoubleValue (3.423));
+  linearNetdeviceEnergy.Set ("ByteEnergy", DoubleValue (3.212));
   linearNetdeviceEnergy.Install (nodes);
+*/
+
+  CompleteNetdeviceEnergyHelper completeNetdeviceEnergy;
+  completeNetdeviceEnergy.Set ("IdleConso", DoubleValue(0.0));
+  completeNetdeviceEnergy.Set ("OffConso", DoubleValue(0.0));
+  completeNetdeviceEnergy.Set ("RecvByteEnergy", DoubleValue (1.3));
+  completeNetdeviceEnergy.Set ("SentByteEnergy", DoubleValue (2.1));
+  completeNetdeviceEnergy.Set ("RecvPktEnergy", DoubleValue (197.2));
+  completeNetdeviceEnergy.Set ("SentPktEnergy", DoubleValue (197.2));
+  completeNetdeviceEnergy.Install (nodes);
 
   ConsumptionLogger conso;
   conso.NodeConso (Seconds (1.0), Seconds (1.01), nodes);
@@ -324,8 +336,10 @@ main (int argc, char *argv[])
   NS_LOG_UNCOND( "  Time last packet Received: " << flow->second.timeLastRxPacket.GetSeconds() );
 
 */ 
-  throughput = flow->second.rxBytes * 8.0 / (flow->second.timeLastRxPacket.GetSeconds () - flow->second.timeFirstRxPacket.GetSeconds ()) / 1000000.0;
-  std::cout <<"Time " <<flow->second.timeLastRxPacket.GetSeconds()<<" Throughput "<<throughput;
+  throughput_recieve = flow->second.rxBytes * 8.0 / (flow->second.timeLastRxPacket.GetSeconds () - flow->second.timeFirstRxPacket.GetSeconds ()) / 1000000.0;
+  throughput_send = flow->second.txBytes * 8.0 / (flow->second.timeLastTxPacket.GetSeconds () - flow->second.timeFirstTxPacket.GetSeconds ()) / 1000000.0;
+
+  std::cout <<"Time " <<flow->second.timeLastRxPacket.GetSeconds()<<" SentTraffic "<<throughput_send<<" RecievedTraffic "<<throughput_recieve;
   if(flow->second.lostPackets > 0)
   {
    NS_LOG_UNCOND( "Lost Packets:" << flow->second.lostPackets ); 
@@ -334,18 +348,25 @@ main (int argc, char *argv[])
   }
  // Calculate expected value
 
-   double expVal = 0;
+  double expValRecieve = 0;
+  double expValSend = 0;
+ 
   if(packetSize == 72){
-    expVal = (0.00050047 * throughput) + 10.35521132;
+    expValRecieve = (0.00050047 * throughput_recieve) + 10.35521132;
+    expValSend = (0.00050047 * throughput_send) + 10.35521132;
   }else if(packetSize == 548){
-    expVal = (0.00046162 * throughput) + 10.30132998;
+    expValRecieve = (0.00046162 * throughput_recieve) + 10.30132998;
+    expValSend = (0.00046162 * throughput_send) + 10.30132998;
   }else if(packetSize == 972){
-    expVal = (0.00044898 * throughput) + 10.23447916;
+    expValRecieve = (0.00044898 * throughput_recieve) + 10.23447916;
+    expValSend = (0.00044898 * throughput_send) + 10.23447916;
   }else if(packetSize == 1472){
-    expVal = (0.00040586 * throughput) + 10.35805453;
+    expValRecieve = (0.00040586 * throughput_recieve) + 10.35805453;
+    expValSend = (0.00040586 * throughput_send) + 10.35805453;
   }
+  
 
-  std::cout <<" PacketSize "<<packetSize<<" Expected "<< expVal<<std::endl;
+  std::cout <<" PacketSize "<<packetSize<<" ExpValSend "<<expValSend<<" ExpValRecieve "<<expValRecieve<<std::endl;
   
   Simulator::Destroy ();
   return 0;
