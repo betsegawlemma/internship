@@ -23,15 +23,15 @@
 \contentsline {chapter}{\numberline {3}Environment}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}SimGrid}{19}{section.3.1}
 \contentsline {section}{\numberline {3.2}NS-3}{19}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}ECOFEN Module}{19}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}FlowMonitor Module}{19}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Methods}{20}{chapter.4}
-\contentsline {section}{\numberline {4.1}Our Approach}{22}{section.4.1}
-\contentsline {section}{\numberline {4.2}Validating ECOFEN}{24}{section.4.2}
-\contentsline {subsubsection}{\numberline {4.2.0.1}Validating the Linear Model}{24}{subsubsection.4.2.0.1}
-\contentsline {subsubsection}{\numberline {4.2.0.2}Validating the Complete Model}{27}{subsubsection.4.2.0.2}
-\contentsline {chapter}{\numberline {5}Implementation}{29}{chapter.5}
-\contentsline {chapter}{\numberline {6}Evaluation}{30}{chapter.6}
-\contentsline {chapter}{\numberline {7}Discussion}{31}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusions}{32}{chapter.8}
-\contentsline {chapter}{\numberline {A}First appendix}{37}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.1}ECOFEN Module}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}FlowMonitor Module}{21}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Methods}{22}{chapter.4}
+\contentsline {section}{\numberline {4.1}Our Approach}{24}{section.4.1}
+\contentsline {section}{\numberline {4.2}Validating ECOFEN}{26}{section.4.2}
+\contentsline {subsubsection}{\numberline {4.2.0.1}Validating the Linear Model}{26}{subsubsection.4.2.0.1}
+\contentsline {subsubsection}{\numberline {4.2.0.2}Validating the Complete Model}{29}{subsubsection.4.2.0.2}
+\contentsline {chapter}{\numberline {5}Implementation}{31}{chapter.5}
+\contentsline {chapter}{\numberline {6}Evaluation}{32}{chapter.6}
+\contentsline {chapter}{\numberline {7}Discussion}{33}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusions}{34}{chapter.8}
+\contentsline {chapter}{\numberline {A}First appendix}{39}{appendix.A}
