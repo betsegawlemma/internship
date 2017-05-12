@@ -1339,6 +1339,11 @@ ggplot(all_data,aes(x=Throughput))+
 *** Question 
    - Which Method is reasonable? Method Version-1 or Method Version-2 or some other method
 ** Week 2 May 
+*** Questions on SimGrid
+    - Is the constructor correct in [[https://github.com/betsegawlemma/simgrid/blob/master/src/surf/plugins/link_energy.cpp][link_energy.cpp]]
+    - Not sure if the casting at line 139 and line 265 cause any problem
+    - Changing access modifier of surf::LinkImpl* const pimpl_ from private to public in [[https://github.com/betsegawlemma/simgrid/blob/master/include/simgrid/s4u/Link.hpp][Link.hpp]] at line 38
+    - What is the best way to send multiple traffic from Master to Worker in s4u application?
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
