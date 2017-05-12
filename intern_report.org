@@ -1344,6 +1344,8 @@ ggplot(all_data,aes(x=Throughput))+
     - Not sure if the casting at line 139 and line 265 cause any problem
     - Changing access modifier of surf::LinkImpl* const pimpl_ from private to public in [[https://github.com/betsegawlemma/simgrid/blob/master/include/simgrid/s4u/Link.hpp][Link.hpp]] at line 38
     - What is the best way to send multiple traffic from Master to Worker in s4u application?
+    - What does operator()() do in s4u application?
+    - How to use Mailbox for transferring traffic from Master to Worker
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
