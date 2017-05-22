@@ -1,11 +1,10 @@
-\chapter{Environment\\(READY FOR PROOFREAD)}
+\chapter{Environment}
 \label{chapter:environment}
 In this study we employed SimGrid, ECOFEN and FlowMonitor modules of NS-3 simulator. This chapter explains the main features of these tools from the perspective of our simulation experiment needs.
 
-
 \section{SimGrid}
 In Section~\ref{section:simgrid} of Chapter~\ref{chapter:background} we discussed the software architecture of SimGrid at a higher level. We will give low-level details of the implemented flow-level model and related concepts in later chapter. In this section, our plan is to discuss features of SimGrid that are related to setting up and running energy consumption experiments.
-\todo[inline]{Is there something missing here? It seems weird to have a section with only one paragraph saying that we are not going to talk about something here.}
+\todo[inline]{TODO: Include how SimGrid experiments are done}
 
 \section{NS-3}
 NS-3 is a discrete-event packet-level simulator, events corresponding to, for instance, arrival and departure of packets. NS-3 is structured in a modular manner. The core and the network modules are two of the modules that serve as generic simulation core that can be used for Internet-based or different network type simulation. These two modules, being generic, are independent from any device models. The core module provides features such as tracing, callbacks, smart pointer, random variables, events and schedules. The network module consists components such as packets, node, addresses (e.g.{\ } IPv4 and MAC) and network devices. The components provided by the simulation core modules can be used to create other modules. This feature allows researchers to add their own models for the network phenomenon that they want to simulate. We will visit two of the modules that are constructed in this way in the next two subsections\cite{ns3}. 
