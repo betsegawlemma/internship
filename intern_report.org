@@ -998,7 +998,7 @@ ggplot(all_data,aes(x=Throughput))+
   - 50 Mbps when the packet size is 100 bytes
   - 100 Mbps when the packet size is 576 bytes
   - 125 Mbps when the packet size is 1000 or 1500 bytes
-- The simulator terminates with the following error as shown at the bottom of [[file:data/eco_val_100.dat]] and [[file:data/eco_val_576.dat]] when the traffic
+- The simulator terminates with the following error as shown at the bottom of [[file:data/eco_val_100.raw]] and [[file:data/eco_val_576.raw]] when the traffic
   volume goes above 384.801 Mbps and 804.193 Mbps respectively. For the other two cases, the execution terminates successfully without error
   termination.
 #+BEGIN_EXAMPLE
@@ -1012,8 +1012,8 @@ terminate called after throwing an instance of 'std::bad_alloc'
 - The solution to the issue is to run the loop outside the NS-3 script, in the shell script.
 - Accordingly, the original NS-3 script is [[file:ns3/validate_ecofen_modified.cc][modified]] to remove the loop 
 - The NS-3 script is also modified to use random traffic volume generated from uniform random value generator
-- The following code block runs the modified script to produce the updated raw data files: [[file:data/eco_val_modified_100.dat]],
-  [[file:data/eco_val_modified_576.dat]], [[file:data/eco_val_modified_1000.dat]], and [[file:data/eco_val_modified_1500.dat]]
+- The following code block runs the modified script to produce the updated raw data files: [[file:data/eco_val_modified_100.raw]],
+  [[file:data/eco_val_modified_576.raw]], [[file:data/eco_val_modified_1000.raw]], and [[file:data/eco_val_modified_1500.raw]]
 #+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
 cd ~/ns3workspace/source/ns-3.26
@@ -1021,8 +1021,8 @@ array=(548 972 1472)
 header=28
 for i in ${array[@]}; do
 j=$((header + i))
-  for ((k=20; k<=60; k++)); do
- ./waf --run "scratch/validate_ecofen_modified --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_modified1_${j}.dat 2>&1
+  for ((k=1; k<=40; k++)); do
+ ./waf --run "scratch/validate_ecofen_linear --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_linear_${j}.raw 2>&1
    done
  done
 #+END_SRC
@@ -1030,57 +1030,151 @@ j=$((header + i))
 #+RESULTS:
 
 - After processing the files produced by the above code block using the python script used in the previous validation experiment, we get the following
-  .csv files: [[file:data/eco_val_modified_100.csv]], [[file:data/eco_val_modified_576.csv]], [[file:data/eco_val_modified_1000.csv]], and
-  [[file:data/eco_val_modified_1500.csv]]
-#+CALL: extract_data(input_file="data/eco_val_modified_100.dat", output_file="data/eco_val_modified_100.csv",size=100) 
-#+CALL: extract_data(input_file="data/eco_val_modified_576.dat", output_file="data/eco_val_modified_576.csv",size=576) 
-#+CALL: extract_data(input_file="data/eco_val_modified_1000.dat", output_file="data/eco_val_modified_1000.csv",size=1000) 
-#+CALL: extract_data(input_file="data/eco_val_modified_1500.dat", output_file="data/eco_val_modified_1500.csv",size=1500) 
+  .csv files: [[file:data/eco_val_linear_100.csv]], [[file:data/eco_val_linear_576.csv]], [[file:data/eco_val_linear_1000.csv]], and
+  [[file:data/eco_val_linear_1500.csv]]
+#+CALL: extract_data(input_file="data/eco_val_linear_100.raw", output_file="data/eco_val_linear_100.csv",size=100) 
+#+CALL: extract_data(input_file="data/eco_val_linear_576.raw", output_file="data/eco_val_linear_576.csv",size=576) 
+#+CALL: extract_data(input_file="data/eco_val_linear_1000.raw", output_file="data/eco_val_linear_1000.csv",size=1000) 
+#+CALL: extract_data(input_file="data/eco_val_linear_1500.raw", output_file="data/eco_val_linear_1500.csv",size=1500) 
 - The graph shown below plots the power consumption for a given traffic volume for each of the four packet sizes -  100, 576, 1000 and 1500 bytes
-#+BEGIN_SRC R :results output graphics :file figures/ecof_val_modified_all.png :exports both 
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedlinear.png :exports both 
 library(ggplot2)
-val_100 = read.csv("data/eco_val_modified_100.csv", header=T)
-val_576 = read.csv("data/eco_val_modified_576.csv", header=T)
-val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
-val_1500 = read.csv("data/eco_val_modified_1500.csv", header=T)
+library(gridExtra)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(5,5,5,5),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+val_100 = read.csv("data/eco_val_linear_100.csv", header=T)
+val_576 = read.csv("data/eco_val_linear_576.csv", header=T)
+val_1000 = read.csv("data/eco_val_linear_1000.csv", header=T)
+val_1500 = read.csv("data/eco_val_linear_1500.csv", header=T)
 all_data = rbind(val_100,val_576,val_1000,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Throughput))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-(0 or 2)"))+
-   geom_point(aes(y = Cons_Expected, colour = "Expected"))+
-   facet_grid(.~Packet_Size)+
+   geom_line(aes(y = Cons_Node0, colour = "Simulated"),size=1.3)+
+   geom_line(aes(y = Cons_Expected, colour = "Expected"),size=1.3)+
+   facet_wrap(~Packet_Size,scales="free")+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
-   theme_minimal()+
-   theme(legend.position="top",legend.title=element_blank(),
-         panel.margin = unit(1.1,"lines"))   
+   scale_colour_Publication()+
+   theme_Publication()
 #+END_SRC
 
 #+RESULTS:
-[[file:figures/ecof_val_modified_all.png]]
+[[file:figures/expectedvssimulatedlinear.png]]
 
 **** Analysis
      - From the plot we can see that the expected and the simulated consumption agrees very well. The result of the unpaired t-test further confirms
        this observation as shown in the below in table   
      #+BEGIN_SRC R :results output :var validation=validation :exports both 
-       val_100 = read.csv("data/eco_val_modified_100.csv", header=T)
+       val_100 = read.csv("data/eco_val_linear_100.csv", header=T)
        t.test(val_100$Cons_Expected,val_100$Cons_Node2,paired=FALSE,conf.level=0.95)
-       val_576 = read.csv("data/eco_val_modified_576.csv", header=T)
+       val_576 = read.csv("data/eco_val_linear_576.csv", header=T)
        t.test(val_576$Cons_Expected,val_576$Cons_Node2,paired=FALSE,conf.level=0.95)
-       val_1000 = read.csv("data/eco_val_modified_1000.csv", header=T)
+       val_1000 = read.csv("data/eco_val_linear_1000.csv", header=T)
        t.test(val_1000$Cons_Expected,val_1000$Cons_Node2,paired=FALSE,conf.level=0.95)
-       val_1500 = read.csv("data/eco_val_modified_1500.csv", header=T)
+       val_1500 = read.csv("data/eco_val_linear_1500.csv", header=T)
        t.test(val_1500$Cons_Expected,val_1500$Cons_Node2,paired=FALSE,conf.level=0.95)
      #+END_SRC
 
      #+RESULTS:
-     
+     #+begin_example
+
+       Welch Two Sample t-test
+
+     data:  val_100$Cons_Expected and val_100$Cons_Node2
+     t = 1.2105, df = 80.053, p-value = 0.2297
+     alternative hypothesis: true difference in means is not equal to 0
+     95 percent confidence interval:
+      -0.02670553  0.10963940
+     sample estimates:
+     mean of x mean of y 
+      10.64030  10.59883 
+
+
+       Welch Two Sample t-test
+
+     data:  val_576$Cons_Expected and val_576$Cons_Node2
+     t = 0.71028, df = 79.323, p-value = 0.4796
+     alternative hypothesis: true difference in means is not equal to 0
+     95 percent confidence interval:
+      -0.03874768  0.08174914
+     sample estimates:
+     mean of x mean of y 
+      10.54427  10.52277 
+
+
+       Welch Two Sample t-test
+
+     data:  val_1000$Cons_Expected and val_1000$Cons_Node2
+     t = 0.50758, df = 79.649, p-value = 0.6131
+     alternative hypothesis: true difference in means is not equal to 0
+     95 percent confidence interval:
+      -0.04345649  0.07321157
+     sample estimates:
+     mean of x mean of y 
+      10.46618  10.45130 
+
+
+       Welch Two Sample t-test
+
+     data:  val_1500$Cons_Expected and val_1500$Cons_Node2
+     t = -0.25953, df = 79.909, p-value = 0.7959
+     alternative hypothesis: true difference in means is not equal to 0
+     95 percent confidence interval:
+      -0.06210323  0.04777418
+     sample estimates:
+     mean of x mean of y 
+      10.56561  10.57278 
+
+#+end_example
+**** Summary of test result     
 | Packet size | CI of difference in mean | Mean of Expected | Mean of Simulated | P-value |
 |-------------+--------------------------+------------------+-------------------+---------|
-|         100 | [-0.02840366,0.09094080] |         10.59961 |          10.56835 |  0.3001 |
-|         576 | [-0.04086185,0.07012994] |         10.51069 |          10.49605 |  0.6013 |
-|        1000 | [-0.04450076,0.06247119] |         10.43378 |          10.42480 |  0.7391 |
-|        1500 | [-0.06028594,0.04043616] |         10.53650 |          10.54643 |   0.696 |
+|         100 | [-0.02670553,0.10963940] |         10.64030 |          10.59883 |  0.2297 |
+|         576 | [-0.03874768,0.08174914] |         10.54427 |          10.52277 |  0.4796 |
+|        1000 | [-0.04345649,0.07321157] |         10.46618 |          10.45130 |  0.6131 |
+|        1500 | [-0.06210323,0.04777418] |         10.56561 |          10.57278 |  0.7959 |
 
 - The p-values tells us that the null hypothesis that the difference in mean is 0 is not rejected in all cases. Further more, from the 95% confidence
   interval we can also see that 0 is in the interval. From this we can say there is no difference between the two consumption, the difference we see
@@ -1112,8 +1206,8 @@ ggplot(all_data,aes(x=Throughput))+
   power consumption of *Node-2* with the computed consumption from the models shown in  [[file:figures/energy_for_recieving.pdf][Figure 7]] 
 - Since the traffic unit used in Figure 8's model is packets per second (PPS), the NS-3 script used in this experiment outputs the traffic volume at
   the sending end in terms of PPS. For the receiving end, it outputs in terms of Mbps, that is the unit used in Figure 7.   
-- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below produces files: [[file:data/eco_val_complete_576.dat]] and
-  [[file:data/eco_val_complete_1500.dat]] both of theses file are for the receiving end, and [[file:data/eco_val_complete_1000.dat]] is used for the sending
+- Running [[file:ns3/validate_ecofen_complete.cc][new NS-3 script]] as shown in the shell code block below produces files: [[file:data/eco_val_complete_576.raw]] and
+  [[file:data/eco_val_complete_1500.raw]] both of theses file are for the receiving end, and [[file:data/eco_val_complete_1000.raw]] is used for the sending
   end. 
 #+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
@@ -1123,7 +1217,7 @@ header=28
 for i in ${array[@]}; do
 j=$((header + i))
   for ((k=1; k<=40; k++)); do
- ./waf --run "scratch/validate_ecofen_complete --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_complete1_${j}.dat 2>&1
+ ./waf --run "scratch/validate_ecofen_complete --packetSize=${i} --rngRun=${k}" >> ~/internship/data/eco_val_complete_${j}.raw 2>&1
    done
  done
 #+END_SRC
@@ -1134,7 +1228,7 @@ j=$((header + i))
   output is modified as shown below to accommodate this change.
 
 #+NAME: extract_complete_data
-#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/eco_val_complete_576.dat" :var output_file="data/eco_val_complete_576.csv" :var size=576
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/eco_val_complete_576.raw" :var output_file="data/eco_val_complete_576.csv" :var size=576
 
 import sys
 
@@ -1192,76 +1286,204 @@ with open(input_file) as fe:
                       del data[:]
                       total_power = 0.0
 #+END_SRC
-#+CALL: extract_complete_data(input_file="data/eco_val_complete_576.dat", output_file="data/eco_val_complete_576.csv",size=576) 
-#+CALL: extract_complete_data(input_file="data/eco_val_complete_1000.dat", output_file="data/eco_val_complete_1000.csv",size=1000) 
-#+CALL: extract_complete_data(input_file="data/eco_val_complete_1500.dat", output_file="data/eco_val_complete_1500.csv",size=1500) 
-- Running the above python script using the raw data [[file:data/eco_val_complete_576.dat]], [[file:data/eco_val_complete_1000.dat]], and
-  [[file:data/eco_val_complete_1500.dat]] gives us the corresponding formatted files: [[file:data/eco_val_complete_576.csv]],
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_576.raw", output_file="data/eco_val_complete_576.csv",size=576) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_1000.raw", output_file="data/eco_val_complete_1000.csv",size=1000) 
+#+CALL: extract_complete_data(input_file="data/eco_val_complete_1500.raw", output_file="data/eco_val_complete_1500.csv",size=1500) 
+- Running the above python script using the raw data [[file:data/eco_val_complete_576.raw]], [[file:data/eco_val_complete_1000.raw]], and
+  [[file:data/eco_val_complete_1500.raw]] gives us the corresponding formatted files: [[file:data/eco_val_complete_576.csv]],
   [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
 **** Validating the receiving end 
 - We use two of the models shown in the paper
-#+BEGIN_SRC R :results output graphics :file figures/ecof_val_recieve.png :exports both 
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedreceiving.png :exports both 
 library(ggplot2)
+library(gridExtra)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(5,4,4,4),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
 val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
 val_1500 = read.csv("data/eco_val_complete_1500.csv", header=T)
 all_data = rbind(val_576,val_1500)
 attach(all_data)
 ggplot(all_data,aes(x=Mbps))+
-   geom_point(aes(y = Cons_Node2, colour = "Simulated Node-2"))+
-   geom_point(aes(y = Cons_ExpecMbps, colour = "Expected"))+
-   facet_grid(.~Packet_Size)+
+   geom_line(aes(y = Cons_Node2, colour = "Simulated"),size=1.3)+
+   geom_line(aes(y = Cons_ExpecMbps, colour = "Expected"),size=1.3)+
+   facet_wrap(~Packet_Size,scales="free")+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in Mbps")+
-   theme_minimal()+
-   theme(legend.position="top",legend.title=element_blank(),
-         panel.margin = unit(1.2,"lines"))   
+   scale_colour_Publication()+
+   theme_Publication()
 #+END_SRC
 
 #+RESULTS:
-[[file:figures/ecof_val_recieve.png]]
+[[file:figures/expectedvssimulatedreceiving.png]]
   - We compare the simulated and the expected consumption using unpaired t-test for the above plots. The result is shown in table below together with
     the sending end t-test result. 
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
-       val_576 = read.csv("data/eco_val_complete1_576.csv", header=T)
+       val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
        t.test(val_576$Cons_ExpecMbps,val_576$Cons_Node2,paired=FALSE,conf.level=0.95)
-       val_1500 = read.csv("data/eco_val_complete1_1500.csv", header=T)
+       val_1500 = read.csv("data/eco_val_complete_1500.csv", header=T)
        t.test(val_1500$Cons_ExpecMbps,val_1500$Cons_Node2,paired=FALSE,conf.level=0.95)
 #+END_SRC
 
 #+RESULTS:
+#+begin_example
+
+	Welch Two Sample t-test
+
+data:  val_576$Cons_ExpecMbps and val_576$Cons_Node2
+t = -0.52935, df = 79.621, p-value = 0.598
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.06740904  0.03908421
+sample estimates:
+mean of x mean of y 
+ 10.76985  10.78401 
+
+
+	Welch Two Sample t-test
+
+data:  val_1500$Cons_ExpecMbps and val_1500$Cons_Node2
+t = 1.5986, df = 76.683, p-value = 0.114
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.01036369  0.09471208
+sample estimates:
+mean of x mean of y 
+ 10.77780  10.73562 
+
+#+end_example
 **** Validating the sending/transmitting end 
 - For the transmitting end there is only one model in the paper mentioned above and the packet size used for that model is 1000. We only used the data
   for packet size 1000 in this plot. 
-#+BEGIN_SRC R :results output graphics :file figures/ecof_val_send.png :exports both 
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedsending.png :exports both 
 library(ggplot2)
+library(gridExtra)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
 val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
 attach(val_1000)
 ggplot(val_1000,aes(x=Mbps))+
-   geom_point(aes(y = Cons_Node0, colour = "Simulated Node-0"))+
-   geom_point(aes(y = Cons_ExpecPps, colour = "Expected"))+
+   geom_line(aes(y = Cons_Node0, colour = "Simulated"),size=1.3)+
+   geom_line(aes(y = Cons_ExpecPps, colour = "Expected"),size=1.3)+
    ylab(label="Power Consumption in Watt")+
    xlab(label="Traffic in PPS")+
-   theme_minimal()+   
-   theme(legend.title=element_blank(),legend.position="top")
+   scale_colour_Publication()+
+   theme_Publication()
 #+END_SRC
 
 #+RESULTS:
-[[file:figures/ecof_val_send.png]]
+[[file:figures/expectedvssimulatedsending.png]]
 
   - We compare the simulated and the expected consumption using unpaired t-test. The result is summarized in the table below
   
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
-       val_1000 = read.csv("data/eco_val_complete1_1000.csv", header=T)
+       val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
        t.test(val_1000$Cons_ExpecPps,val_1000$Cons_Node0,paired=FALSE,conf.level=0.95)
 #+END_SRC
 
 #+RESULTS:
+#+begin_example
+
+	Welch Two Sample t-test
+
+data:  val_1000$Cons_ExpecPps and val_1000$Cons_Node0
+t = -0.58636, df = 79.545, p-value = 0.5593
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.09636788  0.05250674
+sample estimates:
+mean of x mean of y 
+ 10.75099  10.77292 
+
+#+end_example
 
 | Packet size | End       | CI of difference in mean | Mean of Expected | Mean of Simulated | P-value |
 |-------------+-----------+--------------------------+------------------+-------------------+---------|
-|         576 | Receiving | [-0.06544964,0.03207116] |         10.75045 |          10.76714 |  0.4977 |
-|        1500 | Receiving | [-0.01301081,0.08233968] |         10.75565 |          10.72098 |  0.1517 |
-|        1000 | Sending   | [-0.08695043,0.04715759] |         10.72351 |          10.74340 |  0.5565 |
+|         576 | Receiving | [-0.06740904,0.03908421] |         10.76985 |          10.78401 |   0.598 |
+|        1500 | Receiving | [-0.01036369,0.09471208] |         10.77780 |          10.73562 |   0.114 |
+|        1000 | Sending   | [-0.09636788,0.05250674] |         10.75099 |          10.77292 |  0.5593 |
 
 - The p-values tells us that the null hypothesis that the difference in mean is 0 is not rejected in all cases. Further more, from the 95% confidence
   interval we can also see that 0 is in the interval. From this we can say there is no difference between the two consumption, the difference we see

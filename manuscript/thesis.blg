@@ -9,6 +9,8 @@ Repeated entry---line 783 of file sources.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "ns3" isn't style-file defined
 --line 983 of file sources.bib
+Warning--entry type for "simgrid" isn't style-file defined
+--line 999 of file sources.bib
 A bad cross reference---entry "DBLP:conf/eenergy/GyarmatiT10"
 refers to entry "DBLP:conf/eenergy/2010", which doesn't exist
 A bad cross reference---entry "DBLP:conf/isca/FanWB07"
@@ -17,6 +19,8 @@ A bad cross reference---entry "DBLP:conf/IEEEcloud/FiandrinoKBZ15"
 refers to entry "DBLP:conf/IEEEcloud/2015", which doesn't exist
 A bad cross reference---entry "DBLP:conf/networking/MahadevanSBR09"
 refers to entry "DBLP:conf/networking/2009", which doesn't exist
+A bad cross reference---entry "DBLP:conf/nsdi/NedevschiPIRW08"
+refers to entry "DBLP:conf/nsdi/2008", which doesn't exist
 A bad cross reference---entry "DBLP:conf/valuetools/CarneiroFR09"
 refers to entry "DBLP:conf/valuetools/2009", which doesn't exist
 A bad cross reference---entry "DBLP:conf/wowmom/OrgerieLLL11"
@@ -39,45 +43,46 @@ Warning--I didn't find a database entry for "DBLP:conf/IEEEcloud/2015"
 Warning--I didn't find a database entry for "DBLP:conf/cloudnet/2014"
 Warning--I didn't find a database entry for "DBLP:conf/icc/2009"
 Warning--I didn't find a database entry for "DBLP:conf/aina/2010"
-You've used 26 entries,
+Warning--I didn't find a database entry for "DBLP:conf/nsdi/2008"
+You've used 29 entries,
             2253 wiz_defined-function locations,
-            723 strings with 11716 characters,
-and the built_in function-call counts, 10902 in all, are:
-= -- 1042
-> -- 572
+            739 strings with 12447 characters,
+and the built_in function-call counts, 12129 in all, are:
+= -- 1149
+> -- 658
 < -- 0
-+ -- 242
-- -- 208
-* -- 872
-:= -- 1703
-add.period$ -- 79
-call.type$ -- 26
-change.case$ -- 180
++ -- 277
+- -- 240
+* -- 969
+:= -- 1902
+add.period$ -- 87
+call.type$ -- 29
+change.case$ -- 205
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 398
-empty$ -- 840
-format.name$ -- 208
-if$ -- 2291
+cite$ -- 29
+duplicate$ -- 439
+empty$ -- 924
+format.name$ -- 240
+if$ -- 2542
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 27
-newline$ -- 132
-num.names$ -- 52
-pop$ -- 217
+int.to.str$ -- 29
+missing$ -- 29
+newline$ -- 146
+num.names$ -- 58
+pop$ -- 250
 preamble$ -- 1
-purify$ -- 156
+purify$ -- 178
 quote$ -- 0
-skip$ -- 269
+skip$ -- 301
 stack$ -- 0
-substring$ -- 711
-swap$ -- 126
+substring$ -- 758
+swap$ -- 140
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 100
+type$ -- 112
 warning$ -- 0
-while$ -- 107
-width$ -- 28
-write$ -- 263
-(There were 11 error messages)
+while$ -- 116
+width$ -- 31
+write$ -- 290
+(There were 12 error messages)
