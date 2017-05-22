@@ -1568,6 +1568,12 @@ ggplot(all_data,aes(x=Throughput))+
     - What is the best way to send multiple traffic from Master to Worker in s4u application?
     - What does operator()() do in s4u application?
     - How to use Mailbox for transferring traffic from Master to Worker
+** Week 3 May
+   - Updating link energy implementation on SimGrid
+   - Writing the thesis document
+   - Correcting the thesis document
+** Week 4 May
+   
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
