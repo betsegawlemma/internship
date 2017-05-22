@@ -128,6 +128,13 @@
   Conference, Aachen, Germany, May 11-15, 2009. Proceedings\/} (2009),
   pp.~795--808.
 
+\bibitem{DBLP:conf/nsdi/NedevschiPIRW08}
+{\sc Nedevschi, S., Popa, L., Iannaccone, G., Ratnasamy, S., and Wetherall, D.}
+\newblock Reducing network energy consumption via sleeping and rate-adaptation.
+\newblock In {\em 5th {USENIX} Symposium on Networked Systems Design {\&}
+  Implementation, {NSDI} 2008, April 16-18, 2008, San Francisco, CA, USA,
+  Proceedings\/} (2008), pp.~323--336.
+
 \bibitem{DBLP:conf/wowmom/OrgerieLLL11}
 {\sc Orgerie, A., Lef{\`{e}}vre, L., Lassous, I.~G., and L{\'{o}}pez{-}Pacheco,
   D.~M.}
@@ -136,6 +143,13 @@
 \newblock In {\em 12th {IEEE} International Symposium on a World of Wireless,
   Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca, Italy, 20-24 June,
   2011\/} (2011), pp.~1--6.
+
+\bibitem{shehabi2016united}
+{\sc Shehabi, A., Smith, S., Horner, N., Azevedo, I., Brown, R., Koomey, J.,
+  Masanet, E., Sartor, D., Herrlin, M., and Lintner, W.}
+\newblock United states data center energy usage report.
+\newblock {\em Lawrence Berkeley National Laboratory, Berkeley, California.
+  LBNL-1005775 Page 4\/} (2016).
 
 \bibitem{DBLP:journals/comcom/SivaramanRZSVMR14}
 {\sc Sivaraman, V., Reviriego, P., Zhao, Z., S{\'{a}}nchez{-}Maci{\'{a}}n, A.,
@@ -157,6 +171,10 @@
 \newblock In {\em 24th {IEEE} International Conference on Advanced Information
   Networking and Applications, {AINA} 2010, Perth, Australia, 20-13 April
   2010\/} (2010), pp.~933--940.
+
+\bibitem{simgrid}
+{\sc team, S.}
+\newblock {SimGrid} simulator, 2017.
 
 \bibitem{DBLP:journals/tomacs/VelhoSCL13}
 {\sc Velho, P., Schnorr, L.~M., Casanova, H., and Legrand, A.}

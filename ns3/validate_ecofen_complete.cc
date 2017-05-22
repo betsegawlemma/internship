@@ -20,7 +20,7 @@
 /*
 
     N0---------------N1---------------N2
-       2Gbps, 1ns        2Gbps, 1ns
+       2Gbps, 10ms        2Gbps, 10ms
   
   to run the scritp use the following example
  ./waf validate_ecofen_modified_c --run " --packetSize=1472 --rngRun=2"
@@ -179,9 +179,9 @@ main (int argc, char *argv[])
   uint32_t numPackets = 1; // numPackets send in each iteration
   double dataRate = 1; // data rate for each iteration
   double min = 1; // minimum value for generated uniform random data rate value
-  double max = 1800; // maximum value for generated uniform random data rate value
+  double max = 2000; // maximum value for generated uniform random data rate value
   std::string maxBandwidth = "2Gbps"; // the capacity of P2P link
-  std::string delay = "1ns"; // P2P link delay
+  std::string delay = "10ms"; // P2P link delay
   uint32_t rngRun = 1; // set run number
   double idle = 0;
 

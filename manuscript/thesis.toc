@@ -12,26 +12,27 @@
 \contentsline {section}{\numberline {1.5}Structure of the Thesis}{8}{section.1.5}
 \contentsline {chapter}{\numberline {2}Background\\(READY FOR PROOFREAD)}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Electricity consumption of ICT equipments}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Data-center electricity consumption}{10}{section.2.2}
-\contentsline {section}{\numberline {2.3}Energy proportionality}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}Packet-level and flow-level Simulators}{12}{section.2.4}
-\contentsline {section}{\numberline {2.5}Simulating and modeling energy consumption of large-scale networks}{13}{section.2.5}
-\contentsline {section}{\numberline {2.6}SimGrid}{14}{section.2.6}
-\contentsline {section}{\numberline {2.7}Related Simulators}{16}{section.2.7}
-\contentsline {subsubsection}{\numberline {2.7.0.1}ECOFEN}{16}{subsubsection.2.7.0.1}
-\contentsline {subsubsection}{\numberline {2.7.0.2}GreenCloud}{17}{subsubsection.2.7.0.2}
-\contentsline {chapter}{\numberline {3}Environment\\(READY FOR PROOFREAD)}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}SimGrid}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}NS-3}{19}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}ECOFEN Module}{20}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}FlowMonitor Module}{21}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Methods\\(READY FOR PROOFREAD)}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Our Approach}{24}{section.4.1}
-\contentsline {section}{\numberline {4.2}Validating ECOFEN}{26}{section.4.2}
-\contentsline {subsubsection}{\numberline {4.2.0.1}Validating the Linear Model}{26}{subsubsection.4.2.0.1}
-\contentsline {subsubsection}{\numberline {4.2.0.2}Validating the Complete Model}{29}{subsubsection.4.2.0.2}
-\contentsline {chapter}{\numberline {5}Implementation}{31}{chapter.5}
-\contentsline {chapter}{\numberline {6}Evaluation}{32}{chapter.6}
-\contentsline {chapter}{\numberline {7}Discussion}{33}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusions}{34}{chapter.8}
-\contentsline {chapter}{\numberline {A}First appendix}{39}{appendix.A}
+\contentsline {section}{\numberline {2.2}Data-center and network electricity consumption}{10}{section.2.2}
+\contentsline {section}{\numberline {2.3}Energy proportionality}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Packet-level and flow-level Simulators}{13}{section.2.4}
+\contentsline {section}{\numberline {2.5}Simulating and modeling energy consumption of large-scale networks}{15}{section.2.5}
+\contentsline {section}{\numberline {2.6}SimGrid}{16}{section.2.6}
+\contentsline {section}{\numberline {2.7}Related Simulators}{17}{section.2.7}
+\contentsline {subsubsection}{\numberline {2.7.0.1}ECOFEN}{18}{subsubsection.2.7.0.1}
+\contentsline {subsubsection}{\numberline {2.7.0.2}GreenCloud}{18}{subsubsection.2.7.0.2}
+\contentsline {chapter}{\numberline {3}Environment\\(READY FOR PROOFREAD)}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}SimGrid}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}NS-3}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}ECOFEN Module}{21}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}FlowMonitor Module}{22}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Methods\\(READY FOR PROOFREAD)}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Common Approaches}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Our Approach}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}Validating ECOFEN}{27}{section.4.3}
+\contentsline {subsubsection}{\numberline {4.3.0.1}Validating the Linear Model}{28}{subsubsection.4.3.0.1}
+\contentsline {subsubsection}{\numberline {4.3.0.2}Validating the Complete Model}{30}{subsubsection.4.3.0.2}
+\contentsline {chapter}{\numberline {5}Implementation}{34}{chapter.5}
+\contentsline {chapter}{\numberline {6}Evaluation}{35}{chapter.6}
+\contentsline {chapter}{\numberline {7}Discussion}{36}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusions}{37}{chapter.8}
+\contentsline {chapter}{\numberline {A}First appendix}{42}{appendix.A}
