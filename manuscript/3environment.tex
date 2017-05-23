@@ -40,7 +40,7 @@ Among the performance metrics that are available in FlowMonitor module, the foll
 We use the above performance metrics to compute throughput (T) with the unit of Mega-bits per second (Mbps) and Packets per second(Pps) as shown in Equation~\ref{eq:3.1} and Equation~\ref{eq:3.2}. 
 \begin{equation} \label{eq:3.1}
 \begin{split}
-T_{Mbps} &= rxBytes \times 8.0 \times 10^6 /\\
+T_{Mbps} &= rxBytes \times 8.0 \times 10^{-6} /\\
   & (timeLastRxPacket - timeFirstRxPacket)
 \end{split}
 \end{equation}
