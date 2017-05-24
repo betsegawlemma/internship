@@ -7,28 +7,25 @@ In Section~\ref{section:simgrid} of Chapter~\ref{chapter:background} we discusse
 \todo[inline]{TODO: Include how SimGrid experiments are done}
 
 \section{NS-3}
-NS-3 is a discrete-event packet-level simulator, events corresponding to, for instance, arrival and departure of packets. NS-3 is structured in a modular manner. The core and the network modules are two of the modules that serve as generic simulation core that can be used for Internet-based or different network type simulation. These two modules, being generic, are independent from any device models. The core module provides features such as tracing, callbacks, smart pointer, random variables, events and schedules. The network module consists components such as packets, node, addresses (e.g.{\ } IPv4 and MAC) and network devices. The components provided by the simulation core modules can be used to create other modules. This feature allows researchers to add their own models for the network phenomenon that they want to simulate. We will visit two of the modules that are constructed in this way in the next two subsections\cite{ns3}. 
+NS-3 is a discrete-event packet-level simulator, events corresponding to, for instance, arrival and departure of packets. NS-3 is structured in a modular manner. The core and the network modules are two of the modules that serve as generic simulation core that can be used for Internet-based or different network type simulation. These two modules, being generic, are independent from any device models. The core module provides features such as tracing, callbacks, smart pointer, random variables, events and schedules. The network module consists components such as packets, node, addresses (e.g.,~IPv4 and MAC) and network devices. The components provided by the simulation core modules can be used to create other modules. This feature allows researchers to add their own models for the network phenomenon that they want to simulate. We will visit two of the modules that are constructed in this way in the next two subsections\cite{ns3}. 
 
-The NS-3 core and other modules are built in C++ language as a set of libraries. The user can access these libraries in their main C++ program to configure the simulated topology and other simulator parameters. The libraries are also available as Python API for Python programmers. 
-
+The NS-3 core and other modules are built in C++ language as a set of libraries. The user can access these libraries in their main C++ program to configure the simulated topology and other simulator parameters. The libraries are also available as Python API for those researchers who prefer Python programming language. 
 
 \subsection{ECOFEN Module}
-ECOFEN is one of the two non-core NS-3 modules that we used in our experiments. We explained the power consumption simulation features provided by this module in the Related Simulators section of Chapter~\ref{chapter:background} and we also give detailed explanation about why and where we have used it in our Method chapter. In this section, we only give brief description about how it is related to NS-3 and how we have used it. 
+ECOFEN is one of the two non-core NS-3 modules that we used in our experiments. We explained the power consumption simulation features provided by this module in the Related Simulators section of Chapter~\ref{chapter:background} and we will give detailed explanation about why and where we have used it in our Method chapter. In this section, we only give brief description about how it is related to NS-3 and how we have used it. 
 
-NS-3 in its core provides an abstraction such as Node, Net Device, Channel and Application. A Node represents  network communication and computing devices such as servers, switches and routers. To a Node a Net Device, which represent devices such as network interface card(NIC), can be attached. Two or more Nodes can be linked to each other through a Channel, which is a representation of Ethernet or Wi-Fi link. These three abstractions: Node, Net Device, and Channel, together they can be used to define the simulated network topology. Application, on the other hand, is an abstraction that represent user program that perform some simulated activity such as sending or receiving UDP packets for instance\cite{ns3}. 
+NS-3 in its core provides an abstraction such as Node, Net Device, Channel and Application. A Node represents  network communication and computing devices (currently NS-3 do not have CPU abstraction) such as servers, switches and routers. To a Node a Net Device, which represent devices such as network interface card (NIC), can be attached. Two or more Nodes can be linked to each other through a Channel, which is a representation of Ethernet or Wi-Fi link. These three abstractions: Node, Net Device, and Channel, together they can be used to define the simulated network topology. Application, on the other hand, is an abstraction that represent user program that perform some simulated activity such as sending or receiving UDP packets~\cite{ns3}. 
 
-Using the core abstractions provided by NS-3, such as  Node, Net Device, and Packet, the ECOFEN module implemented three power consumption models that enable users to simulate power consumption in relation to packets transferred at different levels of granularity as discussed in Chapter~\ref{chapter:background} and Chapter~\ref{chapter:methods}.
+Using the core abstractions provided by NS-3, such as  Node, Net Device, and Packet, the ECOFEN module implemented three power consumption models that enable users to simulate power consumption as a consequence of packets transmission at different levels of granularity as discussed in Chapter~\ref{chapter:background} and Chapter~\ref{chapter:methods}.
 
-In a typical NS-3 simulator script, we can recognize four common sections in the main function: (1) the section where we find statements that import the required core or other modules, (2) the section where the topology of the simulated network is defined, (3) the section where the simulated user application is defined, and (4) the section where statements related to running, starting, stopping and cleaning the simulation is specified. This is a rough approximation, certainly there are other statements such as those which are related to logging and tracing. 
+In a typical NS-3 simulator script, in its main function, we can recognize four common sections: (1) the section where we find statements that import the required core or other modules, (2) the section where the topology of the simulated network is defined, (3) the section where the simulated user application is defined, and (4) the section where statements related to running, starting, stopping and cleaning the simulation is specified. This is a rough approximation, certainly there are other statements such as those that are related to logging and tracing. 
 
-The NS-3 scripts that we used in our power consumption simulation experiments imported the ECOFEN module in their first section, set up and configured the energy consumption models in the second section, and the remaining sections are as described above. 
-
+The NS-3 scripts that we used in our power consumption simulation experiments imported the ECOFEN module in their first section, set up and configured the energy consumption models in the second section, configured an application that send and receive UDP packets in the third section, and finally, in the fourth section, we stated when the simulation should start and end. 
 
 \subsection{FlowMonitor Module}
-FlowMonitor is the other non-core NS-3 module that we have employed in our study. This module is designed with the aim of providing generic network traffic inspection facility for researchers who want to measure the simulated network efficiency using standard performance metrics such as bit-rate, duration, delay, packet-size and packet loss ratio\cite{DBLP:conf/valuetools/CarneiroFR09}.  
+FlowMonitor is the other non-core NS-3 module that we have employed in our study. This module is designed with the aim of providing generic network traffic inspection facility. It provides researchers, who want to measure the simulated network efficiency, with standard performance metrics such as bit-rate, duration, delay, packet-size and packet loss ratio~\cite{DBLP:conf/valuetools/CarneiroFR09}.  
 
-Among the performance metrics that are available in FlowMonitor module, the following are the ones we have used in our simulation experiments.
-
+Among the performance metrics that are available in FlowMonitor module, the following are the ones that we have used in our simulation experiments.
 \begin{itemize}
 	\item \textbf{\textit{rxBytes}} to get the received bytes by a node,
 	\item \textbf{\textit{txPackets}} to get the transmitted packets by a node,
@@ -36,15 +33,13 @@ Among the performance metrics that are available in FlowMonitor module, the foll
 	\item  \textbf{\textit{timeFirstTxPacket}} and \textbf{\textit{timeLastTxPacket}} to get the absolute time when the first and last packets in the flow was transferred and 
 	\item \textbf{\textit{lostPackets}} to check if there are lost packets.
 \end{itemize}
-
-We use the above performance metrics to compute throughput (T) with the unit of Mega-bits per second (Mbps) and Packets per second(Pps) as shown in Equation~\ref{eq:3.1} and Equation~\ref{eq:3.2}. 
+We used the above performance metrics to compute throughput (T) with the unit of Mega-bits per second (Mbps) and Packets per second(Pps) as shown in Equation~\ref{eq:3.1} and Equation~\ref{eq:3.2}. 
 \begin{equation} \label{eq:3.1}
 \begin{split}
 T_{Mbps} &= rxBytes \times 8.0 \times 10^{-6} /\\
   & (timeLastRxPacket - timeFirstRxPacket)
 \end{split}
 \end{equation}
-
 \begin{equation} \label{eq:3.2}
 T_{Pps} = txPackets / (timeLastTxPacket - timeFirstTxPacket)
 \end{equation}

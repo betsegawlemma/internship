@@ -1573,7 +1573,85 @@ ggplot(all_data,aes(x=Throughput))+
    - Writing the thesis document
    - Correcting the thesis document
 ** Week 4 May
-   
+*** ECOFEN ENERGY CONSUMPTION of 3 Nodes
+#+BEGIN_SRC bash :results output :exports both
+#! /bin/bash
+cd ~/ns3workspace/source/ns-3.26
+array=(1472)
+header=28
+for i in ${array[@]}; do
+j=$((header + i))
+  for ((k=1; k<=40; k++)); do
+ ./waf --run "scratch/network_power_consumption --packetSize=${i} --rngRun=${k}" >> ~/internship/data/network_power_consumption_${j}.raw 2>&1
+   done
+ done
+#+END_SRC
+*** Computing energy   
+#+NAME: extract_energy
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/network_power_consumption_1500.raw" :var output_file="data/network_energy_consumption_1500.csv" 
+
+import sys
+
+idle = True
+header = True
+POWER_COL=5
+TIME_COL=1
+NODE_COL=3
+FIRST_COL=0
+TIME_0 = "0"
+NODE_2 = "2" 
+TIME_LAST_RX_COL=1
+TIME_FIRST_RX_COL=3
+THROUGHPUT_COL=5
+EXPECTED_COL=9
+initial = { 1500:10.35805453 }
+# data variable holds one line of data formated as follows 
+# Throughput,Power_Node0,Power_Node1,Power_Node2,Total_Power,TimeLastRxPacket,TimeFirstRxPacket,Total_Energy,Expected
+data = []
+
+total_power = 0.0 # total power consumped as a sum of node-0, node-1 and node-2 consumption
+
+with open(input_file) as fe:
+    for line in fe:
+       if line.startswith("Time"): # ignores unnecessary lines in the input file
+          list = line.split()
+          if idle: # extract the power consumption data at time 0 when the nodes are idle
+              if list[TIME_COL]==TIME_0 and list[NODE_COL]!=NODE_2:
+                 data.append(list[POWER_COL])
+                 total_power += float(list[POWER_COL])
+              elif list[TIME_COL]==TIME_0 and list[NODE_COL]==NODE_2:
+                 idle=False
+                 data.insert(0, "0.0")
+                 data.append(list[POWER_COL])
+                 total_power += float(list[POWER_COL])
+                 data.append(str(total_power))
+                 data.append("0.0")
+                 data.append("0.0")
+                 data.append("0.0")
+                 data.append(str(initial[1500])) # initial value
+          else: # extract the rest of power consumption and throughput
+              if list[TIME_COL]!="0" and list[FIRST_COL]!="TimeLastRxPacket":
+                 data.append(list[POWER_COL])
+                 total_power += float(list[POWER_COL])
+              elif list[FIRST_COL]=="TimeLastRxPacket":
+                 data.insert(0,list[THROUGHPUT_COL])
+                 data.append(str(total_power))
+                 data.append(list[TIME_LAST_RX_COL])
+                 data.append(list[TIME_FIRST_RX_COL])
+                 data.append(str(total_power*(float(list[TIME_LAST_RX_COL])-float(list[TIME_FIRST_RX_COL]))))
+                 data.append(list[EXPECTED_COL])
+          with open(output_file,"a") as of:
+              if len(data) == 9:
+                  if header: # writes the header and the idle consumption
+                      of.write("%s\n" % "Throughput,Power_Node0,Power_Node1,Power_Node2,Total_Power,TimeLastRxPacket,TimeFirstRxPacket,Total_Energy,Expected")
+                      of.write("%s\n" % ",".join(data))
+                      header = False
+                      del data[:]
+                  else: # writes the rest of the consumption
+                      of.write("%s\n" % ",".join(data))
+                      del data[:]
+                      total_power = 0.0
+#+END_SRC
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
