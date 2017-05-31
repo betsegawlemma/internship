@@ -24,15 +24,14 @@ As we have discussed in Chapter~\ref{chapter:background}, SimGrid already have e
 We chose to use ECOFEN as packet-level simulator to compare the accuracy and performance of the implemented model for two primary limitations apparent in the other alternative simulator that we discussed before, GreenCloud~\cite{DBLP:journals/tjs/KliazovichBK12}. The first limitation is that GreenCloud is designed for cloud computing environment. This is in contrary to one of SimGrid's main designed principle, versatility~\cite{DBLP:journals/jpdc/CasanovaGLQS14}. ECOFEN, on the other hand, is not tied to one particular large-scale networking paradigm, therefore, suits more for our purpose. The second limitation of GreenCloud is that it is build on top of currently obsolete NS-2 simulator. In comparison, though ECOFEN was also initially built as NS-2 simulator module, currently it is rewritten for NS-3~\cite{DBLP:conf/cloudnet/CorneaOL14}. One of the major advantage of using NS-3 over NS-2 is that NS-3 performs considerably better in both runtime and memory-usage metrics~\cite{DBLP:conf/icc/WeingartnerLW09}.
 
 In the accuracy-validation and scalability-comparison experiments mentioned in our approach, we are comparing the newly implemented flow-level model in SimGrid simulator against another packet-level simulator model implemented in ECOFEN module. This simulator-to-simulator comparison is valid only if the later simulator model, against which the new implementation is to be validated, is known to be accurate. However, we could not find any information that tell us the accuracy of the ECOFEN module. Therefore, we designed a validation experiment (\circled{B} in Figure~\ref{fig:approach}) for ECOFEN as described in the next section. 
-
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[width=13cm]{images/approach.pdf}
+		\vspace*{-1.0cm}
 		\caption{Summary of the experimental method we followed in this study}
 		\label{fig:approach}
 	\end{center}
 \end{figure}
-
 \section{Validating ECOFEN}
 ECOFEN has three models with names \emph{basic}, \emph{linear} and \emph{complete} that we have discussed in Section~\ref{section:relatedsimulator} of Chapter~\ref{chapter:background}. Both the \emph{linear} and \emph{complete} models can produce values of power consumption as a function of traffic. The  \emph{basic} model, on the other hand, produces power consumption values based on the ON or OFF state of a node, it does not consider network traffic. Therefore we describe the validation experiments for both the \emph{linear} and the \emph{complete} models in this section. 
  
@@ -110,7 +109,6 @@ We have slightly modified the NS-3 script that we have used in the previous sect
 		\label{fig:sending}
 	\end{center}
 \end{figure}
-
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[width=11cm]{images/expectedvssimulatedreceiving.png}
@@ -118,9 +116,7 @@ We have slightly modified the NS-3 script that we have used in the previous sect
 		\label{fig:receiving}
 	\end{center}
 \end{figure}
-
 Table~\ref{table:complettest} shows the unpaired t-test result for one packet-sizes in the transmitting side (Tx) and for two packet-sizes in the receiving side (Rx). 
-
 \begin{table}
 	\begin{tabular}{|>{\centering\arraybackslash}m{1.3cm}|>{\centering\arraybackslash}m{0.7cm}|>{\centering\arraybackslash}m{3.9cm}|>{\centering\arraybackslash}m{2.1cm}|>{\centering\arraybackslash}m{2.1cm}|>{\centering\arraybackslash}m{1.2cm}|} 
 		\hline 

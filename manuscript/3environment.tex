@@ -1,6 +1,6 @@
 \chapter{Environment}
 \label{chapter:environment}
-In this study we employed SimGrid, ECOFEN and FlowMonitor modules of NS-3 simulator. This chapter explains the main features of these tools from the perspective of our simulation experiment needs.
+In this study we employed SimGrid, ECOFEN, FlowMonitor modules of NS-3 simulator and other tools. This chapter explains the main features of these tools from the perspective of our simulation experiment needs.
 
 \section{SimGrid}
 In Section~\ref{section:simgrid} of Chapter~\ref{chapter:background} we discussed the software architecture of SimGrid at a higher level. We will give low-level details of the implemented flow-level model and related concepts in later chapter. In this section, our plan is to discuss features of SimGrid that are related to setting up and running energy consumption experiments.
@@ -43,3 +43,13 @@ T_{Mbps} &= rxBytes \times 8.0 \times 10^{-6} /\\
 \begin{equation} \label{eq:3.2}
 T_{Pps} = txPackets / (timeLastTxPacket - timeFirstTxPacket)
 \end{equation}
+\section{Other tools}
+We followed, partly, the literate programming and reproducible research approach proposed in~\cite{DBLP:journals/sigops/StanisicLD15,schulte2012multi}. In this approach, the authors used two well-known tools: Git and Org-mode. A Git branching model is proposed in~\cite{DBLP:journals/sigops/StanisicLD15} that ease the synchronization of data and the code that generated the data. Org-mode, on the other hand, is employed as a literate programming tool for managing a laboratory notebook.  
+
+Org-mode\footnote{http://orgmode.org/} is a plain text mark-up language which is available as an extension to Emacs text editor. An Org-mode document can have different sections: a plain text, an executable code block and/or a data block. The code and the data blocks are active, meaning they can be evaluated (or executed) and as a result they can output the code or the data block as passive (plain text) form and/or the computational result of the evaluated code or the data block. This feature allows Org-mode to be a powerful tool for literate programming.
+
+Whenever we want to do some experiment, we used Org-mode in our laboratory notebook to capture the experimental environment, such as, the objective of the experiment, the assumptions we made, the parameters used, the links referenced, and any other information relevant to our experiment. Within the same document we also put chunks of codes wherever we want them using programming languages such as bash shell, python, and R. What is more amazing is that Org-mode allowed us to name and call the executable codes from anywhere within the document with different input parameters, hence we were able to reuse previously written code blocks. 
+
+We used the shell script to run NS-3 and SimGrid simulation scripts and also to capture their outputs. We used Python to extract and format the data we want from the raw data produced by the simulators. Then we used R with its ggplot2 package to generate different plots and to do statistical analysis. All the experiments we conducted, the statistical analysis we made and the plots we generated can be reproduced by anyone. The lab notebook is available at our github account\footnote{https://github.com/betsegawlemma/internship/blob/master/intern{\_}report.org}.
+
+

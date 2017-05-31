@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2016/MacPorts 2016_5)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: acm.bst
@@ -10,7 +10,7 @@ I'm skipping whatever remains of this entry
 Warning--entry type for "ns3" isn't style-file defined
 --line 983 of file sources.bib
 Warning--entry type for "simgrid" isn't style-file defined
---line 999 of file sources.bib
+--line 997 of file sources.bib
 A bad cross reference---entry "DBLP:conf/eenergy/GyarmatiT10"
 refers to entry "DBLP:conf/eenergy/2010", which doesn't exist
 A bad cross reference---entry "DBLP:conf/isca/FanWB07"
@@ -44,45 +44,45 @@ Warning--I didn't find a database entry for "DBLP:conf/cloudnet/2014"
 Warning--I didn't find a database entry for "DBLP:conf/icc/2009"
 Warning--I didn't find a database entry for "DBLP:conf/aina/2010"
 Warning--I didn't find a database entry for "DBLP:conf/nsdi/2008"
-You've used 29 entries,
+You've used 31 entries,
             2253 wiz_defined-function locations,
-            739 strings with 12447 characters,
-and the built_in function-call counts, 12129 in all, are:
-= -- 1149
-> -- 658
+            756 strings with 13040 characters,
+and the built_in function-call counts, 12889 in all, are:
+= -- 1228
+> -- 702
 < -- 0
-+ -- 277
-- -- 240
-* -- 969
-:= -- 1902
-add.period$ -- 87
-call.type$ -- 29
-change.case$ -- 205
++ -- 297
+- -- 256
+* -- 1035
+:= -- 2033
+add.period$ -- 97
+call.type$ -- 31
+change.case$ -- 218
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 439
-empty$ -- 924
-format.name$ -- 240
-if$ -- 2542
+cite$ -- 31
+duplicate$ -- 457
+empty$ -- 973
+format.name$ -- 256
+if$ -- 2692
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 29
-newline$ -- 146
-num.names$ -- 58
-pop$ -- 250
+int.to.str$ -- 31
+missing$ -- 31
+newline$ -- 160
+num.names$ -- 62
+pop$ -- 261
 preamble$ -- 1
-purify$ -- 178
+purify$ -- 189
 quote$ -- 0
-skip$ -- 301
+skip$ -- 306
 stack$ -- 0
-substring$ -- 758
-swap$ -- 140
+substring$ -- 805
+swap$ -- 144
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 112
+type$ -- 120
 warning$ -- 0
-while$ -- 116
-width$ -- 31
-write$ -- 290
+while$ -- 124
+width$ -- 33
+write$ -- 316
 (There were 12 error messages)

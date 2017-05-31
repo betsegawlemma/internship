@@ -60,7 +60,7 @@
 
 \bibitem{DBLP:conf/cloudnet/CorneaOL14}
 {\sc Cornea, B.~F., Orgerie, A., and Lef{\`{e}}vre, L.}
-\newblock Studying the energy consumption of data transfers in clouds: the
+\newblock Studying the energy consumption of data transfers in clouds: {T}he
   ecofen approach.
 \newblock In {\em 3rd {IEEE} International Conference on Cloud Networking,
   CloudNet 2014, Luxembourg, Luxembourg, October 8-10, 2014\/} (2014),
@@ -113,7 +113,9 @@
 
 \bibitem{ns3}
 {\sc LLC, M.}
-\newblock {NS-3} simulator, 2017.
+\newblock {NS-3} simulator.
+\newblock \url{https://www.nsnam.org}.
+\newblock {O}nline; accessed 2017-02-20.
 
 \bibitem{DBLP:conf/sigcomm/MahadevanBS10}
 {\sc Mahadevan, P., Banerjee, S., and Sharma, P.}
@@ -144,6 +146,12 @@
   Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca, Italy, 20-24 June,
   2011\/} (2011), pp.~1--6.
 
+\bibitem{schulte2012multi}
+{\sc Schulte, E., Davison, D., Dye, T., Dominik, C., et~al.}
+\newblock A multi-language computing environment for literate programming and
+  reproducible research.
+\newblock {\em Journal of Statistical Software 46}, 3 (2012), 1--24.
+
 \bibitem{shehabi2016united}
 {\sc Shehabi, A., Smith, S., Horner, N., Azevedo, I., Brown, R., Koomey, J.,
   Masanet, E., Sartor, D., Herrlin, M., and Lintner, W.}
@@ -164,6 +172,12 @@
 \newblock In {\em 2011 IEEE Conference on Computer Communications Workshops
   (INFOCOM WKSHPS)\/} (April 2011), pp.~331--336.
 
+\bibitem{DBLP:journals/sigops/StanisicLD15}
+{\sc Stanisic, L., Legrand, A., and Danjean, V.}
+\newblock An effective git and org-mode based workflow for reproducible
+  research.
+\newblock {\em Operating Systems Review 49}, 1 (2015), 61--70.
+
 \bibitem{DBLP:conf/aina/SwainHC10}
 {\sc Swain, A.~R., Hansdah, R.~C., and Chouhan, V.~K.}
 \newblock An energy aware routing protocol with sleep scheduling for wireless
@@ -174,7 +188,9 @@
 
 \bibitem{simgrid}
 {\sc team, S.}
-\newblock {SimGrid} simulator, 2017.
+\newblock {SimGrid} simulator.
+\newblock \url{http://simgrid.gforge.inria.fr/}.
+\newblock {O}nline; accessed 2017-01-20.
 
 \bibitem{DBLP:journals/tomacs/VelhoSCL13}
 {\sc Velho, P., Schnorr, L.~M., Casanova, H., and Legrand, A.}
