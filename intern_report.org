@@ -2118,7 +2118,7 @@ scale_colour_Publication <- function(...){
 #+RESULTS:
 [[file:figures/energy_sg_vs_ns3.png]]
 - from the plot we can see that as the data size grow the difference also increases
-***** Experiment on larger platform(two nodes, two router, three links)
+***** Experiment on larger platform(two nodes, two router, three links) to see if there is similar gap when the topology changes
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
 seed=234
@@ -2202,7 +2202,7 @@ scale_colour_Publication <- function(...){
 #+RESULTS:
 [[file:figures/ex4_energy_sg_vs_ns3.png]]
 **** Experiment 5:
-  - the difference growth looks more pronounced with large sets of data 
+  - the difference growth looks more pronounced with large topology
   - the gap growth looks exponential therefore replacing traffic value in the computation with pow(traffic, 1.08)
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
