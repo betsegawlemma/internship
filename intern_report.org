@@ -1692,7 +1692,7 @@ with open(input_file) as fe:
         <process host="H-2" function="receiver" on_failure="RESTART"></process>
 </platform>
 #+END_EXAMPLE
-- The following script replaces the "$T" value in the above XML file with randomly generated value and runs two simulation scripts
+- The following script replaces the "$T" placeholder in the above XML file with randomly generated value and runs a simulation script
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
 seed=234
@@ -1702,14 +1702,13 @@ for ((k=0; k<40; k++)); do
   traffic=$(((RANDOM % 1000)+1)) # traffic in MBps between 1 and 1000
   # edit simgrid's deployment file to add traffic value
   cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
-  # run ns3
+  # run ECOFEN
   ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex1_ns3_energy.raw 2>&1
 done
 #+END_SRC
 ***** Extracting important data from the log 
       - Our purpose here is to retrieve information about the time taken to transfer a given data and also the average power drawn during the transfer
-        for NS-3 simulator
-
+        for ECOFEN simulator
 - The following script extracts this data from NS-3 run log 
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex1_ns3_energy.raw" :var output_file="data/ex1_ns3_energy.csv" 
 import sys
@@ -1840,7 +1839,7 @@ ggplot(ex1_ns3,aes(x=Traffic))+
 #+RESULTS:
 : (Intercept)     Traffic 
 :   0.1513248   0.1525936 
-- From this we get our simple linear equation for the data transfer time as a function of data transferred 
+- From this we get the following linear equation for the data transfer time (as a function of traffic) 
 #+BEGIN_EXAMPLE
   Transfer_Time = 0.1525936 * Traffic + 0.1513248
 #+END_EXAMPLE
@@ -1853,7 +1852,7 @@ ggplot(ex1_ns3,aes(x=Traffic))+
   <prop id="watt_range" value="10.3581:10.7479" />
 </link>
 #+END_EXAMPLE
-  - we want to replace the $L place-holder with randomly generated latency value using the following script
+  - we want to replace the $L place-holder with randomly generated latency value as shown below
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
 seed=33
@@ -1980,11 +1979,11 @@ ggplot(ex2_ns3,aes(x=Latency))+
 #+RESULTS:
 : (Intercept)     Latency 
 :    0.000135    0.168000 
-- From this we get our simple linear equation for the data transfer time as a function of latency
+- From this we get the following linear equation for the data transfer time (as a function of latency)
 #+BEGIN_EXAMPLE
   Transfer_Time = 0.168000 * Latency + 0.000135
 #+END_EXAMPLE
-- The two equations will combined give us the time required to transferred a given data at a given latency for a fixed bandwidth and packet size
+- The two equations combined gives us the time required to transferred a given data at a given latency for a fixed bandwidth and packet size
 - Now we can plug these equations into SimGrid for the flow-level energy estimation model
 **** Experiment 3:
 - Running SimGrid with the new flow-level model
@@ -2038,6 +2037,7 @@ with open(input_file) as fe:
                    del data[:]
                    traffic = 0.0
 #+END_SRC
+**** Analyzing the energy consumption models of ECOFEN and SimGrid
 
 * Development
    - SimGrid HostEnergy plugin
