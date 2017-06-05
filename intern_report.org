@@ -1573,6 +1573,7 @@ ggplot(all_data,aes(x=Throughput))+
    - Writing the thesis document
    - Correcting the thesis document
 ** Week 4 May
+   - Checking NS-3 and SimGrid integration 
 *** ECOFEN ENERGY CONSUMPTION of 3 Nodes
 #+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
@@ -1652,6 +1653,392 @@ with open(input_file) as fe:
                       del data[:]
                       total_power = 0.0
 #+END_SRC
+
+*** Script for adding energy property tag to SimGrid's platform file
+
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/g5k.xml" :var output_file="data/g5k_energy.xml" 
+
+import sys
+import re
+
+def replace_last(source_string, replace_what, replace_with):
+    #head, _sep, tail = source_string.rpartition(replace_what)
+    source_string = re.sub(replace_what,replace_with,source_string)
+    return source_string
+
+replaceWhat = '/>$'
+replaceWith = '><prop id="watt_range" value="10.3581:10.7479"/></link>'
+
+with open(input_file) as fe:
+    for line in fe:
+       strippedLine = line.strip()
+       if strippedLine.startswith("<link "): 
+          strippedLine = replace_last(strippedLine,replaceWhat,replaceWith)
+       with open(output_file,"a") as of:
+          of.write("%s\n" % strippedLine)
+
+#+END_SRC
+** Week 1 June
+*** Experiments to come-up with flow-level energy model
+**** Experiment 1:
+     - Obtain time data for transmitting a given traffic from NS-3 at a fixed latency, bandwidth, and packet-size
+     - The network topology contains two hosts connected by a single link
+     - deployment file used for this experiment looks like this
+#+BEGIN_EXAMPLE
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid/simgrid.dtd">
+<platform version="4.1">
+        <process host="H-0" function="sender"><argument value="$T"/></process>
+        <process host="H-2" function="receiver" on_failure="RESTART"></process>
+</platform>
+#+END_EXAMPLE
+- The following script replaces the "$T" value in the above XML file with randomly generated value and runs two simulation scripts
+#+BEGIN_SRC bash :results output :exports both 
+#! /bin/bash
+seed=234
+RANDOM=$(seed)
+cd ~/simgrid/link_energy
+for ((k=0; k<40; k++)); do
+  traffic=$(((RANDOM % 1000)+1)) # traffic in MBps between 1 and 1000
+  # edit simgrid's deployment file to add traffic value
+  cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
+  # run ns3
+  ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex1_ns3_energy.raw 2>&1
+done
+#+END_SRC
+***** Extracting important data from the log 
+      - Our purpose here is to retrieve information about the time taken to transfer a given data and also the average power drawn during the transfer
+        for NS-3 simulator
+
+- The following script extracts this data from NS-3 run log 
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex1_ns3_energy.raw" :var output_file="data/ex1_ns3_energy.csv" 
+import sys
+
+header = True
+done = False
+
+POWER_COL=5
+NODE_COL=3
+
+TRAFFIC_COL=4
+TRANSFER_TIME_COL = 5
+
+# data variable holds one line of data formated as follows 
+# Traffic,Average_Power,Transfer_Time,Total_Energy
+data = []
+
+total_power = 0.0 
+average_power = 0.0 
+number_of_power_values = 1.0
+total_energy = 0.0
+transfer_time = 0.0
+traffic = 0.0
+
+with open(input_file) as fe:
+    for line in fe:
+       if line.startswith("[H-0:sender:"): # traffic line
+           list = line.split()
+           if list[TRAFFIC_COL-1] == "traffic":
+               traffic = float(list[TRAFFIC_COL]) / 1E6
+               data.append(str(traffic))
+           elif list[TRAFFIC_COL-1] == "sender":
+               done = True 
+               average_power = total_power/number_of_power_values
+               transfer_time = float(list[TRANSFER_TIME_COL])
+               total_energy = average_power * transfer_time
+               data.append(str(average_power))
+               data.append(str(transfer_time))
+               data.append(str(total_energy))
+       if line.startswith("Time"):
+           list = line.split()
+           if done is not True and int(list[NODE_COL])>0:
+               number_of_power_values+=1
+               total_power+=float(list[POWER_COL])
+       with open(output_file,"a") as of:
+           if len(data) == 4 and done is True:
+               if header: # write the header part
+                   of.write("%s\n" % "Traffic,Average_Power,Transfer_Time,Total_Energy")
+                   header = False
+               else: # write data part
+                   of.write("%s\n" % ",".join(data))
+                   del data[:]
+                   done = False
+                   total_power = 0.0
+                   average_power = 0.0 
+                   number_of_power_values = 1.0
+                   total_energy = 0.0
+                   transfer_time = 0.0
+                   traffic = 0.0
+#+END_SRC
+***** Plot to see the relationship between traffic and transfer time
+#+BEGIN_SRC R :results output graphics :file figures/transferTime_vs_traffic.png :exports both 
+library(ggplot2)
+library(gridExtra)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+ex1_ns3 = read.csv("data/ex1_ns3_energy.csv", header=T)
+attach(ex1_ns3)
+ggplot(ex1_ns3,aes(x=Traffic))+
+   geom_line(aes(y = Transfer_Time, ),size=1.3)+
+   ylab(label="Data Transfer Time in seconds")+
+   xlab(label="Traffic in Mega Bytes")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/transferTime_vs_traffic.png]]
+***** Find the linear fit equation coefficients
+ #+BEGIN_SRC R :results output :exports both 
+      ex1_ns3 = read.csv("data/ex1_ns3_energy.csv", header=T)
+      attach(ex1_ns3)
+      fit = lm(Transfer_Time~Traffic)
+      coefficients(fit)
+#+END_SRC
+
+#+RESULTS:
+: (Intercept)     Traffic 
+:   0.1513248   0.1525936 
+- From this we get our simple linear equation for the data transfer time as a function of data transferred 
+#+BEGIN_EXAMPLE
+  Transfer_Time = 0.1525936 * Traffic + 0.1513248
+#+END_EXAMPLE
+**** Experiment 2: 
+   - Obtain time data at a fixed bandwidth, data size and packet size but varying latency for NS-3
+   - bandwidth = 1GBps, data_size = 10MBytes, packet_size = 1024Bytes 
+   - The platform file have the following tag 
+#+BEGIN_EXAMPLE
+<link id="L1" bandwidth="1000MBps" latency="$L">
+  <prop id="watt_range" value="10.3581:10.7479" />
+</link>
+#+END_EXAMPLE
+  - we want to replace the $L place-holder with randomly generated latency value using the following script
+#+BEGIN_SRC bash :results output :exports both 
+#! /bin/bash
+seed=33
+RANDOM=$(seed)
+cd ~/simgrid/link_energy
+for ((k=0; k<40; k++)); do
+  latency=$(((RANDOM % 100)+1)) # latency in ms between 1 and 100
+  # edit simgrid's deployment file to add traffic value
+  cat energy_consumption_p.xml |sed -e "s/\$L/${latency}ms/" > t_energy_consumption_p.xml
+  # run ns3
+  ./ns3_energy_consumption t_energy_consumption_p.xml energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex2_ns3_energy.raw 2>&1
+ echo "latency ${latency}" >>  ~/internship/data/ex2_ns3_energy.raw 2>&1
+done
+#+END_SRC
+
+***** Extracting important data from the NS-3 run log 
+      - Our purpose here is to retrieve information about the time taken to transfer a given data with varying latency
+- The following script extracts this data from NS-3 run log 
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex2_ns3_energy.raw" :var output_file="data/ex2_ns3_energy.csv" 
+import sys
+
+header = True
+done = False
+
+LATENCY_COL=1
+TRANSFER_TIME_COL = 5
+SENDER_COL = 3
+
+# data variable holds one line of data formated as follows 
+# Transfer_Time,Latency
+data = []
+
+transfer_time = 0.0
+latency = 0.0
+
+with open(input_file) as fe:
+    for line in fe:
+       if line.startswith("[H-0:sender:"): 
+           list = line.split()
+           if list[SENDER_COL] == "sender":
+               transfer_time = list[TRANSFER_TIME_COL]
+               data.append(transfer_time)
+       if line.startswith("latency"):
+           list = line.split()
+           data.append(list[LATENCY_COL])
+       with open(output_file,"a") as of:
+           if len(data) == 2:
+               if header: # write the header part
+                   of.write("%s\n" % "Transfer_Time,Latency")
+                   header = False
+               else: # write data part
+                   of.write("%s\n" % ",".join(data))
+                   del data[:]
+                   transfer_time = 0.0
+                   latency = 0.0
+#+END_SRC
+***** Plot to see the relationship between transfer time and latency
+#+BEGIN_SRC R :results output graphics :file figures/transferTime_vs_latency.png :exports both 
+library(ggplot2)
+library(gridExtra)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+ex2_ns3 = read.csv("data/ex2_ns3_energy.csv", header=T)
+attach(ex2_ns3)
+ggplot(ex2_ns3,aes(x=Latency))+
+   geom_line(aes(y = Transfer_Time, ),size=1.3)+
+   ylab(label="Data Transfer Time in seconds")+
+   xlab(label="Latency in milli seconds")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/transferTime_vs_latency.png]]
+***** Find the linear fit equation coefficients
+ #+BEGIN_SRC R :results output :exports both 
+      ex2_ns3 = read.csv("data/ex2_ns3_energy.csv", header=T)
+      attach(ex2_ns3)
+      fit = lm(Transfer_Time~Latency)
+      coefficients(fit)
+#+END_SRC
+
+#+RESULTS:
+: (Intercept)     Latency 
+:    0.000135    0.168000 
+- From this we get our simple linear equation for the data transfer time as a function of latency
+#+BEGIN_EXAMPLE
+  Transfer_Time = 0.168000 * Latency + 0.000135
+#+END_EXAMPLE
+- The two equations will combined give us the time required to transferred a given data at a given latency for a fixed bandwidth and packet size
+- Now we can plug these equations into SimGrid for the flow-level energy estimation model
+**** Experiment 3:
+- Running SimGrid with the new flow-level model
+#+BEGIN_SRC bash :results output :exports both 
+#! /bin/bash
+seed=234
+RANDOM=$(seed)
+cd ~/simgrid/link_energy
+for ((k=0; k<40; k++)); do
+  traffic=$(((RANDOM % 1000)+1)) # traffic in MBps between 1 and 1000
+  # edit simgrid's deployment file to add traffic value
+  cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
+  # run ns3
+  ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex3_sg_energy.raw 2>&1
+done
+#+END_SRC
+
+#+RESULTS:
+
+***** Extract total energy consumed for each traffic transferred
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex3_sg_energy.raw" :var output_file="data/ex3_sg_energy.csv" 
+import sys
+
+header = True
+
+# data variable holds one line of data formated as follows 
+# SG_Energy,Traffic
+data = []
+
+traffic = 0.0
+
+TRAFFIC_COL = 4
+ENERGY_COL = 5
+
+with open(input_file) as fe:
+    for line in fe:
+       if "traffic" in line: 
+           list = line.split()
+           traffic = float(list[TRAFFIC_COL])/1E6
+           data.append(str(traffic))
+       if "TotalEnergy" in line:
+           list = line.split()
+           data.insert(0,list[ENERGY_COL])
+       with open(output_file,"a") as of:
+           if len(data) == 2:
+               if header: # write the header part
+                   of.write("%s\n" % "SG_ENERGY,Traffic")
+                   header = False
+               else: # write data part
+                   of.write("%s\n" % ",".join(data))
+                   del data[:]
+                   traffic = 0.0
+#+END_SRC
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 

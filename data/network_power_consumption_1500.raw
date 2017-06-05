@@ -1,0 +1,440 @@
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.193s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7156
+Time 1 Node 1 Conso 11.0661
+Time 1 Node 2 Conso 10.7085
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 104.328 PacketSize 1472 Expected 10.6968
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.682s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6362
+Time 1 Node 1 Conso 10.9087
+Time 1 Node 2 Conso 10.6306
+TimeLastRxPacket 1.01998 TimeFirstRxPacket 0.020003 Throughput 81.144 PacketSize 1472 Expected 10.6215
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.663s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.5567
+Time 1 Node 1 Conso 10.7514
+Time 1 Node 2 Conso 10.5527
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 57.9591 PacketSize 1472 Expected 10.5462
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.668s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.4772
+Time 1 Node 1 Conso 10.5941
+Time 1 Node 2 Conso 10.4749
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 34.776 PacketSize 1472 Expected 10.471
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.667s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.3978
+Time 1 Node 1 Conso 10.4367
+Time 1 Node 2 Conso 10.397
+TimeLastRxPacket 1.01992 TimeFirstRxPacket 0.020003 Throughput 11.5929 PacketSize 1472 Expected 10.3957
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.666s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7515
+Time 1 Node 1 Conso 11.137
+Time 1 Node 2 Conso 10.7436
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 114.777 PacketSize 1472 Expected 10.7307
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.773s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.672
+Time 1 Node 1 Conso 10.9796
+Time 1 Node 2 Conso 10.6657
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 91.5878 PacketSize 1472 Expected 10.6554
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.889s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.5925
+Time 1 Node 1 Conso 10.8223
+Time 1 Node 2 Conso 10.5878
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 68.4041 PacketSize 1472 Expected 10.5802
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.784s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.5131
+Time 1 Node 1 Conso 10.665
+Time 1 Node 2 Conso 10.51
+TimeLastRxPacket 1.01998 TimeFirstRxPacket 0.020003 Throughput 45.2217 PacketSize 1472 Expected 10.5049
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.691s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.4336
+Time 1 Node 1 Conso 10.5076
+Time 1 Node 2 Conso 10.4321
+TimeLastRxPacket 1.01994 TimeFirstRxPacket 0.020003 Throughput 22.038 PacketSize 1472 Expected 10.4296
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.092s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7873
+Time 1 Node 1 Conso 11.2079
+Time 1 Node 2 Conso 10.7787
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 125.221 PacketSize 1472 Expected 10.7646
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.676s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7078
+Time 1 Node 1 Conso 11.0505
+Time 1 Node 2 Conso 10.7008
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 102.035 PacketSize 1472 Expected 10.6894
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.823s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6283
+Time 1 Node 1 Conso 10.8932
+Time 1 Node 2 Conso 10.6229
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 78.8493 PacketSize 1472 Expected 10.6141
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.682s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.5488
+Time 1 Node 1 Conso 10.7358
+Time 1 Node 2 Conso 10.545
+TimeLastRxPacket 1.01998 TimeFirstRxPacket 0.020003 Throughput 55.6663 PacketSize 1472 Expected 10.5388
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.675s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.4694
+Time 1 Node 1 Conso 10.5785
+Time 1 Node 2 Conso 10.4672
+TimeLastRxPacket 1.01998 TimeFirstRxPacket 0.020003 Throughput 32.4831 PacketSize 1472 Expected 10.4635
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.666s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.3899
+Time 1 Node 1 Conso 10.4212
+Time 1 Node 2 Conso 10.3893
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 9.30008 PacketSize 1472 Expected 10.3883
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.676s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7436
+Time 1 Node 1 Conso 11.1214
+Time 1 Node 2 Conso 10.7359
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 112.479 PacketSize 1472 Expected 10.7233
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.677s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6641
+Time 1 Node 1 Conso 10.9641
+Time 1 Node 2 Conso 10.658
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 89.2978 PacketSize 1472 Expected 10.648
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.743s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.5847
+Time 1 Node 1 Conso 10.8067
+Time 1 Node 2 Conso 10.5801
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 66.1128 PacketSize 1472 Expected 10.5727
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.673s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.5052
+Time 1 Node 1 Conso 10.6494
+Time 1 Node 2 Conso 10.5022
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 42.9286 PacketSize 1472 Expected 10.4974
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.668s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.4257
+Time 1 Node 1 Conso 10.492
+Time 1 Node 2 Conso 10.4244
+TimeLastRxPacket 1.01997 TimeFirstRxPacket 0.020003 Throughput 19.7451 PacketSize 1472 Expected 10.4222
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.673s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7794
+Time 1 Node 1 Conso 11.1923
+Time 1 Node 2 Conso 10.7709
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 122.922 PacketSize 1472 Expected 10.7572
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.671s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6999
+Time 1 Node 1 Conso 11.035
+Time 1 Node 2 Conso 10.6931
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 99.7422 PacketSize 1472 Expected 10.6819
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.678s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6204
+Time 1 Node 1 Conso 10.8776
+Time 1 Node 2 Conso 10.6152
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 76.5555 PacketSize 1472 Expected 10.6066
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.687s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.541
+Time 1 Node 1 Conso 10.7203
+Time 1 Node 2 Conso 10.5373
+TimeLastRxPacket 1.01998 TimeFirstRxPacket 0.020003 Throughput 53.3728 PacketSize 1472 Expected 10.5313
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.682s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.4615
+Time 1 Node 1 Conso 10.5629
+Time 1 Node 2 Conso 10.4595
+TimeLastRxPacket 1.01995 TimeFirstRxPacket 0.020003 Throughput 30.1905 PacketSize 1472 Expected 10.4561
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.050s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.3821
+Time 1 Node 1 Conso 10.4056
+Time 1 Node 2 Conso 10.3816
+TimeLastRxPacket 1.01989 TimeFirstRxPacket 0.020003 Throughput 7.00728 PacketSize 1472 Expected 10.3808
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.739s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7357
+Time 1 Node 1 Conso 11.1059
+Time 1 Node 2 Conso 10.7282
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 110.19 PacketSize 1472 Expected 10.7158
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.961s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6563
+Time 1 Node 1 Conso 10.9485
+Time 1 Node 2 Conso 10.6503
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 87.0034 PacketSize 1472 Expected 10.6405
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.675s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.5768
+Time 1 Node 1 Conso 10.7912
+Time 1 Node 2 Conso 10.5724
+TimeLastRxPacket 1.01998 TimeFirstRxPacket 0.020003 Throughput 63.8204 PacketSize 1472 Expected 10.5653
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.746s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.4973
+Time 1 Node 1 Conso 10.6338
+Time 1 Node 2 Conso 10.4945
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 40.6354 PacketSize 1472 Expected 10.49
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.686s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.4179
+Time 1 Node 1 Conso 10.4765
+Time 1 Node 2 Conso 10.4167
+TimeLastRxPacket 1.01993 TimeFirstRxPacket 0.020003 Throughput 17.4523 PacketSize 1472 Expected 10.4147
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.709s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7715
+Time 1 Node 1 Conso 11.1767
+Time 1 Node 2 Conso 10.7632
+TimeLastRxPacket 1.02 TimeFirstRxPacket 0.020003 Throughput 120.629 PacketSize 1472 Expected 10.7497
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.670s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6921
+Time 1 Node 1 Conso 11.0194
+Time 1 Node 2 Conso 10.6854
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 97.4484 PacketSize 1472 Expected 10.6745
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.674s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6126
+Time 1 Node 1 Conso 10.8621
+Time 1 Node 2 Conso 10.6075
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 74.2663 PacketSize 1472 Expected 10.5992
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.662s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.5331
+Time 1 Node 1 Conso 10.7047
+Time 1 Node 2 Conso 10.5296
+TimeLastRxPacket 1.01997 TimeFirstRxPacket 0.020003 Throughput 51.081 PacketSize 1472 Expected 10.5239
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.676s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.4537
+Time 1 Node 1 Conso 10.5474
+Time 1 Node 2 Conso 10.4518
+TimeLastRxPacket 1.01998 TimeFirstRxPacket 0.020003 Throughput 27.8976 PacketSize 1472 Expected 10.4486
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.671s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.3742
+Time 1 Node 1 Conso 10.39
+Time 1 Node 2 Conso 10.3739
+TimeLastRxPacket 1.01969 TimeFirstRxPacket 0.020003 Throughput 4.71448 PacketSize 1472 Expected 10.3734
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.673s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.7279
+Time 1 Node 1 Conso 11.0903
+Time 1 Node 2 Conso 10.7205
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 107.892 PacketSize 1472 Expected 10.7084
+Waf: Entering directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Waf: Leaving directory `/home/betsegaw/ns3workspace/source/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.788s)
+Time 0 Node 0 Conso 10.3581
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 1 Node 0 Conso 10.6484
+Time 1 Node 1 Conso 10.9329
+Time 1 Node 2 Conso 10.6426
+TimeLastRxPacket 1.01999 TimeFirstRxPacket 0.020003 Throughput 84.709 PacketSize 1472 Expected 10.6331
