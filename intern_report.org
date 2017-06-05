@@ -1709,7 +1709,8 @@ done
 ***** Extracting important data from the log 
       - Our purpose here is to retrieve information about the time taken to transfer a given data and also the average power drawn during the transfer
         for ECOFEN simulator
-- The following script extracts this data from NS-3 run log 
+      - The following script extracts this data from NS-3 run log
+#+NAME: extract_ns3_data
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex1_ns3_energy.raw" :var output_file="data/ex1_ns3_energy.csv" 
 import sys
 
@@ -1881,7 +1882,8 @@ done
 
 ***** Extracting important data from the NS-3 run log 
       - Our purpose here is to retrieve information about the time taken to transfer a given data with varying latency
-- The following script extracts this data from NS-3 run log 
+      - The following script extracts this data from NS-3 run log
+
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex2_ns3_energy.raw" :var output_file="data/ex2_ns3_energy.csv" 
 import sys
 
@@ -2015,6 +2017,7 @@ done
 #+RESULTS:
 
 ***** Extract total energy consumed for each traffic transferred
+#+NAME: extract_sg_data
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex3_sg_energy.raw" :var output_file="data/ex3_sg_energy.csv" 
 import sys
 
@@ -2115,6 +2118,169 @@ scale_colour_Publication <- function(...){
 #+RESULTS:
 [[file:figures/energy_sg_vs_ns3.png]]
 - from the plot we can see that as the data size grow the difference also increases
+***** Experiment on larger platform(two nodes, two router, three links)
+#+BEGIN_SRC bash :results output :exports both 
+#! /bin/bash
+seed=234
+RANDOM=$(seed)
+cd ~/simgrid/link_energy
+for ((k=0; k<40; k++)); do
+  traffic=$(((RANDOM % 1000)+1)) # traffic in MBps between 1 and 1000
+  # edit simgrid's deployment file to add traffic value
+  cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
+  # run SimGrid
+  ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex4_sg_energy.raw 2>&1
+  # run ECOFEN
+  ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex4_ns3_energy.raw 2>&1
+done
+#+END_SRC
+
+#+RESULTS:
+***** Extract the data from the raw output      
+#+CALL: extract_sg_data(input_file="data/ex4_sg_energy.raw", output_file="data/ex4_sg_energy.csv") 
+#+CALL: extract_ns3_data(input_file="data/ex4_ns3_energy.raw", output_file="data/ex4_ns3_energy.csv") 
+***** Plot and see the difference between ECOFEN and SimGrid's estimation
+#+BEGIN_SRC R :results output graphics :file figures/ex4_energy_sg_vs_ns3.png :exports both 
+library(ggplot2)
+library(gridExtra)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+   ex4_ns3 = read.csv("data/ex4_ns3_energy.csv", header=T)
+   ex4_sg = read.csv("data/ex4_sg_energy.csv", header=T)
+   sg_ns3 = merge(ex4_ns3,ex4_sg, by=c("Traffic"))
+   attach(sg_ns3)
+   ggplot(sg_ns3,aes(x=Traffic))+
+   geom_line(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
+   geom_line(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
+   ylab(label="Energy Consumption in Joule")+
+   xlab(label="Transferred data in MBytes")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ex4_energy_sg_vs_ns3.png]]
+**** Experiment 5:
+  - the difference growth looks more pronounced with large sets of data 
+  - Trying to decrease the gap
+#+BEGIN_SRC bash :results output :exports both 
+#! /bin/bash
+seed=234
+RANDOM=$(seed)
+cd ~/simgrid/link_energy
+for ((k=0; k<40; k++)); do
+  traffic=$(((RANDOM % 1000)+1)) # traffic in MBps between 1 and 1000
+  # edit simgrid's deployment file to add traffic value
+  cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
+  # run simgrid
+  ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex5_sg_energy.raw 2>&1
+done
+#+END_SRC
+
+#+RESULTS:
+#+CALL: extract_sg_data(input_file="data/ex5_sg_energy.raw", output_file="data/ex5_sg_energy.csv") 
+#+BEGIN_SRC R :results output graphics :file figures/ex5_energy_sg_vs_ns3.png :exports both 
+library(ggplot2)
+library(gridExtra)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.2, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+   ex4_ns3 = read.csv("data/ex4_ns3_energy.csv", header=T)
+   ex5_sg = read.csv("data/ex5_sg_energy.csv", header=T)
+   sg_ns3 = merge(ex4_ns3,ex5_sg, by=c("Traffic"))
+   attach(sg_ns3)
+   ggplot(sg_ns3,aes(x=Traffic))+
+   geom_line(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
+   geom_line(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
+   ylab(label="Energy Consumption in Joule")+
+   xlab(label="Transferred data in MBytes")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ex5_energy_sg_vs_ns3.png]]
 
 * Development
    - SimGrid HostEnergy plugin
