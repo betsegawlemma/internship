@@ -3,10 +3,35 @@
 In this study we employed SimGrid, ECOFEN, FlowMonitor modules of NS-3 simulator and other tools. This chapter explains the main features of these tools from the perspective of our simulation experiment needs.
 
 \section{SimGrid}
+\label{section:simgridenvironment}
 In Section~\ref{section:simgrid} of Chapter~\ref{chapter:background} we discussed the software architecture of SimGrid at a higher level. We will give low-level details of the implemented flow-level model and related concepts in later chapter. In this section, our plan is to discuss features of SimGrid that are related to setting up and running energy consumption experiments.
 
-Running simulation experiments in SimGrid involves creating three files: the C/C++ Simulation Script, XML file for specifying the simulated platform  and XML file for specifying . 
+In Figure~\ref{fig:SimGrid} of Chapter~\ref{chapter:background} we have presented three user APIs that SimGrid users can use to develop their simulation experiments. Currently there is another API named S4U that is under development. This API is similar in usage to MSG API. One main difference, from users perspective, is that MSG is in C while S4U is in C++ language. S4U is the API that we have used in this study.  
+  
+Designing and running simulation experiments in SimGrid using MSG or S4U APIs involve creating three files: a C/C++ simulation Script, an XML file for specifying the simulated platform topology and another XML file for specifying the deployment options, such as, identifying the host that send or receive data, the size of data, and the number of processes sending the data. 
 
+In a typical simulation experiment of energy estimation as a function of data transfer, we can have three sections in the simulation script. In the first section we write a function which specify what the sender do to send the data, in the second section we write what the receiver do to receive the simulated data or what action to take when the simulated data arrives. In the third section we tell to SimGrid's simulation engine about the two functions and we also pass the platform and the deployment file names to the engine. 
+
+In SimGrid, simulated network resources such as, NICs, switches and routers are represented with an abstraction called Link. In SimGrid platform file we represent a Link as follows:
+
+\begin{lstlisting}
+<link id="SWITCH1" bandwidth="100MBps" latency="10ms">
+      <prop id="watt_range" value="305:550"/>
+</link>
+\end{lstlisting}
+
+From the link XML tag we can see the basic characteristics of a simulated switch, such as, bandwidth and latency. We also see the idle and busy power consumption range of the switch. Other additional information can also be added such as how the link should be shared when multiple traffic cross the link and tracing information to control the bandwidth and latency property over time. 
+
+In a similar manner we can specify deployment information such as the role of hosts, the number of processes and the size of transfered data as follows. 
+\begin{lstlisting}
+<process host="H-1" function="sender">
+<argument value="10" />
+</process>
+<process host="H-2" function="receiver"/>
+\end{lstlisting}
+This separation of concern among the simulation script, the platform and the deployment configuration offers great flexibility for designing and running large scale experiments. The platform can be scaled up or down without changing the simulation script, for instance. 
+
+Another feature of SimGrid that we would like to mention here is that SimGrid provides access to NS-3 simulator. This has at least two main advantages. The first one is that for SimGrid users who like to have low level packet information about the simulated network phenomenon, they can launch their experiment from SimGrid interface while using their platform and deployment files that they have created in SimGrid. The second one is that for studies similar to ours this feature helps a lot during the validation process of newly implemented model. This feature allowed us to run the validation comparisons with NS-3 using the same platform and deployment file that we have created in SimGrid. SimGrid automatically maps the topology and the corresponding parameters into NS-3's abstraction.
 \section{NS-3}
 NS-3 is a discrete-event packet-level simulator, events corresponding to, for instance, arrival and departure of packets. NS-3 is structured in a modular manner. The core and the network modules are two of the modules that serve as generic simulation core that can be used for Internet-based or different network type simulation. These two modules, being generic, are independent from any device models. The core module provides features such as tracing, callbacks, smart pointer, random variables, events and schedules. The network module consists components such as packets, node, addresses (e.g.,~IPv4 and MAC) and network devices. The components provided by the simulation core modules can be used to create other modules. This feature allows researchers to add their own models for the network phenomenon that they want to simulate. We will visit two of the modules that are constructed in this way in the next two subsections\cite{ns3}. 
 
@@ -49,7 +74,7 @@ We followed, partly, the literate programming and reproducible research approach
 
 Org-mode\footnote{http://orgmode.org/} is a plain text mark-up language which is available as an extension to Emacs text editor. An Org-mode document can have different sections: a plain text, an executable code block and/or a data block. The code and the data blocks are active, meaning they can be evaluated (or executed) and as a result they can output the code or the data block as passive (plain text) form and/or the computational result of the evaluated code or the data block. This feature allows Org-mode to be a powerful tool for literate programming.
 
-Whenever we want to do some experiment, we used Org-mode in our laboratory notebook to capture the experimental environment, such as, the objective of the experiment, the assumptions we made, the parameters used, the links referenced, and any other information relevant to our experiment. Within the same document we also put chunks of codes wherever we want them using programming languages such as bash shell, python, and R. What is more amazing is that Org-mode allowed us to name and call the executable codes from anywhere within the document with different input parameters, hence we were able to reuse previously written code blocks. 
+Whenever we wanted to do some experiment, we used Org-mode in our laboratory notebook to capture the experimental environment, such as, the objective of the experiment, the assumptions we made, the parameters used, the links referenced, and any other information relevant to our experiment. Within the same document we also put chunks of codes wherever we want them using programming languages such as bash shell, python, and R. What is more amazing is that Org-mode allowed us to name and call the executable codes from anywhere within the document with different input parameters, hence we were able to reuse previously written code blocks. 
 
 We used the shell script to run NS-3 and SimGrid simulation scripts and also to capture their outputs. We used Python to extract and format the data we want from the raw data produced by the simulators. Then we used R with its ggplot2 package to generate different plots and to do statistical analysis. All the experiments we conducted, the statistical analysis we made and the plots we generated can be reproduced by anyone. The lab notebook is available at our github account\footnote{https://github.com/betsegawlemma/internship/blob/master/intern{\_}report.org}.
 

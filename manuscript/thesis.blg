@@ -46,7 +46,7 @@ Warning--I didn't find a database entry for "DBLP:conf/aina/2010"
 Warning--I didn't find a database entry for "DBLP:conf/nsdi/2008"
 You've used 31 entries,
             2253 wiz_defined-function locations,
-            756 strings with 13040 characters,
+            756 strings with 13042 characters,
 and the built_in function-call counts, 12889 in all, are:
 = -- 1228
 > -- 702

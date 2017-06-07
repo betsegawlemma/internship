@@ -1037,7 +1037,8 @@ j=$((header + i))
 #+CALL: extract_data(input_file="data/eco_val_linear_1000.raw", output_file="data/eco_val_linear_1000.csv",size=1000) 
 #+CALL: extract_data(input_file="data/eco_val_linear_1500.raw", output_file="data/eco_val_linear_1500.csv",size=1500) 
 - The graph shown below plots the power consumption for a given traffic volume for each of the four packet sizes -  100, 576, 1000 and 1500 bytes
-#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedlinear.png :exports both 
+#+NAME: format_theme
+#+BEGIN_SRC R  :results silent 
 library(ggplot2)
 library(gridExtra)
 theme_Publication <- function(base_size=14, base_family="helvetica") {
@@ -1065,7 +1066,7 @@ theme_Publication <- function(base_size=14, base_family="helvetica") {
                legend.margin = unit(0, "cm"),
                legend.title=element_blank(),
                panel.margin = unit(1.2,"lines"),
-               plot.margin=unit(c(5,5,5,5),"mm"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
                strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
                strip.text = element_text(face="bold")
           ))
@@ -1083,7 +1084,11 @@ scale_colour_Publication <- function(...){
       discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
 
 }
+#+END_SRC
 
+
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedlinear.png :exports both :noweb yes 
+<<format_theme>>
 val_100 = read.csv("data/eco_val_linear_100.csv", header=T)
 val_576 = read.csv("data/eco_val_linear_576.csv", header=T)
 val_1000 = read.csv("data/eco_val_linear_1000.csv", header=T)
@@ -1294,52 +1299,8 @@ with open(input_file) as fe:
   [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
 **** Validating the receiving end 
 - We use two of the models shown in the paper
-#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedreceiving.png :exports both 
-library(ggplot2)
-library(gridExtra)
-theme_Publication <- function(base_size=14, base_family="helvetica") {
-      library(grid)
-      library(ggthemes)
-      (theme_foundation(base_size=base_size, base_family=base_family)
-       + theme(plot.title = element_text(face = "bold",
-                                         size = rel(1.2), hjust = 0.5),
-               text = element_text(),
-               panel.background = element_rect(colour = NA),
-               plot.background = element_rect(colour = NA),
-               panel.border = element_rect(colour = NA),
-               axis.title = element_text(face = "bold",size = rel(1)),
-               axis.title.y = element_text(angle=90,vjust =2),
-               axis.title.x = element_text(vjust = -0.2),
-               axis.text = element_text(), 
-               axis.line = element_line(colour="black"),
-               axis.ticks = element_line(),
-               panel.grid.major = element_line(colour="#f0f0f0"),
-               panel.grid.minor = element_blank(),
-               legend.key = element_rect(colour = NA),
-               legend.position = "top",
-               legend.direction = "horizontal",
-               legend.key.size= unit(0.2, "cm"),
-               legend.margin = unit(0, "cm"),
-               legend.title=element_blank(),
-               panel.margin = unit(1.2,"lines"),
-               plot.margin=unit(c(5,4,4,4),"mm"),
-               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-               strip.text = element_text(face="bold")
-          ))
-      
-}
-
-scale_fill_Publication <- function(...){
-      library(scales)
-      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
-
-scale_colour_Publication <- function(...){
-      library(scales)
-      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedreceiving.png :exports both :noweb yes
+<<format_theme>>
 
 val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
 val_1500 = read.csv("data/eco_val_complete_1500.csv", header=T)
@@ -1396,52 +1357,8 @@ mean of x mean of y
 **** Validating the sending/transmitting end 
 - For the transmitting end there is only one model in the paper mentioned above and the packet size used for that model is 1000. We only used the data
   for packet size 1000 in this plot. 
-#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedsending.png :exports both 
-library(ggplot2)
-library(gridExtra)
-theme_Publication <- function(base_size=14, base_family="helvetica") {
-      library(grid)
-      library(ggthemes)
-      (theme_foundation(base_size=base_size, base_family=base_family)
-       + theme(plot.title = element_text(face = "bold",
-                                         size = rel(1.2), hjust = 0.5),
-               text = element_text(),
-               panel.background = element_rect(colour = NA),
-               plot.background = element_rect(colour = NA),
-               panel.border = element_rect(colour = NA),
-               axis.title = element_text(face = "bold",size = rel(1)),
-               axis.title.y = element_text(angle=90,vjust =2),
-               axis.title.x = element_text(vjust = -0.2),
-               axis.text = element_text(), 
-               axis.line = element_line(colour="black"),
-               axis.ticks = element_line(),
-               panel.grid.major = element_line(colour="#f0f0f0"),
-               panel.grid.minor = element_blank(),
-               legend.key = element_rect(colour = NA),
-               legend.position = "top",
-               legend.direction = "horizontal",
-               legend.key.size= unit(0.2, "cm"),
-               legend.margin = unit(0, "cm"),
-               legend.title=element_blank(),
-               panel.margin = unit(1.2,"lines"),
-               plot.margin=unit(c(10,10,10,10),"mm"),
-               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-               strip.text = element_text(face="bold")
-          ))
-      
-}
-
-scale_fill_Publication <- function(...){
-      library(scales)
-      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
-
-scale_colour_Publication <- function(...){
-      library(scales)
-      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedsending.png :exports both :noweb yes 
+<<format_theme>>
 val_1000 = read.csv("data/eco_val_complete_1000.csv", header=T)
 attach(val_1000)
 ggplot(val_1000,aes(x=Mbps))+
@@ -1744,7 +1661,7 @@ with open(input_file) as fe:
        if line.startswith("[H-0:sender:"): # traffic line
            list = line.split()
            if list[TRAFFIC_COL-1] == "traffic":
-               traffic = float(list[TRAFFIC_COL]) / 1E6
+               traffic = (float(list[TRAFFIC_COL]) / 1E6)
                data.append(str(traffic))
            elif list[TRAFFIC_COL-1] == "sender":
                done = True 
@@ -1782,52 +1699,8 @@ with open(input_file) as fe:
                    cur_time = 0
 #+END_SRC
 ***** Plot to see the relationship between traffic and transfer time
-#+BEGIN_SRC R :results output graphics :file figures/transferTime_vs_traffic.png :exports both 
-library(ggplot2)
-library(gridExtra)
-theme_Publication <- function(base_size=14, base_family="helvetica") {
-      library(grid)
-      library(ggthemes)
-      (theme_foundation(base_size=base_size, base_family=base_family)
-       + theme(plot.title = element_text(face = "bold",
-                                         size = rel(1.2), hjust = 0.5),
-               text = element_text(),
-               panel.background = element_rect(colour = NA),
-               plot.background = element_rect(colour = NA),
-               panel.border = element_rect(colour = NA),
-               axis.title = element_text(face = "bold",size = rel(1)),
-               axis.title.y = element_text(angle=90,vjust =2),
-               axis.title.x = element_text(vjust = -0.2),
-               axis.text = element_text(), 
-               axis.line = element_line(colour="black"),
-               axis.ticks = element_line(),
-               panel.grid.major = element_line(colour="#f0f0f0"),
-               panel.grid.minor = element_blank(),
-               legend.key = element_rect(colour = NA),
-               legend.position = "top",
-               legend.direction = "horizontal",
-               legend.key.size= unit(0.2, "cm"),
-               legend.margin = unit(0, "cm"),
-               legend.title=element_blank(),
-               panel.margin = unit(1.2,"lines"),
-               plot.margin=unit(c(10,10,10,10),"mm"),
-               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-               strip.text = element_text(face="bold")
-          ))
-      
-}
-
-scale_fill_Publication <- function(...){
-      library(scales)
-      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
-
-scale_colour_Publication <- function(...){
-      library(scales)
-      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
+#+BEGIN_SRC R :results output graphics :file figures/transferTime_vs_traffic.png :exports both :noweb yes
+<<format_theme>>
 ex1_ns3 = read.csv("data/ex1_ns3_energy.csv", header=T)
 attach(ex1_ns3)
 ggplot(ex1_ns3,aes(x=Traffic))+
@@ -1923,52 +1796,8 @@ with open(input_file) as fe:
                    latency = 0.0
 #+END_SRC
 ***** Plot to see the relationship between transfer time and latency
-#+BEGIN_SRC R :results output graphics :file figures/transferTime_vs_latency.png :exports both 
-library(ggplot2)
-library(gridExtra)
-theme_Publication <- function(base_size=14, base_family="helvetica") {
-      library(grid)
-      library(ggthemes)
-      (theme_foundation(base_size=base_size, base_family=base_family)
-       + theme(plot.title = element_text(face = "bold",
-                                         size = rel(1.2), hjust = 0.5),
-               text = element_text(),
-               panel.background = element_rect(colour = NA),
-               plot.background = element_rect(colour = NA),
-               panel.border = element_rect(colour = NA),
-               axis.title = element_text(face = "bold",size = rel(1)),
-               axis.title.y = element_text(angle=90,vjust =2),
-               axis.title.x = element_text(vjust = -0.2),
-               axis.text = element_text(), 
-               axis.line = element_line(colour="black"),
-               axis.ticks = element_line(),
-               panel.grid.major = element_line(colour="#f0f0f0"),
-               panel.grid.minor = element_blank(),
-               legend.key = element_rect(colour = NA),
-               legend.position = "top",
-               legend.direction = "horizontal",
-               legend.key.size= unit(0.2, "cm"),
-               legend.margin = unit(0, "cm"),
-               legend.title=element_blank(),
-               panel.margin = unit(1.2,"lines"),
-               plot.margin=unit(c(10,10,10,10),"mm"),
-               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-               strip.text = element_text(face="bold")
-          ))
-      
-}
-
-scale_fill_Publication <- function(...){
-      library(scales)
-      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
-
-scale_colour_Publication <- function(...){
-      library(scales)
-      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
+#+BEGIN_SRC R :results output graphics :file figures/transferTime_vs_latency.png :exports both :noweb yes
+<<format_theme>>
 ex2_ns3 = read.csv("data/ex2_ns3_energy.csv", header=T)
 attach(ex2_ns3)
 ggplot(ex2_ns3,aes(x=Latency))+
@@ -2038,10 +1867,10 @@ with open(input_file) as fe:
     for line in fe:
        if "traffic" in line: 
            list = line.split()
-           traffic = float(list[TRAFFIC_COL])/1E6
-           data.append(str(traffic))
+           traffic += (float(list[TRAFFIC_COL])/1E6)
        if "TotalEnergy" in line:
            list = line.split()
+           data.append(str(traffic))
            data.append(list[POWER_COL])
            data.append(list[TIME_COL])
            data.append(list[ENERGY_COL])
@@ -2056,52 +1885,8 @@ with open(input_file) as fe:
                    traffic = 0.0
 #+END_SRC
 **** Comparing the energy consumption models of ECOFEN and SimGrid
-#+BEGIN_SRC R :results output graphics :file figures/energy_sg_vs_ns3.png :exports both 
-library(ggplot2)
-library(gridExtra)
-theme_Publication <- function(base_size=14, base_family="helvetica") {
-      library(grid)
-      library(ggthemes)
-      (theme_foundation(base_size=base_size, base_family=base_family)
-       + theme(plot.title = element_text(face = "bold",
-                                         size = rel(1.2), hjust = 0.5),
-               text = element_text(),
-               panel.background = element_rect(colour = NA),
-               plot.background = element_rect(colour = NA),
-               panel.border = element_rect(colour = NA),
-               axis.title = element_text(face = "bold",size = rel(1)),
-               axis.title.y = element_text(angle=90,vjust =2),
-               axis.title.x = element_text(vjust = -0.2),
-               axis.text = element_text(), 
-               axis.line = element_line(colour="black"),
-               axis.ticks = element_line(),
-               panel.grid.major = element_line(colour="#f0f0f0"),
-               panel.grid.minor = element_blank(),
-               legend.key = element_rect(colour = NA),
-               legend.position = "top",
-               legend.direction = "horizontal",
-               legend.key.size= unit(0.2, "cm"),
-               legend.margin = unit(0, "cm"),
-               legend.title=element_blank(),
-               panel.margin = unit(1.2,"lines"),
-               plot.margin=unit(c(10,10,10,10),"mm"),
-               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-               strip.text = element_text(face="bold")
-          ))
-      
-}
-
-scale_fill_Publication <- function(...){
-      library(scales)
-      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
-
-scale_colour_Publication <- function(...){
-      library(scales)
-      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
+#+BEGIN_SRC R :results output graphics :file figures/energy_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
    ex1_ns3 = read.csv("data/ex1_ns3_energy.csv", header=T)
    ex3_sg = read.csv("data/ex3_sg_energy.csv", header=T)
    sg_ns3 = merge(ex1_ns3,ex3_sg, by=c("Traffic"))
@@ -2131,7 +1916,7 @@ for ((k=0; k<40; k++)); do
   # run SimGrid
   ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex4_sg_energy.raw 2>&1
   # run ECOFEN
-  ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex4_ns3_energy.raw 2>&1
+ # ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex4_ns3_energy.raw 2>&1
 done
 #+END_SRC
 
@@ -2140,52 +1925,8 @@ done
 #+CALL: extract_sg_data(input_file="data/ex4_sg_energy.raw", output_file="data/ex4_sg_energy.csv") 
 #+CALL: extract_ns3_data(input_file="data/ex4_ns3_energy.raw", output_file="data/ex4_ns3_energy.csv") 
 ***** Plot and see the difference between ECOFEN and SimGrid's estimation
-#+BEGIN_SRC R :results output graphics :file figures/ex4_energy_sg_vs_ns3.png :exports both 
-library(ggplot2)
-library(gridExtra)
-theme_Publication <- function(base_size=14, base_family="helvetica") {
-      library(grid)
-      library(ggthemes)
-      (theme_foundation(base_size=base_size, base_family=base_family)
-       + theme(plot.title = element_text(face = "bold",
-                                         size = rel(1.2), hjust = 0.5),
-               text = element_text(),
-               panel.background = element_rect(colour = NA),
-               plot.background = element_rect(colour = NA),
-               panel.border = element_rect(colour = NA),
-               axis.title = element_text(face = "bold",size = rel(1)),
-               axis.title.y = element_text(angle=90,vjust =2),
-               axis.title.x = element_text(vjust = -0.2),
-               axis.text = element_text(), 
-               axis.line = element_line(colour="black"),
-               axis.ticks = element_line(),
-               panel.grid.major = element_line(colour="#f0f0f0"),
-               panel.grid.minor = element_blank(),
-               legend.key = element_rect(colour = NA),
-               legend.position = "top",
-               legend.direction = "horizontal",
-               legend.key.size= unit(0.2, "cm"),
-               legend.margin = unit(0, "cm"),
-               legend.title=element_blank(),
-               panel.margin = unit(1.2,"lines"),
-               plot.margin=unit(c(10,10,10,10),"mm"),
-               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-               strip.text = element_text(face="bold")
-          ))
-      
-}
-
-scale_fill_Publication <- function(...){
-      library(scales)
-      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
-
-scale_colour_Publication <- function(...){
-      library(scales)
-      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
+#+BEGIN_SRC R :results output graphics :file figures/ex4_energy_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
    ex4_ns3 = read.csv("data/ex4_ns3_energy.csv", header=T)
    ex4_sg = read.csv("data/ex4_sg_energy.csv", header=T)
    sg_ns3 = merge(ex4_ns3,ex4_sg, by=c("Traffic"))
@@ -2217,55 +1958,9 @@ for ((k=0; k<40; k++)); do
   ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex5_sg_energy.raw 2>&1
 done
 #+END_SRC
-
-#+RESULTS:
 #+CALL: extract_sg_data(input_file="data/ex5_sg_energy.raw", output_file="data/ex5_sg_energy.csv") 
-#+BEGIN_SRC R :results output graphics :file figures/ex5_energy_sg_vs_ns3.png :exports both 
-library(ggplot2)
-library(gridExtra)
-theme_Publication <- function(base_size=14, base_family="helvetica") {
-      library(grid)
-      library(ggthemes)
-      (theme_foundation(base_size=base_size, base_family=base_family)
-       + theme(plot.title = element_text(face = "bold",
-                                         size = rel(1.2), hjust = 0.5),
-               text = element_text(),
-               panel.background = element_rect(colour = NA),
-               plot.background = element_rect(colour = NA),
-               panel.border = element_rect(colour = NA),
-               axis.title = element_text(face = "bold",size = rel(1)),
-               axis.title.y = element_text(angle=90,vjust =2),
-               axis.title.x = element_text(vjust = -0.2),
-               axis.text = element_text(), 
-               axis.line = element_line(colour="black"),
-               axis.ticks = element_line(),
-               panel.grid.major = element_line(colour="#f0f0f0"),
-               panel.grid.minor = element_blank(),
-               legend.key = element_rect(colour = NA),
-               legend.position = "top",
-               legend.direction = "horizontal",
-               legend.key.size= unit(0.2, "cm"),
-               legend.margin = unit(0, "cm"),
-               legend.title=element_blank(),
-               panel.margin = unit(1.2,"lines"),
-               plot.margin=unit(c(10,10,10,10),"mm"),
-               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-               strip.text = element_text(face="bold")
-          ))
-      
-}
-
-scale_fill_Publication <- function(...){
-      library(scales)
-      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
-
-scale_colour_Publication <- function(...){
-      library(scales)
-      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
-
-}
+#+BEGIN_SRC R :results output graphics :file figures/ex5_energy_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
    ex4_ns3 = read.csv("data/ex4_ns3_energy.csv", header=T)
    ex5_sg = read.csv("data/ex5_sg_energy.csv", header=T)
    sg_ns3 = merge(ex4_ns3,ex5_sg, by=c("Traffic"))
@@ -2281,8 +1976,121 @@ scale_colour_Publication <- function(...){
 
 #+RESULTS:
 [[file:figures/ex5_energy_sg_vs_ns3.png]]
+**** Experiment 6:
+    - Two traffic in same direction with different data size [1,500] MBytes each, 1GBytes/sec bandwidth, 10ms latency
+#+BEGIN_SRC bash :results output :exports both 
+#! /bin/bash
+seed1=234
+RANDOM=$(seed)
+cd ~/simgrid/link_energy
+for ((k=0; k<40; k++)); do
+  traffic1=$(((RANDOM % 500)+1)) # traffic in MBps between 1 and 1000
+  traffic2=$(((RANDOM % 500)+1))
+  # edit simgrid's deployment file to add traffic value
+  cat energy_consumption_2_proc_d.xml |sed -e "s/\$T1/${traffic1}E6/"|sed -e "s/\$T2/${traffic2}E6/" > t_energy_consumption_d.xml
+  # run SimGrid
+  ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex6_sg_energy.raw 2>&1
+  # run ECOFEN
+  ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex6_ns3_energy.raw 2>&1
+done
+#+END_SRC   
 
-- looks nice
+#+RESULTS:
+
+***** Extract data 
+#+CALL: extract_sg_data(input_file="data/ex6_sg_energy.raw", output_file="data/ex6_sg_energy.csv") 
+#+NAME: extract_ns3_data_2
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex1_ns3_energy.raw" :var output_file="data/ex1_ns3_energy.csv" 
+import sys
+
+header = True
+first_done = False
+second_done = False
+
+POWER_COL=5
+NODE_COL=3
+TIME_COL=1
+
+TRAFFIC_COL=4
+TRANSFER_TIME_COL = 5
+
+# data variable holds one line of data formated as follows 
+# Traffic,Average_Power,Transfer_Time,Total_Energy
+data = []
+
+total_power = 0.0 
+average_power = 0.0 
+total_energy = 0.0
+
+transfer_time = 0.0
+traffic = 0.0
+
+number_of_power_values = 1.0
+prv_time = 0
+cur_time = 0
+
+with open(input_file) as fe:
+    for line in fe:
+       if "traffic" in line: # traffic line
+           list = line.split()
+           traffic += (float(list[TRAFFIC_COL]) / 1E6)
+       if line.startswith("Time"):
+           list = line.split()
+           cur_time = int(list[TIME_COL])
+           if second_done is not True:
+               if prv_time != cur_time: 
+                   number_of_power_values+=1
+               prv_time = cur_time
+               total_power+=float(list[POWER_COL])
+       if "done" in line:
+           first_done = True
+       if "done" in line and first_done is True:
+           list = line.split()
+           second_done = True
+           if number_of_power_values > 0:
+               average_power = total_power/number_of_power_values
+           transfer_time = float(list[TRANSFER_TIME_COL])
+           total_energy = average_power * transfer_time
+           data.append(str(traffic))
+           data.append(str(average_power))
+           data.append(str(transfer_time))
+           data.append(str(total_energy))
+       with open(output_file,"a") as of:
+           if len(data) == 4 and second_done is True:
+               if header: # write the header part
+                   of.write("%s\n" % "Traffic,Average_Power,Transfer_Time,Total_Energy")
+                   header = False
+               else: # write data part
+                   of.write("%s\n" % ",".join(data))
+                   del data[:]
+                   first_done = False
+                   second_done = False
+                   total_power = 0.0
+                   average_power = 0.0 
+                   number_of_power_values = 1.0
+                   total_energy = 0.0
+                   transfer_time = 0.0
+                   traffic = 0.0
+                   prv_time = 0
+                   cur_time = 0
+#+END_SRC
+#+CALL: extract_ns3_data_2(input_file="data/ex6_ns3_energy.raw", output_file="data/ex6_ns3_energy.csv")
+#+BEGIN_SRC R :results output graphics :file figures/ex6_energy_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+   ex6_ns3 = read.csv("data/ex6_ns3_energy.csv", header=T)
+   ex6_sg = read.csv("data/ex6_sg_energy.csv", header=T)
+   sg_ns3 = merge(ex6_ns3,ex6_sg, by=c("Traffic"))
+   attach(sg_ns3)
+   ggplot(sg_ns3,aes(x=Traffic))+
+   geom_line(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
+   geom_line(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
+   ylab(label="Energy Consumption in Joule")+
+   xlab(label="Transferred data in MBytes")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
