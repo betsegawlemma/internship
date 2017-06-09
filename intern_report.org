@@ -1828,7 +1828,7 @@ ggplot(ex2_ns3,aes(x=Latency))+
 - The two equations combined gives us the time required to transferred a given data at a given latency for a fixed bandwidth and packet size
 - Now we can plug these equations into SimGrid for the flow-level energy estimation model
 **** Experiment 3:
-***** Running SimGrid with the new flow-level model 2-hosts,3-link,1-flow
+***** Running SimGrid with the new flow-level model 2-hosts,1-link,1-flow
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
 seed=234
@@ -1839,7 +1839,7 @@ for ((k=0; k<40; k++)); do
   # edit simgrid's deployment file to add traffic value
   cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
   # run simgrid
-  ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex3_sg_energy.raw 2>&1
+  ./sg_energy_consumption energy_consumption_1_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex3_sg_energy.raw 2>&1
 done
 #+END_SRC
 
@@ -1917,7 +1917,7 @@ for ((k=0; k<40; k++)); do
   # run SimGrid
   ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex4_sg_energy.raw 2>&1
   # run ECOFEN
- # ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex4_ns3_energy.raw 2>&1
+  ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex4_ns3_energy.raw 2>&1
 done
 #+END_SRC
 
@@ -1957,7 +1957,7 @@ for ((k=0; k<40; k++)); do
   # run SimGrid
   ./sg_energy_consumption energy_consumption_1_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex5_sg_energy.raw 2>&1
   # run ECOFEN
-#   ./ns3_energy_consumption energy_consumption_1_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex5_ns3_energy.raw 2>&1
+   ./ns3_energy_consumption energy_consumption_1_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex5_ns3_energy.raw 2>&1
 done
 #+END_SRC  
 
@@ -1997,7 +1997,7 @@ for ((k=0; k<40; k++)); do
   # run SimGrid
   ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex6_sg_energy.raw 2>&1
   # run ECOFEN
-  # ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex6_ns3_energy.raw 2>&1
+   ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex6_ns3_energy.raw 2>&1
 done
 #+END_SRC   
 
