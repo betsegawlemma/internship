@@ -111,6 +111,15 @@
   computing data centers.
 \newblock {\em The Journal of Supercomputing 62}, 3 (2012), 1263--1283.
 
+\bibitem{DBLP:conf/infocom/LiuFGKT01}
+{\sc Liu, B., Figueiredo, D.~R., Guo, Y., Kurose, J.~F., and Towsley, D.~F.}
+\newblock A study of networks simulation efficiency: Fluid simulation vs.
+  packet-level simulation.
+\newblock In {\em Proceedings {IEEE} {INFOCOM} 2001, The Conference on Computer
+  Communications, Twentieth Annual Joint Conference of the {IEEE} Computer and
+  Communications Societies, Twenty years into the communications odyssey,
+  Anchorage, Alaska, USA, April 22-26, 2001\/} (2001), pp.~1244--1253.
+
 \bibitem{ns3}
 {\sc LLC, M.}
 \newblock {NS-3} simulator.

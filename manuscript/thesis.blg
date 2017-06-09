@@ -21,6 +21,8 @@ A bad cross reference---entry "DBLP:conf/networking/MahadevanSBR09"
 refers to entry "DBLP:conf/networking/2009", which doesn't exist
 A bad cross reference---entry "DBLP:conf/nsdi/NedevschiPIRW08"
 refers to entry "DBLP:conf/nsdi/2008", which doesn't exist
+A bad cross reference---entry "DBLP:conf/infocom/LiuFGKT01"
+refers to entry "DBLP:conf/infocom/2001", which doesn't exist
 A bad cross reference---entry "DBLP:conf/valuetools/CarneiroFR09"
 refers to entry "DBLP:conf/valuetools/2009", which doesn't exist
 A bad cross reference---entry "DBLP:conf/wowmom/OrgerieLLL11"
@@ -37,6 +39,7 @@ Warning--I didn't find a database entry for "DBLP:conf/wowmom/2011"
 Warning--I didn't find a database entry for "DBLP:conf/networking/2009"
 Warning--I didn't find a database entry for "DBLP:conf/sigcomm/2010greennet"
 Warning--I didn't find a database entry for "DBLP:conf/isca/2007"
+Warning--I didn't find a database entry for "DBLP:conf/infocom/2001"
 Warning--I didn't find a database entry for "DBLP:conf/eenergy/2010"
 Warning--I didn't find a database entry for "DBLP:conf/valuetools/2009"
 Warning--I didn't find a database entry for "DBLP:conf/IEEEcloud/2015"
@@ -44,45 +47,45 @@ Warning--I didn't find a database entry for "DBLP:conf/cloudnet/2014"
 Warning--I didn't find a database entry for "DBLP:conf/icc/2009"
 Warning--I didn't find a database entry for "DBLP:conf/aina/2010"
 Warning--I didn't find a database entry for "DBLP:conf/nsdi/2008"
-You've used 31 entries,
+You've used 32 entries,
             2253 wiz_defined-function locations,
-            756 strings with 13042 characters,
-and the built_in function-call counts, 12889 in all, are:
-= -- 1228
-> -- 702
+            765 strings with 13584 characters,
+and the built_in function-call counts, 13467 in all, are:
+= -- 1285
+> -- 729
 < -- 0
-+ -- 297
-- -- 256
-* -- 1035
-:= -- 2033
-add.period$ -- 97
-call.type$ -- 31
-change.case$ -- 218
++ -- 309
+- -- 266
+* -- 1076
+:= -- 2113
+add.period$ -- 100
+call.type$ -- 32
+change.case$ -- 226
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 457
-empty$ -- 973
-format.name$ -- 256
-if$ -- 2692
+cite$ -- 32
+duplicate$ -- 483
+empty$ -- 1018
+format.name$ -- 266
+if$ -- 2821
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 31
-newline$ -- 160
-num.names$ -- 62
-pop$ -- 261
+int.to.str$ -- 32
+missing$ -- 32
+newline$ -- 165
+num.names$ -- 64
+pop$ -- 273
 preamble$ -- 1
-purify$ -- 189
+purify$ -- 196
 quote$ -- 0
-skip$ -- 306
+skip$ -- 328
 stack$ -- 0
-substring$ -- 805
-swap$ -- 144
+substring$ -- 851
+swap$ -- 156
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
+type$ -- 124
 warning$ -- 0
-while$ -- 124
-width$ -- 33
-write$ -- 316
-(There were 12 error messages)
+while$ -- 129
+width$ -- 34
+write$ -- 326
+(There were 13 error messages)

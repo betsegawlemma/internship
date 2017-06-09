@@ -1658,45 +1658,44 @@ cur_time = 0
 
 with open(input_file) as fe:
     for line in fe:
-       if line.startswith("[H-0:sender:"): # traffic line
+       if "traffic" in line: # traffic line
+           done = False
            list = line.split()
-           if list[TRAFFIC_COL-1] == "traffic":
-               traffic = (float(list[TRAFFIC_COL]) / 1E6)
-               data.append(str(traffic))
-           elif list[TRAFFIC_COL-1] == "sender":
-               done = True 
-               if number_of_power_values > 0:
-                   average_power = total_power/number_of_power_values
-               transfer_time = float(list[TRANSFER_TIME_COL])
-               total_energy = average_power * transfer_time
-               data.append(str(average_power))
-               data.append(str(transfer_time))
-               data.append(str(total_energy))
-       if line.startswith("Time"):
+           traffic = (float(list[TRAFFIC_COL]) / 1E6)
+       if line.startswith("Time") and done is not True:
            list = line.split()
            cur_time = int(list[TIME_COL])
-           if done is not True:
-               if prv_time != cur_time: 
-                   number_of_power_values+=1
-               prv_time = cur_time
-               total_power+=float(list[POWER_COL])
-       with open(output_file,"a") as of:
-           if len(data) == 4 and done is True:
+           if prv_time != cur_time: 
+               number_of_power_values+=1
+           prv_time = cur_time
+           total_power+=float(list[POWER_COL])
+       if "done" in line:
+           list = line.split()
+           done = True 
+           if number_of_power_values > 0:
+               average_power = total_power/number_of_power_values
+           transfer_time = float(list[TRANSFER_TIME_COL]) + 0.5
+           total_energy = average_power * transfer_time
+           data.append(str(traffic))
+           data.append(str(average_power))
+           data.append(str(transfer_time))
+           data.append(str(total_energy))
+           traffic=0.0
+       if len(data) == 4 and done is True:
+           with open(output_file,"a") as of:
                if header: # write the header part
                    of.write("%s\n" % "Traffic,Average_Power,Transfer_Time,Total_Energy")
                    header = False
-               else: # write data part
-                   of.write("%s\n" % ",".join(data))
-                   del data[:]
-                   done = False
-                   total_power = 0.0
-                   average_power = 0.0 
-                   number_of_power_values = 1.0
-                   total_energy = 0.0
-                   transfer_time = 0.0
-                   traffic = 0.0
-                   prv_time = 0
-                   cur_time = 0
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+               total_power = 0.0
+               average_power = 0.0 
+               number_of_power_values = 1.0
+               total_energy = 0.0
+               transfer_time = 0.0
+               traffic = 0.0
+               prv_time = 0
+               cur_time = 0
 #+END_SRC
 ***** Plot to see the relationship between traffic and transfer time
 #+BEGIN_SRC R :results output graphics :file figures/transferTime_vs_traffic.png :exports both :noweb yes
@@ -1723,10 +1722,10 @@ ggplot(ex1_ns3,aes(x=Traffic))+
 
 #+RESULTS:
 : (Intercept)     Traffic 
-:   0.1513248   0.1525936 
+:   0.6513248   0.1525936 
 - From this we get the following linear equation for the data transfer time (as a function of traffic) 
 #+BEGIN_EXAMPLE
-  Transfer_Time = 0.1525936 * Traffic + 0.1513248
+  Transfer_Time = 0.1525936 * Traffic + 0.6513248
 #+END_EXAMPLE
 **** Experiment 2: 
    - Obtain time data at a fixed bandwidth, data size and packet size but varying latency for NS-3
@@ -1776,24 +1775,25 @@ latency = 0.0
 
 with open(input_file) as fe:
     for line in fe:
-       if line.startswith("[H-0:sender:"): 
+       if "traffic" in line:
+           done = False
+       if "done" in line: 
            list = line.split()
-           if list[SENDER_COL] == "sender":
-               transfer_time = list[TRANSFER_TIME_COL]
-               data.append(transfer_time)
+           transfer_time = list[TRANSFER_TIME_COL]
        if line.startswith("latency"):
+           done = True
            list = line.split()
+           data.append(transfer_time)
            data.append(list[LATENCY_COL])
-       with open(output_file,"a") as of:
-           if len(data) == 2:
+       if len(data) == 2 and done is True:
+           with open(output_file,"a") as of:
                if header: # write the header part
                    of.write("%s\n" % "Transfer_Time,Latency")
                    header = False
-               else: # write data part
-                   of.write("%s\n" % ",".join(data))
-                   del data[:]
-                   transfer_time = 0.0
-                   latency = 0.0
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+               transfer_time = 0.0
+               latency = 0.0
 #+END_SRC
 ***** Plot to see the relationship between transfer time and latency
 #+BEGIN_SRC R :results output graphics :file figures/transferTime_vs_latency.png :exports both :noweb yes
@@ -1828,7 +1828,7 @@ ggplot(ex2_ns3,aes(x=Latency))+
 - The two equations combined gives us the time required to transferred a given data at a given latency for a fixed bandwidth and packet size
 - Now we can plug these equations into SimGrid for the flow-level energy estimation model
 **** Experiment 3:
-- Running SimGrid with the new flow-level model
+***** Running SimGrid with the new flow-level model 2-hosts,3-link,1-flow
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
 seed=234
@@ -1844,13 +1844,13 @@ done
 #+END_SRC
 
 #+RESULTS:
-
 ***** Extract total energy consumed for each traffic transferred
 #+NAME: extract_sg_data
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex3_sg_energy.raw" :var output_file="data/ex3_sg_energy.csv" 
 import sys
 
 header = True
+done = False
 
 # data variable holds one line of data formated as follows 
 # Traffic, SG_AVG_PWR, SG_TR_TIME, SG_TOTAL_ENERGY
@@ -1866,23 +1866,24 @@ TIME_COL = 7
 with open(input_file) as fe:
     for line in fe:
        if "traffic" in line: 
+           done = False
            list = line.split()
            traffic += (float(list[TRAFFIC_COL])/1E6)
        if "TotalEnergy" in line:
+           done = True
            list = line.split()
            data.append(str(traffic))
            data.append(list[POWER_COL])
            data.append(list[TIME_COL])
            data.append(list[ENERGY_COL])
-       with open(output_file,"a") as of:
-           if len(data) == 4:
+       if len(data) == 4 and done is True:
+           with open(output_file,"a") as of:
                if header: # write the header part
                    of.write("%s\n" % "Traffic, SG_AVG_PWR, SG_TR_TIME, SG_TOTAL_ENERGY")
                    header = False
-               else: # write data part
-                   of.write("%s\n" % ",".join(data))
-                   del data[:]
-                   traffic = 0.0
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+               traffic = 0.0
 #+END_SRC
 **** Comparing the energy consumption models of ECOFEN and SimGrid
 #+BEGIN_SRC R :results output graphics :file figures/energy_sg_vs_ns3.png :exports both :noweb yes
@@ -1903,7 +1904,7 @@ with open(input_file) as fe:
 #+RESULTS:
 [[file:figures/energy_sg_vs_ns3.png]]
 - from the plot we can see that as the data size grow the difference also increases
-***** Experiment on larger platform(two nodes, two router, three links) to see if there is similar gap when the topology changes
+***** Experiment on larger platform (2-hosts, 3-links, 1-flow)
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
 seed=234
@@ -1942,28 +1943,32 @@ done
 
 #+RESULTS:
 [[file:figures/ex4_energy_sg_vs_ns3.png]]
-**** Experiment 5:
-  - the difference growth looks more pronounced with large topology
-  - the gap growth looks exponential therefore replacing traffic value in the computation with pow(traffic, 1.08)
+**** Experiment 5: 2-hosts, 1-link, 2-flow same direction
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
 seed=234
 RANDOM=$(seed)
 cd ~/simgrid/link_energy
 for ((k=0; k<40; k++)); do
-  traffic=$(((RANDOM % 1000)+1)) # traffic in MBps between 1 and 1000
+  traffic1=$(((RANDOM % 500)+1)) # traffic in MBps between 1 and 1000
+  traffic2=$(((RANDOM % 500)+1))
   # edit simgrid's deployment file to add traffic value
-  cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
-  # run simgrid
-  ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex5_sg_energy.raw 2>&1
+  cat energy_consumption_2_proc_d.xml |sed -e "s/\$T1/${traffic1}E6/"|sed -e "s/\$T2/${traffic2}E6/" > t_energy_consumption_d.xml
+  # run SimGrid
+  ./sg_energy_consumption energy_consumption_1_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex5_sg_energy.raw 2>&1
+  # run ECOFEN
+#   ./ns3_energy_consumption energy_consumption_1_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex5_ns3_energy.raw 2>&1
 done
-#+END_SRC
+#+END_SRC  
+
+#+RESULTS:
+#+CALL: extract_ns3_data_2(input_file="data/ex5_ns3_energy.raw", output_file="data/ex5_ns3_energy.csv")
 #+CALL: extract_sg_data(input_file="data/ex5_sg_energy.raw", output_file="data/ex5_sg_energy.csv") 
 #+BEGIN_SRC R :results output graphics :file figures/ex5_energy_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
-   ex4_ns3 = read.csv("data/ex4_ns3_energy.csv", header=T)
+   ex5_ns3 = read.csv("data/ex5_ns3_energy.csv", header=T)
    ex5_sg = read.csv("data/ex5_sg_energy.csv", header=T)
-   sg_ns3 = merge(ex4_ns3,ex5_sg, by=c("Traffic"))
+   sg_ns3 = merge(ex5_ns3,ex5_sg, by=c("Traffic"))
    attach(sg_ns3)
    ggplot(sg_ns3,aes(x=Traffic))+
    geom_line(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
@@ -1976,11 +1981,12 @@ done
 
 #+RESULTS:
 [[file:figures/ex5_energy_sg_vs_ns3.png]]
-**** Experiment 6:
+
+**** Experiment 6: 2-hosts, 3-links, 2-flow, same direction
     - Two traffic in same direction with different data size [1,500] MBytes each, 1GBytes/sec bandwidth, 10ms latency
 #+BEGIN_SRC bash :results output :exports both 
 #! /bin/bash
-seed1=234
+seed=234
 RANDOM=$(seed)
 cd ~/simgrid/link_energy
 for ((k=0; k<40; k++)); do
@@ -1991,20 +1997,18 @@ for ((k=0; k<40; k++)); do
   # run SimGrid
   ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex6_sg_energy.raw 2>&1
   # run ECOFEN
-  ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex6_ns3_energy.raw 2>&1
+  # ./ns3_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml --cfg=network/model:NS3 >> ~/internship/data/ex6_ns3_energy.raw 2>&1
 done
 #+END_SRC   
 
 #+RESULTS:
 
 ***** Extract data 
-#+CALL: extract_sg_data(input_file="data/ex6_sg_energy.raw", output_file="data/ex6_sg_energy.csv") 
 #+NAME: extract_ns3_data_2
-#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex1_ns3_energy.raw" :var output_file="data/ex1_ns3_energy.csv" 
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="data/ex6_ns3_energy.raw" :var output_file="data/ex6_ns3_energy.csv" 
 import sys
 
 header = True
-first_done = False
 second_done = False
 
 POWER_COL=5
@@ -2024,6 +2028,7 @@ total_energy = 0.0
 
 transfer_time = 0.0
 traffic = 0.0
+sender_counter = 0
 
 number_of_power_values = 1.0
 prv_time = 0
@@ -2032,21 +2037,23 @@ cur_time = 0
 with open(input_file) as fe:
     for line in fe:
        if "traffic" in line: # traffic line
+           second_done = False
+           sender_counter = 0;
            list = line.split()
            traffic += (float(list[TRAFFIC_COL]) / 1E6)
-       if line.startswith("Time"):
+       if line.startswith("Time") and second_done is not True:
            list = line.split()
            cur_time = int(list[TIME_COL])
-           if second_done is not True:
-               if prv_time != cur_time: 
-                   number_of_power_values+=1
-               prv_time = cur_time
-               total_power+=float(list[POWER_COL])
-       if "done" in line:
-           first_done = True
-       if "done" in line and first_done is True:
-           list = line.split()
+           if prv_time != cur_time: 
+               number_of_power_values+=1
+           prv_time = cur_time
+           total_power+=float(list[POWER_COL])
+       if "done" in line and sender_counter <2:
+           sender_counter +=1; 
+       if "done" in line and sender_counter ==2:
            second_done = True
+       if second_done is True and traffic !=0.0:
+           list = line.split()
            if number_of_power_values > 0:
                average_power = total_power/number_of_power_values
            transfer_time = float(list[TRANSFER_TIME_COL])
@@ -2055,26 +2062,27 @@ with open(input_file) as fe:
            data.append(str(average_power))
            data.append(str(transfer_time))
            data.append(str(total_energy))
-       with open(output_file,"a") as of:
-           if len(data) == 4 and second_done is True:
+           traffic=0.0;
+       if len(data) == 4 and second_done is True:
+           with open(output_file,"a") as of:
                if header: # write the header part
                    of.write("%s\n" % "Traffic,Average_Power,Transfer_Time,Total_Energy")
                    header = False
-               else: # write data part
-                   of.write("%s\n" % ",".join(data))
-                   del data[:]
-                   first_done = False
-                   second_done = False
-                   total_power = 0.0
-                   average_power = 0.0 
-                   number_of_power_values = 1.0
-                   total_energy = 0.0
-                   transfer_time = 0.0
-                   traffic = 0.0
-                   prv_time = 0
-                   cur_time = 0
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+               total_power = 0.0
+               average_power = 0.0 
+               number_of_power_values = 1.0
+               total_energy = 0.0
+               transfer_time = 0.0
+               traffic = 0.0
+               prv_time = 0
+               cur_time = 0
 #+END_SRC
+
 #+CALL: extract_ns3_data_2(input_file="data/ex6_ns3_energy.raw", output_file="data/ex6_ns3_energy.csv")
+#+CALL: extract_sg_data(input_file="data/ex6_sg_energy.raw", output_file="data/ex6_sg_energy.csv") 
+
 #+BEGIN_SRC R :results output graphics :file figures/ex6_energy_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
    ex6_ns3 = read.csv("data/ex6_ns3_energy.csv", header=T)
@@ -2090,6 +2098,8 @@ with open(input_file) as fe:
    theme_Publication()
 #+END_SRC
 
+#+RESULTS:
+[[file:figures/ex6_energy_sg_vs_ns3.png]]
 
 * Development
    - SimGrid HostEnergy plugin
