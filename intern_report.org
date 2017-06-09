@@ -1703,7 +1703,7 @@ with open(input_file) as fe:
 ex1_ns3 = read.csv("data/ex1_ns3_energy.csv", header=T)
 attach(ex1_ns3)
 ggplot(ex1_ns3,aes(x=Traffic))+
-   geom_line(aes(y = Transfer_Time, ),size=1.3)+
+   geom_point(aes(y = Transfer_Time, ),size=1.3)+
    ylab(label="Data Transfer Time in seconds")+
    xlab(label="Traffic in Mega Bytes")+
    scale_colour_Publication()+
@@ -1801,7 +1801,7 @@ with open(input_file) as fe:
 ex2_ns3 = read.csv("data/ex2_ns3_energy.csv", header=T)
 attach(ex2_ns3)
 ggplot(ex2_ns3,aes(x=Latency))+
-   geom_line(aes(y = Transfer_Time, ),size=1.3)+
+   geom_point(aes(y = Transfer_Time, ),size=1.3)+
    ylab(label="Data Transfer Time in seconds")+
    xlab(label="Latency in milli seconds")+
    scale_colour_Publication()+
@@ -1971,8 +1971,8 @@ done
    sg_ns3 = merge(ex5_ns3,ex5_sg, by=c("Traffic"))
    attach(sg_ns3)
    ggplot(sg_ns3,aes(x=Traffic))+
-   geom_line(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
-   geom_line(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
+   geom_point(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
    xlab(label="Transferred data in MBytes")+
    scale_colour_Publication()+
@@ -2090,8 +2090,8 @@ with open(input_file) as fe:
    sg_ns3 = merge(ex6_ns3,ex6_sg, by=c("Traffic"))
    attach(sg_ns3)
    ggplot(sg_ns3,aes(x=Traffic))+
-   geom_line(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
-   geom_line(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
+   geom_point(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
    xlab(label="Transferred data in MBytes")+
    scale_colour_Publication()+
