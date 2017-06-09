@@ -1893,8 +1893,8 @@ with open(input_file) as fe:
    sg_ns3 = merge(ex1_ns3,ex3_sg, by=c("Traffic"))
    attach(sg_ns3)
    ggplot(sg_ns3,aes(x=Traffic))+
-   geom_line(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
-   geom_line(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
+   geom_point(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
    xlab(label="Transferred data in MBytes")+
    scale_colour_Publication()+
@@ -1933,8 +1933,8 @@ done
    sg_ns3 = merge(ex4_ns3,ex4_sg, by=c("Traffic"))
    attach(sg_ns3)
    ggplot(sg_ns3,aes(x=Traffic))+
-   geom_line(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
-   geom_line(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
+   geom_point(aes(y = Total_Energy, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SG_TOTAL_ENERGY, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
    xlab(label="Transferred data in MBytes")+
    scale_colour_Publication()+

@@ -11,9 +11,9 @@ E(T) = (P_{idle} + P_{dynamic (avg)}) * T
 
 To implement this model in SimGrid, we need to determine the values of the three variables shown in Equation~\ref{eq:5.1}. We can directly read the idle power consumption value from the SimGrid's link property that we described in Section~\ref{section:simgridenvironment}. For the other two, we need to understand how SimGrid compute load and time in its core. 
 
-Briefly described, for a set of simulated activities running on a given simulated resource such as a switch, SimGrid computes using its MAX-MIN algorithm the amount of resource that each activity can get. At a given moment the sum of the resources that are assigned to all activities running on the resource cannot exceed the capacity of the resource. Figure~\ref{fig:SimGrid} depicts this concept symbolically and we access how much of the resource is currently in use, i.e., its load. 
+Briefly described, for a set of simulated activities running on a given simulated resource such as a switch, SimGrid computes using its MAX-MIN algorithm the amount of resource that each activity can get. At a given moment the sum of the resources that are assigned to all activities running on the resource cannot exceed the capacity of the resource. Figure~\ref{fig:SimGrid} depicts this concept symbolically and we can access how much of the resource is currently in use, i.e., its load. 
 
-In our case, the load is the total amount of bandwidth that is assigned to all data transfer activities running on a given Link and we can get the maximum bandwidth capacity of the Link from its description on the platform file. With these two information and with the busy power consumption value of the link, we can compute the dynamic power consumption part of the Link at a given instant, \(P_{dynamic (avg)}\), as shown in Equation~\ref{eq:5.2}:
+In our case, the load is the total amount of bandwidth that is assigned to all data transfer activities running on a given Link and we can get the maximum bandwidth capacity of the Link from its description on the platform file. With these two information and with the busy power consumption value of the link, we can compute the dynamic power consumption part of the Link at a given instant, \(P_{dynamic}\), as shown in Equation~\ref{eq:5.2}:
 
 \begin{equation} \label{eq:5.2}
 P_{dynamic} = (P_{busy} - P_{idle}) * u 
