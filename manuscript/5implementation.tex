@@ -24,7 +24,7 @@ where:
     \item [(\($$P_{busy} - P_{idle}$$\))]: is the slope of the relationship between load and power consumption as shown in Figure~\ref{fig:energyproportionality}.
 \end{description} 
 
-Now we are left with computing the time, T, variable of Equation~\ref{eq:5.1}. We can get this value from SimGrid, we can read the current time value, for example, when a given data transfer completes and then use that value to compute the energy consume to transfer the data.
+Now we are left with computing the time, T, variable of Equation~\ref{eq:5.1}. We can get this value from SimGrid, we can read the current time value, for example, when a given data transfer completes and then use that value to compute the energy consumed to transfer the data.
 
 We implemented this model and designed a simple simulation experiment with two nodes connected by a single link. The link has a fixed bandwidth (1 GBytes) and a fixed latency (10 ms). We then run this experiment in both SimGrid and ECOFEN module of NS-3 40 times with randomly generated data size values between 1 and 1000 MBytes. From the simulation output we have realized that there is a significant difference between ECOFEN's and SimGrid's output in terms of the simulated time required to transfer a given size of data. 
 
