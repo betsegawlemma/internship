@@ -1,0 +1,320 @@
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 79000000.000000
+[H-0:sender:(0) 7.231537] [s4u_app_energyconsumption/INFO] sender done 7.231537
+[H-2:receiver:(0) 7.621837] [s4u_app_energyconsumption/INFO] receiver done 7.621837
+[7.621837] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 316.645754
+[7.621837] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 316.645754
+[7.621837] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 316.645754
+[7.621837] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 490.758163 SgTransferTime 7.621837
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 81000000.000000
+[H-0:sender:(0) 7.404733] [s4u_app_energyconsumption/INFO] sender done 7.404733
+[H-2:receiver:(0) 7.795033] [s4u_app_energyconsumption/INFO] receiver done 7.795033
+[7.795033] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 323.523438
+[7.795033] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 323.523438
+[7.795033] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 323.523438
+[7.795033] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 501.909975 SgTransferTime 7.795033
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 123000000.000000
+[H-0:sender:(0) 11.041846] [s4u_app_energyconsumption/INFO] sender done 11.041846
+[H-2:receiver:(0) 11.432146] [s4u_app_energyconsumption/INFO] receiver done 11.432146
+[11.432146] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 467.954806
+[11.432146] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 467.954806
+[11.432146] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 467.954806
+[11.432146] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 736.098014 SgTransferTime 11.432146
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 88000000.000000
+[H-0:sender:(0) 8.010919] [s4u_app_energyconsumption/INFO] sender done 8.010919
+[H-2:receiver:(0) 8.401219] [s4u_app_energyconsumption/INFO] receiver done 8.401219
+[8.401219] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 347.595333
+[8.401219] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 347.595333
+[8.401219] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 347.595333
+[8.401219] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 540.941315 SgTransferTime 8.401219
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 97000000.000000
+[H-0:sender:(0) 8.790300] [s4u_app_energyconsumption/INFO] sender done 8.790300
+[H-2:receiver:(0) 9.180600] [s4u_app_energyconsumption/INFO] receiver done 9.180600
+[9.180600] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 378.544912
+[9.180600] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 378.544912
+[9.180600] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 378.544912
+[9.180600] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 591.124466 SgTransferTime 9.180600
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 92000000.000000
+[H-0:sender:(0) 8.357310] [s4u_app_energyconsumption/INFO] sender done 8.357310
+[H-2:receiver:(0) 8.747610] [s4u_app_energyconsumption/INFO] receiver done 8.747610
+[8.747610] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 361.350701
+[8.747610] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 361.350701
+[8.747610] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 361.350701
+[8.747610] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 563.244937 SgTransferTime 8.747610
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 76000000.000000
+[H-0:sender:(0) 6.971743] [s4u_app_energyconsumption/INFO] sender done 6.971743
+[H-2:receiver:(0) 7.362043] [s4u_app_energyconsumption/INFO] receiver done 7.362043
+[7.362043] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 306.329228
+[7.362043] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 306.329228
+[7.362043] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 306.329228
+[7.362043] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 474.030446 SgTransferTime 7.362043
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 107000000.000000
+[H-0:sender:(0) 9.656279] [s4u_app_energyconsumption/INFO] sender done 9.656279
+[H-2:receiver:(0) 10.046579] [s4u_app_energyconsumption/INFO] receiver done 10.046579
+[10.046579] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 412.933332
+[10.046579] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 412.933332
+[10.046579] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 412.933332
+[10.046579] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 646.883523 SgTransferTime 10.046579
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 77000000.000000
+[H-0:sender:(0) 7.058341] [s4u_app_energyconsumption/INFO] sender done 7.058341
+[H-2:receiver:(0) 7.448641] [s4u_app_energyconsumption/INFO] receiver done 7.448641
+[7.448641] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 309.768070
+[7.448641] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 309.768070
+[7.448641] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 309.768070
+[7.448641] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 479.606352 SgTransferTime 7.448641
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 77000000.000000
+[H-0:sender:(0) 7.058341] [s4u_app_energyconsumption/INFO] sender done 7.058341
+[H-2:receiver:(0) 7.448641] [s4u_app_energyconsumption/INFO] receiver done 7.448641
+[7.448641] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 309.768070
+[7.448641] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 309.768070
+[7.448641] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 309.768070
+[7.448641] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 479.606352 SgTransferTime 7.448641
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 162000000.000000
+[H-0:sender:(0) 14.419166] [s4u_app_energyconsumption/INFO] sender done 14.419166
+[H-2:receiver:(0) 14.809466] [s4u_app_energyconsumption/INFO] receiver done 14.809466
+[14.809466] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 602.069647
+[14.809466] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 602.069647
+[14.809466] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 602.069647
+[14.809466] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 953.558337 SgTransferTime 14.809466
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 172000000.000000
+[H-0:sender:(0) 15.285145] [s4u_app_energyconsumption/INFO] sender done 15.285145
+[H-2:receiver:(0) 15.675445] [s4u_app_energyconsumption/INFO] receiver done 15.675445
+[15.675445] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 636.458068
+[15.675445] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 636.458068
+[15.675445] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 636.458068
+[15.675445] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 1009.317394 SgTransferTime 15.675445
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 83000000.000000
+[H-0:sender:(0) 7.577929] [s4u_app_energyconsumption/INFO] sender done 7.577929
+[H-2:receiver:(0) 7.968229] [s4u_app_energyconsumption/INFO] receiver done 7.968229
+[7.968229] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 330.401122
+[7.968229] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 330.401122
+[7.968229] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 330.401122
+[7.968229] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 513.061786 SgTransferTime 7.968229
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 101000000.000000
+[H-0:sender:(0) 9.136692] [s4u_app_energyconsumption/INFO] sender done 9.136692
+[H-2:receiver:(0) 9.526992] [s4u_app_energyconsumption/INFO] receiver done 9.526992
+[9.526992] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 392.300280
+[9.526992] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 392.300280
+[9.526992] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 392.300280
+[9.526992] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 613.428089 SgTransferTime 9.526992
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 163000000.000000
+[H-0:sender:(0) 14.505764] [s4u_app_energyconsumption/INFO] sender done 14.505764
+[H-2:receiver:(0) 14.896064] [s4u_app_energyconsumption/INFO] receiver done 14.896064
+[14.896064] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 605.508489
+[14.896064] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 605.508489
+[14.896064] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 605.508489
+[14.896064] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 959.134243 SgTransferTime 14.896064
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 90000000.000000
+[H-0:sender:(0) 8.184114] [s4u_app_energyconsumption/INFO] sender done 8.184114
+[H-2:receiver:(0) 8.574414] [s4u_app_energyconsumption/INFO] receiver done 8.574414
+[8.574414] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 354.473017
+[8.574414] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 354.473017
+[8.574414] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 354.473017
+[8.574414] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 552.093126 SgTransferTime 8.574414
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 196000000.000000
+[H-0:sender:(0) 17.363496] [s4u_app_energyconsumption/INFO] sender done 17.363496
+[H-2:receiver:(0) 17.753796] [s4u_app_energyconsumption/INFO] receiver done 17.753796
+[17.753796] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 718.990278
+[17.753796] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 718.990278
+[17.753796] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 718.990278
+[17.753796] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 1143.139131 SgTransferTime 17.753796
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 116000000.000000
+[H-0:sender:(0) 10.435661] [s4u_app_energyconsumption/INFO] sender done 10.435661
+[H-2:receiver:(0) 10.825961] [s4u_app_energyconsumption/INFO] receiver done 10.825961
+[10.825961] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 443.882911
+[10.825961] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 443.882911
+[10.825961] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 443.882911
+[10.825961] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 697.066674 SgTransferTime 10.825961
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 162000000.000000
+[H-0:sender:(0) 14.419166] [s4u_app_energyconsumption/INFO] sender done 14.419166
+[H-2:receiver:(0) 14.809466] [s4u_app_energyconsumption/INFO] receiver done 14.809466
+[14.809466] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 602.069647
+[14.809466] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 602.069647
+[14.809466] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 602.069647
+[14.809466] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 953.558337 SgTransferTime 14.809466
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 152000000.000000
+[H-0:sender:(0) 13.553187] [s4u_app_energyconsumption/INFO] sender done 13.553187
+[H-2:receiver:(0) 13.943487] [s4u_app_energyconsumption/INFO] receiver done 13.943487
+[13.943487] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 567.681226
+[13.943487] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 567.681226
+[13.943487] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 567.681226
+[13.943487] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 897.799280 SgTransferTime 13.943487
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 168000000.000000
+[H-0:sender:(0) 14.938754] [s4u_app_energyconsumption/INFO] sender done 14.938754
+[H-2:receiver:(0) 15.329054] [s4u_app_energyconsumption/INFO] receiver done 15.329054
+[15.329054] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 622.702699
+[15.329054] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 622.702699
+[15.329054] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 622.702699
+[15.329054] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 987.013771 SgTransferTime 15.329054
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 107000000.000000
+[H-0:sender:(0) 9.656279] [s4u_app_energyconsumption/INFO] sender done 9.656279
+[H-2:receiver:(0) 10.046579] [s4u_app_energyconsumption/INFO] receiver done 10.046579
+[10.046579] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 412.933332
+[10.046579] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 412.933332
+[10.046579] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 412.933332
+[10.046579] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 646.883523 SgTransferTime 10.046579
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 36000000.000000
+[H-0:sender:(0) 3.507826] [s4u_app_energyconsumption/INFO] sender done 3.507826
+[H-2:receiver:(0) 3.898126] [s4u_app_energyconsumption/INFO] receiver done 3.898126
+[3.898126] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 168.775545
+[3.898126] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 168.775545
+[3.898126] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 168.775545
+[3.898126] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 250.994218 SgTransferTime 3.898126
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 172000000.000000
+[H-0:sender:(0) 15.285145] [s4u_app_energyconsumption/INFO] sender done 15.285145
+[H-2:receiver:(0) 15.675445] [s4u_app_energyconsumption/INFO] receiver done 15.675445
+[15.675445] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 636.458068
+[15.675445] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 636.458068
+[15.675445] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 636.458068
+[15.675445] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 1009.317394 SgTransferTime 15.675445
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 135000000.000000
+[H-0:sender:(0) 12.081022] [s4u_app_energyconsumption/INFO] sender done 12.081022
+[H-2:receiver:(0) 12.471322] [s4u_app_energyconsumption/INFO] receiver done 12.471322
+[12.471322] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 509.220911
+[12.471322] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 509.220911
+[12.471322] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 509.220911
+[12.471322] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 803.008883 SgTransferTime 12.471322
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 78000000.000000
+[H-0:sender:(0) 7.144939] [s4u_app_energyconsumption/INFO] sender done 7.144939
+[H-2:receiver:(0) 7.535239] [s4u_app_energyconsumption/INFO] receiver done 7.535239
+[7.535239] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 313.206912
+[7.535239] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 313.206912
+[7.535239] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 313.206912
+[7.535239] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 485.182258 SgTransferTime 7.535239
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 28000000.000000
+[H-0:sender:(0) 2.815042] [s4u_app_energyconsumption/INFO] sender done 2.815042
+[H-2:receiver:(0) 3.205342] [s4u_app_energyconsumption/INFO] receiver done 3.205342
+[3.205342] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 141.264808
+[3.205342] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 141.264808
+[3.205342] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 141.264808
+[3.205342] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 206.386972 SgTransferTime 3.205342
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 174000000.000000
+[H-0:sender:(0) 15.458341] [s4u_app_energyconsumption/INFO] sender done 15.458341
+[H-2:receiver:(0) 15.848641] [s4u_app_energyconsumption/INFO] receiver done 15.848641
+[15.848641] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 643.335752
+[15.848641] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 643.335752
+[15.848641] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 643.335752
+[15.848641] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 1020.469205 SgTransferTime 15.848641
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 74000000.000000
+[H-0:sender:(0) 6.798547] [s4u_app_energyconsumption/INFO] sender done 6.798547
+[H-2:receiver:(0) 7.188847] [s4u_app_energyconsumption/INFO] receiver done 7.188847
+[7.188847] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 299.451544
+[7.188847] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 299.451544
+[7.188847] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 299.451544
+[7.188847] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 462.878635 SgTransferTime 7.188847
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 115000000.000000
+[H-0:sender:(0) 10.349063] [s4u_app_energyconsumption/INFO] sender done 10.349063
+[H-2:receiver:(0) 10.739363] [s4u_app_energyconsumption/INFO] receiver done 10.739363
+[10.739363] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 440.444069
+[10.739363] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 440.444069
+[10.739363] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 440.444069
+[10.739363] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 691.490769 SgTransferTime 10.739363
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 72000000.000000
+[H-0:sender:(0) 6.625352] [s4u_app_energyconsumption/INFO] sender done 6.625352
+[H-2:receiver:(0) 7.015652] [s4u_app_energyconsumption/INFO] receiver done 7.015652
+[7.015652] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 292.573859
+[7.015652] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 292.573859
+[7.015652] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 292.573859
+[7.015652] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 451.726823 SgTransferTime 7.015652
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 23000000.000000
+[H-0:sender:(0) 2.382053] [s4u_app_energyconsumption/INFO] sender done 2.382053
+[H-2:receiver:(0) 2.772353] [s4u_app_energyconsumption/INFO] receiver done 2.772353
+[2.772353] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 124.070598
+[2.772353] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 124.070598
+[2.772353] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 124.070598
+[2.772353] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 178.507444 SgTransferTime 2.772353
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 134000000.000000
+[H-0:sender:(0) 11.994424] [s4u_app_energyconsumption/INFO] sender done 11.994424
+[H-2:receiver:(0) 12.384724] [s4u_app_energyconsumption/INFO] receiver done 12.384724
+[12.384724] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 505.782069
+[12.384724] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 505.782069
+[12.384724] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 505.782069
+[12.384724] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 797.432977 SgTransferTime 12.384724
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 106000000.000000
+[H-0:sender:(0) 9.569681] [s4u_app_energyconsumption/INFO] sender done 9.569681
+[H-2:receiver:(0) 9.959981] [s4u_app_energyconsumption/INFO] receiver done 9.959981
+[9.959981] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 409.494490
+[9.959981] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 409.494490
+[9.959981] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 409.494490
+[9.959981] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 641.307617 SgTransferTime 9.959981
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 177000000.000000
+[H-0:sender:(0) 15.718135] [s4u_app_energyconsumption/INFO] sender done 15.718135
+[H-2:receiver:(0) 16.108435] [s4u_app_energyconsumption/INFO] receiver done 16.108435
+[16.108435] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 653.652278
+[16.108435] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 653.652278
+[16.108435] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 653.652278
+[16.108435] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 1037.196923 SgTransferTime 16.108435
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 151000000.000000
+[H-0:sender:(0) 13.466589] [s4u_app_energyconsumption/INFO] sender done 13.466589
+[H-2:receiver:(0) 13.856889] [s4u_app_energyconsumption/INFO] receiver done 13.856889
+[13.856889] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 564.242384
+[13.856889] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 564.242384
+[13.856889] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 564.242384
+[13.856889] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 892.223374 SgTransferTime 13.856889
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 195000000.000000
+[H-0:sender:(0) 17.276898] [s4u_app_energyconsumption/INFO] sender done 17.276898
+[H-2:receiver:(0) 17.667198] [s4u_app_energyconsumption/INFO] receiver done 17.667198
+[17.667198] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 715.551435
+[17.667198] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 715.551435
+[17.667198] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 715.551435
+[17.667198] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 1137.563225 SgTransferTime 17.667198
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 44000000.000000
+[H-0:sender:(0) 4.200609] [s4u_app_energyconsumption/INFO] sender done 4.200609
+[H-2:receiver:(0) 4.590909] [s4u_app_energyconsumption/INFO] receiver done 4.590909
+[4.590909] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 196.286281
+[4.590909] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 196.286281
+[4.590909] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 196.286281
+[4.590909] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 295.601463 SgTransferTime 4.590909
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 14000000.000000
+[H-0:sender:(0) 1.602671] [s4u_app_energyconsumption/INFO] sender done 1.602671
+[H-2:receiver:(0) 1.992971] [s4u_app_energyconsumption/INFO] receiver done 1.992971
+[1.992971] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 93.121019
+[1.992971] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 93.121019
+[1.992971] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 93.121019
+[1.992971] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 128.324292 SgTransferTime 1.992971
+[H-2:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+[H-0:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] traffic 136000000.000000
+[H-0:sender:(0) 12.167620] [s4u_app_energyconsumption/INFO] sender done 12.167620
+[H-2:receiver:(0) 12.557920] [s4u_app_energyconsumption/INFO] receiver done 12.557920
+[12.557920] [link_energy/INFO] L3 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 512.659753
+[12.557920] [link_energy/INFO] L2 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 512.659753
+[12.557920] [link_energy/INFO] L1 Usage 12125000.000000 Bandwidth 12500000.000000 Power 21.462812 Energy 512.659753
+[12.557920] [link_energy/INFO] SgTotalPower 64.388435 SgTotalEnergy 808.584789 SgTransferTime 12.557920

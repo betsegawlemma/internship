@@ -2101,6 +2101,176 @@ with open(input_file) as fe:
 #+RESULTS:
 [[file:figures/ex6_energy_sg_vs_ns3.png]]
 
+** Week 2 June
+**** Experiment 7: 2 Nodes, 1 Link, 1-flow, bw=100Mbps, lat=10ms
+***** Directly on from ECOFEN in NS-3, we used NS-3's bulk send tcp application with maximum bytes to send between 1 and 200 MBytes
+#+BEGIN_SRC bash :results output :exports both
+#! /bin/bash
+cd ~/ns3ws/source/ns-3.26/ 
+RANDOM=234
+for ((k=0; k<40; k++)); do
+  traffic=$(((RANDOM % 200)+1)) # traffic in B between 1 and 200
+  maxBytes=$((traffic * (10**6))) # traffic in MB between 1 and 200
+  # run ECOFEN
+  ./waf --run "scratch/2Nodes1Link --maxBytes=${maxBytes}" >> ~/internship/data/2Nodes1Link_l.raw 2>&1
+done
+#+END_SRC
+***** Extract Ecofen's data
+#+NAME: extract_ns3_data_3
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="" :var output_file="" 
+import sys
+
+header = True
+
+POWER_COL=5
+TIME_COL=1
+
+SEND_BYTES_COL=1
+RECEIVED_BYTES_COL=3
+TRANSFER_TIME_COL = 5
+
+# data variable holds one line of data formated as follows 
+# TrafficSend,TotalBytesReceived,AveragePower,TotalTimeTaken,TotalEnergy
+data = []
+done = False
+
+total_power = 0.0 
+average_power = 0.0 
+total_energy = 0.0
+
+transfer_time = 0.0
+send_bytes = 0.0
+
+number_of_power_values = 1.0
+prv_time = 0
+cur_time = 0
+
+with open(input_file) as fe:
+    for line in fe:
+       if line.startswith("Time") and done is not True:
+           list = line.split()
+           cur_time = int(list[TIME_COL])
+           if prv_time != cur_time: 
+               number_of_power_values+=1
+           prv_time = cur_time
+           total_power+=float(list[POWER_COL])
+       if line.startswith("TotalBytesSend") and done is not True:
+           list = line.split()
+           if number_of_power_values > 0:
+               average_power = total_power/number_of_power_values
+           send_bytes = (float(list[SEND_BYTES_COL])/1E6) 
+           data.append(str(send_bytes))
+           data.append(list[RECEIVED_BYTES_COL])
+           data.append(str(average_power))
+           transfer_time = float(list[TRANSFER_TIME_COL])
+           total_energy = average_power * transfer_time
+           data.append(str(transfer_time))
+           data.append(str(total_energy))
+           done = True
+       if len(data) == 5 and done is True:
+           with open(output_file,"a") as of:
+               if header: # write the header part
+                   of.write("%s\n" % "TrafficSend,TotalBytesReceived,AveragePower,TotalTimeTaken,TotalEnergy")
+                   header = False
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+               done = False
+               total_power = 0.0
+               average_power = 0.0 
+               number_of_power_values = 1.0
+               total_energy = 0.0
+               transfer_time = 0.0
+               prv_time = 0
+               cur_time = 0
+#+END_SRC
+#+CALL: extract_ns3_data_3(input_file="data/2Nodes1Link_l.raw", output_file="data/2Nodes1Link_l.csv")
+***** SimGrid, 1 link in SimGrid is assumed to correspond to two NIC devices in NS-3
+ #+BEGIN_SRC bash :results output :exports both 
+#! /bin/bash
+seed=234
+RANDOM=$(seed)
+cd ~/simgrid/link_energy
+for ((k=0; k<40; k++)); do
+  traffic=$(((RANDOM % 200)+1)) # traffic in MBytes between 1 and 200
+  # edit simgrid's deployment file to add traffic value
+  cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
+  # run simgrid
+  ./sg_energy_consumption energy_consumption_1_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex7_sg_2H1L.raw 2>&1
+done
+#+END_SRC     
+***** Extract SimGrid data
+#+NAME: extract_sg_data_2
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="" :var output_file="" 
+import sys
+
+header = True
+done = False
+
+# data variable holds one line of data formated as follows 
+# TrafficSend, SgAveragePower, SgTransferTime, SgTotalEnergy
+data = []
+
+traffic = 0.0
+
+TRAFFIC_COL = 4
+ENERGY_COL = 5
+POWER_COL = 3
+TIME_COL = 7
+
+with open(input_file) as fe:
+    for line in fe:
+       if "traffic" in line: 
+           done = False
+           list = line.split()
+           traffic += (float(list[TRAFFIC_COL])/1E6)
+       if "SgTotalEnergy" in line:
+           done = True
+           list = line.split()
+           data.append(str(traffic))
+           data.append(list[POWER_COL])
+           data.append(list[TIME_COL])
+           data.append(list[ENERGY_COL])
+       if len(data) == 4 and done is True:
+           with open(output_file,"a") as of:
+               if header: # write the header part
+                   of.write("%s\n" % "TrafficSend, SgAveragePower, SgTransferTime, SgTotalEnergy")
+                   header = False
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+               traffic = 0.0
+#+END_SRC
+#+CALL: extract_sg_data_2(input_file="data/ex7_sg_2H1L_g.raw", output_file="data/ex7_sg_2H1L_g.csv")
+***** Result comparison
+**** Experiment 8: 4 Nodes, 3 Link, 1-flow, bw=100Mbps, lat=10ms
+***** Directly on ECOFEN, we used NS-3's bulk send tcp application with maximum bytes to send between 1 and 200 MBytes
+#+BEGIN_SRC bash :results output :exports both
+#! /bin/bash
+cd ~/ns3ws/source/ns-3.26/
+RANDOM=234
+for ((k=0; k<40; k++)); do
+  traffic=$(((RANDOM % 200)+1)) # traffic in MB between 1 and 200
+  maxBytes=$((traffic * (10**6))) # traffic in MB between 1 and 200 
+  # run ECOFEN
+  ./waf --run "scratch/4Nodes3Links --maxBytes=${maxBytes}" >> ~/internship/data/4Nodes3Links_l.raw 2>&1
+done
+#+END_SRC
+***** Extract Ecofen's data
+
+***** SimGrid, 3 links in SimGrid assumed to correspond to 6 NIC's in NS-3, hence 4 Nodes with three links in between
+#+BEGIN_SRC bash :results output :exports both 
+#! /bin/bash
+seed=234
+RANDOM=$(seed)
+cd ~/simgrid/link_energy
+for ((k=0; k<40; k++)); do
+  traffic=$(((RANDOM % 200)+1)) # traffic in MBytes between 1 and 200
+  # edit simgrid's deployment file to add traffic value
+  cat energy_consumption_d.xml |sed -e "s/\$T/${traffic}E6/" > t_energy_consumption_d.xml
+  # run simgrid
+  ./sg_energy_consumption energy_consumption_p.xml t_energy_consumption_d.xml >> ~/internship/data/ex8_sg_2H3L.raw 2>&1
+done
+#+END_SRC
+***** Result comparison
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
