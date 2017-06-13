@@ -1,0 +1,1000 @@
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 79 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120081] [s4u_app_energyconsumption/INFO] sender done 0.120081
+[DST:receiver:(0) 0.120081] [s4u_app_energyconsumption/INFO] receiver done 0.120081
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 81 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120082] [s4u_app_energyconsumption/INFO] sender done 0.120082
+[DST:receiver:(0) 0.120082] [s4u_app_energyconsumption/INFO] receiver done 0.120082
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 123 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120092] [s4u_app_energyconsumption/INFO] sender done 0.120092
+[DST:receiver:(0) 0.120092] [s4u_app_energyconsumption/INFO] receiver done 0.120092
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 88 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120084] [s4u_app_energyconsumption/INFO] sender done 0.120084
+[DST:receiver:(0) 0.120084] [s4u_app_energyconsumption/INFO] receiver done 0.120084
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 97 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120086] [s4u_app_energyconsumption/INFO] sender done 0.120086
+[DST:receiver:(0) 0.120086] [s4u_app_energyconsumption/INFO] receiver done 0.120086
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 92 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120084] [s4u_app_energyconsumption/INFO] sender done 0.120084
+[DST:receiver:(0) 0.120084] [s4u_app_energyconsumption/INFO] receiver done 0.120084
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 76 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120081] [s4u_app_energyconsumption/INFO] sender done 0.120081
+[DST:receiver:(0) 0.120081] [s4u_app_energyconsumption/INFO] receiver done 0.120081
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 107 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120088] [s4u_app_energyconsumption/INFO] sender done 0.120088
+[DST:receiver:(0) 0.120088] [s4u_app_energyconsumption/INFO] receiver done 0.120088
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 77 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120081] [s4u_app_energyconsumption/INFO] sender done 0.120081
+[DST:receiver:(0) 0.120081] [s4u_app_energyconsumption/INFO] receiver done 0.120081
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 77 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120081] [s4u_app_energyconsumption/INFO] sender done 0.120081
+[DST:receiver:(0) 0.120081] [s4u_app_energyconsumption/INFO] receiver done 0.120081
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 162 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120101] [s4u_app_energyconsumption/INFO] sender done 0.120101
+[DST:receiver:(0) 0.120101] [s4u_app_energyconsumption/INFO] receiver done 0.120101
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 172 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120104] [s4u_app_energyconsumption/INFO] sender done 0.120104
+[DST:receiver:(0) 0.120104] [s4u_app_energyconsumption/INFO] receiver done 0.120104
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 83 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120082] [s4u_app_energyconsumption/INFO] sender done 0.120082
+[DST:receiver:(0) 0.120082] [s4u_app_energyconsumption/INFO] receiver done 0.120082
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 101 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120087] [s4u_app_energyconsumption/INFO] sender done 0.120087
+[DST:receiver:(0) 0.120087] [s4u_app_energyconsumption/INFO] receiver done 0.120087
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 163 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120102] [s4u_app_energyconsumption/INFO] sender done 0.120102
+[DST:receiver:(0) 0.120102] [s4u_app_energyconsumption/INFO] receiver done 0.120102
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 90 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120084] [s4u_app_energyconsumption/INFO] sender done 0.120084
+[DST:receiver:(0) 0.120084] [s4u_app_energyconsumption/INFO] receiver done 0.120084
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 196 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120109] [s4u_app_energyconsumption/INFO] sender done 0.120109
+[DST:receiver:(0) 0.120109] [s4u_app_energyconsumption/INFO] receiver done 0.120109
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 116 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120090] [s4u_app_energyconsumption/INFO] sender done 0.120090
+[DST:receiver:(0) 0.120090] [s4u_app_energyconsumption/INFO] receiver done 0.120090
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 162 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120101] [s4u_app_energyconsumption/INFO] sender done 0.120101
+[DST:receiver:(0) 0.120101] [s4u_app_energyconsumption/INFO] receiver done 0.120101
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 152 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120099] [s4u_app_energyconsumption/INFO] sender done 0.120099
+[DST:receiver:(0) 0.120099] [s4u_app_energyconsumption/INFO] receiver done 0.120099
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 168 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120103] [s4u_app_energyconsumption/INFO] sender done 0.120103
+[DST:receiver:(0) 0.120103] [s4u_app_energyconsumption/INFO] receiver done 0.120103
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 107 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120088] [s4u_app_energyconsumption/INFO] sender done 0.120088
+[DST:receiver:(0) 0.120088] [s4u_app_energyconsumption/INFO] receiver done 0.120088
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 36 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120071] [s4u_app_energyconsumption/INFO] sender done 0.120071
+[DST:receiver:(0) 0.120071] [s4u_app_energyconsumption/INFO] receiver done 0.120071
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 172 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120104] [s4u_app_energyconsumption/INFO] sender done 0.120104
+[DST:receiver:(0) 0.120104] [s4u_app_energyconsumption/INFO] receiver done 0.120104
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 135 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120095] [s4u_app_energyconsumption/INFO] sender done 0.120095
+[DST:receiver:(0) 0.120095] [s4u_app_energyconsumption/INFO] receiver done 0.120095
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 78 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120081] [s4u_app_energyconsumption/INFO] sender done 0.120081
+[DST:receiver:(0) 0.120081] [s4u_app_energyconsumption/INFO] receiver done 0.120081
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 28 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120069] [s4u_app_energyconsumption/INFO] sender done 0.120069
+[DST:receiver:(0) 0.120069] [s4u_app_energyconsumption/INFO] receiver done 0.120069
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 174 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120104] [s4u_app_energyconsumption/INFO] sender done 0.120104
+[DST:receiver:(0) 0.120104] [s4u_app_energyconsumption/INFO] receiver done 0.120104
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 74 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120080] [s4u_app_energyconsumption/INFO] sender done 0.120080
+[DST:receiver:(0) 0.120080] [s4u_app_energyconsumption/INFO] receiver done 0.120080
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 115 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120090] [s4u_app_energyconsumption/INFO] sender done 0.120090
+[DST:receiver:(0) 0.120090] [s4u_app_energyconsumption/INFO] receiver done 0.120090
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 72 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120080] [s4u_app_energyconsumption/INFO] sender done 0.120080
+[DST:receiver:(0) 0.120080] [s4u_app_energyconsumption/INFO] receiver done 0.120080
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 23 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120068] [s4u_app_energyconsumption/INFO] sender done 0.120068
+[DST:receiver:(0) 0.120068] [s4u_app_energyconsumption/INFO] receiver done 0.120068
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 134 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120095] [s4u_app_energyconsumption/INFO] sender done 0.120095
+[DST:receiver:(0) 0.120095] [s4u_app_energyconsumption/INFO] receiver done 0.120095
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 106 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120088] [s4u_app_energyconsumption/INFO] sender done 0.120088
+[DST:receiver:(0) 0.120088] [s4u_app_energyconsumption/INFO] receiver done 0.120088
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 177 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120105] [s4u_app_energyconsumption/INFO] sender done 0.120105
+[DST:receiver:(0) 0.120105] [s4u_app_energyconsumption/INFO] receiver done 0.120105
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 151 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120099] [s4u_app_energyconsumption/INFO] sender done 0.120099
+[DST:receiver:(0) 0.120099] [s4u_app_energyconsumption/INFO] receiver done 0.120099
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 195 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120109] [s4u_app_energyconsumption/INFO] sender done 0.120109
+[DST:receiver:(0) 0.120109] [s4u_app_energyconsumption/INFO] receiver done 0.120109
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 44 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120073] [s4u_app_energyconsumption/INFO] sender done 0.120073
+[DST:receiver:(0) 0.120073] [s4u_app_energyconsumption/INFO] receiver done 0.120073
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 14 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120066] [s4u_app_energyconsumption/INFO] sender done 0.120066
+[DST:receiver:(0) 0.120066] [s4u_app_energyconsumption/INFO] receiver done 0.120066
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the Ecofen energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'NS3'
+[0.000000] /root/simgrid/src/surf/network_ns3.cpp:158: [ns3/WARNING] Ignoring a route between SRC and DST of length 3: Only routes of length 1 are considered with NS3.
+WARNING: You can ignore this warning if your hosts can still communicate when only considering routes of length 1.
+WARNING: Remove long routes to avoid this harmless message; subsequent long routes will be silently ignored.
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 136 bytes
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving ...
+Time 0 Node 0 Conso 0
+Time 0 Node 1 Conso 10.3581
+Time 0 Node 2 Conso 10.3581
+Time 0 Node 3 Conso 20.7162
+Time 0 Node 4 Conso 20.7162
+Time 0.05 Node 0 Conso 0
+Time 0.05 Node 1 Conso 10.3581
+Time 0.05 Node 2 Conso 10.3581
+Time 0.05 Node 3 Conso 20.7162
+Time 0.05 Node 4 Conso 20.7162
+Time 0.1 Node 0 Conso 0
+Time 0.1 Node 1 Conso 10.3581
+Time 0.1 Node 2 Conso 10.3581
+Time 0.1 Node 3 Conso 20.7162
+Time 0.1 Node 4 Conso 20.7162
+[SRC:sender:(0) 0.120095] [s4u_app_energyconsumption/INFO] sender done 0.120095
+[DST:receiver:(0) 0.120095] [s4u_app_energyconsumption/INFO] receiver done 0.120095
