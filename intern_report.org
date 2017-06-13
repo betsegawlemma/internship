@@ -2594,9 +2594,9 @@ for ((k=0; k<40; k++)); do
 done
 #+END_SRC   
 ***** Extract simgrid's data
-#+CALL: extract_sg_data_3(input_file="data/ex12_sg_1L2F.raw", output_file="data/ex12_sg_1L2F.csv",flow=2) :exports code 
+#+CALL: extract_sg_data_3(input_file="data/ex12_sg_1L2F.raw", output_file="data/ex12_sg_1L2F.csv",flow=2) :exports both
 ***** Extract ecofen's data
-#+CALL: extract_ns3_data_5(input_file="data/ex12_ns3_1L2FL.raw", output_file="data/ex12_ns3_1L2FL.csv",flow=2) :exports code
+#+CALL: extract_ns3_data_5(input_file="data/ex12_ns3_1L2FL.raw", output_file="data/ex12_ns3_1L2FL.csv",flow=2) :exports both
 ***** Compare results
 #+BEGIN_SRC R :results output graphics :file figures/ex12_energy_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
