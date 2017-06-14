@@ -2688,7 +2688,7 @@ for ((k=0; k<40; k++)); do
    ./energy-link energy_consumption_3L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex14_ns3_3L2FL.raw 2>&1
 done
 #+END_SRC 
-**** Experiment: Confirming ecofen data resolution effect 
+**** Experiment: Confirming ecofen's data point resolution effect 
 #+NAME: extract_ns3_data_time_resolution
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="" :var output_file="" 
 import sys
