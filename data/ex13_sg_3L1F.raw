@@ -1,0 +1,391 @@
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 98000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 82.350000] [s4u_app_energyconsumption/INFO] sender done 82.350000
+[DST:receiver:(0) 82.350000] [s4u_app_energyconsumption/INFO] receiver done 82.350000
+[82.350000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 348.459900
+[82.350000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 348.459900
+[82.350000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 348.459900
+[82.350000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5262.387345 SgTransferTime 82.350000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 100000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 84.030000] [s4u_app_energyconsumption/INFO] sender done 84.030000
+[DST:receiver:(0) 84.030000] [s4u_app_energyconsumption/INFO] receiver done 84.030000
+[84.030000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 355.285700
+[84.030000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 355.285700
+[84.030000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 355.285700
+[84.030000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5369.743881 SgTransferTime 84.030000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 142000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 119.310000] [s4u_app_energyconsumption/INFO] sender done 119.310000
+[DST:receiver:(0) 119.310000] [s4u_app_energyconsumption/INFO] receiver done 119.310000
+[119.310000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 498.627503
+[119.310000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 498.627503
+[119.310000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 498.627503
+[119.310000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 7624.231137 SgTransferTime 119.310000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 107000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 89.910000] [s4u_app_energyconsumption/INFO] sender done 89.910000
+[DST:receiver:(0) 89.910000] [s4u_app_energyconsumption/INFO] receiver done 89.910000
+[89.910000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 379.176001
+[89.910000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 379.176001
+[89.910000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 379.176001
+[89.910000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5745.491757 SgTransferTime 89.910000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 116000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 97.470000] [s4u_app_energyconsumption/INFO] sender done 97.470000
+[DST:receiver:(0) 97.470000] [s4u_app_energyconsumption/INFO] receiver done 97.470000
+[97.470000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 409.892101
+[97.470000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 409.892101
+[97.470000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 409.892101
+[97.470000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 6228.596169 SgTransferTime 97.470000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 111000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 93.270000] [s4u_app_energyconsumption/INFO] sender done 93.270000
+[DST:receiver:(0) 93.270000] [s4u_app_energyconsumption/INFO] receiver done 93.270000
+[93.270000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 392.827601
+[93.270000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 392.827601
+[93.270000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 392.827601
+[93.270000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5960.204829 SgTransferTime 93.270000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 95000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 79.830000] [s4u_app_energyconsumption/INFO] sender done 79.830000
+[DST:receiver:(0) 79.830000] [s4u_app_energyconsumption/INFO] receiver done 79.830000
+[79.830000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 338.221200
+[79.830000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 338.221200
+[79.830000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 338.221200
+[79.830000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5101.352541 SgTransferTime 79.830000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 126000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 105.870000] [s4u_app_energyconsumption/INFO] sender done 105.870000
+[DST:receiver:(0) 105.870000] [s4u_app_energyconsumption/INFO] receiver done 105.870000
+[105.870000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 444.021102
+[105.870000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 444.021102
+[105.870000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 444.021102
+[105.870000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 6765.378849 SgTransferTime 105.870000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 96000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 80.670000] [s4u_app_energyconsumption/INFO] sender done 80.670000
+[DST:receiver:(0) 80.670000] [s4u_app_energyconsumption/INFO] receiver done 80.670000
+[80.670000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 341.634100
+[80.670000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 341.634100
+[80.670000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 341.634100
+[80.670000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5155.030809 SgTransferTime 80.670000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 96000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 80.670000] [s4u_app_energyconsumption/INFO] sender done 80.670000
+[DST:receiver:(0) 80.670000] [s4u_app_energyconsumption/INFO] receiver done 80.670000
+[80.670000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 341.634100
+[80.670000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 341.634100
+[80.670000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 341.634100
+[80.670000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5155.030809 SgTransferTime 80.670000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 181000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 152.070000] [s4u_app_energyconsumption/INFO] sender done 152.070000
+[DST:receiver:(0) 152.070000] [s4u_app_energyconsumption/INFO] receiver done 152.070000
+[152.070000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 631.730605
+[152.070000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 631.730605
+[152.070000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 631.730605
+[152.070000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 9717.683589 SgTransferTime 152.070000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 191000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 160.470000] [s4u_app_energyconsumption/INFO] sender done 160.470000
+[DST:receiver:(0) 160.470000] [s4u_app_energyconsumption/INFO] receiver done 160.470000
+[160.470000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 665.859606
+[160.470000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 665.859606
+[160.470000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 665.859606
+[160.470000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 10254.466269 SgTransferTime 160.470000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 102000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 85.710000] [s4u_app_energyconsumption/INFO] sender done 85.710000
+[DST:receiver:(0) 85.710000] [s4u_app_energyconsumption/INFO] receiver done 85.710000
+[85.710000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 362.111500
+[85.710000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 362.111500
+[85.710000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 362.111500
+[85.710000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5477.100417 SgTransferTime 85.710000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 120000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 100.830000] [s4u_app_energyconsumption/INFO] sender done 100.830000
+[DST:receiver:(0) 100.830000] [s4u_app_energyconsumption/INFO] receiver done 100.830000
+[100.830000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 423.543702
+[100.830000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 423.543702
+[100.830000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 423.543702
+[100.830000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 6443.309241 SgTransferTime 100.830000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 182000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 152.910000] [s4u_app_energyconsumption/INFO] sender done 152.910000
+[DST:receiver:(0) 152.910000] [s4u_app_energyconsumption/INFO] receiver done 152.910000
+[152.910000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 635.143506
+[152.910000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 635.143506
+[152.910000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 635.143506
+[152.910000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 9771.361857 SgTransferTime 152.910000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 109000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 91.590000] [s4u_app_energyconsumption/INFO] sender done 91.590000
+[DST:receiver:(0) 91.590000] [s4u_app_energyconsumption/INFO] receiver done 91.590000
+[91.590000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 386.001801
+[91.590000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 386.001801
+[91.590000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 386.001801
+[91.590000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5852.848293 SgTransferTime 91.590000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 215000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 180.630000] [s4u_app_energyconsumption/INFO] sender done 180.630000
+[DST:receiver:(0) 180.630000] [s4u_app_energyconsumption/INFO] receiver done 180.630000
+[180.630000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 747.769208
+[180.630000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 747.769208
+[180.630000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 747.769208
+[180.630000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 11542.744701 SgTransferTime 180.630000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 181000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 152.070000] [s4u_app_energyconsumption/INFO] sender done 152.070000
+[DST:receiver:(0) 152.070000] [s4u_app_energyconsumption/INFO] receiver done 152.070000
+[152.070000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 631.730605
+[152.070000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 631.730605
+[152.070000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 631.730605
+[152.070000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 9717.683589 SgTransferTime 152.070000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 171000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 143.670000] [s4u_app_energyconsumption/INFO] sender done 143.670000
+[DST:receiver:(0) 143.670000] [s4u_app_energyconsumption/INFO] receiver done 143.670000
+[143.670000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 597.601605
+[143.670000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 597.601605
+[143.670000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 597.601605
+[143.670000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 9180.900909 SgTransferTime 143.670000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 187000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 157.110000] [s4u_app_energyconsumption/INFO] sender done 157.110000
+[DST:receiver:(0) 157.110000] [s4u_app_energyconsumption/INFO] receiver done 157.110000
+[157.110000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 652.208006
+[157.110000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 652.208006
+[157.110000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 652.208006
+[157.110000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 10039.753197 SgTransferTime 157.110000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 126000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 105.870000] [s4u_app_energyconsumption/INFO] sender done 105.870000
+[DST:receiver:(0) 105.870000] [s4u_app_energyconsumption/INFO] receiver done 105.870000
+[105.870000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 444.021102
+[105.870000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 444.021102
+[105.870000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 444.021102
+[105.870000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 6765.378849 SgTransferTime 105.870000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 55000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 46.230000] [s4u_app_energyconsumption/INFO] sender done 46.230000
+[DST:receiver:(0) 46.230000] [s4u_app_energyconsumption/INFO] receiver done 46.230000
+[46.230000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 201.705197
+[46.230000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 201.705197
+[46.230000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 201.705197
+[46.230000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 2954.221821 SgTransferTime 46.230000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 191000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 160.470000] [s4u_app_energyconsumption/INFO] sender done 160.470000
+[DST:receiver:(0) 160.470000] [s4u_app_energyconsumption/INFO] receiver done 160.470000
+[160.470000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 665.859606
+[160.470000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 665.859606
+[160.470000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 665.859606
+[160.470000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 10254.466269 SgTransferTime 160.470000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 154000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 129.390000] [s4u_app_energyconsumption/INFO] sender done 129.390000
+[DST:receiver:(0) 129.390000] [s4u_app_energyconsumption/INFO] receiver done 129.390000
+[129.390000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 539.582304
+[129.390000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 539.582304
+[129.390000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 539.582304
+[129.390000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 8268.370353 SgTransferTime 129.390000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 97000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 81.510000] [s4u_app_energyconsumption/INFO] sender done 81.510000
+[DST:receiver:(0) 81.510000] [s4u_app_energyconsumption/INFO] receiver done 81.510000
+[81.510000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 345.047000
+[81.510000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 345.047000
+[81.510000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 345.047000
+[81.510000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 5208.709077 SgTransferTime 81.510000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 47000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 39.510000] [s4u_app_energyconsumption/INFO] sender done 39.510000
+[DST:receiver:(0) 39.510000] [s4u_app_energyconsumption/INFO] receiver done 39.510000
+[39.510000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 174.401997
+[39.510000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 174.401997
+[39.510000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 174.401997
+[39.510000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 2524.795677 SgTransferTime 39.510000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 193000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 162.150000] [s4u_app_energyconsumption/INFO] sender done 162.150000
+[DST:receiver:(0) 162.150000] [s4u_app_energyconsumption/INFO] receiver done 162.150000
+[162.150000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 672.685406
+[162.150000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 672.685406
+[162.150000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 672.685406
+[162.150000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 10361.822805 SgTransferTime 162.150000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 93000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 78.150000] [s4u_app_energyconsumption/INFO] sender done 78.150000
+[DST:receiver:(0) 78.150000] [s4u_app_energyconsumption/INFO] receiver done 78.150000
+[78.150000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 331.395400
+[78.150000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 331.395400
+[78.150000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 331.395400
+[78.150000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 4993.996005 SgTransferTime 78.150000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 134000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 112.590000] [s4u_app_energyconsumption/INFO] sender done 112.590000
+[DST:receiver:(0) 112.590000] [s4u_app_energyconsumption/INFO] receiver done 112.590000
+[112.590000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 471.324302
+[112.590000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 471.324302
+[112.590000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 471.324302
+[112.590000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 7194.804993 SgTransferTime 112.590000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 91000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 76.470000] [s4u_app_energyconsumption/INFO] sender done 76.470000
+[DST:receiver:(0) 76.470000] [s4u_app_energyconsumption/INFO] receiver done 76.470000
+[76.470000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 324.569600
+[76.470000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 324.569600
+[76.470000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 324.569600
+[76.470000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 4886.639469 SgTransferTime 76.470000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 42000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 35.310000] [s4u_app_energyconsumption/INFO] sender done 35.310000
+[DST:receiver:(0) 35.310000] [s4u_app_energyconsumption/INFO] receiver done 35.310000
+[35.310000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 157.337496
+[35.310000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 157.337496
+[35.310000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 157.337496
+[35.310000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 2256.404337 SgTransferTime 35.310000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 153000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 128.550000] [s4u_app_energyconsumption/INFO] sender done 128.550000
+[DST:receiver:(0) 128.550000] [s4u_app_energyconsumption/INFO] receiver done 128.550000
+[128.550000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 536.169404
+[128.550000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 536.169404
+[128.550000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 536.169404
+[128.550000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 8214.692085 SgTransferTime 128.550000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 125000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 105.030000] [s4u_app_energyconsumption/INFO] sender done 105.030000
+[DST:receiver:(0) 105.030000] [s4u_app_energyconsumption/INFO] receiver done 105.030000
+[105.030000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 440.608202
+[105.030000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 440.608202
+[105.030000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 440.608202
+[105.030000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 6711.700581 SgTransferTime 105.030000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 196000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 164.670000] [s4u_app_energyconsumption/INFO] sender done 164.670000
+[DST:receiver:(0) 164.670000] [s4u_app_energyconsumption/INFO] receiver done 164.670000
+[164.670000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 682.924106
+[164.670000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 682.924106
+[164.670000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 682.924106
+[164.670000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 10522.857609 SgTransferTime 164.670000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 170000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 142.830000] [s4u_app_energyconsumption/INFO] sender done 142.830000
+[DST:receiver:(0) 142.830000] [s4u_app_energyconsumption/INFO] receiver done 142.830000
+[142.830000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 594.188705
+[142.830000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 594.188705
+[142.830000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 594.188705
+[142.830000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 9127.222641 SgTransferTime 142.830000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 214000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 179.790000] [s4u_app_energyconsumption/INFO] sender done 179.790000
+[DST:receiver:(0) 179.790000] [s4u_app_energyconsumption/INFO] receiver done 179.790000
+[179.790000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 744.356308
+[179.790000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 744.356308
+[179.790000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 744.356308
+[179.790000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 11489.066433 SgTransferTime 179.790000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 63000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 52.950000] [s4u_app_energyconsumption/INFO] sender done 52.950000
+[DST:receiver:(0) 52.950000] [s4u_app_energyconsumption/INFO] receiver done 52.950000
+[52.950000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 229.008398
+[52.950000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 229.008398
+[52.950000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 229.008398
+[52.950000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 3383.647965 SgTransferTime 52.950000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 33000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 27.750000] [s4u_app_energyconsumption/INFO] sender done 27.750000
+[DST:receiver:(0) 27.750000] [s4u_app_energyconsumption/INFO] receiver done 27.750000
+[27.750000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 126.621396
+[27.750000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 126.621396
+[27.750000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 126.621396
+[27.750000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 1773.299925 SgTransferTime 27.750000
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 155000000 bytes, in 1 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 1 flows ...
+[SRC:sender:(0) 130.230000] [s4u_app_energyconsumption/INFO] sender done 130.230000
+[DST:receiver:(0) 130.230000] [s4u_app_energyconsumption/INFO] receiver done 130.230000
+[130.230000] [link_energy/INFO] L3 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 542.995204
+[130.230000] [link_energy/INFO] L2 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 542.995204
+[130.230000] [link_energy/INFO] L1 Usage 1250000.000000 Bandwidth 1250000.000000 Power 21.300900 Energy 542.995204
+[130.230000] [link_energy/INFO] SgTotalPower 63.902700 SgTotalEnergy 8322.048621 SgTransferTime 130.230000

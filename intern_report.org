@@ -2429,8 +2429,30 @@ done
 #+RESULTS:
 [[file:figures/ex9_energy_sg_vs_ns3.png]]
 
-**** Experiment 10: SimGrid (2 Nodes, 3 links, 2 flows), ECOFEN(4 Nodes, 3 links, 2 flows)
-***** ECOFEN run script
+**** Experiment 10: 1 link, 4 flows
+***** Extract simgrid's data
+#+CALL: extract_sg_data_3(input_file="data/ex10_sg_1L4F.raw", output_file="data/ex10_sg_1L4F.csv",flow=4) :exports both
+***** Extract ecofen's data
+#+CALL: extract_ns3_data_5(input_file="data/ex10_ns3_1L4F.raw", output_file="data/ex10_ns3_1L4F.csv",flow=4) :exports both
+***** Compare results
+#+BEGIN_SRC R :results output graphics :file figures/ex10_energy_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+   ex10_ns3 = read.csv("data/ex10_ns3_1L4F.csv", header=T)
+   ex10_sg = read.csv("data/ex10_sg_1L4F.csv", header=T)
+   sg_ns3 = merge(ex10_ns3,ex10_sg, by=c("BytesSend"))
+   attach(sg_ns3)
+   ggplot(sg_ns3,aes(x=BytesSend))+
+   geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
+   ylab(label="Energy Consumption in Joule")+
+   xlab(label="Transferred data in MBytes")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ex10_energy_sg_vs_ns3.png]]
+
 **** Experiment 11: Flows 1, Links 1, with TCP-version CM02, bw 10Mbps, lat 10ms
 #+BEGIN_SRC bash :results silent :exports both 
 #! /bin/bash
@@ -2616,9 +2638,175 @@ done
 #+RESULTS:
 [[file:figures/ex12_energy_sg_vs_ns3.png]]
 **** Experiment 13: Flow 1, Links 3 
-***** Extract simgrid's data
-***** Extract ecofen's data
+#+BEGIN_SRC bash :results silent :exports both 
+#! /bin/bash
+RANDOM=234
+cd ~/simgrid/examples/msg/energy-link
+for ((k=0; k<40; k++)); do
+  randVal=$(((RANDOM % 200)+20)) # random value between 20 and 200
+  bytesToSend=$((randVal * (10**6))) # traffic in MB between 20 and 200
+  # run simgrid
+   ./energy-link energy_consumption_3L_p.xml 1 ${bytesToSend} >> ~/internship/data/ex13_sg_3L1F.raw 2>&1
+  # run ecofen
+   ./energy-link energy_consumption_3L_p.xml 1 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex13_ns3_3L1FL.raw 2>&1
+done
+#+END_SRC 
+***** Extract simgrid's data  
+#+CALL: extract_sg_data_3(input_file="data/ex13_sg_3L1F.raw", output_file="data/ex13_sg_3L1F.csv",flow=1) 
+***** Extract ecofen's data 
+#+CALL: extract_ns3_data_5(input_file="data/ex13_ns3_3L1FL.raw", output_file="data/ex13_ns3_3L1FL.csv",flow=1)
+***** Compare results
+#+BEGIN_SRC R :results output graphics :file figures/ex13_energy_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+   ex13_ns3 = read.csv("data/ex13_ns3_3L1FL.csv", header=T)
+   ex13_sg = read.csv("data/ex13_sg_3L1F.csv", header=T)
+   sg_ns3 = merge(ex13_ns3,ex13_sg, by=c("BytesSend"))
+   attach(sg_ns3)
+   ggplot(sg_ns3,aes(x=BytesSend))+
+   geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
+   ylab(label="Energy Consumption in Joule")+
+   xlab(label="Transferred data in MBytes")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ex13_energy_sg_vs_ns3.png]]
+
 **** Experiment 14: Flow 2, Links 3
+#+BEGIN_SRC bash :results silent :exports both 
+#! /bin/bash
+RANDOM=234
+cd /media/betsegaw/Windows8_OS/simgrid/examples/msg/energy-link
+for ((k=0; k<40; k++)); do
+  randVal=$(((RANDOM % 100)+20)) # random value between 20 and 100
+  bytesToSend=$((randVal * (10**6))) # traffic in MB between 20 and 100
+  # run simgrid
+   ./energy-link energy_consumption_3L_p.xml 2 ${bytesToSend} >> ~/internship/data/ex14_sg_3L2F.raw 2>&1
+  # run ecofen
+   ./energy-link energy_consumption_3L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex14_ns3_3L2FL.raw 2>&1
+done
+#+END_SRC 
+**** Experiment: Confirming ecofen data resolution effect 
+#+NAME: extract_ns3_data_time_resolution
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="" :var output_file="" 
+import sys
+
+time_val = []
+TRANSFER_TIME_COL = 9
+
+with open(input_file) as ft:
+    for line in ft:
+        if line.startswith("TotalBytesSend1"):
+            list = line.split()
+            time_val.append(list[TRANSFER_TIME_COL])
+
+header = True
+
+POWER_COL=5
+TIME_COL=1
+
+SEND_BYTES_COL=1
+RECEIVED_BYTES_COL=5
+
+# data variable holds one line of data formated as follows 
+# BytesSend,TotalBytesReceived,AveragePower,TotalTimeTaken,TotalEnergy
+data = []
+done = False
+
+total_power = 0.0 
+average_power = 0.0 
+total_energy = 0.0
+
+transfer_time = 0.0
+send_bytes = 0.0
+receive_bytes = 0.0
+
+number_of_power_values = 1.0
+prv_time = 0.0
+cur_time = 0.0
+
+tc = 0
+
+with open(input_file) as fe:
+    for line in fe:
+       if line.startswith("Time") and done is not True:
+           list = line.split()
+           cur_time = float(list[TIME_COL])
+           if prv_time != cur_time: 
+               number_of_power_values+=1
+           prv_time = cur_time
+           if cur_time > 0.0 and cur_time <= time_val[tc]:
+               total_power+=float(list[POWER_COL])
+       if line.startswith("TotalBytesSend1") and done is not True:
+           list = line.split()
+           if number_of_power_values > 0:
+               average_power = total_power/number_of_power_values
+           send_bytes = (float(list[SEND_BYTES_COL])/1E6)*2 
+           receive_bytes = (float(list[RECEIVED_BYTES_COL])/1E6)*2
+           data.append(str(send_bytes))
+           data.append(str(receive_bytes))
+           data.append(str(average_power))
+           transfer_time = float(list[TRANSFER_TIME_COL])
+           total_energy = average_power * transfer_time
+           data.append(str(transfer_time))
+           data.append(str(total_energy))
+           done = True
+           if tc < len(time_val):
+               if time_val[tc] == transfer_time:
+                   tc +=1
+       if len(data) == 5 and done is True:
+           with open(output_file,"a") as of:
+               if header: # write the header part
+                   of.write("%s\n" % "BytesSend,TotalBytesReceived,AveragePower,TotalTimeTaken,TotalEnergy")
+                   header = False
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+               done = False
+               total_power = 0.0
+               average_power = 0.0 
+               number_of_power_values = 1.0
+               total_energy = 0.0
+               transfer_time = 0.0
+               prv_time = 0
+               cur_time = 0
+#+END_SRC
+***** Extract ecofen data
+#+CALL: extract_ns3_data_time_resolution(input_file="data/2Nodes1Link2F2S.raw", output_file="data/2Nodes1Link2F2S.csv") 
+***** Run simgrid
+#+BEGIN_SRC bash :results silent :exports both 
+#! /bin/bash
+RANDOM=234
+cd ~/simgrid/examples/msg/energy-link
+for ((k=0; k<40; k++)); do
+  randVal=$(((RANDOM % 100)+1)) # random value between 20 and 500
+  bytesToSend=$((randVal * (10**6))) # bytes to send in MBytes between 20 and 500
+  # run simgrid
+   ./energy-link energy_consumption_1L_p.xml 2 ${bytesToSend} >> ~/internship/data/exR_sg_1L2F.raw 2>&1
+done
+#+END_SRC
+***** Extract simgrid's data
+#+CALL: extract_sg_data_3(input_file="data/exR_sg_1L2F.raw", output_file="data/exR_sg_1L2F.csv",flow=2)
+***** Compare results
+#+BEGIN_SRC R :results output graphics :file figures/exR_energy_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+   exR_ns3 = read.csv("data/2Nodes1Link2F2S.csv", header=T)
+   exR_sg = read.csv("data/exR_sg_1L2F.csv", header=T)
+   sg_ns3 = merge(exR_ns3,exR_sg, by=c("BytesSend"))
+   attach(sg_ns3)
+   ggplot(sg_ns3,aes(x=BytesSend))+
+   geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
+   ylab(label="Energy Consumption in Joule")+
+   xlab(label="Transferred data in MBytes")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/exR_energy_sg_vs_ns3.png]]
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 

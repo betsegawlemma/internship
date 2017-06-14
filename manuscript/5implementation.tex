@@ -2,8 +2,8 @@
 \label{chapter:implementation}
 
 In this chapter we start by describing how we started the implementation task, we then move to the discussion of the implementation details together with the challenges we encountered. Finally, we present the final version of the implemented flow-level model. 
-\section{The starting flow-level model}
-By definition, as we have shown in Equation~\ref{eq:2.1}, the energy consumption of a given electronic equipment is given by the product of the average power drawn by the equipment and its time duration of running. We have also shown, in Figure~\ref{fig:energyproportionality} and Equation~\ref{eq:2.2}, the linear relationship that exist between network equipment load and power consumption. Combining Equation~\ref{eq:2.1} and Equation~\ref{eq:2.2}, we get  Equation~\ref{eq:5.1} for energy consumption of a given device for a given time duration of T, where \($$P_{idle}$$\) is the power that the equipment consumed when there is no traffic and \(P_{dynamic (avg)}\) is the average power drawn during the time interval T in the presence of network traffic.
+
+By definition, as we have shown in Equation~\ref{eq:2.1}, the energy consumption of a given electronic equipment is given by the product of the average power drawn by the equipment and its time duration of running. We have also shown, in Figure~\ref{fig:energyproportionality} and Equation~\ref{eq:2.2}, the linear relationship that exist between network equipment load and power consumption. Combining Equation~\ref{eq:2.1} and Equation~\ref{eq:2.2}, we get  Equation~\ref{eq:5.1} for energy consumption of a given device for a given time duration of T, where \($$P_{idle}$$\) is the power that the equipment consumed when there is no traffic and \(P_{dynamic (avg)}\) is average additional power drawn during the time interval T due to network traffic.
 
 \begin{equation} \label{eq:5.1}
 E(T) = (P_{idle} + P_{dynamic (avg)}) * T 
@@ -11,7 +11,7 @@ E(T) = (P_{idle} + P_{dynamic (avg)}) * T
 
 To implement this model in SimGrid, we need to determine the values of the three variables shown in Equation~\ref{eq:5.1}. We can directly read the idle power consumption value from the SimGrid's link property that we described in Section~\ref{section:simgridenvironment}. For the \(P_{dynamic (avg)}\), we need to describe how SimGrid compute load in its core. 
 
-Briefly described, for a set of simulated activities running on a given simulated network resource such as a switch, SimGrid computes, using its bandwidth sharing algorithm, the amount of resource share that each activity can get. The sum of the resource share that all activities can get for a given resource at a given moment cannot exceed the capacity of the resource on which the activities are running. Figure~\ref{fig:SimGrid} depicts this concept symbolically. We can access how much of the resource is currently in use, i.e., its load, from SimGrid's core library. SimGrid dynamically recompute the resource usage when any of the activities finish their data transfer task. 
+Briefly described, for a set of simulated activities running on a given simulated network resource such as a switch, SimGrid computes, using its bandwidth sharing algorithm, the amount of resource share that each activity can get. The sum of the resource share that all activities can get for a given resource at a given moment cannot exceed the capacity of the resource on which the activities are running. Figure~\ref{fig:SimGrid} depicts this concept symbolically. We can access how much of the resource is currently in use, i.e., its load, from SimGrid's core library. SimGrid dynamically recompute the resource usage when any of the allocated activities finish their data transfer task. 
 
 We can compute the dynamic power consumption, \(P_{dynamic}\), of a link at any given instance as shown in equation Equation~\ref{eq:5.2}. Similar to the idle value, we can read the busy power consumption value,\(P_{busy}\), directly from the 
 Link property description and u is the load (used bandwidth) divided by the maximum bandwidth information, which is also available on the Link description. 
@@ -29,5 +29,4 @@ However, what we want is the average power drawn (\(P_{dynamic (avg)}\))  during
 
 Now we are left with the time, T, variable of Equation~\ref{eq:5.1}. We can get it simply by taking the current simulated time value when a given data transfer simulation task completes. 
  
-\section{The final model}
 
