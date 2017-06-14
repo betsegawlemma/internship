@@ -2429,7 +2429,7 @@ done
 #+RESULTS:
 [[file:figures/ex9_energy_sg_vs_ns3.png]]
 
-**** Experiment 10: 1 link, 4 flows
+**** Experiment 10: 1 link, 4 flows, with TCP-version CM02, bw 10Mbps, lat 10ms
 ***** Extract simgrid's data
 #+CALL: extract_sg_data_3(input_file="data/ex10_sg_1L4F.raw", output_file="data/ex10_sg_1L4F.csv",flow=4) :exports both
 ***** Extract ecofen's data
@@ -2674,11 +2674,11 @@ done
 #+RESULTS:
 [[file:figures/ex13_energy_sg_vs_ns3.png]]
 
-**** Experiment 14: Flow 2, Links 3
+**** Experiment 14: Flow 2, Links 3, bw 100Mbps, lat 10ms (Testing if the CM02 version works on higher bandwidth (20 to 100 MBytes with 2 flows)
 #+BEGIN_SRC bash :results silent :exports both 
 #! /bin/bash
 RANDOM=234
-cd /media/betsegaw/Windows8_OS/simgrid/examples/msg/energy-link
+cd ~/simgrid/examples/msg/energy-link
 for ((k=0; k<40; k++)); do
   randVal=$(((RANDOM % 100)+20)) # random value between 20 and 100
   bytesToSend=$((randVal * (10**6))) # traffic in MB between 20 and 100
@@ -2688,7 +2688,30 @@ for ((k=0; k<40; k++)); do
    ./energy-link energy_consumption_3L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex14_ns3_3L2FL.raw 2>&1
 done
 #+END_SRC 
-**** Experiment: Confirming ecofen's data point resolution effect 
+***** Extract simgrid's data  
+#+CALL: extract_sg_data_3(input_file="data/ex14_sg_3L2F.raw", output_file="data/ex14_sg_3L2F.csv",flow=2) 
+***** Extract ecofen's data 
+#+CALL: extract_ns3_data_5(input_file="data/ex14_ns3_3L2FL.raw", output_file="data/ex14_ns3_3L2FL.csv",flow=2)
+***** Compare results
+#+BEGIN_SRC R :results output graphics :file figures/ex14_energy_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+   ex14_ns3 = read.csv("data/ex14_ns3_3L2FL.csv", header=T)
+   ex14_sg = read.csv("data/ex14_sg_3L2F.csv", header=T)
+   sg_ns3 = merge(ex14_ns3,ex14_sg, by=c("BytesSend"))
+   attach(sg_ns3)
+   ggplot(sg_ns3,aes(x=BytesSend))+
+   geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
+   ylab(label="Energy Consumption in Joule")+
+   xlab(label="Transferred data in MBytes")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ex14_energy_sg_vs_ns3.png]]
+
+**** Experiment resolution: Confirming ecofen's data point resolution effect 
 #+NAME: extract_ns3_data_time_resolution
 #+BEGIN_SRC python :results silent dir:~/internship :var input_file="" :var output_file="" 
 import sys
@@ -2806,6 +2829,7 @@ done
 
 #+RESULTS:
 [[file:figures/exR_energy_sg_vs_ns3.png]]
+
 
 * Development
    - SimGrid HostEnergy plugin
