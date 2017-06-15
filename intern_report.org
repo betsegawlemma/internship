@@ -2674,7 +2674,7 @@ done
 #+RESULTS:
 [[file:figures/ex13_energy_sg_vs_ns3.png]]
 
-**** Experiment 14: Flow 2, Links 3, bw 100Mbps, lat 10ms (Testing if the CM02 version works on higher bandwidth (20 to 100 MBytes with 2 flows)
+**** Experiment 14: Flow 2, Links 3, bw 100Mbps, lat 10ms, flows 2 (Testing if the CM02 version works on higher bandwidth)
 #+BEGIN_SRC bash :results silent :exports both 
 #! /bin/bash
 RANDOM=234
@@ -2867,6 +2867,48 @@ done
 #+RESULTS:
 [[file:figures/ex15_energy_sg_vs_ns3.png]]
 
+**** Experiment 16: Run time and memory usage as a function of link size (bw 10Mbps, lat 10ms, data size 100 MBytes, flow 2, link range {1, 2, 4, 6, 8})
+
+#+BEGIN_SRC bash :results silent :exports both
+#! /bin/bash
+cd /home/bamersho/bamersho/simgrid/examples/msg/energy-link
+randVal=100
+bytesToSend=$((randVal * (10**6))) # traffic in MBytes
+for ((k=0; k<11; k=k+2));
+ do
+    for ((j=0; j<10; j++));
+    do
+       # run simgrid with /usr/bin/time
+       /usr/bin/time  -f "ElapsedTime %E ElapsedSec %e PeakMem %M AvgTotalMem %K" ./energy-link energy_consumption_${k}L_p.xml 2 ${bytesToSend} >> /home/bamersho/bamersho/data/perfLnk_sg_L${k}F2.raw 2>&1
+       # run ecofen with /usr/bin/time
+       /usr/bin/time  -f "ElapsedTime %E ElapsedSec %e PeakMem %M AvgTotalMem %K" ./energy-link energy_consumption_${k}L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> /home/bamersho/bamersho/data/perfLink_ns3_L${k}F2.raw 2>&1
+     done
+done
+#+END_SRC
+***** Extract simgrid's data
+***** Extract ecofen's data
+**** Experiment 17: Run time and memory usage as a function of data size (bw 10Mbps, lat 10ms, data size range [10,50]MBytes, flow 2, link 2)
+#+BEGIN_SRC bash :results silent :exports both
+#! /bin/bash
+cd /home/bamersho/bamersho/simgrid/examples/msg/energy-link
+RANDOM=234
+for ((j=0; j<30; j++));
+do
+
+randVal=$(((RANDOM % 50) + 10))
+bytesToSend=$((randVal * (10**6))) # traffic in MBytes
+
+    for ((k=0; k<10; k++));
+    do
+       # run simgrid with /usr/bin/time
+       /usr/bin/time -f "ElapsedTime %E ElapsedSec %e PeakMem %M AvgTotMem %K" ./energy-link energy_consumption_2L_p.xml 2 ${bytesToSend} >> /home/bamersho/bamersho/data/perfDat_sg_T${randVal}L2F2.raw 2>&1
+       # run ecofen with /usr/bin/time
+       /usr/bin/time -f "ElapsedTime %E ElapsedSec %e PeakMem %M AvgTotMem %K" ./energy-link energy_consumption_2L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> /home/bamersho/bamersho/data/perfDat_ns3_T${randVal}L2F2.raw 2>&1
+    done
+done
+#+END_SRC
+***** Extract simgrid's data
+***** Extract ecofen's data
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
