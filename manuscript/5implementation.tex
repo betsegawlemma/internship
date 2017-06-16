@@ -1,7 +1,7 @@
 \chapter{Implementing flow-level model}
 \label{chapter:implementation}
 
-In this chapter we start by describing how we started the implementation task, we then move to the discussion of the implementation details together with the challenges we encountered. Finally, we present the final version of the implemented flow-level model. 
+In this chapter we start by describing how we started the implementation task, we then move to the discussion of the implementation details. Finally, we present the final version of the implemented flow-level model. 
 
 By definition, as we have shown in Equation~\ref{eq:2.1}, the energy consumption of a given electronic equipment is given by the product of the average power drawn by the equipment and its time duration of running. We have also shown, in Figure~\ref{fig:energyproportionality} and Equation~\ref{eq:2.2}, the linear relationship that exist between network equipment load and power consumption. Combining Equation~\ref{eq:2.1} and Equation~\ref{eq:2.2}, we get  Equation~\ref{eq:5.1} for energy consumption of a given device for a given time duration of T, where \($$P_{idle}$$\) is the power that the equipment consumed when there is no traffic and \(P_{dynamic (avg)}\) is average additional power drawn during the time interval T due to network traffic.
 
@@ -27,6 +27,8 @@ where:
 
 However, what we want is the average power drawn (\(P_{dynamic (avg)}\))  during the time interval T.  The approach we followed to compute this value is that each time when a communication event happens, we compute \(P_{dynamic}\) and average it with the previous value. 
 
-Now we are left with the time, T, variable of Equation~\ref{eq:5.1}. We can get it simply by taking the current simulated time value when a given data transfer simulation task completes. 
+Now we are left with the time, T, variable of Equation~\ref{eq:5.1}. We can get it simply by taking the current simulated time value when a given data transfer simulation task completes.
+
+In the next chapter we will show experiment results for validating energy consumption estimation accuracy, runtime performance and memory usage by comparing this implementation with already existing of packet-level simulator.
  
 
