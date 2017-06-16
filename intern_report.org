@@ -3125,6 +3125,7 @@ for i in range(0, 8, 2):
 
 #+RESULTS:
 [[file:figures/ex16_linksize_sg_vs_ns3.png]]
+
 ***** Compare the peak memory usage performance
 #+BEGIN_SRC R :results output graphics :file figures/ex16_linksizeM_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
@@ -3143,6 +3144,7 @@ for i in range(0, 8, 2):
 
 #+RESULTS:
 [[file:figures/ex16_linksizeM_sg_vs_ns3.png]]
+
 **** Experiment 17: Run time and memory usage as a function of data size (bw 10Mbps, lat 10ms, data size range [10,50]MBytes, flow 2, link 2)
 #+BEGIN_SRC bash :results silent :exports both
 #! /bin/bash
