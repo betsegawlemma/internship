@@ -1041,6 +1041,7 @@ j=$((header + i))
 #+BEGIN_SRC R  :results silent 
 library(ggplot2)
 library(gridExtra)
+library(Rmisc)
 theme_Publication <- function(base_size=14, base_family="helvetica") {
       library(grid)
       library(ggthemes)
@@ -2633,7 +2634,6 @@ with open(input_file) as fe:
    sg_ns3 = merge(ex11_ns3,ex11_sg, by=c("BytesSend"))
    attach(sg_ns3)
    t.test(TotalEnergy,SgTotalEnergy,paired=FALSE,conf.level=0.95)
-  cat("Difference in percentage is:",(4837.196 - 5007.053)/100)
 #+END_SRC
 
 #+RESULTS:
@@ -2642,15 +2642,14 @@ with open(input_file) as fe:
 	Welch Two Sample t-test
 
 data:  TotalEnergy and SgTotalEnergy
-t = -0.29664, df = 77.906, p-value = 0.7675
+t = -0.057422, df = 77.996, p-value = 0.9544
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -1309.8343   970.1196
+ -1156.292  1091.460
 sample estimates:
 mean of x mean of y 
- 4837.196  5007.053 
+ 4837.196  4869.612 
 
-Difference in percentage is: -1.69857
 #+end_example
 
 **** Exercise 12: Flow 2, Link 1, bw 10Mbps, lt 10ms, TCP version CM02
@@ -2690,13 +2689,12 @@ done
 #+RESULTS:
 [[file:figures/ex12_energy_sg_vs_ns3.png]]
 ***** Statistical comparison
-#+BEGIN_SRC R :results output :var validation=validation :exports both 
+#+BEGIN_SRC R :results output  :exports both 
    ex12_ns3 = read.csv("data/ex12_ns3_1L2FL.csv", header=T)
    ex12_sg = read.csv("data/ex12_sg_1L2F.csv", header=T)
    sg_ns3 = merge(ex12_ns3,ex12_sg, by=c("BytesSend"))
    attach(sg_ns3)
    t.test(TotalEnergy,SgTotalEnergy,paired=FALSE,conf.level=0.95)
-  cat("Difference in percentage is:",(9672.555 - 10082.613)/100) 
 #+END_SRC
 
 #+RESULTS:
@@ -2705,18 +2703,17 @@ done
 	Welch Two Sample t-test
 
 data:  TotalEnergy and SgTotalEnergy
-t = -0.3568, df = 77.865, p-value = 0.7222
+t = -0.058866, df = 77.996, p-value = 0.9532
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -2698.139  1878.022
+ -2314.214  2181.289
 sample estimates:
 mean of x mean of y 
- 9672.555 10082.613 
+ 9672.555  9739.017 
 
-Difference in percentage is: -4.10058
 #+end_example
 
-**** Experiment 13: Flow 1, Links 3 
+**** Experiment 13: Flow 1, Links 3, bw 10 Mbps, lat 10ms
 #+BEGIN_SRC bash :results silent :exports both 
 #! /bin/bash
 RANDOM=234
@@ -2759,7 +2756,6 @@ done
    sg_ns3 = merge(ex13_ns3,ex13_sg, by=c("BytesSend"))
    attach(sg_ns3)
    t.test(TotalEnergy,SgTotalEnergy,paired=FALSE,conf.level=0.95)
-   cat("Difference in percentage is:",(6804.928 - 7021.571)/100) 
 #+END_SRC
 
 #+RESULTS:
@@ -2768,15 +2764,14 @@ done
 	Welch Two Sample t-test
 
 data:  TotalEnergy and SgTotalEnergy
-t = -0.42415, df = 85.896, p-value = 0.6725
+t = -0.047469, df = 85.996, p-value = 0.9622
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -1232.0347   798.7495
+ -1024.9558   977.1484
 sample estimates:
 mean of x mean of y 
- 6804.928  7021.571 
+ 6804.928  6828.832 
 
-Difference in percentage is: -2.16643
 #+end_example
 
 **** Experiment 14: Flow 2, Links 3, bw 100Mbps, lat 10ms, flows 2 (Testing if the CM02 version works on higher bandwidth)
@@ -2822,7 +2817,6 @@ done
    sg_ns3 = merge(ex14_ns3,ex14_sg, by=c("BytesSend"))
    attach(sg_ns3)
    t.test(TotalEnergy,SgTotalEnergy,paired=FALSE,conf.level=0.95)
-   cat("Difference in percentage is:",(2199.803 - 822.916)/100)
 #+END_SRC
 
 #+RESULTS:
@@ -2831,15 +2825,14 @@ done
 	Welch Two Sample t-test
 
 data:  TotalEnergy and SgTotalEnergy
-t = 12.779, df = 78.058, p-value < 2.2e-16
+t = 13.094, df = 76.956, p-value < 2.2e-16
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- 1162.376 1591.397
+ 1191.27 1618.59
 sample estimates:
 mean of x mean of y 
- 2199.803   822.916 
+2199.8027  794.8726 
 
-Difference in percentage is: 13.76887
 #+end_example
 
 **** Experiment resolution: Confirming ecofen's data point resolution effect 
@@ -2998,7 +2991,7 @@ for ((k=0; k<40; k++)); do
   # run simgrid
    ./energy-link energy_consumption_3L_p.xml 2 ${bytesToSend} >> ~/internship/data/ex15_sg_3L2F.raw 2>&1
   # run ecofen
-   ./energy-link energy_consumption_3L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex15_ns3_3L2FL.raw 2>&1
+  # ./energy-link energy_consumption_3L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex15_ns3_3L2FL.raw 2>&1
 done
 #+END_SRC 
 ***** Extract simgrid's data  
@@ -3030,7 +3023,6 @@ done
    sg_ns3 = merge(ex15_ns3,ex15_sg, by=c("BytesSend"))
    attach(sg_ns3)
    t.test(TotalEnergy,SgTotalEnergy,paired=FALSE,conf.level=0.95)
-   cat("Difference in percentage is:",(7896.580 - 8211.788)/7896.50*100)
 #+END_SRC
 
 #+RESULTS:
@@ -3039,15 +3031,14 @@ done
 	Welch Two Sample t-test
 
 data:  TotalEnergy and SgTotalEnergy
-t = -0.59747, df = 121.79, p-value = 0.5513
+t = -0.068237, df = 121.99, p-value = 0.9457
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -1359.6030   729.1871
+ -1061.3625   990.6304
 sample estimates:
 mean of x mean of y 
- 7896.580  8211.788 
+ 7896.580  7931.946 
 
-Difference in percentage is: -3.991743
 #+end_example
 
 **** Experiment 16: Run time and memory usage as a function of link size (bw 10Mbps, lat 10ms, data size 100 MBytes, flow 2, link range {1, 2, 4, 6, 8})
@@ -3108,17 +3099,24 @@ for i in range(0, 8, 2):
 ***** Extract ecofen's data
 #+CALL: extract_perf_data(version="ns3")
 ***** Compare the run time performance
+[[http://www.cookbook-r.com/Graphs/Plotting_means_and_error_bars_(ggplot2)/][How to plot error bars]]
 #+BEGIN_SRC R :results output graphics :file figures/ex16_linksize_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
    ex16_ns3 = read.csv("data/perfLink1_ns3_F2.csv", header=T)
    ex16_sg = read.csv("data/perfLink1_sg_F2.csv", header=T)
-   sg_ns3 = merge(ex16_ns3,ex16_sg, by=c("LinkSize"))
+   ex16_sg$LinkSize=NULL
+   sg_ns3 = cbind(ex16_ns3,ex16_sg)
    attach(sg_ns3)
+   ns3_err = summarySE(sg_ns3, measurevar="ElapsedSecns3", groupvars="LinkSize")
+   sg_err = summarySE(sg_ns3, measurevar="ElapsedSecsg", groupvars="LinkSize")
+   pd = position_dodge(0.1)
    ggplot(sg_ns3,aes(x=LinkSize))+
    geom_point(aes(y = ElapsedSecns3, colour = "ECOFEN"),size=1.3)+
    geom_point(aes(y = ElapsedSecsg, colour = "SimGrid"),size=1.3)+
-   ylab(label="Elapsed Seconds")+
-   xlab(label="Number of Links between SRC and DST nodes")+
+   geom_errorbar(aes(ymin=ElapsedSecns3-ns3_err$ci,ymax=ElapsedSecns3+ns3_err$ci),width=0.1,colour="brown")+
+   geom_errorbar(aes(ymin=ElapsedSecsg-sg_err$ci,ymax=ElapsedSecsg+sg_err$ci),width=0.1,colour="brown")+
+   ylab(label="Simulation time (seconds)")+
+   xlab(label="Path size between SRC and DST nodes")+
    scale_colour_Publication()+
    theme_Publication()
 #+END_SRC
@@ -3126,16 +3124,43 @@ for i in range(0, 8, 2):
 #+RESULTS:
 [[file:figures/ex16_linksize_sg_vs_ns3.png]]
 
+#+BEGIN_SRC R  :results output 
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+ex16_ns3 = read.csv("data/perfLink1_ns3_F2.csv", header=T)
+   ex16_sg = read.csv("data/perfLink1_sg_F2.csv", header=T)
+   ex16_sg$LinkSize=NULL
+   sg_ns3 = cbind(ex16_ns3,ex16_sg)
+   attach(sg_ns3)
+   ns3_err = summarySE(sg_ns3, measurevar="ElapsedSecns3", groupvars=c("LinkSize"))
+   sg_err = summarySE(sg_ns3, measurevar="ElapsedSecsg", groupvars=c("LinkSize"))
+
+sg_err
+
+#+END_SRC
+#+RESULTS:
+:   LinkSize  N ElapsedSecsg          sd       se          ci
+: 1        1 10        0.033 0.009486833 0.003000 0.006786471
+: 2        2 10        0.030 0.000000000 0.000000 0.000000000
+: 3        4 10        0.041 0.034785054 0.011000 0.024883729
+: 4        6  4        0.355 0.203387971 0.101694 0.323635648
+
 ***** Compare the peak memory usage performance
 #+BEGIN_SRC R :results output graphics :file figures/ex16_linksizeM_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
    ex16_ns3 = read.csv("data/perfLink1_ns3_F2.csv", header=T)
    ex16_sg = read.csv("data/perfLink1_sg_F2.csv", header=T)
-   sg_ns3 = merge(ex16_ns3,ex16_sg, by=c("LinkSize"))
+   sg_ns3 = cbind(ex16_ns3,ex16_sg)
    attach(sg_ns3)
+   ns3_err = summarySE(sg_ns3, measurevar="PeakMemns3", groupvars=c("LinkSize"))
+   sg_err = summarySE(sg_ns3, measurevar="PeakMemsg", groupvars=c("LinkSize"))
+   pd = position_dodge(0.1)
    ggplot(sg_ns3,aes(x=LinkSize))+
-   geom_point(aes(y = PeakMemns3, colour = "ECOFEN"),size=1.3)+
-   geom_point(aes(y = PeakMemsg, colour = "SimGrid"),size=1.3)+
+   geom_line(aes(y = PeakMemns3, colour = "ECOFEN"),size=1.3)+
+   geom_line(aes(y = PeakMemsg, colour = "SimGrid"),size=1.3)+
+   geom_errorbar(aes(ymin=PeakMemns3-ns3_err$ci,ymax=PeakMemns3+ns3_err$ci),width=0.1,colour="brown",position=pd)+
+   geom_errorbar(aes(ymin=PeakMemsg-sg_err$ci,ymax=PeakMemsg+sg_err$ci),width=0.1,colour="brown",position=pd)+
    ylab(label="Peak Memory Usage in Kbytes")+
    xlab(label="Number of Links between SRC and DST nodes")+
    scale_colour_Publication()+
@@ -3167,6 +3192,305 @@ done
 #+END_SRC
 ***** Extract simgrid's data
 ***** Extract ecofen's data
+**** Experiment 18: checking simulated time vs bandwidth (1 link, 2 flow, 100 MBytes data size, bw range (10 to 500 with increment of 10)
+#+BEGIN_SRC bash :results silent :exports both 
+#! /bin/bash
+cd ~/simgrid/examples/msg/energy-link
+randVal=100
+bytesToSend=$((randVal * (10**6))) # traffic in MBytes
+for ((k=10; k<510; k=k+10)); do
+  cat energy_consumption_1L_p.xml |sed -e "s/\$B/${k}/"  > t_energy_consumption_1L_p.xml 
+  # run simgrid
+   ./energy-link t_energy_consumption_1L_p.xml 2 ${bytesToSend} >> ~/internship/data/ex18_sg_bw_tim.raw 2>&1
+  # run ecofen
+   ./energy-link t_energy_consumption_1L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex18_ns3_bw_tim.raw 2>&1
+done
+#+END_SRC
+***** Extract simgrid's data
+#+NAME: extract_sg_bw_time_data 
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="" :var output_file=""  
+import sys
+
+header = True
+done = False
+
+# data variable holds one line of data formated as follows 
+# Bandwidth, SgAveragePower, SgTransferTime, SgTotalEnergy,
+data = []
+
+traffic = 0.0
+
+TRAFFIC_COL = 4
+ENERGY_COL = 5
+POWER_COL = 3
+TIME_COL = 7
+bandwidth = 10
+
+with open(input_file) as fe:
+    for line in fe:
+       if "SgTotalEnergy" in line:
+           done = True
+           list = line.split()
+           data.append(str(bandwidth))
+           data.append(list[POWER_COL])
+           data.append(list[TIME_COL])
+           data.append(list[ENERGY_COL])
+           bandwidth += 10
+       if len(data) == 4 and done is True:
+           with open(output_file,"a") as of:
+               if header: # write the header part
+                   of.write("%s\n" % "Bandwidth, SgAveragePower, SgTransferTime, SgTotalEnergy")
+                   header = False
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+#+END_SRC
+#+CALL: extract_sg_bw_time_data(input_file="data/ex18_sg_bw_tim.raw", output_file="data/ex18_sg_bw_tim.csv") 
+***** Extract ecofen's data
+#+NAME: extract_ns3_bw_time_data
+#+BEGIN_SRC python :results silent dir:~/internship :var input_file="" :var output_file=""  
+import sys
+
+header = True
+
+POWER_COL=5
+TIME_COL=1
+TRAFFIC_COL = 4
+
+TRANSFER_TIME_COL = 5
+
+# data variable holds one line of data formated as follows 
+# Bandwidth,AveragePowerNs3,TotalTimeTakenNs3,TotalEnergyNs3
+data = []
+done = False
+traffic = 0.0
+
+total_power = 0.0 
+average_power = 0.0 
+total_energy = 0.0
+
+transfer_time = 0.0
+send_bytes = 0.0
+
+number_of_power_values = 1.0
+prv_time = 0.0
+cur_time = 0.0
+bandwidth=10
+
+with open(input_file) as fe:
+    for line in fe:
+       if line.startswith("Time") and done is not True:
+           list = line.split()
+           cur_time = float(list[TIME_COL])
+           if prv_time != cur_time: 
+               number_of_power_values+=1
+           prv_time = cur_time
+           if cur_time > 0.0:
+               total_power+=float(list[POWER_COL])
+       if "receiver done" in line and done is not True:
+           list = line.split()
+           if number_of_power_values > 0:
+               average_power = total_power/number_of_power_values
+           data.append(str(bandwidth))
+           data.append(str(average_power))
+           transfer_time = float(list[TRANSFER_TIME_COL])
+           total_energy = average_power * transfer_time
+           data.append(str(transfer_time))
+           data.append(str(total_energy))
+           done = True
+           bandwidth+=10
+       if len(data) == 4 and done is True:
+           with open(output_file,"a") as of:
+               if header: # write the header part
+                   of.write("%s\n" % "Bandwidth,AveragePowerNs3,TotalTimeTakenNs3,TotalEnergyNs3")
+                   header = False
+               of.write("%s\n" % ",".join(data))
+               del data[:]
+               done = False
+               total_power = 0.0
+               average_power = 0.0 
+               number_of_power_values = 1.0
+               total_energy = 0.0
+               transfer_time = 0.0
+               prv_time = 0
+               cur_time = 0
+#+END_SRC
+#+CALL: extract_ns3_bw_time_data(input_file="data/ex18_ns3_bw_tim.raw", output_file="data/ex18_ns3_bw_tim.csv") 
+***** Compare bandwidth vs time of simgrid and ecofen
+#+BEGIN_SRC R :results output graphics :file figures/ex18_bw_time_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+   ex18_ns3 = read.csv("data/ex18_ns3_bw_tim.csv", header=T)
+   ex18_sg = read.csv("data/ex18_sg_bw_tim.csv", header=T)
+   sg_ns3 = merge(ex18_ns3,ex18_sg, by=c("Bandwidth"))
+   attach(sg_ns3)
+   ggplot(sg_ns3,aes(x=Bandwidth))+
+   geom_point(aes(y = TotalTimeTakenNs3, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = SgTransferTime, colour = "SimGrid"),size=1.3)+
+   ylab(label="Data transfer time (in seconds)")+
+   xlab(label="Bandwidth (in Mbps)")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ex18_bw_time_sg_vs_ns3.png]]
+**** Experiment 19: checking simulated time vs data_size (1 link, 2 flow, bw 50Mbps, data size, data size range (10 to 200 with increment of 10)
+#+BEGIN_SRC bash :results silent :exports both 
+#! /bin/bash
+cd ~/simgrid/examples/msg/energy-link
+for ((k=5; k<200; k=k+10)); do
+  bytesToSend=$((k * (10**6))) # traffic in MBytes
+  # run simgrid
+   ./energy-link energy_consumption_1L_p.xml 2 ${bytesToSend} >> ~/internship/data/ex19-1_sg_dsize_tim.raw 2>&1
+  # run ecofen
+   ./energy-link energy_consumption_1L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex19-1_ns3_dsize_tim.raw 2>&1
+done
+#+END_SRC
+***** Extract simgrid's data  
+#+CALL: extract_sg_data_3(input_file="data/ex19_sg_dsize_tim.raw", output_file="data/ex19_sg_dsize_tim.csv",flow=2) 
+***** Extract ecofen's data 
+#+CALL: extract_ns3_data_5(input_file="data/ex19_ns3_dsize_tim.raw", output_file="data/ex19_ns3_dsize_tim.csv",flow=2)
+***** Compare results
+#+BEGIN_SRC R :results output :var validation=validation :exports both 
+   ex19_ns3 = read.csv("data/ex19_ns3_dsize_tim.csv", header=T)
+   ex19_sg = read.csv("data/ex19_sg_dsize_tim.csv", header=T)
+   sg_ns3 = merge(ex19_ns3,ex19_sg, by=c("BytesSend"))
+   attach(sg_ns3)
+   t.test(TotalTimeTaken,SgTransferTime,paired=FALSE,conf.level=0.95)
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+
+	Welch Two Sample t-test
+
+data:  TotalTimeTaken and SgTransferTime
+t = -0.01859, df = 37.998, p-value = 0.9853
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -12.79517  12.56231
+sample estimates:
+mean of x mean of y 
+ 33.49357  33.61000 
+
+#+end_example
+
+**** Experiment 20: checking simulated time vs data_size using experiment 12's data (1 link, 2 flow, bw 10Mbps, data size, data size range (10 to 200) 
+***** Compare results
+#+BEGIN_SRC R :results output :var validation=validation :exports both 
+   ex19_ns3 = read.csv("data/ex19-1_ns3_dsize_tim.csv", header=T)
+   ex19_sg = read.csv("data/ex19-1_sg_dsize_tim.csv", header=T)
+   sg_ns3 = merge(ex19_ns3,ex19_sg, by=c("BytesSend"))
+   attach(sg_ns3)
+   t.test(TotalTimeTaken,SgTransferTime,paired=FALSE,conf.level=0.95)
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+
+	Welch Two Sample t-test
+
+data:  TotalTimeTaken and SgTransferTime
+t = -0.036534, df = 37.998, p-value = 0.971
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -64.53773  62.24962
+sample estimates:
+mean of x mean of y 
+ 166.8659  168.0100 
+
+#+end_example
+
+**** Experiment 21: Run time and memory usage as a function of data size (bw 50 Mbps, lat 10ms, data size [20,200] Mbytes, flow 2, link size 2)
+#+NAME: extract_perf_data1
+#+BEGIN_SRC python :results silent dir:~/internship :var version="" 
+import sys
+
+header = True
+
+# data variable holds one line of data formated as follows 
+# DataSize, ElaspedTime, ElapsedSec, PeakMem
+data = []
+
+ELAPSED_TIME_COL=1
+ELAPSED_SEC_COL=3
+PEAK_MEM_COL=5
+output_file_m = "data/perfDat_"+version+"_L2F2.csv"  
+#dataRange=[101,105,106,10,16,25,32,61,71,72,81,85,86,88,90,92,97,99]
+dataRange=[10,16,21,31,32,35,36,38,40,42,47,51,56]
+for i in dataRange:
+    input_file_m = "data/perfDat_"+version+"_T"+str(i)+"L2F2.raw" 
+    with open(input_file_m) as fe:
+        for line in fe:
+           if line.startswith("ElapsedTime"): 
+               list = line.split()
+               data.append(str(2*i))
+               data.append(list[ELAPSED_TIME_COL])
+               data.append(list[ELAPSED_SEC_COL])
+               data.append(list[PEAK_MEM_COL])
+           if len(data) == 4:
+               with open(output_file_m,"a") as of:
+                   if header: # write the header part
+                       h = "DataSize, ElaspedTime"+version+", ElapsedSec"+version+", PeakMem"+version
+                       of.write("%s\n" % h )
+                       header = False
+                   of.write("%s\n" % ",".join(data))
+                   del data[:]
+#+END_SRC
+***** Extract simgrid's data
+#+CALL: extract_perf_data1(version="sg") 
+***** Extract ecofen's data
+#+CALL: extract_perf_data1(version="ns3")
+***** Compare the run time performance
+[[http://www.cookbook-r.com/Graphs/Plotting_means_and_error_bars_(ggplot2)/][How to plot error bars]]
+#+BEGIN_SRC R :results output graphics :file figures/ex21_datasize_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+   ex21_ns3 = read.csv("data/perfDat_ns3_L2F2.csv", header=T)
+   ex21_sg = read.csv("data/perfDat_sg_L2F2.csv", header=T)
+   ex21_sg$DataSize=NULL
+   sg_ns3 = cbind(ex21_ns3,ex21_sg)
+   attach(sg_ns3)
+   ns3_err = summarySE(sg_ns3, measurevar="ElapsedSecns3", groupvars="DataSize")
+   sg_err = summarySE(sg_ns3, measurevar="ElapsedSecsg", groupvars="DataSize")
+   pd = position_dodge(0.1)
+   ggplot(sg_ns3,aes(x=DataSize))+
+   geom_point(aes(y = ElapsedSecns3, colour = "ECOFEN"),size=1.3)+
+   geom_point(aes(y = ElapsedSecsg, colour = "SimGrid"),size=1.3)+
+   geom_errorbar(aes(ymin=ElapsedSecns3-ns3_err$ci,ymax=ElapsedSecns3+ns3_err$ci),width=0.1,colour="brown")+
+   geom_errorbar(aes(ymin=ElapsedSecsg-sg_err$ci,ymax=ElapsedSecsg+sg_err$ci),width=0.1,colour="brown")+
+   ylab(label="Simulation time (seconds)")+
+   xlab(label="Data  size (Mbytes)")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ex21_datasize_sg_vs_ns3.png]]
+
+***** Compare the peak memory usage performance
+#+BEGIN_SRC R :results output graphics :file figures/ex21_DataSizeM_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+ex21_ns3 = read.csv("data/perfDat_ns3_L2F2.csv", header=T)
+   ex21_sg = read.csv("data/perfDat_sg_L2F2.csv", header=T)
+   ex21_sg$DataSize=NULL
+   sg_ns3 = cbind(ex21_ns3,ex21_sg)
+   attach(sg_ns3)
+   ns3_err = summarySE(sg_ns3, measurevar="PeakMemns3", groupvars=c("DataSize"))
+   sg_err = summarySE(sg_ns3, measurevar="PeakMemsg", groupvars=c("DataSize"))
+   pd = position_dodge(0.1)
+   ggplot(sg_ns3,aes(x=DataSize))+
+   geom_line(aes(y = PeakMemns3, colour = "ECOFEN"),size=1.3)+
+   geom_line(aes(y = PeakMemsg, colour = "SimGrid"),size=1.3)+
+   geom_errorbar(aes(ymin=PeakMemns3-ns3_err$ci,ymax=PeakMemns3+ns3_err$ci),width=0.1,colour="brown",position=pd)+
+   geom_errorbar(aes(ymin=PeakMemsg-sg_err$ci,ymax=PeakMemsg+sg_err$ci),width=0.1,colour="brown",position=pd)+
+   ylab(label="Peak Memory Usage in Kbytes")+
+   xlab(label="DataSize (Mbytes)")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/ex21_DataSizeM_sg_vs_ns3.png]]
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
