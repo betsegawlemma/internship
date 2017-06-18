@@ -2104,7 +2104,7 @@ with open(input_file) as fe:
 
 ** Week 2 June
 **** Experiment 7: 2 Nodes, 1 Link, 1-flow, bw=100Mbps, lat=10ms
-***** Directly on from ECOFEN in NS-3, we used NS-3's bulk send tcp application with maximum bytes to send between 1 and 200 MBytes
+***** Directly on ECOFEN in NS-3, we used NS-3's bulk send tcp application with maximum bytes to send between 1 and 200 MBytes
 #+BEGIN_SRC bash :results output :exports both
 #! /bin/bash
 cd ~/ns3ws/source/ns-3.26/ 
@@ -2431,6 +2431,19 @@ done
 [[file:figures/ex9_energy_sg_vs_ns3.png]]
 
 **** Experiment 10: 1 link, 4 flows, with TCP-version CM02, bw 10Mbps, lat 10ms
+#+BEGIN_SRC bash :results silent :exports both 
+#! /bin/bash
+RANDOM=234
+cd ~/simgrid/examples/msg/energy-link
+for ((k=0; k<40; k++)); do
+  randVal=$(((RANDOM % 100)+20)) # random value between 20 and 100
+  bytesToSend=$((randVal * (10**6))) # bytes to send in MBytes between 20 and 100
+  # run simgrid
+   ./energy-link energy_consumption_1L_p.xml 4 ${bytesToSend} >> ~/internship/data/ex10_sg_1L4F.raw 2>&1
+  # run ecofen
+   #./energy-link energy_consumption_1L_p.xml 4 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex10_ns3_1L4F.raw 2>&1
+done
+#+END_SRC
 ***** Extract simgrid's data
 #+CALL: extract_sg_data_3(input_file="data/ex10_sg_1L4F.raw", output_file="data/ex10_sg_1L4F.csv",flow=4) :exports both
 ***** Extract ecofen's data
@@ -2469,13 +2482,13 @@ done
 	Welch Two Sample t-test
 
 data:  TotalEnergy and SgTotalEnergy
-t = -0.66541, df = 121.77, p-value = 0.507
+t = -0.10452, df = 121.99, p-value = 0.9169
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -931.3336  462.7431
+ -720.1114  647.8859
 sample estimates:
 mean of x mean of y 
- 5250.815  5485.110 
+ 5250.815  5286.928 
 
 Difference in percentage is: -2.34295
 #+end_example
