@@ -1,12 +1,12 @@
 \chapter{Result}
 \label{chapter:evaluation}
-In this chapter we present the accuracy and the scalability experiments we performed to evaluate the flow-level implementation. As we outlined in our method chapter, we compare our implementation with ECOFEN.  
+In this chapter we present the accuracy and the scalability experiments we performed to evaluate the implemented flow-level model. As we outlined in our method chapter, we compare our implementation with the packet-level implementation of ECOFEN.  
 \section{Experiment Setup}
 
 \subsection{General ECOFEN related setup}
-Among the three power consumption models available in ECOFEN module we used the \emph{linear} one. This model accepts idle power consumption value in watts and also energy consumption value for each byte received or send in nano-joule unit value. Throughout our experiments we used 10.3581 watt as idle power consumption value and 3.423 nano-joule as byte energy consumption value. 
+Among the three power consumption models available in ECOFEN module, we used the \emph{linear} one. This model accepts idle power consumption value in watts and also energy consumption value for each byte received or send in nano-joule. Throughout our experiments we used 10.3581 watt as idle power consumption value and 3.423 nano-joule as byte energy consumption value. We took this values from \cite{Sivaraman}, even though any arbitrary values can also suffice for our purpose. 
 
-The linear model estimate power consumption value based on these two inputs and the amount of transmitted or received traffic and then display the estimated power consumption in watt at specified time interval. We set the interval to be 0.05 sec, which means we get 20 estimations during each simulated second. 
+The linear model estimate power consumption value based on these two inputs and the amount of transmitted or received traffic and then display the estimated power consumption in watt at specified time interval. We set the interval to be 0.05 sec (20 estimation per second) in order to get more precise power estimation. 
 
 What we want to get from ECOFEN is the total amount of energy consumed by the simulated network. To get this value, we first compute the average power drawn by the network for a given data transfer task and when the task ends, we multiply the average total network power with the data transfer time. 
 
@@ -97,7 +97,7 @@ For validating the scalability of the implemented flow-level model, we run again
 
 Both of these experiments were carried out using the Grid'5000 testbed, supported by a scientific interest group hosted by Inria and including CNRS, RENATER and several Universities as well as other organizations\footnote{https://www.grid5000.fr/mediawiki/index.php/Grid5000:UsagePolicy}. The machine we used is SUN FIRE X2270 which have Intel Xeon X5570 2.93 Ghz 2 CPUs, 4 cores per CPU and 24 GB RAM running Debian version 8 (jessie) operating system.
 
-For each set of experiments we used the Debian command, /usr/bin/time, to collect simulation run time and peak memory usage data. We run each experiment with in each set ten times i.e., 10 run for each link in the first set and 10 run for each data size in the second set. Figure\ref{fig:scallinks} shows the runtime and memory usage comparison as the path length increases. Figure~\ref{fig:scaldata}, on the other hand, shows the runtime and peak memory usage comparison as the data size increases.
+For each set of experiments we used the Debian command, /usr/bin/time, to collect simulation run time and peak memory usage data. We run each experiment within each set ten times i.e., 10 run for each link in the first set and 10 run for each data size in the second set. Figure~\ref{fig:scallinks} shows the runtime and memory usage comparison as the path length increases. Figure~\ref{fig:scaldata}, on the other hand, shows the runtime and peak memory usage comparison as the data size increases.
 
 \begin{figure}[ht]
 	\centering
