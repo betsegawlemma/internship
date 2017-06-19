@@ -24,16 +24,16 @@ From the link XML tag we can see the basic characteristics of a simulated switch
 
 In a similar manner we can specify deployment information such as the role of hosts, the number of processes and the size of transfered data as follows. 
 \begin{lstlisting}
-<process host="H-1" function="sender">
+<process host="H1" function="sender">
 <argument value="10" />
 </process>
-<process host="H-2" function="receiver"/>
+<process host="H2" function="receiver"/>
 \end{lstlisting}
 This separation of concern among the simulation script, the platform and the deployment configuration files offers great flexibility for designing and running large scale experiments. The platform can be scaled up or down without changing the simulation script, for instance. 
 
 Another feature of SimGrid that we would like to mention here is that SimGrid provides access to NS-3 simulator. This has at least two main advantages. The first one is that for SimGrid users who like to have low level packet information about the simulated network phenomenon, they can launch their experiment from SimGrid interface while using their platform and deployment files that they have created within SimGrid. The second one is that for studies similar to ours this feature helps a lot during the validation process of newly implemented model. This feature allowed us to run the validation comparisons with NS-3 using the same platform and deployment file that we have created in SimGrid. SimGrid automatically maps the topology and the corresponding parameters into NS-3's abstraction.
 \section{NS-3}
-NS-3 is a discrete-event packet-level simulator, events corresponding to, for instance, arrival and departure of packets. NS-3 is structured in a modular manner. The core and the network modules are two of the modules that serve as generic simulation core that can be used for Internet-based or different network type simulation. These two modules, being generic, are independent from any device models. The core module provides features such as tracing, callbacks, smart pointer, random variables, events and schedules. The network module consists components such as packets, node, addresses (e.g.,~IPv4 and MAC) and network devices. The components provided by the simulation core modules can be used to create other modules. This feature allows researchers to add their own models for the network phenomenon that they want to simulate. We will visit two of the modules that are constructed in this way in the next two subsections\cite{ns3}. 
+NS-3 is a discrete-event packet-level simulator, events corresponding to, for instance, arrival and departure of packets. NS-3 is structured in a modular manner. The core and the network modules are two of the modules that serve as generic simulation core that can be used for Internet-based or different network type simulation. These two modules, being generic, are independent from any device models. The core module provides features such as tracing, callbacks, smart pointer, random variables, events and schedules. The network module consists components such as packets, node, addresses (e.g.,~IPv4 and MAC) and network devices. The components provided by the simulation core modules can be used to create other modules. This feature allows researchers to add their own models for the network phenomenon that they want to simulate. We will visit two of the modules that are constructed in this way in the next two subsections~\cite{ns3}. 
 
 The NS-3 core and other modules are built in C++ language as a set of libraries. The user can access these libraries in their main C++ program to configure the simulated topology and other simulator parameters. The libraries are also available as Python API for those researchers who prefer Python programming language. 
 

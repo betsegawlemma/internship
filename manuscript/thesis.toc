@@ -14,26 +14,25 @@
 \contentsline {section}{\numberline {2.6}SimGrid}{17}{section.2.6}
 \contentsline {section}{\numberline {2.7}Related Simulators}{18}{section.2.7}
 \contentsline {subsubsection}{\numberline {2.7.0.1}ECOFEN}{19}{subsubsection.2.7.0.1}
-\contentsline {subsubsection}{\numberline {2.7.0.2}GreenCloud}{19}{subsubsection.2.7.0.2}
-\contentsline {chapter}{\numberline {3}Environment}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}SimGrid}{21}{section.3.1}
-\contentsline {section}{\numberline {3.2}NS-3}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}ECOFEN Module}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}FlowMonitor Module}{24}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Other tools}{25}{section.3.3}
-\contentsline {chapter}{\numberline {4}Methods}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Common Approaches}{26}{section.4.1}
-\contentsline {section}{\numberline {4.2}Our Approach}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Validating ECOFEN}{30}{section.4.3}
-\contentsline {subsubsection}{\numberline {4.3.0.1}Validating the Linear Model}{31}{subsubsection.4.3.0.1}
-\contentsline {subsubsection}{\numberline {4.3.0.2}Validating the Complete Model}{33}{subsubsection.4.3.0.2}
-\contentsline {chapter}{\numberline {5}Implementing flow-level model}{38}{chapter.5}
-\contentsline {chapter}{\numberline {6}Result}{42}{chapter.6}
-\contentsline {section}{\numberline {6.1}Experiment Setup}{42}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}General ECOFEN related setup}{42}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}General SimGrid related setup}{43}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Accuracy Validation}{43}{section.6.2}
-\contentsline {section}{\numberline {6.3}Scalability Validation}{44}{section.6.3}
-\contentsline {section}{\numberline {6.4}Simulating large-scale network}{45}{section.6.4}
-\contentsline {chapter}{\numberline {7}Discussion}{48}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusions}{49}{chapter.8}
+\contentsline {subsubsection}{\numberline {2.7.0.2}GreenCloud}{20}{subsubsection.2.7.0.2}
+\contentsline {chapter}{\numberline {3}Environment}{22}{chapter.3}
+\contentsline {section}{\numberline {3.1}SimGrid}{22}{section.3.1}
+\contentsline {section}{\numberline {3.2}NS-3}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}ECOFEN Module}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}FlowMonitor Module}{25}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Other tools}{26}{section.3.3}
+\contentsline {chapter}{\numberline {4}Methods}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Common Approaches}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}Our Approach}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Validating ECOFEN}{31}{section.4.3}
+\contentsline {subsubsection}{\numberline {4.3.0.1}Validating the Linear Model}{32}{subsubsection.4.3.0.1}
+\contentsline {subsubsection}{\numberline {4.3.0.2}Validating the Complete Model}{34}{subsubsection.4.3.0.2}
+\contentsline {chapter}{\numberline {5}Implementing flow-level model}{39}{chapter.5}
+\contentsline {chapter}{\numberline {6}Result}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Experiment Setup}{43}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}General ECOFEN related setup}{43}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}General SimGrid related setup}{44}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Accuracy Validation}{44}{section.6.2}
+\contentsline {section}{\numberline {6.3}Scalability Validation}{45}{section.6.3}
+\contentsline {chapter}{\numberline {7}Discussion}{49}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusions}{50}{chapter.8}

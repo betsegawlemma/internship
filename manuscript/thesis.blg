@@ -27,6 +27,8 @@ A bad cross reference---entry "DBLP:conf/valuetools/CarneiroFR09"
 refers to entry "DBLP:conf/valuetools/2009", which doesn't exist
 A bad cross reference---entry "DBLP:conf/wowmom/OrgerieLLL11"
 refers to entry "DBLP:conf/wowmom/2011", which doesn't exist
+A bad cross reference---entry "DBLP:conf/ccgrid/QuinsonRT12"
+refers to entry "DBLP:conf/ccgrid/2012", which doesn't exist
 A bad cross reference---entry "DBLP:conf/cloudnet/CorneaOL14"
 refers to entry "DBLP:conf/cloudnet/2014", which doesn't exist
 A bad cross reference---entry "DBLP:conf/icc/WeingartnerLW09"
@@ -47,45 +49,46 @@ Warning--I didn't find a database entry for "DBLP:conf/cloudnet/2014"
 Warning--I didn't find a database entry for "DBLP:conf/icc/2009"
 Warning--I didn't find a database entry for "DBLP:conf/aina/2010"
 Warning--I didn't find a database entry for "DBLP:conf/nsdi/2008"
-You've used 33 entries,
+Warning--I didn't find a database entry for "DBLP:conf/ccgrid/2012"
+You've used 34 entries,
             2253 wiz_defined-function locations,
-            772 strings with 13755 characters,
-and the built_in function-call counts, 13760 in all, are:
-= -- 1316
-> -- 736
+            780 strings with 14087 characters,
+and the built_in function-call counts, 14236 in all, are:
+= -- 1364
+> -- 753
 < -- 0
-+ -- 313
-- -- 268
-* -- 1101
-:= -- 2159
-add.period$ -- 103
-call.type$ -- 33
-change.case$ -- 230
++ -- 320
+- -- 274
+* -- 1132
+:= -- 2224
+add.period$ -- 106
+call.type$ -- 34
+change.case$ -- 236
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 492
-empty$ -- 1045
-format.name$ -- 268
-if$ -- 2881
+cite$ -- 34
+duplicate$ -- 516
+empty$ -- 1087
+format.name$ -- 274
+if$ -- 2990
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 33
-newline$ -- 170
-num.names$ -- 66
-pop$ -- 275
+int.to.str$ -- 34
+missing$ -- 34
+newline$ -- 175
+num.names$ -- 68
+pop$ -- 285
 preamble$ -- 1
-purify$ -- 199
+purify$ -- 204
 quote$ -- 0
-skip$ -- 333
+skip$ -- 352
 stack$ -- 0
-substring$ -- 882
-swap$ -- 158
+substring$ -- 919
+swap$ -- 168
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 128
+type$ -- 132
 warning$ -- 0
-while$ -- 133
-width$ -- 35
-write$ -- 336
-(There were 13 error messages)
+while$ -- 138
+width$ -- 36
+write$ -- 346
+(There were 14 error messages)

@@ -155,6 +155,13 @@
   Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca, Italy, 20-24 June,
   2011\/} (2011), pp.~1--6.
 
+\bibitem{DBLP:conf/ccgrid/QuinsonRT12}
+{\sc Quinson, M., Rosa, C.~D., and Thiery, C.}
+\newblock Parallel simulation of peer-to-peer systems.
+\newblock In {\em 12th {IEEE/ACM} International Symposium on Cluster, Cloud and
+  Grid Computing, CCGrid 2012, Ottawa, Canada, May 13-16, 2012\/} (2012),
+  pp.~668--675.
+
 \bibitem{ruxton2006unequal}
 {\sc Ruxton, G.~D.}
 \newblock The unequal variance t-test is an underused alternative to student's
