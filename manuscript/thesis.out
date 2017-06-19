@@ -25,16 +25,12 @@
 \BOOKMARK [2][-]{subsubsection.4.3.0.1}{4.3.0.1 Validating the Linear Model}{section.4.3}% 25
 \BOOKMARK [3][-]{subsubsection.4.3.0.2}{4.3.0.2 Validating the Complete Model}{subsubsection.4.3.0.1}% 26
 \BOOKMARK [0][]{chapter.5}{5 Implementing flow-level model}{}% 27
-\BOOKMARK [0][]{chapter.6}{6 Evaluation}{}% 28
+\BOOKMARK [0][]{chapter.6}{6 Result}{}% 28
 \BOOKMARK [1][-]{section.6.1}{6.1 Experiment Setup}{chapter.6}% 29
 \BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 General ECOFEN related setup}{section.6.1}% 30
 \BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 General SimGrid related setup}{section.6.1}% 31
 \BOOKMARK [1][-]{section.6.2}{6.2 Accuracy Validation}{chapter.6}% 32
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Effect of platform size on accuracy}{section.6.2}% 33
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Effect of data size on accuracy}{section.6.2}% 34
-\BOOKMARK [1][-]{section.6.3}{6.3 Scalability Validation}{chapter.6}% 35
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Runtime}{section.6.3}% 36
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Peak Memory usage}{section.6.3}% 37
-\BOOKMARK [1][-]{section.6.4}{6.4 Simulating large-scale network}{chapter.6}% 38
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 39
-\BOOKMARK [0][]{chapter.8}{8 Conclusions}{}% 40
+\BOOKMARK [1][-]{section.6.3}{6.3 Scalability Validation}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.4}{6.4 Simulating large-scale network}{chapter.6}% 34
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 35
+\BOOKMARK [0][]{chapter.8}{8 Conclusions}{}% 36

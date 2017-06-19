@@ -1,4 +1,4 @@
-\chapter{Evaluation}
+\chapter{Result}
 \label{chapter:evaluation}
 In this chapter we present the accuracy and the scalability experiments we performed to evaluate the flow-level implementation. As we outlined in our method chapter, we compare our implementation with ECOFEN.  
 \section{Experiment Setup}
@@ -19,16 +19,114 @@ SimGrid's interface to NS-3 will set these bandwidth and latency values, togethe
 
 \section{Accuracy Validation}
 
-For accuracy validation we did two sets of experiments. In the first set, our purpose is two investigate the accuracy of energy consumption estimation difference between ECOFEN and the flow-level model when the size of platform changes. In SimGrid case which means when the number of Links change. In ECOFEN case, when the number of Nodes, NetDevices and the connection between them change. For this experiment we kept the number of flows and the bytes size fixed but increase the number of Links. In the second set, on the other hand, our purpose is to study the difference between the estimated energy consumption value between ECOFEN and SimGrid when the data size or flow change while keeping the number of links fixed.
+For accuracy validation we did two sets of experiments. In the first set, our purpose was to investigate the accuracy of energy consumption estimation difference between ECOFEN and the flow-level model when the size of platform changes. In SimGrid case which means when the number of Links change. In ECOFEN case, when the number of Nodes, NetDevices and the connection between them change. For this experiment we kept the number of flows and the bytes size fixed but increase the number of Links. In the second set, on the other hand, our purpose is to study the difference between the estimated energy consumption value between ECOFEN and SimGrid when the data size or flow change while keeping the number of links fixed. Table~\ref{table:accuracyscenarios} shows all the scenarios we have tested and Figure~\ref{fig:sgvsns3scenario} shows the energy consumption prediction behavior of the implemented model and ECOFEN's model for all of the scenarios summarized in Table~\ref{table:accuracyscenarios}.
+\begin{table}
+	\begin{tabular}{|>{\centering\arraybackslash}m{1.6cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{1.6cm}|} 
+		\hline 
+	\textbf{Scenario} &	\textbf{Number of Links} & \textbf{Number of Flows} & \textbf{Data size(MB)} & \textbf{Bandwidth (Mbps)}& \textbf{Latency (ms)}\\ 
+		\hline 
+		1L1F&1 & 1 &         [20,500] &         10 &  10\\
+		\hline
+		1L2F&1 &2&        [20,500] &          10 &  10\\ 
+		\hline
+		1L4F&1&	4 &        [10,100] &        10&10\\ 
+		\hline	 
+		3L1F&3&	1 &       [20,200] &          10&  10\\ 
+		\hline
+		3L2F&3&	2 &       [20,100] &          10&  10\\ 
+		\hline
+	\end{tabular} 
+	\caption{Scenarios tested for accuracy validation of the implemented flow-level model against ECOFEN. In the first column L stands for Link and F stands for Flow, hence 1L1F stands for one-link/one-flow scenario}
+	\label{table:accuracyscenarios}
+\end{table}
 
-\subsection{Effect of platform size on accuracy}
+In order to compare the energy consumption prediction accuracy of our flow-level model compared to the packet-level model of ECOFEN, we employed the unequal variance t-test method (a.k.a Welch's t-test) as suggested in \cite{ruxton2006unequal}. The reason for choosing this test is that for our data sets obtained from the two simulators, we cannot assume equal variance, as the two data sets are independent. Table~\ref{table:welchtest} contains the statistics obtained from this test using R's built in Welch t-test function. 
 
-\subsection{Effect of data size on accuracy}
+\begin{figure}[ht]
+	\centering
+	\subfigure[1 Link 1 Flow]{
+		\includegraphics[width=0.4\linewidth]{images/ex11_energy_sg_vs_ns3}
+		\label{fig:1l1f}
+	}%
+\centering
+	\subfigure[1 Link 2 Flows]{
+		\includegraphics[width=0.4\linewidth]{images/ex12_energy_sg_vs_ns3}
+		\label{fig:1l2f}
+	}%
+	
+	\subfigure[1 Link 4 Flows]{
+		\includegraphics[width=0.4\linewidth]{images/ex10_energy_sg_vs_ns3}
+		\label{fig:1l4f}
+	}%
+\centering
+	\subfigure[3 Link 1 Flows]{
+		\includegraphics[width=0.4\linewidth]{images/ex13_energy_sg_vs_ns3}
+		\label{fig:3l1f}
+	}%
+
+	\subfigure[3 Link 2 Flows]{
+			\includegraphics[width=0.4\linewidth]{images/ex15_energy_sg_vs_ns3}
+			\label{fig:3l2f}
+		}%
+	\caption{Predicted energy consumption comparison of ECOFEN (blue dots) and SimGrid (orange dots) as a function of transferred bytes for different path length and flow amount}
+	\label{fig:sgvsns3scenario}
+\end{figure}
+
+\begin{table}
+	\begin{tabular}{|>{\centering\arraybackslash}m{1.6cm}|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{3.0cm}|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1.6cm}|} 
+		\hline 
+		\textbf{Scenario} &	\textbf{Mean of ECOFEN}&\textbf{Mean of SimGrid} & \textbf{CI  of Difference in mean} & \textbf{P-value}& \textbf{\% of Difference}\\ 
+		\hline 
+		1L1F&4837.2&4869.6&[-1156.3,1091.5]&0.9544&0.283\\
+		\hline
+		1L2F& 9672.6&9739.0& [-2314.2,2181.3]&0.9532&0.295\\ 
+		\hline
+		1L4F&5250.8&5286.9& [-720.10,647.90]&0.9169&0.297\\ 
+		\hline	 
+		3L1F&6804.9&6828.8& [-1024.9,977.1]&0.9622&0.124\\ 
+		\hline
+		3L2F&7896.6& 7931.9& [-1061.4,990.6]&0.9457&0.168\\ 
+		\hline
+	\end{tabular} 
+	\caption{Unequal variance t-test statistics obtained using R. The confidence interval (CI) values in the fourth column are computed for the difference of the two energy consumption estimations and the last column values are obtained from mean log error as explained in \cite{DBLP:journals/tomacs/VelhoSCL13}}
+	\label{table:welchtest}
+\end{table}
   
 \section{Scalability Validation}
+For validating the scalability of the implemented flow-level model, we run again two sets of experiments. In the first set our goal was to investigate the scalability of the model when the path length increases. For these experiments we used path length values of 1, 2, 4 and 6. We fixed the amount of flow at 2 and the data size at 100 MB. In the second set we wished to see the scalability as the data size increases. In this case we kept the path length and the amount of flow at 2 but varied the data size randomly between 10 and 50 MB. The total number of data size values was 13. 
 
-\subsection{Runtime}
+Both of these experiments were carried out using the Grid'5000 testbed, supported by a scientific interest group hosted by Inria and including CNRS, RENATER and several Universities as well as other organizations\footnote{https://www.grid5000.fr/mediawiki/index.php/Grid5000:UsagePolicy}. The machine we used is SUN FIRE X2270 which have Intel Xeon X5570 2.93 Ghz 2 CPUs, 4 cores per CPU and 24 GB RAM running Debian version 8 (jessie) operating system.
 
-\subsection{Peak Memory usage}
+For each set of experiments we used the Debian command, /usr/bin/time, to collect simulation run time and peak memory usage data. We run each experiment with in each set ten times i.e., 10 run for each link in the first set and 10 run for each data size in the second set. Figure\ref{fig:scallinks} shows the runtime and memory usage comparison as the path length increases. Figure~\ref{fig:scaldata}, on the other hand, shows the runtime and peak memory usage comparison as the data size increases.
 
+\begin{figure}[ht]
+	\centering
+	\subfigure[Runtime]{
+		\includegraphics[width=0.5\linewidth]{images/ex16_linksize_sg_vs_ns3}
+		\label{fig:lnkruntime}
+	}%
+	\centering
+	\subfigure[Peak Memory Usage]{
+		\includegraphics[width=0.5\linewidth]{images/ex16_linksizeM_sg_vs_ns3}
+		\label{fig:lnkmem}
+	}%
+	\caption{Run time and peak memory usage comparison of ECOFEN and the flow-level model as the path length increases. In the figure the confidence interval for each experiment is also shown as a bar}
+	\label{fig:scallinks}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\subfigure[Runtime]{
+		\includegraphics[width=0.4\linewidth]{images/ex21_datasize_sg_vs_ns3}
+		\label{fig:datruntime}
+	}%
+	\centering
+	\subfigure[Peak Memory Usage]{
+		\includegraphics[width=0.4\linewidth]{images/ex21_DataSizeM_sg_vs_ns3}
+		\label{fig:datmem}
+	}%
+	\caption{Run time and peak memory comparison of ECOFEN and the flow-level model as the data size increases. In the figure the confidence interval for each experiment is also shown as a bar}
+	\label{fig:scaldata}
+\end{figure}
 \section{Simulating large-scale network}
+

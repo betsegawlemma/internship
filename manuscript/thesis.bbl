@@ -155,6 +155,12 @@
   Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca, Italy, 20-24 June,
   2011\/} (2011), pp.~1--6.
 
+\bibitem{ruxton2006unequal}
+{\sc Ruxton, G.~D.}
+\newblock The unequal variance t-test is an underused alternative to student's
+  t-test and the mann--whitney {U} test.
+\newblock {\em Behavioral Ecology 17}, 4 (2006), 688--690.
+
 \bibitem{schulte2012multi}
 {\sc Schulte, E., Davison, D., Dye, T., Dominik, C., et~al.}
 \newblock A multi-language computing environment for literate programming and

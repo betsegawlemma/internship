@@ -2453,7 +2453,7 @@ done
 <<format_theme>>
    ex10_ns3 = read.csv("data/ex10_ns3_1L4F.csv", header=T)
    ex10_sg = read.csv("data/ex10_sg_1L4F.csv", header=T)
-   sg_ns3 = merge(ex10_ns3,ex10_sg, by=c("BytesSend"))
+   sg_ns3 = cbind(ex10_ns3,ex10_sg, by=c("BytesSend"))
    attach(sg_ns3)
    ggplot(sg_ns3,aes(x=BytesSend))+
    geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
@@ -2473,7 +2473,8 @@ done
    sg_ns3 = merge(ex10_ns3,ex10_sg, by=c("BytesSend"))
    attach(sg_ns3)
    t.test(TotalEnergy,SgTotalEnergy,paired=FALSE,conf.level=0.95)
-   cat("Difference in percentage is:",(5250.815 - 5485.110)/100)
+   mean(log10(TotalEnergy)-log10(SgTotalEnergy))
+  (exp(mean(log10(SgTotalEnergy)-log10(TotalEnergy)))) - 1
 #+END_SRC
 
 #+RESULTS:
@@ -2490,7 +2491,8 @@ sample estimates:
 mean of x mean of y 
  5250.815  5286.928 
 
-Difference in percentage is: -2.34295
+[1] -0.002968538
+[1] 0.002972948
 #+end_example
 
 **** Experiment 11: Flows 1, Links 1, with TCP-version CM02, bw 10Mbps, lat 10ms
@@ -2565,8 +2567,7 @@ TRANSFER_TIME_COL = 5
 # data variable holds one line of data formated as follows 
 # BytesSend,AveragePower,TotalTimeTaken,TotalEnergy
 data = []
-done = False
-traffic = 0.0
+done = False traffic = 0.0
 
 total_power = 0.0 
 average_power = 0.0 
@@ -3123,13 +3124,13 @@ for i in range(0, 8, 2):
    ns3_err = summarySE(sg_ns3, measurevar="ElapsedSecns3", groupvars="LinkSize")
    sg_err = summarySE(sg_ns3, measurevar="ElapsedSecsg", groupvars="LinkSize")
    pd = position_dodge(0.1)
-   ggplot(sg_ns3,aes(x=LinkSize))+
-   geom_point(aes(y = ElapsedSecns3, colour = "ECOFEN"),size=1.3)+
-   geom_point(aes(y = ElapsedSecsg, colour = "SimGrid"),size=1.3)+
+   ggplot(sg_ns3,aes(x=LinkSize,y=ElapsedSecns3))+
+   geom_line(aes(y = ElapsedSecns3, colour = "ECOFEN"),size=1.3)+
+   geom_line(aes(y = ElapsedSecsg, colour = "SimGrid"),size=1.3)+
    geom_errorbar(aes(ymin=ElapsedSecns3-ns3_err$ci,ymax=ElapsedSecns3+ns3_err$ci),width=0.1,colour="brown")+
    geom_errorbar(aes(ymin=ElapsedSecsg-sg_err$ci,ymax=ElapsedSecsg+sg_err$ci),width=0.1,colour="brown")+
    ylab(label="Simulation time (seconds)")+
-   xlab(label="Path size between SRC and DST nodes")+
+   xlab(label="Path length between SRC and DST nodes")+
    scale_colour_Publication()+
    theme_Publication()
 #+END_SRC
@@ -3137,33 +3138,13 @@ for i in range(0, 8, 2):
 #+RESULTS:
 [[file:figures/ex16_linksize_sg_vs_ns3.png]]
 
-#+BEGIN_SRC R  :results output 
-library(ggplot2)
-library(gridExtra)
-library(Rmisc)
-ex16_ns3 = read.csv("data/perfLink1_ns3_F2.csv", header=T)
-   ex16_sg = read.csv("data/perfLink1_sg_F2.csv", header=T)
-   ex16_sg$LinkSize=NULL
-   sg_ns3 = cbind(ex16_ns3,ex16_sg)
-   attach(sg_ns3)
-   ns3_err = summarySE(sg_ns3, measurevar="ElapsedSecns3", groupvars=c("LinkSize"))
-   sg_err = summarySE(sg_ns3, measurevar="ElapsedSecsg", groupvars=c("LinkSize"))
-
-sg_err
-
-#+END_SRC
-#+RESULTS:
-:   LinkSize  N ElapsedSecsg          sd       se          ci
-: 1        1 10        0.033 0.009486833 0.003000 0.006786471
-: 2        2 10        0.030 0.000000000 0.000000 0.000000000
-: 3        4 10        0.041 0.034785054 0.011000 0.024883729
-: 4        6  4        0.355 0.203387971 0.101694 0.323635648
-
 ***** Compare the peak memory usage performance
 #+BEGIN_SRC R :results output graphics :file figures/ex16_linksizeM_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
    ex16_ns3 = read.csv("data/perfLink1_ns3_F2.csv", header=T)
+   ex16_ns3$PeakMemns3=ex16_ns3$PeakMemns3*(10^(-6))
    ex16_sg = read.csv("data/perfLink1_sg_F2.csv", header=T)
+   ex16_sg$PeakMemsg=ex16_sg$PeakMemsg*(10^(-6))
    sg_ns3 = cbind(ex16_ns3,ex16_sg)
    attach(sg_ns3)
    ns3_err = summarySE(sg_ns3, measurevar="PeakMemns3", groupvars=c("LinkSize"))
@@ -3174,8 +3155,8 @@ sg_err
    geom_line(aes(y = PeakMemsg, colour = "SimGrid"),size=1.3)+
    geom_errorbar(aes(ymin=PeakMemns3-ns3_err$ci,ymax=PeakMemns3+ns3_err$ci),width=0.1,colour="brown",position=pd)+
    geom_errorbar(aes(ymin=PeakMemsg-sg_err$ci,ymax=PeakMemsg+sg_err$ci),width=0.1,colour="brown",position=pd)+
-   ylab(label="Peak Memory Usage in Kbytes")+
-   xlab(label="Number of Links between SRC and DST nodes")+
+   ylab(label="Peak Memory Usage in MB")+
+   xlab(label="Path length between SRC and DST nodes")+
    scale_colour_Publication()+
    theme_Publication()
 #+END_SRC
@@ -3466,8 +3447,8 @@ for i in dataRange:
    sg_err = summarySE(sg_ns3, measurevar="ElapsedSecsg", groupvars="DataSize")
    pd = position_dodge(0.1)
    ggplot(sg_ns3,aes(x=DataSize))+
-   geom_point(aes(y = ElapsedSecns3, colour = "ECOFEN"),size=1.3)+
-   geom_point(aes(y = ElapsedSecsg, colour = "SimGrid"),size=1.3)+
+   geom_line(aes(y = ElapsedSecns3, colour = "ECOFEN"),size=1.3)+
+   geom_line(aes(y = ElapsedSecsg, colour = "SimGrid"),size=1.3)+
    geom_errorbar(aes(ymin=ElapsedSecns3-ns3_err$ci,ymax=ElapsedSecns3+ns3_err$ci),width=0.1,colour="brown")+
    geom_errorbar(aes(ymin=ElapsedSecsg-sg_err$ci,ymax=ElapsedSecsg+sg_err$ci),width=0.1,colour="brown")+
    ylab(label="Simulation time (seconds)")+
@@ -3482,9 +3463,11 @@ for i in dataRange:
 ***** Compare the peak memory usage performance
 #+BEGIN_SRC R :results output graphics :file figures/ex21_DataSizeM_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
-ex21_ns3 = read.csv("data/perfDat_ns3_L2F2.csv", header=T)
+   ex21_ns3 = read.csv("data/perfDat_ns3_L2F2.csv", header=T)
+   ex21_ns3$PeakMemns3=ex21_ns3$PeakMemns3*(10^(-6))
    ex21_sg = read.csv("data/perfDat_sg_L2F2.csv", header=T)
    ex21_sg$DataSize=NULL
+   ex21_sg$PeakMemsg=ex21_sg$PeakMemsg*(10^(-6))
    sg_ns3 = cbind(ex21_ns3,ex21_sg)
    attach(sg_ns3)
    ns3_err = summarySE(sg_ns3, measurevar="PeakMemns3", groupvars=c("DataSize"))
@@ -3495,7 +3478,7 @@ ex21_ns3 = read.csv("data/perfDat_ns3_L2F2.csv", header=T)
    geom_line(aes(y = PeakMemsg, colour = "SimGrid"),size=1.3)+
    geom_errorbar(aes(ymin=PeakMemns3-ns3_err$ci,ymax=PeakMemns3+ns3_err$ci),width=0.1,colour="brown",position=pd)+
    geom_errorbar(aes(ymin=PeakMemsg-sg_err$ci,ymax=PeakMemsg+sg_err$ci),width=0.1,colour="brown",position=pd)+
-   ylab(label="Peak Memory Usage in Kbytes")+
+   ylab(label="Peak Memory Usage in MB")+
    xlab(label="DataSize (Mbytes)")+
    scale_colour_Publication()+
    theme_Publication()
@@ -3503,6 +3486,59 @@ ex21_ns3 = read.csv("data/perfDat_ns3_L2F2.csv", header=T)
 
 #+RESULTS:
 [[file:figures/ex21_DataSizeM_sg_vs_ns3.png]]
+** Week 3 June
+**** Result presentation as Mean Log Error and Max Log Error format 
+#+BEGIN_SRC R :results output graphics :file figures/logerror_sg_vs_ns3.png :exports both :noweb yes
+<<format_theme>>
+   # 1L1F
+   ex11_ns3 = read.csv("data/ex11_ns3_1L1F.csv", header=T)
+   ex11_sg = read.csv("data/ex11_sg_1L1F.csv", header=T)
+   ex11 = merge(ex11_ns3,ex11_sg, by=c("BytesSend"))
+   ex11M=mean(log10(ex11$TotalEnergy)-log10(ex11$SgTotalEnergy))
+   ex11P=((exp(mean(log10(ex11$SgTotalEnergy)-log10(ex11$TotalEnergy)))) - 1)*100
+  #t.test(ex11$TotalEnergy,ex11$SgTotalEnergy,paired=FALSE,conf.level=0.95)
+   # 1L2F
+   ex12_ns3 = read.csv("data/ex12_ns3_1L2FL.csv", header=T)
+   ex12_sg = read.csv("data/ex12_sg_1L2F.csv", header=T)
+   ex12 = merge(ex12_ns3,ex12_sg, by=c("BytesSend"))
+   ex12M=mean(log10(ex12$TotalEnergy)-log10(ex12$SgTotalEnergy))
+   ex12P=((exp(mean(log10(ex12$SgTotalEnergy)-log10(ex12$TotalEnergy)))) - 1)*100
+  #t.test(ex12$TotalEnergy,ex12$SgTotalEnergy,paired=FALSE,conf.level=0.95)
+   # 1L4F
+   ex10_ns3 = read.csv("data/ex10_ns3_1L4F.csv", header=T)
+   ex10_sg = read.csv("data/ex10_sg_1L4F.csv", header=T)
+   ex10 = merge(ex10_ns3,ex10_sg,by=c("BytesSend"))
+   ex10M=mean(log10(ex10$TotalEnergy)-log10(ex10$SgTotalEnergy))
+   ex10P=((exp(mean(log10(ex10$SgTotalEnergy)-log10(ex10$TotalEnergy)))) - 1)*100
+  #t.test(ex10$TotalEnergy,ex10$SgTotalEnergy,paired=FALSE,conf.level=0.95)
+   # 3L1F
+   ex13_ns3 = read.csv("data/ex13_ns3_3L1FL.csv", header=T)
+   ex13_sg = read.csv("data/ex13_sg_3L1F.csv", header=T)
+   ex13 = merge(ex13_ns3,ex13_sg, by=c("BytesSend"))
+   ex13M=mean(log10(ex13$TotalEnergy)-log10(ex13$SgTotalEnergy))
+   ex13P=((exp(mean(log10(ex13$SgTotalEnergy)-log10(ex13$TotalEnergy)))) - 1)*100
+  #t.test(ex13$TotalEnergy,ex13$SgTotalEnergy,paired=FALSE,conf.level=0.95)
+   # 3L2F
+   ex15_ns3 = read.csv("data/ex15_ns3_3L2FL.csv", header=T)
+   ex15_sg = read.csv("data/ex15_sg_3L2F.csv", header=T)
+   ex15 = merge(ex15_ns3,ex15_sg, by=c("BytesSend"))
+   ex15M=mean(log10(ex15$TotalEnergy)-log10(ex15$SgTotalEnergy))
+   ex15P=((exp(mean(log10(ex15$SgTotalEnergy)-log10(ex15$TotalEnergy)))) - 1)*100
+  #t.test(ex15$TotalEnergy,ex15$SgTotalEnergy,paired=FALSE,conf.level=0.95)
+
+  logErr = data.frame(Scenarios=c("1L1F","1L2F","1L4F","3L1F","3L2F"),
+                      logError=c(ex11M,ex12M,ex10M,ex13M,ex15M))
+   attach(logErr)
+   ggplot(logErr,aes(x=Scenarios,y=logError))+
+   geom_point()+
+   ylab(label="Mean Log Error")+
+   xlab(label="Scenarios")+
+   scale_colour_Publication()+
+   theme_Publication()
+#+END_SRC
+
+#+RESULTS:
+[[file:figures/logerror_sg_vs_ns3.png]]
 
 * Development
    - SimGrid HostEnergy plugin
