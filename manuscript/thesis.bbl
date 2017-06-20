@@ -7,14 +7,14 @@
 
 \bibitem{DBLP:series/synthesis/2013Barroso}
 {\sc Barroso, L.~A., Clidaras, J., and H{\"{o}}lzle, U.}
-\newblock {\em The Datacenter as a Computer: An Introduction to the Design of
-  Warehouse-Scale Machines, Second Edition}.
+\newblock {\em {T}he {D}atacenter as a {C}omputer: {A}n {I}ntroduction to the
+  {D}esign of {W}arehouse-{S}cale {M}achines, {S}econd {E}dition}.
 \newblock Synthesis Lectures on Computer Architecture. Morgan {\&} Claypool
   Publishers, 2013.
 
 \bibitem{DBLP:journals/computer/BarrosoH07}
 {\sc Barroso, L.~A., and H{\"{o}}lzle, U.}
-\newblock The case for energy-proportional computing.
+\newblock The {C}ase for {E}nergy-{P}roportional {C}omputing.
 \newblock {\em {IEEE} Computer 40}, 12 (2007), 33--37.
 
 \bibitem{DBLP:journals/comcom/BeisterDAK14}
@@ -24,24 +24,29 @@
 
 \bibitem{DBLP:journals/comsur/BollaBDC11}
 {\sc Bolla, R., Bruschi, R., Davoli, F., and Cucchietti, F.}
-\newblock Energy efficiency in the future internet: {A} survey of existing
-  approaches and trends in energy-aware fixed network infrastructures.
-\newblock {\em {IEEE} Communications Surveys and Tutorials 13}, 2 (2011),
-  223--244.
+\newblock Energy {E}fficiency in the {F}uture {I{}nternet: {A} {S}urvey of
+  {E}xisting {A}pproaches and {T}rends in {E}nergy-{A}ware {F}ixed {N}etwork
+  {I}nfrastructures}, journal = {{IEEE} Communications Surveys and Tutorials},
+  volume = {13}, number = {2}, pages = {223--244}, year = {2011}, url =
+  {http://dx.doi.org/10.1109/SURV.2011.071410.00073}, doi =
+  {10.1109/SURV.2011.071410.00073}, timestamp = {Mon, 21 Mar 2016 15:17:19
+  +0100}, biburl =
+  {http://dblp.uni-trier.de/rec/bib/journals/comsur/BollaBDC11}, bibsource =
+  {dblp computer science bibliography, http://dblp.org}.
 
 \bibitem{DBLP:journals/ijhpca/BolzeCCDDJJLLMMNPQRTT06}
 {\sc Bolze, R., Cappello, F., Caron, E., Dayd{\'{e}}, M.~J., Desprez, F.,
   Jeannot, E., J{\'{e}}gou, Y., Lanteri, S., Leduc, J., Melab, N., Mornet, G.,
   Namyst, R., Primet, P., Qu{\'{e}}tier, B., Richard, O., Talbi, E., and
   Touche, I.}
-\newblock Grid'5000: {A} large scale and highly reconfigurable experimental
-  grid testbed.
+\newblock Grid'5000: {A} {L}arge {S}cale {A}nd {H}ighly {R}econfigurable
+  {E}xperimental grid testbed.
 \newblock {\em {IJHPCA} 20}, 4 (2006), 481--494.
 
 \bibitem{DBLP:conf/valuetools/CarneiroFR09}
 {\sc Carneiro, G., Fortuna, P., and Ricardo, M.}
-\newblock Flowmonitor: {A} network monitoring framework for the network
-  simulator 3 {(NS-3)}.
+\newblock Flowmonitor: {A} network monitoring framework for the {N}etwork
+  {S}imulator 3 {(NS-3)}.
 \newblock In {\em 4th International Conference on Performance Evaluation
   Methodologies and Tools, {VALUETOOLS} '09, Pisa, Italy, October 20-22,
   2009\/} (2009), p.~1.
@@ -60,7 +65,7 @@
 
 \bibitem{DBLP:conf/cloudnet/CorneaOL14}
 {\sc Cornea, B.~F., Orgerie, A., and Lef{\`{e}}vre, L.}
-\newblock Studying the energy consumption of data transfers in clouds: {T}he
+\newblock Studying the energy consumption of data transfers in {C}louds: {T}he
   {E}cofen approach.
 \newblock In {\em 3rd {IEEE} International Conference on Cloud Networking,
   CloudNet 2014, Luxembourg, Luxembourg, October 8-10, 2014\/} (2014),
@@ -68,7 +73,7 @@
 
 \bibitem{DBLP:journals/comsur/DayarathnaWF16}
 {\sc Dayarathna, M., Wen, Y., and Fan, R.}
-\newblock Data center energy consumption modeling: {A} survey.
+\newblock {D}ata {C}enter {E}nergy {C}onsumption {M}odeling: {A} {S}urvey.
 \newblock {\em {IEEE} Communications Surveys and Tutorials 18}, 1 (2016),
   732--794.
 
@@ -80,7 +85,7 @@
 
 \bibitem{DBLP:conf/IEEEcloud/FiandrinoKBZ15}
 {\sc Fiandrino, C., Kliazovich, D., Bouvry, P., and Zomaya, A.~Y.}
-\newblock Performance metrics for data center communication systems.
+\newblock Performance {M}etrics for {D}ata {C}enter {C}ommunication {S}ystems.
 \newblock In {\em 8th {IEEE} International Conference on Cloud Computing,
   {CLOUD} 2015, New York City, NY, USA, June 27 - July 2, 2015\/} (2015),
   pp.~98--105.
@@ -96,25 +101,26 @@
 \bibitem{DBLP:journals/comcom/HeddeghemLLCPD14}
 {\sc Heddeghem, W.~V., Lambert, S., Lannoo, B., Colle, D., Pickavet, M., and
   Demeester, P.}
-\newblock Trends in worldwide {ICT} electricity consumption from 2007 to 2012.
+\newblock {T}rends in worldwide {ICT} electricity consumption from 2007 to
+  2012.
 \newblock {\em Computer Communications 50\/} (2014), 64--76.
 
 \bibitem{DBLP:books/daglib/0076234}
 {\sc Jain, R.}
-\newblock {\em The art of computer systems performance analysis - techniques
+\newblock {\em {T}he art of computer systems performance analysis - techniques
   for experimental design, measurement, simulation, and modeling}.
 \newblock Wiley professional computing. Wiley, 1991.
 
 \bibitem{DBLP:journals/tjs/KliazovichBK12}
 {\sc Kliazovich, D., Bouvry, P., and Khan, S.~U.}
-\newblock Greencloud: {A} packet-level simulator of energy-aware cloud
+\newblock {G}reen{C}loud: {A} packet-level simulator of energy-aware cloud
   computing data centers.
 \newblock {\em The Journal of Supercomputing 62}, 3 (2012), 1263--1283.
 
 \bibitem{DBLP:conf/infocom/LiuFGKT01}
 {\sc Liu, B., Figueiredo, D.~R., Guo, Y., Kurose, J.~F., and Towsley, D.~F.}
-\newblock A study of networks simulation efficiency: Fluid simulation vs.
-  packet-level simulation.
+\newblock A {S}tudy of {N}etworks {S}imulation {E}fficiency: {F}luid
+  {S}imulation vs. {P}acket-level simulation.
 \newblock In {\em Proceedings {IEEE} {INFOCOM} 2001, The Conference on Computer
   Communications, Twentieth Annual Joint Conference of the {IEEE} Computer and
   Communications Societies, Twenty years into the communications odyssey,
@@ -122,7 +128,7 @@
 
 \bibitem{ns3}
 {\sc LLC, M.}
-\newblock {NS-3} simulator.
+\newblock {NS-3} {S}imulator.
 \newblock \url{https://www.nsnam.org}.
 \newblock {O}nline; accessed 2017-02-20.
 
@@ -134,14 +140,15 @@
 
 \bibitem{DBLP:conf/networking/MahadevanSBR09}
 {\sc Mahadevan, P., Sharma, P., Banerjee, S., and Ranganathan, P.}
-\newblock A power benchmarking framework for network devices.
+\newblock A {P}ower {B}enchmarking {F}ramework for {N}etwork {D}evices.
 \newblock In {\em {NETWORKING} 2009, 8th International {IFIP-TC} 6 Networking
   Conference, Aachen, Germany, May 11-15, 2009. Proceedings\/} (2009),
   pp.~795--808.
 
 \bibitem{DBLP:conf/nsdi/NedevschiPIRW08}
 {\sc Nedevschi, S., Popa, L., Iannaccone, G., Ratnasamy, S., and Wetherall, D.}
-\newblock Reducing network energy consumption via sleeping and rate-adaptation.
+\newblock Reducing {N}etwork {E}nergy {C}onsumption via {S}leeping and
+  {R}ate-{A}daptation.
 \newblock In {\em 5th {USENIX} Symposium on Networked Systems Design {\&}
   Implementation, {NSDI} 2008, April 16-18, 2008, San Francisco, CA, USA,
   Proceedings\/} (2008), pp.~323--336.
@@ -149,23 +156,27 @@
 \bibitem{DBLP:conf/wowmom/OrgerieLLL11}
 {\sc Orgerie, A., Lef{\`{e}}vre, L., Lassous, I.~G., and L{\'{o}}pez{-}Pacheco,
   D.~M.}
-\newblock {ECOFEN:} {A}n end-to-end energy cost model and simulator for
-  evaluating power consumption in large-scale networks.
+\newblock {ECOFEN:} {A}n {E}nd-to-end energy {C}ost m{O}del and simulator {F}or
+  {E}valuating power consumption in large-scale {N}etworks.
 \newblock In {\em 12th {IEEE} International Symposium on a World of Wireless,
-  Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca, Italy, 20-24 June,
-  2011\/} (2011), pp.~1--6.
+  Mobile and Multimedia Networks, {WOWMOM} 2011, Lucca,{Italy, 20-24 June,
+  2011}, pages = {1--6}, year = {2011}, crossref = {DBLP:conf/wowmom/2011}, url
+  = {http://dx.doi.org/10.1109/WoWMoM.2011.5986203}, doi =
+  {10.1109/WoWMoM.2011.5986203}, timestamp = {Mon, 22 Sep 2014 16:50:23 +0200},
+  biburl = {http://dblp.uni-trier.de/rec/bib/conf/wowmom/OrgerieLLL11},
+  bibsource = {dblp computer science bibliography, http://dblp.org}}.
 
 \bibitem{DBLP:conf/ccgrid/QuinsonRT12}
 {\sc Quinson, M., Rosa, C.~D., and Thiery, C.}
-\newblock Parallel simulation of peer-to-peer systems.
+\newblock Parallel {S}imulation of {P}eer-to-{P}eer {S}ystems.
 \newblock In {\em 12th {IEEE/ACM} International Symposium on Cluster, Cloud and
   Grid Computing, CCGrid 2012, Ottawa, Canada, May 13-16, 2012\/} (2012),
   pp.~668--675.
 
 \bibitem{ruxton2006unequal}
 {\sc Ruxton, G.~D.}
-\newblock The unequal variance t-test is an underused alternative to student's
-  t-test and the mann--whitney {U} test.
+\newblock The unequal variance t-test is an underused alternative to
+  {S}tudent's t-test and the mann--whitney {U} test.
 \newblock {\em Behavioral Ecology 17}, 4 (2006), 688--690.
 
 \bibitem{schulte2012multi}
@@ -177,40 +188,41 @@
 \bibitem{shehabi2016united}
 {\sc Shehabi, A., Smith, S., Horner, N., Azevedo, I., Brown, R., Koomey, J.,
   Masanet, E., Sartor, D., Herrlin, M., and Lintner, W.}
-\newblock United states data center energy usage report.
+\newblock United {S}tates data center energy usage report.
 \newblock {\em Lawrence Berkeley National Laboratory, Berkeley, California.
   LBNL-1005775 Page 4\/} (2016).
 
 \bibitem{DBLP:journals/comcom/SivaramanRZSVMR14}
 {\sc Sivaraman, V., Reviriego, P., Zhao, Z., S{\'{a}}nchez{-}Maci{\'{a}}n, A.,
   Vishwanath, A., Maestro, J.~A., and Russell, C.}
-\newblock An experimental power profile of energy efficient ethernet switches.
+\newblock An experimental power profile of {E}nergy {E}fficient {E}thernet
+  switches.
 \newblock {\em Computer Communications 50\/} (2014), 110--118.
 
 \bibitem{Sivaraman}
 {\sc Sivaraman, V., Vishwanath, A., Zhao, Z., and Russell, C.}
-\newblock Profiling per-packet and per-byte energy consumption in the netfpga
-  gigabit router.
-\newblock In {\em 2011 IEEE Conference on Computer Communications Workshops
-  (INFOCOM WKSHPS)\/} (April 2011), pp.~331--336.
+\newblock Profiling per-packet and per-byte energy consumption in the {NetFPGA}
+  {G}igabit router.
+\newblock In {\em 2011 {IEEE} {C}onference on {C}omputer {C}ommunications
+  {W}orkshops ({INFOCOM WKSHPS})\/} (April 2011), pp.~331--336.
 
 \bibitem{DBLP:journals/sigops/StanisicLD15}
 {\sc Stanisic, L., Legrand, A., and Danjean, V.}
-\newblock An effective git and org-mode based workflow for reproducible
-  research.
+\newblock An {E}ffective {G}it {A}nd {O}rg-{M}ode {B}ased {W}orkflow {F}or
+  {R}eproducible {R}esearch.
 \newblock {\em Operating Systems Review 49}, 1 (2015), 61--70.
 
 \bibitem{DBLP:conf/aina/SwainHC10}
 {\sc Swain, A.~R., Hansdah, R.~C., and Chouhan, V.~K.}
-\newblock An energy aware routing protocol with sleep scheduling for wireless
-  sensor networks.
+\newblock An {E}nergy {A}ware {R}outing {P}rotocol with {S}leep {S}cheduling
+  for {W}ireless {S}ensor {N}etworks.
 \newblock In {\em 24th {IEEE} International Conference on Advanced Information
   Networking and Applications, {AINA} 2010, Perth, Australia, 20-13 April
   2010\/} (2010), pp.~933--940.
 
 \bibitem{simgrid}
 {\sc team, S.}
-\newblock {SimGrid} simulator.
+\newblock {SimGrid} {S}imulator.
 \newblock \url{http://simgrid.gforge.inria.fr/}.
 \newblock {O}nline; accessed 2017-01-20.
 
@@ -222,7 +234,7 @@
 
 \bibitem{DBLP:conf/icc/WeingartnerLW09}
 {\sc Weing{\"{a}}rtner, E., vom Lehn, H., and Wehrle, K.}
-\newblock A performance comparison of recent network simulators.
+\newblock A {P}erformance {C}omparison of {R}ecent {N}etwork {S}imulators.
 \newblock In {\em Proceedings of {IEEE} International Conference on
   Communications, {ICC} 2009, Dresden, Germany, 14-18 June 2009\/} (2009),
   pp.~1--5.

@@ -3055,21 +3055,21 @@ mean of x mean of y
 
 #+end_example
 
-**** Experiment 16: Run time and memory usage as a function of link size (bw 10Mbps, lat 10ms, data size 100 MBytes, flow 2, link range {1, 2, 4, 6, 8})
+**** Experiment 16: Run time and memory usage as a function of link size (bw 10Mbps, lat 10ms, data size 200 MBytes, flow 2, link range {1, 2, 4, 6, 8, 10})
 
 #+BEGIN_SRC bash :results silent :exports both
 #! /bin/bash
 cd /home/bamersho/bamersho/simgrid/examples/msg/energy-link
-randVal=100
+randVal=200
 bytesToSend=$((randVal * (10**6))) # traffic in MBytes
 for ((k=0; k<11; k=k+2));
  do
-    for ((j=0; j<10; j++));
+    for ((j=0; j<7 j++));
     do
        # run simgrid with /usr/bin/time
-       /usr/bin/time  -f "ElapsedTime %E ElapsedSec %e PeakMem %M AvgTotalMem %K" ./energy-link energy_consumption_${k}L_p.xml 2 ${bytesToSend} >> /home/bamersho/bamersho/data/perfLnk_sg_L${k}F2.raw 2>&1
+       /usr/bin/time  -f "ElapsedTime %E ElapsedSec %e PeakMem %M AvgTotalMem %K" ./energy-link energy_consumption_${k}L_p.xml 2 ${bytesToSend} >> /home/bamersho/bamersho/data/perfLinkZ_sg_L${k}F2.raw 2>&1
        # run ecofen with /usr/bin/time
-       /usr/bin/time  -f "ElapsedTime %E ElapsedSec %e PeakMem %M AvgTotalMem %K" ./energy-link energy_consumption_${k}L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> /home/bamersho/bamersho/data/perfLink_ns3_L${k}F2.raw 2>&1
+       /usr/bin/time  -f "ElapsedTime %E ElapsedSec %e PeakMem %M AvgTotalMem %K" ./energy-link energy_consumption_${k}L_p.xml 2 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> /home/bamersho/bamersho/data/perfLinkZ_ns3_L${k}F2.raw 2>&1
      done
 done
 #+END_SRC
@@ -3087,9 +3087,9 @@ ELAPSED_TIME_COL=1
 ELAPSED_SEC_COL=3
 PEAK_MEM_COL=5
 AVG_TOTAL_MEM_COL=7
-output_file_m = "data/perfLink1_"+version+"_F2.csv"  
-for i in range(0, 8, 2):
-    input_file_m = "data/perfLink1_"+version+"_L"+str(i)+"F2.raw" 
+output_file_m = "data/perfLinkZ_"+version+"_F2.csv"  
+for i in range(0, 12, 2):
+    input_file_m = "data/perfLinkZ_"+version+"_L"+str(i)+"F2.raw" 
     with open(input_file_m) as fe:
         for line in fe:
            if line.startswith("ElapsedTime"): 
@@ -3100,8 +3100,7 @@ for i in range(0, 8, 2):
                data.append(list[PEAK_MEM_COL])
                data.append(list[AVG_TOTAL_MEM_COL])
            if len(data) == 5:
-               with open(output_file_m,"a") as of:
-                   if header: # write the header part
+               with open(output_file_m,"a") as of: if header: # write the header part
                        h = "LinkSize, ElaspedTime"+version+", ElapsedSec"+version+", PeakMem"+version+", AvgTotalMem"+version
                        of.write("%s\n" % h )
                        header = False
@@ -3116,8 +3115,8 @@ for i in range(0, 8, 2):
 [[http://www.cookbook-r.com/Graphs/Plotting_means_and_error_bars_(ggplot2)/][How to plot error bars]]
 #+BEGIN_SRC R :results output graphics :file figures/ex16_linksize_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
-   ex16_ns3 = read.csv("data/perfLink1_ns3_F2.csv", header=T)
-   ex16_sg = read.csv("data/perfLink1_sg_F2.csv", header=T)
+   ex16_ns3 = read.csv("data/perfLinkZ_ns3_F2.csv", header=T)
+   ex16_sg = read.csv("data/perfLinkZ_sg_F2.csv", header=T)
    ex16_sg$LinkSize=NULL
    sg_ns3 = cbind(ex16_ns3,ex16_sg)
    attach(sg_ns3)
@@ -3132,6 +3131,7 @@ for i in range(0, 8, 2):
    ylab(label="Simulation time (seconds)")+
    xlab(label="Path length between SRC and DST nodes")+
    scale_colour_Publication()+
+   scale_x_continuous(breaks = round(seq(min(sg_ns3$LinkSize), max(sg_ns3$LinkSize), by =1),1)) +
    theme_Publication()
 #+END_SRC
 
@@ -3141,9 +3141,9 @@ for i in range(0, 8, 2):
 ***** Compare the peak memory usage performance
 #+BEGIN_SRC R :results output graphics :file figures/ex16_linksizeM_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
-   ex16_ns3 = read.csv("data/perfLink1_ns3_F2.csv", header=T)
+   ex16_ns3 = read.csv("data/perfLinkZ_ns3_F2.csv", header=T)
    ex16_ns3$PeakMemns3=ex16_ns3$PeakMemns3*(10^(-6))
-   ex16_sg = read.csv("data/perfLink1_sg_F2.csv", header=T)
+   ex16_sg = read.csv("data/perfLinkZ_sg_F2.csv", header=T)
    ex16_sg$PeakMemsg=ex16_sg$PeakMemsg*(10^(-6))
    sg_ns3 = cbind(ex16_ns3,ex16_sg)
    attach(sg_ns3)
@@ -3158,6 +3158,7 @@ for i in range(0, 8, 2):
    ylab(label="Peak Memory Usage in MB")+
    xlab(label="Path length between SRC and DST nodes")+
    scale_colour_Publication()+
+   scale_x_continuous(breaks = round(seq(min(sg_ns3$LinkSize), max(sg_ns3$LinkSize), by =1),1)) +
    theme_Publication()
 #+END_SRC
 
@@ -3327,6 +3328,20 @@ with open(input_file) as fe:
 
 #+RESULTS:
 [[file:figures/ex18_bw_time_sg_vs_ns3.png]]
+**** Experiment 18-1: checking simulated time vs bandwidth (1 link, 1 flow, 100 MBytes data size, bw range (10 to 500 with increment of 10)
+#+BEGIN_SRC bash :results silent :exports both 
+#! /bin/bash
+cd ~/simgrid/examples/msg/energy-link
+randVal=100
+bytesToSend=$((randVal * (10**6))) # traffic in MBytes
+for ((k=10; k<510; k=k+10)); do
+  cat energy_consumption_1L_p.xml |sed -e "s/\$B/${k}/"  > t_energy_consumption_1L_p.xml 
+  # run simgrid
+   ./energy-link t_energy_consumption_1L_p.xml 1 ${bytesToSend} >> ~/internship/data/ex18_sg_bw_tim_F1.raw 2>&1
+  # run ecofen
+   ./energy-link t_energy_consumption_1L_p.xml 1 ${bytesToSend} --NS3 --cfg=network/model:NS3 >> ~/internship/data/ex18_ns3_bw_tim_F1.raw 2>&1
+done
+#+END_SRC
 **** Experiment 19: checking simulated time vs data_size (1 link, 2 flow, bw 50Mbps, data size, data size range (10 to 200 with increment of 10)
 #+BEGIN_SRC bash :results silent :exports both 
 #! /bin/bash
@@ -3394,7 +3409,7 @@ mean of x mean of y
 
 #+end_example
 
-**** Experiment 21: Run time and memory usage as a function of data size (bw 50 Mbps, lat 10ms, data size [20,200] Mbytes, flow 2, link size 2)
+**** Experiment 21: Run time and memory usage as a function of data size (bw 10 Mbps, lat 10ms, data size [50,500] Mbytes, flow 2, link size 1)
 #+NAME: extract_perf_data1
 #+BEGIN_SRC python :results silent dir:~/internship :var version="" 
 import sys
@@ -3408,11 +3423,12 @@ data = []
 ELAPSED_TIME_COL=1
 ELAPSED_SEC_COL=3
 PEAK_MEM_COL=5
-output_file_m = "data/perfDat_"+version+"_L2F2.csv"  
+output_file_m = "data/perfDatY_"+version+"_L2F2.csv"  
 #dataRange=[101,105,106,10,16,25,32,61,71,72,81,85,86,88,90,92,97,99]
-dataRange=[10,16,21,31,32,35,36,38,40,42,47,51,56]
+#dataRange=[10,16,21,31,32,35,36,38,40,42,47,51,56]
+dataRange=[111,112,122,125,126,145,151,156,178,191,232,237,261,289,346,365,467,471,476,50,530]
 for i in dataRange:
-    input_file_m = "data/perfDat_"+version+"_T"+str(i)+"L2F2.raw" 
+    input_file_m = "data/perfDatY_"+version+"_T"+str(i)+"L2F2.raw" 
     with open(input_file_m) as fe:
         for line in fe:
            if line.startswith("ElapsedTime"): 
@@ -3438,8 +3454,8 @@ for i in dataRange:
 [[http://www.cookbook-r.com/Graphs/Plotting_means_and_error_bars_(ggplot2)/][How to plot error bars]]
 #+BEGIN_SRC R :results output graphics :file figures/ex21_datasize_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
-   ex21_ns3 = read.csv("data/perfDat_ns3_L2F2.csv", header=T)
-   ex21_sg = read.csv("data/perfDat_sg_L2F2.csv", header=T)
+   ex21_ns3 = read.csv("data/perfDatY_ns3_L2F2.csv", header=T)
+   ex21_sg = read.csv("data/perfDatY_sg_L2F2.csv", header=T)
    ex21_sg$DataSize=NULL
    sg_ns3 = cbind(ex21_ns3,ex21_sg)
    attach(sg_ns3)
@@ -3463,9 +3479,9 @@ for i in dataRange:
 ***** Compare the peak memory usage performance
 #+BEGIN_SRC R :results output graphics :file figures/ex21_DataSizeM_sg_vs_ns3.png :exports both :noweb yes
 <<format_theme>>
-   ex21_ns3 = read.csv("data/perfDat_ns3_L2F2.csv", header=T)
+   ex21_ns3 = read.csv("data/perfDatY_ns3_L2F2.csv", header=T)
    ex21_ns3$PeakMemns3=ex21_ns3$PeakMemns3*(10^(-6))
-   ex21_sg = read.csv("data/perfDat_sg_L2F2.csv", header=T)
+   ex21_sg = read.csv("data/perfDatY_sg_L2F2.csv", header=T)
    ex21_sg$DataSize=NULL
    ex21_sg$PeakMemsg=ex21_sg$PeakMemsg*(10^(-6))
    sg_ns3 = cbind(ex21_ns3,ex21_sg)

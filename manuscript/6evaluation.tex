@@ -2,7 +2,7 @@
 \label{chapter:evaluation}
 In this chapter we present the accuracy and the scalability experiments we performed to evaluate the implemented flow-level model. As we outlined in our method chapter, we compare our implementation with the packet-level implementation of ECOFEN.  
 \section{Experiment Setup}
-
+For all our experiments the version of NS-3 we used is version 3.26 and that of SimGrid is version 3.15. 
 \subsection{General ECOFEN related setup}
 Among the three power consumption models available in ECOFEN module, we used the \emph{linear} one. This model accepts idle power consumption value in watts and also energy consumption value for each byte received or send in nano-joule. Throughout our experiments we used 10.3581 watt as idle power consumption value and 3.423 nano-joule as byte energy consumption value. We took this values from \cite{Sivaraman}, even though any arbitrary values can also suffice for our purpose. 
 
@@ -93,11 +93,11 @@ In order to compare the energy consumption prediction accuracy of our flow-level
 \end{table}
   
 \section{Scalability Validation}
-For validating the scalability of the implemented flow-level model, we run again two sets of experiments. In the first set our goal was to investigate the scalability of the model when the path length increases. For these experiments we used path length values of 1, 2, 4 and 6. We fixed the amount of flow at 2 and the data size at 100 MB. In the second set we wished to see the scalability as the data size increases. In this case we kept the path length and the amount of flow at 2 but varied the data size randomly between 10 and 50 MB. The total number of data size values was 13. 
+For validating the scalability of the implemented flow-level model, we run again two sets of experiments. In the first set our goal was to investigate the scalability of the model when the path length increases. For these experiments we used path length values of 1, 2, 4, 6, 8 and 10. We fixed the number of flows at 2 and the data size at 200 MB. In the second set we wished to see the scalability as the data size increases. In this case we kept the path length at 1 and the number of flow at 2 but varied the data size randomly between 50 and 550 MB. The total number of data size values within this range was 21. 
 
 Both of these experiments were carried out using the Grid'5000 testbed, supported by a scientific interest group hosted by Inria and including CNRS, RENATER and several Universities as well as other organizations\footnote{https://www.grid5000.fr/mediawiki/index.php/Grid5000:UsagePolicy}. The machine we used is SUN FIRE X2270 which have Intel Xeon X5570 2.93 Ghz 2 CPUs, 4 cores per CPU and 24 GB RAM running Debian version 8 (jessie) operating system.
 
-For each set of experiments we used the Debian command, /usr/bin/time, to collect simulation run time and peak memory usage data. We run each experiment within each set ten times i.e., 10 run for each link in the first set and 10 run for each data size in the second set. Figure~\ref{fig:scallinks} shows the runtime and memory usage comparison as the path length increases. Figure~\ref{fig:scaldata}, on the other hand, shows the runtime and peak memory usage comparison as the data size increases.
+For each set of experiments we used the Debian command, /usr/bin/time, to collect simulation run time and peak memory usage data. We run each experiment within each set ten times i.e., 7 run for each link in the first set and 7 run for each data size in the second set. Figure~\ref{fig:scallinks} shows the runtime and memory usage comparison as the path length increases. Figure~\ref{fig:scaldata}, on the other hand, shows the runtime and peak memory usage comparison as the data size increases.
 
 \begin{figure}[ht]
 	\centering
@@ -128,5 +128,41 @@ For each set of experiments we used the Debian command, /usr/bin/time, to collec
 	\caption{Run time and peak memory comparison of ECOFEN and the flow-level model as the data size increases. In the figure the confidence interval for each experiment is also shown as a bar}
 	\label{fig:scaldata}
 \end{figure}
-From the accuracy and scalability experiments results presented so far, we can clearly see that the implemented flow-level energy consumption model gives very good estimation prediction with relative error below 1\% and the runtime scalability is orders of magnitude faster than the packet-level counterpart. 
+
+\begin{table}
+	\begin{tabular}{|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{2.0cm}|>{\centering\arraybackslash}m{2.0cm}|>{\centering\arraybackslash}m{3.1cm}|} 
+		\hline 
+		\textbf{Link} &	\textbf{Flow}&\textbf{Data size} & \textbf{Average seconds SimGrid} & \textbf{Average seconds Ecofen}& \textbf{Runtime efficiency of Simgrid}\\ 
+		\hline 
+		1&2&100&0.3&132.95&443 times\\
+		\hline
+		10&2&100&0.3&817.02&2723 times\\ 
+		\hline
+		1&2&111&0.3&74.14&243 times \\ 
+		\hline	 
+		1&2&530&0.3&351.62&1172 times\\ 
+		\hline
+	\end{tabular} 
+	\caption{Simulation time (runtime) comparison of SimGrid and ECOFEN. The first and the second rows compare at minimum and maximum path length values whereas the third and fourth column compare at minimum and maximum data size values. At each row the data size value has to be multiplied by the flow number to get the total data size}
+	\label{table:runtime}
+\end{table}
+
+\begin{table}
+	\begin{tabular}{|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{2.0cm}|>{\centering\arraybackslash}m{2.0cm}|>{\centering\arraybackslash}m{3.1cm}|} 
+		\hline 
+		\textbf{Link} &	\textbf{Flow}&\textbf{Data size} & \textbf{Average memory SimGrid} & \textbf{Average memory Ecofen}& \textbf{Memory efficiency of Simgrid}\\ 
+		\hline 
+		1&2&100&0.028&0.077&2.7 times \\
+		\hline
+		10&2&100&0.028&0.44&15.5 times \\ 
+		\hline
+		1&2&111&0.028&0.06&2.12 times \\ 
+		\hline	 
+		1&2&530&0.028&0.15&5.4 times\\ 
+		\hline
+	\end{tabular} 
+	\caption{Peak memory usage in mega bytes (MB) comparison of SimGrid and ECOFEN. The first and the second rows compare at minimum and maximum path length values whereas the third and fourth column compare at minimum and maximum data size values. At each row the data size value has to be multiplied by the flow number to get the total data size}
+	\label{table:peakmemory}
+\end{table}
+From the accuracy and scalability experiments results presented so far, we can clearly see that the implemented flow-level energy consumption model gives very good estimation prediction with relative error below 1\% and the runtime scalability is orders of magnitude faster than the packet-level counterpart. Table~\ref{table:runtime} shows that SimGrid is 2 to 3 orders of magnitude faster than ECOFEN and Table~\ref{table:peakmemory} shows SimGrid is 2 to 15 times more memory efficient. 
 

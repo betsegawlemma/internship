@@ -1,0 +1,27 @@
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 50000000 bytes, in 2 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 2 flows ...
+[SRC:sender:(0) 16.810000] [s4u_app_energyconsumption/INFO] sender done 16.810000
+[DST:receiver:(0) 16.810000] [s4u_app_energyconsumption/INFO] receiver done 16.810000
+[16.810000] [link_energy/INFO] L1 Usage 0.000000 Bandwidth 6250000.000000 Power 21.057275 Energy 348.239322
+[16.810000] [link_energy/INFO] SgTotalPower 21.057275 SgTotalEnergy 348.239322 SgTransferTime 16.810000
+ElapsedTime 0:00.10 ElapsedSec 0.10 PeakMem 28276 AvgTotalMem 0
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 50000000 bytes, in 2 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 2 flows ...
+[SRC:sender:(0) 16.810000] [s4u_app_energyconsumption/INFO] sender done 16.810000
+[DST:receiver:(0) 16.810000] [s4u_app_energyconsumption/INFO] receiver done 16.810000
+[16.810000] [link_energy/INFO] L1 Usage 0.000000 Bandwidth 6250000.000000 Power 21.057275 Energy 348.239322
+[16.810000] [link_energy/INFO] SgTotalPower 21.057275 SgTotalEnergy 348.239322 SgTransferTime 16.810000
+ElapsedTime 0:00.03 ElapsedSec 0.03 PeakMem 28392 AvgTotalMem 0
+[0.000000] [s4u_app_energyconsumption/INFO] Activating the SimGrid link energy plugin
+[0.000000] [xbt_cfg/INFO] Configuration change: Set 'network/model' to 'CM02'
+[SRC:sender:(0) 0.000000] [s4u_app_energyconsumption/INFO] Send 50000000 bytes, in 2 flows
+[DST:receiver:(0) 0.000000] [s4u_app_energyconsumption/INFO] Receiving 2 flows ...
+[SRC:sender:(0) 16.810000] [s4u_app_energyconsumption/INFO] sender done 16.810000
+[DST:receiver:(0) 16.810000] [s4u_app_energyconsumption/INFO] receiver done 16.810000
+[16.810000] [link_energy/INFO] L1 Usage 0.000000 Bandwidth 6250000.000000 Power 21.057275 Energy 348.239322
+[16.810000] [link_energy/INFO] SgTotalPower 21.057275 SgTotalEnergy 348.239322 SgTransferTime 16.810000
+ElapsedTime 0:00.03 ElapsedSec 0.03 PeakMem 28480 AvgTotalMem 0

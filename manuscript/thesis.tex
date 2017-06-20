@@ -287,12 +287,12 @@
 %\newcommand{\SSUPERVISOR}{Professor Antti Ylä-Jääski}
 % Example of twosupervisors:
 \newcommand{\SUPERVISOR}{Professor Martin Quinson\\
-  Dr. Anne-Cécile Orgerie}
+	Dr. Anne-Cécile Orgerie}
 
 % If you have only one instructor, just write one name here
-\newcommand{\INSTRUCTOR}{Professor Keijo Heljanko}
-\newcommand{\FINSTRUCTOR}{Professor Keijo Heljanko}
-\newcommand{\SINSTRUCTOR}{Professor Keijo Heljanko}
+\newcommand{\INSTRUCTOR}{Assoc. Prof. Keijo Heljanko}
+\newcommand{\FINSTRUCTOR}{Assoc. Prof. Keijo Heljanko}
+\newcommand{\SINSTRUCTOR}{Assoc. Prof. Keijo Heljanko}
 % If you have two instructors, separate them with \\ to create linefeeds
 % \newcommand{\INSTRUCTOR}{Olli Ohjaaja M.Sc. (Tech.)\\
 %  Elli Opas M.Sc. (Tech)}
@@ -306,12 +306,13 @@
 % then the supervisor names shown here are printed in the cover page. Otherwise,
 % the supervisor names defined above are used.
 \newcommand{\COVERSUPERVISOR}{Professor Martin Quinson, ENS Rennes\\
-  Dr. Anne-Cécile Orgerie, CNRS}
+	Dr. Anne-Cécile Orgerie, CNRS}
 
 % The same option is for the instructors, if you have multiple instructors.
 % \newcommand{\COVERINSTRUCTOR}{Olli Ohjaaja M.Sc. (Tech.), Aalto University\\
 %  Elli Opas M.Sc. (Tech), Aalto SCI}
-\newcommand{\COVERINSTRUCTOR}{Professor Keijo Heljanko, Aalto University}
+\newcommand{\COVERINSTRUCTOR}{Assoc. Prof. Keijo Heljanko, Aalto University
+	}
 
 % Other stuff
 % ------------------------------------------------------------------
@@ -413,7 +414,7 @@ yrkesutövare, intresseföretag, verifieringskedja}
 % Abstract in English
 % ------------------------------------------------------------------
 \thesisabstract{english}{
-Due to the emergence of new technologies such as IoT, the number of devices connected to the data-center infrastructures is rapidly increasing. In response to this growing tren the data-centers are also expanding. This expansion led to a major energy consumption issue. To tackle this issue researchers are designing and running experiments on real network, test-bed environments and simulation software. The first two experiment environments are limited interms of availabilty, flexibility and cost for conducting large-scale energy consumption estimation experiments. Simualation is the viable alternative in the context of large-scale networks. Currently proposed simulation softwarej that are capable of estimating energy consumption of a network are in the category of packet-level simulators. The main problem of this kind of simulators is that they fail to scale well in the area of large-scale networks. In this paper we have proposed a reasonably accurate and scalable flow-level simulator alternative in the context of SimGrid, a large-scale distributed network simulator. Our validation and scalability experiments show that
+Due to the emergence of new technologies such as IoT, the number of devices connected to the data-center infrastructures is rapidly increasing. In response to this growing tren the data-centers are also expanding. This expansion led to a major energy consumption issue. To tackle this issue researchers are designing and running experiments on real network, test-bed environments and simulation software. The first two experiment environments are limited interms of availabilty, flexibility and cost for conducting large-scale energy consumption estimation experiments. Simulation is the viable alternative in the context of large-scale networks. Currently proposed simulation softwarej that are capable of estimating energy consumption of a network are in the category of packet-level simulators. The main problem of this kind of simulators is that they fail to scale well in the area of large-scale networks. In this paper we have proposed a reasonably accurate and scalable flow-level simulator alternative in the context of SimGrid, a large-scale distributed network simulator. Our flow-level simulator registered relative error less than 0.3\% compared to a packet-level simulator and it is also 2 to 3 magnitude more faster than the packet-level counter part.
 }
 % Acknowledgements
 % ------------------------------------------------------------------
@@ -428,13 +429,11 @@ Due to the emergence of new technologies such as IoT, the number of devices conn
 % show up in the TOC
 \chapter*{Acknowledgements}
 
-I wish to thank all students who use \LaTeX\ for formatting their theses,
-because theses formatted with \LaTeX\ are just so nice.
+I am grateful to Martin Quinson, Anne-Cécile Orgerie, and Keijo Heljanko for the useful comments, remarks and engagement through the learning process of this master thesis, and to Guillaume Pierre for helping me find my internship and for following up my work. I thank the Myriads team, IRISA for financial support during my internship.
 
-Thank you, and keep up the good work!
 \vskip 10mm
 
-\noindent Espoo, \DATE
+\noindent Rennes, \DATE
 \vskip 5mm
 \noindent\AUTHOR
 
@@ -445,7 +444,7 @@ Thank you, and keep up the good work!
 % start correctly on the right-hand side.
 \cleardoublepage
 % Example acronyms are placed in a separate file, acronyms.tex
-\input{acronyms}
+%\input{acronyms}
 
 % Table of contents
 % ------------------------------------------------------------------
