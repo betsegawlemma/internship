@@ -1,103 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2016/MacPorts 2016_5)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: acm.bst
 Database file #1: sources.bib
-I was expecting a `,' or a `}'---line 79 of file sources.bib
- : 
- : @article{DBLP:journals/jpdc/CasanovaGLQS14,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 231 of file sources.bib
- : 
- : @inproceedings{DBLP:conf/networking/MahadevanSBR09,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 783 of file sources.bib
- : @inproceedings{DBLP:conf/isca/FanWB07
- :                                      ,
-I'm skipping whatever remains of this entry
 Warning--entry type for "ns3" isn't style-file defined
---line 983 of file sources.bib
+--line 447 of file sources.bib
 Warning--entry type for "simgrid" isn't style-file defined
---line 997 of file sources.bib
-A bad cross reference---entry "DBLP:conf/eenergy/GyarmatiT10"
-refers to entry "DBLP:conf/eenergy/2010", which doesn't exist
-A bad cross reference---entry "DBLP:conf/isca/FanWB07"
-refers to entry "DBLP:conf/isca/2007", which doesn't exist
-A bad cross reference---entry "DBLP:conf/IEEEcloud/FiandrinoKBZ15"
-refers to entry "DBLP:conf/IEEEcloud/2015", which doesn't exist
-A bad cross reference---entry "DBLP:conf/networking/MahadevanSBR09"
-refers to entry "DBLP:conf/networking/2009", which doesn't exist
-A bad cross reference---entry "DBLP:conf/nsdi/NedevschiPIRW08"
-refers to entry "DBLP:conf/nsdi/2008", which doesn't exist
-A bad cross reference---entry "DBLP:conf/infocom/LiuFGKT01"
-refers to entry "DBLP:conf/infocom/2001", which doesn't exist
-A bad cross reference---entry "DBLP:conf/valuetools/CarneiroFR09"
-refers to entry "DBLP:conf/valuetools/2009", which doesn't exist
-A bad cross reference---entry "DBLP:conf/ccgrid/QuinsonRT12"
-refers to entry "DBLP:conf/ccgrid/2012", which doesn't exist
-A bad cross reference---entry "DBLP:conf/cloudnet/CorneaOL14"
-refers to entry "DBLP:conf/cloudnet/2014", which doesn't exist
-A bad cross reference---entry "DBLP:conf/icc/WeingartnerLW09"
-refers to entry "DBLP:conf/icc/2009", which doesn't exist
-A bad cross reference---entry "DBLP:conf/aina/SwainHC10"
-refers to entry "DBLP:conf/aina/2010", which doesn't exist
-A bad cross reference---entry "DBLP:conf/sigcomm/MahadevanBS10"
-refers to entry "DBLP:conf/sigcomm/2010greennet", which doesn't exist
-Warning--I didn't find a database entry for "DBLP:conf/networking/2009"
-Warning--I didn't find a database entry for "DBLP:conf/sigcomm/2010greennet"
-Warning--I didn't find a database entry for "DBLP:conf/isca/2007"
-Warning--I didn't find a database entry for "DBLP:conf/infocom/2001"
-Warning--I didn't find a database entry for "DBLP:conf/eenergy/2010"
-Warning--I didn't find a database entry for "DBLP:conf/valuetools/2009"
-Warning--I didn't find a database entry for "DBLP:conf/IEEEcloud/2015"
-Warning--I didn't find a database entry for "DBLP:conf/cloudnet/2014"
-Warning--I didn't find a database entry for "DBLP:conf/icc/2009"
-Warning--I didn't find a database entry for "DBLP:conf/aina/2010"
-Warning--I didn't find a database entry for "DBLP:conf/nsdi/2008"
-Warning--I didn't find a database entry for "DBLP:conf/ccgrid/2012"
-Warning--empty journal in DBLP:journals/comsur/BollaBDC11
-Warning--empty year in DBLP:conf/wowmom/OrgerieLLL11
-You've used 34 entries,
+--line 461 of file sources.bib
+You've used 40 entries,
             2253 wiz_defined-function locations,
-            775 strings with 15018 characters,
-and the built_in function-call counts, 14017 in all, are:
-= -- 1336
-> -- 753
+            785 strings with 13742 characters,
+and the built_in function-call counts, 16103 in all, are:
+= -- 1539
+> -- 840
 < -- 0
-+ -- 318
-- -- 274
-* -- 1107
-:= -- 2202
-add.period$ -- 105
-call.type$ -- 34
-change.case$ -- 236
++ -- 354
+- -- 304
+* -- 1273
+:= -- 2523
+add.period$ -- 124
+call.type$ -- 40
+change.case$ -- 269
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 511
-empty$ -- 1064
-format.name$ -- 274
-if$ -- 2936
+cite$ -- 40
+duplicate$ -- 584
+empty$ -- 1253
+format.name$ -- 304
+if$ -- 3378
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 34
-newline$ -- 174
-num.names$ -- 68
-pop$ -- 290
+int.to.str$ -- 40
+missing$ -- 38
+newline$ -- 205
+num.names$ -- 80
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 204
+purify$ -- 231
 quote$ -- 0
-skip$ -- 342
+skip$ -- 392
 stack$ -- 0
-substring$ -- 876
-swap$ -- 163
+substring$ -- 1020
+swap$ -- 182
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
-warning$ -- 2
-while$ -- 133
-width$ -- 36
-write$ -- 342
-(There were 15 error messages)
+type$ -- 156
+warning$ -- 0
+while$ -- 156
+width$ -- 42
+write$ -- 404
+(There were 2 warnings)
