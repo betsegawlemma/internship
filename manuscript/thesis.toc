@@ -35,6 +35,6 @@
 \contentsline {subsection}{\numberline {6.1.1}General ECOFEN related setup}{42}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}General SimGrid related setup}{43}{subsection.6.1.2}
 \contentsline {section}{\numberline {6.2}Accuracy Validation}{43}{section.6.2}
-\contentsline {section}{\numberline {6.3}Scalability Validation}{44}{section.6.3}
+\contentsline {section}{\numberline {6.3}Scalability Validation}{46}{section.6.3}
 \contentsline {chapter}{\numberline {7}Discussion}{50}{chapter.7}
 \contentsline {chapter}{\numberline {8}Conclusions}{53}{chapter.8}

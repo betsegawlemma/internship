@@ -45,35 +45,37 @@ For this accuracy validation, we conduct two sets of experiments. In the first s
 
 In order to compare the energy consumption prediction accuracy of our flow-level model compared to the packet-level model of ECOFEN, we employed the unequal variance t-test method (a.k.a Welch's t-test) as suggested in~\cite{ruxton2006unequal}. The reason for choosing this test is that for our data sets obtained from the two simulators, we cannot assume equal variance, as the two data sets are independent. Table~\ref{table:welchtest} contains the statistics obtained from this test using R's built in Welch t-test function. 
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
 	\centering
 	\subfigure[1 Link 1 Flow]{
-		\includegraphics[width=0.4\linewidth]{images/ex11_energy_sg_vs_ns3}
+		\includegraphics[width=0.47\linewidth]{images/ex11_energy_sg_vs_ns3}
 		\label{fig:1l1f}
 	}%
 \centering
 	\subfigure[1 Link 2 Flows]{
-		\includegraphics[width=0.4\linewidth]{images/ex12_energy_sg_vs_ns3}
+		\includegraphics[width=0.47\linewidth]{images/ex12_energy_sg_vs_ns3}
 		\label{fig:1l2f}
 	}%
 	
 	\subfigure[1 Link 4 Flows]{
-		\includegraphics[width=0.4\linewidth]{images/ex10_energy_sg_vs_ns3}
+		\includegraphics[width=0.47\linewidth]{images/ex10_energy_sg_vs_ns3}
 		\label{fig:1l4f}
 	}%
 \centering
 	\subfigure[3 Link 1 Flows]{
-		\includegraphics[width=0.4\linewidth]{images/ex13_energy_sg_vs_ns3}
+		\includegraphics[width=0.47\linewidth]{images/ex13_energy_sg_vs_ns3}
 		\label{fig:3l1f}
 	}%
 
 	\subfigure[3 Link 2 Flows]{
-			\includegraphics[width=0.4\linewidth]{images/ex15_energy_sg_vs_ns3}
+			\includegraphics[width=0.47\linewidth]{images/ex15_energy_sg_vs_ns3}
 			\label{fig:3l2f}
 		}%
 	\caption{Predicted energy consumption comparison of ECOFEN (blue dots) and SimGrid (orange dots) as a function of transferred Bytes for different path length and flow amount}
 	\label{fig:sgvsns3scenario}
 \end{figure}
+
+\todo[inline]{You need to increase the font size of the figures below (legends and axis labels)}
 
 \begin{table}
 	\begin{tabular}{|>{\centering\arraybackslash}m{1.6cm}|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{3.0cm}|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1.6cm}|} 
@@ -123,17 +125,19 @@ For each set of experiments, we use the Debian command, /usr/bin/time, to collec
 \begin{figure}[ht]
 	\centering
 	\subfigure[Runtime]{
-		\includegraphics[width=0.4\linewidth]{images/ex21_datasize_sg_vs_ns3}
+		\includegraphics[width=0.47\linewidth]{images/ex21_datasize_sg_vs_ns3}
 		\label{fig:datruntime}
 	}%
 	\centering
 	\subfigure[Peak Memory Usage]{
-		\includegraphics[width=0.4\linewidth]{images/ex21_DataSizeM_sg_vs_ns3}
+		\includegraphics[width=0.47\linewidth]{images/ex21_DataSizeM_sg_vs_ns3}
 		\label{fig:datmem}
 	}%
 	\caption{Run time and peak memory comparison of ECOFEN and the flow-level model as the data size increases. In the figure the confidence interval for each experiment is also shown as a bar}
 	\label{fig:scaldata}
 \end{figure}
+
+\todo[inline]{You need to increase the font size of the figures below (legends and axis labels)}
 
 \begin{table}
 	\begin{tabular}{|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{2.0cm}|>{\centering\arraybackslash}m{2.0cm}|>{\centering\arraybackslash}m{3.1cm}|} 
