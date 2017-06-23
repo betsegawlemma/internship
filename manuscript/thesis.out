@@ -24,11 +24,14 @@
 \BOOKMARK [2][-]{subsubsection.4.3.0.1}{4.3.0.1 Validating the Linear Model}{section.4.3}% 24
 \BOOKMARK [3][-]{subsubsection.4.3.0.2}{4.3.0.2 Validating the Complete Model}{subsubsection.4.3.0.1}% 25
 \BOOKMARK [0][]{chapter.5}{5 Implementing flow-level model}{}% 26
-\BOOKMARK [0][]{chapter.6}{6 Result}{}% 27
-\BOOKMARK [1][-]{section.6.1}{6.1 Experiment Setup}{chapter.6}% 28
-\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 General ECOFEN related setup}{section.6.1}% 29
-\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 General SimGrid related setup}{section.6.1}% 30
-\BOOKMARK [1][-]{section.6.2}{6.2 Accuracy Validation}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.3}{6.3 Scalability Validation}{chapter.6}% 32
-\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 33
-\BOOKMARK [0][]{chapter.8}{8 Conclusions}{}% 34
+\BOOKMARK [1][-]{section.5.1}{5.1 Modeling energy consumption}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{5.2 SimGrid energy link model}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.3}{5.3 Computing the energy consumption of an experiment}{chapter.5}% 29
+\BOOKMARK [0][]{chapter.6}{6 Validation}{}% 30
+\BOOKMARK [1][-]{section.6.1}{6.1 Experiment Setup}{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 General ECOFEN related setup}{section.6.1}% 32
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 General SimGrid related setup}{section.6.1}% 33
+\BOOKMARK [1][-]{section.6.2}{6.2 Accuracy Validation}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.3}{6.3 Scalability Validation}{chapter.6}% 35
+\BOOKMARK [0][]{chapter.7}{7 Discussion}{}% 36
+\BOOKMARK [0][]{chapter.8}{8 Conclusions}{}% 37

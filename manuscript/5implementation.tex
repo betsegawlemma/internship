@@ -17,6 +17,8 @@ To implement this model in SimGrid, we need to determine the values of the three
 
 Briefly described, for a set of simulated activities running on a given simulated network resource such as a switch, SimGrid computes, using its bandwidth sharing algorithm, the amount of resource share that each activity can get. The sum of the resource share that all activities can get for a given resource at a given moment cannot exceed the capacity of the resource on which the activities are running. Figure~\ref{fig:SimGrid} depicts this concept symbolically. We can access how much of the resource is currently in use, i.e., its load, from SimGrid's core library. SimGrid dynamically recomputes the resource usage when any of the allocated activities finishes their data transfer task. 
 
+\todo[inline]{I don't remember if you gave details before this chapter about the implementation of networks in SimGrid, but if you didn't I think it is important to explain here that SimGrid does not represent network nodes (contrarily to NS-3), only links which share bandwidth among flows.}
+
 We can compute the dynamic power consumption, \(P_{dynamic}\), of a link at any given instance as shown in equation Equation~\ref{eq:5.2}. Similar to the idle value, we can read the busy power consumption value,\(P_{busy}\), directly from the 
 Link property description and $u$ is link utilization computed by dividing the load (used bandwidth) by the maximum bandwidth. The maximum bandwidth value is also available on the Link description. 
 

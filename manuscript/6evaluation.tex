@@ -1,25 +1,28 @@
-\chapter{Result}
+\chapter{Validation}
 \label{chapter:evaluation}
-In this chapter we present the accuracy and the scalability experiments we performed to evaluate the implemented flow-level model. As we outlined in our method chapter, we compare our implementation with the packet-level implementation of ECOFEN.  
+In this chapter we present the accuracy and the scalability experiments we performed to evaluate the implemented flow-level model. As we outlined in our method chapter, we compare our implementation with the packet-level implementation of ECOFEN (based on NS-3).  
 \section{Experiment Setup}
 For all our experiments the version of NS-3 we used is version 3.26 and that of SimGrid is version 3.15. 
 \subsection{General ECOFEN related setup}
-Among the three power consumption models available in ECOFEN module, we used the \emph{linear} one. This model accepts idle power consumption value in watts and also energy consumption value for each byte received or send in nano-joule. Throughout our experiments we used 10.3581 watt as idle power consumption value and 3.423 nano-joule as byte energy consumption value. We took this values from \cite{Sivaraman}, even though any arbitrary values can also suffice for our purpose. 
+Among the three power consumption models available in ECOFEN module, we used the \emph{linear} one. This model accepts idle power consumption values in Watts and also energy consumption values for each Byte received or send in nanoJoule. Throughout our experiments we used 10.3581 Watt as idle power consumption value and 3.423 nJ as Byte energy consumption value. We took these values from \cite{Sivaraman}, even though any arbitrary values can also suffice for our purpose.
 
-The linear model estimate power consumption value based on these two inputs and the amount of transmitted or received traffic and then display the estimated power consumption in watt at specified time interval. We set the interval to be 0.05 sec (20 estimation per second) in order to get more precise power estimation. 
+\todo[inline]{You could specify here for which network device these values have been measured.} 
+
+The linear model estimates power consumption value based on these two inputs and the amount of transmitted or received traffic and then display the estimated power consumption in Watt at specified time interval. We set the interval to be 0.05 sec (20 estimations per second) in order to get more frequent power estimation. 
 
 What we want to get from ECOFEN is the total amount of energy consumed by the simulated network. To get this value, we first compute the average power drawn by the network for a given data transfer task and when the task ends, we multiply the average total network power with the data transfer time. 
 
 \subsection{General SimGrid related setup}
-For all of our experiments we used a simple client/server SimGrid application. As we have described in Chapter~\ref{chapter:environment}, a typical SimGrid script contains three sections. Accordingly in our script, the first section represents what the client function do to send data. It simply accepts the number of bytes to send from command line option or use a default 1000 bytes if no value is specified, or it will generate the bytes if random option is specified in the command line. Then pass the bytes to the SimGrid's send routine. By default there will be only one TCP flow for the specified bytes, but if we want to send multiple flows we can specify the number of flows on the command line. The server function simply issues the receive routine if there is data to receive. The third section, in addition to doing the tasks specified in Chapter~\ref{chapter:environment},  it is also a gateway to NS-3 or our implemented flow-level model depending on the option specified in the command line. 
+For all of our experiments we used a simple client/server SimGrid application. As described in Chapter~\ref{chapter:environment}, a typical SimGrid script contains three sections. Accordingly in our script, the first section represents what the client function does to send data. It simply accepts the number of Bytes to send from command line option or uses a default 1,000 Bytes if no value is specified, or it will generate the Bytes if random option is specified in the command line. Then it passes the Bytes to the SimGrid's send routine. By default there will be only one TCP flow for the specified Bytes, but if we want to send multiple flows we can specify the number of flows on the command line. The server function simply issues the receive routine if there is data to receive. The third section, in addition to doing the tasks specified in Chapter~\ref{chapter:environment},  it is also a gateway to NS-3 or our implemented flow-level model depending on the option specified in the command line. 
 
-For the Link tag in SimGrid's platform file we used 10 Mbps  as a bandwidth value. This value is chosen because it falls within the range where ECOFEN's and SimGrid's simulated time value match closely as we have described by the end of Chapter~\ref{chapter:implementation}. For latency we used 10 ms and as a watt-range power consumption value, we used 10.3581 watt as idle power consumption value and 10.7479 watt as a busy power consumption value. 
+For the Link tag in SimGrid's platform file we used 10 Mbps  as a bandwidth value. This value is chosen because it falls within the range where ECOFEN's and SimGrid's simulated time value match closely as we have described by the end of Chapter~\ref{chapter:implementation}. For latency we used 10 ms and as a Watt-range power consumption value, we used 10.3581 Watt as idle power consumption value and 10.7479 Watt as a busy power consumption value. 
 
-SimGrid's interface to NS-3 will set these bandwidth and latency values, together with other parameters, to NS-3's configuration automatically. 
+SimGrid's interface to NS-3 will set these bandwidth and latency values, together with other parameters, to NS-3's configuration automatically. It means that we have only one SimGrid script to run both simulations (flow-based in SimGrid directly and packet-level in NS-3 with ECOFEN), thus ensuring a fair comparison on the same simulated network with the same generated traffic. 
 
 \section{Accuracy Validation}
+Our first objective consists in evaluating the accuracy of SimGrid's energy consumption estimates (done with our energy flow-based model) against the values computed by ECOFEN.
+For this accuracy validation, we conduct two sets of experiments. In the first set, our purpose is to investigate the accuracy of energy consumption estimation difference between ECOFEN and the flow-level model when the size of platform changes. In SimGrid case, it means when the number of Links change; in ECOFEN case, when the number of Nodes, NetDevices and the connection between them change. For this experiment we keep the number of flows and the data volume fixed but we increase the number of Links. In the second set, on the other hand, our purpose is to study the difference between the estimated energy consumption value between ECOFEN and SimGrid when the data size or flow changes while keeping the number of links fixed. Table~\ref{table:accuracyscenarios} shows all the tested scenarios and Figure~\ref{fig:sgvsns3scenario} shows the energy consumption prediction behavior of the implemented model and ECOFEN's model for all of the scenarios summarized in Table~\ref{table:accuracyscenarios}.
 
-For accuracy validation we did two sets of experiments. In the first set, our purpose was to investigate the accuracy of energy consumption estimation difference between ECOFEN and the flow-level model when the size of platform changes. In SimGrid case which means when the number of Links change. In ECOFEN case, when the number of Nodes, NetDevices and the connection between them change. For this experiment we kept the number of flows and the bytes size fixed but increase the number of Links. In the second set, on the other hand, our purpose is to study the difference between the estimated energy consumption value between ECOFEN and SimGrid when the data size or flow change while keeping the number of links fixed. Table~\ref{table:accuracyscenarios} shows all the scenarios we have tested and Figure~\ref{fig:sgvsns3scenario} shows the energy consumption prediction behavior of the implemented model and ECOFEN's model for all of the scenarios summarized in Table~\ref{table:accuracyscenarios}.
 \begin{table}
 	\begin{tabular}{|>{\centering\arraybackslash}m{1.6cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{1.6cm}|} 
 		\hline 
@@ -40,7 +43,7 @@ For accuracy validation we did two sets of experiments. In the first set, our pu
 	\label{table:accuracyscenarios}
 \end{table}
 
-In order to compare the energy consumption prediction accuracy of our flow-level model compared to the packet-level model of ECOFEN, we employed the unequal variance t-test method (a.k.a Welch's t-test) as suggested in \cite{ruxton2006unequal}. The reason for choosing this test is that for our data sets obtained from the two simulators, we cannot assume equal variance, as the two data sets are independent. Table~\ref{table:welchtest} contains the statistics obtained from this test using R's built in Welch t-test function. 
+In order to compare the energy consumption prediction accuracy of our flow-level model compared to the packet-level model of ECOFEN, we employed the unequal variance t-test method (a.k.a Welch's t-test) as suggested in~\cite{ruxton2006unequal}. The reason for choosing this test is that for our data sets obtained from the two simulators, we cannot assume equal variance, as the two data sets are independent. Table~\ref{table:welchtest} contains the statistics obtained from this test using R's built in Welch t-test function. 
 
 \begin{figure}[ht]
 	\centering
@@ -68,7 +71,7 @@ In order to compare the energy consumption prediction accuracy of our flow-level
 			\includegraphics[width=0.4\linewidth]{images/ex15_energy_sg_vs_ns3}
 			\label{fig:3l2f}
 		}%
-	\caption{Predicted energy consumption comparison of ECOFEN (blue dots) and SimGrid (orange dots) as a function of transferred bytes for different path length and flow amount}
+	\caption{Predicted energy consumption comparison of ECOFEN (blue dots) and SimGrid (orange dots) as a function of transferred Bytes for different path length and flow amount}
 	\label{fig:sgvsns3scenario}
 \end{figure}
 
@@ -91,13 +94,16 @@ In order to compare the energy consumption prediction accuracy of our flow-level
 	\caption{Unequal variance t-test statistics obtained using R. The confidence interval (CI) values in the fourth column are computed for the difference of the two energy consumption estimations and the last column values are obtained from mean log error as explained in \cite{DBLP:journals/tomacs/VelhoSCL13}}
 	\label{table:welchtest}
 \end{table}
-  
+ 
+\todo[inline]{You have to comment these results (you cannot assume people will read the figures and tables). So you have to say for instance that in the best/worst case we have an error of X, which is really good...}
+
+ 
 \section{Scalability Validation}
-For validating the scalability of the implemented flow-level model, we run again two sets of experiments. In the first set our goal was to investigate the scalability of the model when the path length increases. For these experiments we used path length values of 1, 2, 4, 6, 8 and 10. We fixed the number of flows at 2 and the data size at 200 MB. In the second set we wished to see the scalability as the data size increases. In this case we kept the path length at 1 and the number of flow at 2 but varied the data size randomly between 50 and 550 MB. The total number of data size values within this range was 21. 
+For validating the scalability of the implemented flow-level model, we run also two sets of experiments. In the first set, our goal is to investigate the scalability of the model when the path length increases. For these experiments we use path length values of 1, 2, 4, 6, 8 and 10. We fix the number of flows at 2 and the data size at 200 MB. In the second set, we examine the scalability as the data size increases. In this case, we keep the path length at 1 and the number of flows at 2, but we vary the data size randomly between 50 and 550 MB. The total number of data size values within this range was 21. 
 
-Both of these experiments were carried out using the Grid'5000 testbed, supported by a scientific interest group hosted by Inria and including CNRS, RENATER and several Universities as well as other organizations\footnote{https://www.grid5000.fr/mediawiki/index.php/Grid5000:UsagePolicy}. The machine we used is SUN FIRE X2270 which have Intel Xeon X5570 2.93 Ghz 2 CPUs, 4 cores per CPU and 24 GB RAM running Debian version 8 (jessie) operating system.
+Both of these experiments were carried out using the Grid'5000 testbed, supported by a scientific interest group hosted by Inria and including CNRS, RENATER and several Universities as well as other organizations\footnote{https://www.grid5000.fr/mediawiki/index.php/Grid5000:UsagePolicy}. The machine we used is SUN FIRE X2270 which have Intel Xeon X5570 2.93 GHz 2 CPUs, 4 cores per CPU and 24 GB RAM running Debian version 8 (jessie) operating system.
 
-For each set of experiments we used the Debian command, /usr/bin/time, to collect simulation run time and peak memory usage data. We run each experiment within each set ten times i.e., 7 run for each link in the first set and 7 run for each data size in the second set. Figure~\ref{fig:scallinks} shows the runtime and memory usage comparison as the path length increases. Figure~\ref{fig:scaldata}, on the other hand, shows the runtime and peak memory usage comparison as the data size increases.
+For each set of experiments, we use the Debian command, /usr/bin/time, to collect simulation run time and peak memory usage data. We run each experiment within each set seven times i.e., 7 run for each link in the first set and 7 run for each data size in the second set. Figure~\ref{fig:scallinks} shows the runtime and memory usage comparison as the path length increases. Figure~\ref{fig:scaldata}, on the other hand, shows the runtime and peak memory usage comparison as the data size increases.
 
 \begin{figure}[ht]
 	\centering
@@ -161,8 +167,11 @@ For each set of experiments we used the Debian command, /usr/bin/time, to collec
 		1&2&530&0.028&0.15&5.4 times\\ 
 		\hline
 	\end{tabular} 
-	\caption{Peak memory usage in mega bytes (MB) comparison of SimGrid and ECOFEN. The first and the second rows compare at minimum and maximum path length values whereas the third and fourth column compare at minimum and maximum data size values. At each row the data size value has to be multiplied by the flow number to get the total data size}
+	\caption{Peak memory usage in mega Bytes (MB) comparison of SimGrid and ECOFEN. The first and the second rows compare at minimum and maximum path length values whereas the third and fourth column compare at minimum and maximum data size values. At each row the data size value has to be multiplied by the flow number to get the total data size}
 	\label{table:peakmemory}
 \end{table}
-From the accuracy and scalability experiments results presented so far, we can clearly see that the implemented flow-level energy consumption model gives very good estimation prediction with relative error below 1\% and the runtime scalability is orders of magnitude faster than the packet-level counterpart. Table~\ref{table:runtime} shows that SimGrid is 2 to 3 orders of magnitude faster than ECOFEN and Table~\ref{table:peakmemory} shows SimGrid is 2 to 15 times more memory efficient. 
+
+\todo[inline]{Here again, you have to comment the results. You can for instance write: this curves follows a proportional behavior and is provides simulation duration at least twice bigger than the other option... This clearly shows the validity/interest/suitability of our model for studying large-scale networks... (or things like this)}
+
+From the accuracy and scalability experiments results presented in this chapter, we can clearly see that the implemented flow-level energy consumption model gives very good estimation prediction with relative error below 1\% and the runtime scalability is orders of magnitude faster than the packet-level counterpart. Table~\ref{table:runtime} shows that SimGrid is 2 to 3 orders of magnitude faster than ECOFEN and Table~\ref{table:peakmemory} shows SimGrid is 2 to 15 times more memory efficient. 
 
