@@ -8,12 +8,12 @@
 \contentsline {section}{\numberline {2.1}Energy consumption of ICT equipments}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}Large-scale network energy consumption}{10}{section.2.2}
 \contentsline {section}{\numberline {2.3}Energy proportionality}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}Packet-level and flow-level Simulators}{12}{section.2.4}
+\contentsline {section}{\numberline {2.4}Packet-level and flow-level simulators}{12}{section.2.4}
 \contentsline {section}{\numberline {2.5}Simulating and modeling energy consumption of large-scale networks}{15}{section.2.5}
 \contentsline {section}{\numberline {2.6}SimGrid}{16}{section.2.6}
 \contentsline {section}{\numberline {2.7}Related Simulators}{17}{section.2.7}
-\contentsline {subsubsection}{\numberline {2.7.0.1}ECOFEN}{18}{subsubsection.2.7.0.1}
-\contentsline {subsubsection}{\numberline {2.7.0.2}GreenCloud}{19}{subsubsection.2.7.0.2}
+\contentsline {subsection}{\numberline {2.7.1}ECOFEN}{18}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}GreenCloud}{19}{subsection.2.7.2}
 \contentsline {chapter}{\numberline {3}Environment}{21}{chapter.3}
 \contentsline {section}{\numberline {3.1}SimGrid}{21}{section.3.1}
 \contentsline {section}{\numberline {3.2}NS-3}{23}{section.3.2}
@@ -24,17 +24,17 @@
 \contentsline {section}{\numberline {4.1}Common Approaches}{26}{section.4.1}
 \contentsline {section}{\numberline {4.2}Our Approach}{28}{section.4.2}
 \contentsline {section}{\numberline {4.3}Validating ECOFEN}{30}{section.4.3}
-\contentsline {subsubsection}{\numberline {4.3.0.1}Validating the Linear Model}{31}{subsubsection.4.3.0.1}
-\contentsline {subsubsection}{\numberline {4.3.0.2}Validating the Complete Model}{33}{subsubsection.4.3.0.2}
+\contentsline {subsection}{\numberline {4.3.1}Validating the Linear Model}{31}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Validating the Complete Model}{33}{subsection.4.3.2}
 \contentsline {chapter}{\numberline {5}Implementing flow-level model}{38}{chapter.5}
 \contentsline {section}{\numberline {5.1}Modeling energy consumption}{38}{section.5.1}
-\contentsline {section}{\numberline {5.2}SimGrid energy link model}{38}{section.5.2}
-\contentsline {section}{\numberline {5.3}Computing the energy consumption of an experiment}{39}{section.5.3}
+\contentsline {section}{\numberline {5.2}SimGrid's link energy model}{38}{section.5.2}
+\contentsline {section}{\numberline {5.3}Implementation Challenge}{40}{section.5.3}
 \contentsline {chapter}{\numberline {6}Validation}{42}{chapter.6}
 \contentsline {section}{\numberline {6.1}Experiment Setup}{42}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}General ECOFEN related setup}{42}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}General SimGrid related setup}{43}{subsection.6.1.2}
 \contentsline {section}{\numberline {6.2}Accuracy Validation}{43}{section.6.2}
-\contentsline {section}{\numberline {6.3}Scalability Validation}{46}{section.6.3}
+\contentsline {section}{\numberline {6.3}Scalability Validation}{44}{section.6.3}
 \contentsline {chapter}{\numberline {7}Discussion}{50}{chapter.7}
 \contentsline {chapter}{\numberline {8}Conclusions}{53}{chapter.8}

@@ -2450,7 +2450,53 @@ done
 #+CALL: extract_ns3_data_5(input_file="data/ex10_ns3_1L4F.raw", output_file="data/ex10_ns3_1L4F.csv",flow=4) :exports both
 ***** Compare results
 #+BEGIN_SRC R :results output graphics :file figures/ex10_energy_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex10_ns3 = read.csv("data/ex10_ns3_1L4F.csv", header=T)
    ex10_sg = read.csv("data/ex10_sg_1L4F.csv", header=T)
    sg_ns3 = cbind(ex10_ns3,ex10_sg, by=c("BytesSend"))
@@ -2459,7 +2505,7 @@ done
    geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
    geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
-   xlab(label="Transferred data in MBytes")+
+   xlab(label="Data size in MBytes")+
    scale_colour_Publication()+
    theme_Publication()
 #+END_SRC
@@ -2625,7 +2671,53 @@ with open(input_file) as fe:
 #+CALL: extract_ns3_data_5(input_file="data/ex11_ns3_1L1F.raw", output_file="data/ex11_ns3_1L1F.csv",flow=1)
 ***** Compare the result
 #+BEGIN_SRC R :results output graphics :file figures/ex11_energy_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex11_ns3 = read.csv("data/ex11_ns3_1L1F.csv", header=T)
    ex11_sg = read.csv("data/ex11_sg_1L1F.csv", header=T)
    sg_ns3 = merge(ex11_ns3,ex11_sg, by=c("BytesSend"))
@@ -2634,7 +2726,7 @@ with open(input_file) as fe:
    geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
    geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
-   xlab(label="Transferred data in MBytes")+
+   xlab(label="Data size in MBytes")+
    scale_colour_Publication()+
    theme_Publication()
 #+END_SRC
@@ -2686,7 +2778,53 @@ done
 #+CALL: extract_ns3_data_5(input_file="data/ex12_ns3_1L2FL.raw", output_file="data/ex12_ns3_1L2FL.csv",flow=2) :exports both
 ***** Compare results
 #+BEGIN_SRC R :results output graphics :file figures/ex12_energy_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex12_ns3 = read.csv("data/ex12_ns3_1L2FL.csv", header=T)
    ex12_sg = read.csv("data/ex12_sg_1L2F.csv", header=T)
    sg_ns3 = merge(ex12_ns3,ex12_sg, by=c("BytesSend"))
@@ -2695,7 +2833,7 @@ done
    geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
    geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
-   xlab(label="Transferred data in MBytes")+
+   xlab(label="Data size in MBytes")+
    scale_colour_Publication()+
    theme_Publication()
 #+END_SRC
@@ -2747,7 +2885,53 @@ done
 #+CALL: extract_ns3_data_5(input_file="data/ex13_ns3_3L1FL.raw", output_file="data/ex13_ns3_3L1FL.csv",flow=1)
 ***** Compare results
 #+BEGIN_SRC R :results output graphics :file figures/ex13_energy_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex13_ns3 = read.csv("data/ex13_ns3_3L1FL.csv", header=T)
    ex13_sg = read.csv("data/ex13_sg_3L1F.csv", header=T)
    sg_ns3 = merge(ex13_ns3,ex13_sg, by=c("BytesSend"))
@@ -2756,7 +2940,7 @@ done
    geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
    geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
-   xlab(label="Transferred data in MBytes")+
+   xlab(label="Data size in MBytes")+
    scale_colour_Publication()+
    theme_Publication()
 #+END_SRC
@@ -3014,7 +3198,53 @@ done
 #+CALL: extract_ns3_data_5(input_file="data/ex15_ns3_3L2FL.raw", output_file="data/ex15_ns3_3L2FL.csv",flow=2)
 ***** Compare results
 #+BEGIN_SRC R :results output graphics :file figures/ex15_energy_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex15_ns3 = read.csv("data/ex15_ns3_3L2FL.csv", header=T)
    ex15_sg = read.csv("data/ex15_sg_3L2F.csv", header=T)
    sg_ns3 = merge(ex15_ns3,ex15_sg, by=c("BytesSend"))
@@ -3023,7 +3253,7 @@ done
    geom_point(aes(y = TotalEnergy, colour = "ECOFEN"),size=1.3)+
    geom_point(aes(y = SgTotalEnergy, colour = "SimGrid"),size=1.3)+
    ylab(label="Energy Consumption in Joule")+
-   xlab(label="Transferred data in MBytes")+
+   xlab(label="Data size in MBytes")+
    scale_colour_Publication()+
    theme_Publication()
 #+END_SRC
@@ -3114,7 +3344,53 @@ for i in range(0, 12, 2):
 ***** Compare the run time performance
 [[http://www.cookbook-r.com/Graphs/Plotting_means_and_error_bars_(ggplot2)/][How to plot error bars]]
 #+BEGIN_SRC R :results output graphics :file figures/ex16_linksize_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex16_ns3 = read.csv("data/perfLinkZ_ns3_F2.csv", header=T)
    ex16_sg = read.csv("data/perfLinkZ_sg_F2.csv", header=T)
    ex16_sg$LinkSize=NULL
@@ -3129,7 +3405,7 @@ for i in range(0, 12, 2):
    geom_errorbar(aes(ymin=ElapsedSecns3-ns3_err$ci,ymax=ElapsedSecns3+ns3_err$ci),width=0.1,colour="brown")+
    geom_errorbar(aes(ymin=ElapsedSecsg-sg_err$ci,ymax=ElapsedSecsg+sg_err$ci),width=0.1,colour="brown")+
    ylab(label="Simulation time (seconds)")+
-   xlab(label="Path length between SRC and DST nodes")+
+   xlab(label="Path length")+
    scale_colour_Publication()+
    scale_x_continuous(breaks = round(seq(min(sg_ns3$LinkSize), max(sg_ns3$LinkSize), by =1),1)) +
    theme_Publication()
@@ -3140,7 +3416,53 @@ for i in range(0, 12, 2):
 
 ***** Compare the peak memory usage performance
 #+BEGIN_SRC R :results output graphics :file figures/ex16_linksizeM_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex16_ns3 = read.csv("data/perfLinkZ_ns3_F2.csv", header=T)
    ex16_ns3$PeakMemns3=ex16_ns3$PeakMemns3*(10^(-6))
    ex16_sg = read.csv("data/perfLinkZ_sg_F2.csv", header=T)
@@ -3156,7 +3478,7 @@ for i in range(0, 12, 2):
    geom_errorbar(aes(ymin=PeakMemns3-ns3_err$ci,ymax=PeakMemns3+ns3_err$ci),width=0.1,colour="brown",position=pd)+
    geom_errorbar(aes(ymin=PeakMemsg-sg_err$ci,ymax=PeakMemsg+sg_err$ci),width=0.1,colour="brown",position=pd)+
    ylab(label="Peak Memory Usage in MB")+
-   xlab(label="Path length between SRC and DST nodes")+
+   xlab(label="Path length")+
    scale_colour_Publication()+
    scale_x_continuous(breaks = round(seq(min(sg_ns3$LinkSize), max(sg_ns3$LinkSize), by =1),1)) +
    theme_Publication()
@@ -3476,7 +3798,53 @@ for i in dataRange:
 ***** Compare the run time performance
 [[http://www.cookbook-r.com/Graphs/Plotting_means_and_error_bars_(ggplot2)/][How to plot error bars]]
 #+BEGIN_SRC R :results output graphics :file figures/ex21_datasize_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex21_ns3 = read.csv("data/perfDatY_ns3_L2F2.csv", header=T)
    ex21_sg = read.csv("data/perfDatY_sg_L2F2.csv", header=T)
    ex21_sg$DataSize=NULL
@@ -3501,7 +3869,53 @@ for i in dataRange:
 
 ***** Compare the peak memory usage performance
 #+BEGIN_SRC R :results output graphics :file figures/ex21_DataSizeM_sg_vs_ns3.png :exports both :noweb yes
-<<format_theme>>
+library(ggplot2)
+library(gridExtra)
+library(Rmisc)
+theme_Publication <- function(base_size=14, base_family="helvetica") {
+      library(grid)
+      library(ggthemes)
+      (theme_foundation(base_size=base_size, base_family=base_family)
+       + theme(plot.title = element_text(face = "bold",
+                                         size = rel(1.2), hjust = 0.5),
+               text = element_text(),
+               panel.background = element_rect(colour = NA),
+               plot.background = element_rect(colour = NA),
+               panel.border = element_rect(colour = NA),
+               axis.title = element_text(face = "bold",size = rel(1.5)),
+               axis.title.y = element_text(angle=90,vjust =2),
+               axis.title.x = element_text(vjust = -0.2),
+               axis.text = element_text(), 
+               axis.line = element_line(colour="black"),
+               axis.ticks = element_line(),
+               panel.grid.major = element_line(colour="#f0f0f0"),
+               panel.grid.minor = element_blank(),
+               legend.key = element_rect(colour = NA),
+               legend.position = "top",
+               legend.direction = "horizontal",
+               legend.key.size= unit(0.5, "cm"),
+               legend.margin = unit(0, "cm"),
+               legend.title=element_blank(),
+               legend.text=element_text(size=14),
+               panel.margin = unit(1.2,"lines"),
+               plot.margin=unit(c(10,10,10,10),"mm"),
+               strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+               strip.text = element_text(face="bold")
+          ))
+      
+}
+
+scale_fill_Publication <- function(...){
+      library(scales)
+      discrete_scale("fill","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
+
+scale_colour_Publication <- function(...){
+      library(scales)
+      discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
+
+}
    ex21_ns3 = read.csv("data/perfDatY_ns3_L2F2.csv", header=T)
    ex21_ns3$PeakMemns3=ex21_ns3$PeakMemns3*(10^(-6))
    ex21_sg = read.csv("data/perfDatY_sg_L2F2.csv", header=T)

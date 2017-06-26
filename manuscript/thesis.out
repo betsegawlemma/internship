@@ -5,12 +5,12 @@
 \BOOKMARK [1][-]{section.2.1}{2.1 Energy consumption of ICT equipments}{chapter.2}% 5
 \BOOKMARK [1][-]{section.2.2}{2.2 Large-scale network energy consumption}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.3}{2.3 Energy proportionality}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.4}{2.4 Packet-level and flow-level Simulators}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{2.4 Packet-level and flow-level simulators}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.5}{2.5 Simulating and modeling energy consumption of large-scale networks}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.6}{2.6 SimGrid}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.7}{2.7 Related Simulators}{chapter.2}% 11
-\BOOKMARK [2][-]{subsubsection.2.7.0.1}{2.7.0.1 ECOFEN}{section.2.7}% 12
-\BOOKMARK [3][-]{subsubsection.2.7.0.2}{2.7.0.2 GreenCloud}{subsubsection.2.7.0.1}% 13
+\BOOKMARK [2][-]{subsection.2.7.1}{2.7.1 ECOFEN}{section.2.7}% 12
+\BOOKMARK [2][-]{subsection.2.7.2}{2.7.2 GreenCloud}{section.2.7}% 13
 \BOOKMARK [0][]{chapter.3}{3 Environment}{}% 14
 \BOOKMARK [1][-]{section.3.1}{3.1 SimGrid}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.2}{3.2 NS-3}{chapter.3}% 16
@@ -21,12 +21,12 @@
 \BOOKMARK [1][-]{section.4.1}{4.1 Common Approaches}{chapter.4}% 21
 \BOOKMARK [1][-]{section.4.2}{4.2 Our Approach}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.3}{4.3 Validating ECOFEN}{chapter.4}% 23
-\BOOKMARK [2][-]{subsubsection.4.3.0.1}{4.3.0.1 Validating the Linear Model}{section.4.3}% 24
-\BOOKMARK [3][-]{subsubsection.4.3.0.2}{4.3.0.2 Validating the Complete Model}{subsubsection.4.3.0.1}% 25
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Validating the Linear Model}{section.4.3}% 24
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Validating the Complete Model}{section.4.3}% 25
 \BOOKMARK [0][]{chapter.5}{5 Implementing flow-level model}{}% 26
 \BOOKMARK [1][-]{section.5.1}{5.1 Modeling energy consumption}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.2}{5.2 SimGrid energy link model}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.3}{5.3 Computing the energy consumption of an experiment}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{5.2 SimGrid's link energy model}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.3}{5.3 Implementation Challenge}{chapter.5}% 29
 \BOOKMARK [0][]{chapter.6}{6 Validation}{}% 30
 \BOOKMARK [1][-]{section.6.1}{6.1 Experiment Setup}{chapter.6}% 31
 \BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 General ECOFEN related setup}{section.6.1}% 32

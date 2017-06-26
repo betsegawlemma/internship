@@ -1,6 +1,9 @@
 \chapter{Conclusions}
 \label{chapter:conclusions}
 
-In this thesis, we aimed at investigating the level of energy estimation accuracy and performance scalability that can be obtained from flow-level energy consumption models. From our packet-level and flow-level comparison experiment result we conclude that a very good estimation accuracy can be obtained from flow-level energy consumption models without affecting their scalability.
+In this thesis, we aimed at investigating the level of energy estimation accuracy and performance scalability that can be obtained from flow-level energy consumption models. In order to achieve this goal we outlined a research method and following this method we designed, implemented, and validated flow-level energy consumption models for SimGrid simulator. 
 
-\todo[inline]{To enrich this conclusion, you could recap your contributions and the main results.} 
+Using our validation experiments we have shown that the implemented flow-level model registered less than 1\% estimation error and it is also at least 2 times faster than the packet-level model. From these results we can conclude that given accurate simulated time prediction, our flow-level model gives very accurate energy consumption estimation and it is also significantly scalable. 
+
+These findings suggest that, in general, even though flow-level models capture less detail about the reality they model, compared to packet-level models, the loss of detail might not result in significant loss of accuracy. 
+
