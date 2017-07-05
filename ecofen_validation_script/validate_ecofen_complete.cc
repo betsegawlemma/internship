@@ -183,7 +183,7 @@ main (int argc, char *argv[])
   std::string maxBandwidth = "2Gbps"; // the capacity of P2P link
   std::string delay = "10ms"; // P2P link delay
   uint32_t rngRun = 1; // set run number
-  double idle = 10.242;
+  double idle = 0;
 
   CommandLine cmd;
 
