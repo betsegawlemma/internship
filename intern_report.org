@@ -1042,7 +1042,7 @@ j=$((header + i))
 library(ggplot2)
 library(gridExtra)
 library(Rmisc)
-theme_Publication <- function(base_size=14, base_family="helvetica") {
+theme_Publication <- function(base_size=14, base_family="serif") {
       library(grid)
       library(ggthemes)
       (theme_foundation(base_size=base_size, base_family=base_family)
@@ -1069,7 +1069,8 @@ theme_Publication <- function(base_size=14, base_family="helvetica") {
                panel.margin = unit(1.2,"lines"),
                plot.margin=unit(c(10,10,10,10),"mm"),
                strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-               strip.text = element_text(face="bold")
+               strip.text = element_text(face="bold"),
+               aspect.ratio = 1
           ))
       
 }
@@ -1088,7 +1089,7 @@ scale_colour_Publication <- function(...){
 #+END_SRC
 
 
-#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedlinear.png :exports both :noweb yes 
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedlinear.pdf :exports both :noweb yes 
 <<format_theme>>
 val_100 = read.csv("data/eco_val_linear_100.csv", header=T)
 val_576 = read.csv("data/eco_val_linear_576.csv", header=T)
@@ -1107,7 +1108,7 @@ ggplot(all_data,aes(x=Throughput))+
 #+END_SRC
 
 #+RESULTS:
-[[file:figures/expectedvssimulatedlinear.png]]
+[[file:figures/expectedvssimulatedlinear.pdf]]
 
 **** Analysis
      - From the plot we can see that the expected and the simulated consumption agrees very well. The result of the unpaired t-test further confirms
@@ -1300,7 +1301,7 @@ with open(input_file) as fe:
   [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
 **** Validating the receiving end 
 - We use two of the models shown in the paper
-#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedreceiving.png :exports both :noweb yes
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedreceiving.pdf :width 480 :height 0 :unit px :exports both :noweb yes
 <<format_theme>>
 
 val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
@@ -1318,7 +1319,7 @@ ggplot(all_data,aes(x=Mbps))+
 #+END_SRC
 
 #+RESULTS:
-[[file:figures/expectedvssimulatedreceiving.png]]
+[[file:figures/expectedvssimulatedreceiving.pdf]]
   - We compare the simulated and the expected consumption using unpaired t-test for the above plots. The result is shown in table below together with
     the sending end t-test result. 
  #+BEGIN_SRC R :results output :var validation=validation :exports both 
