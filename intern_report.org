@@ -1301,7 +1301,7 @@ with open(input_file) as fe:
   [[file:data/eco_val_complete_1000.csv]], and [[file:data/eco_val_complete_1500.csv]]. 
 **** Validating the receiving end 
 - We use two of the models shown in the paper
-#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedreceiving.pdf :width 480 :height 0 :unit px :exports both :noweb yes
+#+BEGIN_SRC R :results output graphics :file figures/expectedvssimulatedreceiving.pdf :exports both :noweb yes
 <<format_theme>>
 
 val_576 = read.csv("data/eco_val_complete_576.csv", header=T)
