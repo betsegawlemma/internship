@@ -1,0 +1,439 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Barakat, Thiran, Iannaccone, Diot, and
+  Owezarski}{Barakat et~al\mbox{.}}{2003}]%
+        {DBLP:journals/tsp/BarakatTIDO03}
+\bibfield{author}{\bibinfo{person}{Chadi Barakat}, \bibinfo{person}{Patrick
+  Thiran}, \bibinfo{person}{Gianluca Iannaccone}, \bibinfo{person}{Christophe
+  Diot}, {and} \bibinfo{person}{Philippe Owezarski}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{{M}odeling {I}nternet backbone traffic at the flow
+  level}.
+\newblock \bibinfo{journal}{{\em {IEEE} Trans. Signal Processing\/}}
+  \bibinfo{volume}{51}, \bibinfo{number}{8} (\bibinfo{year}{2003}),
+  \bibinfo{pages}{2111--2124}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Barroso, Clidaras, and H{\"{o}}lzle}{Barroso
+  et~al\mbox{.}}{2013}]%
+        {DBLP:series/synthesis/2013Barroso}
+\bibfield{author}{\bibinfo{person}{Luiz~Andr{\'{e}} Barroso},
+  \bibinfo{person}{Jimmy Clidaras}, {and} \bibinfo{person}{Urs H{\"{o}}lzle}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em {T}he {D}atacenter as a {C}omputer: {A}n
+  {I}ntroduction to the {D}esign of {W}arehouse-{S}cale {M}achines}}.
+\newblock \bibinfo{publisher}{Morgan {\&} Claypool Publishers}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Barroso and H{\"{o}}lzle}{Barroso and
+  H{\"{o}}lzle}{2007}]%
+        {DBLP:journals/computer/BarrosoH07}
+\bibfield{author}{\bibinfo{person}{Luiz~Andr{\'{e}} Barroso} {and}
+  \bibinfo{person}{Urs H{\"{o}}lzle}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{The {C}ase for {E}nergy-{P}roportional
+  {C}omputing}.
+\newblock \bibinfo{journal}{{\em {IEEE} Computer\/}} \bibinfo{volume}{40},
+  \bibinfo{number}{12} (\bibinfo{year}{2007}), \bibinfo{pages}{33--37}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bolla, Bruschi, Davoli, and Cucchietti}{Bolla
+  et~al\mbox{.}}{2011}]%
+        {DBLP:journals/comsur/BollaBDC11}
+\bibfield{author}{\bibinfo{person}{Raffaele Bolla}, \bibinfo{person}{Roberto
+  Bruschi}, \bibinfo{person}{Franco Davoli}, {and} \bibinfo{person}{Flavio
+  Cucchietti}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Energy {E}fficiency in the {F}uture {I}nternet: {A}
+  {S}urvey of {E}xisting {A}pproaches and {T}rends in {E}nergy-{A}ware {F}ixed
+  {N}etwork {I}nfrastructures}.
+\newblock \bibinfo{journal}{{\em {IEEE} Communications Surveys and
+  Tutorials\/}} \bibinfo{volume}{13}, \bibinfo{number}{2}
+  (\bibinfo{year}{2011}), \bibinfo{pages}{223--244}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Carneiro, Fortuna, and Ricardo}{Carneiro
+  et~al\mbox{.}}{2009}]%
+        {DBLP:conf/valuetools/CarneiroFR09}
+\bibfield{author}{\bibinfo{person}{Gustavo Carneiro}, \bibinfo{person}{Pedro
+  Fortuna}, {and} \bibinfo{person}{Manuel Ricardo}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{FlowMonitor: {A} network monitoring framework for
+  the {N}etwork {S}imulator 3 {(NS-3)}}. In \bibinfo{booktitle}{{\em
+  International Conference on Performance Evaluation Methodologies and Tools
+  (VALUETOOLS)}}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Casanova, Giersch, Legrand, Quinson, and
+  Suter}{Casanova et~al\mbox{.}}{2014}]%
+        {DBLP:journals/jpdc/CasanovaGLQS14}
+\bibfield{author}{\bibinfo{person}{Henri Casanova}, \bibinfo{person}{Arnaud
+  Giersch}, \bibinfo{person}{Arnaud Legrand}, \bibinfo{person}{Martin Quinson},
+  {and} \bibinfo{person}{Fr{\'{e}}d{\'{e}}ric Suter}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Versatile, scalable, and accurate simulation of
+  distributed applications and platforms}.
+\newblock \bibinfo{journal}{{\em J. Parallel Distrib. Comput.\/}}
+  \bibinfo{volume}{74}, \bibinfo{number}{10} (\bibinfo{year}{2014}),
+  \bibinfo{pages}{2899--2917}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cisco}{Cisco}{2016}]%
+        {gci}
+\bibfield{author}{\bibinfo{person}{Cisco}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{{Cisco Global Cloud Index: Forecast and Methodology,
+  2015-2020}}.
+\newblock \bibinfo{howpublished}{White paper}.   (\bibinfo{date}{November}
+  \bibinfo{year}{2016}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cisco}{Cisco}{2017}]%
+        {zetta}
+\bibfield{author}{\bibinfo{person}{Cisco}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{{The Zettabyte Era: Trends and Analysis}}.
+\newblock \bibinfo{howpublished}{White paper}.   (\bibinfo{date}{June}
+  \bibinfo{year}{2017}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Claffy, Miller, and Thompson}{Claffy
+  et~al\mbox{.}}{1998}]%
+        {claffy1998nature}
+\bibfield{author}{\bibinfo{person}{Kimberly Claffy}, \bibinfo{person}{Greg
+  Miller}, {and} \bibinfo{person}{Kevin Thompson}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{The nature of the beast: {R}ecent traffic
+  measurements from an {I}nternet backbone}. In \bibinfo{booktitle}{{\em
+  Proceedings of INET}}, Vol.~\bibinfo{volume}{98}. \bibinfo{pages}{21--24}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cornea, Orgerie, and Lef{\`{e}}vre}{Cornea
+  et~al\mbox{.}}{2014}]%
+        {DBLP:conf/cloudnet/CorneaOL14}
+\bibfield{author}{\bibinfo{person}{Bogdan~Florin Cornea},
+  \bibinfo{person}{Anne{-}C{\'{e}}cile Orgerie}, {and} \bibinfo{person}{Laurent
+  Lef{\`{e}}vre}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Studying the energy consumption of data transfers
+  in {C}louds: {T}he {E}cofen approach}. In \bibinfo{booktitle}{{\em {IEEE}
+  International Conference on Cloud Networking, (CloudNet)}}.
+  \bibinfo{pages}{143--148}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dayarathna, Wen, and Fan}{Dayarathna
+  et~al\mbox{.}}{2016}]%
+        {DBLP:journals/comsur/DayarathnaWF16}
+\bibfield{author}{\bibinfo{person}{Miyuru Dayarathna},
+  \bibinfo{person}{Yonggang Wen}, {and} \bibinfo{person}{Rui Fan}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{D}ata {C}enter {E}nergy {C}onsumption {M}odeling:
+  {A} {S}urvey}.
+\newblock \bibinfo{journal}{{\em {IEEE} Communications Surveys and
+  Tutorials\/}} \bibinfo{volume}{18}, \bibinfo{number}{1}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{732--794}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fan, Weber, and Barroso}{Fan
+  et~al\mbox{.}}{2007}]%
+        {DBLP:conf/isca/FanWB07}
+\bibfield{author}{\bibinfo{person}{Xiaobo Fan},
+  \bibinfo{person}{Wolf{-}Dietrich Weber}, {and}
+  \bibinfo{person}{Luiz~Andr{\'{e}} Barroso}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Power provisioning for a warehouse-sized computer}.
+  In \bibinfo{booktitle}{{\em International Symposium on Computer Architecture
+  (ISCA)}}. \bibinfo{pages}{13--23}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fiandrino, Kliazovich, Bouvry, and
+  Zomaya}{Fiandrino et~al\mbox{.}}{2015}]%
+        {DBLP:conf/IEEEcloud/FiandrinoKBZ15}
+\bibfield{author}{\bibinfo{person}{Claudio Fiandrino}, \bibinfo{person}{Dzmitry
+  Kliazovich}, \bibinfo{person}{Pascal Bouvry}, {and}
+  \bibinfo{person}{Albert~Y. Zomaya}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Performance {M}etrics for {D}ata {C}enter
+  {C}ommunication {S}ystems}. In \bibinfo{booktitle}{{\em {IEEE} International
+  Conference on Cloud Computing, (CLOUD)}}. \bibinfo{pages}{98--105}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gunaratne, Christensen, and Suen}{Gunaratne
+  et~al\mbox{.}}{2006}]%
+        {ALR}
+\bibfield{author}{\bibinfo{person}{C. Gunaratne}, \bibinfo{person}{K.
+  Christensen}, {and} \bibinfo{person}{S. Suen}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{{Ethernet Adaptive Link Rate (ALR): Analysis Of A
+  Buffer Threshold Policy}}. In \bibinfo{booktitle}{{\em IEEE Global
+  Telecommunications Conference (GLOBECOM)}}. \bibinfo{pages}{1--6}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gyarmati and Trinh}{Gyarmati and
+  Trinh}{2010}]%
+        {DBLP:conf/eenergy/GyarmatiT10}
+\bibfield{author}{\bibinfo{person}{L{\'{a}}szl{\'{o}} Gyarmati} {and}
+  \bibinfo{person}{Tuan~Anh Trinh}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{How can architecture help to reduce energy
+  consumption in data center networking?}. In \bibinfo{booktitle}{{\em
+  International Conference on Energy-Efficient Computing and Networking
+  (e-Energy)}}. \bibinfo{pages}{183--186}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Heddeghem, Lambert, Lannoo, Colle, Pickavet,
+  and Demeester}{Heddeghem et~al\mbox{.}}{2014}]%
+        {DBLP:journals/comcom/HeddeghemLLCPD14}
+\bibfield{author}{\bibinfo{person}{Ward~Van Heddeghem}, \bibinfo{person}{Sofie
+  Lambert}, \bibinfo{person}{Bart Lannoo}, \bibinfo{person}{Didier Colle},
+  \bibinfo{person}{Mario Pickavet}, {and} \bibinfo{person}{Piet Demeester}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{{T}rends in worldwide {ICT} electricity consumption
+  from 2007 to 2012}.
+\newblock \bibinfo{journal}{{\em Computer Communications\/}}
+  \bibinfo{volume}{50} (\bibinfo{year}{2014}), \bibinfo{pages}{64--76}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kliazovich, Bouvry, and Khan}{Kliazovich
+  et~al\mbox{.}}{2012}]%
+        {DBLP:journals/tjs/KliazovichBK12}
+\bibfield{author}{\bibinfo{person}{Dzmitry Kliazovich}, \bibinfo{person}{Pascal
+  Bouvry}, {and} \bibinfo{person}{Samee~Ullah Khan}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{{G}reen{C}loud: {A} packet-level simulator of
+  energy-aware cloud computing data centers}.
+\newblock \bibinfo{journal}{{\em The Journal of Supercomputing\/}}
+  \bibinfo{volume}{62}, \bibinfo{number}{3} (\bibinfo{year}{2012}),
+  \bibinfo{pages}{1263--1283}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Liu, Figueiredo, Guo, Kurose, and Towsley}{Liu
+  et~al\mbox{.}}{2001}]%
+        {DBLP:conf/infocom/LiuFGKT01}
+\bibfield{author}{\bibinfo{person}{Benyuan Liu}, \bibinfo{person}{Daniel~R.
+  Figueiredo}, \bibinfo{person}{Yang Guo}, \bibinfo{person}{James~F. Kurose},
+  {and} \bibinfo{person}{Donald~F. Towsley}.} \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{A {S}tudy of {N}etworks {S}imulation {E}fficiency:
+  {F}luid {S}imulation vs. {P}acket-level Simulation}. In
+  \bibinfo{booktitle}{{\em IEEE International Conference on Computer
+  Communications (INFOCOM)}}. \bibinfo{pages}{1244--1253}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{LLC}{LLC}{[n. d.]}]%
+        {ns3}
+\bibfield{author}{\bibinfo{person}{MultiMedia LLC}.} \bibinfo{year}{[n.
+  d.]}\natexlab{}.
+\newblock \bibinfo{title}{{NS-3} {S}imulator}.
+\newblock \bibinfo{howpublished}{\url{https://www.nsnam.org}}.
+  (\bibinfo{year}{[n. d.]}).
+\newblock
+\newblock
+\shownote{{O}nline; accessed 2017-02-20.}
+
+
+\bibitem[\protect\citeauthoryear{Mahadevan, Sharma, Banerjee, and
+  Ranganathan}{Mahadevan et~al\mbox{.}}{2009}]%
+        {DBLP:conf/networking/MahadevanSBR09}
+\bibfield{author}{\bibinfo{person}{Priya Mahadevan}, \bibinfo{person}{Puneet
+  Sharma}, \bibinfo{person}{Sujata Banerjee}, {and}
+  \bibinfo{person}{Parthasarathy Ranganathan}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{A {P}ower {B}enchmarking {F}ramework for {N}etwork
+  {D}evices}. In \bibinfo{booktitle}{{\em 8th International {IFIP-TC}
+  Networking Conference {NETWORKING}}}. \bibinfo{pages}{795--808}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Nedevschi, Popa, Iannaccone, Ratnasamy, and
+  Wetherall}{Nedevschi et~al\mbox{.}}{2008}]%
+        {DBLP:conf/nsdi/NedevschiPIRW08}
+\bibfield{author}{\bibinfo{person}{Sergiu Nedevschi}, \bibinfo{person}{Lucian
+  Popa}, \bibinfo{person}{Gianluca Iannaccone}, \bibinfo{person}{Sylvia
+  Ratnasamy}, {and} \bibinfo{person}{David Wetherall}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Reducing {N}etwork {E}nergy {C}onsumption via
+  {S}leeping and {R}ate-{A}daptation}. In \bibinfo{booktitle}{{\em {USENIX}
+  Symposium on Networked Systems Design {\&} Implementation (NSDI)}}.
+  \bibinfo{pages}{323--336}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Orgerie, Lef{\`{e}}vre, Lassous, and
+  L{\'{o}}pez{-}Pacheco}{Orgerie et~al\mbox{.}}{2011}]%
+        {DBLP:conf/wowmom/OrgerieLLL11}
+\bibfield{author}{\bibinfo{person}{Anne{-}C{\'{e}}cile Orgerie},
+  \bibinfo{person}{Laurent Lef{\`{e}}vre},
+  \bibinfo{person}{Isabelle~Gu{\'{e}}rin Lassous}, {and}
+  \bibinfo{person}{Dino~Martin L{\'{o}}pez{-}Pacheco}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{{ECOFEN:} {A}n {E}nd-to-end energy {C}ost m{O}del
+  and simulator {F}or {E}valuating power consumption in large-scale
+  {N}etworks}. In \bibinfo{booktitle}{{\em 12th {IEEE} International Symposium
+  on a World of Wireless, Mobile and Multimedia Networks, {WOWMOM}}}.
+  \bibinfo{pages}{1--6}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Orgerie, Dias~de Assun\c{c}\~ao, and
+  Lef\`evre}{Orgerie et~al\mbox{.}}{2014}]%
+        {survey}
+\bibfield{author}{\bibinfo{person}{Anne-C\'ecile Orgerie},
+  \bibinfo{person}{Marcos Dias~de Assun\c{c}\~ao}, {and}
+  \bibinfo{person}{Laurent Lef\`evre}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{{A Survey on Techniques for Improving the Energy
+  Efficiency of Large-scale Distributed Systems}}.
+\newblock \bibinfo{journal}{{\it Comput. Surveys}} \bibinfo{volume}{46},
+  \bibinfo{number}{4} (\bibinfo{date}{March} \bibinfo{year}{2014}),
+  \bibinfo{pages}{47:1--47:31}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Quinson, Rosa, and Thiery}{Quinson
+  et~al\mbox{.}}{2012}]%
+        {DBLP:conf/ccgrid/QuinsonRT12}
+\bibfield{author}{\bibinfo{person}{Martin Quinson},
+  \bibinfo{person}{Cristian~Daniel Rosa}, {and} \bibinfo{person}{Christophe
+  Thiery}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Parallel {S}imulation of {P}eer-to-{P}eer
+  {S}ystems}. In \bibinfo{booktitle}{{\em {IEEE/ACM} International Symposium on
+  Cluster, Cloud and Grid Computing (CCGrid)}}. \bibinfo{pages}{668--675}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Reviriego, Christensen, Rabanillo, and
+  Maestro}{Reviriego et~al\mbox{.}}{2011}]%
+        {LPI}
+\bibfield{author}{\bibinfo{person}{P. Reviriego}, \bibinfo{person}{K.
+  Christensen}, \bibinfo{person}{J. Rabanillo}, {and} \bibinfo{person}{J.A.
+  Maestro}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{{An Initial Evaluation of Energy Efficient
+  Ethernet}}.
+\newblock \bibinfo{journal}{{\em IEEE Communications Letters\/}}
+  \bibinfo{volume}{15}, \bibinfo{number}{5} (\bibinfo{year}{2011}),
+  \bibinfo{pages}{578--580}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ruxton}{Ruxton}{2006}]%
+        {ruxton2006unequal}
+\bibfield{author}{\bibinfo{person}{Graeme~D Ruxton}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{The unequal variance t-test is an underused
+  alternative to {S}tudent's t-test and the Mann--Whitney {U} test}.
+\newblock \bibinfo{journal}{{\em Behavioral Ecology\/}} \bibinfo{volume}{17},
+  \bibinfo{number}{4} (\bibinfo{year}{2006}), \bibinfo{pages}{688--690}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Shehabi, Smith, Horner, Azevedo, Brown,
+  Koomey, Masanet, Sartor, Herrlin, and Lintner}{Shehabi et~al\mbox{.}}{2016}]%
+        {shehabi2016united}
+\bibfield{author}{\bibinfo{person}{A Shehabi}, \bibinfo{person}{SJ Smith},
+  \bibinfo{person}{N Horner}, \bibinfo{person}{I Azevedo}, \bibinfo{person}{R
+  Brown}, \bibinfo{person}{J Koomey}, \bibinfo{person}{E Masanet},
+  \bibinfo{person}{D Sartor}, \bibinfo{person}{M Herrlin}, {and}
+  \bibinfo{person}{W Lintner}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{United {S}tates data center energy usage report}.
+\newblock \bibinfo{journal}{{\em Lawrence Berkeley National Laboratory,
+  Berkeley, California. LBNL-1005775 Report\/}}  \bibinfo{volume}{4}
+  (\bibinfo{year}{2016}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Snowdon, Ruocco, and Heiser}{Snowdon
+  et~al\mbox{.}}{2005}]%
+        {dvs}
+\bibfield{author}{\bibinfo{person}{D. Snowdon}, \bibinfo{person}{S. Ruocco},
+  {and} \bibinfo{person}{G. Heiser}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{{Power Management and Dynamic Voltage Scaling:
+  Myths and Facts}}. In \bibinfo{booktitle}{{\em Workshop on Power Aware
+  Real-time Computing}}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{team}{team}{[n. d.]}]%
+        {simgrid}
+\bibfield{author}{\bibinfo{person}{SimGrid team}.} \bibinfo{year}{[n.
+  d.]}\natexlab{}.
+\newblock \bibinfo{title}{{SimGrid} {S}imulator}.
+\newblock \bibinfo{howpublished}{\url{http://simgrid.gforge.inria.fr/}}.
+  (\bibinfo{year}{[n. d.]}).
+\newblock
+\newblock
+\shownote{{O}nline; accessed 2017-01-20.}
+
+
+\bibitem[\protect\citeauthoryear{Velho, Schnorr, Casanova, and Legrand}{Velho
+  et~al\mbox{.}}{2013}]%
+        {DBLP:journals/tomacs/VelhoSCL13}
+\bibfield{author}{\bibinfo{person}{Pedro Velho}, \bibinfo{person}{Lucas~Mello
+  Schnorr}, \bibinfo{person}{Henri Casanova}, {and} \bibinfo{person}{Arnaud
+  Legrand}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{On the validity of flow-level tcp network models
+  for grid and cloud simulations}.
+\newblock \bibinfo{journal}{{\em {ACM} Trans. Model. Comput. Simul.\/}}
+  \bibinfo{volume}{23}, \bibinfo{number}{4} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{23:1--23:26}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Weing{\"{a}}rtner, vom Lehn, and
+  Wehrle}{Weing{\"{a}}rtner et~al\mbox{.}}{2009}]%
+        {DBLP:conf/icc/WeingartnerLW09}
+\bibfield{author}{\bibinfo{person}{Elias Weing{\"{a}}rtner},
+  \bibinfo{person}{Hendrik vom Lehn}, {and} \bibinfo{person}{Klaus Wehrle}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{A {P}erformance {C}omparison of {R}ecent {N}etwork
+  {S}imulators}. In \bibinfo{booktitle}{{\em {IEEE} International Conference on
+  Communications (ICC)}}. \bibinfo{pages}{1--5}.
+\newblock
+
+
+\end{thebibliography}

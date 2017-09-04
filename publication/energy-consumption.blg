@@ -1,0 +1,85 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: energy-consumption.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: energy-consumption.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty address in DBLP:series/synthesis/2013Barroso
+Warning--empty publisher in DBLP:conf/valuetools/CarneiroFR09
+Warning--empty address in DBLP:conf/valuetools/CarneiroFR09
+Warning--page numbers missing in both pages and numpages fields in DBLP:conf/valuetools/CarneiroFR09
+Warning--empty publisher in claffy1998nature
+Warning--empty address in claffy1998nature
+Warning--empty publisher in DBLP:conf/cloudnet/CorneaOL14
+Warning--empty address in DBLP:conf/cloudnet/CorneaOL14
+Warning--empty publisher in DBLP:conf/isca/FanWB07
+Warning--empty address in DBLP:conf/isca/FanWB07
+Warning--empty publisher in DBLP:conf/IEEEcloud/FiandrinoKBZ15
+Warning--empty address in DBLP:conf/IEEEcloud/FiandrinoKBZ15
+Warning--empty publisher in ALR
+Warning--empty address in ALR
+Warning--empty publisher in DBLP:conf/eenergy/GyarmatiT10
+Warning--empty address in DBLP:conf/eenergy/GyarmatiT10
+Warning--empty publisher in DBLP:conf/infocom/LiuFGKT01
+Warning--empty address in DBLP:conf/infocom/LiuFGKT01
+Warning--empty year in ns3
+Warning--empty publisher in DBLP:conf/networking/MahadevanSBR09
+Warning--empty address in DBLP:conf/networking/MahadevanSBR09
+Warning--empty publisher in DBLP:conf/nsdi/NedevschiPIRW08
+Warning--empty address in DBLP:conf/nsdi/NedevschiPIRW08
+Warning--empty publisher in DBLP:conf/wowmom/OrgerieLLL11
+Warning--empty address in DBLP:conf/wowmom/OrgerieLLL11
+Warning--empty publisher in DBLP:conf/ccgrid/QuinsonRT12
+Warning--empty address in DBLP:conf/ccgrid/QuinsonRT12
+Warning--page numbers missing in both pages and numpages fields in shehabi2016united
+Warning--empty publisher in dvs
+Warning--empty address in dvs
+Warning--page numbers missing in both pages and numpages fields in dvs
+Warning--empty year in simgrid
+Warning--empty publisher in DBLP:conf/icc/WeingartnerLW09
+Warning--empty address in DBLP:conf/icc/WeingartnerLW09
+You've used 31 entries,
+            5758 wiz_defined-function locations,
+            1507 strings with 22541 characters,
+and the built_in function-call counts, 37730 in all, are:
+= -- 4631
+> -- 1424
+< -- 0
++ -- 440
+- -- 456
+* -- 2736
+:= -- 3775
+add.period$ -- 156
+call.type$ -- 31
+change.case$ -- 229
+chr.to.int$ -- 31
+cite$ -- 65
+duplicate$ -- 3351
+empty$ -- 2359
+format.name$ -- 560
+if$ -- 9168
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 120
+newline$ -- 278
+num.names$ -- 248
+pop$ -- 1352
+preamble$ -- 1
+purify$ -- 496
+quote$ -- 0
+skip$ -- 1145
+stack$ -- 0
+substring$ -- 2788
+swap$ -- 329
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 747
+warning$ -- 34
+while$ -- 221
+width$ -- 0
+write$ -- 558
+(There were 34 warnings)
