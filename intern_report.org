@@ -3569,6 +3569,329 @@ for i in dataRange:
 #+RESULTS:
 [[file:figures/logerror_sg_vs_ns3.png]]
 
+** Week 2 August
+*** Italy ISP network topology 
+#+BEGIN_SRC python :results output
+import sys
+
+def printnodes(n1,n2,zn):
+    print ("""
+ 
+      <zone id="{2}" routing="Full">
+      <router id="b{0}"/>
+		  <router id="b{1}"/>
+		  <router id="m{0}"/>
+		  <router id="m{1}"/>
+		  
+		  <link id="b{0}-{1}" bandwidth="20Mbps" latency="10ms" />
+		  <link id="m{0}b{0}" bandwidth="20Mbps" latency="10ms" />
+		  <link id="m{0}b{1}" bandwidth="20Mbps" latency="10ms" />
+		  <link id="m{1}b{0}" bandwidth="20Mbps" latency="10ms" />
+		  <link id="m{1}b{1}" bandwidth="20Mbps" latency="10ms" />
+		  
+		  <route src="b{0}" dst="b{1}">
+			<link_ctn id="b{0}-{1}" />
+		  </route>	
+		  <route src="m{0}" dst="b{1}">
+			<link_ctn id="m{0}b{0}" />
+		  </route>	  
+		   <route src="m{0}" dst="b{1}">
+			<link_ctn id="m{0}b{1}" />
+		  </route>	
+		  <route src="m{1}" dst="b{0}">
+			<link_ctn id="m{1}b{0}" />
+		  </route>	  
+		   <route src="m{1}" dst="b{1}">
+			<link_ctn id="m{1}b{1}" />
+		  </route>	
+		  
+		</zone>
+		
+		<link id="b{0}c1" bandwidth="20Mbps" latency="10ms" />
+		<link id="b{0}c3" bandwidth="20Mbps" latency="10ms" />
+		<link id="b{1}c2" bandwidth="20Mbps" latency="10ms" />
+		<link id="b{1}c4" bandwidth="20Mbps" latency="10ms" />
+		
+		<zoneRoute src="{2}" dst="core" gw_src="b{0}" gw_dst="c1">
+			<link_ctn id="b{0}c1" />
+		</zoneRoute>		
+		<zoneRoute src="{2}" dst="core" gw_src="b{0}" gw_dst="c3">
+			<link_ctn id="b{0}c3" />
+		</zoneRoute>
+		<zoneRoute src="{2}" dst="core" gw_src="b{1}" gw_dst="c2">
+			<link_ctn id="b{1}c2" />
+		</zoneRoute>		
+		<zoneRoute src="{2}" dst="core" gw_src="b{1}" gw_dst="c4">
+			<link_ctn id="b{1}c4" />
+		</zoneRoute>
+    """.format(n1,n2,zn))
+
+printnodes(8,9,"bm5")
+   
+#+END_SRC
+
+#+BEGIN_SRC python :results output
+import sys
+
+def access_nodes(srcZone,dstZone,count,cnt):
+    return """
+      <zone id="access{14}" routing="Full">
+			<router id="a{2}" />
+			<router id="a{3}" />
+			<router id="a{4}" />
+			<router id="a{5}" />
+			<router id="a{6}" />
+      <router id="a{7}" />
+			<router id="a{8}" />
+			<router id="a{9}" />
+			<router id="a{10}" />
+			<router id="a{11}" />
+			<host id="h{2}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+			<host id="h{3}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+			<host id="h{4}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+			<host id="h{5}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+			<host id="h{6}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+      <host id="h{7}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+			<host id="h{8}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+			<host id="h{9}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+			<host id="h{10}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+			<host id="h{11}" speed="100.0Mf,50.0Mf,20.0Mf" pstate="0">
+				<prop id="watt_off" value="0" />
+			</host>
+
+			<link id="h{2}a{2}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+			<link id="h{3}a{3}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+			<link id="h{4}a{4}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+			<link id="h{5}a{5}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+			<link id="h{6}a{6}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+      <link id="h{7}a{7}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+			<link id="h{8}a{8}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+			<link id="h{9}a{9}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+			<link id="h{10}a{10}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+			<link id="h{11}a{11}" bandwidth="10Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+			</link>
+
+			<route src="h{2}" dst="a{2}">
+				<link_ctn id="h{2}a{2}" />
+			</route>
+			<route src="h{3}" dst="a{3}">
+				<link_ctn id="h{3}a{3}" />
+			</route>
+			<route src="h{4}" dst="a{4}">
+				<link_ctn id="h{4}a{4}" />
+			</route>
+			<route src="h{5}" dst="a{5}">
+				<link_ctn id="h{5}a{5}" />
+			</route>
+			<route src="h{6}" dst="a{6}">
+				<link_ctn id="h{6}a{6}" />
+			</route>
+      <route src="h{7}" dst="a{2}">
+				<link_ctn id="h{7}a{7}" />
+			</route>
+			<route src="h{8}" dst="a{8}">
+				<link_ctn id="h{8}a{8}" />
+			</route>
+			<route src="h{9}" dst="a{9}">
+				<link_ctn id="h{9}a{9}" />
+			</route>
+			<route src="h{10}" dst="a{10}">
+				<link_ctn id="h{10}a{10}" />
+			</route>
+			<route src="h{11}" dst="a{11}">
+				<link_ctn id="h{11}a{11}" />
+			</route>
+		</zone>
+		
+		<link id="a{2}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{2}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{3}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{3}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{4}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{4}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{5}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{5}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{6}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{6}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+    <link id="a{7}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{7}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{8}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{8}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{9}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{9}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{10}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{10}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{11}m{12}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		<link id="a{11}m{13}" bandwidth="20Mbps" latency="10ms">
+				<prop id="watt_range" value="10.3581:10.7479" />
+		</link>
+		
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{2}" gw_dst="m{12}">
+			<link_ctn id="a{2}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{2}" gw_dst="m{13}">
+			<link_ctn id="a{2}m{13}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{3}" gw_dst="m{12}">
+			<link_ctn id="a{3}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{3}" gw_dst="m{13}">
+			<link_ctn id="a{3}m{13}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{4}" gw_dst="m{12}">
+			<link_ctn id="a{4}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{4}" gw_dst="m{13}">
+			<link_ctn id="a{4}m{13}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{5}" gw_dst="m{12}">
+			<link_ctn id="a{5}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{5}" gw_dst="m{13}">
+			<link_ctn id="a{5}m{13}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{6}" gw_dst="m{12}">
+			<link_ctn id="a{6}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{6}" gw_dst="m{13}">
+			<link_ctn id="a{6}m{13}" />
+		</zoneRoute>
+    <zoneRoute src="{0}" dst="{1}" gw_src="a{7}" gw_dst="m{12}">
+			<link_ctn id="a{7}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{7}" gw_dst="m{13}">
+			<link_ctn id="a{7}m{13}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{8}" gw_dst="m{12}">
+			<link_ctn id="a{8}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{8}" gw_dst="m{13}">
+			<link_ctn id="a{8}m{13}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{9}" gw_dst="m{12}">
+			<link_ctn id="a{9}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{9}" gw_dst="m{13}">
+			<link_ctn id="a{9}m{13}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{10}" gw_dst="m{12}">
+			<link_ctn id="a{10}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{10}" gw_dst="m{13}">
+			<link_ctn id="a{10}m{13}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{11}" gw_dst="m{12}">
+			<link_ctn id="a{11}m{12}" />
+		</zoneRoute>
+		<zoneRoute src="{0}" dst="{1}" gw_src="a{11}" gw_dst="m{13}">
+			<link_ctn id="a{11}m{13}" />
+		</zoneRoute>
+           """.format(srcZone,dstZone,count,count+1,count+2,count+3,count+4,count+5,count+6,count+7,count+8,count+9,(2*cnt)-1,2*cnt,cnt)
+
+nodes=""
+c = 1
+for node in range(1,27):
+   nodes += access_nodes("access"+str(node),"bm"+str(node),c,node)
+   c+=10
+
+print(nodes)
+
+#+END_SRC
+
+#+RESULTS:
+
+#+BEGIN_SRC python :results output
+
+import sys
+
+def feeder_nodes(count):
+   return """<zoneRoute src="feeder{0}" dst="bm{0}" gw_src="feeder{0}_gw"
+				gw_dst="bm{0}_gw">
+				<link_ctn id="feeder{0}_bm{0}_l" />
+			</zoneRoute>\n""".format(count)
+nodes=""
+for node in range(1,27):
+    nodes+=feeder_nodes(node) 
+
+print(nodes)
+#+END_SRC
+
+
 * Development
    - SimGrid HostEnergy plugin
    - SURF: 
